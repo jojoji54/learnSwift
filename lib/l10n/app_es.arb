@@ -82,7 +82,11 @@
   "exercise15CorrectContent": "¡Fantástico! Has creado un conversor de temperaturas.\n\nExplicación:\n1. Definiste funciones para convertir Celsius a Fahrenheit y viceversa.\n2. Declaraste constantes para las temperaturas iniciales.\n3. Imprimiste los resultados de las conversiones.",
   "exercise15Hint1Content": "Define una función para Celsius a Fahrenheit usando la fórmula `(Celsius * 9 / 5) + 32`.",
   "exercise15Hint2Content": "Define una función para Fahrenheit a Celsius usando la fórmula `(Fahrenheit - 32) * 5 / 9`.",
-  "exercise15SolutionContent": "La respuesta correcta es:\n\nfunc convertToFahrenheit(celsius: Double) -> Double @\n    return (celsius * 9 / 5) + 32\n&\nfunc convertToCelsius(fahrenheit: Double) -> Double @\n    return (fahrenheit - 32) * 5 / 9\n&\nlet tempInCelsius = 25.0\nlet tempInFahrenheit = 77.0\nprint(convertToFahrenheit(celsius: tempInCelsius))\nprint(convertToCelsius(fahrenheit: tempInFahrenheit))"
+  "exercise15SolutionContent": "La respuesta correcta es:\n\nfunc convertToFahrenheit(celsius: Double) -> Double @\n    return (celsius * 9 / 5) + 32\n&\nfunc convertToCelsius(fahrenheit: Double) -> Double @\n    return (fahrenheit - 32) * 5 / 9\n&\nlet tempInCelsius = 25.0\nlet tempInFahrenheit = 77.0\nprint(convertToFahrenheit(celsius: tempInCelsius))\nprint(convertToCelsius(fahrenheit: tempInFahrenheit))", 
+  "exercise3Hint1Content": "Recuerda usar la función `print()` para mostrar un mensaje en la consola.\n\nPor ejemplo:\n```swift\nprint(\"Hola, Mundo!\")\n```", 
+  "exercise3Hint2Content": "Asegúrate de que tu mensaje esté entre comillas dobles.\n\nEjemplo:\n```swift\nprint(\"¡Swift es divertido!\")\n```"
+
+
 
 
 

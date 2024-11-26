@@ -82,6 +82,10 @@
     "exercise15CorrectContent": "Fantastic! You've successfully created a temperature converter.\n\nExplanation:\n1. Defined functions for converting Celsius to Fahrenheit and vice versa.\n2. Declared constants for initial temperatures.\n3. Printed the results of the conversions.",
     "exercise15Hint1Content": "Define a function for Celsius to Fahrenheit using the formula `(Celsius * 9 / 5) + 32`.",
     "exercise15Hint2Content": "Define a function for Fahrenheit to Celsius using the formula `(Fahrenheit - 32) * 5 / 9`.",
-    "exercise15SolutionContent": "The correct answer is:\n\nfunc convertToFahrenheit(celsius: Double) -> Double @\n    return (celsius * 9 / 5) + 32\n&\nfunc convertToCelsius(fahrenheit: Double) -> Double @\n    return (fahrenheit - 32) * 5 / 9\n&\nlet tempInCelsius = 25.0\nlet tempInFahrenheit = 77.0\nprint(convertToFahrenheit(celsius: tempInCelsius))\nprint(convertToCelsius(fahrenheit: tempInFahrenheit))"
+    "exercise15SolutionContent": "The correct answer is:\n\nfunc convertToFahrenheit(celsius: Double) -> Double @\n    return (celsius * 9 / 5) + 32\n&\nfunc convertToCelsius(fahrenheit: Double) -> Double @\n    return (fahrenheit - 32) * 5 / 9\n&\nlet tempInCelsius = 25.0\nlet tempInFahrenheit = 77.0\nprint(convertToFahrenheit(celsius: tempInCelsius))\nprint(convertToCelsius(fahrenheit: tempInFahrenheit))", 
+    "exercise3Hint1Content": "Remember to use the `print()` function to display a message in the console.\n\nFor example:\n```swift\nprint(\"Hello, World!\")\n```", 
+    "exercise3Hint2Content": "Make sure your message is enclosed in double quotes.\n\nExample:\n```swift\nprint(\"Swift is fun!\")\n```"
+
+
 
 }

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class SBEx9 extends StatefulWidget {
   final String title;
@@ -54,7 +56,7 @@ class _SBEx9State extends State<SBEx9> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput()async {
     final codeRegex = RegExp(
       r'^let\s+\w+\s*=\s*".+"\nlet\s+\w+\s*=\s*\d+\nprint\(\w+\)\nprint\(\w+\)$',
       multiLine: true,
@@ -63,6 +65,13 @@ class _SBEx9State extends State<SBEx9> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       _controller.clear(); // Limpiar el campo de texto
       _showDialog(
         AppLocalizations.of(context)!.correctTitle,

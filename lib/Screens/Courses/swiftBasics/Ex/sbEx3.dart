@@ -53,18 +53,63 @@ class _SBEx3State extends State<SBEx3> {
     );
   }
 
-  // Verificar el texto ingresado
-  void _checkInput() {
+  // Validar el texto ingresado
+  void _validateInput() {
+    final printRegex = RegExp(r'^print\(".+"\)$');
     final userInput = _controller.text.trim();
-    final printRegex = RegExp(r'^print\(.+\)$');
 
-    setState(() {
-      if (printRegex.hasMatch(userInput)) {
-        _inputTextColor = Colors.green;
+    if (printRegex.hasMatch(userInput)) {
+      setState(() {
+        _inputTextColor = Colors.green; // Cambiar el color a verde si es correcto
+      });
+      _controller.clear(); // Limpiar el campo de texto
+      _showDialog(
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!
+            .exercise3CorrectContent
+            .replaceAll('@', '{')
+            .replaceAll('&', '}'),
+        titleColor: Colors.green,
+      );
+    } else {
+      setState(() {
+        _failedAttempts++;
+        _inputTextColor = Colors.orange; // Mantener el color naranja si es incorrecto
+      });
+
+      if (_failedAttempts == 1) {
+        _showDialog(
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!
+              .exercise3Hint1Content
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
+        );
+      } else if (_failedAttempts == 2) {
+        _showDialog(
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!
+              .exercise3Hint2Content
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
+        );
+      } else if (_failedAttempts >= 3) {
+        _showDialog(
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise3SolutionContent
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
+          titleColor: Colors.red,
+        );
       } else {
-        _inputTextColor = Colors.orange;
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content:  Text(AppLocalizations.of(context)!.tryAgain(_failedAttempts)),
+          ),
+        );
       }
-    });
+    }
   }
 
   @override
@@ -80,7 +125,10 @@ class _SBEx3State extends State<SBEx3> {
               onPressed: () {
                 _showDialog(
                   AppLocalizations.of(context)!.exerciseInstructionsTitle,
-                  AppLocalizations.of(context)!.exercise3InstructionsContent,
+                  AppLocalizations.of(context)!
+                      .exercise3InstructionsContent
+                      .replaceAll('@', '{')
+                      .replaceAll('&', '}'),
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -91,29 +139,7 @@ class _SBEx3State extends State<SBEx3> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton3",
-              onPressed: () {
-                final userInput = _controller.text.trim();
-                final printRegex = RegExp(r'^print\(.+\)$');
-
-                if (printRegex.hasMatch(userInput)) {
-                  _controller.clear();
-                  _showDialog(
-                    AppLocalizations.of(context)!.correctTitle,
-                    AppLocalizations.of(context)!.exercise3CorrectContent,
-                    titleColor: Colors.green,
-                  );
-                } else {
-                  setState(() {
-                    _failedAttempts++;
-                  });
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(AppLocalizations.of(context)!
-                          .tryAgain(_failedAttempts)),
-                    ),
-                  );
-                }
-              },
+              onPressed: _validateInput,
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
@@ -126,7 +152,10 @@ class _SBEx3State extends State<SBEx3> {
                 onPressed: () {
                   _showDialog(
                     AppLocalizations.of(context)!.solutionTitle,
-                    AppLocalizations.of(context)!.exercise3SolutionContent,
+                    AppLocalizations.of(context)!
+                        .exercise3SolutionContent
+                        .replaceAll('@', '{')
+                        .replaceAll('&', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -146,6 +175,7 @@ class _SBEx3State extends State<SBEx3> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                // Ejemplo predefinido para guiar al usuario
                 RichText(
                   text: TextSpan(
                     style: const TextStyle(
@@ -154,36 +184,38 @@ class _SBEx3State extends State<SBEx3> {
                     ),
                     children: [
                       const TextSpan(
-                        text: "1  ",
-                        style: TextStyle(color: Colors.black),
+                        text: "1  print(",
+                        style: TextStyle(color: Colors.blue),
                       ),
-                      WidgetSpan(
-                        child: SizedBox(
-                          width: 300,
-                          height: 40,
-                          child: TextField(
-                            controller: _controller,
-                            onChanged: (value) => _checkInput(),
-                            style: TextStyle(
-                              fontFamily: 'InconsolataRegular',
-                              fontSize: 18,
-                              color: _inputTextColor,
-                            ),
-                            decoration: InputDecoration(
-                              contentPadding:
-                                  const EdgeInsets.symmetric(vertical: 8),
-                              hintText: AppLocalizations.of(context)!
-                                  .enterYourCodeHere,
-                              hintStyle: const TextStyle(color: Colors.grey),
-                              border: InputBorder.none,
-                            ),
-                          ),
-                        ),
+                      const TextSpan(
+                        text: '"Your message here"',
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: ")\n",
+                        style: TextStyle(color: Colors.blue),
                       ),
                     ],
                   ),
                 ),
                 const SizedBox(height: 20),
+                TextField(
+                  controller: _controller,
+                  maxLines: null,
+                  keyboardType: TextInputType.multiline,
+                  style: TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
+                    color: _inputTextColor,
+                  ),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText:
+                        AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
+                    border: InputBorder.none,
+                  ),
+                ),
               ],
             ),
           ),

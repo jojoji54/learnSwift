@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class SBEx14 extends StatefulWidget {
   final String title;
@@ -53,7 +55,7 @@ class _SBEx14State extends State<SBEx14> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^let\s+\w+\s*=\s*\d+(\.\d+)?\nfunc\s+\w+\(\w+:\s*Double\)\s*->\s*Double\s*\{\s*return\s+\w+\s*\*\s*\w+\s*\*\s*\w+\s*\}\nlet\s+\w+\s*=\s*\[.*\]\nvar\s+\w+\s*=\s*\[Double\]\(\)\nfor\s+\w+\s+in\s+\w+\s*\{\s*\w+\.append\(\w+\(\w+:\s*\w+\)\)\s*\}\nprint\(\w+\)$',
       multiLine: true,
@@ -62,6 +64,13 @@ class _SBEx14State extends State<SBEx14> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       _controller.clear();
       _showDialog(
         AppLocalizations.of(context)!.correctTitle,

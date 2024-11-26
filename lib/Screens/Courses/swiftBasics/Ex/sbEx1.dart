@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:provider/provider.dart';

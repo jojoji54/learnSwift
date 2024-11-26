@@ -4,14 +4,14 @@ List<CoursesMainModel> coursesMainModelListEN = [
   CoursesMainModel(
     id: 0,
     generalName: 'Swift Basics',
-    numCompletedCourses: 5,
+    numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ), 
    CoursesMainModel(
     id: 1,
-    generalName: 'True or false',
+    generalName: 'Boolean Basics',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

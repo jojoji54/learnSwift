@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
+import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/provider/allprovider.dart';
-import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
@@ -212,6 +212,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           context,
           MaterialPageRoute(
             builder: (context) => SwiftBasicExMain(id: id, title: title),
+          ),
+        );
+        break;
+      case 1:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => BooleanBasicExMain(id: id, title: title),
           ),
         );
         break;

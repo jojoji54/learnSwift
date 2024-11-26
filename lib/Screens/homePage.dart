@@ -4,6 +4,7 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
+import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelList.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelList.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelList.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -211,6 +212,10 @@ class _MyHomePageState extends State<MyHomePage> {
         case 0:
           allprovider.setData(sbModel);
           allprovider.setCourseCategory(0);
+          break;
+         case 1:
+          allprovider.setData(booleanBModel);
+          allprovider.setCourseCategory(1);
           break;
         default:
           allprovider.setData([]);

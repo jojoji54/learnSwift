@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
+import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
@@ -220,6 +221,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           context,
           MaterialPageRoute(
             builder: (context) => BooleanBasicExMain(id: id, title: title),
+          ),
+        );
+        break;
+      case 2:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => IfElseExMain(id: id, title: title),
           ),
         );
         break;

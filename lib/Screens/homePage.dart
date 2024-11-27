@@ -5,6 +5,7 @@ import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelList.dart';
+import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelList.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelList.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -216,6 +217,10 @@ class _MyHomePageState extends State<MyHomePage> {
          case 1:
           allprovider.setData(booleanBModel);
           allprovider.setCourseCategory(1);
+          break;
+        case 2:
+          allprovider.setData(ifElseModel);
+          allprovider.setCourseCategory(2);
           break;
         default:
           allprovider.setData([]);

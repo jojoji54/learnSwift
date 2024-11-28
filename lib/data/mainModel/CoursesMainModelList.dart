@@ -25,7 +25,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+/*   CoursesMainModel(
     id: 3,
     generalName: 'Switch Statements',
     numCompletedCourses: 0,
@@ -160,5 +160,5 @@ List<CoursesMainModel> coursesMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
-  ),
+  ), */
 ];

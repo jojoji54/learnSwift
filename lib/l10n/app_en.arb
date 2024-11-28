@@ -99,7 +99,14 @@
           "example": "Hello World"
         }
       }
-    }
+    }, 
+    "purchaseUnavailable": "Purchases are not available at the moment.",
+  "purchaseInitiated": "The purchase has been initiated.",
+  "productNotFound": "Product not found.", 
+  "restoreSuccess": "Purchases restored successfully!",
+  "restoreError": "An error occurred during the restoration.",
+  "noPurchasesToRestore": "No purchases to restore.",
+  "unexpectedRestoreError": "Unexpected error during restoration."
 
 
 

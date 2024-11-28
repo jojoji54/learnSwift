@@ -99,21 +99,15 @@
         "example": "Hola Mundo"
       }
     }
-  }
+  },
+  "purchaseUnavailable": "Las compras no están disponibles en este momento.",
+  "purchaseInitiated": "La compra se ha iniciado.",
+  "productNotFound": "Producto no encontrado.", 
+  "restoreSuccess": "¡Compras restauradas con éxito!",
+  "restoreError": "Ocurrió un error durante la restauración.",
+  "noPurchasesToRestore": "No hay compras para restaurar.",
+  "unexpectedRestoreError": "Error inesperado durante la restauración."
   
-
-
-
-
-
-
-
- 
-  
-
-
-
-
 
 
 

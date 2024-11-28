@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
@@ -160,9 +161,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                       ),
                                     ),
                                     InkWell(
-                                      onTap: ()  {
-                                         allProvider.setEverythingUnlocked(Constant.everythingunlocked);
-                                        if (!course.alreadyBuy && !allProvider.everythingPurchased) {
+                                      onTap: () {
+                                        allProvider.setEverythingUnlocked(
+                                            Constant.everythingunlocked);
+                                        if (!course.alreadyBuy &&
+                                            !allProvider.everythingPurchased) {
                                           _showUnlockDialog(
                                               course); // Muestra el diálogo para desbloquear
                                         } else {
@@ -176,7 +179,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(10),
-                                            color: !course.alreadyBuy && !allProvider.everythingPurchased
+                                            color: !course.alreadyBuy &&
+                                                    !allProvider
+                                                        .everythingPurchased
                                                 ? Colors.red
                                                 : course.completed
                                                     ? Colors.green
@@ -186,7 +191,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           width: 80,
                                           child: Center(
                                             child: Text(
-                                              !course.alreadyBuy && !allProvider.everythingPurchased
+                                              !course.alreadyBuy &&
+                                                      !allProvider
+                                                          .everythingPurchased
                                                   ? 'Unlock'
                                                   : course.completed
                                                       ? 'Completed'
@@ -222,12 +229,20 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   Future<void> unlockExercise(CoursesExModel course) async {
+    // Verifica si las compras están disponibles
     final bool available = await inAppPurchase.isAvailable();
     if (!available) {
-      // Maneja el caso donde las compras no están disponibles
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseUnavailable,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+      );
       return;
     }
 
+    // Consulta el producto correspondiente
     final Set<String> ids = {course.productID};
     final ProductDetailsResponse response =
         await inAppPurchase.queryProductDetails(ids);
@@ -239,8 +254,24 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       final PurchaseParam purchaseParam =
           PurchaseParam(productDetails: productDetails);
       inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+
+      // Muestra un mensaje de confirmación
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
     } else {
       // Maneja el caso donde el producto no fue encontrado
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.productNotFound,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.orange,
+        textColor: Colors.white,
+      );
     }
   }
 
@@ -259,7 +290,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
 
   void _handlePurchase(PurchaseDetails purchaseDetails) async {
     try {
-      if (purchaseDetails.status == PurchaseStatus.purchased || purchaseDetails.status == PurchaseStatus.restored) {
+      if (purchaseDetails.status == PurchaseStatus.purchased ||
+          purchaseDetails.status == PurchaseStatus.restored) {
         // Compra completada con éxito
         await _verifyPurchase(purchaseDetails);
         _unlockContent(purchaseDetails.productID);
@@ -300,7 +332,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     setState(() {
       course.alreadyBuy = true; // Marca como comprado
     });
-    if(productID == "com.mrrubik.learnswift.everythingunlocked"){
+    if (productID == "com.mrrubik.learnswift.everythingunlocked") {
       widget.allProvider!.setEverythingUnlocked(true);
     }
 
@@ -308,148 +340,135 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   void _showUnlockDialog(CoursesExModel course) {
-  showDialog(
-    context: context,
-    builder: (context) {
-      return AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        title: Row(
-          children: [
-            Icon(Icons.lock_open, color: Colors.deepOrange),
-            SizedBox(width: 8),
-            Text(
-              AppLocalizations.of(context)!.unlockExerciseTitle,
-              style: const TextStyle(
-                fontFamily: 'InconsolataRegular',
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-                fontSize: 20,
-              ),
-            ),
-          ],
-        ),
-        content: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          title: Row(
             children: [
+              Icon(Icons.lock_open, color: Colors.deepOrange),
+              SizedBox(width: 8),
               Text(
-                AppLocalizations.of(context)!.unlockExerciseContent(course.exerciseName),
+                AppLocalizations.of(context)!.unlockExerciseTitle,
                 style: const TextStyle(
                   fontFamily: 'InconsolataRegular',
-                  fontWeight: FontWeight.normal,
-                  color: Colors.black87,
-                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                  fontSize: 20,
                 ),
-              ),
-              SizedBox(height: 16),
-              Divider(color: Colors.grey.shade300),
-              SizedBox(height: 8),
-              Row(
-                children: [
-                  Icon(Icons.shopping_cart, color: Colors.deepOrange),
-                  SizedBox(width: 8),
-                  Text(
-                    AppLocalizations.of(context)!.buyExercise,
-                    style: TextStyle(color: Colors.black87),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Icon(Icons.all_inclusive, color: Colors.green),
-                  SizedBox(width: 8),
-                  Text(
-                    AppLocalizations.of(context)!.buyAllExercises,
-                    style: TextStyle(color: Colors.black87),
-                  ),
-                ],
-              ),
-              SizedBox(height: 16),
-              Row(
-                children: [
-                  Icon(Icons.restore, color: Colors.blue),
-                  SizedBox(width: 8),
-                  Text(
-                    AppLocalizations.of(context)!.restorePurchases,
-                    style: TextStyle(color: Colors.black87),
-                  ),
-                ],
               ),
             ],
           ),
-        ),
-        actionsAlignment: MainAxisAlignment.spaceEvenly,
-        actions: [
-          
-          Center(
-            child: ElevatedButton.icon(
-              onPressed: () async {
-                Navigator.of(context).pop(); // Cerrar diálogo
-                await unlockExercise(course); // Comprar este ejercicio
-              },
-              icon: Icon(Icons.shopping_cart_outlined),
-              label: Text(AppLocalizations.of(context)!.buyExercise),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepOrange,
-                foregroundColor: Colors.white,
-              ),
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  AppLocalizations.of(context)!
+                      .unlockExerciseContent(course.exerciseName),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black87,
+                    fontSize: 16,
+                  ),
+                ),
+                SizedBox(height: 16),
+                Divider(color: Colors.grey.shade300),
+                SizedBox(height: 8),
+                Row(
+                  children: [
+                    Icon(Icons.shopping_cart, color: Colors.deepOrange),
+                    SizedBox(width: 8),
+                    Text(
+                      AppLocalizations.of(context)!.buyExercise,
+                      style: TextStyle(color: Colors.black87),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 16),
+                Row(
+                  children: [
+                    Icon(Icons.all_inclusive, color: Colors.green),
+                    SizedBox(width: 8),
+                    Text(
+                      AppLocalizations.of(context)!.buyAllExercises,
+                      style: TextStyle(color: Colors.black87),
+                    ),
+                  ],
+                ),
+                SizedBox(height: 16),
+                Row(
+                  children: [
+                    Icon(Icons.restore, color: Colors.blue),
+                    SizedBox(width: 8),
+                    Text(
+                      AppLocalizations.of(context)!.restorePurchases,
+                      style: TextStyle(color: Colors.black87),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
-          Center(
-            child: ElevatedButton.icon(
-              onPressed: () async {
-                Navigator.of(context).pop(); // Cerrar diálogo
-                await _unlockAllExercises(); // Comprar todos los ejercicios
-              },
-              icon: Icon(Icons.all_inclusive),
-              label: Text(AppLocalizations.of(context)!.buyAllExercises),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.green,
-                foregroundColor: Colors.white,
+          actionsAlignment: MainAxisAlignment.spaceEvenly,
+          actions: [
+            Center(
+              child: ElevatedButton.icon(
+                onPressed: () async {
+                  Navigator.of(context).pop(); // Cerrar diálogo
+                  await unlockExercise(course); // Comprar este ejercicio
+                },
+                icon: Icon(Icons.shopping_cart_outlined),
+                label: Text(AppLocalizations.of(context)!.buyExercise),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepOrange,
+                  foregroundColor: Colors.white,
+                ),
               ),
             ),
-          ),
-          Center(
-            child: OutlinedButton.icon(
-              onPressed: () async {
-                Navigator.of(context).pop(); // Cerrar diálogo
-                 restorePurchases(); // Restaurar compras
-              },
-              icon: Icon(Icons.restore),
-              label: Text(AppLocalizations.of(context)!.restorePurchases),
-              style: OutlinedButton.styleFrom(
-                foregroundColor: Colors.blue,
-                side: BorderSide(color: Colors.blue),
+            Center(
+              child: ElevatedButton.icon(
+                onPressed: () async {
+                  Navigator.of(context).pop(); // Cerrar diálogo
+                  await _unlockAllExercises(); // Comprar todos los ejercicios
+                },
+                icon: Icon(Icons.all_inclusive),
+                label: Text(AppLocalizations.of(context)!.buyAllExercises),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  foregroundColor: Colors.white,
+                ),
               ),
             ),
-          ),
-        ],
-      );
-    },
-  );
-}
-
-
-  void restorePurchases() {
-    inAppPurchase.purchaseStream
-        .listen((List<PurchaseDetails> purchaseDetailsList) {
-      for (var purchase in purchaseDetailsList) {
-        if (purchase.status == PurchaseStatus.purchased ||
-            purchase.status == PurchaseStatus.restored) {
-          // Desbloquear el contenido correspondiente
-          _unlockContent(purchase.productID);
-        }
-      }
-    });
-    print('Intentando restaurar compras...');
+            Center(
+              child: OutlinedButton.icon(
+                onPressed: () async {
+                  Navigator.of(context).pop(); // Cerrar diálogo
+                  restorePurchases(); // Restaurar compras
+                },
+                icon: Icon(Icons.restore),
+                label: Text(AppLocalizations.of(context)!.restorePurchases),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.blue,
+                  side: BorderSide(color: Colors.blue),
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
+
+ 
 
   Future<void> _unlockAllExercises() async {
     final Set<String> ids = {
-      'com.tuapp.unlockall'
+      'com.mrrubik.learnswift.everythingunlocked'
     }; // ID del producto para desbloquear todo
     final ProductDetailsResponse response =
         await inAppPurchase.queryProductDetails(ids);
@@ -461,11 +480,86 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           PurchaseParam(productDetails: productDetails);
       inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      // Escucha el resultado de la compra desde el purchaseStream
+      // Muestra un mensaje de confirmación
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
     } else {
-      print('Producto para desbloquear todos los ejercicios no encontrado.');
+     // Maneja el caso donde el producto no fue encontrado
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.productNotFound,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.orange,
+        textColor: Colors.white,
+      );
     }
   }
+
+  void restorePurchases() {
+  try {
+    inAppPurchase.purchaseStream
+        .listen((List<PurchaseDetails> purchaseDetailsList) {
+      bool restored = false; // Indica si se restauraron compras exitosamente.
+
+      for (var purchase in purchaseDetailsList) {
+        if (purchase.status == PurchaseStatus.purchased ||
+            purchase.status == PurchaseStatus.restored) {
+          restored = true;
+          // Desbloquear el contenido correspondiente
+          _unlockContent(purchase.productID);
+        } else if (purchase.status == PurchaseStatus.error) {
+          // Maneja el error de la compra
+          Fluttertoast.showToast(
+            msg: AppLocalizations.of(context)!.restoreError,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            backgroundColor: Colors.red,
+            textColor: Colors.white,
+          );
+          print('Error durante la restauración: ${purchase.error}');
+        }
+      }
+
+      if (restored) {
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.restoreSuccess,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.green,
+          textColor: Colors.white,
+        );
+        print('Restauración de compras completada.');
+      } else {
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.noPurchasesToRestore,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.orange,
+          textColor: Colors.white,
+        );
+        print('No hay compras para restaurar.');
+      }
+    });
+
+    print('Intentando restaurar compras...');
+  } catch (e) {
+    // Manejamos cualquier error no previsto
+    Fluttertoast.showToast(
+      msg: AppLocalizations.of(context)!.unexpectedRestoreError,
+      toastLength: Toast.LENGTH_LONG,
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.red,
+      textColor: Colors.white,
+    );
+    print('Error inesperado durante la restauración: $e');
+  }
+}
+
 
   void navToEx(int courseCat, int id, String title) {
     switch (courseCat) {

@@ -176,7 +176,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           decoration: BoxDecoration(
                                             borderRadius:
                                                 BorderRadius.circular(10),
-                                            color: !course.alreadyBuy
+                                            color: !course.alreadyBuy && !allProvider.everythingPurchased
                                                 ? Colors.red
                                                 : course.completed
                                                     ? Colors.green
@@ -186,7 +186,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           width: 80,
                                           child: Center(
                                             child: Text(
-                                              !course.alreadyBuy
+                                              !course.alreadyBuy && !allProvider.everythingPurchased
                                                   ? 'Unlock'
                                                   : course.completed
                                                       ? 'Completed'

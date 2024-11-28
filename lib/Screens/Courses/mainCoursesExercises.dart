@@ -5,6 +5,7 @@ import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -159,8 +160,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                       ),
                                     ),
                                     InkWell(
-                                      onTap: () async {
-                                        if (!course.alreadyBuy) {
+                                      onTap: ()  {
+                                         allProvider.setEverythingUnlocked(Constant.everythingunlocked);
+                                        if (!course.alreadyBuy && !allProvider.everythingPurchased) {
                                           _showUnlockDialog(
                                               course); // Muestra el diálogo para desbloquear
                                         } else {

@@ -4,6 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AllProvider with ChangeNotifier {
+  
   List<CoursesExModel> _data = [];
   int _courseCategory = 0;
   int _completedCount = 0;
@@ -18,7 +19,7 @@ class AllProvider with ChangeNotifier {
   void setEverythingUnlocked(bool newData) async {
     _everythingPurchased = newData;
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('aplicationPurchased', newData);
+    await prefs.setBool('everythingunlocked', newData);
     notifyListeners();
   }
 

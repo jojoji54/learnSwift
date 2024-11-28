@@ -1,6 +1,7 @@
 class CoursesExModel {
   final int id;
   final String exerciseName;
+  final String productID; // Identificador único del producto en App Store
   bool alreadyBuy;
   bool completed;
 
@@ -8,6 +9,7 @@ class CoursesExModel {
   CoursesExModel({
     required this.id,
     required this.exerciseName,
+    required this.productID,
     required this.alreadyBuy,
     required this.completed,
   });
@@ -17,6 +19,7 @@ class CoursesExModel {
     return CoursesExModel(
       id: json['id'],
       exerciseName: json['exerciseName'],
+      productID: json['productID'],
       alreadyBuy: json['alreadyBuy'],
       completed: json['completed'],
     );
@@ -27,6 +30,7 @@ class CoursesExModel {
     return {
       'id': id,
       'exerciseName': exerciseName,
+      'productID': productID,
       'alreadyBuy': alreadyBuy,
       'completed': completed,
     };

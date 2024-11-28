@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
+import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
@@ -11,17 +16,20 @@ import 'package:provider/provider.dart';
 class MainCoursesExercises extends StatefulWidget {
   final int id;
   final String title;
-  const MainCoursesExercises(
-      {super.key, required this.id, required this.title});
+  AllProvider? allProvider;
+  MainCoursesExercises(
+      {super.key, required this.id, required this.title, this.allProvider});
 
   @override
   State<MainCoursesExercises> createState() => _MainCoursesExercisesState();
 }
 
 class _MainCoursesExercisesState extends State<MainCoursesExercises> {
+  final InAppPurchase inAppPurchase = InAppPurchase.instance;
   @override
   void initState() {
     super.initState();
+    listenToPurchaseUpdates();
   }
 
   @override
@@ -151,9 +159,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                       ),
                                     ),
                                     InkWell(
-                                      onTap: () {
-                                        navToEx(allProvider.courseCategory,
-                                            course.id, course.exerciseName);
+                                      onTap: () async {
+                                        if (!course.alreadyBuy) {
+                                          _showUnlockDialog(
+                                              course); // Muestra el diálogo para desbloquear
+                                        } else {
+                                          navToEx(allProvider.courseCategory,
+                                              course.id, course.exerciseName);
+                                        }
                                       },
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
@@ -204,6 +217,252 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         ],
       ),
     );
+  }
+
+  Future<void> unlockExercise(CoursesExModel course) async {
+    final bool available = await inAppPurchase.isAvailable();
+    if (!available) {
+      // Maneja el caso donde las compras no están disponibles
+      return;
+    }
+
+    final Set<String> ids = {course.productID};
+    final ProductDetailsResponse response =
+        await inAppPurchase.queryProductDetails(ids);
+
+    if (response.productDetails.isNotEmpty) {
+      final ProductDetails productDetails = response.productDetails.first;
+
+      // Inicia la compra
+      final PurchaseParam purchaseParam =
+          PurchaseParam(productDetails: productDetails);
+      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+    } else {
+      // Maneja el caso donde el producto no fue encontrado
+    }
+  }
+
+  void listenToPurchaseUpdates() {
+    try {
+      inAppPurchase.purchaseStream
+          .listen((List<PurchaseDetails> purchaseDetailsList) {
+        for (var purchaseDetails in purchaseDetailsList) {
+          _handlePurchase(purchaseDetails);
+        }
+      });
+    } catch (e) {
+      debugPrint(e.toString());
+    }
+  }
+
+  void _handlePurchase(PurchaseDetails purchaseDetails) async {
+    try {
+      if (purchaseDetails.status == PurchaseStatus.purchased || purchaseDetails.status == PurchaseStatus.restored) {
+        // Compra completada con éxito
+        await _verifyPurchase(purchaseDetails);
+        _unlockContent(purchaseDetails.productID);
+      } else if (purchaseDetails.status == PurchaseStatus.error) {
+        // Maneja errores durante la compra
+        print('Error durante la compra: ${purchaseDetails.error}');
+      } else if (purchaseDetails.status == PurchaseStatus.pending) {
+        // Compra pendiente
+        print('Compra pendiente. Esperando confirmación...');
+      }
+
+      // Completa la compra para notificar a la plataforma
+      if (purchaseDetails.pendingCompletePurchase) {
+        await inAppPurchase.completePurchase(purchaseDetails);
+      }
+    } catch (e) {
+      debugPrint(e.toString());
+    }
+  }
+
+  Future<void> _verifyPurchase(PurchaseDetails purchaseDetails) async {
+    // Verifica el recibo en tu servidor o de manera local
+    print('Verificando compra para el producto: ${purchaseDetails.productID}');
+    // Para desarrollo, asumimos que siempre es válida
+  }
+
+  void _unlockContent(String productID) async {
+    // Encuentra el curso correspondiente por productID
+    final course = widget.allProvider!.data
+        .firstWhere((course) => course.productID == productID);
+    PurchaseManagerSingleton().updateItemAndSave(
+      course.id,
+      purchased: true,
+    );
+    await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+      PurchaseManagerSingleton().purchaseAndDevelop,
+    );
+    setState(() {
+      course.alreadyBuy = true; // Marca como comprado
+    });
+    if(productID == "com.mrrubik.learnswift.everythingunlocked"){
+      widget.allProvider!.setEverythingUnlocked(true);
+    }
+
+    print('Contenido desbloqueado para el producto: $productID');
+  }
+
+  void _showUnlockDialog(CoursesExModel course) {
+  showDialog(
+    context: context,
+    builder: (context) {
+      return AlertDialog(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        title: Row(
+          children: [
+            Icon(Icons.lock_open, color: Colors.deepOrange),
+            SizedBox(width: 8),
+            Text(
+              AppLocalizations.of(context)!.unlockExerciseTitle,
+              style: const TextStyle(
+                fontFamily: 'InconsolataRegular',
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+                fontSize: 20,
+              ),
+            ),
+          ],
+        ),
+        content: SingleChildScrollView(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                AppLocalizations.of(context)!.unlockExerciseContent(course.exerciseName),
+                style: const TextStyle(
+                  fontFamily: 'InconsolataRegular',
+                  fontWeight: FontWeight.normal,
+                  color: Colors.black87,
+                  fontSize: 16,
+                ),
+              ),
+              SizedBox(height: 16),
+              Divider(color: Colors.grey.shade300),
+              SizedBox(height: 8),
+              Row(
+                children: [
+                  Icon(Icons.shopping_cart, color: Colors.deepOrange),
+                  SizedBox(width: 8),
+                  Text(
+                    AppLocalizations.of(context)!.buyExercise,
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              Row(
+                children: [
+                  Icon(Icons.all_inclusive, color: Colors.green),
+                  SizedBox(width: 8),
+                  Text(
+                    AppLocalizations.of(context)!.buyAllExercises,
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ],
+              ),
+              SizedBox(height: 16),
+              Row(
+                children: [
+                  Icon(Icons.restore, color: Colors.blue),
+                  SizedBox(width: 8),
+                  Text(
+                    AppLocalizations.of(context)!.restorePurchases,
+                    style: TextStyle(color: Colors.black87),
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
+        actionsAlignment: MainAxisAlignment.spaceEvenly,
+        actions: [
+          
+          Center(
+            child: ElevatedButton.icon(
+              onPressed: () async {
+                Navigator.of(context).pop(); // Cerrar diálogo
+                await unlockExercise(course); // Comprar este ejercicio
+              },
+              icon: Icon(Icons.shopping_cart_outlined),
+              label: Text(AppLocalizations.of(context)!.buyExercise),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepOrange,
+                foregroundColor: Colors.white,
+              ),
+            ),
+          ),
+          Center(
+            child: ElevatedButton.icon(
+              onPressed: () async {
+                Navigator.of(context).pop(); // Cerrar diálogo
+                await _unlockAllExercises(); // Comprar todos los ejercicios
+              },
+              icon: Icon(Icons.all_inclusive),
+              label: Text(AppLocalizations.of(context)!.buyAllExercises),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.green,
+                foregroundColor: Colors.white,
+              ),
+            ),
+          ),
+          Center(
+            child: OutlinedButton.icon(
+              onPressed: () async {
+                Navigator.of(context).pop(); // Cerrar diálogo
+                 restorePurchases(); // Restaurar compras
+              },
+              icon: Icon(Icons.restore),
+              label: Text(AppLocalizations.of(context)!.restorePurchases),
+              style: OutlinedButton.styleFrom(
+                foregroundColor: Colors.blue,
+                side: BorderSide(color: Colors.blue),
+              ),
+            ),
+          ),
+        ],
+      );
+    },
+  );
+}
+
+
+  void restorePurchases() {
+    inAppPurchase.purchaseStream
+        .listen((List<PurchaseDetails> purchaseDetailsList) {
+      for (var purchase in purchaseDetailsList) {
+        if (purchase.status == PurchaseStatus.purchased ||
+            purchase.status == PurchaseStatus.restored) {
+          // Desbloquear el contenido correspondiente
+          _unlockContent(purchase.productID);
+        }
+      }
+    });
+    print('Intentando restaurar compras...');
+  }
+
+  Future<void> _unlockAllExercises() async {
+    final Set<String> ids = {
+      'com.tuapp.unlockall'
+    }; // ID del producto para desbloquear todo
+    final ProductDetailsResponse response =
+        await inAppPurchase.queryProductDetails(ids);
+
+    if (response.productDetails.isNotEmpty) {
+      final ProductDetails productDetails = response.productDetails.first;
+
+      final PurchaseParam purchaseParam =
+          PurchaseParam(productDetails: productDetails);
+      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+
+      // Escucha el resultado de la compra desde el purchaseStream
+    } else {
+      print('Producto para desbloquear todos los ejercicios no encontrado.');
+    }
   }
 
   void navToEx(int courseCat, int id, String title) {

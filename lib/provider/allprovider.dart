@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class AllProvider with ChangeNotifier {
   List<CoursesExModel> _data = [];
   int _courseCategory = 0;
   int _completedCount = 0;
+  bool _everythingPurchased = Constant.everythingunlocked;
 
   // Getters
   List<CoursesExModel> get data => _data;
   int get courseCategory => _courseCategory;
   int get completedCount => _completedCount;
+  bool get everythingPurchased => _everythingPurchased;
+
+  void setEverythingUnlocked(bool newData) async {
+    _everythingPurchased = newData;
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('aplicationPurchased', newData);
+    notifyListeners();
+  }
 
   // Método para actualizar un elemento específico
   void setData(List<CoursesExModel> newData) {
@@ -44,6 +55,4 @@ class AllProvider with ChangeNotifier {
     // Notificar a los widgets que escuchan
     notifyListeners();
   }
-
- 
 }

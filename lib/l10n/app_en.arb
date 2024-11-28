@@ -84,7 +84,22 @@
     "exercise15Hint2Content": "Define a function for Fahrenheit to Celsius using the formula `(Fahrenheit - 32) * 5 / 9`.",
     "exercise15SolutionContent": "The correct answer is:\n\nfunc convertToFahrenheit(celsius: Double) -> Double @\n    return (celsius * 9 / 5) + 32\n&\nfunc convertToCelsius(fahrenheit: Double) -> Double @\n    return (fahrenheit - 32) * 5 / 9\n&\nlet tempInCelsius = 25.0\nlet tempInFahrenheit = 77.0\nprint(convertToFahrenheit(celsius: tempInCelsius))\nprint(convertToCelsius(fahrenheit: tempInFahrenheit))", 
     "exercise3Hint1Content": "Remember to use the `print()` function to display a message in the console.\n\nFor example:\n```swift\nprint(\"Hello, World!\")\n```", 
-    "exercise3Hint2Content": "Make sure your message is enclosed in double quotes.\n\nExample:\n```swift\nprint(\"Swift is fun!\")\n```"
+    "exercise3Hint2Content": "Make sure your message is enclosed in double quotes.\n\nExample:\n```swift\nprint(\"Swift is fun!\")\n```", 
+    "unlockExerciseTitle": "Unlock Exercise?",
+    "unlockExerciseContent": "Do you want to unlock the exercise \"{exerciseName}\"? You can do so in the following ways:",
+    "cancel": "Cancel",
+    "buyExercise": "Buy this exercise",
+    "buyAllExercises": "Unlock all exercises",
+    "restorePurchases": "Restore purchases",
+    "@unlockExerciseContent": {
+      "description": "Message displayed when asking the user if they want to unlock a specific exercise",
+      "placeholders": {
+        "exerciseName": {
+          "type": "String",
+          "example": "Hello World"
+        }
+      }
+    }
 
 
 

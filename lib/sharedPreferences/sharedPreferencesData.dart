@@ -11,6 +11,8 @@ static Future<void> cargarPreferencias() async {
   final SharedPreferences prefs = await SharedPreferences.getInstance();
 
   String? encodedList = prefs.getString('purchasesAndDevelopmentList');
+  Constant.aplicationPurchased = prefs.getBool('aplicationPurchased')??false;
+
   List<PurchasesAndDevelopment> loadedData;
 
   if (encodedList != null) {

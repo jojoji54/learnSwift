@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         builder: (context) =>
                                             MainCoursesExercises(
                                                 id: course.id,
-                                                title: course.generalName),
+                                                title: course.generalName, allProvider: allProvider,),
                                       ),
                                     );
                                   },

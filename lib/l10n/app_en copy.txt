@@ -1,0 +1,18 @@
+#
+  "exercise45IntroTitle": "Instrucciones del Ejercicio",
+  "exercise45IntroContent": "Crea un programa que asigne calificaciones según una puntuación:\n\n1. Si `score >= 90`, calificación `A`.\n2. Si `score >= 80`, calificación `B`.\n3. Si `score >= 70`, calificación `C`.\n4. Si `score >= 60`, calificación `D`.\n5. Si `score < 60`, calificación `F`.",
+  "exercise45CorrectTitle": "¡Correcto! 🎉",
+  "exercise45CorrectContent": "¡Bien hecho! Has implementado correctamente un sistema de calificaciones con `if-else`.",
+  "exercise45Hint1Title": "Pista 1",
+  "exercise45Hint1Content": "Declara una variable `score`. Ejemplo: `var score = 85`.",
+  "exercise45Hint2Title": "Pista 2",
+  "exercise45Hint2Content": "Usa `if` para comprobar si `score >= 90`, y añade `else-if` para otros rangos.",
+  "exercise45Hint3Title": "Pista 3",
+  "exercise45Hint3Content": "Completa la estructura para todos los rangos de calificación.",
+  "exercise45SolutionTitle": "Solución",
+  "exercise45SolutionContent": "La solución correcta es:\n\n```swift\nvar score = 85;\nif (score >= 90) #\n    print(\"The grade is A\");\nº else if (score >= 80) #\n    print(\"The grade is B\");\nº else if (score >= 70) #\n    print(\"The grade is C\");\nº else if (score >= 60) #\n    print(\"The grade is D\");\nº else #\n    print(\"The grade is F\");\nº\n```",
+  "exercise45TryAgain": "¡Inténtalo de nuevo! (#0º/3 intentos)",
+  "exercise45Example": "Ejemplo:\n\n```swift\nvar score = 85;\nif (score >= 90) #\n    print(\"The grade is A\");\nº else # ... º\n```",
+  "exercise45Hint": "Escribe tu código aquí",
+  "close": "Cerrar"
+º

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx34 extends StatefulWidget {
   final String title;
@@ -66,11 +67,8 @@ class _IfElsEx34State extends State<IfElsEx34> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used `if-else` with comparison operators.\n\n"
-        "Explanation:\n"
-        "- The `>=` operator checks if a value is greater than or equal to another.\n"
-        "- This is useful for decision-making based on numeric comparisons.",
+        AppLocalizations.of(context)!.exercise34CorrectTitle,
+        AppLocalizations.of(context)!.exercise34CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -81,40 +79,33 @@ class _IfElsEx34State extends State<IfElsEx34> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Declare a variable `age` and assign it a number, e.g., `var age = 16`.\n"
-          "Then use an `if` statement to check if `age >= 18`.",
+          AppLocalizations.of(context)!.exercise34Hint1Title,
+          AppLocalizations.of(context)!.exercise34Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Structure your code like this:\n"
-          '```swift\n'
-          'if (age >= 18) {\n'
-          '  print("You are an adult");\n'
-          '} else {\n'
-          '  print("You are underage");\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise34Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise34Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var age = 16;\n'
-          'if (age >= 18) {\n'
-          '  print("You are an adult");\n'
-          '} else {\n'
-          '  print("You are underage");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise34SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise34SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -133,12 +124,8 @@ class _IfElsEx34State extends State<IfElsEx34> {
               heroTag: "introButtonComparisonOperators",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to If-Else with Comparison Operators! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `age` and assign it a number.\n"
-                  "2. Use an `if` statement to check if `age >= 18`.\n"
-                  "3. Print \"You are an adult\" if true, or \"You are underage\" otherwise.",
+                  AppLocalizations.of(context)!.exercise34IntroTitle,
+                  AppLocalizations.of(context)!.exercise34IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -161,16 +148,11 @@ class _IfElsEx34State extends State<IfElsEx34> {
                 heroTag: "helpButtonComparisonOperators",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var age = 16;\n'
-                    'if (age >= 18) {\n'
-                    '  print("You are an adult");\n'
-                    '} else {\n'
-                    '  print("You are underage");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise34SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise34SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -190,46 +172,14 @@ class _IfElsEx34State extends State<IfElsEx34> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "age ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 16;\n2  if (",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "age >= 18",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n3  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("You are an adult");\n4  } else {\n5  ',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: 'print("You are underage");\n6  }',
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise34Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -242,10 +192,10 @@ class _IfElsEx34State extends State<IfElsEx34> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise34Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

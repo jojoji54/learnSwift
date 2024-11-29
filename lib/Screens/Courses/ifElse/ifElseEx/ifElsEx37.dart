@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx37 extends StatefulWidget {
   final String title;
@@ -7,8 +8,7 @@ class IfElsEx37 extends StatefulWidget {
   const IfElsEx37({super.key, required this.title, required this.id});
 
   @override
-  State<IfElsEx37> createState() =>
-      _IfElsEx37State();
+  State<IfElsEx37> createState() => _IfElsEx37State();
 }
 
 class _IfElsEx37State extends State<IfElsEx37> {
@@ -67,11 +67,8 @@ class _IfElsEx37State extends State<IfElsEx37> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used `if-else` to compare numerical values.\n\n"
-        "Explanation:\n"
-        "- Use comparison operators like `>`, `<`, `>=`, and `<=` to evaluate numbers.\n"
-        "- The code inside `if` executes if the condition is true; otherwise, the `else` block runs.",
+        AppLocalizations.of(context)!.exercise37CorrectTitle,
+        AppLocalizations.of(context)!.exercise37CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -82,32 +79,33 @@ class _IfElsEx37State extends State<IfElsEx37> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable `temperature` and assigning it a number, e.g., `var temperature = 25`.",
+          AppLocalizations.of(context)!.exercise37Hint1Title,
+          AppLocalizations.of(context)!.exercise37Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use `if` to compare `temperature` to another number, e.g., `if (temperature > 20) { ... }`.",
+          AppLocalizations.of(context)!.exercise37Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise37Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var temperature = 25;\n'
-          'if (temperature > 20) {\n'
-          '    print("It\'s warm!");\n'
-          '} else {\n'
-          '    print("It\'s cold!");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise37SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise37SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -126,19 +124,8 @@ class _IfElsEx37State extends State<IfElsEx37> {
               heroTag: "introButton4",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Numerical Comparisons! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable named `temperature` and assign it a numerical value.\n"
-                  "2. Use `if` to check if the value is greater, less than, or equal to a specific number.\n"
-                  "3. Use `else` to handle other cases.\n\n"
-                  "Example:\n"
-                  "var temperature = 25\n"
-                  "if (temperature > 20) {\n"
-                  "    print(\"It's warm!\")\n"
-                  "} else {\n"
-                  "    print(\"It's cold!\")\n"
-                  "}",
+                  AppLocalizations.of(context)!.exercise37IntroTitle,
+                  AppLocalizations.of(context)!.exercise37IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -161,16 +148,11 @@ class _IfElsEx37State extends State<IfElsEx37> {
                 heroTag: "helpButton4",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var temperature = 25;\n'
-                    'if (temperature > 20) {\n'
-                    '    print("It\'s warm!");\n'
-                    '} else {\n'
-                    '    print("It\'s cold!");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise37SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise37SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -190,38 +172,14 @@ class _IfElsEx37State extends State<IfElsEx37> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "temperature ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 25;\n2  if ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "(temperature > 20) ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "{\n    print(\"It's warm!\");\n} else {\n    print(\"It's cold!\");\n}",
-                        style: TextStyle(color: Colors.black),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise37Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -234,10 +192,10 @@ class _IfElsEx37State extends State<IfElsEx37> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise37Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

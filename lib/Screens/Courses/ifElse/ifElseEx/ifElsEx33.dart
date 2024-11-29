@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx33 extends StatefulWidget {
   final String title;
@@ -66,13 +67,8 @@ class _IfElsEx33State extends State<IfElsEx33> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used if-else with equality checks in Swift.\n\n"
-        "Explanation:\n"
-        "- Use `==` to compare if two values are equal.\n"
-        "- If they are equal, the `if` block executes.\n"
-        "- Otherwise, the `else` block executes.\n\n"
-        "This is essential for decision-making in programs.",
+        AppLocalizations.of(context)!.exercise33CorrectTitle,
+        AppLocalizations.of(context)!.exercise33CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -83,40 +79,30 @@ class _IfElsEx33State extends State<IfElsEx33> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable, e.g., `var password = \"swift\"`.\n"
-          "Then use an `if` statement to check if it equals \"swift\".",
+          AppLocalizations.of(context)!.exercise33Hint1Title,
+          AppLocalizations.of(context)!.exercise33Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Structure your code like this:\n"
-          '```swift\n'
-          'if (password == "swift") {\n'
-          '  print("Access granted");\n'
-          '} else {\n'
-          '  print("Access denied");\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise33Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise33Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var password = "swift";\n'
-          'if (password == "swift") {\n'
-          '  print("Access granted");\n'
-          '} else {\n'
-          '  print("Access denied");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise33SolutionTitle,
+          AppLocalizations.of(context)!.exercise33SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -135,12 +121,8 @@ class _IfElsEx33State extends State<IfElsEx33> {
               heroTag: "introButtonEqualityCheck",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to If-Else with Equality Checks! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `password` and assign it the value \"swift\".\n"
-                  "2. Use an `if` statement to check if `password` equals \"swift\".\n"
-                  "3. Print \"Access granted\" if true, or \"Access denied\" otherwise.",
+                  AppLocalizations.of(context)!.exercise33IntroTitle,
+                  AppLocalizations.of(context)!.exercise33IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -163,16 +145,8 @@ class _IfElsEx33State extends State<IfElsEx33> {
                 heroTag: "helpButtonEqualityCheck",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var password = "swift";\n'
-                    'if (password == "swift") {\n'
-                    '  print("Access granted");\n'
-                    '} else {\n'
-                    '  print("Access denied");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise33SolutionTitle,
+                    AppLocalizations.of(context)!.exercise33SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -192,46 +166,14 @@ class _IfElsEx33State extends State<IfElsEx33> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "password ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= \"swift\";\n2  if (",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "password == \"swift\"",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n3  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("Access granted");\n4  } else {\n5  ',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: 'print("Access denied");\n6  }',
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise33Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -244,10 +186,10 @@ class _IfElsEx33State extends State<IfElsEx33> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise33Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

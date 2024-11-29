@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx31 extends StatefulWidget {
   final String title;
@@ -66,12 +67,8 @@ class _IfElsEx31State extends State<IfElsEx31> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used an if-else statement in Swift.\n\n"
-        "Explanation:\n"
-        "- The `if` block runs when the condition is true.\n"
-        "- The `else` block runs when the condition is false.\n\n"
-        "This allows you to make decisions based on conditions in your code.",
+        AppLocalizations.of(context)!.exercise31CorrectTitle,
+        AppLocalizations.of(context)!.exercise31CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -82,39 +79,33 @@ class _IfElsEx31State extends State<IfElsEx31> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable, e.g., `var score = 80`. Use an `if` block to check the value.",
+          AppLocalizations.of(context)!.exercise31Hint1Title,
+          AppLocalizations.of(context)!.exercise31Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "An example structure could be:\n"
-          '```swift\n'
-          'if (score > 70) {\n'
-          '  print("Passed");\n'
-          '} else {\n'
-          '  print("Failed");\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise31Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise31Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var score = 80;\n'
-          'if (score > 70) {\n'
-          '  print("Passed");\n'
-          '} else {\n'
-          '  print("Failed");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise31SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise31SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -133,12 +124,8 @@ class _IfElsEx31State extends State<IfElsEx31> {
               heroTag: "introButtonIfElse",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to If-Else Basics! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `score` and assign it a value.\n"
-                  "2. Use an `if` block to check a condition (e.g., if the score is greater than 70).\n"
-                  "3. Print `Passed` if the condition is true; otherwise, print `Failed`.",
+                  AppLocalizations.of(context)!.exercise31IntroTitle,
+                  AppLocalizations.of(context)!.exercise31IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -161,16 +148,11 @@ class _IfElsEx31State extends State<IfElsEx31> {
                 heroTag: "helpButtonIfElse",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var score = 80;\n'
-                    'if (score > 70) {\n'
-                    '  print("Passed");\n'
-                    '} else {\n'
-                    '  print("Failed");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise31SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise31SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -190,46 +172,14 @@ class _IfElsEx31State extends State<IfElsEx31> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "score ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 80;\n2  if (",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "score > 70",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n3  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("Passed");\n4  } else {\n5  ',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: 'print("Failed");\n6  }',
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise31Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -242,10 +192,10 @@ class _IfElsEx31State extends State<IfElsEx31> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise31Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

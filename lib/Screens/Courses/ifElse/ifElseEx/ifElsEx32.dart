@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx32 extends StatefulWidget {
   final String title;
@@ -7,8 +8,7 @@ class IfElsEx32 extends StatefulWidget {
   const IfElsEx32({super.key, required this.title, required this.id});
 
   @override
-  State<IfElsEx32> createState() =>
-      _IfElsEx32State();
+  State<IfElsEx32> createState() => _IfElsEx32State();
 }
 
 class _IfElsEx32State extends State<IfElsEx32> {
@@ -67,13 +67,8 @@ class _IfElsEx32State extends State<IfElsEx32> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used if-else with multiple conditions in Swift.\n\n"
-        "Explanation:\n"
-        "- `if` is used for the first condition.\n"
-        "- `else if` allows for additional checks.\n"
-        "- `else` handles all other cases.\n\n"
-        "This structure is useful for checking multiple possibilities.",
+        AppLocalizations.of(context)!.exercise32CorrectTitle,
+        AppLocalizations.of(context)!.exercise32CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -84,43 +79,33 @@ class _IfElsEx32State extends State<IfElsEx32> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable, e.g., `var temperature = 25`. Use `if` to check its value.",
+          AppLocalizations.of(context)!.exercise32Hint1Title,
+          AppLocalizations.of(context)!.exercise32Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "An example structure could be:\n"
-          '```swift\n'
-          'if (temperature >= 30) {\n'
-          '  print("It\'s hot");\n'
-          '} else if (temperature < 15) {\n'
-          '  print("It\'s cold");\n'
-          '} else {\n'
-          '  print("It\'s warm");\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise32Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise32Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var temperature = 25;\n'
-          'if (temperature >= 30) {\n'
-          '  print("It\'s hot");\n'
-          '} else if (temperature < 15) {\n'
-          '  print("It\'s cold");\n'
-          '} else {\n'
-          '  print("It\'s warm");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise32SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise32SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -139,13 +124,8 @@ class _IfElsEx32State extends State<IfElsEx32> {
               heroTag: "introButtonMultipleConditions",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to If-Else with Multiple Conditions! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `temperature` and assign it a value.\n"
-                  "2. Use `if` to check if it's greater than or equal to 30 and print 'It's hot'.\n"
-                  "3. Use `else if` to check if it's less than 15 and print 'It's cold'.\n"
-                  "4. Use `else` to handle all other cases and print 'It's warm'.",
+                  AppLocalizations.of(context)!.exercise32IntroTitle,
+                  AppLocalizations.of(context)!.exercise32IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -168,18 +148,11 @@ class _IfElsEx32State extends State<IfElsEx32> {
                 heroTag: "helpButtonMultipleConditions",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var temperature = 25;\n'
-                    'if (temperature >= 30) {\n'
-                    '  print("It\'s hot");\n'
-                    '} else if (temperature < 15) {\n'
-                    '  print("It\'s cold");\n'
-                    '} else {\n'
-                    '  print("It\'s warm");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise32SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise32SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -199,58 +172,14 @@ class _IfElsEx32State extends State<IfElsEx32> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "temperature ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 25;\n2  if (",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "temperature >= 30",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n3  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("It\'s hot");\n4  } else if (',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: "temperature < 15",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n5  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("It\'s cold");\n6  } else {\n7  ',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: 'print("It\'s warm");\n8  }',
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise32Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -263,10 +192,10 @@ class _IfElsEx32State extends State<IfElsEx32> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise32Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

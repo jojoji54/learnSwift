@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx41 extends StatefulWidget {
   final String title;
@@ -66,13 +67,8 @@ class _IfElsEx41State extends State<IfElsEx41> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully implemented an admission evaluation system.\n\n"
-        "**Explanation:**\n"
-        "- `gpa >= 3.5` ensures the minimum academic requirement.\n"
-        "- `hasRecommendation` checks for a recommendation letter.\n"
-        "- `isExtraCurricularActive` validates participation in extracurricular activities.\n\n"
-        "Applicants meeting all criteria are admitted.",
+        AppLocalizations.of(context)!.exercise41CorrectTitle,
+        AppLocalizations.of(context)!.exercise41CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -83,44 +79,30 @@ class _IfElsEx41State extends State<IfElsEx41> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Declare variables:\n"
-          "- `gpa` (e.g., `3.8`)\n"
-          "- `hasRecommendation` (e.g., `true`)\n"
-          "- `isExtraCurricularActive` (e.g., `true`)",
+          AppLocalizations.of(context)!.exercise41Hint1Title,
+          AppLocalizations.of(context)!.exercise41Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use `if-else` to evaluate eligibility:\n"
-          '```swift\n'
-          'if gpa >= 3.5 && hasRecommendation == true && isExtraCurricularActive == true {\n'
-          '    print("Admitted");\n'
-          '} else {\n'
-          '    print("Not Admitted");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise41Hint2Title,
+          AppLocalizations.of(context)!.exercise41Hint2Content,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var gpa = 3.8;\n'
-          'var hasRecommendation = true;\n'
-          'var isExtraCurricularActive = true;\n'
-          'if gpa >= 3.5 && hasRecommendation == true && isExtraCurricularActive == true {\n'
-          '    print("Admitted");\n'
-          '} else {\n'
-          '    print("Not Admitted");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise41SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise41SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -139,12 +121,8 @@ class _IfElsEx41State extends State<IfElsEx41> {
               heroTag: "introButton",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Create a program to evaluate university admission:\n\n"
-                  "1. `gpa` (e.g., `3.8`) must be >= 3.5.\n"
-                  "2. `hasRecommendation` must be `true`.\n"
-                  "3. `isExtraCurricularActive` must be `true`.\n\n"
-                  "Print `Admitted` if all criteria are met. Otherwise, print `Not Admitted`.",
+                  AppLocalizations.of(context)!.exercise41IntroTitle,
+                  AppLocalizations.of(context)!.exercise41IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -167,18 +145,11 @@ class _IfElsEx41State extends State<IfElsEx41> {
                 heroTag: "helpButton",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var gpa = 3.8;\n'
-                    'var hasRecommendation = true;\n'
-                    'var isExtraCurricularActive = true;\n'
-                    'if gpa >= 3.5 && hasRecommendation == true && isExtraCurricularActive == true {\n'
-                    '    print("Admitted");\n'
-                    '} else {\n'
-                    '    print("Not Admitted");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise41SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise41SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -198,46 +169,14 @@ class _IfElsEx41State extends State<IfElsEx41> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "gpa ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 3.8;\n2  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "hasRecommendation ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n3  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "isExtraCurricularActive ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n4  if gpa >= 3.5 && hasRecommendation == true && isExtraCurricularActive == true {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "5    print(\"Admitted\");\n6  } else {\n7    print(\"Not Admitted\");\n8  }",
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise41Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -250,10 +189,10 @@ class _IfElsEx41State extends State<IfElsEx41> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise41Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

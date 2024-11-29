@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx40 extends StatefulWidget {
   final String title;
@@ -66,12 +67,8 @@ class _IfElsEx40State extends State<IfElsEx40> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Well done! You've implemented a grading system with multiple conditions.\n\n"
-        "**Explanation:**\n"
-        "- `A` is assigned for `score >= 90` and `participation == true`.\n"
-        "- Other scores are evaluated sequentially in descending order.\n\n"
-        "This approach helps to make decisions with multiple criteria.",
+        AppLocalizations.of(context)!.exercise40CorrectTitle,
+        AppLocalizations.of(context)!.exercise40CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -82,41 +79,33 @@ class _IfElsEx40State extends State<IfElsEx40> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring variables: `score` (integer) and `participation` (boolean).",
+          AppLocalizations.of(context)!.exercise40Hint1Title,
+          AppLocalizations.of(context)!.exercise40Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use `if` for the highest condition:\n"
-          "if score >= 90 && participation == true { ... }\n"
-          "and `else if` for other ranges.",
+          AppLocalizations.of(context)!.exercise40Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise40Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var score = 85;\n'
-          'var participation = true;\n'
-          'if score >= 90 && participation == true {\n'
-          '    print("A");\n'
-          '} else if score >= 80 {\n'
-          '    print("B");\n'
-          '} else if score >= 70 {\n'
-          '    print("C");\n'
-          '} else if score >= 60 {\n'
-          '    print("D");\n'
-          '} else {\n'
-          '    print("F");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise40SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise40SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -132,19 +121,11 @@ class _IfElsEx40State extends State<IfElsEx40> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButton4",
+              heroTag: "introButton",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Your task is to implement a grading system:\n\n"
-                  "1. Declare variables `score` (integer) and `participation` (boolean).\n"
-                  "2. Use `if-else` conditions:\n"
-                  "   - `A` for `score >= 90` and `participation == true`.\n"
-                  "   - `B` for `score >= 80`.\n"
-                  "   - `C` for `score >= 70`.\n"
-                  "   - `D` for `score >= 60`.\n"
-                  "   - `F` otherwise.\n"
-                  "3. Print the grade.",
+                  AppLocalizations.of(context)!.exercise40IntroTitle,
+                  AppLocalizations.of(context)!.exercise40IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -154,7 +135,7 @@ class _IfElsEx40State extends State<IfElsEx40> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButton4",
+              heroTag: "runButton",
               onPressed: _validateInput,
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -164,26 +145,14 @@ class _IfElsEx40State extends State<IfElsEx40> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButton4",
+                heroTag: "helpButton",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var score = 85;\n'
-                    'var participation = true;\n'
-                    'if score >= 90 && participation == true {\n'
-                    '    print("A");\n'
-                    '} else if score >= 80 {\n'
-                    '    print("B");\n'
-                    '} else if score >= 70 {\n'
-                    '    print("C");\n'
-                    '} else if score >= 60 {\n'
-                    '    print("D");\n'
-                    '} else {\n'
-                    '    print("F");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise40SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise40SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -203,54 +172,14 @@ class _IfElsEx40State extends State<IfElsEx40> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "score ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 85;\n2  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "participation ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n3  if (score >= 90 && participation == true) {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "4      print(\"A\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "5  } else if score >= 80 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "6      print(\"B\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "7  } else {\n8      print(\"...\");\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "9  }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise40Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -263,10 +192,10 @@ class _IfElsEx40State extends State<IfElsEx40> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise40Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

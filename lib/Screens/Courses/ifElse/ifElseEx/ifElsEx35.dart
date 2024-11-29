@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx35 extends StatefulWidget {
   final String title;
@@ -66,11 +67,8 @@ class _IfElsEx35State extends State<IfElsEx35> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used nested `if-else` statements.\n\n"
-        "Explanation:\n"
-        "- Nested `if-else` allows checking multiple conditions in sequence.\n"
-        "- In this exercise, the program evaluates a score and determines the grade category.",
+        AppLocalizations.of(context)!.exercise35CorrectTitle,
+        AppLocalizations.of(context)!.exercise35CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -81,47 +79,33 @@ class _IfElsEx35State extends State<IfElsEx35> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable `score` and assign it a value, e.g., `var score = 75`.",
+          AppLocalizations.of(context)!.exercise35Hint1Title,
+          AppLocalizations.of(context)!.exercise35Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use nested `if-else` to check the score:\n"
-          '```swift\n'
-          'if (score >= 90) {\n'
-          '  print("Excellent");\n'
-          '} else {\n'
-          '  if (score >= 60) {\n'
-          '    print("Pass");\n'
-          '  } else {\n'
-          '    print("Fail");\n'
-          '  }\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise35Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise35Hint2Content
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var score = 75;\n'
-          'if (score >= 90) {\n'
-          '  print("Excellent");\n'
-          '} else {\n'
-          '  if (score >= 60) {\n'
-          '    print("Pass");\n'
-          '  } else {\n'
-          '    print("Fail");\n'
-          '  }\n'
-          '}'
-          '```',
+          AppLocalizations.of(context)!.exercise35SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise35SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -140,15 +124,8 @@ class _IfElsEx35State extends State<IfElsEx35> {
               heroTag: "introButtonNested",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Nested If-Else Basics! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `score` and assign it a number.\n"
-                  "2. Use `if-else` statements to determine:\n"
-                  "   - `Excellent` for scores 90 and above.\n"
-                  "   - `Pass` for scores 60 to 89.\n"
-                  "   - `Fail` for scores below 60.\n"
-                  "3. Print the corresponding grade.",
+                  AppLocalizations.of(context)!.exercise35IntroTitle,
+                  AppLocalizations.of(context)!.exercise35IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -171,20 +148,11 @@ class _IfElsEx35State extends State<IfElsEx35> {
                 heroTag: "helpButtonNested",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var score = 75;\n'
-                    'if (score >= 90) {\n'
-                    '  print("Excellent");\n'
-                    '} else {\n'
-                    '  if (score >= 60) {\n'
-                    '    print("Pass");\n'
-                    '  } else {\n'
-                    '    print("Fail");\n'
-                    '  }\n'
-                    '}'
-                    '```',
+                    AppLocalizations.of(context)!.exercise35SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise35SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -204,58 +172,14 @@ class _IfElsEx35State extends State<IfElsEx35> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "score ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 75;\n2  if (",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "score >= 90",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n3  ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("Excellent");\n4  } else {\n5    if (',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: "score >= 60",
-                        style: TextStyle(color: Colors.redAccent),
-                      ),
-                      const TextSpan(
-                        text: ") {\n6    ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: 'print("Pass");\n7    } else {\n8      ',
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: 'print("Fail");\n9    }\n10  }',
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise35Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -268,10 +192,10 @@ class _IfElsEx35State extends State<IfElsEx35> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise35Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

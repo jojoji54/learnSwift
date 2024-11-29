@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx36 extends StatefulWidget {
   final String title;
@@ -7,8 +8,7 @@ class IfElsEx36 extends StatefulWidget {
   const IfElsEx36({super.key, required this.title, required this.id});
 
   @override
-  State<IfElsEx36> createState() =>
-      _IfElsEx36State();
+  State<IfElsEx36> createState() => _IfElsEx36State();
 }
 
 class _IfElsEx36State extends State<IfElsEx36> {
@@ -67,11 +67,8 @@ class _IfElsEx36State extends State<IfElsEx36> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used `if-else` to evaluate string conditions.\n\n"
-        "Explanation:\n"
-        "- Strings can be compared using the `==` operator.\n"
-        "- Use `if` to check if a string matches a specific value.",
+        AppLocalizations.of(context)!.exercise36CorrectTitle,
+        AppLocalizations.of(context)!.exercise36CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -82,33 +79,30 @@ class _IfElsEx36State extends State<IfElsEx36> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable `fruit` and assigning it a string value, e.g., `var fruit = \"apple\"`.",
+          AppLocalizations.of(context)!.exercise36Hint1Title,
+          AppLocalizations.of(context)!.exercise36Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use `if-else` to check if the value matches a condition:\n"
-          '- If `fruit == "apple"`, print "It\'s an apple!".',
+          AppLocalizations.of(context)!.exercise36Hint2Title,
+          AppLocalizations.of(context)!.exercise36Hint2Content,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var fruit = "apple";\n'
-          'if (fruit == "apple") {\n'
-          '    print("It\'s an apple!");\n'
-          '} else {\n'
-          '    print("It\'s not an apple!");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise36SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise36SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -127,19 +121,8 @@ class _IfElsEx36State extends State<IfElsEx36> {
               heroTag: "introButton3",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to If-Else with Strings! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable named `fruit` and assign it a string value.\n"
-                  "2. Use `if` to check if the string matches a specific value, and print the result.\n"
-                  "3. Use `else` to handle other cases.\n\n"
-                  "Example:\n"
-                  "var fruit = \"apple\"\n"
-                  "if (fruit == \"apple\") {\n"
-                  "    print(\"It's an apple!\")\n"
-                  "} else {\n"
-                  "    print(\"It's not an apple!\")\n"
-                  "}",
+                  AppLocalizations.of(context)!.exercise36IntroTitle,
+                  AppLocalizations.of(context)!.exercise36IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -162,16 +145,11 @@ class _IfElsEx36State extends State<IfElsEx36> {
                 heroTag: "helpButton3",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var fruit = "apple";\n'
-                    'if (fruit == "apple") {\n'
-                    '    print("It\'s an apple!");\n'
-                    '} else {\n'
-                    '    print("It\'s not an apple!");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise36SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise36SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -191,38 +169,14 @@ class _IfElsEx36State extends State<IfElsEx36> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "fruit ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= \"apple\";\n2  if ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "(fruit == \"apple\") ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "{\n    print(\"It's an apple!\");\n} else {\n    print(\"It's not an apple!\");\n}",
-                        style: TextStyle(color: Colors.black),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise36Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -235,10 +189,10 @@ class _IfElsEx36State extends State<IfElsEx36> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise36Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

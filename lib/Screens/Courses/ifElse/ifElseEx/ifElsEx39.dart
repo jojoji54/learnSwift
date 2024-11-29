@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx39 extends StatefulWidget {
   final String title;
@@ -66,13 +67,8 @@ class _IfElsEx39State extends State<IfElsEx39> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great job! You've implemented a nested `if-else` logic to determine employee bonuses.\n\n"
-        "**Explanation:**\n"
-        "- Employees with `yearsOfService >= 10` and `performanceRating >= 8` receive a `High Bonus`.\n"
-        "- Employees with `yearsOfService >= 10` but `performanceRating < 8` receive a `Moderate Bonus`.\n"
-        "- Employees with `yearsOfService < 10` receive a `Minimal Bonus`.\n\n"
-        "This exercise helps you understand nested conditions and decision-making in Swift.",
+        AppLocalizations.of(context)!.exercise39CorrectTitle,
+        AppLocalizations.of(context)!.exercise39CorrectContent,
         titleColor: Colors.green,
       );
     } else {
@@ -83,37 +79,30 @@ class _IfElsEx39State extends State<IfElsEx39> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring variables: `yearsOfService` and `performanceRating` as integers.",
+          AppLocalizations.of(context)!.exercise39Hint1Title,
+          AppLocalizations.of(context)!.exercise39Hint1Content,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use a nested `if-else` structure. Evaluate `yearsOfService` first, then `performanceRating`.",
+          AppLocalizations.of(context)!.exercise39Hint2Title,
+          AppLocalizations.of(context)!.exercise39Hint2Content,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var yearsOfService = 12;\n'
-          'var performanceRating = 9;\n'
-          'if yearsOfService >= 10 {\n'
-          '    if performanceRating >= 8 {\n'
-          '        print("High Bonus");\n'
-          '    } else {\n'
-          '        print("Moderate Bonus");\n'
-          '    }\n'
-          '} else {\n'
-          '    print("Minimal Bonus");\n'
-          '}\n'
-          '```',
+          AppLocalizations.of(context)!.exercise39SolutionTitle,
+          AppLocalizations.of(context)!
+              .exercise39SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -129,18 +118,11 @@ class _IfElsEx39State extends State<IfElsEx39> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButton3",
+              heroTag: "introButtonNested",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Nested If-Else Challenge! 🎉\n\n"
-                  "Your task is to determine the type of bonus an employee receives:\n\n"
-                  "1. Declare variables `yearsOfService` (integer) and `performanceRating` (integer).\n"
-                  "2. Use a nested `if-else` structure:\n"
-                  "   - `High Bonus`: `yearsOfService >= 10` and `performanceRating >= 8`.\n"
-                  "   - `Moderate Bonus`: `yearsOfService >= 10` but `performanceRating < 8`.\n"
-                  "   - `Minimal Bonus`: `yearsOfService < 10`.\n"
-                  "3. Print the type of bonus.",
+                  AppLocalizations.of(context)!.exercise39IntroTitle,
+                  AppLocalizations.of(context)!.exercise39IntroContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -150,7 +132,7 @@ class _IfElsEx39State extends State<IfElsEx39> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButton3",
+              heroTag: "runButtonNested",
               onPressed: _validateInput,
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -160,24 +142,14 @@ class _IfElsEx39State extends State<IfElsEx39> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButton3",
+                heroTag: "helpButtonNested",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var yearsOfService = 12;\n'
-                    'var performanceRating = 9;\n'
-                    'if yearsOfService >= 10 {\n'
-                    '    if performanceRating >= 8 {\n'
-                    '        print("High Bonus");\n'
-                    '    } else {\n'
-                    '        print("Moderate Bonus");\n'
-                    '    }\n'
-                    '} else {\n'
-                    '    print("Minimal Bonus");\n'
-                    '}\n'
-                    '```',
+                    AppLocalizations.of(context)!.exercise39SolutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise39SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -197,78 +169,14 @@ class _IfElsEx39State extends State<IfElsEx39> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "yearsOfService ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 12;\n2  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "performanceRating ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 9;\n3  if ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "yearsOfService >= 10 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "4      if ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "performanceRating >= 8 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "5          print(\"High Bonus\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "6      } else {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "7          print(\"Moderate Bonus\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "8      }\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "9  } else {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "10      print(\"Minimal Bonus\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "11  }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
+                Text(
+                  AppLocalizations.of(context)!
+                      .exercise39Example
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontSize: 18,
                   ),
                 ),
                 const SizedBox(height: 20),
@@ -281,10 +189,10 @@ class _IfElsEx39State extends State<IfElsEx39> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.exercise39Hint,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

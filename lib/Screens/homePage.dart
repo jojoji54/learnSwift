@@ -4,10 +4,14 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelList.dart';
-import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelList.dart';
-import 'package:learnswift/data/mainModel/CoursesMainModelList.dart';
+import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
+import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
+import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList%20copy.dart';
+import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListES.dart';
+import 'package:learnswift/data/mainModel/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
@@ -47,11 +51,16 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.cover),
                 )),
             ListView.builder(
-              itemCount: coursesMainModelListEN.length,
+              itemCount: Constant.languaje == 'es'
+                  ? coursesMainModelListES.length
+                  : coursesMainModelListEN.length,
               padding: const EdgeInsets.only(top: 20, bottom: 10),
               itemBuilder: (context, index) {
-                final course = coursesMainModelListEN[index];
+                final course = Constant.languaje == 'es'
+                    ? coursesMainModelListES[index]
+                    : coursesMainModelListEN[index];
                 // Filtrar la lista para obtener los elementos donde id = 0 y completed = true
+                print(Constant.languaje);
                 var filteredCounter = PurchaseManagerSingleton()
                     .purchaseAndDevelop
                     .where((item) =>
@@ -122,14 +131,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                 InkWell(
                                   onTap: () {
                                     HapticFeedback.lightImpact;
-                                    getData(course.id, allProvider);
+                                    if (Constant.languaje == 'es') {
+                                      getDataES(course.id, allProvider);
+                                    } else {
+                                      // Lógica para otro idioma
+                                      getDataEN(course.id, allProvider);
+                                    }
+
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) =>
                                             MainCoursesExercises(
-                                                id: course.id,
-                                                title: course.generalName, allProvider: allProvider,),
+                                          id: course.id,
+                                          title: course.generalName,
+                                          allProvider: allProvider,
+                                        ),
                                       ),
                                     );
                                   },
@@ -207,19 +224,44 @@ class _MyHomePageState extends State<MyHomePage> {
         ));
   }
 
-  void getData(int value, AllProvider allprovider) {
+  void getDataEN(int value, AllProvider allprovider) {
     setState(() {
       switch (value) {
         case 0:
-          allprovider.setData(sbModel);
+          allprovider.setData(sbModelEN);
           allprovider.setCourseCategory(0);
           break;
-         case 1:
-          allprovider.setData(booleanBModel);
+        case 1:
+          allprovider.setData(booleanBModelEN);
           allprovider.setCourseCategory(1);
           break;
         case 2:
-          allprovider.setData(ifElseModel);
+          allprovider.setData(ifElseModelEN);
+          allprovider.setCourseCategory(2);
+          break;
+        default:
+          allprovider.setData([]);
+          allprovider.setCourseCategory(0);
+          break;
+      }
+      int cCount = allprovider.data!.where((course) => course.completed).length;
+      allprovider.setCourseCount(cCount);
+    });
+  }
+
+  void getDataES(int value, AllProvider allprovider) {
+    setState(() {
+      switch (value) {
+        case 0:
+          allprovider.setData(sbModelES);
+          allprovider.setCourseCategory(0);
+          break;
+        case 1:
+          allprovider.setData(booleanBModelES);
+          allprovider.setCourseCategory(1);
+          break;
+        case 2:
+          allprovider.setData(ifElseModelES);
           allprovider.setCourseCategory(2);
           break;
         default:

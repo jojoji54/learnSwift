@@ -1,7 +1,7 @@
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
-List<CoursesExModel> ifElseModel = [
+List<CoursesExModel> ifElseModelEN = [
   CoursesExModel(
     id: 31,
     exerciseName: 'If-Else Basics',

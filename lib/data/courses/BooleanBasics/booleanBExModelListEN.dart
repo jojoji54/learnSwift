@@ -1,7 +1,7 @@
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
-List<CoursesExModel> booleanBModel = [
+List<CoursesExModel> booleanBModelEN = [
   CoursesExModel(
     id: 15,
     exerciseName: 'Boolean Basics',

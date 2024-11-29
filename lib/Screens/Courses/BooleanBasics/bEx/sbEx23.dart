@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx23 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx23State extends State<BEx23> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,13 +69,8 @@ class _BEx23State extends State<BEx23> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used the conditional ternary operator in Swift.\n\n"
-        "Explanation:\n"
-        "- The ternary operator `? :` allows you to choose between two values based on a condition.\n"
-        "- Example:\n"
-        '```swift\nvar message = (true ? "Swift is great!" : "Swift is okay")\n```'
-        "Here, `message` will hold the value `Swift is great!` because the condition is `true`.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.ternaryOperatorExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -85,26 +81,26 @@ class _BEx23State extends State<BEx23> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the ternary operator `? :` to choose between two values based on a condition.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1TernaryOperator,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nvar message = (true ? "Swift is great!" : "Swift is okay")\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2TernaryOperator,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar message = (true ? "Swift is great!" : "Swift is okay")\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise23SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -123,13 +119,8 @@ class _BEx23State extends State<BEx23> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to the Conditional Ternary Operator! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable using the `var` keyword.\n"
-                  "2. Use the ternary operator `? :` to assign it a value based on a boolean condition.\n\n"
-                  "Example:\n"
-                  '```swift\nvar message = (true ? "Swift is great!" : "Swift is okay")\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsTernaryOperator,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -152,9 +143,8 @@ class _BEx23State extends State<BEx23> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar message = (true ? "Swift is great!" : "Swift is okay")\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise23SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -181,6 +171,10 @@ class _BEx23State extends State<BEx23> {
                       fontSize: 18,
                     ),
                     children: [
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
+                      ),
                       const TextSpan(
                         text: "1  var ",
                         style: TextStyle(color: Colors.blue),
@@ -206,10 +200,10 @@ class _BEx23State extends State<BEx23> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

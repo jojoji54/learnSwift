@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx20 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx20State extends State<BEx20> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,11 +69,8 @@ class _BEx20State extends State<BEx20> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used the logical OR operator in Swift.\n\n"
-        "Explanation:\n"
-        "- The `||` operator returns `true` if **either** of the conditions is true.\n"
-        "- Example: `let isSunny = true || false` evaluates to `true` because one of the conditions is true.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.logicalOrExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -83,26 +81,26 @@ class _BEx20State extends State<BEx20> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the `||` operator to check if **either** of two conditions is true.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1LogicalOr,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "An example syntax is:\n"
-          '```swift\nlet isSunny = true || false\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2LogicalOr,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nlet isSunny = true || false\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise20SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -121,13 +119,8 @@ class _BEx20State extends State<BEx20> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Logical OR Operator Basics! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Use the `let` keyword to declare a constant.\n"
-                  "2. Assign it a value that uses the logical OR operator (`||`).\n\n"
-                  "Example:\n"
-                  "let isSunny = true || false",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsLogicalOr,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -150,9 +143,8 @@ class _BEx20State extends State<BEx20> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nlet isSunny = true || false\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise20SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -179,9 +171,9 @@ class _BEx20State extends State<BEx20> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text: "1  let ",
@@ -208,10 +200,10 @@ class _BEx20State extends State<BEx20> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

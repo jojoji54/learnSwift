@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx19 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx19State extends State<BEx19> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,11 +69,8 @@ class _BEx19State extends State<BEx19> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used the logical AND operator in Swift.\n\n"
-        "Explanation:\n"
-        "- The `&&` operator checks if both conditions are true.\n"
-        "- You used the `||` operator to evaluate whether you can go outside based on the weather and your umbrella status.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.logicalOperatorsExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -83,29 +81,26 @@ class _BEx19State extends State<BEx19> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Declare two variables: `isRaining` and `haveUmbrella`. Assign them boolean values like `true` or `false`.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1LogicalOperators,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Combine the variables using the logical AND (`&&`) and OR (`||`) operators.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2LogicalOperators,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          "var isRaining = true;\n"
-          "var haveUmbrella = true;\n"
-          "var canGoOutside = !isRaining || haveUmbrella;\n"
-          '```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise19SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -124,15 +119,8 @@ class _BEx19State extends State<BEx19> {
               heroTag: "introButton",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to the Logical Operators Exercise! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare two boolean variables: `isRaining` and `haveUmbrella`.\n"
-                  "2. Use the `||` operator to determine if you can go outside.\n\n"
-                  "Example:\n"
-                  "var isRaining = true\n"
-                  "var haveUmbrella = true\n"
-                  "var canGoOutside = !isRaining || haveUmbrella",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsLogicalOperators,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -155,13 +143,8 @@ class _BEx19State extends State<BEx19> {
                 heroTag: "helpButton",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    "var isRaining = true;\n"
-                    "var haveUmbrella = true;\n"
-                    "var canGoOutside = !isRaining || haveUmbrella;\n"
-                    '```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise19SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -229,10 +212,10 @@ class _BEx19State extends State<BEx19> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

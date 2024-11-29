@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx15 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx15State extends State<BEx15> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,13 +69,11 @@ class _BEx15State extends State<BEx15> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully declared a boolean variable in Swift.\n\n"
-        "Explanation:\n"
-        "- Boolean variables can store `true` or `false`.\n"
-        "Example:\n"
-        '```swift\nvar isSwiftFun = true\n```\n'
-        "This means `isSwiftFun` holds the value `true`.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!
+            .exercise151SolutionContent
+            .replaceAll('@', '{')
+            .replaceAll('&', '}'),
         titleColor: Colors.green,
       );
     } else {
@@ -85,26 +84,34 @@ class _BEx15State extends State<BEx15> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the `var` keyword to declare a variable. Assign it a boolean value like `true` or `false`.",
+          AppLocalizations.of(context)!.exercise15Hint1Title,
+          AppLocalizations.of(context)!
+              .exercise151Hint1Content
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nvar isSwiftFun = true\n```',
+          AppLocalizations.of(context)!.exercise151Hint2Title,
+          AppLocalizations.of(context)!
+              .exercise151Hint2Content
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar isSwiftFun = true\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise151SolutionContent
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts)),
           ),
         );
       }
@@ -123,13 +130,11 @@ class _BEx15State extends State<BEx15> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Basics! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable of type boolean using the `var` keyword.\n"
-                  "2. Assign it the value `true` or `false`.\n\n"
-                  "Example:\n"
-                  "var isSwiftFun = true",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!
+                      .exercise151InstructionsContent
+                      .replaceAll('@', '{')
+                      .replaceAll('&', '}'),
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -152,9 +157,11 @@ class _BEx15State extends State<BEx15> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar isSwiftFun = true\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise151SolutionContent
+                        .replaceAll('@', '{')
+                        .replaceAll('&', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -210,10 +217,10 @@ class _BEx15State extends State<BEx15> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

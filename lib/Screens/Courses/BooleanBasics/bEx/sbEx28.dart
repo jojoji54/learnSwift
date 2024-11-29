@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx28 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx28State extends State<BEx28> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,11 +69,8 @@ class _BEx28State extends State<BEx28> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully implemented a quiz logic using booleans and conditions.\n\n"
-        "Explanation:\n"
-        "- `isAnswerCorrect` is a boolean constant that stores the user's response.\n"
-        "- An `if` condition checks its value and displays the appropriate message.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.quizLogicExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -83,26 +81,31 @@ class _BEx28State extends State<BEx28> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use a boolean constant named `isAnswerCorrect`. Write an `if` condition to check its value.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1QuizLogic,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) {\n  print("Correct Answer! 🎉");\n} else {\n  print("Try Again!");\n}\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!
+              .hint2QuizLogic
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) {\n  print("Correct Answer! 🎉");\n} else {\n  print("Try Again!");\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise28SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts.toString())),
           ),
         );
       }
@@ -121,14 +124,8 @@ class _BEx28State extends State<BEx28> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the Boolean Quiz App Logic Challenge! 🧠\n\n"
-                  "Your task:\n"
-                  "1. Declare `isAnswerCorrect` as a constant boolean.\n"
-                  "2. Write an `if-else` structure to check if the answer is correct.\n"
-                  "3. If correct, print `Correct Answer! 🎉`. Otherwise, print `Try Again!`.\n\n"
-                  "Example:\n"
-                  '```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) {\n  print("Correct Answer! 🎉");\n} else {\n  print("Try Again!");\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.quizLogicInstructions,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -151,9 +148,11 @@ class _BEx28State extends State<BEx28> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) {\n  print("Correct Answer! 🎉");\n} else {\n  print("Try Again!");\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise28SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -180,21 +179,14 @@ class _BEx28State extends State<BEx28> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "1  let ",
-                        style: TextStyle(color: Colors.blue),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "isAnswerCorrect ",
+                        text:
+                            "let isAnswerCorrect = true;\nif (isAnswerCorrect) {\n  print(\"Correct Answer! 🎉\");\n} else {\n  print(\"Try Again!\");\n}",
                         style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n2  if ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "(isAnswerCorrect) {\n3      print(\"Correct Answer! 🎉\");\n4  } else {\n5      print(\"Try Again!\");\n6  }",
-                        style: TextStyle(color: Colors.grey),
                       ),
                     ],
                   ),
@@ -209,10 +201,10 @@ class _BEx28State extends State<BEx28> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

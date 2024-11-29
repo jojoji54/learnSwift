@@ -106,7 +106,106 @@
   "restoreSuccess": "¡Compras restauradas con éxito!",
   "restoreError": "Ocurrió un error durante la restauración.",
   "noPurchasesToRestore": "No hay compras para restaurar.",
-  "unexpectedRestoreError": "Error inesperado durante la restauración."
+  "unexpectedRestoreError": "Error inesperado durante la restauración.", 
+  "exercise151InstructionsContent": "¡Bienvenido a los conceptos básicos de Boolean! 🎉\n\nTu tarea:\n1. Declara una variable de tipo boolean usando la palabra clave `var`.\n2. Asígnale el valor `true` o `false`.\n\nEjemplo:\n```swift\nvar isSwiftFun = true\n```",
+  "exercise151SolutionContent": "La solución correcta es:\n\n```swift\nvar isSwiftFun = true\n```",
+  "exercise151Hint1Title": "Pista 1",
+  "exercise151Hint1Content": "Usa la palabra clave `var` para declarar una variable. Asígnale un valor booleano como `true` o `false`.",
+  "exercise15Hint2Title": "Pista 2",
+  "exercise151Hint2Content": "Un ejemplo correcto es:\n```swift\nvar isSwiftFun = true\n```", 
+  "booleanExplanation": "¡Genial! Has combinado correctamente las variables booleanas utilizando operadores lógicos.\n\nExplicación:\n- El operador `&&` verifica si ambas condiciones son verdaderas.\n- El operador `||` verifica si al menos una condición es verdadera.\n\nAl usar estos operadores, puedes tomar decisiones basadas en múltiples condiciones.",
+  "hint1Boolean": "Comienza declarando dos variables booleanas: `var isSunny = true` y `var isWeekend = false`.",
+  "hint2Boolean": "Usa el operador `&&` para verificar si ambas condiciones son verdaderas. Por ejemplo: `var goToBeach = isSunny && isWeekend`.",
+  "exerciseInstructionsBoolean": "¡Bienvenido a las Operaciones Booleanas! 🎉\n\nTu tarea:\n1. Declara dos variables booleanas: `isSunny` y `isWeekend`.\n2. Combínalas usando `&&` o `||` y asigna el resultado a `goToBeach`.\n3. Imprime el resultado.", 
+  "exercise16SolutionContent": "La solución correcta es:\n\n```swift\nvar isSunny = true;\nvar isWeekend = false;\nvar goToBeach = isSunny && isWeekend;\nprint(goToBeach);\n```",
+  "example": "Ejemplo", 
+  "booleanComparisonExplanation": "¡Genial! Has usado comparaciones booleanas correctamente en Swift.\n\nExplicación:\n- `!isHot` verifica si `isHot` es `false`.\n- `!isCold` verifica si `isCold` es `false`.\n- Combinando estas condiciones con `&&` determina si el ambiente es cómodo.\n\nEste ejercicio demuestra cómo usar operadores lógicos con comparaciones para evaluar condiciones complejas.",
+  "hint1BooleanComparison": "Declara dos variables booleanas: `isHot` y `isCold`. Asígnales valores como `true` o `false`.",
+  "hint2BooleanComparison": "Usa el operador `!` para invertir un valor booleano, por ejemplo, `!isHot` verifica si `isHot` es `false`.",
+  "exerciseInstructionsBooleanComparison": "¡Bienvenido a las Comparaciones Booleanas! 🎉\n\nTu tarea:\n1. Declara dos variables booleanas: `isHot` y `isCold`.\n2. Combínalas usando el operador `!` y el operador `&&` para determinar si `isComfortable` es `true`.\n3. Imprime el resultado.",
+  "exercise17SolutionContent": "La solución correcta es:\n\n```swift\nvar isHot = false;\nvar isCold = false;\nvar isComfortable = !isHot && !isCold;\nprint(isComfortable);\n```", 
+  "booleanWalkingExplanation": "¡Genial! Has usado operadores lógicos para combinar valores booleanos en Swift.\n\nExplicación:\n- `isSunny` verifica si está soleado.\n- `hasUmbrella` verifica si tienes un paraguas.\n- `canGoWalking` combina estos dos valores usando el operador `||` para decidir si puedes salir a caminar.\n\nEjemplo:\n```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking) // true\n```",
+  "hint1BooleanWalking": "Usa la palabra clave `var` para declarar las variables. Asigna valores booleanos como `true` o `false`.",
+  "hint2BooleanWalking": "Combina los valores booleanos usando el operador `||`. Por ejemplo:\n```swift\nvar canGoWalking = isSunny || hasUmbrella\n```",
+  "exerciseInstructionsBooleanWalking": "¡Bienvenido a Operadores Booleanos! 🎉\n\nTu tarea:\n1. Declara dos variables booleanas: `isSunny` y `hasUmbrella`.\n2. Combínalas usando el operador `||` para decidir si puedes salir a caminar.\n\nEjemplo:\n```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking)\n```",
+  "exercise18SolutionContent": "La solución correcta es:\n\n```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking)\n```", 
+  "logicalOperatorsExplanation": "¡Genial! Has utilizado operadores lógicos correctamente para decidir si puedes salir.\n\nExplicación:\n- `isRaining` verifica si está lloviendo.\n- `haveUmbrella` verifica si tienes un paraguas.\n- `canGoOutside` combina estos valores usando el operador `||` para determinar si puedes salir.\n\nEjemplo:\n```swift\nvar isRaining = true\nvar haveUmbrella = true\nvar canGoOutside = !isRaining || haveUmbrella\nprint(canGoOutside)\n```",
+  "hint1LogicalOperators": "Declara dos variables: `isRaining` y `haveUmbrella`. Asígnales valores booleanos como `true` o `false`.",
+  "hint2LogicalOperators": "Combina las variables usando los operadores lógicos `&&` y `||`.",
+  "exerciseInstructionsLogicalOperators": "¡Bienvenido al ejercicio de Operadores Lógicos! 🎉\n\nTu tarea:\n1. Declara dos variables booleanas: `isRaining` y `haveUmbrella`.\n2. Usa el operador `||` para decidir si puedes salir.\n\nEjemplo:\n```swift\nvar isRaining = true\nvar haveUmbrella = true\nvar canGoOutside = !isRaining || haveUmbrella\n```",
+  "exercise19SolutionContent": "La solución correcta es:\n\n```swift\nvar isRaining = true;\nvar haveUmbrella = true;\nvar canGoOutside = !isRaining || haveUmbrella;\nprint(canGoOutside);\n```", 
+  "logicalOrExplanation": "¡Genial! Has usado correctamente el operador lógico OR en Swift.\n\nExplicación:\n- El operador `||` devuelve `true` si **alguna** de las condiciones es verdadera.\n- Ejemplo: `let isSunny = true || false` evalúa como `true` porque una de las condiciones es verdadera.",
+  "hint1LogicalOr": "Usa el operador `||` para verificar si **alguna** de las dos condiciones es verdadera.",
+  "hint2LogicalOr": "Una sintaxis de ejemplo es:\n```swift\nlet isSunny = true || false\n```",
+  "exerciseInstructionsLogicalOr": "¡Bienvenido a los fundamentos del operador lógico OR! 🎉\n\nTu tarea:\n1. Usa la palabra clave `let` para declarar una constante.\n2. Asígnale un valor que use el operador lógico OR (`||`).\n\nEjemplo:\n```swift\nlet isSunny = true || false\n```",
+  "exercise20SolutionContent": "La solución correcta es:\n\n```swift\nlet isSunny = true || false\n```", 
+  "booleanNegationExplanation": "¡Genial! Has usado correctamente el operador de negación booleano en Swift.\n\nExplicación:\n- El operador `!` niega un valor booleano. Por ejemplo, si `isSwiftFun` es `true`, `!isSwiftFun` se convierte en `false`.",
+  "hint1BooleanNegation": "Usa la palabra clave `var` para declarar dos variables. Asigna un valor booleano a una y su negación a la otra.",
+  "hint2BooleanNegation": "Un ejemplo correcto es:\n```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```",
+  "exerciseInstructionsBooleanNegation": "¡Bienvenido a la Negación Booleana! 🎉\n\nTu tarea:\n1. Declara una variable booleana usando la palabra clave `var`.\n2. Declara otra variable y asígnale el valor negado de la primera variable.\n\nEjemplo:\n```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```",
+  "exercise21SolutionContent": "La solución correcta es:\n\n```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```", 
+  "booleanShortCircuitExplanation": "¡Genial! Has trabajado correctamente con la evaluación de cortocircuito booleana en Swift.\n\nExplicación:\n- El operador `||` evalúa como `true` si alguna de las condiciones es verdadera, sin evaluar la segunda si la primera ya es verdadera.\n- El operador `&&` evalúa como `true` solo si ambas condiciones son verdaderas.",
+  "hint1BooleanShortCircuit": "Intenta usar el operador `||` para 'OR' y `&&` para 'AND'.",
+  "hint2BooleanShortCircuit": "Recuerda que `||` evalúa la primera condición primero, mientras que `&&` requiere que ambas condiciones sean verdaderas.",
+  "exerciseInstructionsBooleanShortCircuit": "¡Bienvenido a la Evaluación de Cortocircuito Booleana! 🎉\n\nTu tarea:\n1. Declara una variable usando la palabra clave `var`.\n2. Usa los operadores `||` (OR) y `&&` (AND) para crear una expresión booleana.\n\nEjemplo:\n```swift\nvar result = (true || false) && true\n```",
+  "exercise22SolutionContent": "La solución correcta es:\n\n```swift\nvar result = (true || false) && true\n```", 
+  "ternaryOperatorExplanation": "¡Genial! Has usado correctamente el operador ternario condicional en Swift.\n\nExplicación:\n- El operador ternario `? :` te permite elegir entre dos valores según una condición.\n- Ejemplo:\n```swift\nvar message = (true ? \"¡Swift es genial!\" : \"Swift está bien\")\n```\nAquí, `message` contendrá el valor \"¡Swift es genial!\" porque la condición es `true`.",
+  "hint1TernaryOperator": "Usa el operador ternario `? :` para elegir entre dos valores según una condición.",
+  "hint2TernaryOperator": "Un ejemplo correcto es:\n```swift\nvar message = (true ? \"¡Swift es genial!\" : \"Swift está bien\")\n```",
+  "exerciseInstructionsTernaryOperator": "¡Bienvenido al Operador Ternario Condicional! 🎉\n\nTu tarea:\n1. Declara una variable usando la palabra clave `var`.\n2. Usa el operador ternario `? :` para asignarle un valor según una condición booleana.\n\nEjemplo:\n```swift\nvar message = (true ? \"¡Swift es genial!\" : \"Swift está bien\")\n```",
+  "exercise23SolutionContent": "La solución correcta es:\n\n```swift\nvar message = (true ? \"¡Swift es genial!\" : \"Swift está bien\")\n```", 
+  "ifElseExplanation": "¡Genial! Has usado correctamente un booleano en una declaración `if-else`.\n\nExplicación:\n- Las variables booleanas se pueden usar en declaraciones condicionales para controlar el flujo del programa.\n- Ejemplo:\n```swift\nvar isLearningFun = true\nif isLearningFun @\n  print(\"¡Swift es increíble!\")\n& else @\n  print(\"¡Sigue intentándolo!\")\n&\n```",
+  "hint1IfElse": "Declara una variable booleana usando `var`. Úsala en una declaración `if-else` para controlar lo que se imprime.",
+  "hint2IfElse": "Un ejemplo correcto es:\n```swift\nvar isLearningFun = true\nif isLearningFun @\n  print(\"¡Swift es increíble!\")\n& else @\n  print(\"¡Sigue intentándolo!\")\n&\n```",
+  "exerciseInstructionsIfElse": "¡Bienvenido a Booleanos en If-Else Statements! 🎉\n\nTu tarea:\n1. Declara una variable booleana usando la palabra clave `var`.\n2. Usa una declaración `if-else` para imprimir uno de los dos mensajes dependiendo del valor del booleano.\n\nEjemplo:\n```swift\nvar isLearningFun = true\nif isLearningFun @\n  print(\"¡Swift es increíble!\")\n& else @\n  print(\"¡Sigue intentándolo!\")\n&\n```",
+  "exercise24SolutionContent": "La solución correcta es:\n\n```swift\nvar isLearningFun = true\nif isLearningFun @\n  print(\"¡Swift es increíble!\")\n& else @\n  print(\"¡Sigue intentándolo!\")\n&\n```", 
+  "nestedIfExplanation": "¡Genial! Has usado correctamente declaraciones `if` anidadas con booleanos.\n\nExplicación:\n- Este ejercicio demuestra cómo usar declaraciones `if` anidadas para manejar múltiples condiciones.\n- Ejemplo:\n```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition @\n  if secondCondition @\n    print(\"¡Lo lograste!\")\n  & else @\n    print(\"¡Casi lo consigues!\")\n  &\n& else @\n  print(\"¡Inténtalo de nuevo!\")\n&\n```",
+  "hint1NestedIf": "Usa la palabra clave `var` para declarar dos variables booleanas. Usa declaraciones `if` anidadas para verificar cada condición.",
+  "hint2NestedIf": "Un ejemplo correcto es:\n```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition @\n  if secondCondition @\n    print(\"¡Lo lograste!\")\n  & else @\n    print(\"¡Casi lo consigues!\")\n  &\n& else @\n  print(\"¡Inténtalo de nuevo!\")\n&\n```",
+  "exerciseInstructionsNestedIf": "¡Bienvenido a Declaraciones If Anidadas con Booleanos! 🎉\n\nTu tarea:\n1. Declara dos variables booleanas usando la palabra clave `var`.\n2. Usa declaraciones `if` anidadas para verificar ambas condiciones.\n\nEjemplo:\n```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition @\n  if secondCondition @\n    print(\"¡Lo lograste!\")\n  & else @\n    print(\"¡Casi lo consigues!\")\n  &\n& else @\n  print(\"¡Inténtalo de nuevo!\")\n&\n```",
+  "exercise25SolutionContent": "La solución correcta es:\n\n```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition @\n  if secondCondition @\n    print(\"¡Lo lograste!\")\n  & else @\n    print(\"¡Casi lo consigues!\")\n  &\n& else @\n  print(\"¡Inténtalo de nuevo!\")\n&\n```", 
+  "passwordValidatorExplanation": "¡Genial! Has creado un validador de contraseñas usando booleanos.\n\nExplicación:\n- Este ejercicio combina operaciones con cadenas y lógica booleana.\n- Una contraseña segura debe:\n  1. Tener al menos 8 caracteres.\n  2. Contener un símbolo `@`.\n  3. Contener un símbolo `$`.\n\nEjemplo de solución:\n```swift\nvar password = \"@StrongPass$\";\nif password.contains(\"@\") && password.contains(\"$\") <\n  print(\"¡Contraseña segura!\");\n> else <\n  print(\"Contraseña débil.\");\n>```",
+  "hint1PasswordValidator": "Declara una variable llamada `password` con un valor de cadena. Usa `.contains` para comprobar los símbolos `@` y `$`.",
+  "hint2PasswordValidator": "Combina las condiciones con el operador `&&`:\nUsa `if password.contains(\"@\") && password.contains(\"$\")`.",
+  "passwordValidatorInstructions": "¡Bienvenido al Desafío de Validador de Contraseñas! 🎉\n\nTu tarea:\n1. Declara una variable llamada `password` y asígnale un valor de cadena.\n2. Usa declaraciones `if` para verificar si la contraseña contiene:\n   - Al menos 8 caracteres.\n   - Un símbolo `@`.\n   - Un símbolo `$`.\n3. Si la contraseña cumple con todos los criterios, imprime `¡Contraseña segura!`. Si no, imprime `Contraseña débil.`.",
+  "exercise26SolutionContent": "La solución correcta es:\n\n```swift\nvar password = \"@StrongPass$\";\nif password.contains(\"@\") && password.contains(\"$\") <\n  print(\"¡Contraseña segura!\");\n> else <\n  print(\"Contraseña débil.\");\n>```", 
+  "gameLogicExplanation": "¡Genial! Has implementado correctamente una lógica de juego usando booleanos y condiciones.\n\nExplicación:\n- Declaraste las variables `isAlive` y `health`.\n- Usaste una constante `damage` para restar a la salud.\n- Comprobaste si la salud era menor o igual a 0 para determinar si el juego ha terminado.",
+  "hint1GameLogic": "Declara las variables `isAlive`, `health` y una constante `damage`. Usa `if` para comprobar la salud.",
+  "hint2GameLogic": "Recuerda usar:\n- `health -= damage` para restar salud.\n- `if (health <= 0)` para comprobar las condiciones de fin de juego.",
+  "gameLogicInstructions": "¡Bienvenido al Desafío de Lógica de Juego con Booleanos! 🎮\n\nTu tarea:\n1. Declara `isAlive` como `true`.\n2. Declara `health` como `100`.\n3. Resta `damage` a `health`.\n4. Imprime `Game Over` si `health <= 0`. Si no, imprime `Keep Playing!`.\n\nEjemplo:\nvar isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) #\n  print(\"Game Over\");\nº else #\n  print(\"Keep Playing!\");\nº",
+  "exercise27SolutionContent": "La solución correcta es:\n\n```swift\nvar isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) #\n  print(\"Game Over\");\nº else #\n  print(\"Keep Playing!\");\n\\n```", 
+  "quizLogicExplanation": "¡Genial! Has implementado correctamente una lógica de cuestionario usando booleanos y condiciones.\n\nExplicación:\n- `isAnswerCorrect` es una constante booleana que almacena la respuesta del usuario.\n- Una condición `if` verifica su valor y muestra el mensaje correspondiente.",
+  "hint1QuizLogic": "Usa una constante booleana llamada `isAnswerCorrect`. Escribe una condición `if` para verificar su valor.",
+  "hint2QuizLogic": "Un ejemplo correcto es:\n```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) #\n  print(\"Correct Answer! 🎉\");\nº else #\n  print(\"Try Again!\");\nº\n```",
+  "quizLogicInstructions": "¡Bienvenido al Desafío de Lógica de Cuestionario! 🧠\n\nTu tarea:\n1. Declara `isAnswerCorrect` como una constante booleana.\n2. Escribe una estructura `if-else` para comprobar si la respuesta es correcta.\n3. Si es correcta, imprime `Correct Answer! 🎉`. De lo contrario, imprime `Try Again!`.",
+  "exercise28SolutionContent": "La solución correcta es:\n\n```swift\nlet isAnswerCorrect = true;\nif (isAnswerCorrect) #\n  print(\"Correct Answer! 🎉\");\nº else #\n  print(\"Try Again!\");\nº\n```", 
+  "booleanGuessExplanation": "¡Increíble! Has implementado un juego de adivinanzas utilizando booleanos.\n\nExplicación:\n- `secretBoolean` contiene un valor oculto.\n- El usuario compara su conjetura con este valor usando el operador `==`.\n- Basado en la comparación, se muestra el mensaje correspondiente.",
+  "hint1BooleanGuess": "Usa una constante `secretBoolean` con un valor booleano. Declara otra constante `userGuess` y compara ambas usando `==`.",
+  "hint2BooleanGuess": "Un ejemplo correcto es:\n```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) #\n  print(\"¡Acertaste! 🎉\");\nº else #\n  print(\"Respuesta incorrecta. Inténtalo de nuevo.\");\nº\n```",
+  "booleanGuessInstructions": "¡Bienvenido al Reto de Adivinanzas Booleanas! 🧠\n\nTu tarea:\n1. Declara una constante `secretBoolean` con un valor booleano.\n2. Declara una constante `userGuess` representando la entrada del usuario.\n3. Compara ambas usando el operador `==`.\n4. Si la conjetura es correcta, imprime `¡Acertaste! 🎉`. De lo contrario, imprime `Respuesta incorrecta. Inténtalo de nuevo.`",
+  "exercise29SolutionContent": "La solución correcta es:\n\n```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) #\n  print(\"¡Acertaste! 🎉\");\nº else #\n  print(\"Respuesta incorrecta. Inténtalo de nuevo.\");\nº\n```", 
+  "booleanLogicExplanation": "¡Increíble! Has utilizado operadores lógicos para evaluar condiciones con éxito.\n\nExplicación:\n- `isUserLoggedIn` y `hasPremiumAccess` son constantes booleanas.\n- Usaste el operador `&&` (AND) para verificar si ambas son verdaderas.\n- Según la evaluación, imprimiste el mensaje correspondiente.",
+  "hint1BooleanLogic": "Usa dos constantes `isUserLoggedIn` y `hasPremiumAccess` con valores booleanos.\nVerifica ambas condiciones usando el operador `&&`.",
+  "hint2BooleanLogic": "Un ejemplo correcto es:\n```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) #\n  print(\"¡Acceso otorgado a la función premium!\");\nº else #\n  print(\"Acceso denegado. Por favor inicia sesión o mejora tu cuenta.\");\nº\n```",
+  "booleanLogicInstructions": "¡Bienvenido al Juego de Operadores Lógicos! 🧠\n\nTu tarea:\n1. Declara dos constantes: `isUserLoggedIn` y `hasPremiumAccess`.\n2. Usa el operador `&&` para verificar si ambas condiciones son verdaderas.\n3. Si es así, imprime `¡Acceso otorgado a la función premium!`.\n4. De lo contrario, imprime `Acceso denegado. Por favor inicia sesión o mejora tu cuenta.`", 
+  "exercise30SolutionContent": "La solución correcta es:\n\n```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) #\n  print(\"¡Acceso otorgado a la función premium!\");\nº else #\n  print(\"Acceso denegado. Por favor inicia sesión o mejora tu cuenta.\");\nº\n```"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 

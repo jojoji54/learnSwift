@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx27 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx27State extends State<BEx27> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,12 +69,8 @@ class _BEx27State extends State<BEx27> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully implemented a game logic using booleans and conditions.\n\n"
-        "Explanation:\n"
-        "- You declared variables `isAlive` and `health`.\n"
-        "- Used a constant `damage` to subtract health.\n"
-        "- Checked if health was below or equal to 0 to determine if the game is over.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.gameLogicExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -84,27 +81,28 @@ class _BEx27State extends State<BEx27> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Declare variables `isAlive`, `health`, and a constant `damage`. Use `if` to check health.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1GameLogic,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Remember to use:\n"
-          "- `health -= damage` to subtract health.\n"
-          "- `if (health <= 0)` to check game over conditions.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2GameLogic,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) {\n  isAlive = false;\n  print("Game Over");\n} else {\n  print("Keep Playing!");\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise27SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts.toString())),
           ),
         );
       }
@@ -123,15 +121,11 @@ class _BEx27State extends State<BEx27> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the Boolean Game Logic Challenge! 🎮\n\n"
-                  "Your task:\n"
-                  "1. Declare `isAlive` as `true`.\n"
-                  "2. Declare `health` as `100`.\n"
-                  "3. Subtract `damage` from `health`.\n"
-                  "4. Print `Game Over` if health <= 0. Otherwise, print `Keep Playing!`.\n\n"
-                  "Example:\n"
-                  '```swift\nvar isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) {\n  print("Game Over");\n} else {\n  print("Keep Playing!");\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!
+                      .gameLogicInstructions
+                      .replaceAll('#', '{')
+                      .replaceAll('º', '}'),
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -154,9 +148,11 @@ class _BEx27State extends State<BEx27> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) {\n  print("Game Over");\n} else {\n  print("Keep Playing!");\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise27SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -183,33 +179,14 @@ class _BEx27State extends State<BEx27> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "isAlive ",
+                        text:
+                            "var isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) {\n  print(\"Game Over\");\n} else {\n  print(\"Keep Playing!\");\n}",
                         style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n2  var ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "health ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 100;\n3  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "damage ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 30;\n4  health -= damage;\n5  if (health <= 0) {\n6      print(\"Game Over\");\n7  } else {\n8      print(\"Keep Playing!\");\n9  }",
-                        style: TextStyle(color: Colors.grey),
                       ),
                     ],
                   ),
@@ -224,10 +201,10 @@ class _BEx27State extends State<BEx27> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

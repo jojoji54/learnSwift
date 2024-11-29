@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx26 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx26State extends State<BEx26> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,16 +69,11 @@ class _BEx26State extends State<BEx26> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully created a password validator using booleans.\n\n"
-        "Explanation:\n"
-        "- This exercise combines string operations and boolean logic.\n"
-        "- A strong password must:\n"
-        "  1. Be at least 8 characters long.\n"
-        "  2. Contain an `@` symbol.\n"
-        "  3. Contain a `\$` symbol.\n\n"
-        "Example solution:\n"
-        '```swift\nvar password = "@StrongPass\$";\nif password.contains("@") && password.contains("\$") {\n  print("Strong password!");\n} else {\n  print("Weak password.");\n}\n```',
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!
+            .passwordValidatorExplanation
+            .replaceAll('@', '{')
+            .replaceAll('&', '}'),
         titleColor: Colors.green,
       );
     } else {
@@ -88,27 +84,30 @@ class _BEx26State extends State<BEx26> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring a variable named `password` with a string value.\n"
-          "Use `.contains` to check for `@` and `\$` symbols.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1PasswordValidator,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Combine conditions with the `&&` operator:\n"
-          "Use `if password.contains(\"@\") && password.contains(\"\$\")`.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2PasswordValidator,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar password = "@StrongPass\$";\nif password.contains("@") && password.contains("\$") {\n  print("Strong password!");\n} else {\n  print("Weak password.");\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise26SolutionContent
+              .replaceAll('<', '{')
+              .replaceAll('>', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -127,18 +126,8 @@ class _BEx26State extends State<BEx26> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the Password Validator Challenge! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable named `password` and assign it a string value.\n"
-                  "2. Use `if` statements to check if the password contains:\n"
-                  "   - At least 8 characters.\n"
-                  "   - An `@` symbol.\n"
-                  "   - A `\$` symbol.\n"
-                  "3. If the password meets all criteria, print `Strong password!`.\n"
-                  "   Otherwise, print `Weak password.`.\n\n"
-                  "Example:\n"
-                  '```swift\nvar password = "@StrongPass\$";\nif password.contains("@") && password.contains("\$") {\n  print("Strong password!");\n} else {\n  print("Weak password.");\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.passwordValidatorInstructions,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -161,9 +150,11 @@ class _BEx26State extends State<BEx26> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar password = "@StrongPass\$";\nif password.contains("@") && password.contains("\$") {\n  print("Strong password!");\n} else {\n  print("Weak password.");\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise26SolutionContent
+                        .replaceAll('<', '{')
+                        .replaceAll('>', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -190,44 +181,33 @@ class _BEx26State extends State<BEx26> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "password ",
+                        text: "var password = \"@StrongPass\$\";\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "= \"@StrongPass\$\";\n",
+                        text:
+                            "if (password.contains(\"@\") && password.contains(\"\$\")) {\n",
+                        style: TextStyle(color: Colors.blueGrey),
+                      ),
+                      const TextSpan(
+                        text: "  print(\"Strong password!\");\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "2  if ",
+                        text: "} else {\n",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "(password.contains(\"@\") && password.contains(\"\$\")) {\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                        text: "  print(\"Weak password.\");\n",
+                        style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "3      print(\"Strong password!\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "4  } else {\n",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "5      print(\"Weak password.\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "6  }\n",
+                        text: "}",
                         style: TextStyle(color: Colors.blue),
                       ),
                     ],
@@ -243,10 +223,10 @@ class _BEx26State extends State<BEx26> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

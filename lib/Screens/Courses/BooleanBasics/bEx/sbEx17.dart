@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx17 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx17State extends State<BEx17> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,13 +69,8 @@ class _BEx17State extends State<BEx17> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used boolean comparisons in Swift.\n\n"
-        "Explanation:\n"
-        "- `!isHot` checks if `isHot` is `false`.\n"
-        "- `!isCold` checks if `isCold` is `false`.\n"
-        "- Combining these conditions using `&&` determines if the environment is comfortable.\n\n"
-        "This exercise demonstrates how to use logical operators with comparisons to evaluate complex conditions.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanComparisonExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -85,30 +81,26 @@ class _BEx17State extends State<BEx17> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Declare two boolean variables: `isHot` and `isCold`. Assign them values like `true` or `false`.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanComparison,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use the `!` operator to invert a boolean value, e.g., `!isHot` checks if `isHot` is `false`.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2BooleanComparison,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var isHot = false;\n'
-          'var isCold = false;\n'
-          'var isComfortable = !isHot && !isCold;\n'
-          'print(isComfortable);\n'
-          '```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise17SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -127,12 +119,8 @@ class _BEx17State extends State<BEx17> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Comparisons! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare two boolean variables: `isHot` and `isCold`.\n"
-                  "2. Combine them using the `!` operator and the `&&` operator to determine if `isComfortable` is `true`.\n"
-                  "3. Print the result.",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsBooleanComparison,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -155,14 +143,8 @@ class _BEx17State extends State<BEx17> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var isHot = false;\n'
-                    'var isCold = false;\n'
-                    'var isComfortable = !isHot && !isCold;\n'
-                    'print(isComfortable);\n'
-                    '```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise17SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -189,9 +171,9 @@ class _BEx17State extends State<BEx17> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text: "1  var ",
@@ -234,10 +216,10 @@ class _BEx17State extends State<BEx17> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

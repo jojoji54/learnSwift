@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx21 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx21State extends State<BEx21> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,10 +69,8 @@ class _BEx21State extends State<BEx21> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used the boolean negation operator in Swift.\n\n"
-        "Explanation:\n"
-        "- The `!` operator negates a boolean value. For example, if `isSwiftFun` is `true`, `!isSwiftFun` becomes `false`.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanNegationExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -82,26 +81,26 @@ class _BEx21State extends State<BEx21> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the `var` keyword to declare two variables. Assign one a boolean value and negate it for the other.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanNegation,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2BooleanNegation,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise21SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -120,14 +119,8 @@ class _BEx21State extends State<BEx21> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Negation! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a boolean variable using the `var` keyword.\n"
-                  "2. Declare another variable and assign it the negated value of the first variable.\n\n"
-                  "Example:\n"
-                  "var isSwiftFun = true\n"
-                  "var notSwiftFun = !isSwiftFun",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsBooleanNegation,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -150,9 +143,8 @@ class _BEx21State extends State<BEx21> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar isSwiftFun = true\nvar notSwiftFun = !isSwiftFun\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise21SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -179,9 +171,9 @@ class _BEx21State extends State<BEx21> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text: "1  var ",
@@ -216,10 +208,10 @@ class _BEx21State extends State<BEx21> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

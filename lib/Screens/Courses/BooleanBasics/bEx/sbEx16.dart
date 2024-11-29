@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx16 extends StatefulWidget {
   final String title;
@@ -43,7 +44,7 @@ class _BEx16State extends State<BEx16> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -66,12 +67,8 @@ class _BEx16State extends State<BEx16> {
       _controller.clear();
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully combined boolean variables using logical operators.\n\n"
-        "Explanation:\n"
-        "- The `&&` operator checks if both conditions are true.\n"
-        "- The `||` operator checks if at least one condition is true.\n\n"
-        "By using these operators, you can make decisions based on multiple conditions.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -82,30 +79,27 @@ class _BEx16State extends State<BEx16> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Start by declaring two boolean variables: `var isSunny = true` and `var isWeekend = false`.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1Boolean,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Use the `&&` operator to check if both conditions are true. For example: `var goToBeach = isSunny && isWeekend`.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2Boolean,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var isSunny = true;\n'
-          'var isWeekend = false;\n'
-          'var goToBeach = isSunny && isWeekend;\n'
-          'print(goToBeach);\n'
-          '```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise16SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -124,12 +118,8 @@ class _BEx16State extends State<BEx16> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Operations! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare two boolean variables: `isSunny` and `isWeekend`.\n"
-                  "2. Combine them using `&&` or `||` and assign the result to `goToBeach`.\n"
-                  "3. Print the result.",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsBoolean,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -152,14 +142,8 @@ class _BEx16State extends State<BEx16> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var isSunny = true;\n'
-                    'var isWeekend = false;\n'
-                    'var goToBeach = isSunny && isWeekend;\n'
-                    'print(goToBeach);\n'
-                    '```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise16SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -186,9 +170,9 @@ class _BEx16State extends State<BEx16> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text: "1  var ",
@@ -231,10 +215,10 @@ class _BEx16State extends State<BEx16> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

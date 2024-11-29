@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx29 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx29State extends State<BEx29> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,12 +69,8 @@ class _BEx29State extends State<BEx29> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Amazing! You've implemented a guessing game using booleans.\n\n"
-        "Explanation:\n"
-        "- `secretBoolean` holds a hidden value.\n"
-        "- The user compares their guess to this value using the `==` operator.\n"
-        "- Based on the comparison, you display the appropriate message.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanGuessExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -84,26 +81,31 @@ class _BEx29State extends State<BEx29> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use a constant `secretBoolean` with a boolean value. Declare another constant `userGuess` and compare both using `==`.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanGuess,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) {\n  print("You guessed it! 🎉");\n} else {\n  print("Wrong guess! Try again.");\n}\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!
+              .hint2BooleanGuess
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) {\n  print("You guessed it! 🎉");\n} else {\n  print("Wrong guess! Try again.");\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise29SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts.toString())),
           ),
         );
       }
@@ -122,15 +124,8 @@ class _BEx29State extends State<BEx29> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the Boolean Guessing Challenge! 🧠\n\n"
-                  "Your task:\n"
-                  "1. Declare a constant `secretBoolean` with a boolean value.\n"
-                  "2. Declare a constant `userGuess` representing the user's input.\n"
-                  "3. Compare both using the `==` operator.\n"
-                  "4. If the guess is correct, print `You guessed it! 🎉`. Otherwise, print `Wrong guess! Try again.`.\n\n"
-                  "Example:\n"
-                  '```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) {\n  print("You guessed it! 🎉");\n} else {\n  print("Wrong guess! Try again.");\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.booleanGuessInstructions,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -153,9 +148,11 @@ class _BEx29State extends State<BEx29> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nlet secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) {\n  print("You guessed it! 🎉");\n} else {\n  print("Wrong guess! Try again.");\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise29SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -182,25 +179,14 @@ class _BEx29State extends State<BEx29> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "1  let ",
-                        style: TextStyle(color: Colors.blue),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "secretBoolean ",
+                        text:
+                            "let secretBoolean = true;\nlet userGuess = true;\nif (userGuess == secretBoolean) {\n  print(\"You guessed it! 🎉\");\n} else {\n  print(\"Wrong guess! Try again.\");\n}",
                         style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n2  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "userGuess ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n3  if (userGuess == secretBoolean) {\n4      print(\"You guessed it! 🎉\");\n5  } else {\n6      print(\"Wrong guess! Try again.\");\n7  }",
-                        style: TextStyle(color: Colors.grey),
                       ),
                     ],
                   ),
@@ -215,10 +201,10 @@ class _BEx29State extends State<BEx29> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

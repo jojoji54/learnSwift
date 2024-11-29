@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx30 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx30State extends State<BEx30> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,12 +69,8 @@ class _BEx30State extends State<BEx30> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Amazing! You've successfully used logical operators to evaluate conditions.\n\n"
-            "Explanation:\n"
-            "- `isUserLoggedIn` and `hasPremiumAccess` are boolean constants.\n"
-            "- You used the `&&` (AND) operator to check if both are true.\n"
-            "- Based on the evaluation, you printed the corresponding message.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanLogicExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -84,27 +81,31 @@ class _BEx30State extends State<BEx30> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use two constants `isUserLoggedIn` and `hasPremiumAccess` with boolean values.\n"
-              "Check both conditions using the `&&` operator.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanLogic,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-              '```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) {\n  print("Access granted to premium feature!");\n} else {\n  print("Access denied. Please log in or upgrade.");\n}\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!
+              .hint2BooleanLogic
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-              '```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) {\n  print("Access granted to premium feature!");\n} else {\n  print("Access denied. Please log in or upgrade.");\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise30SolutionContent
+              .replaceAll('#', '{')
+              .replaceAll('º', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts.toString())),
           ),
         );
       }
@@ -123,15 +124,8 @@ class _BEx30State extends State<BEx30> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the Logical Operators Game! 🧠\n\n"
-                      "Your task:\n"
-                      "1. Declare two constants: `isUserLoggedIn` and `hasPremiumAccess`.\n"
-                      "2. Use the `&&` operator to check if both conditions are true.\n"
-                      "3. If true, print `Access granted to premium feature!`.\n"
-                      "4. Otherwise, print `Access denied. Please log in or upgrade.`.\n\n"
-                      "Example:\n"
-                      '```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) {\n  print("Access granted to premium feature!");\n} else {\n  print("Access denied. Please log in or upgrade.");\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.booleanLogicInstructions,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -154,9 +148,11 @@ class _BEx30State extends State<BEx30> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                        '```swift\nlet isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) {\n  print("Access granted to premium feature!");\n} else {\n  print("Access denied. Please log in or upgrade.");\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise30SolutionContent
+                        .replaceAll('#', '{')
+                        .replaceAll('º', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -183,26 +179,14 @@ class _BEx30State extends State<BEx30> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "1  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "isUserLoggedIn ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true;\n2  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "hasPremiumAccess ",
-                        style: TextStyle(color: Colors.green),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text:
-                            "= false;\n3  if (isUserLoggedIn && hasPremiumAccess) {\n4      print(\"Access granted to premium feature!\");\n5  } else {\n6      print(\"Access denied. Please log in or upgrade.\");\n7  }",
-                        style: TextStyle(color: Colors.grey),
+                            "let isUserLoggedIn = true;\nlet hasPremiumAccess = false;\nif (isUserLoggedIn && hasPremiumAccess) {\n  print(\"Access granted to premium feature!\");\n} else {\n  print(\"Access denied. Please log in or upgrade.\");\n}",
+                        style: TextStyle(color: Colors.green),
                       ),
                     ],
                   ),
@@ -217,10 +201,10 @@ class _BEx30State extends State<BEx30> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

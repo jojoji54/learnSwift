@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx22 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx22State extends State<BEx22> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,11 +69,8 @@ class _BEx22State extends State<BEx22> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully worked with boolean short-circuit evaluation in Swift.\n\n"
-        "Explanation:\n"
-        "- The `||` operator evaluates to `true` if either condition is true, without evaluating the second condition if the first is true.\n"
-        "- The `&&` operator evaluates to `true` only if both conditions are true.",
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanShortCircuitExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -83,25 +81,26 @@ class _BEx22State extends State<BEx22> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Try using the `||` operator for 'OR' and `&&` for 'AND'.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanShortCircuit,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Remember, `||` evaluates the first condition first, while `&&` requires both conditions to be true.",
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2BooleanShortCircuit,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar result = (true || false) && true\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise22SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -120,13 +119,8 @@ class _BEx22State extends State<BEx22> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Short-Circuit Evaluation! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable using the `var` keyword.\n"
-                  "2. Use `||` (OR) and `&&` (AND) operators to create a boolean expression.\n\n"
-                  "Example:\n"
-                  "var result = (true || false) && true",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsBooleanShortCircuit,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,9 +143,8 @@ class _BEx22State extends State<BEx22> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar result = (true || false) && true\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise22SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -178,6 +171,10 @@ class _BEx22State extends State<BEx22> {
                       fontSize: 18,
                     ),
                     children: [
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
+                      ),
                       const TextSpan(
                         text: "1  var ",
                         style: TextStyle(color: Colors.blue),
@@ -203,10 +200,10 @@ class _BEx22State extends State<BEx22> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

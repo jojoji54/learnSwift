@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx18 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx18State extends State<BEx18> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,14 +69,8 @@ class _BEx18State extends State<BEx18> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used logical operators to combine boolean values in Swift.\n\n"
-        "Explanation:\n"
-        "- `isSunny` checks if it is sunny.\n"
-        "- `hasUmbrella` checks if you have an umbrella.\n"
-        "- `canGoWalking` combines these two values using the `||` operator to decide if you can go walking.\n"
-        "Example:\n"
-        '```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking) // true\n```',
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.booleanWalkingExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -86,26 +81,26 @@ class _BEx18State extends State<BEx18> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the `var` keyword to declare the variables. Assign boolean values like `true` or `false`.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1BooleanWalking,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "Combine the boolean values using the `||` operator. For example:\n"
-          '```swift\nvar canGoWalking = isSunny || hasUmbrella\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!.hint2BooleanWalking,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking)\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!.exercise18SolutionContent,
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!.tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -124,16 +119,8 @@ class _BEx18State extends State<BEx18> {
               heroTag: "introButton2",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Boolean Operations! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare two boolean variables: `isSunny` and `hasUmbrella`.\n"
-                  "2. Combine them using the `||` operator to decide if you can go walking.\n\n"
-                  "Example:\n"
-                  "var isSunny = true\n"
-                  "var hasUmbrella = false\n"
-                  "var canGoWalking = isSunny || hasUmbrella\n"
-                  "print(canGoWalking)",
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!.exerciseInstructionsBooleanWalking,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -156,9 +143,8 @@ class _BEx18State extends State<BEx18> {
                 heroTag: "helpButton2",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar isSunny = true\nvar hasUmbrella = false\nvar canGoWalking = isSunny || hasUmbrella\nprint(canGoWalking)\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!.exercise18SolutionContent,
                     titleColor: Colors.red,
                   );
                 },
@@ -185,9 +171,9 @@ class _BEx18State extends State<BEx18> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
                         text: "1  var ",
@@ -242,10 +228,10 @@ class _BEx18State extends State<BEx18> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx25 extends StatefulWidget {
   final String title;
@@ -44,7 +45,7 @@ class _BEx25State extends State<BEx25> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text("Close"),
+              child: Text(AppLocalizations.of(context)!.close),
             ),
           ],
         );
@@ -68,12 +69,8 @@ class _BEx25State extends State<BEx25> {
       _controller.clear(); // Limpiar el campo de texto
 
       _showDialog(
-        "Correct! 🎉",
-        "Great! You've successfully used nested `if` statements with booleans.\n\n"
-        "Explanation:\n"
-        "- This exercise demonstrates how to use nested `if` statements to handle multiple conditions.\n"
-        "- Example:\n"
-        '```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition {\n  if secondCondition {\n    print("You nailed it!")\n  } else {\n    print("Almost there!")\n  }\n} else {\n  print("Try again!")\n}\n```',
+        AppLocalizations.of(context)!.correctTitle,
+        AppLocalizations.of(context)!.nestedIfExplanation,
         titleColor: Colors.green,
       );
     } else {
@@ -84,26 +81,33 @@ class _BEx25State extends State<BEx25> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          "Hint 1",
-          "Use the `var` keyword to declare two boolean variables. Use nested `if` statements to check each condition.",
+          AppLocalizations.of(context)!.hint1Title,
+          AppLocalizations.of(context)!.hint1NestedIf,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          "Hint 2",
-          "A correct example is:\n"
-          '```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition {\n  if secondCondition {\n    print("You nailed it!")\n  } else {\n    print("Almost there!")\n  }\n} else {\n  print("Try again!")\n}\n```',
+          AppLocalizations.of(context)!.hint2Title,
+          AppLocalizations.of(context)!
+              .hint2NestedIf
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition {\n  if secondCondition {\n    print("You nailed it!")\n  } else {\n    print("Almost there!")\n  }\n} else {\n  print("Try again!")\n}\n```',
+          AppLocalizations.of(context)!.solutionTitle,
+          AppLocalizations.of(context)!
+              .exercise25SolutionContent
+              .replaceAll('@', '{')
+              .replaceAll('&', '}'),
           titleColor: Colors.red,
         );
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
+            content: Text(
+              AppLocalizations.of(context)!
+                  .tryAgain(_failedAttempts.toString()),
+            ),
           ),
         );
       }
@@ -122,13 +126,11 @@ class _BEx25State extends State<BEx25> {
               heroTag: "introButton1",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Nested If Statements with Booleans! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare two boolean variables using the `var` keyword.\n"
-                  "2. Use nested `if` statements to check both conditions.\n\n"
-                  "Example:\n"
-                  '```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition {\n  if secondCondition {\n    print("You nailed it!")\n  } else {\n    print("Almost there!")\n  }\n} else {\n  print("Try again!")\n}\n```',
+                  AppLocalizations.of(context)!.exerciseInstructionsTitle,
+                  AppLocalizations.of(context)!
+                      .exerciseInstructionsNestedIf
+                      .replaceAll('@', '{')
+                      .replaceAll('&', '}'),
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -151,9 +153,11 @@ class _BEx25State extends State<BEx25> {
                 heroTag: "helpButton1",
                 onPressed: () {
                   _showDialog(
-                    "Solution",
-                    "The correct solution is:\n\n"
-                    '```swift\nvar firstCondition = true\nvar secondCondition = false\nif firstCondition {\n  if secondCondition {\n    print("You nailed it!")\n  } else {\n    print("Almost there!")\n  }\n} else {\n  print("Try again!")\n}\n```',
+                    AppLocalizations.of(context)!.solutionTitle,
+                    AppLocalizations.of(context)!
+                        .exercise25SolutionContent
+                        .replaceAll('@', '{')
+                        .replaceAll('&', '}'),
                     titleColor: Colors.red,
                   );
                 },
@@ -180,64 +184,52 @@ class _BEx25State extends State<BEx25> {
                       fontSize: 18,
                     ),
                     children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
+                      TextSpan(
+                        text: "${AppLocalizations.of(context)!.example}:\n",
+                        style: const TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "firstCondition ",
+                        text: "var firstCondition = true;\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "= true;\n",
+                        text: "var secondCondition = false;\n",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "if (firstCondition) {\n",
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      const TextSpan(
+                        text: "  if (secondCondition) {\n",
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      const TextSpan(
+                        text: "    print(\"You nailed it!\");\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "2  var ",
+                        text: "  } else {\n",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "secondCondition ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= false;\n",
+                        text: "    print(\"Almost there!\");\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "3  if (firstCondition) {\n",
+                        text: "  }\n",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "4      if (secondCondition) {\n",
+                        text: "} else {\n",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "5          print(\"You nailed it!\");\n",
-                        style: TextStyle(color: Colors.green),
+                        text: "  print(\"Try again!\");\n",
+                        style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "6      } else {\n",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "7          print(\"Almost there!\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "8      }\n",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "9  } else {\n",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "10     print(\"Try again!\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "11 }\n",
+                        text: "}\n",
                         style: TextStyle(color: Colors.blue),
                       ),
                     ],
@@ -253,10 +245,10 @@ class _BEx25State extends State<BEx25> {
                     fontSize: 18,
                     color: _inputTextColor,
                   ),
-                  decoration: const InputDecoration(
-                    contentPadding: EdgeInsets.symmetric(vertical: 8),
-                    hintText: '"Enter your code here"',
-                    hintStyle: TextStyle(color: Colors.grey),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 8),
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),
                 ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animator/flutter_animator.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
@@ -172,7 +173,25 @@ class _MyHomePageState extends State<MyHomePage> {
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
                                         child: Center(
-                                          child: Text(
+                                          child: Icon(
+                                              !course.alreadyBuy
+                                                  ? FontAwesomeIcons.lock
+                                                  : filteredCounter.isNotEmpty
+                                                      ? FontAwesomeIcons.trophy
+                                                      : filteredCounter.isEmpty
+                                                          ? FontAwesomeIcons
+                                                              .play
+                                                          : filteredCounter
+                                                                      .length >=
+                                                                  0
+                                                              ? FontAwesomeIcons
+                                                                  .play
+                                                              : FontAwesomeIcons
+                                                                  .play,
+                                              size: 15,
+                                              color: Colors.white),
+
+                                          /* Text(
                                             !course.alreadyBuy
                                                 ? 'Unlock'
                                                 : course.completed ==
@@ -191,7 +210,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                               color: Colors.white,
                                               fontSize: 15,
                                             ),
-                                          ),
+                                          ), */
                                         ),
                                       ),
                                     ),

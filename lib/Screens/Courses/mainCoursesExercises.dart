@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
@@ -190,7 +191,18 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           height: 50,
                                           width: 80,
                                           child: Center(
-                                            child: Text(
+                                            child: Icon(
+                                                !course.alreadyBuy &&
+                                                        !allProvider
+                                                            .everythingPurchased
+                                                    ? FontAwesomeIcons.coins
+                                                    : course.completed
+                                                        ? FontAwesomeIcons
+                                                            .trophy
+                                                        : FontAwesomeIcons.code,
+                                                size: 15,
+                                                color: Colors.white),
+                                            /* Text(
                                               !course.alreadyBuy &&
                                                       !allProvider
                                                           .everythingPurchased
@@ -205,7 +217,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 color: Colors.white,
                                                 fontSize: 15,
                                               ),
-                                            ),
+                                            ), */
                                           ),
                                         ),
                                       ),
@@ -464,8 +476,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     );
   }
 
- 
-
   Future<void> _unlockAllExercises() async {
     final Set<String> ids = {
       'com.mrrubik.learnswift.everythingunlocked'
@@ -489,7 +499,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         textColor: Colors.white,
       );
     } else {
-     // Maneja el caso donde el producto no fue encontrado
+      // Maneja el caso donde el producto no fue encontrado
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
         toastLength: Toast.LENGTH_SHORT,
@@ -501,65 +511,64 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   void restorePurchases() {
-  try {
-    inAppPurchase.purchaseStream
-        .listen((List<PurchaseDetails> purchaseDetailsList) {
-      bool restored = false; // Indica si se restauraron compras exitosamente.
+    try {
+      inAppPurchase.purchaseStream
+          .listen((List<PurchaseDetails> purchaseDetailsList) {
+        bool restored = false; // Indica si se restauraron compras exitosamente.
 
-      for (var purchase in purchaseDetailsList) {
-        if (purchase.status == PurchaseStatus.purchased ||
-            purchase.status == PurchaseStatus.restored) {
-          restored = true;
-          // Desbloquear el contenido correspondiente
-          _unlockContent(purchase.productID);
-        } else if (purchase.status == PurchaseStatus.error) {
-          // Maneja el error de la compra
+        for (var purchase in purchaseDetailsList) {
+          if (purchase.status == PurchaseStatus.purchased ||
+              purchase.status == PurchaseStatus.restored) {
+            restored = true;
+            // Desbloquear el contenido correspondiente
+            _unlockContent(purchase.productID);
+          } else if (purchase.status == PurchaseStatus.error) {
+            // Maneja el error de la compra
+            Fluttertoast.showToast(
+              msg: AppLocalizations.of(context)!.restoreError,
+              toastLength: Toast.LENGTH_SHORT,
+              gravity: ToastGravity.BOTTOM,
+              backgroundColor: Colors.red,
+              textColor: Colors.white,
+            );
+            print('Error durante la restauración: ${purchase.error}');
+          }
+        }
+
+        if (restored) {
           Fluttertoast.showToast(
-            msg: AppLocalizations.of(context)!.restoreError,
+            msg: AppLocalizations.of(context)!.restoreSuccess,
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.BOTTOM,
-            backgroundColor: Colors.red,
+            backgroundColor: Colors.green,
             textColor: Colors.white,
           );
-          print('Error durante la restauración: ${purchase.error}');
+          print('Restauración de compras completada.');
+        } else {
+          Fluttertoast.showToast(
+            msg: AppLocalizations.of(context)!.noPurchasesToRestore,
+            toastLength: Toast.LENGTH_SHORT,
+            gravity: ToastGravity.BOTTOM,
+            backgroundColor: Colors.orange,
+            textColor: Colors.white,
+          );
+          print('No hay compras para restaurar.');
         }
-      }
+      });
 
-      if (restored) {
-        Fluttertoast.showToast(
-          msg: AppLocalizations.of(context)!.restoreSuccess,
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          backgroundColor: Colors.green,
-          textColor: Colors.white,
-        );
-        print('Restauración de compras completada.');
-      } else {
-        Fluttertoast.showToast(
-          msg: AppLocalizations.of(context)!.noPurchasesToRestore,
-          toastLength: Toast.LENGTH_SHORT,
-          gravity: ToastGravity.BOTTOM,
-          backgroundColor: Colors.orange,
-          textColor: Colors.white,
-        );
-        print('No hay compras para restaurar.');
-      }
-    });
-
-    print('Intentando restaurar compras...');
-  } catch (e) {
-    // Manejamos cualquier error no previsto
-    Fluttertoast.showToast(
-      msg: AppLocalizations.of(context)!.unexpectedRestoreError,
-      toastLength: Toast.LENGTH_LONG,
-      gravity: ToastGravity.BOTTOM,
-      backgroundColor: Colors.red,
-      textColor: Colors.white,
-    );
-    print('Error inesperado durante la restauración: $e');
+      print('Intentando restaurar compras...');
+    } catch (e) {
+      // Manejamos cualquier error no previsto
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.unexpectedRestoreError,
+        toastLength: Toast.LENGTH_LONG,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+      );
+      print('Error inesperado durante la restauración: $e');
+    }
   }
-}
-
 
   void navToEx(int courseCat, int id, String title) {
     switch (courseCat) {

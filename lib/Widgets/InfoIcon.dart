@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:io';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class InfoIcon extends StatelessWidget {
   const InfoIcon({super.key});
@@ -131,12 +133,8 @@ class InfoIcon extends StatelessWidget {
       onPressed: () {
         _showDialog(
           context,
-          "About LearnSwift",
-          "LearnSwift is an application designed to help users learn Swift, "
-          "the powerful programming language used to create apps for Apple platforms. "
-          "This app includes interactive exercises to build a solid foundation in Swift programming.\n\n"
-          "Version: Swift 5.9\n\n"
-          "If you have any questions or feedback, feel free to reach out through any of the following platforms:",
+          AppLocalizations.of(context)!.aboutLearnSwiftTitle,
+          AppLocalizations.of(context)!.aboutLearnSwiftContent,
         );
       },
     );

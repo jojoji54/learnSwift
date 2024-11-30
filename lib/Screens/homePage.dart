@@ -38,7 +38,10 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Center(),
+              Icon(
+                FontAwesomeIcons.info,
+                color: Colors.transparent,
+              ),
               Text(
                 'LearnSwift',
                 style: TextStyle(
@@ -46,7 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     fontWeight: FontWeight.bold,
                     fontSize: 30),
               ),
-                 const InfoIcon(), // Aquí añades el ícono de información
+              const InfoIcon(), // Aquí añades el ícono de información
             ],
           ),
         ),

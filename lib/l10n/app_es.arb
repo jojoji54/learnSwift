@@ -374,5 +374,8 @@
   "purchaseSuccess": "¡Compra completada con éxito!",
   "purchaseError": "Hubo un error durante la compra. Inténtalo de nuevo.",
   "purchasePending": "Compra pendiente. Por favor, espera...",
-  "purchaseException": "Se produjo un problema inesperado. Inténtalo más tarde."
+  "purchaseException": "Se produjo un problema inesperado. Inténtalo más tarde.", 
+  "aboutLearnSwiftTitle": "Acerca de LearnSwift",
+  "aboutLearnSwiftContent": "LearnSwift es una aplicación diseñada para ayudar a los usuarios a aprender Swift, el poderoso lenguaje de programación utilizado para crear aplicaciones en las plataformas de Apple. Esta aplicación incluye ejercicios interactivos para construir una base sólida en la programación de Swift.\n\nVersión: Swift 5.9\n\nSi tienes alguna pregunta o comentario, no dudes en ponerte en contacto a través de cualquiera de las siguientes plataformas:"
+
 }

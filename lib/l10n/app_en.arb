@@ -371,7 +371,13 @@
   "exercise45SolutionTitle": "Solution",
   "exercise45SolutionContent": "The correct solution is:\n\n```swift\nvar score = 85;\nif (score >= 90) #\n    print(\"The grade is A\");\nº else if (score >= 80) #\n    print(\"The grade is B\");\nº else if (score >= 70) #\n    print(\"The grade is C\");\nº else if (score >= 60) #\n    print(\"The grade is D\");\nº else #\n    print(\"The grade is F\");\nº\n```",
   "exercise45Example": "Example:\n\n```swift\nvar score = 85;\nif (score >= 90) #\n    print(\"The grade is A\");\nº else # ... º\n```",
-  "exercise45Hint": "Enter your code here"
+  "exercise45Hint": "Enter your code here", 
+    "purchaseSuccess": "Purchase completed successfully!",
+    "purchaseError": "There was an error during the purchase. Please try again.",
+    "purchasePending": "Purchase pending. Please wait...",
+    "purchaseException": "An unexpected issue occurred. Please try again later."
+  
+  
 
 
 

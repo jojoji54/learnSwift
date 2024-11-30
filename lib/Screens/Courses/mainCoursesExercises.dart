@@ -300,29 +300,63 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     }
   }
 
-  void _handlePurchase(PurchaseDetails purchaseDetails) async {
-    try {
-      if (purchaseDetails.status == PurchaseStatus.purchased ||
-          purchaseDetails.status == PurchaseStatus.restored) {
-        // Compra completada con éxito
-        await _verifyPurchase(purchaseDetails);
-        _unlockContent(purchaseDetails.productID);
-      } else if (purchaseDetails.status == PurchaseStatus.error) {
-        // Maneja errores durante la compra
-        print('Error durante la compra: ${purchaseDetails.error}');
-      } else if (purchaseDetails.status == PurchaseStatus.pending) {
-        // Compra pendiente
-        print('Compra pendiente. Esperando confirmación...');
-      }
+ void _handlePurchase(PurchaseDetails purchaseDetails) async {
+  try {
+    if (purchaseDetails.status == PurchaseStatus.purchased ||
+        purchaseDetails.status == PurchaseStatus.restored) {
+      // Compra completada con éxito
+      await _verifyPurchase(purchaseDetails);
+      _unlockContent(purchaseDetails.productID);
 
-      // Completa la compra para notificar a la plataforma
-      if (purchaseDetails.pendingCompletePurchase) {
-        await inAppPurchase.completePurchase(purchaseDetails);
-      }
-    } catch (e) {
-      debugPrint(e.toString());
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseSuccess,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
+    } else if (purchaseDetails.status == PurchaseStatus.error) {
+      // Maneja errores durante la compra
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseError,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+      );
+
+      debugPrint('Error durante la compra: ${purchaseDetails.error}');
+    } else if (purchaseDetails.status == PurchaseStatus.pending) {
+      // Compra pendiente
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchasePending,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.orange,
+        textColor: Colors.white,
+      );
+
+      debugPrint('Compra pendiente. Esperando confirmación...');
     }
+
+    // Completa la compra para notificar a la plataforma
+    if (purchaseDetails.pendingCompletePurchase) {
+      await inAppPurchase.completePurchase(purchaseDetails);
+    }
+  } catch (e) {
+    // Maneja excepciones y muestra un mensaje al usuario
+    Fluttertoast.showToast(
+      msg: AppLocalizations.of(context)!.purchaseException,
+      toastLength: Toast.LENGTH_LONG,
+      gravity: ToastGravity.BOTTOM,
+      backgroundColor: Colors.redAccent,
+      textColor: Colors.white,
+    );
+
+    debugPrint('Excepción durante el manejo de la compra: $e');
   }
+}
+
 
   Future<void> _verifyPurchase(PurchaseDetails purchaseDetails) async {
     // Verifica el recibo en tu servidor o de manera local

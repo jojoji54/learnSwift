@@ -29,6 +29,8 @@ class MainCoursesExercises extends StatefulWidget {
 
 class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   final InAppPurchase inAppPurchase = InAppPurchase.instance;
+  bool isLoading = false;
+  int courseID = 100000000;
   @override
   void initState() {
     super.initState();
@@ -161,48 +163,63 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                         ],
                                       ),
                                     ),
-                                    InkWell(
-                                      onTap: () {
-                                        allProvider.setEverythingUnlocked(
-                                            Constant.everythingunlocked);
-                                        if (!course.alreadyBuy &&
-                                            !allProvider.everythingPurchased) {
-                                          _showUnlockDialog(
-                                              course); // Muestra el diálogo para desbloquear
-                                        } else {
-                                          navToEx(allProvider.courseCategory,
-                                              course.id, course.exerciseName);
-                                        }
-                                      },
-                                      child: Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(10),
-                                            color: !course.alreadyBuy &&
-                                                    !allProvider
-                                                        .everythingPurchased
-                                                ? Colors.red
-                                                : course.completed
-                                                    ? Colors.green
-                                                    : Colors.grey,
-                                          ),
-                                          height: 50,
-                                          width: 80,
-                                          child: Center(
-                                            child: Icon(
-                                                !course.alreadyBuy &&
-                                                        !allProvider
-                                                            .everythingPurchased
-                                                    ? FontAwesomeIcons.coins
-                                                    : course.completed
-                                                        ? FontAwesomeIcons
-                                                            .trophy
-                                                        : FontAwesomeIcons.code,
-                                                size: 15,
-                                                color: Colors.white),
-                                            /* Text(
+                                    isLoading == true && courseID == course.id
+                                        ? Padding(
+                                            padding: const EdgeInsets.all(8.0),
+                                            child: CircularProgressIndicator(
+                                              color: const Color.fromARGB(
+                                                  255, 19, 51, 106),
+                                            ),
+                                          )
+                                        : InkWell(
+                                            onTap: () {
+                                              allProvider.setEverythingUnlocked(
+                                                  Constant.everythingunlocked);
+                                              if (!course.alreadyBuy &&
+                                                  !allProvider
+                                                      .everythingPurchased) {
+                                                courseID = course.id;
+                                                _showUnlockDialog(
+                                                    course); // Muestra el diálogo para desbloquear
+                                              } else {
+                                                navToEx(
+                                                    allProvider.courseCategory,
+                                                    course.id,
+                                                    course.exerciseName);
+                                              }
+                                            },
+                                            child: Padding(
+                                              padding:
+                                                  const EdgeInsets.all(8.0),
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                  color: !course.alreadyBuy &&
+                                                          !allProvider
+                                                              .everythingPurchased
+                                                      ? Colors.red
+                                                      : course.completed
+                                                          ? Colors.green
+                                                          : Colors.grey,
+                                                ),
+                                                height: 50,
+                                                width: 80,
+                                                child: Center(
+                                                  child: Icon(
+                                                      !course.alreadyBuy &&
+                                                              !allProvider
+                                                                  .everythingPurchased
+                                                          ? FontAwesomeIcons
+                                                              .coins
+                                                          : course.completed
+                                                              ? FontAwesomeIcons
+                                                                  .trophy
+                                                              : FontAwesomeIcons
+                                                                  .code,
+                                                      size: 15,
+                                                      color: Colors.white),
+                                                  /* Text(
                                               !course.alreadyBuy &&
                                                       !allProvider
                                                           .everythingPurchased
@@ -218,10 +235,10 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 fontSize: 15,
                                               ),
                                             ), */
+                                                ),
+                                              ),
+                                            ),
                                           ),
-                                        ),
-                                      ),
-                                    ),
                                   ],
                                 ),
                               ],
@@ -251,6 +268,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
+      setState(() {
+        isLoading = false;
+      });
       return;
     }
 
@@ -284,6 +304,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
+      setState(() {
+        isLoading = false;
+      });
     }
   }
 
@@ -300,63 +323,67 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     }
   }
 
- void _handlePurchase(PurchaseDetails purchaseDetails) async {
-  try {
-    if (purchaseDetails.status == PurchaseStatus.purchased ||
-        purchaseDetails.status == PurchaseStatus.restored) {
-      // Compra completada con éxito
-      await _verifyPurchase(purchaseDetails);
-      _unlockContent(purchaseDetails.productID);
+  void _handlePurchase(PurchaseDetails purchaseDetails) async {
+    try {
+      if (purchaseDetails.status == PurchaseStatus.purchased ||
+          purchaseDetails.status == PurchaseStatus.restored) {
+        // Compra completada con éxito
+        await _verifyPurchase(purchaseDetails);
+        _unlockContent(purchaseDetails.productID);
 
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseSuccess,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.green,
+          textColor: Colors.white,
+        );
+      } else if (purchaseDetails.status == PurchaseStatus.error) {
+        // Maneja errores durante la compra
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseError,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+        );
+        setState(() {
+          isLoading = false;
+        });
+
+        debugPrint('Error durante la compra: ${purchaseDetails.error}');
+      } else if (purchaseDetails.status == PurchaseStatus.pending) {
+        // Compra pendiente
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchasePending,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.orange,
+          textColor: Colors.white,
+        );
+
+        debugPrint('Compra pendiente. Esperando confirmación...');
+      }
+
+      // Completa la compra para notificar a la plataforma
+      if (purchaseDetails.pendingCompletePurchase) {
+        await inAppPurchase.completePurchase(purchaseDetails);
+      }
+    } catch (e) {
+      // Maneja excepciones y muestra un mensaje al usuario
       Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseSuccess,
-        toastLength: Toast.LENGTH_SHORT,
+        msg: AppLocalizations.of(context)!.purchaseException,
+        toastLength: Toast.LENGTH_LONG,
         gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.redAccent,
         textColor: Colors.white,
       );
-    } else if (purchaseDetails.status == PurchaseStatus.error) {
-      // Maneja errores durante la compra
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseError,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-      );
-
-      debugPrint('Error durante la compra: ${purchaseDetails.error}');
-    } else if (purchaseDetails.status == PurchaseStatus.pending) {
-      // Compra pendiente
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchasePending,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.orange,
-        textColor: Colors.white,
-      );
-
-      debugPrint('Compra pendiente. Esperando confirmación...');
+      setState(() {
+        isLoading = false;
+      });
+      debugPrint('Excepción durante el manejo de la compra: $e');
     }
-
-    // Completa la compra para notificar a la plataforma
-    if (purchaseDetails.pendingCompletePurchase) {
-      await inAppPurchase.completePurchase(purchaseDetails);
-    }
-  } catch (e) {
-    // Maneja excepciones y muestra un mensaje al usuario
-    Fluttertoast.showToast(
-      msg: AppLocalizations.of(context)!.purchaseException,
-      toastLength: Toast.LENGTH_LONG,
-      gravity: ToastGravity.BOTTOM,
-      backgroundColor: Colors.redAccent,
-      textColor: Colors.white,
-    );
-
-    debugPrint('Excepción durante el manejo de la compra: $e');
   }
-}
-
 
   Future<void> _verifyPurchase(PurchaseDetails purchaseDetails) async {
     // Verifica el recibo en tu servidor o de manera local
@@ -375,12 +402,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
       PurchaseManagerSingleton().purchaseAndDevelop,
     );
-    setState(() {
-      course.alreadyBuy = true; // Marca como comprado
-    });
+
     if (productID == "com.mrrubik.learnswift.everythingunlocked") {
       widget.allProvider!.setEverythingUnlocked(true);
     }
+    setState(() {
+      course.alreadyBuy = true; // Marca como comprado
+      isLoading = false;
+    });
 
     print('Contenido desbloqueado para el producto: $productID');
   }
@@ -465,6 +494,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: ElevatedButton.icon(
                 onPressed: () async {
+                  setState(() {
+                    isLoading = true;
+                  });
                   Navigator.of(context).pop(); // Cerrar diálogo
                   await unlockExercise(course); // Comprar este ejercicio
                 },
@@ -479,6 +511,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: ElevatedButton.icon(
                 onPressed: () async {
+                  setState(() {
+                    isLoading = true;
+                  });
                   Navigator.of(context).pop(); // Cerrar diálogo
                   await _unlockAllExercises(); // Comprar todos los ejercicios
                 },
@@ -493,6 +528,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: OutlinedButton.icon(
                 onPressed: () async {
+                  setState(() {
+                    isLoading = true;
+                  });
                   Navigator.of(context).pop(); // Cerrar diálogo
                   restorePurchases(); // Restaurar compras
                 },
@@ -542,6 +580,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         textColor: Colors.white,
       );
     }
+    setState(() {
+      isLoading = false;
+    });
   }
 
   void restorePurchases() {
@@ -566,6 +607,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               textColor: Colors.white,
             );
             print('Error durante la restauración: ${purchase.error}');
+            setState(() {
+              isLoading = false;
+            });
           }
         }
 
@@ -578,6 +622,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             textColor: Colors.white,
           );
           print('Restauración de compras completada.');
+          setState(() {
+            isLoading = false;
+          });
         } else {
           Fluttertoast.showToast(
             msg: AppLocalizations.of(context)!.noPurchasesToRestore,
@@ -587,6 +634,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             textColor: Colors.white,
           );
           print('No hay compras para restaurar.');
+          setState(() {
+            isLoading = false;
+          });
         }
       });
 
@@ -601,6 +651,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         textColor: Colors.white,
       );
       print('Error inesperado durante la restauración: $e');
+      setState(() {
+        isLoading = false;
+      });
     }
   }
 

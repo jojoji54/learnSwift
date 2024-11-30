@@ -130,18 +130,18 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
 
   @override
   Widget build(BuildContext context) {
-    return ConstrainedBox(
-      constraints: const BoxConstraints(
-        maxHeight: 120, // Limita la altura máxima del Card
-        maxWidth: 1000, // Limita el ancho máximo del Card
-        minWidth: 120,
+    return Container(
+      decoration: BoxDecoration(
+        border: Border.all(
+          width: 1, //                   <--- border width here
+        ),
+        borderRadius: BorderRadius.circular(10),
       ),
-      child: Container(
-        decoration: BoxDecoration(
-          border: Border.all(
-            width: 1, //                   <--- border width here
-          ),
-          borderRadius: BorderRadius.circular(10),
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(
+          maxHeight: 120, // Limita la altura máxima del Card
+          maxWidth: 1000, // Limita el ancho máximo del Card
+          minWidth: 120,
         ),
         child: ElevatedButton(
           onPressed: () {

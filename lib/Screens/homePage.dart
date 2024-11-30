@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/Widgets/InfoIcon.dart';
+import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
@@ -63,16 +64,26 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.cover),
                 )),
             ListView.builder(
-              itemCount: Constant.languaje == 'es'
-                  ? coursesMainModelListES.length
-                  : coursesMainModelListEN.length,
+              itemCount: (Constant.languaje == 'es'
+                      ? coursesMainModelListES.length
+                      : coursesMainModelListEN.length) +
+                  1, // +1 para el botón
               padding: const EdgeInsets.only(top: 20, bottom: 10),
               itemBuilder: (context, index) {
+                if (index ==
+                    (Constant.languaje == 'es'
+                        ? coursesMainModelListES.length
+                        : coursesMainModelListEN.length)) {
+                  // Último elemento: el botón "Próximamente"
+                  return const Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: ComingSoonButton(),
+                  );
+                }
                 final course = Constant.languaje == 'es'
                     ? coursesMainModelListES[index]
                     : coursesMainModelListEN[index];
                 // Filtrar la lista para obtener los elementos donde id = 0 y completed = true
-                print(Constant.languaje);
                 var filteredCounter = PurchaseManagerSingleton()
                     .purchaseAndDevelop
                     .where((item) =>
@@ -201,27 +212,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                                                   .play,
                                               size: 15,
                                               color: Colors.white),
-
-                                          /* Text(
-                                            !course.alreadyBuy
-                                                ? 'Unlock'
-                                                : course.completed ==
-                                                        filteredCounter.length
-                                                    ? 'Completed'
-                                                    : filteredCounter.isEmpty
-                                                        ? 'Start'
-                                                        : filteredCounter
-                                                                    .length >=
-                                                                0
-                                                            ? 'Continue'
-                                                            : 'Start',
-                                            style: TextStyle(
-                                              fontFamily: 'InconsolataRegular',
-                                              fontWeight: FontWeight.normal,
-                                              color: Colors.white,
-                                              fontSize: 15,
-                                            ),
-                                          ), */
                                         ),
                                       ),
                                     ),

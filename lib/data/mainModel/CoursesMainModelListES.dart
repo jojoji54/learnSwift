@@ -43,7 +43,7 @@ List<CoursesMainModel> coursesMainModelListES = [
   ),
   CoursesMainModel(
     id: 5,
-    generalName: 'Arrays',
+    generalName: 'Arreglos',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

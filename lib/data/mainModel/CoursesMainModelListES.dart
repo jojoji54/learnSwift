@@ -25,7 +25,7 @@ List<CoursesMainModel> coursesMainModelListES = [
     alreadyBuy: true,
     completed: false,
   ),
-/*   CoursesMainModel(
+   CoursesMainModel(
     id: 3,
     generalName: 'Condicionales Switch',
     numCompletedCourses: 0,
@@ -33,7 +33,7 @@ List<CoursesMainModel> coursesMainModelListES = [
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+  /* CoursesMainModel(
     id: 4,
     generalName: 'Bucles',
     numCompletedCourses: 0,

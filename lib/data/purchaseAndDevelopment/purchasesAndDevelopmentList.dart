@@ -50,4 +50,20 @@ List<PurchasesAndDevelopment> purchasesAndDevelopmentList = [
   PurchasesAndDevelopment(id: 2, completed: false, purchased: false),
   PurchasesAndDevelopment(id: 2, completed: false, purchased: false),
   PurchasesAndDevelopment(id: 2, completed: false, purchased: false),
+      //SWITCH Statements
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: true),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),//
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
+  PurchasesAndDevelopment(id: 3, completed: false, purchased: false),
 ];

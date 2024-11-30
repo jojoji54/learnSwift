@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 
-class SwitchEx46 extends StatefulWidget {
+class SwitchEx54 extends StatefulWidget {
   final String title;
   final int id;
-  const SwitchEx46({super.key, required this.title, required this.id});
+  const SwitchEx54({super.key, required this.title, required this.id});
 
   @override
-  State<SwitchEx46> createState() => _SwitchEx46State();
+  State<SwitchEx54> createState() => _SwitchEx54State();
 }
 
-class _SwitchEx46State extends State<SwitchEx46> {
+class _SwitchEx54State extends State<SwitchEx54> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0; // Contador de intentos fallidos
   Color _inputTextColor = Colors.orange; // Color inicial del texto
@@ -53,7 +53,7 @@ class _SwitchEx46State extends State<SwitchEx46> {
 
   void _validateInput() {
     final codeRegex = RegExp(
-      r'^var\s+fruit\s*=\s*".+";\s*switch\s*\(fruit\)\s*\{\s*case\s*".+":\s*print\(.*\);\s*(case\s*".+":\s*print\(.*\);\s*)*default:\s*print\(.*\);\s*\}$',
+      r'^var\s+category\s*=\s*".+";\s*var\s+subcategory\s*=\s*".+";\s*switch\s*\(category\)\s*\{\s*(case\s*".+":\s*switch\s*\(subcategory\)\s*\{\s*(case\s*".+":\s*print\(.*\);\s*)*(default:\s*print\(.*\);\s*)\}\s*)*(default:\s*print\(.*\);\s*)\}$',
       multiLine: true,
     );
 
@@ -67,10 +67,11 @@ class _SwitchEx46State extends State<SwitchEx46> {
 
       _showDialog(
         "Correct! 🎉",
-        "Great! You've successfully used a `switch` statement to categorize values.\n\n"
+        "Well done! You've successfully implemented nested `switch` cases.\n\n"
         "Explanation:\n"
-        "- A `switch` statement is used to compare the value of a variable against multiple cases.\n"
-        "- If none of the cases match, the `default` case is executed.",
+        "- The outer `switch` determines the category.\n"
+        "- The inner `switch` refines the classification based on the subcategory.\n"
+        "- Always include `default` cases for both levels to handle unexpected inputs.",
         titleColor: Colors.green,
       );
     } else {
@@ -82,20 +83,20 @@ class _SwitchEx46State extends State<SwitchEx46> {
       if (_failedAttempts == 1) {
         _showDialog(
           "Hint 1",
-          "Start by declaring a variable `fruit` and assigning it a value (e.g., `var fruit = \"apple\"`).",
+          "Start by declaring two variables: `category` and `subcategory`.",
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
           "Hint 2",
-          "Use a `switch` statement to check for specific cases. Example:\n"
+          "Use a nested `switch` structure. For example:\n"
           '```swift\n'
-          'switch fruit {\n'
-          'case "apple":\n'
-          '    print("Red");\n'
-          'case "banana":\n'
-          '    print("Yellow");\n'
-          'default:\n'
-          '    print("Unknown");\n'
+          'switch category {\n'
+          '    case "Fruit":\n'
+          '        switch subcategory {\n'
+          '            case "Citrus": print("Orange or Lemon");\n'
+          '            default: print("Other Fruit");\n'
+          '        }\n'
+          '    default: print("Invalid Category");\n'
           '}\n'
           '```',
         );
@@ -104,18 +105,38 @@ class _SwitchEx46State extends State<SwitchEx46> {
           "Solution",
           "The correct solution is:\n\n"
           '```swift\n'
-          'var fruit = "apple";\n'
-          'switch fruit {\n'
-          'case "apple":\n'
-          '    print("Red");\n'
-          'case "banana":\n'
-          '    print("Yellow");\n'
-          'case "grape":\n'
-          '    print("Purple");\n'
-          'case "orange":\n'
-          '    print("Orange");\n'
+          'var category = "Fruit";\n'
+          'var subcategory = "Citrus";\n'
+          'switch category {\n'
+          'case "Fruit":\n'
+          '    switch subcategory {\n'
+          '    case "Citrus":\n'
+          '        print("Orange or Lemon");\n'
+          '    case "Berry":\n'
+          '        print("Strawberry or Blueberry");\n'
+          '    default:\n'
+          '        print("Other Fruit");\n'
+          '    }\n'
+          'case "Vegetable":\n'
+          '    switch subcategory {\n'
+          '    case "Leafy":\n'
+          '        print("Lettuce or Spinach");\n'
+          '    case "Root":\n'
+          '        print("Carrot or Beet");\n'
+          '    default:\n'
+          '        print("Other Vegetable");\n'
+          '    }\n'
+          'case "Meat":\n'
+          '    switch subcategory {\n'
+          '    case "Red Meat":\n'
+          '        print("Beef or Lamb");\n'
+          '    case "White Meat":\n'
+          '        print("Chicken or Turkey");\n'
+          '    default:\n'
+          '        print("Other Meat");\n'
+          '    }\n'
           'default:\n'
-          '    print("Unknown");\n'
+          '    print("Invalid Category");\n'
           '}\n'
           '```',
           titleColor: Colors.red,
@@ -139,19 +160,17 @@ class _SwitchEx46State extends State<SwitchEx46> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButton",
+              heroTag: "introButton54",
               onPressed: () {
                 _showDialog(
                   "Exercise Instructions",
-                  "Welcome to Switch Basics! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `fruit` and assign it a value.\n"
-                  "2. Use a `switch` statement to determine and print the color of the fruit.\n"
-                  "   - `apple`: Print `Red`.\n"
-                  "   - `banana`: Print `Yellow`.\n"
-                  "   - `grape`: Print `Purple`.\n"
-                  "   - `orange`: Print `Orange`.\n"
-                  "   - Use `default` to handle other cases (e.g., print `Unknown`).",
+                  "Create a program to categorize items using nested `switch` statements:\n\n"
+                  "1. Declare two variables: `category` and `subcategory`.\n"
+                  "2. Use an outer `switch` for the category and an inner `switch` for the subcategory.\n"
+                  "3. Print appropriate messages for combinations like:\n"
+                  "   - `Citrus`: Print `Orange or Lemon`.\n"
+                  "   - `Red Meat`: Print `Beef or Lamb`.\n"
+                  "4. Always include a `default` case for unexpected values.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -161,7 +180,7 @@ class _SwitchEx46State extends State<SwitchEx46> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButton",
+              heroTag: "runButton54",
               onPressed: _validateInput,
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -171,24 +190,26 @@ class _SwitchEx46State extends State<SwitchEx46> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButton",
+                heroTag: "helpButton54",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var fruit = "apple";\n'
-                    'switch fruit {\n'
-                    'case "apple":\n'
-                    '    print("Red");\n'
-                    'case "banana":\n'
-                    '    print("Yellow");\n'
-                    'case "grape":\n'
-                    '    print("Purple");\n'
-                    'case "orange":\n'
-                    '    print("Orange");\n'
+                    'var category = "Fruit";\n'
+                    'var subcategory = "Citrus";\n'
+                    'switch category {\n'
+                    'case "Fruit":\n'
+                    '    switch subcategory {\n'
+                    '    case "Citrus":\n'
+                    '        print("Orange or Lemon");\n'
+                    '    case "Berry":\n'
+                    '        print("Strawberry or Blueberry");\n'
+                    '    default:\n'
+                    '        print("Other Fruit");\n'
+                    '    }\n'
                     'default:\n'
-                    '    print("Unknown");\n'
+                    '    print("Invalid Category");\n'
                     '}\n'
                     '```',
                     titleColor: Colors.red,
@@ -222,24 +243,36 @@ class _SwitchEx46State extends State<SwitchEx46> {
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "fruit ",
+                        text: "category ",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "= \"apple\";\n2  switch fruit {\n",
+                        text: "= \"Fruit\";\n2  var ",
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      const TextSpan(
+                        text: "subcategory ",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "= \"Citrus\";\n3  switch ",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "3      case \"apple\":\n4          print(\"Red\");\n",
-                        style: TextStyle(color: Colors.teal),
+                        text: "(category) {\n4      case \"Fruit\":\n5          switch (subcategory) {\n",
+                        style: TextStyle(color: Colors.red),
                       ),
                       const TextSpan(
-                        text: "5      case \"banana\":\n6          print(\"Yellow\");\n",
+                        text: "6              case \"Citrus\":\n7                  print(\"Orange or Lemon\");\n",
                         style: TextStyle(color: Colors.purple),
                       ),
                       const TextSpan(
-                        text: "7      default:\n8          print(\"Unknown\");\n9  }",
-                        style: TextStyle(color: Colors.orange),
+                        text: "8              default:\n9                  print(\"Other Fruit\");\n10          }\n11      default:\n",
+                        style: TextStyle(color: Colors.teal),
+                      ),
+                      const TextSpan(
+                        text: "12          print(\"Invalid Category\");\n13  }",
+                        style: TextStyle(color: Colors.red),
                       ),
                     ],
                   ),

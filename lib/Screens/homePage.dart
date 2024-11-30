@@ -11,8 +11,8 @@ import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList%20copy.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
-import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
 import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListES.dart';
+import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListES.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelListEN.dart';
@@ -291,7 +291,7 @@ class _MyHomePageState extends State<MyHomePage> {
           allprovider.setCourseCategory(2);
           break;
         case 3:
-          allprovider.setData(swichtModelES);
+          allprovider.setData(switchModelES);
           allprovider.setCourseCategory(3);
         default:
           allprovider.setData([]);

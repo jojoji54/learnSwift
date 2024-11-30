@@ -1,11 +1,11 @@
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
-List<CoursesExModel> swichtModelES = [
+List<CoursesExModel> switchModelES = [
 
   CoursesExModel(
     id: 46,
-    exerciseName: 'Switch Basics',
+    exerciseName: 'Switch Básico',
     productID: 'com.mrrubik.learnswift.swiftbasicex46',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(46).purchased!,

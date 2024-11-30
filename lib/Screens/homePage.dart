@@ -4,6 +4,7 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/Widgets/InfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
@@ -34,12 +35,19 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           toolbarHeight: 100, // Define la altura deseada del AppBar
-          title: Text(
-            'LearnSwift',
-            style: TextStyle(
-                fontFamily: 'InconsolataBold',
-                fontWeight: FontWeight.bold,
-                fontSize: 30),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Center(),
+              Text(
+                'LearnSwift',
+                style: TextStyle(
+                    fontFamily: 'InconsolataBold',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30),
+              ),
+                 const InfoIcon(), // Aquí añades el ícono de información
+            ],
           ),
         ),
         body: Stack(

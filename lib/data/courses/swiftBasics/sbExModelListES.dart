@@ -67,7 +67,7 @@ List<CoursesExModel> sbModelES = [
   ),
   CoursesExModel(
     id: 9,
-    exerciseName: 'Arreglos',
+    exerciseName: 'Arrays',
     productID: 'com.mrrubik.learnswift.swiftbasicex9',
     alreadyBuy: PurchaseManagerSingleton().purchaseAndDevelop.elementAt(9).purchased!,
     completed: PurchaseManagerSingleton().purchaseAndDevelop.elementAt(9).completed!,

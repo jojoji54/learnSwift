@@ -77,7 +77,7 @@ List<CoursesExModel> loopsModelEN = [
   ),
    CoursesExModel(
     id: 69,
-    exerciseName: 'Multiplication Table Generator',
+    exerciseName: 'Multiplication Table\nGenerator',
     productID: 'com.mrrubik.learnswift.swiftbasicex69',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(69).purchased!,
@@ -86,7 +86,7 @@ List<CoursesExModel> loopsModelEN = [
   ),
      CoursesExModel(
     id: 70,
-    exerciseName: 'Find the First Even Number in an Array',
+    exerciseName: 'Find the First Even\nNumber in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex70',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(70).purchased!,
@@ -104,7 +104,7 @@ List<CoursesExModel> loopsModelEN = [
   ),
    CoursesExModel(
     id: 72,
-    exerciseName: 'Challenge 2: Find the\nLargest Number in an Array',
+    exerciseName: 'Cha. 2: Find the Largest\nNumber in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex72',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(72).purchased!,
@@ -113,7 +113,7 @@ List<CoursesExModel> loopsModelEN = [
   ),
    CoursesExModel(
     id: 73,
-    exerciseName: 'Challenge 3: Count Occurrences\nof a Number in an Array',
+    exerciseName: 'Cha. 3: Count Occurrences\nof a Number in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex73',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(73).purchased!,
@@ -131,7 +131,7 @@ List<CoursesExModel> loopsModelEN = [
   ),
   CoursesExModel(
     id: 75,
-    exerciseName: 'Challenge 5: FizzBuzz with a Twist',
+    exerciseName: 'Challenge 5: FizzBuzz\nwith a Twist',
     productID: 'com.mrrubik.learnswift.swiftbasicex75',
     alreadyBuy:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(75).purchased!,

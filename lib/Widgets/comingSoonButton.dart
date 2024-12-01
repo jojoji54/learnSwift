@@ -11,8 +11,6 @@ class ComingSoonButton extends StatefulWidget {
 
 class _ComingSoonButtonState extends State<ComingSoonButton> {
   final List<CourseModel> _coursesEN = [
-    CourseModel(id: 3, name: 'Switch Statements'),
-    CourseModel(id: 4, name: 'Loops'),
     CourseModel(id: 5, name: 'Arrays'),
     CourseModel(id: 6, name: 'Dictionaries'),
     CourseModel(id: 7, name: 'Sets'),
@@ -31,8 +29,6 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
   ];
 
   final List<CourseModel> _coursesES = [
-    CourseModel(id: 3, name: 'Sentencias Switch'),
-    CourseModel(id: 4, name: 'Bucles'),
     CourseModel(id: 5, name: 'Arreglos'),
     CourseModel(id: 6, name: 'Diccionarios'),
     CourseModel(id: 7, name: 'Conjuntos'),

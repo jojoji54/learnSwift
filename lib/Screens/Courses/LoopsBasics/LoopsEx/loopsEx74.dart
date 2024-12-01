@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 
 class LoopsEx74 extends StatefulWidget {
-  final String title;
+     final String title;
   final int id;
-  const LoopsEx74({super.key, required this.title, required this.id});
+  final bool completed;
+  const LoopsEx74({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<LoopsEx74> createState() => _LoopsEx74State();
@@ -147,7 +148,7 @@ class _LoopsEx74State extends State<LoopsEx74> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+           if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

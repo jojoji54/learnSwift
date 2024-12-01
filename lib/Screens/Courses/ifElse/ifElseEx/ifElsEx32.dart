@@ -5,7 +5,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class IfElsEx32 extends StatefulWidget {
   final String title;
   final int id;
-  const IfElsEx32({super.key, required this.title, required this.id});
+  final bool completed;
+  const IfElsEx32({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<IfElsEx32> createState() => _IfElsEx32State();
@@ -141,7 +142,7 @@ class _IfElsEx32State extends State<IfElsEx32> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+          if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

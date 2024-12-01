@@ -3,9 +3,10 @@ import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class IfElsEx40 extends StatefulWidget {
-  final String title;
+ final String title;
   final int id;
-  const IfElsEx40({super.key, required this.title, required this.id});
+  final bool completed;
+  const IfElsEx40({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<IfElsEx40> createState() => _IfElsEx40State();
@@ -141,7 +142,7 @@ class _IfElsEx40State extends State<IfElsEx40> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+         if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

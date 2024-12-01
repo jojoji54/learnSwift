@@ -33,7 +33,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  /* CoursesMainModel(
+  CoursesMainModel(
     id: 4,
     generalName: 'Loops',
     numCompletedCourses: 0,
@@ -41,7 +41,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+ /*  CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
     numCompletedCourses: 0,
@@ -121,16 +121,9 @@ List<CoursesMainModel> coursesMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
+
   CoursesMainModel(
     id: 15,
-    generalName: 'Error Handling',
-    numCompletedCourses: 0,
-    totalCourses: 15,
-    alreadyBuy: true,
-    completed: false,
-  ),
-  CoursesMainModel(
-    id: 16,
     generalName: 'Advanced Swift',
     numCompletedCourses: 0,
     totalCourses: 15,
@@ -138,7 +131,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     completed: false,
   ),
   CoursesMainModel(
-    id: 17,
+    id: 16,
     generalName: 'Memory Management',
     numCompletedCourses: 0,
     totalCourses: 15,
@@ -146,7 +139,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     completed: false,
   ),
   CoursesMainModel(
-    id: 18,
+    id: 17,
     generalName: 'Working with Files and Data',
     numCompletedCourses: 0,
     totalCourses: 15,
@@ -154,7 +147,7 @@ List<CoursesMainModel> coursesMainModelListEN = [
     completed: false,
   ),
   CoursesMainModel(
-    id: 19,
+    id: 18,
     generalName: 'UI Basics (Bonus para Apps)',
     numCompletedCourses: 0,
     totalCourses: 15,

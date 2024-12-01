@@ -172,6 +172,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           id: course.id,
                                           title: course.generalName,
                                           allProvider: allProvider,
+                                          description: course.description,
                                         ),
                                       ),
                                     );

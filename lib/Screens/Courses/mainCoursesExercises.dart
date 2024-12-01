@@ -4,12 +4,12 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx61.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/loopsExMain.dart';
 import 'package:learnswift/Screens/Courses/SwitchStatements/switchStatementsExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -23,8 +23,9 @@ class MainCoursesExercises extends StatefulWidget {
   final int id;
   final String title;
   AllProvider? allProvider;
+  String description;
   MainCoursesExercises(
-      {super.key, required this.id, required this.title, this.allProvider});
+      {super.key, required this.id, required this.title, this.allProvider, required this.description});
 
   @override
   State<MainCoursesExercises> createState() => _MainCoursesExercisesState();
@@ -46,7 +47,28 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     if (allProvider.data.isEmpty) {
       return Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          toolbarHeight: 100,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Icon(
+                FontAwesomeIcons.info,
+                color: Colors.transparent,
+              ),
+              Text(
+                widget.title,
+                style: const TextStyle(
+                  fontFamily: 'InconsolataBold',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
+              ),
+              CatInfoIcon(
+                description: widget.description,
+              ), // Aquí añades el ícono de información
+            ],
+          ),
         ),
         body: const Center(
           child: CircularProgressIndicator(),
@@ -57,17 +79,29 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     return Scaffold(
       backgroundColor: const Color(0xFFf4f4f2),
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        toolbarHeight: 100,
-        title: Text(
-          widget.title,
-          style: const TextStyle(
-            fontFamily: 'InconsolataBold',
-            fontWeight: FontWeight.bold,
-            fontSize: 30,
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          toolbarHeight: 100,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Icon(
+                FontAwesomeIcons.info,
+                color: Colors.transparent,
+              ),
+              Text(
+                widget.title,
+                style: const TextStyle(
+                  fontFamily: 'InconsolataBold',
+                  fontWeight: FontWeight.bold,
+                  fontSize: 30,
+                ),
+              ),
+              CatInfoIcon(
+                description: widget.description,
+              ), // Aquí añades el ícono de información
+            ],
           ),
         ),
-      ),
       body: Stack(
         children: [
           SizedBox(
@@ -188,7 +222,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 navToEx(
                                                     allProvider.courseCategory,
                                                     course.id,
-                                                    course.exerciseName);
+                                                    course.exerciseName,widget.description);
                                               }
                                             },
                                             child: Padding(
@@ -660,13 +694,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     }
   }
 
-  void navToEx(int courseCat, int id, String title) {
+  void navToEx(int courseCat, int id, String title, String description) {
     switch (courseCat) {
       case 0:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwiftBasicExMain(id: id, title: title),
+            builder: (context) => SwiftBasicExMain(id: id, title: title, description: description,),
           ),
         );
         break;
@@ -674,7 +708,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => BooleanBasicExMain(id: id, title: title),
+            builder: (context) => BooleanBasicExMain(id: id, title: title, description: description,),
           ),
         );
         break;
@@ -682,14 +716,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => IfElseExMain(id: id, title: title),
+            builder: (context) => IfElseExMain(id: id, title: title, description: description,),
           ),
         );
       case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwitchStatementsMain(id: id, title: title),
+            builder: (context) => SwitchStatementsMain(id: id, title: title, description: description,),
           ),
         );
         break;
@@ -697,7 +731,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LoopsExMain(id: id, title: title),
+            builder: (context) => LoopsExMain(id: id, title: title, description: description,),
           ),
         );
         break;

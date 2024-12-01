@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx15.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx16.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx17.dart';
@@ -15,11 +16,17 @@ import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx27.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx28.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx29.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx30.dart';
+import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class BooleanBasicExMain extends StatefulWidget {
   final int id;
   final String title;
-  const BooleanBasicExMain({super.key, required this.id, required this.title});
+  final String description;
+  const BooleanBasicExMain(
+      {super.key,
+      required this.id,
+      required this.title,
+      required this.description});
 
   @override
   State<BooleanBasicExMain> createState() => _BooleanBasicExMainState();

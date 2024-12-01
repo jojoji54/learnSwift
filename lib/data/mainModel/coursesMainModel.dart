@@ -5,11 +5,13 @@ class CoursesMainModel {
   int totalCourses;
   bool alreadyBuy;
   bool completed;
+  String description;
 
   // Constructor de la clase
   CoursesMainModel({
     required this.id,
     required this.generalName,
+    required this.description,
     required this.numCompletedCourses,
     required this.totalCourses,
     required this.alreadyBuy,
@@ -21,6 +23,7 @@ class CoursesMainModel {
     return CoursesMainModel(
       id: json['id'],
       generalName: json['generalName'],
+      description: json['description'],
       numCompletedCourses: json['numCompletedCourses'],
       totalCourses: json['totalCourses'],
       alreadyBuy: json['alreadyBuy'],
@@ -33,6 +36,7 @@ class CoursesMainModel {
     return {
       'id': id,
       'generalName': generalName,
+      'description': description,
       'numCompletedCourses': numCompletedCourses,
       'totalCourses': totalCourses,
       'alreadyBuy': alreadyBuy,

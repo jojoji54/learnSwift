@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx31.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx32.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx33.dart';
@@ -14,11 +15,17 @@ import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx42.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx43.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx44.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx45.dart';
+import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class IfElseExMain extends StatefulWidget {
   final int id;
   final String title;
-  const IfElseExMain({super.key, required this.id, required this.title});
+  final String description;
+  const IfElseExMain(
+      {super.key,
+      required this.id,
+      required this.title,
+      required this.description});
 
   @override
   State<IfElseExMain> createState() => _IfElseExMainState();

@@ -18,7 +18,12 @@ import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx9.dart';
 class SwiftBasicExMain extends StatefulWidget {
   final int id;
   final String title;
-  const SwiftBasicExMain({super.key, required this.id, required this.title});
+  final String description;
+  const SwiftBasicExMain(
+      {super.key,
+      required this.id,
+      required this.title,
+      required this.description});
 
   @override
   State<SwiftBasicExMain> createState() => _SwiftBasicExMainState();

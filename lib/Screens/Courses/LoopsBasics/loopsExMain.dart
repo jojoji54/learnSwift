@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx61.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx62.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx63.dart';
@@ -14,11 +15,17 @@ import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx72.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx73.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx74.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx75.dart';
+import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class LoopsExMain extends StatefulWidget {
   final int id;
   final String title;
-  const LoopsExMain({super.key, required this.id, required this.title});
+  final String description;
+  const LoopsExMain(
+      {super.key,
+      required this.id,
+      required this.title,
+      required this.description});
 
   @override
   State<LoopsExMain> createState() => _LoopsExMainState();

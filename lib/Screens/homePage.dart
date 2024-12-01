@@ -9,6 +9,7 @@ import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
+import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList%20copy.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
 import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListES.dart';
@@ -264,6 +265,9 @@ class _MyHomePageState extends State<MyHomePage> {
         case 3:
           allprovider.setData(switchModelEN);
           allprovider.setCourseCategory(3);
+        case 4:
+          allprovider.setData(loopsModelEN);
+          allprovider.setCourseCategory(4);
           break;
         default:
           allprovider.setData([]);

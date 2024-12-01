@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx31.dart';
+import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx61.dart';
 
 class LoopsExMain extends StatefulWidget {
   final int id;
@@ -45,8 +45,8 @@ class _LoopsExMainState extends State<LoopsExMain> {
               ),
             ), */
             if (widget.id == 61)
-              IfElsEx31(
-                id: 1,
+              LoopsEx61(
+                id: 61,
                 title: widget.title,
               ),
           

@@ -70,82 +70,82 @@ class _BooleanBasicExMainState extends State<BooleanBasicExMain> {
             if (widget.id == 15)
               BEx15(
                 id: 15,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 16)
               BEx16(
                 id: 16,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 17)
               BEx17(
                 id: 17,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 18)
               BEx18(
                 id: 18,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 19)
               BEx19(
                 id: 19,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 20)
               BEx20(
                 id: 20,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 21)
               BEx21(
                 id: 21,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 22)
               BEx22(
                 id: 22,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 23)
               BEx23(
                 id: 23,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 24)
               BEx24(
                 id: 24,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 25)
               BEx25(
                 id: 25,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 26)
               BEx26(
                 id: 26,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 27)
               BEx27(
                 id: 27,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 28)
               BEx28(
                 id: 28,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 29)
               BEx29(
                 id: 29,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 30)
               BEx30(
                 id: 30,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
           ],
         ));

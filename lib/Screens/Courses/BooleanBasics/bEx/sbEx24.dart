@@ -3,9 +3,10 @@ import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BEx24 extends StatefulWidget {
-  final String title;
+    final String title;
   final int id;
-  const BEx24({super.key, required this.title, required this.id});
+  final bool completed;
+  const BEx24({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<BEx24> createState() => _BEx24State();
@@ -143,7 +144,7 @@ class _BEx24State extends State<BEx24> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+         if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

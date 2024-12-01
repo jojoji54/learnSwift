@@ -81,77 +81,77 @@ class _SwitchStatementsMainState extends State<SwitchStatementsMain> {
             if (widget.id == 46)
               SwitchEx46(
                 id: 46,
-                title: widget.title,
+                     title: widget.title, completed: widget.completed
               ),
             if (widget.id == 47)
               SwitchEx47(
                 id: 47,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 48)
               SwitchEx48(
                 id: 48,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 49)
               SwitchEx49(
                 id: 49,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 50)
               SwitchEx50(
                 id: 50,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 51)
               SwitchEx51(
                 id: 51,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 52)
               SwitchEx52(
                 id: 52,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 53)
               SwitchEx53(
                 id: 53,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 54)
               SwitchEx54(
                 id: 54,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 55)
               SwitchEx55(
                 id: 55,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 56)
               SwitchEx56(
                 id: 56,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 57)
               SwitchEx57(
                 id: 57,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 58)
               SwitchEx58(
                 id: 58,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 59)
               SwitchEx59(
                 id: 59,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
             if (widget.id == 60)
               SwitchEx60(
                 id: 60,
-                title: widget.title,
+                  title: widget.title, completed: widget.completed
               ),
           ],
         ));

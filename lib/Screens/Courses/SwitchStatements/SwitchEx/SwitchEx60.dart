@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 
 class SwitchEx60 extends StatefulWidget {
-  final String title;
+   final String title;
   final int id;
-  const SwitchEx60({super.key, required this.title, required this.id});
+  final bool completed;
+  const SwitchEx60({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<SwitchEx60> createState() => _SwitchEx60State();
@@ -164,7 +165,7 @@ class _SwitchEx60State extends State<SwitchEx60> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+          if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

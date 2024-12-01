@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class LoopsEx68 extends StatefulWidget {
    final String title;
@@ -50,7 +52,7 @@ class _LoopsEx68State extends State<LoopsEx68> {
     );
   }
 
-  void _validateInput() {
+  void _validateInput()async {
     final codeRegex = RegExp(
       r'^var\s+number\s*=\s*\d+;\s*var\s+factorial\s*=\s*1;\s*for\s+.*\{\s*factorial\s*=\s*factorial\s*\*\s*.*;\s*\}\s*print\(factorial\);$',
       multiLine: true,
@@ -59,6 +61,13 @@ class _LoopsEx68State extends State<LoopsEx68> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

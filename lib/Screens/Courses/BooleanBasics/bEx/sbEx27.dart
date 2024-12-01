@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class BEx27 extends StatefulWidget {
      final String title;
@@ -55,7 +57,7 @@ class _BEx27State extends State<BEx27> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^var\s+isAlive\s*=\s*(true|false);\nvar\s+health\s*=\s*\d+;\nlet\s+damage\s*=\s*\d+;\nhealth\s*-\=\s*damage;\nif\s*\(\s*health\s*\<=\s*0\s*\)\s*{\s*isAlive\s*=\s*false;\s*print\("Game Over"\);\s*}\s*else\s*{\s*print\("Keep Playing!"\);\s*}$',
       multiLine: true,
@@ -64,6 +66,13 @@ class _BEx27State extends State<BEx27> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

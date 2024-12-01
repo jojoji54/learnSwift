@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class LoopsEx65 extends StatefulWidget {
-    final String title;
+  final String title;
   final int id;
   final bool completed;
-  const LoopsEx65({super.key, required this.title, required this.id, required this.completed});
+  const LoopsEx65(
+      {super.key,
+      required this.title,
+      required this.id,
+      required this.completed});
 
   @override
   State<LoopsEx65> createState() => _LoopsEx65State();
@@ -50,15 +56,22 @@ class _LoopsEx65State extends State<LoopsEx65> {
     );
   }
 
-  void _validateInput() {
+  void _validateInput() async {
     final codeRegex = RegExp(
-      r'^var\s+n\s*=\s*\d+;\s*var\s+sum\s*=\s*0;\s*for\s+\w+\s+in\s+1\.\.\.n\s*\{\s*if\s*\(\w+\s*%\s*2\s*==\s*0\)\s*\{\s*sum\s*+=\s*\w+;\s*\}\s*\}\s*print\(sum\);$',
+      r'^var\s+n\s*=\s*\d+;\s*var\s+sum\s*=\s*0;\s*for\s+\w+\s+in\s+1\.\.\.n\s*\{\s*if\s*\(\s*\w+\s*%\s*2\s*==\s*0\s*\)\s*\{\s*sum\s*\+=\s*\w+;\s*\}\s*\}\s*print\(\s*sum\s*\);$',
       multiLine: true,
     );
 
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+      PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });
@@ -67,10 +80,10 @@ class _LoopsEx65State extends State<LoopsEx65> {
       _showDialog(
         "Correct! 🎉",
         "Great! You've successfully calculated the sum of even numbers using a `for` loop.\n\n"
-        "**Explanation:**\n"
-        "- A `for` loop iterates through numbers from `1` to `n`.\n"
-        "- The `if` statement checks if a number is even using the `%` operator.\n"
-        "- If the number is even, it gets added to the `sum` variable.",
+            "**Explanation:**\n"
+            "- A `for` loop iterates through numbers from `1` to `n`.\n"
+            "- The `if` statement checks if a number is even using the `%` operator.\n"
+            "- If the number is even, it gets added to the `sum` variable.",
         titleColor: Colors.green,
       );
     } else {
@@ -93,16 +106,16 @@ class _LoopsEx65State extends State<LoopsEx65> {
         _showDialog(
           "Solution",
           "The correct solution is:\n\n"
-          '```swift\n'
-          'var n = 10;\n'
-          'var sum = 0;\n'
-          'for number in 1...n {\n'
-          '    if number % 2 == 0 {\n'
-          '        sum += number;\n'
-          '    }\n'
-          '}\n'
-          'print(sum);\n'
-          '```',
+              '```swift\n'
+              'var n = 10;\n'
+              'var sum = 0;\n'
+              'for number in 1...n {\n'
+              '    if number % 2 == 0 {\n'
+              '        sum += number;\n'
+              '    }\n'
+              '}\n'
+              'print(sum);\n'
+              '```',
           titleColor: Colors.red,
         );
       } else {
@@ -129,12 +142,12 @@ class _LoopsEx65State extends State<LoopsEx65> {
                 _showDialog(
                   "Exercise Instructions",
                   "Welcome to the Sum of Even Numbers Challenge! 🎉\n\n"
-                  "Your task:\n"
-                  "1. Declare a variable `n` and assign it a value (e.g., `10`).\n"
-                  "2. Use a `for` loop to iterate through numbers from `1` to `n`.\n"
-                  "3. Inside the loop, use an `if` statement to check if the number is even (`% 2 == 0`).\n"
-                  "4. Add the even numbers to a `sum` variable.\n"
-                  "5. Print the total sum at the end.",
+                      "Your task:\n"
+                      "1. Declare a variable `n` and assign it a value (e.g., `10`).\n"
+                      "2. Use a `for` loop to iterate through numbers from `1` to `n`.\n"
+                      "3. Inside the loop, use an `if` statement to check if the number is even (`% 2 == 0`).\n"
+                      "4. Add the even numbers to a `sum` variable.\n"
+                      "5. Print the total sum at the end.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -150,7 +163,7 @@ class _LoopsEx65State extends State<LoopsEx65> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3 || widget.completed )
+          if (_failedAttempts >= 3 || widget.completed)
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
@@ -159,16 +172,16 @@ class _LoopsEx65State extends State<LoopsEx65> {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
-                    '```swift\n'
-                    'var n = 10;\n'
-                    'var sum = 0;\n'
-                    'for number in 1...n {\n'
-                    '    if number % 2 == 0 {\n'
-                    '        sum += number;\n'
-                    '    }\n'
-                    '}\n'
-                    'print(sum);\n'
-                    '```',
+                        '```swift\n'
+                        'var n = 10;\n'
+                        'var sum = 0;\n'
+                        'for number in 1...n {\n'
+                        '    if number % 2 == 0 {\n'
+                        '        sum += number;\n'
+                        '    }\n'
+                        '}\n'
+                        'print(sum);\n'
+                        '```',
                     titleColor: Colors.red,
                   );
                 },

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class BEx29 extends StatefulWidget {
     final String title;
@@ -55,7 +57,7 @@ class _BEx29State extends State<BEx29> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^let\s+secretBoolean\s*=\s*(true|false);\s*let\s+userGuess\s*=\s*(true|false);\s*if\s*\(userGuess\s*==\s*secretBoolean\)\s*{\s*print\("You guessed it! 🎉"\);\s*}\s*else\s*{\s*print\("Wrong guess! Try again."\);\s*}$',
       multiLine: true,
@@ -64,6 +66,13 @@ class _BEx29State extends State<BEx29> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

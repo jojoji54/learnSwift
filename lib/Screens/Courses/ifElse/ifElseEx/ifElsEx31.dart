@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+
+import '../../../../Singleton/purchaseManagerSingleton.dart';
 
 class IfElsEx31 extends StatefulWidget {
   final String title;
@@ -53,7 +56,7 @@ class _IfElsEx31State extends State<IfElsEx31> {
     );
   }
 
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^var\s+score\s*=\s*\d+;\s*if\s*\(score\s*[><=]\s*\d+\)\s*{\s*print\(.+\);\s*}\s*else\s*{\s*print\(.+\);\s*}$',
       multiLine: true,
@@ -62,6 +65,13 @@ class _IfElsEx31State extends State<IfElsEx31> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

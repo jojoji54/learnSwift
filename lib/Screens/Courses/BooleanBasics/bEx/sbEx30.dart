@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class BEx30 extends StatefulWidget {
      final String title;
@@ -55,7 +57,7 @@ class _BEx30State extends State<BEx30> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput()async {
     final codeRegex = RegExp(
       r'^let\s+isUserLoggedIn\s*=\s*(true|false);\s*let\s+hasPremiumAccess\s*=\s*(true|false);\s*if\s*\(isUserLoggedIn\s*&&\s*hasPremiumAccess\)\s*{\s*print\("Access granted to premium feature!"\);\s*}\s*else\s*{\s*print\("Access denied\. Please log in or upgrade\."\);\s*}$',
       multiLine: true,
@@ -64,6 +66,13 @@ class _BEx30State extends State<BEx30> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

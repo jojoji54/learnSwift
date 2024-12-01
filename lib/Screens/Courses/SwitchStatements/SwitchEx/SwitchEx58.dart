@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class SwitchEx58 extends StatefulWidget {
    final String title;
@@ -50,7 +52,7 @@ class _SwitchEx58State extends State<SwitchEx58> {
     );
   }
 
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^var\s+month\s*=\s*".+";\s*switch\s*\(month\)\s*\{\s*(case\s*".+":\s*print\(.*\);\s*)+(default:\s*print\(.*\);\s*)\}$',
       multiLine: true,
@@ -59,6 +61,13 @@ class _SwitchEx58State extends State<SwitchEx58> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Change color if correct
       });

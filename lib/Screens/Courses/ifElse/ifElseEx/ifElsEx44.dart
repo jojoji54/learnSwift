@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class IfElsEx44 extends StatefulWidget {
   final String title;
@@ -53,7 +55,7 @@ class _IfElsEx44State extends State<IfElsEx44> {
     );
   }
 
-  void _validateInput() {
+  void _validateInput()async {
     final userInput = _controller.text.trim();
     final strongPasswordRegex = RegExp(r'^.{8,}$');
     final containsNumber = RegExp(r'\d');
@@ -62,6 +64,13 @@ class _IfElsEx44State extends State<IfElsEx44> {
     if (strongPasswordRegex.hasMatch(userInput) &&
         containsNumber.hasMatch(userInput) &&
         containsLetter.hasMatch(userInput)) {
+           PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green;
       });

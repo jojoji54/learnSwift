@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class BEx17 extends StatefulWidget {
   final String title;
@@ -55,7 +57,7 @@ class _BEx17State extends State<BEx17> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput() async{
     final codeRegex = RegExp(
       r'^var\s+isHot\s*=\s*(true|false);\s*var\s+isCold\s*=\s*(true|false);\s*var\s+isComfortable\s*=\s*!isHot\s*&&\s*!isCold;\s*print\(isComfortable\);$',
       multiLine: true,
@@ -64,6 +66,13 @@ class _BEx17State extends State<BEx17> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
+       PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });

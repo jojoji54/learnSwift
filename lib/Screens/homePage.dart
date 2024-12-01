@@ -184,7 +184,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                         borderRadius: BorderRadius.circular(10),
                                         color: !course.alreadyBuy
                                             ? Colors.red
-                                            : course.completed ==
+                                            : coursesMainModelListES.length ==
                                                     filteredCounter.length
                                                 ? Colors.green
                                                 : filteredCounter.length == 0
@@ -202,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           child: Icon(
                                               !course.alreadyBuy
                                                   ? FontAwesomeIcons.lock
-                                                  : filteredCounter.isNotEmpty
+                                                  : filteredCounter.length == coursesMainModelListES.length
                                                       ? FontAwesomeIcons.trophy
                                                       : filteredCounter.isEmpty
                                                           ? FontAwesomeIcons

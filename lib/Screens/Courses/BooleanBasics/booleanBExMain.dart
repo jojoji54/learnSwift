@@ -19,14 +19,15 @@ import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx30.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class BooleanBasicExMain extends StatefulWidget {
-  final int id;
+ final int id;
   final String title;
   final String description;
+  final bool completed;
   const BooleanBasicExMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description});
+      required this.description, required this.completed});
 
   @override
   State<BooleanBasicExMain> createState() => _BooleanBasicExMainState();

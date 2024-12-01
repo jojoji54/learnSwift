@@ -222,7 +222,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 navToEx(
                                                     allProvider.courseCategory,
                                                     course.id,
-                                                    course.exerciseName,widget.description);
+                                                    course.exerciseName,widget.description, course.completed);
                                               }
                                             },
                                             child: Padding(
@@ -694,13 +694,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     }
   }
 
-  void navToEx(int courseCat, int id, String title, String description) {
+  void navToEx(int courseCat, int id, String title, String description, bool completed) {
     switch (courseCat) {
       case 0:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwiftBasicExMain(id: id, title: title, description: description,),
+            builder: (context) => SwiftBasicExMain(id: id, title: title, description: description,completed: completed ),
           ),
         );
         break;
@@ -708,7 +708,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => BooleanBasicExMain(id: id, title: title, description: description,),
+            builder: (context) => BooleanBasicExMain(id: id, title: title, description: description,completed: completed ),
           ),
         );
         break;
@@ -716,14 +716,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => IfElseExMain(id: id, title: title, description: description,),
+            builder: (context) => IfElseExMain(id: id, title: title, description: description,completed: completed ),
           ),
         );
       case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwitchStatementsMain(id: id, title: title, description: description,),
+            builder: (context) => SwitchStatementsMain(id: id, title: title, description: description,completed: completed ),
           ),
         );
         break;
@@ -731,7 +731,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LoopsExMain(id: id, title: title, description: description,),
+            builder: (context) => LoopsExMain(id: id, title: title, description: description,completed: completed ),
           ),
         );
         break;

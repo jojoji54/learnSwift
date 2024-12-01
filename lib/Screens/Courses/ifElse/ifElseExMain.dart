@@ -21,11 +21,12 @@ class IfElseExMain extends StatefulWidget {
   final int id;
   final String title;
   final String description;
+  final bool completed;
   const IfElseExMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description});
+      required this.description, required this.completed});
 
   @override
   State<IfElseExMain> createState() => _IfElseExMainState();

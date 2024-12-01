@@ -5,9 +5,10 @@ import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class SBEx11 extends StatefulWidget {
-  final String title;
+     final String title;
   final int id;
-  const SBEx11({super.key, required this.title, required this.id});
+  final bool completed;
+  const SBEx11({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<SBEx11> createState() => _SBEx11State();
@@ -142,7 +143,7 @@ class _SBEx11State extends State<SBEx11> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+         if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

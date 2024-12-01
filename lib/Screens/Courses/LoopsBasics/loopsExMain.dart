@@ -21,11 +21,12 @@ class LoopsExMain extends StatefulWidget {
   final int id;
   final String title;
   final String description;
+  final bool completed;
   const LoopsExMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description});
+      required this.description, required this.completed});
 
   @override
   State<LoopsExMain> createState() => _LoopsExMainState();

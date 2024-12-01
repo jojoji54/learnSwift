@@ -9,7 +9,8 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class SBEx2 extends StatefulWidget {
   final String title;
   final int id;
-  const SBEx2({super.key, required this.title, required this.id});
+  final bool completed;
+  const SBEx2({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<SBEx2> createState() => _SBEx2State();
@@ -157,7 +158,7 @@ class _SBEx2State extends State<SBEx2> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+          if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

@@ -19,11 +19,12 @@ class SwiftBasicExMain extends StatefulWidget {
   final int id;
   final String title;
   final String description;
+  final bool completed;
   const SwiftBasicExMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description});
+      required this.description, required this.completed});
 
   @override
   State<SwiftBasicExMain> createState() => _SwiftBasicExMainState();
@@ -66,77 +67,77 @@ class _SwiftBasicExMainState extends State<SwiftBasicExMain> {
             if (widget.id == 0)
               SBEx1(
                 id: 0,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 1)
               SBEx2(
                 id: 1,
-                title: widget.title,
+                title: widget.title,completed: widget.completed
               ),
             if (widget.id == 2)
               SBEx3(
                 id: 2,
-                title: widget.title,
+                title: widget.title,completed: widget.completed
               ),
             if (widget.id == 3)
               SBEx4(
                 id: 3,
-                title: widget.title,
+                title: widget.title,completed: widget.completed
               ),
             if (widget.id == 4)
               SBEx5(
                 id: 4,
-                title: widget.title,
+                title: widget.title,completed: widget.completed
               ),
             if (widget.id == 5)
               SBEx6(
                 id: 5,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 6)
               SBEx7(
                 id: 6,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 7)
               SBEx8(
                 id: 7,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 8)
               SBEx9(
                 id: 8,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 9)
               SBEx10(
                 id: 9,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 10)
               SBEx11(
                 id: 10,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 11)
               SBEx12(
                 id: 11,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 12)
               SBEx13(
                 id: 12,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 13)
               SBEx14(
                 id: 13,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               ),
             if (widget.id == 14)
               SBEx15(
                 id: 14,
-                title: widget.title,
+                title: widget.title, completed: widget.completed
               )
           ],
         ));

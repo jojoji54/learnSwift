@@ -10,7 +10,8 @@ import '../../../../Singleton/purchaseManagerSingleton.dart';
 class SBEx1 extends StatefulWidget {
   final String title;
   final int id;
-  const SBEx1({super.key, required this.title, required this.id});
+  final bool completed;
+  const SBEx1({super.key, required this.title, required this.id, required this.completed});
 
   @override
   State<SBEx1> createState() => _SBEx1State();
@@ -155,7 +156,7 @@ class _SBEx1State extends State<SBEx1> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3)
+          if (_failedAttempts >= 3 || widget.completed )
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

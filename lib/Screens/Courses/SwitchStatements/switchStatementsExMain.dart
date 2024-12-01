@@ -21,11 +21,12 @@ class SwitchStatementsMain extends StatefulWidget {
   final int id;
   final String title;
   final String description;
+  final bool completed;
   const SwitchStatementsMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description});
+      required this.description, required this.completed});
 
   @override
   State<SwitchStatementsMain> createState() => _SwitchStatementsMainState();

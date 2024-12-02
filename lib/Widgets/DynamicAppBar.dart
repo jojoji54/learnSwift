@@ -64,15 +64,20 @@ class _DynamicAppBarState extends State<DynamicAppBar> {
   Widget build(BuildContext context) {
     return AppBar(
       toolbarHeight: 100,
-      flexibleSpace: AnimatedContainer(
-        duration: const Duration(seconds: 2), // Duración de la transición
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: gradients[currentIndex],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+      flexibleSpace: Stack(
+        children: [
+          AnimatedContainer(
+            duration: const Duration(seconds: 2), // Duración de la transición
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: gradients[currentIndex],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
           ),
-        ),
+         // Container(  color: Colors.white.withOpacity(0.2), )
+        ],
       ),
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

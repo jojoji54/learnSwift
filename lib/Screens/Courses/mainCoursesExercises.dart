@@ -24,8 +24,16 @@ class MainCoursesExercises extends StatefulWidget {
   final String title;
   AllProvider? allProvider;
   String description;
+  Color color1;
+  Color color2;
   MainCoursesExercises(
-      {super.key, required this.id, required this.title, this.allProvider, required this.description});
+      {super.key,
+      required this.id,
+      required this.title,
+      this.allProvider,
+      required this.description,
+      required this.color1,
+      required this.color2});
 
   @override
   State<MainCoursesExercises> createState() => _MainCoursesExercisesState();
@@ -47,26 +55,39 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     if (allProvider.data.isEmpty) {
       return Scaffold(
         appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          toolbarHeight: 100,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Icon(
-                FontAwesomeIcons.info,
-                color: Colors.transparent,
+          flexibleSpace: AnimatedContainer(
+            duration: const Duration(seconds: 2), // Duración de la transición
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [widget.color1, widget.color2],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
-              Text(
-                widget.title,
-                style: const TextStyle(
-                  fontFamily: 'InconsolataBold',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+            ),
+          ),
+          toolbarHeight: 100, // Define la altura deseada del AppBar
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Center(
+                  child: Text(
+                    widget.title,
+                    style: TextStyle(
+                        fontFamily: 'InconsolataBold',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black),
+                  ),
                 ),
               ),
-              CatInfoIcon(
-                description: widget.description,
-              ), // Aquí añades el ícono de información
+              Align(
+                alignment: Alignment.centerRight,
+                child: CatInfoIcon(
+                  description: widget.description,
+                ), // Aquí añades el ícono de información
+              ),
             ],
           ),
         ),
@@ -79,26 +100,39 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     return Scaffold(
       backgroundColor: const Color(0xFFf4f4f2),
       appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          toolbarHeight: 100,
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Icon(
-                FontAwesomeIcons.info,
-                color: Colors.transparent,
+          flexibleSpace: AnimatedContainer(
+            duration: const Duration(seconds: 2), // Duración de la transición
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [widget.color1, widget.color2],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
-              Text(
-                widget.title,
-                style: const TextStyle(
-                  fontFamily: 'InconsolataBold',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
+            ),
+          ),
+          toolbarHeight: 100, // Define la altura deseada del AppBar
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Center(
+                  child: Text(
+                    widget.title,
+                    style: TextStyle(
+                        fontFamily: 'InconsolataBold',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black),
+                  ),
                 ),
               ),
-              CatInfoIcon(
-                description: widget.description,
-              ), // Aquí añades el ícono de información
+              Align(
+                alignment: Alignment.centerRight,
+                child: CatInfoIcon(
+                  description: widget.description,
+                ), // Aquí añades el ícono de información
+              ),
             ],
           ),
         ),
@@ -128,7 +162,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                     maxSteps: allProvider.data.length,
                     progressType: LinearProgressBar.progressTypeLinear,
                     currentStep: allProvider.completedCount,
-                    progressColor: const Color.fromARGB(255, 114, 251, 153),
+                    progressColor: widget.color1,
                     backgroundColor: const Color(0xFFeaeaea),
                     borderRadius: BorderRadius.circular(10),
                   ),
@@ -222,7 +256,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 navToEx(
                                                     allProvider.courseCategory,
                                                     course.id,
-                                                    course.exerciseName,widget.description, course.completed);
+                                                    course.exerciseName,
+                                                    widget.description,
+                                                    course.completed,
+                                                    widget.color1,
+                                                    widget.color2);
                                               }
                                             },
                                             child: Padding(
@@ -694,13 +732,21 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     }
   }
 
-  void navToEx(int courseCat, int id, String title, String description, bool completed) {
+  void navToEx(int courseCat, int id, String title, String description,
+      bool completed, Color color1, Color color2) {
     switch (courseCat) {
       case 0:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwiftBasicExMain(id: id, title: title, description: description,completed: completed ),
+            builder: (context) => SwiftBasicExMain(
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
           ),
         );
         break;
@@ -708,7 +754,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => BooleanBasicExMain(id: id, title: title, description: description,completed: completed ),
+            builder: (context) => BooleanBasicExMain(
+                id: id,
+                title: title,
+                description: description,
+                completed: completed,color1: color1, color2: color2,),
           ),
         );
         break;
@@ -716,22 +766,41 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => IfElseExMain(id: id, title: title, description: description,completed: completed ),
+            builder: (context) => IfElseExMain(
+                id: id,
+                title: title,
+                description: description,
+                completed: completed, color1: color1,
+              color2: color2,),
           ),
         );
       case 3:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => SwitchStatementsMain(id: id, title: title, description: description,completed: completed ),
+            builder: (context) => SwitchStatementsMain(
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
           ),
         );
         break;
-       case 4:
+      case 4:
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => LoopsExMain(id: id, title: title, description: description,completed: completed ),
+            builder: (context) => LoopsExMain(
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
           ),
         );
         break;

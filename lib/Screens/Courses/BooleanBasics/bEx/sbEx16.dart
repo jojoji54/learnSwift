@@ -56,10 +56,11 @@ class _BEx16State extends State<BEx16> {
   }
 
   void _validateInput() async{
-    final codeRegex = RegExp(
-      r'^var\s+isSunny\s*=\s*(true|false);\s*var\s+isWeekend\s*=\s*(true|false);\s*var\s+goToBeach\s*=\s*isSunny\s*(\&\&|\|\|)\s*isWeekend;\s*print\(goToBeach\);$',
-      multiLine: true,
-    );
+   final codeRegex = RegExp(
+  r'^var\s+isSunny\s*=\s*(true|false);\s*var\s+isWeekend\s*=\s*(true|false);\s*var\s+goToBeach\s*=\s*isSunny\s*(&&|\|\|)\s*isWeekend;\s*print\(\s*goToBeach\s*\);$',
+  multiLine: true,
+);
+
 
     final userInput = _controller.text.trim();
 

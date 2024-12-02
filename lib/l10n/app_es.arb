@@ -375,8 +375,9 @@
   "purchaseError": "Hubo un error durante la compra. Inténtalo de nuevo.",
   "purchasePending": "Compra pendiente. Por favor, espera...",
   "purchaseException": "Se produjo un problema inesperado. Inténtalo más tarde.",
-  "aboutLearnSwiftTitle": "Acerca de LearnSwift",
-  "aboutLearnSwiftContent": "LearnSwift es una aplicación diseñada para ayudar a los usuarios a aprender Swift, el poderoso lenguaje de programación utilizado para crear aplicaciones en las plataformas de Apple. Esta aplicación incluye ejercicios interactivos para construir una base sólida en la programación de Swift.\n\nVersión: Swift 5.9\n\nSi tienes alguna pregunta o comentario, no dudes en ponerte en contacto a través de cualquiera de las siguientes plataformas:",
+  "aboutLearnSwiftTitle": "Acerca de CodeCrafters",
+  "aboutLearnSwiftContent": "CodeCrafters:Swift es una aplicación diseñada para ayudar a los usuarios a aprender Swift, el poderoso lenguaje de programación utilizado para crear aplicaciones en las plataformas de Apple. Esta aplicación incluye ejercicios interactivos para construir una base sólida en la programación de Swift.\n\nVersión: Swift 5.9\n\nSi tienes alguna pregunta o comentario, no dudes en ponerte en contacto a través de cualquiera de las siguientes plataformas:",
+  "aboutcodeCraftersContent":"CodeCrafters es una plataforma educativa que te enseña los lenguajes y frameworks más populares, como Swift, Python, Flutter y React. Con ejercicios prácticos e interactivos, aprenderás a crear aplicaciones web, móviles e inteligentes, desde sistemas modernos hasta clásicos como COBOL. Diseñada para adaptarse a ti, CodeCrafters te prepara para destacar en el mundo tecnológico actual.\n\nSi tienes alguna pregunta o comentario, no dudes en ponerte en contacto a través de cualquiera de las siguientes plataformas:",
   "comingSoonButton": "Próximamente",
   "comingSoonTitle": "Cursos Próximos"
 }

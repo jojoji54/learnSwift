@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx15.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx16.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx17.dart';
@@ -23,11 +22,14 @@ class BooleanBasicExMain extends StatefulWidget {
   final String title;
   final String description;
   final bool completed;
-  const BooleanBasicExMain(
+    Color color1;
+  Color color2;
+   BooleanBasicExMain(
       {super.key,
       required this.id,
       required this.title,
-      required this.description, required this.completed});
+      required this.description, required this.completed, required this.color1,
+      required this.color2});
 
   @override
   State<BooleanBasicExMain> createState() => _BooleanBasicExMainState();
@@ -43,16 +45,41 @@ class _BooleanBasicExMainState extends State<BooleanBasicExMain> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          toolbarHeight: 100,
-          title: Text(
-            widget.title,
-            style: const TextStyle(
-              fontFamily: 'InconsolataBold',
-              fontWeight: FontWeight.bold,
-              fontSize: 30,
+        appBar:  AppBar(
+          flexibleSpace: AnimatedContainer(
+            duration: const Duration(seconds: 2), // Duración de la transición
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [widget.color1, widget.color2],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
             ),
+          ),
+          toolbarHeight: 100, // Define la altura deseada del AppBar
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Center(
+                  child: Text(
+                    widget.title,
+                    style: TextStyle(
+                        fontFamily: 'InconsolataBold',
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black),
+                  ),
+                ),
+              ),
+              Align(
+                alignment: Alignment.centerRight,
+                child: CatInfoIcon(
+                  description: widget.description,
+                ), // Aquí añades el ícono de información
+              ),
+            ],
           ),
         ),
         body: Stack(

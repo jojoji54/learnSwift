@@ -133,7 +133,7 @@ class InfoIcon extends StatelessWidget {
         _showDialog(
           context,
           AppLocalizations.of(context)!.aboutLearnSwiftTitle,
-          AppLocalizations.of(context)!.aboutLearnSwiftContent,
+          AppLocalizations.of(context)!.aboutcodeCraftersContent,
         );
       },
     );

@@ -23,7 +23,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 3,
     name: 'JavaScript',
-    color1: Color(0xFFF7DF1E),
+    color1: Color.fromARGB(255, 205, 184, 27),
     color2: Color(0xFF000000),
     isActive: false,
     description: 'CodeCrafters: JavaScript es tu guía para dominar el lenguaje más usado en el desarrollo web, desde dinámicas en el frontend hasta aplicaciones completas.\n\nVersión: ECMAScript 2023',

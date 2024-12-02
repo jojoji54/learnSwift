@@ -55,28 +55,28 @@ class _MyHomePageState extends State<MyHomePage> {
                 _buildPage(
                   context,
                   "Languages",
+                  programmingItemsEN.where((item) => item.id <= 11).toList(),
                   programmingItemsES.where((item) => item.id <= 11).toList(),
                 ),
                 _buildPage(
-                  context,
-                  "Frameworks",
-                  programmingItemsES.where((item) => item.id > 11).toList(),
-                ),
+                    context,
+                    "Frameworks",
+                    programmingItemsEN.where((item) => item.id > 11).toList(),
+                    programmingItemsES.where((item) => item.id > 11).toList()),
               ],
             ),
           ],
         ));
   }
 
-  Widget _buildPage(
-      BuildContext context, String title, List<ProgrammingItem> items) {
+  Widget _buildPage(BuildContext context, String title,
+      List<ProgrammingItem> itemsEN, List<ProgrammingItem> itemsES) {
     return ListView.builder(
-      itemCount: programmingItemsES.length,
+      itemCount: itemsEN.length,
       padding: const EdgeInsets.only(top: 20, bottom: 10),
       itemBuilder: (context, index) {
-        final course = Constant.languaje == "es"
-            ? programmingItemsES[index]
-            : programmingItemsEN[index];
+        final course =
+            Constant.languaje == "es" ? itemsES[index] : itemsEN[index];
 
         return Column(
           children: [

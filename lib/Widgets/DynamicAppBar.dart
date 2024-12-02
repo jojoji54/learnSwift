@@ -91,7 +91,7 @@ class _DynamicAppBarState extends State<DynamicAppBar> {
             style: TextStyle(
                 fontFamily: 'InconsolataBold',
                 fontWeight: FontWeight.bold,
-                fontSize: 25,
+                fontSize: 35,
                 color: Colors.white),
           ),
           const InfoIcon(),

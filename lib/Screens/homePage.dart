@@ -4,7 +4,9 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/catSelectorScreen.dart';
 import 'package:learnswift/Widgets/DynamicAppBar.dart';
-import 'package:learnswift/data/LanguajeModel/languajeMainModelList.dart';
+import 'package:learnswift/data/Constant/Constant.dart';
+import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
+import 'package:learnswift/data/LanguajeModel/languajeMainModelListES.dart';
 import 'package:lottie/lottie.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -30,10 +32,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.cover),
                 )),
             ListView.builder(
-              itemCount: programmingItems.length,
+              itemCount: programmingItemsES.length,
               padding: const EdgeInsets.only(top: 20, bottom: 10),
               itemBuilder: (context, index) {
-                final course = programmingItems[index];
+                final course = Constant.languaje == "es"
+                    ? programmingItemsES[index]
+                    : programmingItemsEN[index];
 
                 return FadeIn(
                   child: Center(
@@ -120,6 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           title: course.name,
                                           color1: course.color1,
                                           color2: course.color2,
+                                          description: course.description,
                                         ),
                                       ),
                                     );

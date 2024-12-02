@@ -5,6 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/Widgets/InfoIcon.dart';
+import 'package:learnswift/Widgets/catIcon.dart';
+import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
@@ -27,11 +29,13 @@ class CatSelectorScreen extends StatefulWidget {
   String title;
   Color color1;
   Color color2;
+  String description;
   CatSelectorScreen(
       {super.key,
       required this.title,
       required this.color1,
-      required this.color2});
+      required this.color2, 
+      required this.description});
 
   @override
   State<CatSelectorScreen> createState() => _CatSelectorScreenState();
@@ -73,7 +77,7 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
               ),
               Align(
                 alignment: Alignment.centerRight,
-                child: const InfoIcon(), // Aquí añades el ícono de información
+                child:  CatIcon(title: widget.title, description: widget.description,), // Aquí añades el ícono de información
               ),
             ],
           ),

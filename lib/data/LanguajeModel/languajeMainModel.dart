@@ -6,6 +6,7 @@ class ProgrammingItem {
   final Color color1; // Primer color para el degradado
   final Color color2; // Segundo color para el degradado
   final bool isActive; // Indica si está activado inicialmente
+  final String description;
 
   ProgrammingItem({
     required this.id,
@@ -13,5 +14,6 @@ class ProgrammingItem {
     required this.color1,
     required this.color2,
     required this.isActive,
+    required this.description,
   });
 }

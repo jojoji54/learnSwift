@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:learnswift/Screens/home/ProgrammingScreen.dart';
-import 'package:learnswift/Screens/homePage.dart';
+import 'package:learnswift/Screens/home/homePage.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';

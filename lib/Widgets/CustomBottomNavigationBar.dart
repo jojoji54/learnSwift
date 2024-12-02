@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:learnswift/data/Constant/constant.dart';
 
 class CustomBottomNavigationBar extends StatefulWidget {
   final int selectedIndex;
@@ -96,7 +97,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           tabs: [
             GButton(
               icon: Icons.code,
-              text: 'Languages',
+              text: Constant.languaje=="es"? "Lenguajes" :'Languages',
             ),
             GButton(
               icon: Icons.layers,

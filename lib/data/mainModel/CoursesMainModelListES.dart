@@ -30,7 +30,7 @@ List<CoursesMainModel> coursesMainModelListES = [
   ),
   CoursesMainModel(
     id: 3,
-    generalName: 'Condicionales Switch',
+    generalName: 'Switch',
     description: 'Explica el uso de sentencias switch para manejar múltiples condiciones de manera eficiente. Ayuda a escribir un código más limpio y organizado en comparación con estructuras if-else anidadas.',
     numCompletedCourses: 0,
     totalCourses: 15,

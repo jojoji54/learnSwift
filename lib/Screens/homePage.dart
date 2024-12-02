@@ -117,17 +117,22 @@ class _MyHomePageState extends State<MyHomePage> {
                                 InkWell(
                                   onTap: () {
                                     HapticFeedback.lightImpact;
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) => CatSelectorScreen(
-                                          title: course.name,
-                                          color1: course.color1,
-                                          color2: course.color2,
-                                          description: course.description,
+                                    if (course.isActive) {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              CatSelectorScreen(
+                                            title: course.name,
+                                            color1: course.color1,
+                                            color2: course.color2,
+                                            description: course.description,
+                                          ),
                                         ),
-                                      ),
-                                    );
+                                      );
+                                    } else {
+                                      _showDialog(context);
+                                    }
                                   },
                                   child: Padding(
                                     padding: const EdgeInsets.all(8.0),
@@ -177,5 +182,50 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ],
         ));
+  }
+
+  void _showDialog(BuildContext context, {Color? titleColor}) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return AlertDialog(
+          title: Center(
+            child: Text(
+              "😊",
+              style: TextStyle(
+                fontFamily: 'InconsolataRegular',
+                fontWeight: FontWeight.bold,
+                color: titleColor ?? Colors.black,
+              ),
+            ),
+          ),
+          content: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  Constant.languaje == "es"
+                      ? "Algunos lenguajes y frameworks no están disponibles por ahora, pero se desbloquearán pronto.\n\n¡Mantente atento a las próximas actualizaciones!"
+                      : "Some languages and frameworks are not available yet, but they will be unlocked soon.\n\nStay tuned for upcoming updates!",
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataRegular',
+                    fontWeight: FontWeight.normal,
+                    fontStyle: FontStyle.normal,
+                    color: Colors.black,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(),
+              child: const Text("Close"),
+            ),
+          ],
+        );
+      },
+    );
   }
 }

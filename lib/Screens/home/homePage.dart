@@ -10,6 +10,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListES.dart';
 import 'package:lottie/lottie.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
@@ -21,6 +22,19 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0; // Rastrea la pestaña activa
   final PageController _pageController = PageController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    clearSharedPreferences();
+  }
+
+  Future<void> clearSharedPreferences() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.clear(); // Elimina todos los datos almacenados
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

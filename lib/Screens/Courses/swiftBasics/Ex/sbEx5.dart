@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 class SBEx5 extends StatefulWidget {
     final String title;
@@ -57,7 +59,7 @@ class _SBEx5State extends State<SBEx5> {
   }
 
   // Validar el texto ingresado
-  void _validateInput()async {
+  void _validateInput(AllProvider allprovider)async {
     final codeRegex = RegExp(
       r'^var\s+\w+\s*=\s*".*"\nprint\(".*\\\(.*\).*"\)$',
       multiLine: true,
@@ -67,12 +69,16 @@ class _SBEx5State extends State<SBEx5> {
 
     if (codeRegex.hasMatch(userInput)) {
        PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+          widget.id,
+          completed: true,
+        );
+        await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+          PurchaseManagerSingleton().purchaseAndDevelop,
+        );
+        allprovider.data[widget.id].completed = true;
+        allprovider.setData(allprovider.data);
+        int nC = allprovider.completedCount + 1;
+        allprovider.setCourseCount(nC);
       _controller.clear(); // Limpiar el campo de texto
       _showDialog(
         AppLocalizations.of(context)!.correctTitle,
@@ -114,6 +120,7 @@ class _SBEx5State extends State<SBEx5> {
 
   @override
   Widget build(BuildContext context) {
+    final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -136,7 +143,9 @@ class _SBEx5State extends State<SBEx5> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton",
-              onPressed: _validateInput,
+             onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),

@@ -1,12 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/provider/allprovider.dart';
+import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 class SBEx3 extends StatefulWidget {
-   final String title;
+  final String title;
   final int id;
   final bool completed;
-  const SBEx3({super.key, required this.title, required this.id, required this.completed});
+  const SBEx3(
+      {super.key,
+      required this.title,
+      required this.id,
+      required this.completed});
 
   @override
   State<SBEx3> createState() => _SBEx3State();
@@ -55,13 +63,27 @@ class _SBEx3State extends State<SBEx3> {
   }
 
   // Validar el texto ingresado
-  void _validateInput() {
+  void _validateInput(AllProvider allprovider) async {
     final printRegex = RegExp(r'^print\(".+"\)$');
     final userInput = _controller.text.trim();
 
     if (printRegex.hasMatch(userInput)) {
+      PurchaseManagerSingleton().updateItemAndSave(
+        widget.id,
+        completed: true,
+      );
+      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+        PurchaseManagerSingleton().purchaseAndDevelop,
+      );
+      int position =
+          allprovider.data.indexWhere((course) => course.id == widget.id);
+      allprovider.data[position].completed = true;
+      allprovider.setData(allprovider.data);
+      int nC = allprovider.completedCount + 1;
+      allprovider.setCourseCount(nC);
       setState(() {
-        _inputTextColor = Colors.green; // Cambiar el color a verde si es correcto
+        _inputTextColor =
+            Colors.green; // Cambiar el color a verde si es correcto
       });
       _controller.clear(); // Limpiar el campo de texto
       _showDialog(
@@ -75,7 +97,8 @@ class _SBEx3State extends State<SBEx3> {
     } else {
       setState(() {
         _failedAttempts++;
-        _inputTextColor = Colors.orange; // Mantener el color naranja si es incorrecto
+        _inputTextColor =
+            Colors.orange; // Mantener el color naranja si es incorrecto
       });
 
       if (_failedAttempts == 1) {
@@ -106,7 +129,8 @@ class _SBEx3State extends State<SBEx3> {
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content:  Text(AppLocalizations.of(context)!.tryAgain(_failedAttempts)),
+            content:
+                Text(AppLocalizations.of(context)!.tryAgain(_failedAttempts)),
           ),
         );
       }
@@ -115,6 +139,7 @@ class _SBEx3State extends State<SBEx3> {
 
   @override
   Widget build(BuildContext context) {
+    final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -140,12 +165,14 @@ class _SBEx3State extends State<SBEx3> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton3",
-              onPressed: _validateInput,
+              onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3 || widget.completed )
+          if (_failedAttempts >= 3 || widget.completed)
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
@@ -211,8 +238,7 @@ class _SBEx3State extends State<SBEx3> {
                   ),
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    hintText:
-                        AppLocalizations.of(context)!.enterYourCodeHere,
+                    hintText: AppLocalizations.of(context)!.enterYourCodeHere,
                     hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),

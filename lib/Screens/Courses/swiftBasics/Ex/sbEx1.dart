@@ -11,7 +11,11 @@ class SBEx1 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SBEx1({super.key, required this.title, required this.id, required this.completed});
+  const SBEx1(
+      {super.key,
+      required this.title,
+      required this.id,
+      required this.completed});
 
   @override
   State<SBEx1> createState() => _SBEx1State();
@@ -73,13 +77,14 @@ class _SBEx1State extends State<SBEx1> {
       await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
         PurchaseManagerSingleton().purchaseAndDevelop,
       );
+      int position =
+          allprovider.data.indexWhere((course) => course.id == widget.id);
+      allprovider.data[position].completed = true;
+      allprovider.setData(allprovider.data);
+      int nC = allprovider.completedCount + 1;
+      allprovider.setCourseCount(nC);
       _controller.clear();
-      try {
-        allprovider.data[0].completed = true;
-        allprovider.setData(allprovider.data);
-        int nC = allprovider.completedCount + 1;
-        allprovider.setCourseCount(nC);
-      } catch (e) {
+      try {} catch (e) {
         debugPrint(e.toString());
       }
       setState(() {
@@ -116,8 +121,8 @@ class _SBEx1State extends State<SBEx1> {
       } else {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(AppLocalizations.of(context)!.tryAgain(
-                _failedAttempts)), // Con formato dinámico
+            content: Text(AppLocalizations.of(context)!
+                .tryAgain(_failedAttempts)), // Con formato dinámico
           ),
         );
       }
@@ -156,7 +161,7 @@ class _SBEx1State extends State<SBEx1> {
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),
           ),
-          if (_failedAttempts >= 3 || widget.completed )
+          if (_failedAttempts >= 3 || widget.completed)
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(

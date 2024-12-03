@@ -7,30 +7,45 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesData {
   /// Método para cargar las preferencias
-static Future<void> cargarPreferencias() async {
-  final SharedPreferences prefs = await SharedPreferences.getInstance();
+  static Future<void> cargarPreferencias() async {
+    final SharedPreferences prefs = await SharedPreferences.getInstance();
 
-  String? encodedList = prefs.getString('purchasesAndDevelopmentList');
-  Constant.everythingunlocked = prefs.getBool('everythingunlocked')??false;
-  print(  Constant.everythingunlocked);
+    String? encodedList = prefs.getString('purchasesAndDevelopmentList');
+    Constant.everythingunlocked = prefs.getBool('everythingunlocked') ?? false;
+    print(Constant.everythingunlocked);
 
-  List<PurchasesAndDevelopment> loadedData;
+    List<PurchasesAndDevelopment> loadedData;
 
-  if (encodedList != null) {
-    Iterable decoded = jsonDecode(encodedList);
-    loadedData = List<PurchasesAndDevelopment>.from(
-      decoded.map((item) => PurchasesAndDevelopment.fromJson(item)),
-    );
-  } else {
-    loadedData = purchasesAndDevelopmentList;
-    await guardarPurchasesAndDevelopmentList(purchasesAndDevelopmentList);
+    if (encodedList != null) {
+      Iterable decoded = jsonDecode(encodedList);
+      loadedData = List<PurchasesAndDevelopment>.from(
+        decoded.map((item) => PurchasesAndDevelopment.fromJson(item)),
+      );
+    } else {
+      //loadedData = purchasesAndDevelopmentList;
+      // Genera la lista dinámicamente
+      loadedData = generatePurchasesAndDevelopmentList(7000);
+      await guardarPurchasesAndDevelopmentList(purchasesAndDevelopmentList);
+    }
+
+    // Inicializa el Singleton con los datos cargados
+    PurchaseManagerSingleton().initialize(loadedData);
   }
 
-  // Inicializa el Singleton con los datos cargados
-  PurchaseManagerSingleton().initialize(loadedData);
-}
-
-
+  static List<PurchasesAndDevelopment> generatePurchasesAndDevelopmentList(
+      int total) {
+    List<PurchasesAndDevelopment> list = [];
+    for (int i = 0; i < total; i++) {
+      int id = i ~/ 15; // Incrementa el ID cada 15 valores
+      bool purchased = (i % 15) < 7; // Alterna cada 7 valores
+      list.add(PurchasesAndDevelopment(
+        id: id,
+        completed: false,
+        purchased: purchased,
+      ));
+    }
+    return list;
+  }
 
   /// Método para guardar la lista `purchasesAndDevelopmentList` en SharedPreferences
   static Future<void> guardarPurchasesAndDevelopmentList(

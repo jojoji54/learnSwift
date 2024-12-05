@@ -5,6 +5,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/catSelectorScreen.dart';
 import 'package:learnswift/Widgets/CustomBottomNavigationBar.dart';
 import 'package:learnswift/Widgets/DynamicAppBar.dart';
+import 'package:learnswift/Widgets/InfoIcon.dart';
+import 'package:learnswift/Widgets/customLottieAppBar.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
@@ -41,7 +43,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color(0xFFf4f4f2),
-        appBar: DynamicAppBar(),
+         appBar: DynamicAppBar(),
         bottomNavigationBar: CustomBottomNavigationBar(
           selectedIndex: _selectedIndex,
           onTabChange: (index) {

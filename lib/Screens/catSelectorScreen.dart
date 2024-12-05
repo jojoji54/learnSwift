@@ -9,6 +9,7 @@ import 'package:learnswift/Widgets/catIcon.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
+import 'package:learnswift/data/Hive/PurchaseManagerHive.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
 import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
@@ -34,7 +35,7 @@ class CatSelectorScreen extends StatefulWidget {
       {super.key,
       required this.title,
       required this.color1,
-      required this.color2, 
+      required this.color2,
       required this.description});
 
   @override
@@ -42,6 +43,7 @@ class CatSelectorScreen extends StatefulWidget {
 }
 
 class _CatSelectorScreenState extends State<CatSelectorScreen> {
+  final purchaseManagerHive = PurchaseManagerHive();
   @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);
@@ -77,7 +79,10 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
               ),
               Align(
                 alignment: Alignment.centerRight,
-                child:  CatIcon(title: widget.title, description: widget.description,), // Aquí añades el ícono de información
+                child: CatIcon(
+                  title: widget.title,
+                  description: widget.description,
+                ), // Aquí añades el ícono de información
               ),
             ],
           ),
@@ -112,10 +117,10 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                     ? coursesMainModelListES[index]
                     : coursesMainModelListEN[index];
                 // Filtrar la lista para obtener los elementos donde id = 0 y completed = true
-                var filteredCounter = PurchaseManagerSingleton()
-                    .purchaseAndDevelop
-                    .where((item) =>
-                        item.id == course.id && item.completed == true);
+
+                final filteredItems =
+                    purchaseManagerHive.filterCompletedByCourseId(course.id);
+                    print("tanalo --> " + filteredItems.length.toString());
                 return FadeIn(
                   child: Center(
                     // Este widget centra y limita el ancho del Card
@@ -224,12 +229,11 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                         color: !course.alreadyBuy
                                             ? Colors.red
                                             : coursesMainModelListES.length ==
-                                                    filteredCounter.length
+                                                    filteredItems.length
                                                 ? Colors.green
-                                                : filteredCounter.length == 0
+                                                : filteredItems.isEmpty
                                                     ? Colors.grey
-                                                    : filteredCounter.length >=
-                                                            0
+                                                    : filteredItems.isNotEmpty
                                                         ? Colors.blue
                                                         : Colors.green,
                                       ),
@@ -241,14 +245,14 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                           child: Icon(
                                               !course.alreadyBuy
                                                   ? FontAwesomeIcons.lock
-                                                  : filteredCounter.length ==
+                                                  : filteredItems.length ==
                                                           coursesMainModelListES
                                                               .length
                                                       ? FontAwesomeIcons.trophy
-                                                      : filteredCounter.isEmpty
+                                                      : filteredItems.isEmpty
                                                           ? FontAwesomeIcons
                                                               .play
-                                                          : filteredCounter
+                                                          : filteredItems
                                                                       .length >=
                                                                   0
                                                               ? FontAwesomeIcons
@@ -271,7 +275,7 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                 maxSteps: course.totalCourses,
                                 progressType:
                                     LinearProgressBar.progressTypeLinear,
-                                currentStep: filteredCounter!.length,
+                                currentStep: filteredItems!.length,
                                 progressColor: widget.color1,
                                 backgroundColor: const Color(0xFFeaeaea),
                                 borderRadius: BorderRadius.circular(10),

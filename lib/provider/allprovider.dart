@@ -56,4 +56,6 @@ class AllProvider with ChangeNotifier {
     // Notificar a los widgets que escuchan
     notifyListeners();
   }
+
+  
 }

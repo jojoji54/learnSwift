@@ -41,9 +41,9 @@ void updateItemAndSave(int index, {bool? completed, bool? purchased}) async {
   PurchaseManagerSingleton().updateItem(index, completed: completed, purchased: purchased);
 
   // Guarda los datos actualizados en SharedPreferences
-  await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-    PurchaseManagerSingleton().purchaseAndDevelop,
-  );
+ // await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
+   // PurchaseManagerSingleton().purchaseAndDevelop,
+ // );
 }
 
 

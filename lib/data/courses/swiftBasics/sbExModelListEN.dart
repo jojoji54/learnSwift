@@ -1,13 +1,16 @@
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/Hive/PurchaseManagerHive.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
+
+final purchaseManagerHive = PurchaseManagerHive();
 
 List<CoursesExModel> sbModelEN = [
   CoursesExModel(
     id: 0,
     exerciseName: 'Hello World',
     productID: 'com.mrrubik.learnswift.swiftbasicex0',
-    alreadyBuy: PurchaseManagerSingleton().purchaseAndDevelop.elementAt(0).purchased!,
-    completed: PurchaseManagerSingleton().purchaseAndDevelop.elementAt(0).completed!,
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(0),
+    completed: purchaseManagerHive.getCompleted(0),
   ),
   CoursesExModel(
     id: 1,

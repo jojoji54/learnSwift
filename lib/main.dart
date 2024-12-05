@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:learnswift/Screens/home/homePage.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -10,6 +11,9 @@ import 'l10n/l10n.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Inicializa Hive y abre la caja
+  await Hive.initFlutter();
+  await Hive.openBox('purchases'); // Abre o crea la caja 'purchases'
   await SharedPreferencesData.cargarPreferencias();
   runApp(const MyApp());
 }

@@ -170,10 +170,10 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: allProvider.data!.length,
+                  itemCount: allProvider.data.length,
                   padding: const EdgeInsets.only(top: 20, bottom: 10),
                   itemBuilder: (context, index) {
-                    final course = allProvider.data![index];
+                    final course = allProvider.data[index];
                     return FadeIn(
                       child: Center(
                         child: ConstrainedBox(

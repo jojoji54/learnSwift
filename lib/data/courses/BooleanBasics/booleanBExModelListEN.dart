@@ -1,5 +1,6 @@
 import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/mainModel/CoursesMainModelListEN.dart';
 
 List<CoursesExModel> booleanBModelEN = [
   CoursesExModel(
@@ -92,7 +93,7 @@ List<CoursesExModel> booleanBModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(24).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 25,
     exerciseName: 'Boolean with Nested\nIf Statements',
     productID: 'com.mrrubik.learnswift.swiftbasicex25',
@@ -101,7 +102,7 @@ CoursesExModel(
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(25).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 26,
     exerciseName: 'Boolean Logic Challenge:\nPassword Validator',
     productID: 'com.mrrubik.learnswift.swiftbasicex26',
@@ -110,7 +111,7 @@ CoursesExModel(
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(26).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 27,
     exerciseName: 'Boolean Game Logic',
     productID: 'com.mrrubik.learnswift.swiftbasicex27',
@@ -119,7 +120,7 @@ CoursesExModel(
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(27).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 28,
     exerciseName: 'Boolean Quiz App Logic',
     productID: 'com.mrrubik.learnswift.swiftbasicex28',
@@ -128,7 +129,7 @@ CoursesExModel(
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(28).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 29,
     exerciseName: 'Guess the Secret Boolean',
     productID: 'com.mrrubik.learnswift.swiftbasicex29',
@@ -137,7 +138,7 @@ CoursesExModel(
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(29).completed!,
   ),
-CoursesExModel(
+  CoursesExModel(
     id: 30,
     exerciseName: 'Logical Operators Game',
     productID: 'com.mrrubik.learnswift.swiftbasicex30',

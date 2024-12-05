@@ -1,10 +1,17 @@
+import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
+import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
+import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
+import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
-List<CoursesMainModel> coursesMainModelListEN = [
+List<CoursesMainModel> coursesSwiftMainModelListEN = [
   CoursesMainModel(
     id: 0,
     generalName: 'Swift Basics',
-    description: 'Introduces the fundamentals of Swift, including syntax, variables, constants, and basic operations. Understanding these concepts is crucial as they form the foundation for all Swift programming.',
+    catExercise: sbModelEN,
+    description:
+        'Introduces the fundamentals of Swift, including syntax, variables, constants, and basic operations. Understanding these concepts is crucial as they form the foundation for all Swift programming.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -13,7 +20,9 @@ List<CoursesMainModel> coursesMainModelListEN = [
   CoursesMainModel(
     id: 1,
     generalName: 'Boolean Basics',
-    description: 'Covers boolean logic and its application in programming. Essential for making decisions in your code through comparisons and logical operations.',
+    catExercise: booleanBModelEN,
+    description:
+        'Covers boolean logic and its application in programming. Essential for making decisions in your code through comparisons and logical operations.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -22,7 +31,9 @@ List<CoursesMainModel> coursesMainModelListEN = [
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
-    description: 'Teaches conditional branching to control program flow based on certain conditions. Critical for implementing logic in your applications.',
+    catExercise: ifElseModelEN,
+    description:
+        'Teaches conditional branching to control program flow based on certain conditions. Critical for implementing logic in your applications.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -31,7 +42,9 @@ List<CoursesMainModel> coursesMainModelListEN = [
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
-    description: 'Explains how to use switch statements for handling multiple conditions efficiently. Helps write cleaner and more organized code compared to nested if-else.',
+    catExercise: switchModelEN,
+    description:
+        'Explains how to use switch statements for handling multiple conditions efficiently. Helps write cleaner and more organized code compared to nested if-else.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -40,13 +53,15 @@ List<CoursesMainModel> coursesMainModelListEN = [
   CoursesMainModel(
     id: 4,
     generalName: 'Loops',
-    description: 'Covers the use of loops like for, while, and repeat-while to perform repetitive tasks. Vital for reducing redundancy and automating tasks in your code.',
+    catExercise: loopsModelEN,
+    description:
+        'Covers the use of loops like for, while, and repeat-while to perform repetitive tasks. Vital for reducing redundancy and automating tasks in your code.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
- /*  CoursesMainModel(
+  /*  CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
     description: 'Explores arrays and their use in storing collections of data. Key for handling multiple items in an organized manner.',

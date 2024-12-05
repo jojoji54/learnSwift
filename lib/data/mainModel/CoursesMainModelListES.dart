@@ -1,10 +1,16 @@
+import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
+import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListES.dart';
+import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListES.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListES.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
-List<CoursesMainModel> coursesMainModelListES = [
+List<CoursesMainModel> coursesSwiftMainModelListES = [
   CoursesMainModel(
     id: 0,
     generalName: 'Conceptos Básicos',
-    description: 'Introduce los fundamentos de Swift, incluyendo sintaxis, variables, constantes y operaciones básicas. Comprender estos conceptos es crucial ya que forman la base de toda la programación en Swift.',
+    catExercise: sbModelES,
+    description:
+        'Introduce los fundamentos de Swift, incluyendo sintaxis, variables, constantes y operaciones básicas. Comprender estos conceptos es crucial ya que forman la base de toda la programación en Swift.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -13,7 +19,9 @@ List<CoursesMainModel> coursesMainModelListES = [
   CoursesMainModel(
     id: 1,
     generalName: 'Booleanos',
-    description: 'Cubre la lógica booleana y su aplicación en la programación. Esencial para tomar decisiones en tu código mediante comparaciones y operaciones lógicas.',
+    catExercise: booleanBModelES,
+    description:
+        'Cubre la lógica booleana y su aplicación en la programación. Esencial para tomar decisiones en tu código mediante comparaciones y operaciones lógicas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -22,7 +30,9 @@ List<CoursesMainModel> coursesMainModelListES = [
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
-    description: 'Enseña cómo controlar el flujo del programa utilizando estructuras condicionales. Fundamental para implementar lógica en tus aplicaciones.',
+    catExercise: ifElseModelES,
+    description:
+        'Enseña cómo controlar el flujo del programa utilizando estructuras condicionales. Fundamental para implementar lógica en tus aplicaciones.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -31,7 +41,9 @@ List<CoursesMainModel> coursesMainModelListES = [
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
-    description: 'Explica el uso de sentencias switch para manejar múltiples condiciones de manera eficiente. Ayuda a escribir un código más limpio y organizado en comparación con estructuras if-else anidadas.',
+    catExercise: switchModelES,
+    description:
+        'Explica el uso de sentencias switch para manejar múltiples condiciones de manera eficiente. Ayuda a escribir un código más limpio y organizado en comparación con estructuras if-else anidadas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -40,13 +52,15 @@ List<CoursesMainModel> coursesMainModelListES = [
   CoursesMainModel(
     id: 4,
     generalName: 'Bucles',
-    description: 'Cubre el uso de bucles como for, while y repeat-while para realizar tareas repetitivas. Vital para reducir la redundancia y automatizar procesos en tu código.',
+    catExercise: [],
+    description:
+        'Cubre el uso de bucles como for, while y repeat-while para realizar tareas repetitivas. Vital para reducir la redundancia y automatizar procesos en tu código.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
- /*  CoursesMainModel(
+  /*  CoursesMainModel(
     id: 5,
     generalName: 'Arreglos',
     description: 'Explora los arreglos y su uso para almacenar colecciones de datos. Es clave para manejar múltiples elementos de manera organizada.',

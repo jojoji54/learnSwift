@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
+import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
@@ -68,13 +69,11 @@ class _SBEx1State extends State<SBEx1> {
     userInput = userInput.replaceAll('“', '"').replaceAll('”', '"');
 
     if (variableRegex.hasMatch(userInput)) {
-      purchaseManagerHive.updatePurchase( widget.id, purchased: true, completed: true);
-      int position =
-          allprovider.data.indexWhere((course) => course.id == widget.id);
-      allprovider.data[widget.id].completed = true;
+      purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
       allprovider.setData(allprovider.data);
-      int nC = allprovider.completedCount + 1;
-      allprovider.setCourseCount(nC);
       _controller.clear();
       try {} catch (e) {
         debugPrint(e.toString());

@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AllProvider with ChangeNotifier {
   
-  List<CoursesExModel> _data = [];
+  List<CoursesMainModel> _data = [];
   int _courseCategory = 0;
   int _completedCount = 0;
   bool _everythingPurchased = Constant.everythingunlocked;
 
   // Getters
-  List<CoursesExModel> get data => _data;
+  List<CoursesMainModel> get data => _data;
   int get courseCategory => _courseCategory;
   int get completedCount => _completedCount;
   bool get everythingPurchased => _everythingPurchased;
@@ -24,10 +25,11 @@ class AllProvider with ChangeNotifier {
   }
 
   // Método para actualizar un elemento específico
-  void setData(List<CoursesExModel> newData) {
+  void setData(List<CoursesMainModel> newData) {
     _data = newData;
     notifyListeners();
   }
+
 
   void setCourseCategory(int newCourseCat) {
     _courseCategory = newCourseCat;
@@ -40,7 +42,7 @@ class AllProvider with ChangeNotifier {
   }
 
   // Método para actualizar los datos
-  void getData(int value, List<CoursesExModel> sbModel) {
+  void getData(int value, List<CoursesMainModel> sbModel) {
     switch (value) {
       case 0:
         _data = sbModel;

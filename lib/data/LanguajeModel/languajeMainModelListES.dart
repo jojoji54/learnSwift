@@ -1,12 +1,14 @@
 import 'dart:ui';
 
 import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
+import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
 
 final List<ProgrammingItem> programmingItemsES = [
   // Lenguajes
   ProgrammingItem(
     id: 1,
     name: 'Swift',
+    coursesList: coursesSwiftMainModelListES,
     color1: Color(0xFFFF5E57), // Rojo brillante
     color2: Color(0xFFFFC371), // Amarillo cálido
     isActive: true,
@@ -15,6 +17,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 2,
     name: 'Python',
+    coursesList: [],
     color1: Color(0xFF306998),
     color2: Color(0xFFFFD43B),
     isActive: false,
@@ -23,6 +26,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 3,
     name: 'JavaScript',
+    coursesList: [],
     color1: Color.fromARGB(255, 205, 184, 27),
     color2: Color(0xFF000000),
     isActive: false,
@@ -31,6 +35,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 4,
     name: 'Java',
+    coursesList: [],
     color1: Color(0xFF5382A1),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -39,6 +44,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 5,
     name: 'C++',
+    coursesList: [],
     color1: Color(0xFF00599C),
     color2: Color(0xFF4D4D4D),
     isActive: false,
@@ -47,6 +53,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 6,
     name: 'C#',
+    coursesList: [],
     color1: Color(0xFF9B4F96),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -55,6 +62,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 7,
     name: 'Kotlin',
+    coursesList: [],
     color1: Color(0xFF3D77BC),
     color2: Color(0xFFF88909),
     isActive: false,
@@ -63,6 +71,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 8,
     name: 'PHP',
+    coursesList: [],
     color1: Color(0xFF8892BF),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -71,6 +80,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 9,
     name: 'Ruby',
+    coursesList: [],
     color1: Color(0xFFCC342D),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -79,6 +89,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 10,
     name: 'Go',
+    coursesList: [],
     color1: Color(0xFF00ADD8),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -87,6 +98,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 11,
     name: 'COBOL',
+    coursesList: [],
     color1: Color(0xFF005CA5),
     color2: Color(0xFFFCE94F),
     isActive: false,
@@ -97,6 +109,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 12,
     name: 'Flutter',
+    coursesList: [],
     color1: Color(0xFF02569B),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -105,6 +118,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 13,
     name: 'React',
+    coursesList: [],
     color1: Color(0xFF61DAFB),
     color2: Color(0xFF20232A),
     isActive: false,
@@ -113,6 +127,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 14,
     name: 'Angular',
+    coursesList: [],
     color1: Color(0xFFDD0031),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -121,6 +136,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 15,
     name: 'Vue.js',
+    coursesList: [],
     color1: Color(0xFF41B883),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -129,6 +145,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 16,
     name: 'Django',
+    coursesList: [],
     color1: Color(0xFF092E20),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -137,6 +154,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 17,
     name: 'Spring',
+    coursesList: [],
     color1: Color(0xFF6DB33F),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -145,6 +163,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 18,
     name: 'Symfony',
+    coursesList: [],
     color1: Color(0xFF000000),
     color2: Color(0xFF7289DA),
     isActive: false,
@@ -153,6 +172,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 19,
     name: 'Laravel',
+    coursesList: [],
     color1: Color(0xFFFF2D20),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -161,6 +181,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 20,
     name: 'ASP.NET',
+    coursesList: [],
     color1: Color(0xFF512BD4),
     color2: Color(0xFFFFFFFF),
     isActive: false,
@@ -169,6 +190,7 @@ final List<ProgrammingItem> programmingItemsES = [
   ProgrammingItem(
     id: 21,
     name: 'TensorFlow',
+    coursesList: [],
     color1: Color(0xFFFF6F00),
     color2: Color(0xFFFFFFFF),
     isActive: false,

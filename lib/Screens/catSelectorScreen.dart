@@ -3,24 +3,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
-import 'package:learnswift/Widgets/InfoIcon.dart';
 import 'package:learnswift/Widgets/catIcon.dart';
-import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/Hive/PurchaseManagerHive.dart';
-import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
-import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
-import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
-import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelList%20copy.dart';
-import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
-import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListES.dart';
-import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListES.dart';
-import 'package:learnswift/data/mainModel/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
@@ -97,30 +85,23 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                       fit: BoxFit.cover),
                 )),
             ListView.builder(
-              itemCount: (Constant.languaje == 'es'
-                      ? coursesMainModelListES.length
-                      : coursesMainModelListEN.length) +
-                  1, // +1 para el botón
+              itemCount: allProvider.data.length + 1, // +1 para el botón
               padding: const EdgeInsets.only(top: 20, bottom: 10),
               itemBuilder: (context, index) {
-                if (index ==
-                    (Constant.languaje == 'es'
-                        ? coursesMainModelListES.length
-                        : coursesMainModelListEN.length)) {
+                if (index == allProvider.data.length) {
                   // Último elemento: el botón "Próximamente"
                   return const Padding(
                     padding: EdgeInsets.all(16.0),
                     child: ComingSoonButton(),
                   );
                 }
-                final course = Constant.languaje == 'es'
-                    ? coursesMainModelListES[index]
-                    : coursesMainModelListEN[index];
+                final course = allProvider.data[index];
                 // Filtrar la lista para obtener los elementos donde id = 0 y completed = true
 
-                final filteredItems =
-                    purchaseManagerHive.filterCompletedByCourseId(course.id);
-                    print("tanalo --> " + filteredItems.length.toString());
+                final filteredItems = allProvider.data[index].catExercise
+                    .where((item) => item.completed == true)
+                    .toList();
+
                 return FadeIn(
                   child: Center(
                     // Este widget centra y limita el ancho del Card
@@ -199,19 +180,14 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                 InkWell(
                                   onTap: () {
                                     HapticFeedback.lightImpact;
-                                    if (Constant.languaje == 'es') {
-                                      getDataES(course.id, allProvider);
-                                    } else {
-                                      // Lógica para otro idioma
-                                      getDataEN(course.id, allProvider);
-                                    }
-
+                                    Constant.catIndex = course.id;
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
                                         builder: (context) =>
                                             MainCoursesExercises(
                                           id: course.id,
+                                          exPtrogress: filteredItems.length,
                                           title: course.generalName,
                                           allProvider: allProvider,
                                           description: course.description,
@@ -228,7 +204,8 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                         borderRadius: BorderRadius.circular(10),
                                         color: !course.alreadyBuy
                                             ? Colors.red
-                                            : coursesMainModelListES.length ==
+                                            : coursesSwiftMainModelListES
+                                                        .length ==
                                                     filteredItems.length
                                                 ? Colors.green
                                                 : filteredItems.isEmpty
@@ -246,7 +223,7 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                               !course.alreadyBuy
                                                   ? FontAwesomeIcons.lock
                                                   : filteredItems.length ==
-                                                          coursesMainModelListES
+                                                          coursesSwiftMainModelListES
                                                               .length
                                                       ? FontAwesomeIcons.trophy
                                                       : filteredItems.isEmpty
@@ -275,7 +252,7 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                 maxSteps: course.totalCourses,
                                 progressType:
                                     LinearProgressBar.progressTypeLinear,
-                                currentStep: filteredItems!.length,
+                                currentStep: filteredItems.length,
                                 progressColor: widget.color1,
                                 backgroundColor: const Color(0xFFeaeaea),
                                 borderRadius: BorderRadius.circular(10),
@@ -291,65 +268,5 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
             ),
           ],
         ));
-  }
-
-  void getDataEN(int value, AllProvider allprovider) {
-    setState(() {
-      switch (value) {
-        case 0:
-          allprovider.setData(sbModelEN);
-          allprovider.setCourseCategory(0);
-          break;
-        case 1:
-          allprovider.setData(booleanBModelEN);
-          allprovider.setCourseCategory(1);
-          break;
-        case 2:
-          allprovider.setData(ifElseModelEN);
-          allprovider.setCourseCategory(2);
-          break;
-        case 3:
-          allprovider.setData(switchModelEN);
-          allprovider.setCourseCategory(3);
-        case 4:
-          allprovider.setData(loopsModelEN);
-          allprovider.setCourseCategory(4);
-          break;
-        default:
-          allprovider.setData([]);
-          allprovider.setCourseCategory(0);
-          break;
-      }
-      int cCount = allprovider.data!.where((course) => course.completed).length;
-      allprovider.setCourseCount(cCount);
-    });
-  }
-
-  void getDataES(int value, AllProvider allprovider) {
-    setState(() {
-      switch (value) {
-        case 0:
-          allprovider.setData(sbModelES);
-          allprovider.setCourseCategory(0);
-          break;
-        case 1:
-          allprovider.setData(booleanBModelES);
-          allprovider.setCourseCategory(1);
-          break;
-        case 2:
-          allprovider.setData(ifElseModelES);
-          allprovider.setCourseCategory(2);
-          break;
-        case 3:
-          allprovider.setData(switchModelES);
-          allprovider.setCourseCategory(3);
-        default:
-          allprovider.setData([]);
-          allprovider.setCourseCategory(0);
-          break;
-      }
-      int cCount = allprovider.data!.where((course) => course.completed).length;
-      allprovider.setCourseCount(cCount);
-    });
   }
 }

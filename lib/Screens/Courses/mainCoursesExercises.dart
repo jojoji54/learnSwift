@@ -26,9 +26,11 @@ class MainCoursesExercises extends StatefulWidget {
   String description;
   Color color1;
   Color color2;
+  int exPtrogress;
   MainCoursesExercises(
       {super.key,
       required this.id,
+      required this.exPtrogress,
       required this.title,
       this.allProvider,
       required this.description,
@@ -52,7 +54,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);
-    if (allProvider.data.isEmpty) {
+    if (allProvider.data[widget.id].catExercise.isEmpty) {
       return Scaffold(
         appBar: AppBar(
           flexibleSpace: AnimatedContainer(
@@ -100,42 +102,42 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     return Scaffold(
       backgroundColor: const Color(0xFFf4f4f2),
       appBar: AppBar(
-          flexibleSpace: AnimatedContainer(
-            duration: const Duration(seconds: 2), // Duración de la transición
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [widget.color1, widget.color2],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
+        flexibleSpace: AnimatedContainer(
+          duration: const Duration(seconds: 2), // Duración de la transición
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [widget.color1, widget.color2],
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
             ),
           ),
-          toolbarHeight: 100, // Define la altura deseada del AppBar
-          title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Center(
-                  child: Text(
-                    widget.title,
-                    style: TextStyle(
-                        fontFamily: 'InconsolataBold',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.black),
-                  ),
+        ),
+        toolbarHeight: 100, // Define la altura deseada del AppBar
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Expanded(
+              child: Center(
+                child: Text(
+                  widget.title,
+                  style: TextStyle(
+                      fontFamily: 'InconsolataBold',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      color: Colors.black),
                 ),
               ),
-              Align(
-                alignment: Alignment.centerRight,
-                child: CatInfoIcon(
-                  description: widget.description,
-                ), // Aquí añades el ícono de información
-              ),
-            ],
-          ),
+            ),
+            Align(
+              alignment: Alignment.centerRight,
+              child: CatInfoIcon(
+                description: widget.description,
+              ), // Aquí añades el ícono de información
+            ),
+          ],
         ),
+      ),
       body: Stack(
         children: [
           SizedBox(
@@ -159,9 +161,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   padding: const EdgeInsets.all(16.0),
                   child: LinearProgressBar(
                     minHeight: 15,
-                    maxSteps: allProvider.data.length,
+                    maxSteps: allProvider.data[widget.id].catExercise.length,
                     progressType: LinearProgressBar.progressTypeLinear,
-                    currentStep: allProvider.completedCount,
+                    currentStep: allProvider.data[Constant.catIndex].catExercise
+                        .where((item) => item.completed == true)
+                        .toList()
+                        .length,
                     progressColor: widget.color1,
                     backgroundColor: const Color(0xFFeaeaea),
                     borderRadius: BorderRadius.circular(10),
@@ -170,10 +175,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: allProvider.data.length,
+                  itemCount: allProvider.data[widget.id].catExercise.length,
                   padding: const EdgeInsets.only(top: 20, bottom: 10),
                   itemBuilder: (context, index) {
-                    final course = allProvider.data[index];
+                    final course =
+                        allProvider.data[widget.id].catExercise[index];
                     return FadeIn(
                       child: Center(
                         child: ConstrainedBox(
@@ -468,7 +474,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
 
   void _unlockContent(String productID) async {
     // Encuentra el curso correspondiente por productID
-    final course = widget.allProvider!.data
+    final course = widget.allProvider!.data[widget.id].catExercise
         .firstWhere((course) => course.productID == productID);
     PurchaseManagerSingleton().updateItemAndSave(
       course.id,
@@ -755,10 +761,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           context,
           MaterialPageRoute(
             builder: (context) => BooleanBasicExMain(
-                id: id,
-                title: title,
-                description: description,
-                completed: completed,color1: color1, color2: color2,),
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
           ),
         );
         break;
@@ -767,11 +776,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           context,
           MaterialPageRoute(
             builder: (context) => IfElseExMain(
-                id: id,
-                title: title,
-                description: description,
-                completed: completed, color1: color1,
-              color2: color2,),
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
           ),
         );
       case 3:

@@ -1,5 +1,4 @@
 import 'package:learnswift/data/purchaseAndDevelopment/purchasesAndDevelopment.dart';
-import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 
 class PurchaseManagerSingleton {
   // Singleton: Instancia única

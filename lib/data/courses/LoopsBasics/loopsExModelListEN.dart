@@ -2,8 +2,7 @@ import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
 List<CoursesExModel> loopsModelEN = [
-
-    CoursesExModel(
+  CoursesExModel(
     id: 61,
     exerciseName: 'Basic For Loop',
     productID: 'com.mrrubik.learnswift.swiftbasicex61',
@@ -12,7 +11,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(61).completed!,
   ),
-    CoursesExModel(
+  CoursesExModel(
     id: 62,
     exerciseName: 'Iterating Over an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex62',
@@ -21,7 +20,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(62).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 63,
     exerciseName: 'Sum of Numbers in a Range',
     productID: 'com.mrrubik.learnswift.swiftbasicex63',
@@ -30,7 +29,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(63).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 64,
     exerciseName: 'Multiplication Table',
     productID: 'com.mrrubik.learnswift.swiftbasicex64',
@@ -39,7 +38,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(64).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 65,
     exerciseName: 'Sum of Even Numbers',
     productID: 'com.mrrubik.learnswift.swiftbasicex65',
@@ -48,7 +47,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(65).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 66,
     exerciseName: 'Find Even Numbers',
     productID: 'com.mrrubik.learnswift.swiftbasicex66',
@@ -66,7 +65,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(67).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 68,
     exerciseName: 'Factorial Calculator',
     productID: 'com.mrrubik.learnswift.swiftbasicex68',
@@ -75,7 +74,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(68).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 69,
     exerciseName: 'Multiplication Table\nGenerator',
     productID: 'com.mrrubik.learnswift.swiftbasicex69',
@@ -84,7 +83,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(69).completed!,
   ),
-     CoursesExModel(
+  CoursesExModel(
     id: 70,
     exerciseName: 'Find the First Even\nNumber in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex70',
@@ -93,7 +92,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(70).completed!,
   ),
-    CoursesExModel(
+  CoursesExModel(
     id: 71,
     exerciseName: 'Challenge 1: Calculate\nthe Factorial',
     productID: 'com.mrrubik.learnswift.swiftbasicex71',
@@ -102,7 +101,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(71).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 72,
     exerciseName: 'Cha. 2: Find the Largest\nNumber in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex72',
@@ -111,7 +110,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(72).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 73,
     exerciseName: 'Cha. 3: Count Occurrences\nof a Number in an Array',
     productID: 'com.mrrubik.learnswift.swiftbasicex73',
@@ -120,7 +119,7 @@ List<CoursesExModel> loopsModelEN = [
     completed:
         PurchaseManagerSingleton().purchaseAndDevelop.elementAt(73).completed!,
   ),
-   CoursesExModel(
+  CoursesExModel(
     id: 74,
     exerciseName: 'Challenge 4: Calculate\nthe Factorial of a Number',
     productID: 'com.mrrubik.learnswift.swiftbasicex74',

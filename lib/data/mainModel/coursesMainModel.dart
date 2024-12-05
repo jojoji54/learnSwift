@@ -1,7 +1,10 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
 class CoursesMainModel {
   final int id;
   final String generalName;
   int numCompletedCourses; // Nombre corregido
+  List<CoursesExModel> catExercise;
   int totalCourses;
   bool alreadyBuy;
   bool completed;
@@ -11,6 +14,7 @@ class CoursesMainModel {
   CoursesMainModel({
     required this.id,
     required this.generalName,
+    required this.catExercise,
     required this.description,
     required this.numCompletedCourses,
     required this.totalCourses,
@@ -23,6 +27,7 @@ class CoursesMainModel {
     return CoursesMainModel(
       id: json['id'],
       generalName: json['generalName'],
+      catExercise: json['catExercise'],
       description: json['description'],
       numCompletedCourses: json['numCompletedCourses'],
       totalCourses: json['totalCourses'],
@@ -36,6 +41,7 @@ class CoursesMainModel {
     return {
       'id': id,
       'generalName': generalName,
+      'catExercise': catExercise,
       'description': description,
       'numCompletedCourses': numCompletedCourses,
       'totalCourses': totalCourses,

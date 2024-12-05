@@ -9,7 +9,9 @@ import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListES.dart';
+import 'package:learnswift/provider/allprovider.dart';
 import 'package:lottie/lottie.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -85,6 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _buildPage(BuildContext context, String title,
       List<ProgrammingItem> itemsEN, List<ProgrammingItem> itemsES) {
+         final allProvider = Provider.of<AllProvider>(context);
     return ListView.builder(
       itemCount: itemsEN.length,
       padding: const EdgeInsets.only(top: 20, bottom: 10),
@@ -171,6 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               onTap: () {
                                 HapticFeedback.lightImpact;
                                 if (course.isActive) {
+                                  allProvider.setData(course.coursesList);
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(

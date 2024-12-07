@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: const Color(0xFFf4f4f2),
-         appBar: DynamicAppBar(),
+        appBar: DynamicAppBar(),
         bottomNavigationBar: CustomBottomNavigationBar(
           selectedIndex: _selectedIndex,
           onTabChange: (index) {
@@ -87,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Widget _buildPage(BuildContext context, String title,
       List<ProgrammingItem> itemsEN, List<ProgrammingItem> itemsES) {
-         final allProvider = Provider.of<AllProvider>(context);
+    final allProvider = Provider.of<AllProvider>(context);
     return ListView.builder(
       itemCount: itemsEN.length,
       padding: const EdgeInsets.only(top: 20, bottom: 10),
@@ -175,8 +175,11 @@ class _MyHomePageState extends State<MyHomePage> {
                                 HapticFeedback.lightImpact;
                                 if (course.isActive) {
                                   allProvider.setData(course.coursesList);
-                                   allProvider.setEverythingUnlocked(course.alreadyBuy);
-                                   allProvider.setLenguajeProductID(course.productID);
+                                  allProvider
+                                      .setEverythingUnlocked(course.alreadyBuy);
+                                  allProvider
+                                      .setLenguajeProductID(course.productID);
+                                  Constant.languajeID = course.id;
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(

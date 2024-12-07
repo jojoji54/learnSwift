@@ -12,6 +12,7 @@ import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
 
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
+import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -251,8 +252,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           )
                                         : InkWell(
                                             onTap: () {
-                                              allProvider.setEverythingUnlocked(
-                                                  Constant.everythingunlocked);
+                                             
                                               if (!course.alreadyBuy &&
                                                   !allProvider
                                                       .everythingPurchased) {
@@ -260,9 +260,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 _showUnlockDialog(
                                                     course); // Muestra el diálogo para desbloquear
                                               } else {
-                                           
                                                 navToEx(
-                                                     Constant.catIndex ,
+                                                    Constant.catIndex,
                                                     course.id,
                                                     course.exerciseName,
                                                     widget.description,
@@ -291,8 +290,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 child: Center(
                                                   child: Icon(
                                                       !course.alreadyBuy &&
-                                                              !allProvider.everythingPurchased
-                                                                  
+                                                              !allProvider
+                                                                  .everythingPurchased
                                                           ? FontAwesomeIcons
                                                               .coins
                                                           : course.completed
@@ -478,9 +477,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     // Encuentra el curso correspondiente por productID
     final course = widget.allProvider!.data[widget.id].catExercise
         .firstWhere((course) => course.productID == productID);
-   purchaseManagerHive.updatePurchase(widget.id,
-          purchased: true,);
+    purchaseManagerHive.updatePurchase(
+      widget.id,
+      purchased: true,
+    );
     if (productID == widget.allProvider!.lenguajeProductID) {
+      languagePurchaseManagerHive.updateLanguagePurchase(Constant.languajeID,
+          purchased: true);
       widget.allProvider!.setEverythingUnlocked(true);
     }
     setState(() {
@@ -736,7 +739,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
 
   void navToEx(int courseCat, int id, String title, String description,
       bool completed, Color color1, Color color2) {
-             print(courseCat.toString());
+    print(courseCat.toString());
     switch (courseCat) {
       case 0:
         Navigator.push(

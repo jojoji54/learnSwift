@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
 import 'package:learnswift/Screens/Courses/LoopsBasics/loopsExMain.dart';
+import 'package:learnswift/Screens/Courses/SwiftArrays/arraysExMain.dart';
 import 'package:learnswift/Screens/Courses/SwitchStatements/switchStatementsExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
@@ -259,8 +260,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 _showUnlockDialog(
                                                     course); // Muestra el diálogo para desbloquear
                                               } else {
+                                           
                                                 navToEx(
-                                                    allProvider.courseCategory,
+                                                     Constant.catIndex ,
                                                     course.id,
                                                     course.exerciseName,
                                                     widget.description,
@@ -740,6 +742,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
 
   void navToEx(int courseCat, int id, String title, String description,
       bool completed, Color color1, Color color2) {
+             print(courseCat.toString());
     switch (courseCat) {
       case 0:
         Navigator.push(
@@ -805,6 +808,21 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           context,
           MaterialPageRoute(
             builder: (context) => LoopsExMain(
+              id: id,
+              title: title,
+              description: description,
+              completed: completed,
+              color1: color1,
+              color2: color2,
+            ),
+          ),
+        );
+        break;
+      case 5:
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ArraysExMain(
               id: id,
               title: title,
               description: description,

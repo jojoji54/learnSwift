@@ -8,7 +8,6 @@ import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/Hive/PurchaseManagerHive.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
-import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';

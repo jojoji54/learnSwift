@@ -1,27 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/provider/allprovider.dart';
-import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:provider/provider.dart';
 
-class LoopsEx75 extends StatefulWidget {
+class ArraysEx81 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const LoopsEx75(
-      {super.key,
-      required this.title,
-      required this.id,
-      required this.completed});
+  const ArraysEx81({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<LoopsEx75> createState() => _LoopsEx75State();
+  State<ArraysEx81> createState() => _ArraysEx81State();
 }
 
-class _LoopsEx75State extends State<LoopsEx75> {
+class _ArraysEx81State extends State<ArraysEx81> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -62,27 +56,18 @@ class _LoopsEx75State extends State<LoopsEx75> {
     );
   }
 
-  void _validateInput(AllProvider allprovider) async {
+  void _validateInput(AllProvider allProvider) async {
     final codeRegex = RegExp(
-      r'^for\s+\w+\s+in\s+1...50\s*\{\s*if\s*\(\w+\.contains\("3"\)\s*\|\|\s*\(\w+\s*%\s*3\s*==\s*0\s*\)\s*\{\s*print\(.*"Fizz".*\);\s*\}\s*else\s+if\s*\(\w+\s*%\s*5\s*==\s*0\s*\)\s*\{\s*print\(.*"Buzz".*\);\s*\}\s*else\s+if\s*\(\w+\s*%\s*3\s*==\s*0\s*&&\s*\w+\s*%\s*5\s*==\s*0\s*\)\s*\{\s*print\(.*"FizzBuzz".*\);\s*\}\s*else\s*\{\s*print\(.*\);\s*\}\s*\}$',
+      r'^var\s+numbers\s*=\s*\[.*\];\s*numbers\.sort\(\);\s*let\s+largest\s*=\s*numbers\.last;\s*numbers\.remove\(at:\s*numbers\.firstIndex\(of:\s*largest\)\s*!\);\s*print\(numbers\);$',
       multiLine: true,
     );
 
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-      purchaseManagerHive.updatePurchase(widget.id,
-          purchased: true, completed: true);
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
-          true;
-      allprovider.setData(allprovider.data);
-      PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+      purchaseManagerHive.updatePurchase(widget.id, purchased: true, completed: true);
+      allProvider.data[Constant.catIndex].catExercise[widget.id].completed = true;
+      allProvider.setData(allProvider.data);
       setState(() {
         _inputTextColor = Colors.green;
       });
@@ -90,11 +75,11 @@ class _LoopsEx75State extends State<LoopsEx75> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've implemented the FizzBuzz challenge with an interesting twist.\n\n"
-            "**Explanation:**\n"
-            "- Use a loop to iterate from 1 to 50.\n"
-            "- Check conditions for multiples and the digit `3`.\n"
-            "- Print appropriate results based on conditions.",
+        "Great! You've successfully manipulated the array by sorting and removing elements.\n\n"
+        "**Explanation:**\n"
+        "- Use `.sort()` to sort the array in ascending order.\n"
+        "- Use `.last` to access the largest element.\n"
+        "- Use `.firstIndex(of:)` and `.remove(at:)` to remove the largest element.",
         titleColor: Colors.green,
       );
     } else {
@@ -106,34 +91,24 @@ class _LoopsEx75State extends State<LoopsEx75> {
       if (_failedAttempts == 1) {
         _showDialog(
           "Hint 1",
-          "Use a `for` loop to iterate from 1 to 50. Check each number for the required conditions.",
+          "Start by declaring an array. Example: `var numbers = [5, 3, 8, 2]`.",
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
           "Hint 2",
-          "Use `.contains(\"3\")` to check if the number contains the digit `3`.\n"
-              "Example:\n"
-              "```swift\n"
-              "if i.contains(\"3\") { print(\"Fizz\") }\n"
-              "```",
+          "Use `.sort()` to sort the array, `.last` to access the largest element, and `.remove(at:)` to remove it.",
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
           "Solution",
           "The correct solution is:\n\n"
-              '```swift\n'
-              'for i in 1...50 {\n'
-              '    if String(i).contains("3") || i % 3 == 0 {\n'
-              '        print("Fizz");\n'
-              '    } else if i % 5 == 0 {\n'
-              '        print("Buzz");\n'
-              '    } else if i % 3 == 0 && i % 5 == 0 {\n'
-              '        print("FizzBuzz");\n'
-              '    } else {\n'
-              '        print(i);\n'
-              '    }\n'
-              '}\n'
-              '```',
+          '```swift\n'
+          'var numbers = [5, 3, 8, 2];\n'
+          'numbers.sort();\n'
+          'let largest = numbers.last;\n'
+          'numbers.remove(at: numbers.firstIndex(of: largest!)!);\n'
+          'print(numbers);\n'
+          '```',
           titleColor: Colors.red,
         );
       } else {
@@ -156,17 +131,17 @@ class _LoopsEx75State extends State<LoopsEx75> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButton17",
+              heroTag: "introButtonArrays4",
               onPressed: () {
                 _showDialog(
-                  "Challenge Instructions",
-                  "Welcome to the FizzBuzz Challenge! 🎉\n\n"
-                      "Your task:\n"
-                      "1. Print numbers from 1 to 50.\n"
-                      "2. For multiples of 3, print `Fizz`.\n"
-                      "3. For multiples of 5, print `Buzz`.\n"
-                      "4. For multiples of both 3 and 5, print `FizzBuzz`.\n"
-                      "5. If the number contains the digit `3`, print `Fizz` regardless of other rules.",
+                  "Exercise Instructions",
+                  "Welcome to Array Manipulation Challenge! 🎉\n\n"
+                  "Your task:\n"
+                  "1. Create an array of numbers (e.g., `var numbers = [5, 3, 8, 2]`).\n"
+                  "2. Sort the array using `.sort()`.\n"
+                  "3. Identify the largest number using `.last`.\n"
+                  "4. Remove the largest number using `.remove(at:)`.\n"
+                  "5. Print the updated array.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -176,7 +151,7 @@ class _LoopsEx75State extends State<LoopsEx75> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButton17",
+              heroTag: "runButtonArrays4",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -188,24 +163,18 @@ class _LoopsEx75State extends State<LoopsEx75> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButton17",
+                heroTag: "helpButtonArrays4",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
-                        '```swift\n'
-                        'for i in 1...50 {\n'
-                        '    if String(i).contains("3") || i % 3 == 0 {\n'
-                        '        print("Fizz");\n'
-                        '    } else if i % 5 == 0 {\n'
-                        '        print("Buzz");\n'
-                        '    } else if i % 3 == 0 && i % 5 == 0 {\n'
-                        '        print("FizzBuzz");\n'
-                        '    } else {\n'
-                        '        print(i);\n'
-                        '    }\n'
-                        '}\n'
-                        '```',
+                    '```swift\n'
+                    'var numbers = [5, 3, 8, 2];\n'
+                    'numbers.sort();\n'
+                    'let largest = numbers.last;\n'
+                    'numbers.remove(at: numbers.firstIndex(of: largest!)!);\n'
+                    'print(numbers);\n'
+                    '```',
                     titleColor: Colors.red,
                   );
                 },
@@ -237,35 +206,15 @@ class _LoopsEx75State extends State<LoopsEx75> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  for ",
+                        text: "1  var ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "i in 1...50 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "2      if ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "String(i).contains(\"3\") || i % 3 == 0 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3          print(\"Fizz\");\n",
+                        text: "numbers ",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "4      } else if i % 5 == 0 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "5          print(\"Buzz\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "6      } else { ... }\n",
+                        text: "= [5, 3, 8, 2];\n2  numbers.sort();\n3  let largest = numbers.last;\n4  numbers.remove(at: numbers.firstIndex(of: largest!)!);\n5  print(numbers);",
                         style: TextStyle(color: Colors.orange),
                       ),
                     ],

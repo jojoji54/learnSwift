@@ -1,3 +1,4 @@
+import 'package:learnswift/data/courses/ArraysBasics/arraysExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
@@ -61,16 +62,17 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  /*  CoursesMainModel(
+    CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
+    catExercise: swiftArraysModelEN,
     description: 'Explores arrays and their use in storing collections of data. Key for handling multiple items in an organized manner.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+ /* CoursesMainModel(
     id: 6,
     generalName: 'Dictionaries',
     description: 'Focuses on dictionaries for storing data as key-value pairs. Crucial for quick lookups and organizing information.',

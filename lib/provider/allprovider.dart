@@ -1,26 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/data/Constant/constant.dart';
-import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class AllProvider with ChangeNotifier {
   
   List<CoursesMainModel> _data = [];
   int _courseCategory = 0;
   int _completedCount = 0;
-  bool _everythingPurchased = Constant.everythingunlocked;
+  bool _everythingPurchased = false;
+  String _lenguajeProductID = "";
+
 
   // Getters
   List<CoursesMainModel> get data => _data;
   int get courseCategory => _courseCategory;
   int get completedCount => _completedCount;
   bool get everythingPurchased => _everythingPurchased;
+  String get lenguajeProductID => _lenguajeProductID;
 
   void setEverythingUnlocked(bool newData) async {
     _everythingPurchased = newData;
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.setBool('everythingunlocked', newData);
     notifyListeners();
   }
 
@@ -29,7 +27,10 @@ class AllProvider with ChangeNotifier {
     _data = newData;
     notifyListeners();
   }
-
+ void setLenguajeProductID(String  newData) {
+    _lenguajeProductID = newData;
+    notifyListeners();
+  }
 
   void setCourseCategory(int newCourseCat) {
     _courseCategory = newCourseCat;

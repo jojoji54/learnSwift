@@ -6,7 +6,6 @@ import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Widgets/catIcon.dart';
 import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/Hive/PurchaseManagerHive.dart';
 import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
@@ -30,7 +29,6 @@ class CatSelectorScreen extends StatefulWidget {
 }
 
 class _CatSelectorScreenState extends State<CatSelectorScreen> {
-  final purchaseManagerHive = PurchaseManagerHive();
   @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);

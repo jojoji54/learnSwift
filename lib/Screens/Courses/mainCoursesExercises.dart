@@ -16,7 +16,6 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
@@ -292,8 +291,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 child: Center(
                                                   child: Icon(
                                                       !course.alreadyBuy &&
-                                                              !allProvider
-                                                                  .everythingPurchased
+                                                              !allProvider.everythingPurchased
+                                                                  
                                                           ? FontAwesomeIcons
                                                               .coins
                                                           : course.completed
@@ -481,7 +480,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         .firstWhere((course) => course.productID == productID);
    purchaseManagerHive.updatePurchase(widget.id,
           purchased: true,);
-    if (productID == "com.mrrubik.learnswift.everythingunlocked") {
+    if (productID == widget.allProvider!.lenguajeProductID) {
       widget.allProvider!.setEverythingUnlocked(true);
     }
     setState(() {

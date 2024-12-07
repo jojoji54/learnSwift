@@ -1,46 +1,15 @@
-import 'dart:convert';
-
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/purchaseAndDevelopment/purchasesAndDevelopment.dart';
-import 'package:learnswift/data/purchaseAndDevelopment/purchasesAndDevelopmentList.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPreferencesData {
   /// Método para cargar las preferencias
   static Future<void> cargarPreferencias() async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    String? encodedList = prefs.getString('purchasesAndDevelopmentList');
     Constant.everythingunlocked = prefs.getBool('everythingunlocked') ?? false;
     print(Constant.everythingunlocked);
 
    
   }
 
-  static List<PurchasesAndDevelopment> generatePurchasesAndDevelopmentList(
-      int total) {
-    List<PurchasesAndDevelopment> list = [];
-    for (int i = 0; i < total; i++) {
-      int id = i ~/ 15; // Incrementa el ID cada 15 valores
-      bool purchased = (i % 15) < 7; // Alterna cada 7 valores
-      list.add(PurchasesAndDevelopment(
-        id: id,
-        completed: false,
-        purchased: purchased,
-      ));
-    }
-    return list;
-  }
 
-  /// Método para guardar la lista `purchasesAndDevelopmentList` en SharedPreferences
-  static Future<void> guardarPurchasesAndDevelopmentList(
-      List<PurchasesAndDevelopment> list) async {
-    final SharedPreferences prefs = await SharedPreferences.getInstance();
-
-    // Convertir la lista a JSON
-    String encodedList = jsonEncode(list.map((item) => item.toJson()).toList());
-
-    // Guardar la lista en SharedPreferences
-    await prefs.setString('purchasesAndDevelopmentList', encodedList);
-  }
 }

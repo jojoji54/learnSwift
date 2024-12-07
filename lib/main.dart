@@ -14,6 +14,7 @@ void main() async {
   // Inicializa Hive y abre la caja
   await Hive.initFlutter();
   await Hive.openBox('purchases'); // Abre o crea la caja 'purchases'
+  await Hive.openBox('lenguajePurchases'); // Abre o crea la caja 'lenguajePurchases'
   await SharedPreferencesData.cargarPreferencias();
   runApp(const MyApp());
 }

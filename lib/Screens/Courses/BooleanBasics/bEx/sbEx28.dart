@@ -4,10 +4,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
-import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:provider/provider.dart';
-
-import '../../../../Singleton/purchaseManagerSingleton.dart';
 
 class BEx28 extends StatefulWidget {
    final String title;

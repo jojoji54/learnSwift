@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/purchaseAndDevelopment/purchasesAndDevelopment.dart';
 import 'package:learnswift/data/purchaseAndDevelopment/purchasesAndDevelopmentList.dart';
@@ -14,22 +14,7 @@ class SharedPreferencesData {
     Constant.everythingunlocked = prefs.getBool('everythingunlocked') ?? false;
     print(Constant.everythingunlocked);
 
-    List<PurchasesAndDevelopment> loadedData;
-
-    if (encodedList != null) {
-      Iterable decoded = jsonDecode(encodedList);
-      loadedData = List<PurchasesAndDevelopment>.from(
-        decoded.map((item) => PurchasesAndDevelopment.fromJson(item)),
-      );
-    } else {
-      //loadedData = purchasesAndDevelopmentList;
-      // Genera la lista dinámicamente
-      loadedData = generatePurchasesAndDevelopmentList(7000);
-      await guardarPurchasesAndDevelopmentList(purchasesAndDevelopmentList);
-    }
-
-    // Inicializa el Singleton con los datos cargados
-    PurchaseManagerSingleton().initialize(loadedData);
+   
   }
 
   static List<PurchasesAndDevelopment> generatePurchasesAndDevelopmentList(

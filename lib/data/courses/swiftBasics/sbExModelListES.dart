@@ -1,4 +1,4 @@
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 
@@ -63,45 +63,43 @@ List<CoursesExModel> sbModelES = [
     id: 8,
     exerciseName: 'Constantes',
     productID: 'com.mrrubik.learnswift.swiftbasicex8',
-    alreadyBuy: purchaseManagerHive.getPurchasedTrue(9),
-    completed: purchaseManagerHive.getCompleted(9),
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(8),
+    completed: purchaseManagerHive.getCompleted(8),
   ),
   CoursesExModel(
     id: 9,
     exerciseName: 'Arrays',
     productID: 'com.mrrubik.learnswift.swiftbasicex9',
-    alreadyBuy: purchaseManagerHive.getPurchasedTrue(10),
-    completed: purchaseManagerHive.getCompleted(10),
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(9),
+    completed: purchaseManagerHive.getCompleted(9),
   ),
   CoursesExModel(
     id: 10,
     exerciseName: 'Funciones',
     productID: 'com.mrrubik.learnswift.swiftbasicex10',
-    alreadyBuy: purchaseManagerHive.getPurchasedTrue(11),
-    completed: purchaseManagerHive.getCompleted(11),
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(10),
+    completed: purchaseManagerHive.getCompleted(10),
   ),
   CoursesExModel(
     id: 11,
     exerciseName: 'Trabajando con Constantes',
     productID: 'com.mrrubik.learnswift.swiftbasicex11',
-    alreadyBuy: purchaseManagerHive.getPurchasedTrue(12),
-    completed: purchaseManagerHive.getCompleted(12),
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(11),
+    completed: purchaseManagerHive.getCompleted(11),
   ),
   CoursesExModel(
     id: 12,
     exerciseName: 'Desafío 3',
     productID: 'com.mrrubik.learnswift.swiftbasicex12',
-    alreadyBuy: purchaseManagerHive.getPurchasedTrue(13),
-    completed: purchaseManagerHive.getCompleted(13),
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(12),
+    completed: purchaseManagerHive.getCompleted(12),
   ),
   CoursesExModel(
     id: 13,
     exerciseName: 'Desafío 4',
     productID: 'com.mrrubik.learnswift.swiftbasicex13',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(13).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(13).completed!,
+   alreadyBuy: purchaseManagerHive.getPurchasedTrue(13),
+    completed: purchaseManagerHive.getCompleted(13),
   ),
   CoursesExModel(
     id: 14,

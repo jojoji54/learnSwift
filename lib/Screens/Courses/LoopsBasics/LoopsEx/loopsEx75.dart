@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/provider/allprovider.dart';
@@ -71,18 +71,11 @@ class _LoopsEx75State extends State<LoopsEx75> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-      purchaseManagerHive.updatePurchase(widget.id,
+       purchaseManagerHive.updatePurchase(widget.id,
           purchased: true, completed: true);
       allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
           true;
       allprovider.setData(allprovider.data);
-      PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
       setState(() {
         _inputTextColor = Colors.green;
       });

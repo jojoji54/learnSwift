@@ -56,7 +56,7 @@ class _ArraysEx76State extends State<ArraysEx76> {
     );
   }
 
-  void _validateInput(AllProvider allprovider ) async {
+  void _validateInput(AllProvider allprovider )  {
     final codeRegex = RegExp(
       r'^var\s+fruits\s*=\s*\[".*",\s*".*"\];\s*print\(fruits\[1\]\);$',
       multiLine: true,

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/provider/allprovider.dart';
+
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 class LoopsEx72 extends StatefulWidget {
      final String title;
@@ -54,7 +58,7 @@ class _LoopsEx72State extends State<LoopsEx72> {
     );
   }
 
-  void _validateInput() async{
+  void _validateInput(AllProvider allprovider)  {
     final codeRegex = RegExp(
       r'^let\s+numbers\s*=\s*\[.*\];\s*var\s+largest\s*=\s*numbers\[0\];\s*for\s+\w+\s+in\s+numbers\s*\{\s*if\s+\w+\s*>\s*largest\s*\{\s*largest\s*=\s*\w+;\s*\}\s*}\s*print\(.*\);$',
       multiLine: true,
@@ -63,13 +67,11 @@ class _LoopsEx72State extends State<LoopsEx72> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-       PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+       purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
+      allprovider.setData(allprovider.data);
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });
@@ -129,6 +131,7 @@ class _LoopsEx72State extends State<LoopsEx72> {
 
   @override
   Widget build(BuildContext context) {
+     final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -157,7 +160,9 @@ class _LoopsEx72State extends State<LoopsEx72> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton13",
-              onPressed: _validateInput,
+              onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),

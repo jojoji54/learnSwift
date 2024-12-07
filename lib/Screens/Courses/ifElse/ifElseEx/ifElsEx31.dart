@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../Singleton/purchaseManagerSingleton.dart';
 
@@ -56,7 +60,7 @@ class _IfElsEx31State extends State<IfElsEx31> {
     );
   }
 
-  void _validateInput() async{
+  void _validateInput(AllProvider allprovider)  {
     final codeRegex = RegExp(
       r'^var\s+score\s*=\s*\d+;\s*if\s*\(score\s*[><=]\s*\d+\)\s*{\s*print\(.+\);\s*}\s*else\s*{\s*print\(.+\);\s*}$',
       multiLine: true,
@@ -65,13 +69,11 @@ class _IfElsEx31State extends State<IfElsEx31> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-       PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+        purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
+      allprovider.setData(allprovider.data);
       setState(() {
         _inputTextColor = Colors.green; // Cambiar color si es correcto
       });
@@ -125,6 +127,7 @@ class _IfElsEx31State extends State<IfElsEx31> {
 
   @override
   Widget build(BuildContext context) {
+      final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -147,7 +150,9 @@ class _IfElsEx31State extends State<IfElsEx31> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButtonIfElse",
-              onPressed: _validateInput,
+              onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),

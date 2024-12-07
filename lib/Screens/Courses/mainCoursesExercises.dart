@@ -9,10 +9,11 @@ import 'package:learnswift/Screens/Courses/SwiftArrays/arraysExMain.dart';
 import 'package:learnswift/Screens/Courses/SwitchStatements/switchStatementsExMain.dart';
 import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
@@ -478,14 +479,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     // Encuentra el curso correspondiente por productID
     final course = widget.allProvider!.data[widget.id].catExercise
         .firstWhere((course) => course.productID == productID);
-    PurchaseManagerSingleton().updateItemAndSave(
-      course.id,
-      purchased: true,
-    );
-    await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-      PurchaseManagerSingleton().purchaseAndDevelop,
-    );
-
+   purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true,);
     if (productID == "com.mrrubik.learnswift.everythingunlocked") {
       widget.allProvider!.setEverythingUnlocked(true);
     }

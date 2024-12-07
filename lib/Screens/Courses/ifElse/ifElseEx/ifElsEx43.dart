@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 import '../../../../Singleton/purchaseManagerSingleton.dart'; // Importa localización
 
@@ -56,7 +60,7 @@ class _IfElsEx43State extends State<IfElsEx43> {
     );
   }
 
-  void _validateInput() async {
+ void _validateInput(AllProvider allprovider)  {
     final codeRegex = RegExp(
       r'^var\s+score\s*=\s*\d+;\s*if\s*\(score\s*>=\s*90\)\s*{\s*print\(.*"A".*\);\s*}\s*else\s+if\s*\(score\s*>=\s*80\)\s*{\s*print\(.*"B".*\);\s*}\s*else\s+if\s*\(score\s*>=\s*70\)\s*{\s*print\(.*"C".*\);\s*}\s*else\s+if\s*\(score\s*>=\s*60\)\s*{\s*print\(.*"D".*\);\s*}\s*else\s*{\s*print\(.*"F".*\);\s*}$',
       multiLine: true,
@@ -65,13 +69,11 @@ class _IfElsEx43State extends State<IfElsEx43> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-       PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+        purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
+      allprovider.setData(allprovider.data);
       setState(() {
         _inputTextColor = Colors.green;
       });
@@ -122,6 +124,7 @@ class _IfElsEx43State extends State<IfElsEx43> {
 
   @override
   Widget build(BuildContext context) {
+      final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -139,7 +142,9 @@ class _IfElsEx43State extends State<IfElsEx43> {
           ),
           FloatingActionButton(
             heroTag: "runButton",
-            onPressed: _validateInput,
+          onPressed: () {
+                _validateInput(allProvider);
+              },
             backgroundColor: Colors.black,
             child: const Icon(Icons.play_arrow, color: Colors.white),
           ),

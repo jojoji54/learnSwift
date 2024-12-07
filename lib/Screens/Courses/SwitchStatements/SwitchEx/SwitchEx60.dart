@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/provider/allprovider.dart';
+
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 class SwitchEx60 extends StatefulWidget {
    final String title;
@@ -52,7 +56,7 @@ class _SwitchEx60State extends State<SwitchEx60> {
     );
   }
 
-  void _validateInput() async{
+   void _validateInput(AllProvider allprovider)  {
     final codeRegex = RegExp(
       r'^var\s+day\s*=\s*".+";\s*switch\s*\(day\)\s*\{\s*(case\s*".+":\s*print\(.*\);\s*)+(default:\s*print\(.*\);\s*)\}$',
       multiLine: true,
@@ -61,13 +65,11 @@ class _SwitchEx60State extends State<SwitchEx60> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-       PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+        purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
+      allprovider.setData(allprovider.data);
       setState(() {
         _inputTextColor = Colors.green; // Change color if correct
       });
@@ -137,6 +139,7 @@ class _SwitchEx60State extends State<SwitchEx60> {
 
   @override
   Widget build(BuildContext context) {
+     final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -169,7 +172,9 @@ class _SwitchEx60State extends State<SwitchEx60> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton5",
-              onPressed: _validateInput,
+              onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),

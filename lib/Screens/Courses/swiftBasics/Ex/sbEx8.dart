@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/provider/allprovider.dart';
+
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
+import 'package:provider/provider.dart';
 
 class SBEx8 extends StatefulWidget {
    final String title;
@@ -55,7 +59,7 @@ class _SBEx8State extends State<SBEx8> {
     );
   }
 
-  void _validateInput() async{
+ void _validateInput(AllProvider allprovider ) {
     final codeRegex = RegExp(
       r'^var\s+\w+:\s*Int\s*=\s*\d+\nvar\s+\w+:\s*Double\s*=\s*\d+(\.\d+)?\nvar\s+\w+:\s*String\s*=\s*".+"\nvar\s+\w+:\s*Bool\s*=\s*(true|false)\n(print\(\w+\)\n?)+$',
       multiLine: true,
@@ -64,13 +68,11 @@ class _SBEx8State extends State<SBEx8> {
     final userInput = _controller.text.trim();
 
     if (codeRegex.hasMatch(userInput)) {
-       PurchaseManagerSingleton().updateItemAndSave(
-        widget.id,
-        completed: true,
-      );
-      await SharedPreferencesData.guardarPurchasesAndDevelopmentList(
-        PurchaseManagerSingleton().purchaseAndDevelop,
-      );
+        purchaseManagerHive.updatePurchase(widget.id,
+          purchased: true, completed: true);
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
+      allprovider.setData(allprovider.data);
       _controller.clear();
       _showDialog(
         AppLocalizations.of(context)!.correctTitle,
@@ -110,6 +112,7 @@ class _SBEx8State extends State<SBEx8> {
 
   @override
   Widget build(BuildContext context) {
+     final allProvider = Provider.of<AllProvider>(context);
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -132,7 +135,9 @@ class _SBEx8State extends State<SBEx8> {
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
               heroTag: "runButton",
-              onPressed: _validateInput,
+              onPressed: () {
+                _validateInput(allProvider);
+              },
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
             ),

@@ -1,140 +1,111 @@
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 
 List<CoursesExModel> ifElseModelES = [
   CoursesExModel(
     id: 31,
-    exerciseName: 'Conceptos Básicos',
+    exerciseName: 'Fundamentos de If-Else',
     productID: 'com.mrrubik.learnswift.swiftbasicex31',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(31).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(31).completed!,
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(31),
+    completed: purchaseManagerHive.getCompleted(31),
   ),
   CoursesExModel(
     id: 32,
     exerciseName: 'If-Else con Múltiples\nCondiciones',
     productID: 'com.mrrubik.learnswift.swiftbasicex32',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(32).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(32).completed!,
+   alreadyBuy: purchaseManagerHive.getPurchasedTrue(32),
+    completed: purchaseManagerHive.getCompleted(32),
   ),
   CoursesExModel(
     id: 33,
-    exerciseName: 'If-Else con Comprobación\nDe Igualdad',
+    exerciseName: 'Comprobación de Igualdad\ncon If-Else',
     productID: 'com.mrrubik.learnswift.swiftbasicex33',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(33).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(33).completed!,
+ alreadyBuy: purchaseManagerHive.getPurchasedTrue(33),
+    completed: purchaseManagerHive.getCompleted(33),
   ),
   CoursesExModel(
     id: 34,
-    exerciseName: 'If-Else con Operadores\nDe Comparación',
+    exerciseName: 'If-Else con Operadores\nde Comparación',
     productID: 'com.mrrubik.learnswift.swiftbasicex34',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(34).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(34).completed!,
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(34),
+    completed: purchaseManagerHive.getCompleted(34),
   ),
   CoursesExModel(
     id: 35,
-    exerciseName: 'Conceptos Básicos de\nIf-Else Anidados',
+    exerciseName: 'Fundamentos de If-Else Anidados',
     productID: 'com.mrrubik.learnswift.swiftbasicex35',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(35).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(35).completed!,
+   alreadyBuy: purchaseManagerHive.getPurchasedTrue(35),
+    completed: purchaseManagerHive.getCompleted(35),
   ),
   CoursesExModel(
     id: 36,
-    exerciseName: 'If-Else con Condiciones\nDe Cadenas',
+    exerciseName: 'If-Else con Condiciones\nString',
     productID: 'com.mrrubik.learnswift.swiftbasicex36',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(36).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(36).completed!,
+ alreadyBuy: purchaseManagerHive.getPurchasedTrue(36),
+    completed: purchaseManagerHive.getCompleted(36),
   ),
   CoursesExModel(
     id: 37,
-    exerciseName: 'If-Else con Comparación\nNumérica',
+    exerciseName: 'Comparación Numérica\ncon If-Else',
     productID: 'com.mrrubik.learnswift.swiftbasicex37',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(37).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(37).completed!,
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(37),
+    completed: purchaseManagerHive.getCompleted(37),
   ),
   CoursesExModel(
     id: 38,
     exerciseName: 'Manejo de Múltiples\nCondiciones v2',
     productID: 'com.mrrubik.learnswift.swiftbasicex38',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(38).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(38).completed!,
+   alreadyBuy: purchaseManagerHive.getPurchasedTrue(38),
+    completed: purchaseManagerHive.getCompleted(38),
   ),
   CoursesExModel(
     id: 39,
-    exerciseName: 'Cálculo de Bonificación\nPara Empleados',
+    exerciseName: 'Cálculo de Bonificación\nde Empleados',
     productID: 'com.mrrubik.learnswift.swiftbasicex39',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(39).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(39).completed!,
+   alreadyBuy: purchaseManagerHive.getPurchasedFalse(39),
+    completed: purchaseManagerHive.getCompleted(39),
   ),
   CoursesExModel(
     id: 40,
-    exerciseName: 'Sistema de Calificación\nCon Múltiples Condiciones',
+    exerciseName: 'Sistema de Calificación\nMulti-Condición',
     productID: 'com.mrrubik.learnswift.swiftbasicex40',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(40).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(40).completed!,
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(40),
+    completed: purchaseManagerHive.getCompleted(40),
   ),
   CoursesExModel(
     id: 41,
     exerciseName: 'Desafío de Criterios\nComplejos de Admisión',
     productID: 'com.mrrubik.learnswift.swiftbasicex41',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(41).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(41).completed!,
+     alreadyBuy: purchaseManagerHive.getPurchasedFalse(41),
+    completed: purchaseManagerHive.getCompleted(41),
   ),
   CoursesExModel(
     id: 42,
-    exerciseName: 'Desafío de Criterios\nDe Admisión',
+    exerciseName: 'Desafío de Criterios\nde Admisión',
     productID: 'com.mrrubik.learnswift.swiftbasicex42',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(42).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(42).completed!,
+     alreadyBuy: purchaseManagerHive.getPurchasedFalse(42),
+    completed: purchaseManagerHive.getCompleted(42),
   ),
   CoursesExModel(
     id: 43,
-    exerciseName: 'Sistema de Evaluación\nDe Calificaciones',
+    exerciseName: 'Sistema de Evaluación\nde Calificaciones',
     productID: 'com.mrrubik.learnswift.swiftbasicex43',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(43).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(43).completed!,
+     alreadyBuy: purchaseManagerHive.getPurchasedFalse(43),
+    completed: purchaseManagerHive.getCompleted(43),
   ),
   CoursesExModel(
     id: 44,
-    exerciseName: 'Comprobador De\nFortaleza De Contraseña',
+    exerciseName: 'Verificador de Fuerza\nde Contraseñas',
     productID: 'com.mrrubik.learnswift.swiftbasicex44',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(44).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(44).completed!,
+     alreadyBuy: purchaseManagerHive.getPurchasedFalse(44),
+    completed: purchaseManagerHive.getCompleted(44),
   ),
   CoursesExModel(
     id: 45,
-    exerciseName: 'Evaluador De\nCalificaciones',
+    exerciseName: 'Evaluador de Calificaciones',
     productID: 'com.mrrubik.learnswift.swiftbasicex45',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(45).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(45).completed!,
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(45),
+    completed: purchaseManagerHive.getCompleted(45),
   ),
 ];

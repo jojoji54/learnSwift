@@ -1,15 +1,111 @@
-import 'package:learnswift/Singleton/purchaseManagerSingleton.dart';
+
 import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
 
 List<CoursesExModel> switchModelES = [
-
   CoursesExModel(
     id: 46,
-    exerciseName: 'Switch Básico',
+    exerciseName: 'Fundamentos de Switch',
     productID: 'com.mrrubik.learnswift.swiftbasicex46',
-    alreadyBuy:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(46).purchased!,
-    completed:
-        PurchaseManagerSingleton().purchaseAndDevelop.elementAt(46).completed!,
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(46),
+    completed: purchaseManagerHive.getCompleted(46),
+  ),
+  CoursesExModel(
+    id: 47,
+    exerciseName: 'Switch con Rangos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex47',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(47),
+    completed: purchaseManagerHive.getCompleted(47),
+  ),
+  CoursesExModel(
+    id: 48,
+    exerciseName: 'Switch con Múltiples\nCondiciones',
+    productID: 'com.mrrubik.learnswift.swiftbasicex48',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(48),
+    completed: purchaseManagerHive.getCompleted(48),
+  ),
+  CoursesExModel(
+    id: 49,
+    exerciseName: 'Switch con Rangos\nNuméricos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex49',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(49),
+    completed: purchaseManagerHive.getCompleted(49),
+  ),
+  CoursesExModel(
+    id: 50,
+    exerciseName: 'Switch con Múltiples\nCoincidencias',
+    productID: 'com.mrrubik.learnswift.swiftbasicex50',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(50),
+    completed: purchaseManagerHive.getCompleted(50),
+  ),
+  CoursesExModel(
+    id: 51,
+    exerciseName: 'Switch Avanzado con\nRangos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex51',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(51),
+    completed: purchaseManagerHive.getCompleted(51),
+  ),
+  CoursesExModel(
+    id: 52,
+    exerciseName: 'Switch con Múltiples\nValores por Caso',
+    productID: 'com.mrrubik.learnswift.swiftbasicex52',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(52),
+    completed: purchaseManagerHive.getCompleted(52),
+  ),
+  CoursesExModel(
+    id: 53,
+    exerciseName: 'Switch con Rangos\ny Caso Predeterminado',
+    productID: 'com.mrrubik.learnswift.swiftbasicex53',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(53),
+    completed: purchaseManagerHive.getCompleted(53),
+  ),
+  CoursesExModel(
+    id: 54,
+    exerciseName: 'Casos Switch Anidados',
+    productID: 'com.mrrubik.learnswift.swiftbasicex54',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(54),
+    completed: purchaseManagerHive.getCompleted(54),
+  ),
+  CoursesExModel(
+    id: 55,
+    exerciseName: 'Casos Switch Anidados',
+    productID: 'com.mrrubik.learnswift.swiftbasicex55',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(55),
+    completed: purchaseManagerHive.getCompleted(55),
+  ),
+  CoursesExModel(
+    id: 56,
+    exerciseName: 'Desafío 1: Planificador\nde Días de la Semana',
+    productID: 'com.mrrubik.learnswift.swiftbasicex56',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(56),
+    completed: purchaseManagerHive.getCompleted(56),
+  ),
+  CoursesExModel(
+    id: 57,
+    exerciseName: 'Desafío 2: Sistema de\nRetroalimentación de Calificaciones',
+    productID: 'com.mrrubik.learnswift.swiftbasicex57',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(57),
+    completed: purchaseManagerHive.getCompleted(57),
+  ),
+  CoursesExModel(
+    id: 58,
+    exerciseName: 'Desafío 3: Calculadora\nde Días del Mes',
+    productID: 'com.mrrubik.learnswift.swiftbasicex58',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(58),
+    completed: purchaseManagerHive.getCompleted(58),
+  ),
+  CoursesExModel(
+    id: 59,
+    exerciseName: 'Desafío 4: Evaluador\nde Calificaciones',
+    productID: 'com.mrrubik.learnswift.swiftbasicex59',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(59),
+    completed: purchaseManagerHive.getCompleted(59),
+  ),
+  CoursesExModel(
+    id: 60,
+    exerciseName: 'Desafío 5: Planificador\nde Días',
+    productID: 'com.mrrubik.learnswift.swiftbasicex60',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(60),
+    completed: purchaseManagerHive.getCompleted(60),
   ),
 ];

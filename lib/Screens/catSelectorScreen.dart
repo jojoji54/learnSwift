@@ -115,13 +115,19 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                         color: Colors.white,
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment
+                              .start, // Asegura la alineación correcta
                           children: [
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment
+                                  .start, // Permite alinear elementos con texto largo
                               children: [
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
                                   child: Row(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Container(
                                         decoration: BoxDecoration(
@@ -146,12 +152,12 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                               ).createShader(bounds),
                                               child: Text(
                                                 (course.id).toString(),
-                                                style: TextStyle(
+                                                style: const TextStyle(
                                                   fontFamily:
                                                       'InconsolataRegular',
                                                   fontWeight: FontWeight.bold,
-                                                  color: Colors
-                                                      .white, // El color se utiliza como fallback
+                                                  color:
+                                                      Colors.white, // Fallback
                                                   fontSize: 18,
                                                 ),
                                               ),
@@ -159,15 +165,26 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                           ),
                                         ),
                                       ),
+                                      // Ajuste para el texto largo
                                       Padding(
                                         padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          course.generalName,
-                                          style: TextStyle(
-                                            fontFamily: 'InconsolataRegular',
-                                            fontWeight: FontWeight.normal,
-                                            color: Colors.black,
-                                            fontSize: 18,
+                                        child: SizedBox(
+                                          width: MediaQuery.of(context)
+                                                  .size
+                                                  .width *
+                                              0.4, // Limita el ancho
+                                          child: Text(
+                                            course.generalName,
+                                            style: const TextStyle(
+                                              fontFamily: 'InconsolataRegular',
+                                              fontWeight: FontWeight.normal,
+                                              color: Colors.black,
+                                              fontSize: 18,
+                                            ),
+                                            softWrap:
+                                                true, // Permite múltiples líneas
+                                            overflow: TextOverflow
+                                                .visible, // Hace que el texto sea visible
                                           ),
                                         ),
                                       ),

@@ -7,7 +7,7 @@ import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../data/Constant/constant.dart';
+import '../../../../../data/Constant/constant.dart';
 
 class SBEx15 extends StatefulWidget {
     final String title;

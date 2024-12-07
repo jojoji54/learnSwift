@@ -68,7 +68,7 @@ List<CoursesExModel> loopsModelES = [
   ),
   CoursesExModel(
     id: 70,
-    exerciseName: 'Encontrar el Primer Número\nPar en un Arreglo',
+    exerciseName: 'Encontrar el Primer Número Par en un Arreglo',
     productID: 'com.mrrubik.learnswift.swiftbasicex70',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(70),
     completed: purchaseManagerHive.getCompleted(70),
@@ -82,21 +82,21 @@ List<CoursesExModel> loopsModelES = [
   ),
   CoursesExModel(
     id: 72,
-    exerciseName: 'Desafío 2: Encontrar el Número\nMás Grande en un Arreglo',
+    exerciseName: 'Desafío 2: Encontrar el Número Más Grande en un Arreglo',
     productID: 'com.mrrubik.learnswift.swiftbasicex72',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(72),
     completed: purchaseManagerHive.getCompleted(72),
   ),
   CoursesExModel(
     id: 73,
-    exerciseName: 'Desafío 3: Contar las\nOcurrencias de un Número en un Arreglo',
+    exerciseName: 'Desafío 3: Contar las Ocurrencias de un Número en un Arreglo',
     productID: 'com.mrrubik.learnswift.swiftbasicex73',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(73),
     completed: purchaseManagerHive.getCompleted(73),
   ),
   CoursesExModel(
     id: 74,
-    exerciseName: 'Desafío 4: Calcular el Factorial\n de un Número',
+    exerciseName: 'Desafío 4: Calcular el Factorial  de un Número',
     productID: 'com.mrrubik.learnswift.swiftbasicex74',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(74),
     completed: purchaseManagerHive.getCompleted(74),

@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx76.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx77.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx78.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx79.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx80.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx81.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx82.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx83.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx84.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx85.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx86.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx87.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx88.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx89.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx90.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/SwiftArraysEx/ArraysEx91.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx76.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx77.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx78.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx79.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx80.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx81.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx82.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx83.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx84.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx85.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx86.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx87.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx88.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx89.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx90.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/SwiftArraysEx/ArraysEx91.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class ArraysExMain extends StatefulWidget {

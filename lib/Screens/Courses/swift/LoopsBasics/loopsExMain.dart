@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx61.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx62.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx63.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx64.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx65.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx66.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx67.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx68.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx69.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx70.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx71.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx72.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx73.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx74.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/LoopsEx/loopsEx75.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx61.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx62.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx63.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx64.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx65.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx66.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx67.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx68.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx69.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx70.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx71.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx72.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx73.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx74.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/LoopsEx/loopsEx75.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class LoopsExMain extends StatefulWidget {

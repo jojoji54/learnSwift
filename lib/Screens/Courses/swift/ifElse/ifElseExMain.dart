@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx31.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx32.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx33.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx34.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx35.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx36.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx37.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx38.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx39.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx40.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx41.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx42.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx43.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx44.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseEx/ifElsEx45.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx31.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx32.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx33.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx34.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx35.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx36.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx37.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx38.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx39.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx40.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx41.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx42.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx43.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx44.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseEx/ifElsEx45.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class IfElseExMain extends StatefulWidget {

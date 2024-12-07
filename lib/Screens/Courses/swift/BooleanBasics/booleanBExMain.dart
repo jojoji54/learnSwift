@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx15.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx16.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx17.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx18.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx19.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx20.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx21.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx22.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx23.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx24.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx25.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx26.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx27.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx28.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx29.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/bEx/sbEx30.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx15.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx16.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx17.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx18.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx19.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx20.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx21.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx22.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx23.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx24.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx25.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx26.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx27.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx28.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx29.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/bEx/sbEx30.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class BooleanBasicExMain extends StatefulWidget {

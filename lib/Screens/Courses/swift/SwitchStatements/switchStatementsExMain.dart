@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx46.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx47.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx48.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx49.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx50.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx51.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx52.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx53.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx54.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx55.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx56.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx57.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx58.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx59.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/SwitchEx/SwitchEx60.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx46.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx47.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx48.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx49.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx50.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx51.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx52.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx53.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx54.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx55.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx56.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx57.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx58.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx59.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/SwitchEx/SwitchEx60.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class SwitchStatementsMain extends StatefulWidget {

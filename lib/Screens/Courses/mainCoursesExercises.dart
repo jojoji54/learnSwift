@@ -3,12 +3,12 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:learnswift/Screens/Courses/BooleanBasics/booleanBExMain.dart';
-import 'package:learnswift/Screens/Courses/LoopsBasics/loopsExMain.dart';
-import 'package:learnswift/Screens/Courses/SwiftArrays/arraysExMain.dart';
-import 'package:learnswift/Screens/Courses/SwitchStatements/switchStatementsExMain.dart';
-import 'package:learnswift/Screens/Courses/ifElse/ifElseExMain.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/swiftBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/booleanBExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/loopsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/arraysExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatementsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
@@ -45,6 +45,7 @@ class MainCoursesExercises extends StatefulWidget {
 
 class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   final InAppPurchase inAppPurchase = InAppPurchase.instance;
+  int id = 0;
   bool isLoading = false;
   int courseID = 100000000;
   @override
@@ -200,48 +201,52 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment
+                                      .start, // Permite alineación en múltiples líneas
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
-                                      child: Row(
-                                        children: [
-                                          /* Container(
-                                            decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(10),
-                                              color: const Color(0xFFf3f4f2),
-                                            ),
-                                            height: 50,
-                                            width: 50,
-                                            child: Center(
-                                              child: Text(
-                                                (course.id + 1).toString(),
-                                                style: const TextStyle(
-                                                  fontFamily:
-                                                      'InconsolataRegular',
-                                                  fontWeight: FontWeight.normal,
-                                                  color: Colors.orange,
-                                                  fontSize: 18,
-                                                ),
-                                              ),
-                                            ),
-                                          ), */
-                                          Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Text(
-                                              course.exerciseName,
-                                              style: const TextStyle(
-                                                fontFamily:
-                                                    'InconsolataRegular',
-                                                fontWeight: FontWeight.normal,
-                                                color: Colors.black,
-                                                fontSize: 18,
-                                              ),
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(10),
+                                          color: const Color(0xFFf3f4f2),
+                                        ),
+                                        height: 50,
+                                        width: 50,
+                                        child: Center(
+                                          child: Text(
+                                            '${id++}',
+                                            style: const TextStyle(
+                                              fontFamily: 'InconsolataRegular',
+                                              fontWeight: FontWeight.normal,
+                                              color: Colors.orange,
+                                              fontSize: 18,
                                             ),
                                           ),
-                                        ],
+                                        ),
                                       ),
                                     ),
+                                    // Contenedor para el texto
+                                    Expanded(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Text(
+                                          course.exerciseName,
+                                          style: const TextStyle(
+                                            fontFamily: 'InconsolataRegular',
+                                            fontWeight: FontWeight.normal,
+                                            color: Colors.black,
+                                            fontSize: 18,
+                                          ),
+                                          softWrap:
+                                              true, // Ajusta automáticamente a múltiples líneas
+                                          overflow: TextOverflow
+                                              .visible, // Permite que el texto sea completamente visible
+                                        ),
+                                      ),
+                                    ),
+                                    // Botón o indicador de estado
                                     isLoading == true && courseID == course.id
                                         ? Padding(
                                             padding: const EdgeInsets.all(8.0),
@@ -252,7 +257,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                           )
                                         : InkWell(
                                             onTap: () {
-                                             
                                               if (!course.alreadyBuy &&
                                                   !allProvider
                                                       .everythingPurchased) {
@@ -301,22 +305,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                                   .code,
                                                       size: 15,
                                                       color: Colors.white),
-                                                  /* Text(
-                                              !course.alreadyBuy &&
-                                                      !allProvider
-                                                          .everythingPurchased
-                                                  ? 'Unlock'
-                                                  : course.completed
-                                                      ? 'Completed'
-                                                      : 'Start',
-                                              style: const TextStyle(
-                                                fontFamily:
-                                                    'InconsolataRegular',
-                                                fontWeight: FontWeight.normal,
-                                                color: Colors.white,
-                                                fontSize: 15,
-                                              ),
-                                            ), */
                                                 ),
                                               ),
                                             ),

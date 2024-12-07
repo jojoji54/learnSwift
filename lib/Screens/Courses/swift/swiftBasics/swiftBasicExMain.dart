@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx1.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx10.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx11.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx12.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx13.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx14.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx15.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx2.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx3.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx4.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx5.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx6.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx7.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx8.dart';
-import 'package:learnswift/Screens/Courses/swiftBasics/Ex/sbEx9.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx1.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx10.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx11.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx12.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx13.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx14.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx15.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx2.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx3.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx4.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx5.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx6.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx7.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx8.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/Ex/sbEx9.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class SwiftBasicExMain extends StatefulWidget {

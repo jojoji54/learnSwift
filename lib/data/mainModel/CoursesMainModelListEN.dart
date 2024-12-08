@@ -6,6 +6,7 @@ import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListEN.d
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/swiftFunctions/swiftFunctionsExModelEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftOptionals/swiftOptionalsExModelEN.dart';
 import 'package:learnswift/data/courses/Swift/swiftSets/swiftSetsExModelEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
@@ -105,16 +106,17 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
- /* CoursesMainModel(
+  CoursesMainModel(
     id: 9,
     generalName: 'Optionals',
+    catExercise: swiftOptionalsExModelEN,
     description: 'Teaches how to handle values that might be absent. Key for writing safe and error-resistant code in Swift.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+  /*CoursesMainModel(
     id: 10,
     generalName: 'Classes and Structures',
     description: 'Explains the use of classes and structures to organize data and behavior. Fundamental for object-oriented programming in Swift.',

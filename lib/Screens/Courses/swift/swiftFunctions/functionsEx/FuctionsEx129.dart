@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx105 extends StatefulWidget {
+class FunctionsEx129 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx105({super.key, required this.title, required this.id, required this.completed});
+  const FunctionsEx129({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx105> createState() => _SetsEx105State();
+  State<FunctionsEx129> createState() => _FunctionsEx129State();
 }
 
-class _SetsEx105State extends State<SetsEx105> {
+class _FunctionsEx129State extends State<FunctionsEx129> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -56,9 +56,9 @@ class _SetsEx105State extends State<SetsEx105> {
     );
   }
 
-  void _validateInput(AllProvider allprovider)  {
+  void _validateInput(AllProvider allprovider) {
     final codeRegex = RegExp(
-      r'^var\s+mySet\s*=\s*Set<String>\(\);\s*mySet\.insert\(".*"\);\s*print\(mySet\);$',
+      r'^func\s+\w+\(a:\s*\d+,\s*b:\s*\d+\)\s*->\s*\w+\s*{\s*let\s+\w+\s*=\s*a\s*\+\s*b;\s*return\s*\w+;\s*}\s*let\s+\w+\s*=\s*\w+\(a:\s*\d+,\s*b:\s*\d+\);\s*print\(.*\);$',
       multiLine: true,
     );
 
@@ -77,47 +77,43 @@ class _SetsEx105State extends State<SetsEx105> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've successfully created and added elements to a Set.\n\n"
+        "Excellent! You've implemented a function to perform multiple operations.\n\n"
         "**Explanation:**\n"
-        "- A Set is an unordered collection of unique elements.\n"
-        "- Use `.insert(value)` to add an element to a Set.\n"
-        "- Printing the Set will display its elements.",
+        "- Define a function that takes two parameters and performs multiple operations.\n"
+        "- Use `return` to send the result back to the caller.",
         titleColor: Colors.green,
       );
     } else {
       setState(() {
         _failedAttempts++;
         _inputTextColor = Colors.orange;
-      });
 
-      if (_failedAttempts == 1) {
-        _showDialog(
-          "Hint 1",
-          "Start by creating an empty Set: `var mySet = Set<String>()`.",
-        );
-      } else if (_failedAttempts == 2) {
-        _showDialog(
-          "Hint 2",
-          "Use `.insert(\"value\")` to add an element to the Set, then print it.",
-        );
-      } else if (_failedAttempts >= 3) {
-        _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var mySet = Set<String>();\n'
-          'mySet.insert("apple");\n'
-          'print(mySet);\n'
-          '```',
-          titleColor: Colors.red,
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
-          ),
-        );
-      }
+        if (_failedAttempts == 1) {
+          _showDialog(
+            "Hint 1",
+            "Define a function that takes two integer parameters and returns their sum.",
+          );
+        } else if (_failedAttempts == 2) {
+          _showDialog(
+            "Hint 2",
+            "Inside the function, declare a constant to store the sum of the parameters, then `return` it.",
+          );
+        } else if (_failedAttempts >= 3) {
+          _showDialog(
+            "Solution",
+            "The correct solution is:\n\n"
+            '```swift\n'
+            'func addNumbers(a: Int, b: Int) -> Int {\n'
+            '    let result = a + b;\n'
+            '    return result;\n'
+            '}\n'
+            'let sum = addNumbers(a: 5, b: 3);\n'
+            'print("The sum is \\(sum)");\n'
+            '```',
+            titleColor: Colors.red,
+          );
+        }
+      });
     }
   }
 
@@ -131,15 +127,16 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonSets1",
+              heroTag: "introButtonFunctions129",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Sets Basics! 🎉\n\n"
+                  "Challenge Instructions",
+                  "Welcome to the Functions Challenge! 🎉\n\n"
                   "Your task:\n"
-                  "1. Create an empty Set of Strings (e.g., `var mySet = Set<String>()`).\n"
-                  "2. Add at least one element to the Set using `.insert(\"value\")`.\n"
-                  "3. Print the Set to display its contents.",
+                  "1. Create a function named `addNumbers` that takes two integer parameters `a` and `b`.\n"
+                  "2. Inside the function, calculate the sum of `a` and `b`.\n"
+                  "3. Return the result from the function.\n"
+                  "4. Call the function with two numbers, store the result, and print it.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,7 +146,7 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonSets1",
+              heroTag: "runButtonFunctions129",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -161,15 +158,18 @@ class _SetsEx105State extends State<SetsEx105> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButtonSets1",
+                heroTag: "helpButtonFunctions129",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var mySet = Set<String>();\n'
-                    'mySet.insert("apple");\n'
-                    'print(mySet);\n'
+                    'func addNumbers(a: Int, b: Int) -> Int {\n'
+                    '    let result = a + b;\n'
+                    '    return result;\n'
+                    '}\n'
+                    'let sum = addNumbers(a: 5, b: 3);\n'
+                    'print("The sum is \\(sum)");\n'
                     '```',
                     titleColor: Colors.red,
                   );
@@ -202,24 +202,28 @@ class _SetsEx105State extends State<SetsEx105> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
+                        text: "1  func ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "mySet ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= Set<String>();\n2  mySet.insert(",
+                        text: "addNumbers(a: Int, b: Int) -> Int {\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "\"apple\");\n",
+                        text: "2      let result = a + b;\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "3  print(mySet);",
+                        text: "3      return result;\n",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "4  }\n5  let sum = addNumbers(a: 5, b: 3);\n",
                         style: TextStyle(color: Colors.orange),
+                      ),
+                      const TextSpan(
+                        text: "6  print(\"The sum is \\(sum)\");",
+                        style: TextStyle(color: Colors.green),
                       ),
                     ],
                   ),

@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx105 extends StatefulWidget {
+class FunctionsEx131 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx105({super.key, required this.title, required this.id, required this.completed});
+  const FunctionsEx131({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx105> createState() => _SetsEx105State();
+  State<FunctionsEx131> createState() => _FunctionsEx131State();
 }
 
-class _SetsEx105State extends State<SetsEx105> {
+class _FunctionsEx131State extends State<FunctionsEx131> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -56,9 +56,9 @@ class _SetsEx105State extends State<SetsEx105> {
     );
   }
 
-  void _validateInput(AllProvider allprovider)  {
+  void _validateInput(AllProvider allprovider) {
     final codeRegex = RegExp(
-      r'^var\s+mySet\s*=\s*Set<String>\(\);\s*mySet\.insert\(".*"\);\s*print\(mySet\);$',
+      r'^func\s+isPalindrome\(\s*input:\s*String\s*\)\s*->\s*Bool\s*{\s*let\s+reversed\s*=\s*String\(input.reversed\(\)\);\s*return\s+input\s*==\s*reversed;\s*}\s*let\s+\w+\s*=\s*isPalindrome\(input:\s*".*"\);\s*print\(.*\);$',
       multiLine: true,
     );
 
@@ -77,47 +77,44 @@ class _SetsEx105State extends State<SetsEx105> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've successfully created and added elements to a Set.\n\n"
+        "You've successfully implemented a palindrome checker.\n\n"
         "**Explanation:**\n"
-        "- A Set is an unordered collection of unique elements.\n"
-        "- Use `.insert(value)` to add an element to a Set.\n"
-        "- Printing the Set will display its elements.",
+        "- A palindrome is a word or phrase that reads the same backward as forward.\n"
+        "- Reverse the input string and compare it with the original.\n"
+        "- Return `true` if they match, otherwise return `false`.",
         titleColor: Colors.green,
       );
     } else {
       setState(() {
         _failedAttempts++;
         _inputTextColor = Colors.orange;
-      });
 
-      if (_failedAttempts == 1) {
-        _showDialog(
-          "Hint 1",
-          "Start by creating an empty Set: `var mySet = Set<String>()`.",
-        );
-      } else if (_failedAttempts == 2) {
-        _showDialog(
-          "Hint 2",
-          "Use `.insert(\"value\")` to add an element to the Set, then print it.",
-        );
-      } else if (_failedAttempts >= 3) {
-        _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var mySet = Set<String>();\n'
-          'mySet.insert("apple");\n'
-          'print(mySet);\n'
-          '```',
-          titleColor: Colors.red,
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
-          ),
-        );
-      }
+        if (_failedAttempts == 1) {
+          _showDialog(
+            "Hint 1",
+            "Define a function `isPalindrome` that takes a string as input and returns a boolean.",
+          );
+        } else if (_failedAttempts == 2) {
+          _showDialog(
+            "Hint 2",
+            "Reverse the input string using `String(input.reversed())` and compare it to the original.",
+          );
+        } else if (_failedAttempts >= 3) {
+          _showDialog(
+            "Solution",
+            "The correct solution is:\n\n"
+            '```swift\n'
+            'func isPalindrome(input: String) -> Bool {\n'
+            '    let reversed = String(input.reversed());\n'
+            '    return input == reversed;\n'
+            '}\n'
+            'let result = isPalindrome(input: "radar");\n'
+            'print("Is palindrome: \\(result)");\n'
+            '```',
+            titleColor: Colors.red,
+          );
+        }
+      });
     }
   }
 
@@ -131,15 +128,16 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonSets1",
+              heroTag: "introButtonFunctions131",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Sets Basics! 🎉\n\n"
+                  "Challenge Instructions",
+                  "Welcome to the Palindrome Checker Challenge! 🎉\n\n"
                   "Your task:\n"
-                  "1. Create an empty Set of Strings (e.g., `var mySet = Set<String>()`).\n"
-                  "2. Add at least one element to the Set using `.insert(\"value\")`.\n"
-                  "3. Print the Set to display its contents.",
+                  "1. Define a function named `isPalindrome`.\n"
+                  "2. The function should take a string parameter and return a boolean.\n"
+                  "3. Reverse the input string and compare it with the original.\n"
+                  "4. Print `true` if the string is a palindrome, otherwise `false`.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,7 +147,7 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonSets1",
+              heroTag: "runButtonFunctions131",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -161,15 +159,18 @@ class _SetsEx105State extends State<SetsEx105> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButtonSets1",
+                heroTag: "helpButtonFunctions131",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var mySet = Set<String>();\n'
-                    'mySet.insert("apple");\n'
-                    'print(mySet);\n'
+                    'func isPalindrome(input: String) -> Bool {\n'
+                    '    let reversed = String(input.reversed());\n'
+                    '    return input == reversed;\n'
+                    '}\n'
+                    'let result = isPalindrome(input: "radar");\n'
+                    'print("Is palindrome: \\(result)");\n'
                     '```',
                     titleColor: Colors.red,
                   );
@@ -202,24 +203,28 @@ class _SetsEx105State extends State<SetsEx105> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
+                        text: "1  func ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "mySet ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= Set<String>();\n2  mySet.insert(",
+                        text: "isPalindrome(input: String) -> Bool {\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "\"apple\");\n",
+                        text: "2      let reversed = String(input.reversed());\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "3  print(mySet);",
+                        text: "3      return input == reversed;\n",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "4  }\n5  let result = isPalindrome(input: \"radar\");\n",
                         style: TextStyle(color: Colors.orange),
+                      ),
+                      const TextSpan(
+                        text: "6  print(\"Is palindrome: \\(result)\");",
+                        style: TextStyle(color: Colors.green),
                       ),
                     ],
                   ),

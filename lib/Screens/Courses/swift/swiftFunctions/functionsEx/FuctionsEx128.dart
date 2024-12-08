@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx105 extends StatefulWidget {
+class FunctionsEx128 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx105({super.key, required this.title, required this.id, required this.completed});
+  const FunctionsEx128({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx105> createState() => _SetsEx105State();
+  State<FunctionsEx128> createState() => _FunctionsEx128State();
 }
 
-class _SetsEx105State extends State<SetsEx105> {
+class _FunctionsEx128State extends State<FunctionsEx128> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -56,9 +56,9 @@ class _SetsEx105State extends State<SetsEx105> {
     );
   }
 
-  void _validateInput(AllProvider allprovider)  {
+  void _validateInput(AllProvider allprovider) {
     final codeRegex = RegExp(
-      r'^var\s+mySet\s*=\s*Set<String>\(\);\s*mySet\.insert\(".*"\);\s*print\(mySet\);$',
+      r'^func\s+\w+\(\s*\w*:\s*String\s*=\s*".*"\)\s*{\s*print\(.*\);\s*}\s*\w+\(\w*:\s*".*"\);$',
       multiLine: true,
     );
 
@@ -77,47 +77,42 @@ class _SetsEx105State extends State<SetsEx105> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've successfully created and added elements to a Set.\n\n"
+        "Great work! You've successfully created a function with an optional parameter.\n\n"
         "**Explanation:**\n"
-        "- A Set is an unordered collection of unique elements.\n"
-        "- Use `.insert(value)` to add an element to a Set.\n"
-        "- Printing the Set will display its elements.",
+        "- Functions can have default parameter values.\n"
+        "- If the parameter is not provided, the default value is used.",
         titleColor: Colors.green,
       );
     } else {
       setState(() {
         _failedAttempts++;
         _inputTextColor = Colors.orange;
-      });
 
-      if (_failedAttempts == 1) {
-        _showDialog(
-          "Hint 1",
-          "Start by creating an empty Set: `var mySet = Set<String>()`.",
-        );
-      } else if (_failedAttempts == 2) {
-        _showDialog(
-          "Hint 2",
-          "Use `.insert(\"value\")` to add an element to the Set, then print it.",
-        );
-      } else if (_failedAttempts >= 3) {
-        _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var mySet = Set<String>();\n'
-          'mySet.insert("apple");\n'
-          'print(mySet);\n'
-          '```',
-          titleColor: Colors.red,
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
-          ),
-        );
-      }
+        if (_failedAttempts == 1) {
+          _showDialog(
+            "Hint 1",
+            "Define a function with a parameter and a default value (e.g., `name: String = \"Guest\"`).",
+          );
+        } else if (_failedAttempts == 2) {
+          _showDialog(
+            "Hint 2",
+            "Call the function both with and without passing a value for the parameter.",
+          );
+        } else if (_failedAttempts >= 3) {
+          _showDialog(
+            "Solution",
+            "The correct solution is:\n\n"
+            '```swift\n'
+            'func greet(name: String = "Guest") {\n'
+            '    print("Hello, \\(name)!");\n'
+            '}\n'
+            'greet();\n'
+            'greet(name: "John");\n'
+            '```',
+            titleColor: Colors.red,
+          );
+        }
+      });
     }
   }
 
@@ -131,15 +126,16 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonSets1",
+              heroTag: "introButtonFunctions129",
               onPressed: () {
                 _showDialog(
                   "Exercise Instructions",
-                  "Welcome to Sets Basics! 🎉\n\n"
+                  "Welcome to Functions with Optional Parameters! 🎉\n\n"
                   "Your task:\n"
-                  "1. Create an empty Set of Strings (e.g., `var mySet = Set<String>()`).\n"
-                  "2. Add at least one element to the Set using `.insert(\"value\")`.\n"
-                  "3. Print the Set to display its contents.",
+                  "1. Define a function named `greet` with a parameter `name` of type `String`.\n"
+                  "2. Assign a default value to the parameter (e.g., `\"Guest\"`).\n"
+                  "3. Inside the function, use `print` to display a greeting message.\n"
+                  "4. Call the function both with and without passing a value for `name`.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,7 +145,7 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonSets1",
+              heroTag: "runButtonFunctions129",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -161,15 +157,17 @@ class _SetsEx105State extends State<SetsEx105> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButtonSets1",
+                heroTag: "helpButtonFunctions129",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var mySet = Set<String>();\n'
-                    'mySet.insert("apple");\n'
-                    'print(mySet);\n'
+                    'func greet(name: String = "Guest") {\n'
+                    '    print("Hello, \\(name)!");\n'
+                    '}\n'
+                    'greet();\n'
+                    'greet(name: "John");\n'
                     '```',
                     titleColor: Colors.red,
                   );
@@ -202,23 +200,19 @@ class _SetsEx105State extends State<SetsEx105> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
+                        text: "1  func ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "mySet ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= Set<String>();\n2  mySet.insert(",
+                        text: "greet(name: String = \"Guest\") {\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "\"apple\");\n",
+                        text: "2      print(\"Hello, \\(name)!\");\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "3  print(mySet);",
+                        text: "3  }\n4  greet();\n5  greet(name: \"John\");",
                         style: TextStyle(color: Colors.orange),
                       ),
                     ],

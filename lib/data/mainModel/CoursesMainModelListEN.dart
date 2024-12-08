@@ -5,6 +5,7 @@ import 'package:learnswift/data/courses/Swift/SwiftDictionaries/swiftDictionarie
 import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftFunctions/swiftFunctionsExModelEN.dart';
 import 'package:learnswift/data/courses/Swift/swiftSets/swiftSetsExModelEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
@@ -94,16 +95,17 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  /*CoursesMainModel(
+  CoursesMainModel(
     id: 8,
     generalName: 'Functions',
+    catExercise: swiftFunctionsExModelEN,
     description: 'Introduces functions for structuring reusable blocks of code. Essential for modular programming and code organization.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+ /* CoursesMainModel(
     id: 9,
     generalName: 'Optionals',
     description: 'Teaches how to handle values that might be absent. Key for writing safe and error-resistant code in Swift.',

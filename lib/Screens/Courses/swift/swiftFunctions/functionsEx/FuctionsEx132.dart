@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx105 extends StatefulWidget {
+class FunctionsEx132 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx105({super.key, required this.title, required this.id, required this.completed});
+  const FunctionsEx132({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx105> createState() => _SetsEx105State();
+  State<FunctionsEx132> createState() => _FunctionsEx132State();
 }
 
-class _SetsEx105State extends State<SetsEx105> {
+class _FunctionsEx132State extends State<FunctionsEx132> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -56,9 +56,9 @@ class _SetsEx105State extends State<SetsEx105> {
     );
   }
 
-  void _validateInput(AllProvider allprovider)  {
+  void _validateInput(AllProvider allprovider) {
     final codeRegex = RegExp(
-      r'^var\s+mySet\s*=\s*Set<String>\(\);\s*mySet\.insert\(".*"\);\s*print\(mySet\);$',
+      r'^func\s+factorial\(\s*of\s+number:\s*Int\s*\)\s*->\s*Int\s*{\s*if\s+number\s*==\s*0\s*{\s*return\s+1;\s*}\s*return\s+number\s*\*\s*factorial\(\s*of:\s*number\s*-1\s*\);\s*}\s*let\s+\w+\s*=\s*factorial\(of:\s*\d+\);\s*print\(.*\);$',
       multiLine: true,
     );
 
@@ -77,47 +77,45 @@ class _SetsEx105State extends State<SetsEx105> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've successfully created and added elements to a Set.\n\n"
+        "You've successfully implemented a recursive factorial function.\n\n"
         "**Explanation:**\n"
-        "- A Set is an unordered collection of unique elements.\n"
-        "- Use `.insert(value)` to add an element to a Set.\n"
-        "- Printing the Set will display its elements.",
+        "- A factorial of a number is calculated as `n! = n × (n-1) × (n-2) × ... × 1`.\n"
+        "- Use recursion by calling the function within itself until the base case (`number == 0`).",
         titleColor: Colors.green,
       );
     } else {
       setState(() {
         _failedAttempts++;
         _inputTextColor = Colors.orange;
-      });
 
-      if (_failedAttempts == 1) {
-        _showDialog(
-          "Hint 1",
-          "Start by creating an empty Set: `var mySet = Set<String>()`.",
-        );
-      } else if (_failedAttempts == 2) {
-        _showDialog(
-          "Hint 2",
-          "Use `.insert(\"value\")` to add an element to the Set, then print it.",
-        );
-      } else if (_failedAttempts >= 3) {
-        _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var mySet = Set<String>();\n'
-          'mySet.insert("apple");\n'
-          'print(mySet);\n'
-          '```',
-          titleColor: Colors.red,
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
-          ),
-        );
-      }
+        if (_failedAttempts == 1) {
+          _showDialog(
+            "Hint 1",
+            "Define a recursive function named `factorial` that calculates the factorial of a number.",
+          );
+        } else if (_failedAttempts == 2) {
+          _showDialog(
+            "Hint 2",
+            "The base case is when `number == 0`. Return `1` in this case. Otherwise, return `number * factorial(number - 1)`.",
+          );
+        } else if (_failedAttempts >= 3) {
+          _showDialog(
+            "Solution",
+            "The correct solution is:\n\n"
+            '```swift\n'
+            'func factorial(of number: Int) -> Int {\n'
+            '    if number == 0 {\n'
+            '        return 1;\n'
+            '    }\n'
+            '    return number * factorial(of: number - 1);\n'
+            '}\n'
+            'let result = factorial(of: 5);\n'
+            'print("Factorial: \\(result)");\n'
+            '```',
+            titleColor: Colors.red,
+          );
+        }
+      });
     }
   }
 
@@ -131,15 +129,16 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonSets1",
+              heroTag: "introButtonFunctions132",
               onPressed: () {
                 _showDialog(
-                  "Exercise Instructions",
-                  "Welcome to Sets Basics! 🎉\n\n"
+                  "Challenge Instructions",
+                  "Welcome to the Factorial Challenge! 🎉\n\n"
                   "Your task:\n"
-                  "1. Create an empty Set of Strings (e.g., `var mySet = Set<String>()`).\n"
-                  "2. Add at least one element to the Set using `.insert(\"value\")`.\n"
-                  "3. Print the Set to display its contents.",
+                  "1. Define a function named `factorial`.\n"
+                  "2. The function should take an integer as input and return its factorial.\n"
+                  "3. Use recursion to calculate the factorial of the number.\n"
+                  "4. Print the result of calling the function.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,7 +148,7 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonSets1",
+              heroTag: "runButtonFunctions132",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -161,15 +160,20 @@ class _SetsEx105State extends State<SetsEx105> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButtonSets1",
+                heroTag: "helpButtonFunctions132",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var mySet = Set<String>();\n'
-                    'mySet.insert("apple");\n'
-                    'print(mySet);\n'
+                    'func factorial(of number: Int) -> Int {\n'
+                    '    if number == 0 {\n'
+                    '        return 1;\n'
+                    '    }\n'
+                    '    return number * factorial(of: number - 1);\n'
+                    '}\n'
+                    'let result = factorial(of: 5);\n'
+                    'print("Factorial: \\(result)");\n'
                     '```',
                     titleColor: Colors.red,
                   );
@@ -202,24 +206,32 @@ class _SetsEx105State extends State<SetsEx105> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
+                        text: "1  func ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "mySet ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= Set<String>();\n2  mySet.insert(",
+                        text: "factorial(of number: Int) -> Int {\n",
                         style: TextStyle(color: Colors.orange),
                       ),
                       const TextSpan(
-                        text: "\"apple\");\n",
+                        text: "2      if number == 0 {\n",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "3  print(mySet);",
+                        text: "3          return 1;\n",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "4      }\n5      return number * factorial(of: number - 1);\n",
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      const TextSpan(
+                        text: "6  }\n7  let result = factorial(of: 5);\n",
                         style: TextStyle(color: Colors.orange),
+                      ),
+                      const TextSpan(
+                        text: "8  print(\"Factorial: \\(result)\");",
+                        style: TextStyle(color: Colors.green),
                       ),
                     ],
                   ),

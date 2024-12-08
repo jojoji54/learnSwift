@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx105 extends StatefulWidget {
+class FunctionsEx127 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx105({super.key, required this.title, required this.id, required this.completed});
+  const FunctionsEx127({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx105> createState() => _SetsEx105State();
+  State<FunctionsEx127> createState() => _FunctionsEx127State();
 }
 
-class _SetsEx105State extends State<SetsEx105> {
+class _FunctionsEx127State extends State<FunctionsEx127> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;
@@ -56,9 +56,9 @@ class _SetsEx105State extends State<SetsEx105> {
     );
   }
 
-  void _validateInput(AllProvider allprovider)  {
+  void _validateInput(AllProvider allprovider) {
     final codeRegex = RegExp(
-      r'^var\s+mySet\s*=\s*Set<String>\(\);\s*mySet\.insert\(".*"\);\s*print\(mySet\);$',
+      r'^let\s+\w+\s*=\s*\[.*\];\s*let\s+\w+\s*=\s+\w+\.map\s*\{.*\};\s*print\(.*\);$',
       multiLine: true,
     );
 
@@ -77,47 +77,40 @@ class _SetsEx105State extends State<SetsEx105> {
 
       _showDialog(
         "Correct! 🎉",
-        "Well done! You've successfully created and added elements to a Set.\n\n"
+        "Great work! You've successfully used a higher-order function.\n\n"
         "**Explanation:**\n"
-        "- A Set is an unordered collection of unique elements.\n"
-        "- Use `.insert(value)` to add an element to a Set.\n"
-        "- Printing the Set will display its elements.",
+        "- The `map` function applies a transformation to each element in the array.\n"
+        "- The resulting array contains the transformed elements.",
         titleColor: Colors.green,
       );
     } else {
       setState(() {
         _failedAttempts++;
         _inputTextColor = Colors.orange;
-      });
 
-      if (_failedAttempts == 1) {
-        _showDialog(
-          "Hint 1",
-          "Start by creating an empty Set: `var mySet = Set<String>()`.",
-        );
-      } else if (_failedAttempts == 2) {
-        _showDialog(
-          "Hint 2",
-          "Use `.insert(\"value\")` to add an element to the Set, then print it.",
-        );
-      } else if (_failedAttempts >= 3) {
-        _showDialog(
-          "Solution",
-          "The correct solution is:\n\n"
-          '```swift\n'
-          'var mySet = Set<String>();\n'
-          'mySet.insert("apple");\n'
-          'print(mySet);\n'
-          '```',
-          titleColor: Colors.red,
-        );
-      } else {
-        ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
-            content: Text("Try again! (${_failedAttempts}/3 attempts)"),
-          ),
-        );
-      }
+        if (_failedAttempts == 1) {
+          _showDialog(
+            "Hint 1",
+            "Start by declaring an array with numbers (e.g., `[1, 2, 3]`).",
+          );
+        } else if (_failedAttempts == 2) {
+          _showDialog(
+            "Hint 2",
+            "Use `map` to double each number in the array and store the result.",
+          );
+        } else if (_failedAttempts >= 3) {
+          _showDialog(
+            "Solution",
+            "The correct solution is:\n\n"
+            '```swift\n'
+            'let numbers = [1, 2, 3, 4, 5];\n'
+            'let doubledNumbers = numbers.map { value in value * 2 };\n'
+            'print(doubledNumbers);\n'
+            '```',
+            titleColor: Colors.red,
+          );
+        }
+      });
     }
   }
 
@@ -131,15 +124,15 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonSets1",
+              heroTag: "introButtonFunctions128",
               onPressed: () {
                 _showDialog(
                   "Exercise Instructions",
-                  "Welcome to Sets Basics! 🎉\n\n"
+                  "Welcome to Higher-Order Functions! 🎉\n\n"
                   "Your task:\n"
-                  "1. Create an empty Set of Strings (e.g., `var mySet = Set<String>()`).\n"
-                  "2. Add at least one element to the Set using `.insert(\"value\")`.\n"
-                  "3. Print the Set to display its contents.",
+                  "1. Create an array of numbers (e.g., `[1, 2, 3]`).\n"
+                  "2. Use the `map` function to double each number in the array.\n"
+                  "3. Print the resulting array.",
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -149,7 +142,7 @@ class _SetsEx105State extends State<SetsEx105> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonSets1",
+              heroTag: "runButtonFunctions128",
               onPressed: () {
                 _validateInput(allProvider);
               },
@@ -161,15 +154,15 @@ class _SetsEx105State extends State<SetsEx105> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: FloatingActionButton(
-                heroTag: "helpButtonSets1",
+                heroTag: "helpButtonFunctions128",
                 onPressed: () {
                   _showDialog(
                     "Solution",
                     "The correct solution is:\n\n"
                     '```swift\n'
-                    'var mySet = Set<String>();\n'
-                    'mySet.insert("apple");\n'
-                    'print(mySet);\n'
+                    'let numbers = [1, 2, 3, 4, 5];\n'
+                    'let doubledNumbers = numbers.map { value in value * 2 };\n'
+                    'print(doubledNumbers);\n'
                     '```',
                     titleColor: Colors.red,
                   );
@@ -202,23 +195,23 @@ class _SetsEx105State extends State<SetsEx105> {
                         style: TextStyle(color: Colors.blueGrey),
                       ),
                       const TextSpan(
-                        text: "1  var ",
+                        text: "1  let ",
                         style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "mySet ",
+                        text: "numbers ",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "= Set<String>();\n2  mySet.insert(",
-                        style: TextStyle(color: Colors.orange),
+                        text: "= [1, 2, 3, 4, 5];\n2  let ",
+                        style: TextStyle(color: Colors.blue),
                       ),
                       const TextSpan(
-                        text: "\"apple\");\n",
+                        text: "doubledNumbers ",
                         style: TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
-                        text: "3  print(mySet);",
+                        text: "= numbers.map { value in value * 2 };\n3  print(doubledNumbers);",
                         style: TextStyle(color: Colors.orange),
                       ),
                     ],

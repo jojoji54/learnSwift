@@ -5,17 +5,17 @@ import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-class SetsEx118 extends StatefulWidget {
+class SetsEx117 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const SetsEx118({super.key, required this.title, required this.id, required this.completed});
+  const SetsEx117({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<SetsEx118> createState() => _SetsEx118State();
+  State<SetsEx117> createState() => _SetsEx117State();
 }
 
-class _SetsEx118State extends State<SetsEx118> {
+class _SetsEx117State extends State<SetsEx117> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.orange;

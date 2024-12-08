@@ -1,7 +1,7 @@
-import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListES.dart';
-import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListES.dart';
-import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListES.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListES.dart';
+import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListES.dart';
+import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListES.dart';
+import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListES.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListES.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 List<CoursesMainModel> coursesSwiftMainModelListES = [

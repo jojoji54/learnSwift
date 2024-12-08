@@ -1,6 +1,6 @@
 
 import 'package:learnswift/data/courses/coursesExModel.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
 
 List<CoursesExModel> sbModelES = [
   CoursesExModel(

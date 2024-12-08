@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 

@@ -6,7 +6,7 @@ import 'package:learnswift/provider/allprovider.dart';
 import 'package:learnswift/sharedPreferences/sharedPreferencesData.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../data/courses/swiftBasics/sbExModelListZH.dart';
+import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
 class SwitchEx58 extends StatefulWidget {
    final String title;

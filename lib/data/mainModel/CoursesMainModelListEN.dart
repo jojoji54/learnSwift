@@ -1,10 +1,11 @@
-import 'package:learnswift/data/courses/ArraysBasics/arraysExModelListEN.dart';
-import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
-import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
-import 'package:learnswift/data/courses/SwiftDictionaries/swiftDictionariesExModelEN.dart';
-import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
-import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/ArraysBasics/arraysExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/LoopsBasics/loopsExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/SwiftDictionaries/swiftDictionariesExModelEN.dart';
+import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+import 'package:learnswift/data/courses/Swift/swiftSets/swiftSetsExModelEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 List<CoursesMainModel> coursesSwiftMainModelListEN = [
@@ -83,16 +84,17 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     alreadyBuy: true,
     completed: false,
   ),
-  /* CoursesMainModel(
+   CoursesMainModel(
     id: 7,
     generalName: 'Sets',
+    catExercise: swiftSetsExModelEN,
     description: 'Explains sets and their use for storing unique values. Important for ensuring data uniqueness and performing set operations.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
   ),
-  CoursesMainModel(
+  /*CoursesMainModel(
     id: 8,
     generalName: 'Functions',
     description: 'Introduces functions for structuring reusable blocks of code. Essential for modular programming and code organization.',

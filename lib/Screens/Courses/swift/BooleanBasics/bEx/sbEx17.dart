@@ -5,7 +5,7 @@ import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../data/courses/swiftBasics/sbExModelListZH.dart';
+import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
 class BEx17 extends StatefulWidget {
   final String title;

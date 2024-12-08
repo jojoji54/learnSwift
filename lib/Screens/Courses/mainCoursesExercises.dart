@@ -14,7 +14,7 @@ import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
-import 'package:learnswift/data/courses/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';

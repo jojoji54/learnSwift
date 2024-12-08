@@ -1,7 +1,7 @@
 import 'package:learnswift/data/courses/ArraysBasics/arraysExModelListEN.dart';
 import 'package:learnswift/data/courses/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/LoopsBasics/loopsExModelListEN.dart';
-import 'package:learnswift/data/courses/SwiftDictionaries/arraysExModelListEN.dart';
+import 'package:learnswift/data/courses/SwiftDictionaries/swiftDictionariesExModelEN.dart';
 import 'package:learnswift/data/courses/ifElseBasics/ifElseExModelListEN.dart';
 import 'package:learnswift/data/courses/swichStatementsBasics/swichStatementsExModelListEN.dart';
 import 'package:learnswift/data/courses/swiftBasics/sbExModelListEN.dart';
@@ -76,7 +76,7 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
  CoursesMainModel(
     id: 6,
     generalName: 'Dictionaries',
-    catExercise: swiftDictionariesModelEN,
+    catExercise: swiftDictionariesExModelEN,
     description: 'Focuses on dictionaries for storing data as key-value pairs. Crucial for quick lookups and organizing information.',
     numCompletedCourses: 0,
     totalCourses: 15,

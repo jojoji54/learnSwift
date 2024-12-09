@@ -28,7 +28,7 @@ final List<ProgrammingItem> programmingItemsZH = [
     coursesList: coursesPythonMainModelListZH,
     color1: Color(0xFF306998),
     color2: Color(0xFFFFD43B),
-    isActive: false,
+     isActive: true,
     description:
         'CodeCrafters: Python 教授这种多功能语言，可用于人工智能、数据科学和网页开发。通过实际练习学习真实应用程序。\n\n版本: Python 3.12',
   ),

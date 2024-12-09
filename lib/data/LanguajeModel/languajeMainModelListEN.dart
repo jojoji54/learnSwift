@@ -28,7 +28,7 @@ final List<ProgrammingItem> programmingItemsEN = [
     coursesList: coursesPythonMainModelListEN,
     color1: Color(0xFF306998),
     color2: Color(0xFFFFD43B),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Python teaches you this versatile language used for artificial intelligence, data science, and web development. Learn through hands-on exercises for real-world applications.\n\nVersion: Python 3.12',
   ),

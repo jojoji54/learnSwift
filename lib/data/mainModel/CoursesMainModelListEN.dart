@@ -1,3 +1,13 @@
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/booleanBExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/loopsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwiftArrays/arraysExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatementsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftDictionaries/switchDictonariesMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftFunctions/switchFunctionsMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftOptionals/switchOptionalsMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftSets/switchSetsMain.dart';
 import 'package:learnswift/data/courses/Swift/ArraysBasics/arraysExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListEN.dart';
 import 'package:learnswift/data/courses/Swift/LoopsBasics/loopsExModelListEN.dart';
@@ -21,6 +31,15 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwiftBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 1,
@@ -32,6 +51,15 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        BooleanBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 2,
@@ -43,6 +71,15 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        IfElseExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 3,
@@ -54,6 +91,15 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchStatementsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 4,
@@ -65,56 +111,115 @@ List<CoursesMainModel> coursesSwiftMainModelListEN = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        LoopsExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
-    CoursesMainModel(
+  CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
     catExercise: swiftArraysModelEN,
-    description: 'Explores arrays and their use in storing collections of data. Key for handling multiple items in an organized manner.',
+    description:
+        'Explores arrays and their use in storing collections of data. Key for handling multiple items in an organized manner.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        ArraysExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
- CoursesMainModel(
+  CoursesMainModel(
     id: 6,
     generalName: 'Dictionaries',
     catExercise: swiftDictionariesExModelEN,
-    description: 'Focuses on dictionaries for storing data as key-value pairs. Crucial for quick lookups and organizing information.',
+    description:
+        'Focuses on dictionaries for storing data as key-value pairs. Crucial for quick lookups and organizing information.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchDictonariesMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
-   CoursesMainModel(
+  CoursesMainModel(
     id: 7,
     generalName: 'Sets',
     catExercise: swiftSetsExModelEN,
-    description: 'Explains sets and their use for storing unique values. Important for ensuring data uniqueness and performing set operations.',
+    description:
+        'Explains sets and their use for storing unique values. Important for ensuring data uniqueness and performing set operations.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchSetsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 8,
     generalName: 'Functions',
     catExercise: swiftFunctionsExModelEN,
-    description: 'Introduces functions for structuring reusable blocks of code. Essential for modular programming and code organization.',
+    description:
+        'Introduces functions for structuring reusable blocks of code. Essential for modular programming and code organization.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchFunctionsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 9,
     generalName: 'Optionals',
     catExercise: swiftOptionalsExModelEN,
-    description: 'Teaches how to handle values that might be absent. Key for writing safe and error-resistant code in Swift.',
+    description:
+        'Teaches how to handle values that might be absent. Key for writing safe and error-resistant code in Swift.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchOptionalsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   /*CoursesMainModel(
     id: 10,

@@ -3,12 +3,6 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:in_app_purchase/in_app_purchase.dart';
-import 'package:learnswift/Screens/Courses/swift/BooleanBasics/booleanBExMain.dart';
-import 'package:learnswift/Screens/Courses/swift/LoopsBasics/loopsExMain.dart';
-import 'package:learnswift/Screens/Courses/swift/SwiftArrays/arraysExMain.dart';
-import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatementsExMain.dart';
-import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
-import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
@@ -271,7 +265,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                     widget.description,
                                                     course.completed,
                                                     widget.color1,
-                                                    widget.color2);
+                                                    widget.color2,
+                                                    allProvider);
                                               }
                                             },
                                             child: Padding(
@@ -726,100 +721,29 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   void navToEx(int courseCat, int id, String title, String description,
-      bool completed, Color color1, Color color2) {
-    print(courseCat.toString());
-    switch (courseCat) {
-      case 0:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SwiftBasicExMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
+      bool completed, Color color1, Color color2, AllProvider allProvider) {
+    final course = allProvider.data.firstWhere(
+      (course) => course.id == courseCat,
+      orElse: () => throw Exception('Course not found'),
+    );
+
+    if (course.builder != null) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => course.builder!(
+            context,
+            id,
+            title,
+            description,
+            completed,
+            color1,
+            color2,
           ),
-        );
-        break;
-      case 1:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => BooleanBasicExMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
-          ),
-        );
-        break;
-      case 2:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => IfElseExMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
-          ),
-        );
-      case 3:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => SwitchStatementsMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
-          ),
-        );
-        break;
-      case 4:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => LoopsExMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
-          ),
-        );
-        break;
-      case 5:
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => ArraysExMain(
-              id: id,
-              title: title,
-              description: description,
-              completed: completed,
-              color1: color1,
-              color2: color2,
-            ),
-          ),
-        );
-        break;
-      default:
-        break;
+        ),
+      );
+    } else {
+      print('No builder defined for course category $courseCat');
     }
   }
 }

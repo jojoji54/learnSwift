@@ -1,3 +1,8 @@
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/booleanBExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/loopsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatementsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListES.dart';
 import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListES.dart';
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListES.dart';
@@ -15,6 +20,15 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwiftBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 1,
@@ -26,6 +40,15 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        BooleanBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 2,
@@ -37,6 +60,15 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        IfElseExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 3,
@@ -48,6 +80,15 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchStatementsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 4,
@@ -59,6 +100,15 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        LoopsExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   /*  CoursesMainModel(
     id: 5,

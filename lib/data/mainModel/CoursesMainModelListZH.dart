@@ -1,3 +1,8 @@
+import 'package:learnswift/Screens/Courses/swift/BooleanBasics/booleanBExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/LoopsBasics/loopsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatementsExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
+import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListZH.dart';
 import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListZH.dart';
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListZH.dart';
@@ -9,56 +14,96 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 0,
     generalName: '基础概念',
     catExercise: sbModelZH,
-    description:
-        '介绍Swift的基础知识，包括语法、变量、常量和基本操作。理解这些概念至关重要，因为它们构成了Swift编程的基础。',
+    description: '介绍Swift的基础知识，包括语法、变量、常量和基本操作。理解这些概念至关重要，因为它们构成了Swift编程的基础。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwiftBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 1,
     generalName: '布尔值',
     catExercise: booleanBModelZH,
-    description:
-        '涵盖布尔逻辑及其在编程中的应用。通过比较和逻辑操作，在代码中做出决策至关重要。',
+    description: '涵盖布尔逻辑及其在编程中的应用。通过比较和逻辑操作，在代码中做出决策至关重要。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        BooleanBasicExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
     catExercise: ifElseModelZH,
-    description:
-        '讲解如何使用条件结构来控制程序流。对在应用中实现逻辑非常重要。',
+    description: '讲解如何使用条件结构来控制程序流。对在应用中实现逻辑非常重要。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        IfElseExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
     catExercise: switchModelZH,
-    description:
-        '说明如何使用switch语句高效处理多种条件。相比嵌套的if-else结构，它能帮助你编写更简洁、结构化的代码。',
+    description: '说明如何使用switch语句高效处理多种条件。相比嵌套的if-else结构，它能帮助你编写更简洁、结构化的代码。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        SwitchStatementsMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   CoursesMainModel(
     id: 4,
     generalName: '循环',
     catExercise: [],
-    description:
-        '涵盖for、while和repeat-while循环，用于完成重复任务。对减少冗余和自动化代码流程至关重要。',
+    description: '涵盖for、while和repeat-while循环，用于完成重复任务。对减少冗余和自动化代码流程至关重要。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
     completed: false,
+    builder: (context, id, title, description, completed, color1, color2) =>
+        LoopsExMain(
+      id: id,
+      title: title,
+      description: description,
+      completed: completed,
+      color1: color1,
+      color2: color2,
+    ),
   ),
   /*  CoursesMainModel(
     id: 5,

@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
 class CoursesMainModel {
@@ -9,6 +12,8 @@ class CoursesMainModel {
   bool alreadyBuy;
   bool completed;
   String description;
+  final Widget Function(BuildContext context, int id, String title, String description, bool completed, Color color1, Color color2)? builder;
+
 
   // Constructor de la clase
   CoursesMainModel({
@@ -20,6 +25,7 @@ class CoursesMainModel {
     required this.totalCourses,
     required this.alreadyBuy,
     required this.completed,
+    required this.builder,
   });
 
   // Factory constructor para crear una instancia desde JSON
@@ -33,6 +39,7 @@ class CoursesMainModel {
       totalCourses: json['totalCourses'],
       alreadyBuy: json['alreadyBuy'],
       completed: json['completed'],
+      builder: json['builder'],
     );
   }
 
@@ -47,6 +54,7 @@ class CoursesMainModel {
       'totalCourses': totalCourses,
       'alreadyBuy': alreadyBuy,
       'completed': completed,
+      'builder': builder,
     };
   }
 

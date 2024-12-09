@@ -6,7 +6,7 @@ import 'package:learnswift/Screens/Courses/mainCoursesExercises.dart';
 import 'package:learnswift/Widgets/catIcon.dart';
 import 'package:learnswift/Widgets/comingSoonButton.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/mainModel/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListES.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';

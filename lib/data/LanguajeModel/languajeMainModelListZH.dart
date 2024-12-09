@@ -2,7 +2,8 @@ import 'dart:ui';
 
 import 'package:learnswift/data/Hive/LenguajePurchaseManagerHive.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
-import 'package:learnswift/data/mainModel/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
 final List<ProgrammingItem> programmingItemsZH = [
@@ -24,7 +25,7 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Python',
     productID: 'com.mrrubik.learnswift.python',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(2),
-    coursesList: [],
+    coursesList: coursesPythonMainModelListZH,
     color1: Color(0xFF306998),
     color2: Color(0xFFFFD43B),
     isActive: false,

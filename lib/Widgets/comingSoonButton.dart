@@ -11,11 +11,6 @@ class ComingSoonButton extends StatefulWidget {
 
 class _ComingSoonButtonState extends State<ComingSoonButton> {
   final List<CourseModel> _coursesEN = [
-    CourseModel(id: 5, name: 'Arrays'),
-    CourseModel(id: 6, name: 'Dictionaries'),
-    CourseModel(id: 7, name: 'Sets'),
-    CourseModel(id: 8, name: 'Functions'),
-    CourseModel(id: 9, name: 'Optionals'),
     CourseModel(id: 10, name: 'Classes and Structures'),
     CourseModel(id: 11, name: 'Enumerations'),
     CourseModel(id: 12, name: 'Protocols and Delegation'),

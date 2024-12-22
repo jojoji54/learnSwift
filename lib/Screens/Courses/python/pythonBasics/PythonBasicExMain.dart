@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:learnswift/Screens/Courses/python/pythonBasics/Ex/pythonBasicsEx147.dart';
+import 'package:learnswift/Screens/Courses/python/pythonBasics/Ex/pythonBasicsEx148.dart';
+import 'package:learnswift/Screens/Courses/python/pythonBasics/Ex/pythonBasicsEx149.dart';
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 
 class PythonBasicsExMain extends StatefulWidget {
@@ -74,6 +76,16 @@ class _PythonBasicsExMainState extends State<PythonBasicsExMain> {
                 id: 147,
                 title: widget.title, completed: widget.completed
               ),
+               if (widget.id == 148)
+              PythonBasicsEx148(
+                id: 148,
+                title: widget.title, completed: widget.completed
+              ),
+              // if (widget.id == 149)
+             /*  PythonBasicsEx149(
+                id: 149,
+                title: widget.title, completed: widget.completed
+              ), */
           ],
         ));
   }

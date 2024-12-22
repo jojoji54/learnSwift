@@ -1,4 +1,4 @@
-import 'package:learnswift/Screens/Courses/python/pythonBasics/swiftBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
 import 'package:learnswift/data/courses/Python/pythonBasics/pyBasicsExModelListEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 

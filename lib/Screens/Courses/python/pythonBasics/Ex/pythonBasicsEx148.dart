@@ -1,29 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart'; // Importa las localizaciones generadas automáticamente
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/data/Constant/constant.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:provider/provider.dart';
 
-import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
-
-class PythonBasicsEx147 extends StatefulWidget {
+class PythonBasicsEx148 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
-  const PythonBasicsEx147({super.key, required this.title, required this.id, required this.completed});
+  const PythonBasicsEx148({super.key, required this.title, required this.id, required this.completed});
 
   @override
-  State<PythonBasicsEx147> createState() => _PythonBasicsEx147State();
+  State<PythonBasicsEx148> createState() => _PythonBasicsEx148State();
 }
 
-class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
+class _PythonBasicsEx148State extends State<PythonBasicsEx148> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.grey;
 
   final RegExp _codeRegex = RegExp(
-    r"^.*print\s*\(\s*.*\s*\).*$",
+    r"^\s*[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\d+\s*\n\s*[a-zA-Z_][a-zA-Z0-9_]*\s*=\s*\d+\s*\n\s*print\s*\(\s*[a-zA-Z_][a-zA-Z0-9_]*\s*[+\-*/]\s*[a-zA-Z_][a-zA-Z0-9_]*\s*\)\s*$",
     multiLine: true,
   );
 
@@ -63,7 +62,7 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
     );
   }
 
-  void _validateInput(String userInput, AllProvider allprovider) {
+  void _validateInput(String userInput, AllProvider allProvider) {
     if (_codeRegex.hasMatch(userInput)) {
       setState(() {
         _inputTextColor = Colors.green;
@@ -75,19 +74,19 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
     }
   }
 
-  void _submit(AllProvider allprovider) {
+  void _submit(AllProvider allProvider) {
     final userInput = _controller.text.trim();
 
     if (_codeRegex.hasMatch(userInput)) {
       purchaseManagerHive.updatePurchase(widget.id,
           purchased: true, completed: true);
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed = true;
-      allprovider.setData(allprovider.data);
+      allProvider.data[Constant.catIndex].catExercise[widget.id].completed = true;
+      allProvider.setData(allProvider.data);
       _controller.clear();
 
       _showDialog(
-        AppLocalizations.of(context)!.pythonCorrectTitle,
-        AppLocalizations.of(context)!.pythonCorrectExplanation,
+        AppLocalizations.of(context)!.pythonCorrectTitle2,
+        AppLocalizations.of(context)!.pythonCorrectExplanation2,
         titleColor: Colors.green,
       );
     } else {
@@ -98,18 +97,18 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          AppLocalizations.of(context)!.pythonHintTitle1,
-          AppLocalizations.of(context)!.pythonHintContent1,
+          AppLocalizations.of(context)!.pythonHintTitle5,
+          AppLocalizations.of(context)!.pythonHintContent5,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          AppLocalizations.of(context)!.pythonHintTitle2,
-          AppLocalizations.of(context)!.pythonHintContent2,
+          AppLocalizations.of(context)!.pythonHintTitle6,
+          AppLocalizations.of(context)!.pythonHintContent6,
         );
       } else if (_failedAttempts >= 3) {
         _showDialog(
           AppLocalizations.of(context)!.pythonSolutionTitle,
-          AppLocalizations.of(context)!.pythonSolutionContent,
+          AppLocalizations.of(context)!.pythonSolutionContent3,
           titleColor: Colors.red,
         );
       }
@@ -126,11 +125,11 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonPythonBasics1",
+              heroTag: "introButtonPythonBasics2",
               onPressed: () {
                 _showDialog(
-                  AppLocalizations.of(context)!.pythonInstructionsTitle,
-                  AppLocalizations.of(context)!.pythonInstructionsContent,
+                  AppLocalizations.of(context)!.pythonInstructionsTitle3,
+                  AppLocalizations.of(context)!.pythonInstructionsContent3,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -140,7 +139,7 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonPythonBasics1",
+              heroTag: "runButtonPythonBasics2",
               onPressed: () {
                 _submit(allProvider);
               },
@@ -168,7 +167,7 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
                     ),
                     children: [
                       TextSpan(
-                        text: "${AppLocalizations.of(context)!.pythonExampleTitle}\n",
+                        text: "${AppLocalizations.of(context)!.pythonExampleTitle3}\n",
                         style: TextStyle(color: Colors.grey),
                       ),
                       const TextSpan(
@@ -176,11 +175,11 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
                         style: TextStyle(color: Colors.blue),
                       ),
                       TextSpan(
-                        text: 'print("Hello, Python!")\n',
+                        text: 'a = 10\n>>> b = 20\n>>> print(a + b)\n',
                         style: TextStyle(color: Colors.green),
                       ),
                       TextSpan(
-                        text: AppLocalizations.of(context)!.pythonExampleOutput,
+                        text: AppLocalizations.of(context)!.pythonExampleOutput3,
                         style: TextStyle(color: Colors.grey),
                       ),
                     ],
@@ -201,7 +200,7 @@ class _PythonBasicsEx147State extends State<PythonBasicsEx147> {
                   },
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    hintText: AppLocalizations.of(context)!.pythonEnterCodeHint,
+                    hintText: AppLocalizations.of(context)!.pythonEnterCodeHint3,
                     hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),

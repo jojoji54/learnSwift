@@ -231,7 +231,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                             fontFamily: 'InconsolataRegular',
                                             fontWeight: FontWeight.normal,
                                             color: Colors.black,
-                                            fontSize: 18,
+                                            fontSize: 16,
                                           ),
                                           softWrap:
                                               true, // Ajusta automáticamente a múltiples líneas

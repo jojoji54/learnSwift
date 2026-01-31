@@ -179,7 +179,7 @@ class _CatSelectorScreenState extends State<CatSelectorScreen> {
                                               fontFamily: 'InconsolataRegular',
                                               fontWeight: FontWeight.normal,
                                               color: Colors.black,
-                                              fontSize: 18,
+                                              fontSize: 17,
                                             ),
                                             softWrap:
                                                 true, // Permite múltiples líneas

@@ -4,6 +4,7 @@ import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatemen
 import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListES.dart';
+import 'package:learnswift/data/courses/Swift/LoopsBasics/loopsExModelListES.dart';
 import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListES.dart';
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListES.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListES.dart';
@@ -93,7 +94,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
   CoursesMainModel(
     id: 4,
     generalName: 'Bucles',
-    catExercise: [],
+    catExercise: loopsModelES,
     description:
         'Cubre el uso de bucles como for, while y repeat-while para realizar tareas repetitivas. Vital para reducir la redundancia y automatizar procesos en tu código.',
     numCompletedCourses: 0,

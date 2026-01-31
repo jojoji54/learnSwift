@@ -4,6 +4,7 @@ import 'package:learnswift/Screens/Courses/swift/SwitchStatements/switchStatemen
 import 'package:learnswift/Screens/Courses/swift/ifElse/ifElseExMain.dart';
 import 'package:learnswift/Screens/Courses/swift/swiftBasics/swiftBasicExMain.dart';
 import 'package:learnswift/data/courses/Swift/BooleanBasics/booleanBExModelListZH.dart';
+import 'package:learnswift/data/courses/Swift/LoopsBasics/loopsExModelListZH.dart';
 import 'package:learnswift/data/courses/Swift/ifElseBasics/ifElseExModelListZH.dart';
 import 'package:learnswift/data/courses/Swift/swichStatementsBasics/swichStatementsExModelListZH.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -89,7 +90,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 4,
     generalName: '循环',
-    catExercise: [],
+    catExercise: loopsModelCH,
     description: '涵盖for、while和repeat-while循环，用于完成重复任务。对减少冗余和自动化代码流程至关重要。',
     numCompletedCourses: 0,
     totalCourses: 15,

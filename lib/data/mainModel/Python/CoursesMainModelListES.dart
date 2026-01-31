@@ -1,12 +1,13 @@
-
+import 'package:learnswift/data/courses/Python/pythonBasics/pyBasicsExModelListES.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
+import '../../../Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
+
 List<CoursesMainModel> coursesPythonMainModelListES = [
-  /* List<CoursesMainModel> coursesPythonMainModelListES = [
   CoursesMainModel(
     id: 0,
-    generalName: 'Fundamentos de Python',
-    catExercise: pythonBasicsModelES,
+    generalName: 'Conceptos básicos',
+    catExercise: pyBasicsExModelListES,
     description:
         'Cubre los conceptos fundamentales de Python, incluyendo la sintaxis, variables y tipos de datos. Proporciona las bases esenciales para empezar a programar en Python.',
     numCompletedCourses: 0,
@@ -23,7 +24,7 @@ List<CoursesMainModel> coursesPythonMainModelListES = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+  /* CoursesMainModel(
     id: 1,
     generalName: 'Control de Flujo',
     catExercise: pythonControlFlowModelES,
@@ -203,6 +204,6 @@ List<CoursesMainModel> coursesPythonMainModelListES = [
       color2: color2,
     ),
   ),
-];
+
 */
 ];

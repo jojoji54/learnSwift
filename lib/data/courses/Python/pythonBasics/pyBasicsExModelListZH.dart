@@ -1,37 +1,37 @@
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
-List<CoursesExModel> pyBasicsExModelListEN = [
+List<CoursesExModel> pyBasicsExModelListZH = [
   CoursesExModel(
     id: 147,
-    exerciseName: 'Hello, Python!',
+    exerciseName: '你好，Python！',
     productID: 'com.mrrubik.learnswift.pythonbasicex147',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(147),
     completed: purchaseManagerHive.getCompleted(147),
   ),
   CoursesExModel(
     id: 148,
-    exerciseName: 'Mathematical Operations',
+    exerciseName: '数学运算',
     productID: 'com.mrrubik.learnswift.pythonbasicex148',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(148),
     completed: purchaseManagerHive.getCompleted(148),
   ),
   CoursesExModel(
     id: 149,
-    exerciseName: 'String Manipulation',
+    exerciseName: '字符串操作',
     productID: 'com.mrrubik.learnswift.pythonbasicex149',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(149),
     completed: purchaseManagerHive.getCompleted(149),
   ),
   CoursesExModel(
     id: 150,
-    exerciseName: 'Variable Types and Assignments',
+    exerciseName: '变量类型与赋值',
     productID: 'com.mrrubik.learnswift.pythonbasicex150',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(150),
     completed: purchaseManagerHive.getCompleted(150),
   ),
 
-  // --- Added (same vibe as Swift list) ---
+  // --- 新增（风格与 Swift 列表一致） ---
 
   CoursesExModel(
     id: 151,
@@ -49,63 +49,63 @@ List<CoursesExModel> pyBasicsExModelListEN = [
   ),
   CoursesExModel(
     id: 153,
-    exerciseName: 'Challenge 1',
+    exerciseName: '挑战 1',
     productID: 'com.mrrubik.learnswift.pythonbasicex153',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(153),
     completed: purchaseManagerHive.getCompleted(153),
   ),
   CoursesExModel(
     id: 154,
-    exerciseName: 'If Statements',
+    exerciseName: 'if 语句',
     productID: 'com.mrrubik.learnswift.pythonbasicex154',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(154),
     completed: purchaseManagerHive.getCompleted(154),
   ),
   CoursesExModel(
     id: 155,
-    exerciseName: 'Logical Operators',
+    exerciseName: '逻辑运算符',
     productID: 'com.mrrubik.learnswift.pythonbasicex155',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(155),
     completed: purchaseManagerHive.getCompleted(155),
   ),
   CoursesExModel(
     id: 156,
-    exerciseName: 'Challenge 2',
+    exerciseName: '挑战 2',
     productID: 'com.mrrubik.learnswift.pythonbasicex156',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(156),
     completed: purchaseManagerHive.getCompleted(156),
   ),
   CoursesExModel(
     id: 157,
-    exerciseName: 'For Loops',
+    exerciseName: 'for 循环',
     productID: 'com.mrrubik.learnswift.pythonbasicex157',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(157),
     completed: purchaseManagerHive.getCompleted(157),
   ),
   CoursesExModel(
     id: 158,
-    exerciseName: 'While Loops',
+    exerciseName: 'while 循环',
     productID: 'com.mrrubik.learnswift.pythonbasicex158',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(158),
     completed: purchaseManagerHive.getCompleted(158),
   ),
   CoursesExModel(
     id: 159,
-    exerciseName: 'Lists',
+    exerciseName: '列表',
     productID: 'com.mrrubik.learnswift.pythonbasicex159',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(159),
     completed: purchaseManagerHive.getCompleted(159),
   ),
   CoursesExModel(
     id: 160,
-    exerciseName: 'Challenge 3',
+    exerciseName: '挑战 3',
     productID: 'com.mrrubik.learnswift.pythonbasicex160',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(160),
     completed: purchaseManagerHive.getCompleted(160),
   ),
   CoursesExModel(
     id: 161,
-    exerciseName: 'Functions',
+    exerciseName: '函数',
     productID: 'com.mrrubik.learnswift.pythonbasicex161',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(161),
     completed: purchaseManagerHive.getCompleted(161),

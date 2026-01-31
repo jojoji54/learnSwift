@@ -1,12 +1,15 @@
 
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
+import '../../../Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
+import '../../courses/Python/pythonBasics/pyBasicsExModelListZH.dart';
+
+
 List<CoursesMainModel> coursesPythonMainModelListZH = [
-  /*List<CoursesMainModel> coursesPythonMainModelListZH = [
   CoursesMainModel(
     id: 0,
     generalName: 'Python基础',
-    catExercise: pythonBasicsModelZH,
+    catExercise: pyBasicsExModelListZH,
     description:
         '涵盖Python的基础概念，包括语法、变量和数据类型。为开始学习Python编程提供必要的基础知识。',
     numCompletedCourses: 0,
@@ -23,7 +26,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+  /* CoursesMainModel(
     id: 1,
     generalName: '控制流',
     catExercise: pythonControlFlowModelZH,
@@ -202,8 +205,9 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color1: color1,
       color2: color2,
     ),
-  ),
+),
+ */ 
 ];
 
-*/
-];
+
+

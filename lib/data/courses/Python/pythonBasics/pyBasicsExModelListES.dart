@@ -1,37 +1,37 @@
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/data/courses/coursesExModel.dart';
 
-List<CoursesExModel> pyBasicsExModelListEN = [
+List<CoursesExModel> pyBasicsExModelListES = [
   CoursesExModel(
     id: 147,
-    exerciseName: 'Hello, Python!',
+    exerciseName: '¡Hola, Python!',
     productID: 'com.mrrubik.learnswift.pythonbasicex147',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(147),
     completed: purchaseManagerHive.getCompleted(147),
   ),
   CoursesExModel(
     id: 148,
-    exerciseName: 'Mathematical Operations',
+    exerciseName: 'Operaciones matemáticas',
     productID: 'com.mrrubik.learnswift.pythonbasicex148',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(148),
     completed: purchaseManagerHive.getCompleted(148),
   ),
   CoursesExModel(
     id: 149,
-    exerciseName: 'String Manipulation',
+    exerciseName: 'Manipulación de cadenas',
     productID: 'com.mrrubik.learnswift.pythonbasicex149',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(149),
     completed: purchaseManagerHive.getCompleted(149),
   ),
   CoursesExModel(
     id: 150,
-    exerciseName: 'Variable Types and Assignments',
+    exerciseName: 'Tipos de variables y asignaciones',
     productID: 'com.mrrubik.learnswift.pythonbasicex150',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(150),
     completed: purchaseManagerHive.getCompleted(150),
   ),
 
-  // --- Added (same vibe as Swift list) ---
+  // --- Añadidos (mismo estilo que la lista de Swift) ---
 
   CoursesExModel(
     id: 151,
@@ -49,63 +49,63 @@ List<CoursesExModel> pyBasicsExModelListEN = [
   ),
   CoursesExModel(
     id: 153,
-    exerciseName: 'Challenge 1',
+    exerciseName: 'Desafío 1',
     productID: 'com.mrrubik.learnswift.pythonbasicex153',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(153),
     completed: purchaseManagerHive.getCompleted(153),
   ),
   CoursesExModel(
     id: 154,
-    exerciseName: 'If Statements',
+    exerciseName: 'Condicionales (if)',
     productID: 'com.mrrubik.learnswift.pythonbasicex154',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(154),
     completed: purchaseManagerHive.getCompleted(154),
   ),
   CoursesExModel(
     id: 155,
-    exerciseName: 'Logical Operators',
+    exerciseName: 'Operadores lógicos',
     productID: 'com.mrrubik.learnswift.pythonbasicex155',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(155),
     completed: purchaseManagerHive.getCompleted(155),
   ),
   CoursesExModel(
     id: 156,
-    exerciseName: 'Challenge 2',
+    exerciseName: 'Desafío 2',
     productID: 'com.mrrubik.learnswift.pythonbasicex156',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(156),
     completed: purchaseManagerHive.getCompleted(156),
   ),
   CoursesExModel(
     id: 157,
-    exerciseName: 'For Loops',
+    exerciseName: 'Bucles for',
     productID: 'com.mrrubik.learnswift.pythonbasicex157',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(157),
     completed: purchaseManagerHive.getCompleted(157),
   ),
   CoursesExModel(
     id: 158,
-    exerciseName: 'While Loops',
+    exerciseName: 'Bucles while',
     productID: 'com.mrrubik.learnswift.pythonbasicex158',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(158),
     completed: purchaseManagerHive.getCompleted(158),
   ),
   CoursesExModel(
     id: 159,
-    exerciseName: 'Lists',
+    exerciseName: 'Listas',
     productID: 'com.mrrubik.learnswift.pythonbasicex159',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(159),
     completed: purchaseManagerHive.getCompleted(159),
   ),
   CoursesExModel(
     id: 160,
-    exerciseName: 'Challenge 3',
+    exerciseName: 'Desafío 3',
     productID: 'com.mrrubik.learnswift.pythonbasicex160',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(160),
     completed: purchaseManagerHive.getCompleted(160),
   ),
   CoursesExModel(
     id: 161,
-    exerciseName: 'Functions',
+    exerciseName: 'Funciones',
     productID: 'com.mrrubik.learnswift.pythonbasicex161',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(161),
     completed: purchaseManagerHive.getCompleted(161),

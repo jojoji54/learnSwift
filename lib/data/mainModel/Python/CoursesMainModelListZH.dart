@@ -4,7 +4,9 @@ import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
 import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
+import '../../../Screens/Courses/python/pythonFunctions/pythonFunctionExMain.dart';
 import '../../courses/Python/pythonBasics/pyBasicsExModelListZH.dart';
+import '../../courses/Python/pythonFunctions/pythonFunctionsModelZH.dart';
 
 
 List<CoursesMainModel> coursesPythonMainModelListZH = [
@@ -48,7 +50,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
- /* CoursesMainModel(
+ CoursesMainModel(
     id: 2,
     generalName: '函数',
     catExercise: pythonFunctionsModelZH,
@@ -68,7 +70,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+  /* CoursesMainModel(
     id: 3,
     generalName: '数据结构',
     catExercise: pythonDataStructuresModelZH,

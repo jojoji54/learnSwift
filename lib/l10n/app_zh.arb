@@ -783,7 +783,315 @@
   "python176HintTitle2": "提示 2",
   "python176HintContent2": "别忘了 print(result)。",
   "python176SolutionTitle": "答案",
-  "python176SolutionContent": "nums = [1, 2, 3, 4]\nhas_even = any(x % 2 == 0 for x in nums)\nprint(has_even)"
+  "python176SolutionContent": "nums = [1, 2, 3, 4]\nhas_even = any(x % 2 == 0 for x in nums)\nprint(has_even)", 
+  "python177ExampleTitle": "示例",
+  "python177ExampleCode1": "def greet():",
+  "python177ExampleCode2": "  print(\"来自函数的问候\")",
+  "python177ExampleCode3": "greet()",
+  "python177ExampleOutput": "输出: 来自函数的问候",
+  "python177EnterCodeHint": "在这里输入你的代码...",
+  "python177InstructionsTitle": "说明",
+  "python177InstructionsContent": "用 def 定义一个函数，在函数里 print 一行文字，然后调用该函数。",
+  "python177HintTitle1": "提示 1",
+  "python177HintContent1": "从这里开始: def greet():",
+  "python177HintTitle2": "提示 2",
+  "python177HintContent2": "在函数内部缩进并使用 print(...), 然后在定义后调用 greet()。",
+  "python177SolutionTitle": "答案",
+  "python177SolutionContent": "def greet():\n  print(\"来自函数的问候\")\n\ngreet()", 
+  "python178ExampleTitle": "示例",
+  "python178ExampleCode1": "def add(a, b):",
+  "python178ExampleCode2": "  return a + b",
+  "python178ExampleCode3": "",
+  "python178ExampleCode4": "print(add(2, 3))",
+  "python178ExampleOutput": "输出: 5",
+  "python178EnterCodeHint": "在这里输入你的代码...",
+  "python178InstructionsTitle": "说明",
+  "python178InstructionsContent": "定义一个带两个参数的函数，用 return 返回结果，然后在 print(...) 里调用它。",
+  "python178HintTitle1": "提示 1",
+  "python178HintContent1": "使用: def name(p1, p2): 并在 return 中使用 p1 或 p2。",
+  "python178HintTitle2": "提示 2",
+  "python178HintContent2": "定义后写: print(name(2, 3))",
+  "python178SolutionTitle": "答案",
+  "python178SolutionContent": "def add(a, b):\n  return a + b\n\nprint(add(2, 3))", 
+   "python179ExampleTitle": "示例",
+  "python179ExampleCode1": "def greet(name):",
+  "python179ExampleCode2": "  print(\"Hello \" + name)",
+  "python179ExampleCode3": "",
+  "python179ExampleCode4": "greet(\"Alex\")",
+  "python179ExampleOutput": "输出: Hello Alex",
+  "python179EnterCodeHint": "在这里输入你的代码...",
+  "python179InstructionsTitle": "说明",
+  "python179InstructionsContent": "定义一个带一个参数的函数。在函数里用这个参数拼接并 print。然后调用函数。",
+  "python179HintTitle1": "提示 1",
+  "python179HintContent1": "使用: def greet(name):",
+  "python179HintTitle2": "提示 2",
+  "python179HintContent2": "在 print 中包含 name，然后写 greet(\"Alex\") 来调用。",
+  "python179SolutionTitle": "答案",
+  "python179SolutionContent": "def greet(name):\n  print(\"Hello \" + name)\n\ngreet(\"Alex\")", 
+   "python180ExampleTitle": "示例",
+  "python180ExampleCode1": "def square(x):",
+  "python180ExampleCode2": "  return x * x",
+  "python180ExampleCode3": "",
+  "python180ExampleCode4": "print(square(4))",
+  "python180ExampleOutput": "输出: 16",
+  "python180EnterCodeHint": "在这里输入你的代码...",
+  "python180InstructionsTitle": "说明",
+  "python180InstructionsContent": "定义一个带参数的函数，用 return 返回结果，然后 print 输出函数调用。",
+  "python180HintTitle1": "提示 1",
+  "python180HintContent1": "使用: def square(x): 并在 return 中使用 x。",
+  "python180HintTitle2": "提示 2",
+  "python180HintContent2": "定义后写: print(square(4))",
+  "python180SolutionTitle": "答案",
+  "python180SolutionContent": "def square(x):\n  return x * x\n\nprint(square(4))", 
+   "python181ExampleTitle": "示例",
+  "python181ExampleCode1": "def greet(name, msg=\"Hello\"):",
+  "python181ExampleCode2": "  print(msg + \" \" + name)",
+  "python181ExampleCode3": "",
+  "python181ExampleCode4": "greet(\"Alex\")",
+  "python181ExampleCode5": "greet(\"Alex\", \"Hey\")",
+  "python181ExampleOutput": "输出: Hello Alex",
+  "python181EnterCodeHint": "在这里输入你的代码...",
+  "python181InstructionsTitle": "说明",
+  "python181InstructionsContent": "写一个带默认参数的函数。在 print 里使用 name 和 msg，然后调用函数。",
+  "python181HintTitle1": "提示 1",
+  "python181HintContent1": "试试: def greet(name, msg=\"Hello\"):",
+  "python181HintTitle2": "提示 2",
+  "python181HintContent2": "在函数里 print(msg + \" \" + name)，然后调用 greet(\"Alex\")。",
+  "python181SolutionTitle": "答案",
+  "python181SolutionContent": "def greet(name, msg=\"Hello\"):\n  print(msg + \" \" + name)\n\ngreet(\"Alex\")", 
+   "python182ExampleTitle": "示例",
+  "python182ExampleCode1": "def min_max(nums):",
+  "python182ExampleCode2": "  return min(nums), max(nums)",
+  "python182ExampleCode3": "",
+  "python182ExampleCode4": "print(min_max([3, 1, 5]))",
+  "python182ExampleOutput": "输出: (1, 5)",
+  "python182EnterCodeHint": "在这里输入你的代码... 🚀",
+
+  "python182InstructionsTitle": "任务",
+  "python182InstructionsContent": "欢迎来到双返回值 🎁🎁\n\n你的任务:\n1. 写一个只有一个参数的函数 (比如 nums)。\n2. 在函数里用 return 返回两个值, 中间用逗号分开。\n   经典思路: return min(nums), max(nums)\n3. 调用函数并用 print 输出结果。\n\n加分: 返回两个值就像送出一个小元组礼包 📦",
+
+  "python182HintTitle1": "提示 1",
+  "python182HintContent1": "关键是逗号: return something, something",
+
+  "python182HintTitle2": "提示 2",
+  "python182HintContent2": "经典组合: return min(nums), max(nums)\n然后: print(min_max([3, 1, 5]))",
+
+  "python182SolutionTitle": "答案",
+  "python182SolutionContent": "def min_max(nums):\n  return min(nums), max(nums)\n\nprint(min_max([3, 1, 5]))", 
+   "python183ExampleTitle": "示例",
+  "python183ExampleCode1": "def describe_pet(animal, name):",
+  "python183ExampleCode2": "  print(name + \" is a \" + animal)",
+  "python183ExampleCode3": "",
+  "python183ExampleCode4": "describe_pet(name=\"Luna\", animal=\"cat\")",
+  "python183ExampleOutput": "输出: Luna is a cat",
+  "python183EnterCodeHint": "在这里输入你的代码... 😄",
+
+  "python183InstructionsTitle": "关键字参数派对",
+  "python183InstructionsContent": "欢迎! 🎉\n\n今天你解锁一个很酷的技巧:\n调用函数时可以写 param=value。\n\n你的任务:\n1. 写一个有两个参数的函数。\n2. 在函数里 print 一句话, 需要用到两个参数。\n3. 用关键字参数调用函数。\n   例子感觉: name=\"Luna\", animal=\"cat\"。\n\n加分: 参数顺序不重要, 随你玩 😈",
+
+  "python183HintTitle1": "提示 1",
+  "python183HintContent1": "思路:\ndef describe_pet(animal, name):\n  print(name + \" is a \" + animal)",
+
+  "python183HintTitle2": "提示 2",
+  "python183HintContent2": "用关键字调用:\ndescribe_pet(name=\"Luna\", animal=\"cat\")\n顺序也可以交换 😄",
+
+  "python183SolutionTitle": "答案",
+  "python183SolutionContent": "def describe_pet(animal, name):\n  print(name + \" is a \" + animal)\n\ndescribe_pet(name=\"Luna\", animal=\"cat\")",
+   "python184ExampleTitle": "示例",
+  "python184ExampleCode1": "def sum_all(*nums):",
+  "python184ExampleCode2": "  total = 0",
+  "python184ExampleCode3": "  for n in nums:",
+  "python184ExampleCode4": "    total += n",
+  "python184ExampleCode5": "  return total",
+  "python184ExampleCode6": "",
+  "python184ExampleCode7": "print(sum_all(1, 2, 3))",
+  "python184ExampleOutput": "输出: 6",
+  "python184EnterCodeHint": "在这里输入你的代码... 🧪✨",
+
+  "python184InstructionsTitle": "无限参数模式 (*args) 🌀",
+  "python184InstructionsContent": "欢迎来到 *args! 🎉\n\n把 *args 想成一个魔法袋子:\n你可以塞进任意数量的数字。\n\n你的任务:\n1) 写: def sum_all(*nums):\n2) 先 total = 0\n3) 用 for 遍历 nums\n4) 每次累加: total += n\n5) return total\n6) 最后 print: print(sum_all(1, 2, 3))\n\n加分: 这相当于解锁 \"无限输入\" 😈",
+
+  "python184HintTitle1": "提示 1",
+  "python184HintContent1": "星号很重要: def sum_all(*nums):",
+
+  "python184HintTitle2": "提示 2",
+  "python184HintContent2": "for 里面写: total += n\n别忘了 return total",
+
+  "python184SolutionTitle": "答案",
+  "python184SolutionContent": "def sum_all(*nums):\n  total = 0\n  for n in nums:\n    total += n\n  return total\n\nprint(sum_all(1, 2, 3))", 
+   "python185ExampleTitle": "示例",
+  "python185ExampleCode1": "def show_profile(**info):",
+  "python185ExampleCode2": "  print(info.get(\"name\"))",
+  "python185ExampleCode3": "  print(info.get(\"level\"))",
+  "python185ExampleCode4": "",
+  "python185ExampleCode5": "show_profile(name=\"Kai\", level=5)",
+  "python185ExampleCode6": "print(\"Done\")",
+  "python185ExampleOutput": "输出:\nKai\n5\nDone",
+  "python185EnterCodeHint": "在这里输入你的代码... 😄",
+
+  "python185InstructionsTitle": "隐藏字典模式 (**kwargs) 🕵️",
+  "python185InstructionsContent": "欢迎! 🎉\n\n今天你解锁 **kwargs。\n它就像把带名字的参数打包成一个小字典交给函数。\n\n你的任务:\n1) 写一个带 **kwargs 的函数 (例如: def show_profile(**info):)\n2) 在函数里用 print(...) 读取 info 里的值\n3) 用关键字参数调用:\n   show_profile(name=\"Kai\", level=5)\n\n别想太多，跑起来就赢了 😈✨",
+
+  "python185HintTitle1": "提示 1",
+  "python185HintContent1": "双星号必不可少: def show_profile(**info):",
+
+  "python185HintTitle2": "提示 2",
+  "python185HintContent2": "函数里可以: print(info.get(\"name\"))\n然后调用: show_profile(name=\"Kai\", level=5)",
+
+  "python185SolutionTitle": "答案",
+  "python185SolutionContent": "def show_profile(**info):\n  print(info.get(\"name\"))\n  print(info.get(\"level\"))\n\nshow_profile(name=\"Kai\", level=5)",
+   "python186ExampleTitle": "示例",
+  "python186ExampleCode1": "def mega_print(*args, **kwargs):",
+  "python186ExampleCode2": "  print(args)",
+  "python186ExampleCode3": "  print(kwargs)",
+  "python186ExampleCode4": "",
+  "python186ExampleCode5": "mega_print(\"A\", \"B\", 3, mode=\"fast\", level=2)",
+  "python186ExampleCode6": "print(\"Done\")",
+"python186ExampleOutput": "输出:\n('A', 'B', 3)\n'{''mode'': ''fast'', ''level'': 2}'\nDone",
+  "python186EnterCodeHint": "在这里输入你的代码... 💥",
+
+  "python186InstructionsTitle": "Boss: *args + **kwargs 💣",
+  "python186InstructionsContent": "好了，Boss 来了 😈🔥\n\n你的任务:\n1) 写一个同时接收 *args 和 **kwargs 的函数。\n   例子: def mega_print(*args, **kwargs):\n2) 在函数里:\n   - print(args)\n   - print(kwargs)\n3) 调用时:\n   - 至少一个普通参数\n   - 至少两个关键字参数\n\nDon''t panic 😄 这只是 Python 的灵活玩法。",
+
+  "python186HintTitle1": "提示 1",
+  "python186HintContent1": "*args 收集普通参数\n**kwargs 收集带名字的参数",
+
+  "python186HintTitle2": "提示 2",
+  "python186HintContent2": "调用示例:\nmega_print(\"A\", 3, mode=\"fast\", level=2)\n函数里直接 print(args) 和 print(kwargs) 就行",
+
+  "python186SolutionTitle": "答案",
+  "python186SolutionContent": "def mega_print(*args, **kwargs):\n  print(args)\n  print(kwargs)\n\nmega_print(\"A\", \"B\", 3, mode=\"fast\", level=2)", 
+   "python187ExampleTitle": "示例",
+  "python187ExampleCode1": "items = [(\"a\", 3), (\"b\", 1), (\"c\", 2)]",
+  "python187ExampleCode2": "sorted_items = sorted(items, key=lambda x: x[1])",
+  "python187ExampleCode3": "",
+  "python187ExampleCode4": "print(sorted_items)",
+  "python187ExampleCode5": "print(\"Done\")",
+  "python187ExampleOutput": "输出:\n[('b', 1), ('c', 2), ('a', 3)]\nDone",
+  "python187EnterCodeHint": "在这里输入你的代码... 😄",
+
+  "python187InstructionsTitle": "lambda 排序小技巧 🧠✨",
+  "python187InstructionsContent": "欢迎! 🎉\n\n今天来个很帅的小技巧:\n用 lambda 来排序。\n\n你的任务:\n1) 创建一个元组列表: items = [(\"a\", 3), (\"b\", 1)]\n2) 用第二个值排序:\n   sorted(items, key=lambda x: x[1])\n3) print 输出排序后的结果。\n\n就像在对 Python 说: \"按这个来排\" 😈",
+
+  "python187HintTitle1": "提示 1",
+  "python187HintContent1": "用 key=lambda x: x[1] 按第二个元素排序。",
+
+  "python187HintTitle2": "提示 2",
+  "python187HintContent2": "示例:\nsorted_items = sorted(items, key=lambda x: x[1])\nprint(sorted_items)",
+
+  "python187SolutionTitle": "答案",
+  "python187SolutionContent": "items = [(\"a\", 3), (\"b\", 1), (\"c\", 2)]\nsorted_items = sorted(items, key=lambda x: x[1])\nprint(sorted_items)", 
+   "python188ExampleTitle": "示例",
+  "python188ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python188ExampleCode2": "doubles = list(map(lambda x: x * 2, nums))",
+  "python188ExampleCode3": "print(doubles)",
+  "python188ExampleCode4": "print(\"Done\")",
+  "python188ExampleOutput": "输出:\n[2, 4, 6, 8]\nDone",
+  "python188EnterCodeHint": "在这里输入你的代码... ⚡",
+
+  "python188InstructionsTitle": "map + lambda 加速模式 ⚡",
+  "python188InstructionsContent": "欢迎! 🎉\n\n今天用超快方式处理列表:\nmap + lambda。\n\n你的任务:\n1) 创建一个 nums 列表。\n2) 用 map + lambda 把每个数字乘以 2。\n3) 用 list(...) 转成列表。\n4) print 输出结果。\n\nDon''t panic 😄 直接把它们翻倍就行。",
+
+  "python188HintTitle1": "提示 1",
+  "python188HintContent1": "模板:\ndoubles = list(map(lambda x: x * 2, nums))",
+
+  "python188HintTitle2": "提示 2",
+  "python188HintContent2": "最后记得:\nprint(doubles)",
+
+  "python188SolutionTitle": "答案",
+  "python188SolutionContent": "nums = [1, 2, 3, 4]\ndoubles = list(map(lambda x: x * 2, nums))\nprint(doubles)", 
+    "python189ExampleTitle": "示例",
+  "python189ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python189ExampleCode2": "evens = list(filter(lambda x: x % 2 == 0, nums))",
+  "python189ExampleCode3": "print(evens)",
+  "python189ExampleCode4": "print(\"Done\")",
+  "python189ExampleOutput": "输出:\n[2, 4, 6]\nDone",
+  "python189EnterCodeHint": "在这里输入你的代码... 🧼✨",
+
+  "python189InstructionsTitle": "filter + lambda: 只留下被选中的 😈",
+  "python189InstructionsContent": "欢迎! 🎉\n\n今天你要像门卫一样筛选列表 😎\n只有偶数能进来。\n\n你的任务:\n1) 创建 nums = [ ... ]\n2) 用 filter + lambda 保留 x % 2 == 0 的元素\n3) 用 list(...) 转成列表\n4) print 输出结果\n\nDon''t let odd numbers sneak in 😈 (别让奇数混进来)",
+
+  "python189HintTitle1": "提示 1",
+  "python189HintContent1": "模板:\nevens = list(filter(lambda x: x % 2 == 0, nums))",
+
+  "python189HintTitle2": "提示 2",
+  "python189HintContent2": "最后记得:\nprint(evens)",
+
+  "python189SolutionTitle": "答案",
+  "python189SolutionContent": "nums = [1, 2, 3, 4, 5, 6]\nevens = list(filter(lambda x: x % 2 == 0, nums))\nprint(evens)",
+   "python190ExampleTitle": "示例",
+  "python190ExampleCode1": "nums = [1, 2, 3, 4, 5]",
+  "python190ExampleCode2": "squares = [x * x for x in nums]",
+  "python190ExampleCode3": "print(squares)",
+  "python190ExampleCode4": "print(\"Done\")",
+  "python190ExampleOutput": "输出:\n[1, 4, 9, 16, 25]\nDone",
+  "python190EnterCodeHint": "在这里输入你的代码... 🧠✨",
+
+  "python190InstructionsTitle": "列表推导式威力 🧠⚡",
+  "python190InstructionsContent": "欢迎! 🎉\n\n现在来玩 Python 很酷的功能: 列表推导式。\n\n你的任务:\n1) 创建 nums = [1, 2, 3, ...]\n2) 用一行生成平方列表:\n   squares = [x * x for x in nums]\n3) print 输出结果。\n\nDon''t blink 😈 你刚用一行写了一个循环。",
+
+  "python190HintTitle1": "提示 1",
+  "python190HintContent1": "模板:\nsquares = [x * x for x in nums]",
+
+  "python190HintTitle2": "提示 2",
+  "python190HintContent2": "然后输出:\nprint(squares)",
+
+  "python190SolutionTitle": "答案",
+  "python190SolutionContent": "nums = [1, 2, 3, 4, 5]\nsquares = [x * x for x in nums]\nprint(squares)",
+   "python191ExampleTitle": "示例",
+  "python191ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python191ExampleCode2": "evens = [x for x in nums if x % 2 == 0]",
+  "python191ExampleCode3": "print(evens)",
+  "python191ExampleCode4": "print(\"Done\")",
+  "python191ExampleOutput": "输出:\n[2, 4, 6]\nDone",
+  "python191EnterCodeHint": "在这里输入你的代码... 🥷✨",
+
+  "python191InstructionsTitle": "列表推导式 + if（忍者模式）🥷",
+  "python191InstructionsContent": "欢迎! 🎉\n\n现在来一个非常 Pythonic 的操作:\n列表推导式 + if。\n\n你的任务:\n1) 创建 nums = [ ... ]\n2) 一行生成偶数列表:\n   evens = [x for x in nums if x % 2 == 0]\n3) print 输出 evens。\n\nDon''t blink 😈 你刚刚像忍者一样过滤了列表。",
+
+  "python191HintTitle1": "提示 1",
+  "python191HintContent1": "模板:\nevens = [x for x in nums if x % 2 == 0]",
+
+  "python191HintTitle2": "提示 2",
+  "python191HintContent2": "然后:\nprint(evens)",
+
+  "python191SolutionTitle": "答案",
+  "python191SolutionContent": "nums = [1, 2, 3, 4, 5, 6]\nevens = [x for x in nums if x % 2 == 0]\nprint(evens)", 
+   "python192ExampleTitle": "示例",
+  "python192ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python192ExampleCode2": "squares = '{x: x * x for x in nums}'",
+  "python192ExampleCode3": "print(squares)",
+  "python192ExampleCode4": "print(\"Done\")",
+  "python192ExampleOutput": "输出:\n'{1: 1, 2: 4, 3: 9, 4: 16}'\nDone",
+  "python192EnterCodeHint": "在这里输入你的代码... 😈📦",
+
+  "python192InstructionsTitle": "字典推导式来啦 📦✨",
+  "python192InstructionsContent": "欢迎! 🎉\n\n用一行生成字典 😈\n\n你的任务:\n1) 创建 nums = [1, 2, 3, 4]\n2) 写字典推导式:\n   squares = '{x: x * x for x in nums}'\n3) print 输出字典。\n\nDon''t panic 😄 这只是 Python 的帅气写法。",
+
+  "python192HintTitle1": "提示 1",
+  "python192HintContent1": "模板:\nsquares = '{x: x * x for x in nums}'",
+
+  "python192HintTitle2": "提示 2",
+  "python192HintContent2": "然后:\nprint(squares)",
+
+  "python192SolutionTitle": "答案",
+  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

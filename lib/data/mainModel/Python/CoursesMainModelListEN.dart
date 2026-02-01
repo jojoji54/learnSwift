@@ -4,6 +4,8 @@ import 'package:learnswift/data/courses/Python/pythonControlFlow/pythonControlFl
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
+import '../../../Screens/Courses/python/pythonFunctions/pythonFunctionExMain.dart';
+import '../../courses/Python/pythonFunctions/pythonFunctionsModelEN.dart';
 
 List<CoursesMainModel> coursesPythonMainModelListEN = [
   CoursesMainModel(
@@ -46,7 +48,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-  /*CoursesMainModel(
+ CoursesMainModel(
     id: 2,
     generalName: 'Functions',
     catExercise: pythonFunctionsModelEN,
@@ -66,7 +68,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+  /* CoursesMainModel(
     id: 3,
     generalName: 'Data Structures',
     catExercise: pythonDataStructuresModelEN,

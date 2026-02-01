@@ -778,7 +778,315 @@
   "python176HintTitle2": "Pista 2",
   "python176HintContent2": "Asegúrate de hacer print(resultado).",
   "python176SolutionTitle": "Solución",
-  "python176SolutionContent": "nums = [1, 2, 3, 4]\nhas_even = any(x % 2 == 0 for x in nums)\nprint(has_even)"
+  "python176SolutionContent": "nums = [1, 2, 3, 4]\nhas_even = any(x % 2 == 0 for x in nums)\nprint(has_even)", 
+    "python177ExampleTitle": "Ejemplo",
+  "python177ExampleCode1": "def greet():",
+  "python177ExampleCode2": "  print(\"Hola desde una funcion\")",
+  "python177ExampleCode3": "greet()",
+  "python177ExampleOutput": "Salida: Hola desde una funcion",
+  "python177EnterCodeHint": "Escribe tu codigo aqui...",
+  "python177InstructionsTitle": "Instrucciones",
+  "python177InstructionsContent": "Define una funcion con def, imprime un mensaje dentro y luego llama a la funcion.",
+  "python177HintTitle1": "Pista 1",
+  "python177HintContent1": "Empieza con: def greet():",
+  "python177HintTitle2": "Pista 2",
+  "python177HintContent2": "Dentro de la funcion, indenta y usa print(...), luego llama greet() despues de definirla.",
+  "python177SolutionTitle": "Solucion",
+  "python177SolutionContent": "def greet():\n  print(\"Hola desde una funcion\")\n\ngreet()", 
+   "python178ExampleTitle": "Ejemplo",
+  "python178ExampleCode1": "def add(a, b):",
+  "python178ExampleCode2": "  return a + b",
+  "python178ExampleCode3": "",
+  "python178ExampleCode4": "print(add(2, 3))",
+  "python178ExampleOutput": "Salida: 5",
+  "python178EnterCodeHint": "Escribe tu codigo aqui...",
+  "python178InstructionsTitle": "Instrucciones",
+  "python178InstructionsContent": "Crea una funcion con dos parametros, devuelve un resultado y llamala dentro de print(...).",
+  "python178HintTitle1": "Pista 1",
+  "python178HintContent1": "Usa: def nombre(p1, p2): y devuelve algo usando p1 o p2.",
+  "python178HintTitle2": "Pista 2",
+  "python178HintContent2": "Despues de definirla, haz: print(nombre(2, 3))",
+  "python178SolutionTitle": "Solucion",
+  "python178SolutionContent": "def add(a, b):\n  return a + b\n\nprint(add(2, 3))", 
+  "python179ExampleTitle": "Ejemplo",
+  "python179ExampleCode1": "def greet(name):",
+  "python179ExampleCode2": "  print(\"Hola \" + name)",
+  "python179ExampleCode3": "",
+  "python179ExampleCode4": "greet(\"Alex\")",
+  "python179ExampleOutput": "Salida: Hola Alex",
+  "python179EnterCodeHint": "Escribe tu codigo aqui...",
+  "python179InstructionsTitle": "Instrucciones",
+  "python179InstructionsContent": "Crea una funcion con un parametro. Dentro de la funcion, imprime un mensaje usando ese parametro. Luego llama a la funcion.",
+  "python179HintTitle1": "Pista 1",
+  "python179HintContent1": "Usa: def greet(name):",
+  "python179HintTitle2": "Pista 2",
+  "python179HintContent2": "Dentro, imprime algo que incluya name. Luego llama greet(\"Alex\").",
+  "python179SolutionTitle": "Solucion",
+  "python179SolutionContent": "def greet(name):\n  print(\"Hola \" + name)\n\ngreet(\"Alex\")", 
+   "python180ExampleTitle": "Ejemplo",
+  "python180ExampleCode1": "def square(x):",
+  "python180ExampleCode2": "  return x * x",
+  "python180ExampleCode3": "",
+  "python180ExampleCode4": "print(square(4))",
+  "python180ExampleOutput": "Salida: 16",
+  "python180EnterCodeHint": "Escribe tu codigo aqui...",
+  "python180InstructionsTitle": "Instrucciones",
+  "python180InstructionsContent": "Crea una funcion con un parametro. Usa return para devolver un resultado y luego imprime la llamada a la funcion.",
+  "python180HintTitle1": "Pista 1",
+  "python180HintContent1": "Usa: def square(x): y devuelve algo usando x.",
+  "python180HintTitle2": "Pista 2",
+  "python180HintContent2": "Despues de definirla, usa: print(square(4))",
+  "python180SolutionTitle": "Solucion",
+  "python180SolutionContent": "def square(x):\n  return x * x\n\nprint(square(4))", 
+  "python181ExampleTitle": "Ejemplo",
+  "python181ExampleCode1": "def greet(name, msg=\"Hola\"):",
+  "python181ExampleCode2": "  print(msg + \" \" + name)",
+  "python181ExampleCode3": "",
+  "python181ExampleCode4": "greet(\"Alex\")",
+  "python181ExampleCode5": "greet(\"Alex\", \"Ey\")",
+  "python181ExampleOutput": "Salida: Hola Alex",
+  "python181EnterCodeHint": "Escribe tu codigo aqui...",
+  "python181InstructionsTitle": "Instrucciones",
+  "python181InstructionsContent": "Crea una funcion con un parametro por defecto. Usa name y msg dentro de print y luego llama a la funcion.",
+  "python181HintTitle1": "Pista 1",
+  "python181HintContent1": "Prueba: def greet(name, msg=\"Hola\"):",
+  "python181HintTitle2": "Pista 2",
+  "python181HintContent2": "Dentro usa print(msg + \" \" + name) y luego llama greet(\"Alex\").",
+  "python181SolutionTitle": "Solucion",
+  "python181SolutionContent": "def greet(name, msg=\"Hola\"):\n  print(msg + \" \" + name)\n\ngreet(\"Alex\")", 
+   "python182ExampleTitle": "Ejemplo",
+  "python182ExampleCode1": "def min_max(nums):",
+  "python182ExampleCode2": "  return min(nums), max(nums)",
+  "python182ExampleCode3": "",
+  "python182ExampleCode4": "print(min_max([3, 1, 5]))",
+  "python182ExampleOutput": "Salida: (1, 5)",
+  "python182EnterCodeHint": "Escribe tu codigo aqui... 🚀",
+
+  "python182InstructionsTitle": "Mision",
+  "python182InstructionsContent": "Bienvenido a los retornos dobles 🎁🎁\n\nTu mision:\n1. Crea una funcion con UN parametro (por ejemplo nums).\n2. Dentro, usa return con DOS valores separados por coma.\n   Idea clasica: return min(nums), max(nums)\n3. Llama a la funcion y muestra el resultado con print.\n\nBonus: devolver dos cosas es como mandar un mini paquete (tupla) 📦",
+
+  "python182HintTitle1": "Pista 1",
+  "python182HintContent1": "El truco esta en la coma: return algo, algo",
+
+  "python182HintTitle2": "Pista 2",
+  "python182HintContent2": "Combo tipico: return min(nums), max(nums)\nY luego: print(min_max([3, 1, 5]))",
+
+  "python182SolutionTitle": "Solucion",
+  "python182SolutionContent": "def min_max(nums):\n  return min(nums), max(nums)\n\nprint(min_max([3, 1, 5]))", 
+   "python183ExampleTitle": "Ejemplo",
+  "python183ExampleCode1": "def describe_pet(animal, name):",
+  "python183ExampleCode2": "  print(name + \" es un \" + animal)",
+  "python183ExampleCode3": "",
+  "python183ExampleCode4": "describe_pet(name=\"Luna\", animal=\"gato\")",
+  "python183ExampleOutput": "Salida: Luna es un gato",
+  "python183EnterCodeHint": "Escribe tu codigo aqui... 😄",
+
+  "python183InstructionsTitle": "Fiesta de keyword arguments",
+  "python183InstructionsContent": "Bienvenido! 🎉\n\nHoy desbloqueas un truco guapo de Python:\npuedes llamar una funcion con param=valor.\n\nTu mision:\n1. Crea una funcion con DOS parametros.\n2. Dentro, imprime una frase usando AMBOS parametros.\n3. Llama a la funcion usando keyword arguments.\n   Ejemplo vibe: name=\"Luna\", animal=\"gato\".\n\nBonus: El orden no importa. Viva el caos 😈",
+
+  "python183HintTitle1": "Pista 1",
+  "python183HintContent1": "Idea:\nDefine: def describe_pet(animal, name):\nDentro: print(name + \" es un \" + animal)",
+
+  "python183HintTitle2": "Pista 2",
+  "python183HintContent2": "Llamada con keywords:\ndescribe_pet(name=\"Luna\", animal=\"gato\")\nPuedes cambiar el orden tambien 😄",
+
+  "python183SolutionTitle": "Solucion",
+  "python183SolutionContent": "def describe_pet(animal, name):\n  print(name + \" es un \" + animal)\n\ndescribe_pet(name=\"Luna\", animal=\"gato\")",
+   "python184ExampleTitle": "Ejemplo",
+  "python184ExampleCode1": "def sum_all(*nums):",
+  "python184ExampleCode2": "  total = 0",
+  "python184ExampleCode3": "  for n in nums:",
+  "python184ExampleCode4": "    total += n",
+  "python184ExampleCode5": "  return total",
+  "python184ExampleCode6": "",
+  "python184ExampleCode7": "print(sum_all(1, 2, 3))",
+  "python184ExampleOutput": "Salida: 6",
+  "python184EnterCodeHint": "Suelta tu codigo aqui... 🧪✨",
+
+  "python184InstructionsTitle": "Modo argumentos infinitos (*args) 🌀",
+  "python184InstructionsContent": "Bienvenido a *args! 🎉\n\nPiensa en *args como una bolsa magica:\npuedes meter tantos numeros como quieras.\n\nTu mision:\n1) Crea una funcion tipo: def sum_all(*nums):\n2) Empieza con total = 0\n3) Recorre nums con un for\n4) Suma cada numero: total += n\n5) return total\n6) Imprime: print(sum_all(1, 2, 3))\n\nBonus: si esto te sale, acabas de desbloquear \"inputs infinitos\" 😈",
+
+  "python184HintTitle1": "Pista 1",
+  "python184HintContent1": "El asterisco es clave: def sum_all(*nums):",
+
+  "python184HintTitle2": "Pista 2",
+  "python184HintContent2": "Dentro del for haz: total += n\nY no te olvides del return total",
+
+  "python184SolutionTitle": "Solucion",
+  "python184SolutionContent": "def sum_all(*nums):\n  total = 0\n  for n in nums:\n    total += n\n  return total\n\nprint(sum_all(1, 2, 3))", 
+   "python185ExampleTitle": "Ejemplo",
+  "python185ExampleCode1": "def show_profile(**info):",
+  "python185ExampleCode2": "  print(info.get(\"name\"))",
+  "python185ExampleCode3": "  print(info.get(\"level\"))",
+  "python185ExampleCode4": "",
+  "python185ExampleCode5": "show_profile(name=\"Kai\", level=5)",
+  "python185ExampleCode6": "print(\"Listo\")",
+  "python185ExampleOutput": "Salida:\nKai\n5\nListo",
+  "python185EnterCodeHint": "Suelta tu codigo aqui... 😄",
+
+  "python185InstructionsTitle": "Modo diccionario secreto (**kwargs) 🕵️",
+  "python185InstructionsContent": "Bienvenido! 🎉\n\nHoy desbloqueas **kwargs.\nEs como si tu funcion recibiera un diccionario secreto con valores por nombre.\n\nTu mision:\n1) Crea una funcion con **kwargs (ejemplo: def show_profile(**info):)\n2) Dentro, usa print(...) y lee al menos un valor de info\n3) Llama a la funcion con keyword arguments:\n   show_profile(name=\"Kai\", level=5)\n\nNo le des demasiadas vueltas. Hazlo funcionar y a disfrutar 😈✨",
+
+  "python185HintTitle1": "Pista 1",
+  "python185HintContent1": "El doble asterisco es obligatorio: def show_profile(**info):",
+
+  "python185HintTitle2": "Pista 2",
+  "python185HintContent2": "Dentro: print(info.get(\"name\"))\nLuego: show_profile(name=\"Kai\", level=5)",
+
+  "python185SolutionTitle": "Solucion",
+  "python185SolutionContent": "def show_profile(**info):\n  print(info.get(\"name\"))\n  print(info.get(\"level\"))\n\nshow_profile(name=\"Kai\", level=5)", 
+   "python186ExampleTitle": "Ejemplo",
+  "python186ExampleCode1": "def mega_print(*args, **kwargs):",
+  "python186ExampleCode2": "  print(args)",
+  "python186ExampleCode3": "  print(kwargs)",
+  "python186ExampleCode4": "",
+  "python186ExampleCode5": "mega_print(\"A\", \"B\", 3, mode=\"fast\", level=2)",
+  "python186ExampleCode6": "print(\"Listo\")",
+"python186ExampleOutput": "Salida:\n('A', 'B', 3)\n'{''mode'': ''fast'', ''level'': 2}'\nListo",
+  "python186EnterCodeHint": "Escribe tu codigo aqui... 💥",
+
+  "python186InstructionsTitle": "Boss fight: *args + **kwargs 💣",
+  "python186InstructionsContent": "Vale, ahora si: boss fight 😈🔥\n\nTu mision:\n1) Crea una funcion que reciba *args y **kwargs.\n   Ejemplo: def mega_print(*args, **kwargs):\n2) Dentro:\n   - print(args)\n   - print(kwargs)\n3) Llamala con:\n   - al menos UN argumento normal\n   - al menos DOS keyword arguments\n\nDon''t panic 😄 (tranqui). Python solo esta siendo flexible.",
+
+  "python186HintTitle1": "Pista 1",
+  "python186HintContent1": "Necesitas las dos cosas:\n*args = lo normal\n**kwargs = lo nombrado",
+
+  "python186HintTitle2": "Pista 2",
+  "python186HintContent2": "Ejemplo de llamada:\nmega_print(\"A\", 3, mode=\"fast\", level=2)\nDentro basta con print(args) y print(kwargs)",
+
+  "python186SolutionTitle": "Solucion",
+  "python186SolutionContent": "def mega_print(*args, **kwargs):\n  print(args)\n  print(kwargs)\n\nmega_print(\"A\", \"B\", 3, mode=\"fast\", level=2)", 
+   "python187ExampleTitle": "Ejemplo",
+  "python187ExampleCode1": "items = [(\"a\", 3), (\"b\", 1), (\"c\", 2)]",
+  "python187ExampleCode2": "sorted_items = sorted(items, key=lambda x: x[1])",
+  "python187ExampleCode3": "",
+  "python187ExampleCode4": "print(sorted_items)",
+  "python187ExampleCode5": "print(\"Listo\")",
+  "python187ExampleOutput": "Salida:\n[('b', 1), ('c', 2), ('a', 3)]\nListo",
+  "python187EnterCodeHint": "Escribe tu codigo aqui... 😄",
+
+  "python187InstructionsTitle": "Truco de ordenacion con lambda 🧠✨",
+  "python187InstructionsContent": "Bienvenido! 🎉\n\nHoy toca un truquito fino:\nOrdenar una lista usando lambda.\n\nTu mision:\n1) Crea una lista de tuplas: items = [(\"a\", 3), (\"b\", 1)]\n2) Ordenala por el SEGUNDO valor con:\n   sorted(items, key=lambda x: x[1])\n3) Imprime el resultado ordenado.\n\nEs como decirle a Python: \"Ordena por ESTA parte\" 😈",
+
+  "python187HintTitle1": "Pista 1",
+  "python187HintContent1": "Usa key=lambda x: x[1] para ordenar por el segundo elemento.",
+
+  "python187HintTitle2": "Pista 2",
+  "python187HintContent2": "Ejemplo:\nsorted_items = sorted(items, key=lambda x: x[1])\nprint(sorted_items)",
+
+  "python187SolutionTitle": "Solucion",
+  "python187SolutionContent": "items = [(\"a\", 3), (\"b\", 1), (\"c\", 2)]\nsorted_items = sorted(items, key=lambda x: x[1])\nprint(sorted_items)", 
+   "python188ExampleTitle": "Ejemplo",
+  "python188ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python188ExampleCode2": "doubles = list(map(lambda x: x * 2, nums))",
+  "python188ExampleCode3": "print(doubles)",
+  "python188ExampleCode4": "print(\"Listo\")",
+  "python188ExampleOutput": "Salida:\n[2, 4, 6, 8]\nListo",
+  "python188EnterCodeHint": "Escribe tu codigo aqui... ⚡",
+
+  "python188InstructionsTitle": "map + lambda en modo turbo ⚡",
+  "python188InstructionsContent": "Bienvenido! 🎉\n\nHoy transformas una lista en modo turbo:\nmap + lambda.\n\nTu mision:\n1) Crea una lista llamada nums con algunos numeros.\n2) Usa map con una lambda para multiplicar cada numero por 2.\n3) Conviertelo en lista con list(...).\n4) Imprime el resultado.\n\nDon''t overthink it 😈 (tranqui). Solo duplica todo.",
+
+  "python188HintTitle1": "Pista 1",
+  "python188HintContent1": "Patron:\ndoubles = list(map(lambda x: x * 2, nums))",
+
+  "python188HintTitle2": "Pista 2",
+  "python188HintContent2": "No te olvides del print:\nprint(doubles)",
+
+  "python188SolutionTitle": "Solucion",
+  "python188SolutionContent": "nums = [1, 2, 3, 4]\ndoubles = list(map(lambda x: x * 2, nums))\nprint(doubles)", 
+   "python189ExampleTitle": "Ejemplo",
+  "python189ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python189ExampleCode2": "evens = list(filter(lambda x: x % 2 == 0, nums))",
+  "python189ExampleCode3": "print(evens)",
+  "python189ExampleCode4": "print(\"Listo\")",
+  "python189ExampleOutput": "Salida:\n[2, 4, 6]\nListo",
+  "python189EnterCodeHint": "Escribe tu codigo aqui... 🧼✨",
+
+  "python189InstructionsTitle": "filter + lambda: Solo pasan los elegidos 😈",
+  "python189InstructionsContent": "Bienvenido! 🎉\n\nHoy vas a filtrar una lista como un portero 😎\nSolo entran los numeros PARES.\n\nTu mision:\n1) Crea nums = [ ... ]\n2) Usa filter + lambda para quedarte con x % 2 == 0\n3) Conviertelo a lista con list(...)\n4) Imprime el resultado\n\nDon''t let the impares sneak in 😈 (que no cuelen)",
+
+  "python189HintTitle1": "Pista 1",
+  "python189HintContent1": "Patron:\nevens = list(filter(lambda x: x % 2 == 0, nums))",
+
+  "python189HintTitle2": "Pista 2",
+  "python189HintContent2": "Imprime la lista final:\nprint(evens)",
+
+  "python189SolutionTitle": "Solucion",
+  "python189SolutionContent": "nums = [1, 2, 3, 4, 5, 6]\nevens = list(filter(lambda x: x % 2 == 0, nums))\nprint(evens)", 
+    "python190ExampleTitle": "Ejemplo",
+  "python190ExampleCode1": "nums = [1, 2, 3, 4, 5]",
+  "python190ExampleCode2": "squares = [x * x for x in nums]",
+  "python190ExampleCode3": "print(squares)",
+  "python190ExampleCode4": "print(\"Listo\")",
+  "python190ExampleOutput": "Salida:\n[1, 4, 9, 16, 25]\nListo",
+  "python190EnterCodeHint": "Escribe tu codigo aqui... 🧠✨",
+
+  "python190InstructionsTitle": "Poder de list comprehensions 🧠⚡",
+  "python190InstructionsContent": "Bienvenido! 🎉\n\nHora de usar una de las cosas mas chulas de Python: list comprehensions.\n\nTu mision:\n1) Crea nums = [1, 2, 3, ...]\n2) Crea una nueva lista con cuadrados:\n   squares = [x * x for x in nums]\n3) Imprime el resultado.\n\nDon''t blink 😈 (ni pestañees)... acabas de meter un bucle en una linea.",
+
+  "python190HintTitle1": "Pista 1",
+  "python190HintContent1": "Patron:\nsquares = [x * x for x in nums]",
+
+  "python190HintTitle2": "Pista 2",
+  "python190HintContent2": "Luego imprime:\nprint(squares)",
+
+  "python190SolutionTitle": "Solucion",
+  "python190SolutionContent": "nums = [1, 2, 3, 4, 5]\nsquares = [x * x for x in nums]\nprint(squares)",
+  "python191ExampleTitle": "Ejemplo",
+  "python191ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python191ExampleCode2": "evens = [x for x in nums if x % 2 == 0]",
+  "python191ExampleCode3": "print(evens)",
+  "python191ExampleCode4": "print(\"Listo\")",
+  "python191ExampleOutput": "Salida:\n[2, 4, 6]\nListo",
+  "python191EnterCodeHint": "Escribe tu codigo aqui... 🥷✨",
+
+  "python191InstructionsTitle": "Comprehension + if (modo ninja) 🥷",
+  "python191InstructionsContent": "Bienvenido! 🎉\n\nAhora toca un movimiento muy Pythonic:\nlist comprehension + if.\n\nTu mision:\n1) Crea nums = [ ... ]\n2) Crea evens en UNA sola linea:\n   evens = [x for x in nums if x % 2 == 0]\n3) Imprime evens.\n\nDon''t blink 😈 (ni pestañees). Filtrado ninja total.",
+
+  "python191HintTitle1": "Pista 1",
+  "python191HintContent1": "Patron:\nevens = [x for x in nums if x % 2 == 0]",
+
+  "python191HintTitle2": "Pista 2",
+  "python191HintContent2": "Luego:\nprint(evens)",
+
+  "python191SolutionTitle": "Solucion",
+  "python191SolutionContent": "nums = [1, 2, 3, 4, 5, 6]\nevens = [x for x in nums if x % 2 == 0]\nprint(evens)", 
+   "python192ExampleTitle": "Ejemplo",
+  "python192ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python192ExampleCode2": "squares = '{x: x * x for x in nums}'",
+  "python192ExampleCode3": "print(squares)",
+  "python192ExampleCode4": "print(\"Listo\")",
+  "python192ExampleOutput": "Salida:\n'{1: 1, 2: 4, 3: 9, 4: 16}'\nListo",
+  "python192EnterCodeHint": "Escribe tu codigo aqui... 😈📦",
+
+  "python192InstructionsTitle": "Dict comprehension en una linea 📦✨",
+  "python192InstructionsContent": "Bienvenido! 🎉\n\nVamos a crear un diccionario en UNA sola linea 😈\n\nTu mision:\n1) Crea nums = [1, 2, 3, 4]\n2) Haz una dict comprehension:\n   squares = '{x: x * x for x in nums}'\n3) Imprime el diccionario.\n\nDon''t panic 😄 (tranqui). Python solo va de guay.",
+
+  "python192HintTitle1": "Pista 1",
+  "python192HintContent1": "Patron:\nsquares = '{x: x * x for x in nums}'",
+
+  "python192HintTitle2": "Pista 2",
+  "python192HintContent2": "Luego:\nprint(squares)",
+
+  "python192SolutionTitle": "Solucion",
+  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

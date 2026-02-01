@@ -1070,7 +1070,318 @@
   "python192HintContent2": "Luego:\nprint(squares)",
 
   "python192SolutionTitle": "Solucion",
-  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)"
+  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)", 
+   "python192ExampleTitle": "Ejemplo",
+  "python192ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python192ExampleCode2Prefix": "squares = ",
+  "python192ExampleCode2Inner": "x: x * x for x in nums",
+  "python192ExampleCode3": "print(squares)",
+  "python192ExampleCode4": "print(\"Listo\")",
+  "python192ExampleOutput": "Salida:\n1->1, 2->4, 3->9, 4->16\nListo",
+  "python192EnterCodeHint": "Escribe tu codigo aqui... 📦✨",
+
+  "python192InstructionsTitle": "Comprension de diccionarios 📦✨",
+  "python192InstructionsContent": "Bienvenido! 😄\n\nHoy vas a crear un diccionario en una sola linea, estilo pro.\n\nTu mision:\n1) Crea nums = [1, 2, 3, 4]\n2) Crea squares con una comprehension de diccionario\n3) Imprime squares\n\nNivel mago desbloqueado 🧙🔥",
+
+  "python192HintTitle1": "Pista 1",
+  "python192HintContent1Prefix": "Patron:\nsquares = ",
+
+  "python192HintTitle2": "Pista 2",
+  "python192HintContent2": "Usa nums como fuente y luego haz:\nprint(squares)",
+
+  "python192SolutionTitle": "Solucion",
+  "python192SolutionContentPrefix": "nums = [1, 2, 3, 4]\nsquares = ",
+  "python192SolutionContentSuffix": "print(squares)", 
+   "python193ExampleTitle": "Ejemplo",
+  "python193ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python193ExampleCode2Prefix": "evens = ",
+  "python193ExampleCode2Inner": "x for x in nums if x % 2 == 0",
+  "python193ExampleCode3": "print(evens)",
+  "python193ExampleCode4": "print(\"Listo\")",
+  "python193ExampleOutput": "Salida:\n2, 4, 6\nListo",
+  "python193EnterCodeHint": "Escribe tu codigo aqui... 🧪😈",
+
+  "python193InstructionsTitle": "Set comprehension 🧪✨",
+  "python193InstructionsContent": "Ey! 😄\n\nVamos a crear un set en una sola linea.\n\nTu mision:\n1) Crea nums = [1, 2, 3, 4, 5, 6]\n2) Crea evens con un set comprehension (solo pares!)\n3) Imprime evens\n\nLos sets no repiten, asi que es un club VIP 😎",
+
+  "python193HintTitle1": "Pista 1",
+  "python193HintContent1Prefix": "Patron:\nevens = ",
+
+  "python193HintTitle2": "Pista 2",
+  "python193HintContent2": "Filtra con x % 2 == 0 y usa nums como fuente.\nLuego:\nprint(evens)",
+
+  "python193SolutionTitle": "Solucion",
+  "python193SolutionContentPrefix": "nums = [1, 2, 3, 4, 5, 6]\nevens = ",
+  "python193SolutionContentSuffix": "print(evens)", 
+   "python194ExampleTitle": "Ejemplo",
+  "python194ExampleCode1": "t = (\"A\", \"B\", 3)",
+  "python194ExampleCode2": "first = t[0]",
+  "python194ExampleCode3": "print(first)",
+  "python194ExampleOutput": "Salida:\nA",
+  "python194EnterCodeHint": "Escribe tu codigo aqui... 🧩",
+
+  "python194InstructionsTitle": "Tuplas basicas 🧩",
+  "python194InstructionsContent": "Vamos con tuplas 😄\n\nTu mision:\n1) Crea una tupla con al menos 3 elementos\n2) Accede a UN elemento con un indice tipo t[0]\n3) Imprimelo con print(...)\n\nTip rapido: las tuplas usan ( ) y empiezan en indice 0 👀",
+
+  "python194HintTitle1": "Pista 1",
+  "python194HintContent1": "Crea una tupla tipo:\nt = (\"A\", \"B\", 3)",
+
+  "python194HintTitle2": "Pista 2",
+  "python194HintContent2": "Accede por indice e imprime:\nprint(t[0])",
+
+  "python194SolutionTitle": "Solucion",
+  "python194SolutionContent": "t = (\"A\", \"B\", 3)\nprint(t[0])", 
+    "python195ExampleTitle": "Ejemplo",
+  "python195ExampleCode1": "t = (\"A\", \"B\", 3)",
+  "python195ExampleCode2": "a, b, c = t",
+  "python195ExampleCode3": "print(a)",
+  "python195ExampleCode4": "print(c)",
+  "python195ExampleOutput": "Salida:\nA\n3",
+  "python195EnterCodeHint": "Escribe tu codigo aqui... 🎁",
+
+  "python195InstructionsTitle": "Desempaquetar tuplas 🎁",
+  "python195InstructionsContent": "Buenoo 😄 hoy toca desempacar una tupla como un crack.\n\nTu mision:\n1) Crea una tupla (3 elementos)\n2) Desempaqueta: a, b, c = t\n3) Imprime al menos una de esas variables\n\nDesempaquetar = la tupla se divide en variables 💥",
+
+  "python195HintTitle1": "Pista 1",
+  "python195HintContent1": "Primero crea la tupla:\nt = (\"A\", \"B\", 3)",
+
+  "python195HintTitle2": "Pista 2",
+  "python195HintContent2": "Luego desempaca:\na, b, c = t\nY imprime una:\nprint(a)",
+
+  "python195SolutionTitle": "Solucion",
+  "python195SolutionContent": "t = (\"A\", \"B\", 3)\na, b, c = t\nprint(a)", 
+   "python196ExampleTitle": "Ejemplo",
+  "python196ExampleCode1": "nums = [10, 20, 30]",
+  "python196ExampleCode2": "print(nums[1])",
+  "python196ExampleCode3": "print(\"Bien!\")",
+  "python196ExampleOutput": "Salida:\n20\nBien!",
+  "python196EnterCodeHint": "Escribe tu codigo aqui... 📚",
+
+  "python196InstructionsTitle": "Listas: crear e indexar 📚",
+  "python196InstructionsContent": "Vale! 😄 Vamos con una lista.\n\nTu mision:\n1) Crea una lista con al menos 3 elementos\n2) Accede a UNO con [0], [1] o [2]\n3) Imprimelo con print(...)\n\nRecuerda: las listas usan [ ] y empiezan en indice 0 👀",
+
+  "python196HintTitle1": "Pista 1",
+  "python196HintContent1": "Crea una lista tipo:\nnums = [10, 20, 30]",
+
+  "python196HintTitle2": "Pista 2",
+  "python196HintContent2": "Imprime un elemento por indice:\nprint(nums[1])",
+
+  "python196SolutionTitle": "Solucion",
+  "python196SolutionContent": "nums = [10, 20, 30]\nprint(nums[1])", 
+    "python197ExampleTitle": "Ejemplo",
+  "python197ExampleCode1": "items = [\"a\", \"b\", \"c\"]",
+  "python197ExampleCode2": "items.append(\"d\")",
+  "python197ExampleCode3": "items.pop()",
+  "python197ExampleCode4": "print(items)",
+  "python197ExampleOutput": "Salida:\n['a', 'b', 'c']",
+  "python197EnterCodeHint": "Escribe tu codigo aqui... 🧠",
+
+  "python197InstructionsTitle": "Metodos de listas: append y pop 🧠",
+  "python197InstructionsContent": "Valeee 😄 ahora toca modificar una lista!\n\nTu mision:\n1) Crea una lista\n2) Usa append(...) para anadir algo\n3) Usa pop() para quitar el ultimo\n4) Imprime la lista\n\nappend = anade ✅\npop = quita el ultimo 👋",
+
+  "python197HintTitle1": "Pista 1",
+  "python197HintContent1": "Primero crea una lista:\nitems = [\"a\", \"b\", \"c\"]",
+
+  "python197HintTitle2": "Pista 2",
+  "python197HintContent2": "Luego usa los dos metodos:\nitems.append(\"d\")\nitems.pop()\nprint(items)",
+
+  "python197SolutionTitle": "Solucion",
+  "python197SolutionContent": "items = [\"a\", \"b\", \"c\"]\nitems.append(\"d\")\nitems.pop()\nprint(items)", 
+   "python198ExampleTitle": "Ejemplo",
+  "python198ExampleCode1": "d = dict()",
+  "python198ExampleCode2": "d[\"mode\"] = \"fast\"",
+  "python198ExampleCode3": "d[\"level\"] = 2",
+  "python198ExampleCode4": "print(d[\"mode\"])",
+  "python198ExampleCode5": "print(d)",
+  "python198ExampleOutput": "Salida:\nfast\nmodo y nivel guardados!",
+  "python198EnterCodeHint": "Escribe tu codigo aqui... 🗝️",
+
+  "python198InstructionsTitle": "Diccionarios: anadir y leer 🗝️",
+  "python198InstructionsContent": "Vamos a montar un diccionario 😄\n\nTu mision:\n1) Crea un dict (dict() o similar)\n2) Anade al menos una clave con d[\"clave\"] = valor\n3) Lee una clave con d[\"clave\"]\n4) Imprime algo (el valor o el dict entero)\n\nUn diccionario es como una mochila de claves y valores 🎒",
+
+  "python198HintTitle1": "Pista 1",
+  "python198HintContent1": "Empieza con:\nd = dict()\nY anade una clave:\nd[\"mode\"] = \"fast\"",
+
+  "python198HintTitle2": "Pista 2",
+  "python198HintContent2": "Lee una clave e imprimela:\nprint(d[\"mode\"])\nTambien puedes imprimir el dict entero.",
+
+  "python198SolutionTitle": "Solucion",
+  "python198SolutionContent": "d = dict()\nd[\"mode\"] = \"fast\"\nprint(d[\"mode\"])", 
+   "python199ExampleTitle": "Ejemplo",
+  "python199ExampleCode1": "s = set([1, 2, 3])",
+  "python199ExampleCode2": "s.add(4)",
+  "python199ExampleCode3": "s.remove(2)",
+  "python199ExampleCode4": "print(s)",
+  "python199ExampleCode5": "print(\"Listo\")",
+  "python199ExampleOutput": "Salida:\n1, 3, 4\nListo",
+  "python199EnterCodeHint": "Escribe tu codigo aqui... 🧺",
+
+  "python199InstructionsTitle": "Sets: add y remove 🧺",
+  "python199InstructionsContent": "Vamooos 😄 ahora toca sets!\n\nTu mision:\n1) Crea un set (set([...]) va perfecto)\n2) Usa add(...) para anadir un elemento\n3) Usa remove(...) para borrar un elemento\n4) Imprime el set\n\nLos sets no duplican, asi que es zona sin copias 😎",
+
+  "python199HintTitle1": "Pista 1",
+  "python199HintContent1": "Empieza asi:\ns = set([1, 2, 3])\nLuego anade:\ns.add(4)",
+
+  "python199HintTitle2": "Pista 2",
+  "python199HintContent2": "Borra algo e imprime:\ns.remove(2)\nprint(s)",
+
+  "python199SolutionTitle": "Solucion",
+  "python199SolutionContent": "s = set([1, 2, 3])\ns.add(4)\ns.remove(2)\nprint(s)", 
+    "python200ExampleTitle": "Ejemplo",
+  "python200ExampleCode1": "d = dict()",
+  "python200ExampleCode2": "d[\"a\"] = 1",
+  "python200ExampleCode3": "d[\"b\"] = 2",
+  "python200ExampleCode4": "for k in d:",
+  "python200ExampleCode5": "  print(k)",
+  "python200ExampleOutput": "Salida:\na\nb",
+  "python200EnterCodeHint": "Escribe tu codigo aqui... 🔁",
+
+  "python200InstructionsTitle": "Recorrer un diccionario 🔁",
+  "python200InstructionsContent": "Buenoo 😄 ahora toca recorrer un diccionario!\n\nTu mision:\n1) Crea un dict\n2) Anade al menos una clave\n3) Recorre con: for k in d:\n4) Dentro del bucle, imprime k O imprime d[k]\n\nVas paseando por las claves como si nada 😎",
+
+  "python200HintTitle1": "Pista 1",
+  "python200HintContent1": "Prueba este bucle:\nfor k in d:\n  print(k)",
+
+  "python200HintTitle2": "Pista 2",
+  "python200HintContent2": "Quieres valores?\nfor k in d:\n  print(d[k])",
+
+  "python200SolutionTitle": "Solucion",
+  "python200SolutionContent": "d = dict()\nd[\"a\"] = 1\nd[\"b\"] = 2\nfor k in d:\n  print(k)", 
+   "python201ExampleTitle": "Ejemplo",
+  "python201ExampleCode1": "d = dict()",
+  "python201ExampleCode2": "d[\"a\"] = 1",
+  "python201ExampleCode3": "d[\"b\"] = 2",
+  "python201ExampleCode4": "for k, v in d.items():",
+  "python201ExampleCode5": "  print(k, v)",
+  "python201ExampleCode6": "print(\"Listo\")",
+  "python201ExampleOutput": "Salida:\na 1\nb 2\nListo",
+  "python201EnterCodeHint": "Escribe tu codigo aqui... 🧩",
+
+  "python201InstructionsTitle": "items(): clave y valor 🧩",
+  "python201InstructionsContent": "Valeee 😄 ahora viene el bucle guapo.\n\nTu mision:\n1) Crea un dict\n2) Anade al menos una clave\n3) Recorre con: for k, v in d.items():\n4) Dentro del bucle, imprime k Y v\n\nCombo clave+valor, como debe ser 💪",
+
+  "python201HintTitle1": "Pista 1",
+  "python201HintContent1": "El bucle es asi:\nfor k, v in d.items():\n  print(k, v)",
+
+  "python201HintTitle2": "Pista 2",
+  "python201HintContent2": "No olvides meter claves antes:\nd[\"a\"] = 1\nd[\"b\"] = 2",
+
+  "python201SolutionTitle": "Solucion",
+  "python201SolutionContent": "d = dict()\nd[\"a\"] = 1\nd[\"b\"] = 2\nfor k, v in d.items():\n  print(k, v)", 
+   "python202ExampleTitle": "Ejemplo",
+  "python202ExampleCode1": "grid = [[1, 2, 3], [4, 5, 6]]",
+  "python202ExampleCode2": "print(grid[0][1])",
+  "python202ExampleCode3": "print(\"Bien!\")",
+  "python202ExampleOutput": "Salida:\n2\nBien!",
+  "python202EnterCodeHint": "Escribe tu codigo aqui... 🧱",
+
+  "python202InstructionsTitle": "Listas 2D: doble indice 🧱",
+  "python202InstructionsContent": "Valeee 😄 ahora una lista DENTRO de otra.\n\nTu mision:\n1) Crea una lista 2D: grid = [[...], [...]]\n2) Accede a un elemento con grid[i][j]\n3) Imprimelo\n\nDos corchetes = dos coordenadas 🎯",
+
+  "python202HintTitle1": "Pista 1",
+  "python202HintContent1": "Crea una lista 2D:\ngrid = [[1, 2, 3], [4, 5, 6]]",
+
+  "python202HintTitle2": "Pista 2",
+  "python202HintContent2": "Accede e imprime asi:\nprint(grid[0][1])",
+
+  "python202SolutionTitle": "Solucion",
+  "python202SolutionContent": "grid = [[1, 2, 3], [4, 5, 6]]\nprint(grid[0][1])", 
+   "python203ExampleTitle": "Ejemplo",
+  "python203ExampleCode1": "t = (\"A\", 99)",
+  "python203ExampleCode2": "a, b = t",
+  "python203ExampleCode3": "print(a, b)",
+  "python203ExampleOutput": "Salida:\nA 99",
+  "python203EnterCodeHint": "Escribe tu codigo aqui... 🎁",
+
+  "python203InstructionsTitle": "Tuplas: unpack sin miedo 🎁",
+  "python203InstructionsContent": "Vamooos 😄 toca tuplas!\n\nTu mision:\n1) Crea una tupla: t = (\"A\", 99)\n2) Haz unpack: a, b = t\n3) Imprime a y b\n\nEs como abrir un regalo y sacar lo que hay dentro 🎁",
+
+  "python203HintTitle1": "Pista 1",
+  "python203HintContent1": "Crea una tupla:\nt = (\"A\", 99)",
+
+  "python203HintTitle2": "Pista 2",
+  "python203HintContent2": "Unpack + print:\na, b = t\nprint(a, b)",
+
+  "python203SolutionTitle": "Solucion",
+  "python203SolutionContent": "t = (\"A\", 99)\na, b = t\nprint(a, b)", 
+   "python204ExampleTitle": "Ejemplo",
+  "python204ExampleCode1": "a = set([1, 2, 3])",
+  "python204ExampleCode2": "b = set([3, 4, 5])",
+  "python204ExampleCode3": "u = a | b",
+  "python204ExampleCode4": "i = a & b",
+  "python204ExampleCode5": "print(u)",
+  "python204ExampleCode6": "print(i)",
+  "python204ExampleOutput": "Salida:\n1, 2, 3, 4, 5\n3",
+  "python204EnterCodeHint": "Escribe tu codigo aqui... ⚔️",
+
+  "python204InstructionsTitle": "Sets: union e intersection ⚔️",
+  "python204InstructionsContent": "Vamooos 😄 batalla de sets!\n\nTu mision:\n1) Crea dos sets (a y b)\n2) Haz la union (a | b)\n3) Haz la interseccion (a & b)\n4) Imprime los resultados\n\nUnion = todo 🧠\nInterseccion = lo que coincide 🤝",
+
+  "python204HintTitle1": "Pista 1",
+  "python204HintContent1": "Union:\nu = a | b\n(o a.union(b))",
+
+  "python204HintTitle2": "Pista 2",
+  "python204HintContent2": "Interseccion:\ni = a & b\n(o a.intersection(b))",
+
+  "python204SolutionTitle": "Solucion",
+  "python204SolutionContent": "a = set([1, 2, 3])\nb = set([3, 4, 5])\nu = a | b\ni = a & b\nprint(u)\nprint(i)", 
+   "python205ExampleTitle": "Ejemplo",
+  "python205ExampleCode1": "d = dict()",
+  "python205ExampleCode2": "d[\"name\"] = \"Neo\"",
+  "python205ExampleCode3": "result = d.get(\"age\", 0)",
+  "python205ExampleCode4": "print(result)",
+  "python205ExampleCode5": "print(\"Listo\")",
+  "python205ExampleOutput": "Salida:\n0\nListo",
+  "python205EnterCodeHint": "Escribe tu codigo aqui... 🧠",
+
+  "python205InstructionsTitle": "dict.get(): busqueda segura 🧠",
+  "python205InstructionsContent": "Vamooos 😄 toca buscar en un diccionario sin romper nada.\n\nTu mision:\n1) Crea un dict\n2) Anade al menos una clave\n3) Usa get(clave, valorPorDefecto)\n4) Imprime el resultado\n\nSi la clave no existe, get devuelve el default. Cero dramas 😎",
+
+  "python205HintTitle1": "Pista 1",
+  "python205HintContent1": "Usa get con DOS argumentos:\nresult = d.get(\"age\", 0)",
+
+  "python205HintTitle2": "Pista 2",
+  "python205HintContent2": "Luego imprime:\nprint(result)",
+
+  "python205SolutionTitle": "Solucion",
+  "python205SolutionContent": "d = dict()\nd[\"name\"] = \"Neo\"\nresult = d.get(\"age\", 0)\nprint(result)", 
+   "python206ExampleTitle": "Ejemplo",
+  "python206ExampleCode1": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]",
+  "python206ExampleCode2": "counts = dict()",
+  "python206ExampleCode3": "for p in points:",
+  "python206ExampleCode4": "  counts[p] = counts.get(p, 0) + 1",
+  "python206ExampleCode5": "for k, v in counts.items():",
+  "python206ExampleCode6": "  print(k, v)",
+  "python206ExampleCode7": "print(\"Listo\")",
+  "python206ExampleOutput": "Salida:\n(0, 0) 2\n(1, 0) 1\n(2, 2) 1\nListo",
+  "python206EnterCodeHint": "Escribe tu codigo aqui... 🧩",
+
+  "python206InstructionsTitle": "Desafio 2: contar tuplas 🧩",
+  "python206InstructionsContent": "Vamoooos 😄 este ya parece mini-proyecto.\n\nTu mision:\n1) Crea una lista de tuplas llamada points\n2) Crea un dict vacio llamado counts\n3) Recorre points y cuenta con get(p, 0)\n4) Imprime el resultado\n\nNo te rayes — solo estas contando repetidos como un jefe 😎",
+
+  "python206HintTitle1": "Pista 1",
+  "python206HintContent1": "La linea clave:\ncounts[p] = counts.get(p, 0) + 1",
+
+  "python206HintTitle2": "Pista 2",
+  "python206HintContent2": "Imprime como quieras:\nprint(counts)\n(o recorre items() e imprime k, v)",
+
+  "python206SolutionTitle": "Solucion",
+  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

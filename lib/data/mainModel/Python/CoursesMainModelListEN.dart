@@ -4,7 +4,9 @@ import 'package:learnswift/data/courses/Python/pythonControlFlow/pythonControlFl
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
+import '../../../Screens/Courses/python/pythonDataStructures/DataStructuresExMain.dart';
 import '../../../Screens/Courses/python/pythonFunctions/pythonFunctionExMain.dart';
+import '../../courses/Python/pythonDataStructures/pythonDataStructuresModelEN.dart';
 import '../../courses/Python/pythonFunctions/pythonFunctionsModelEN.dart';
 
 List<CoursesMainModel> coursesPythonMainModelListEN = [
@@ -68,7 +70,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-  /* CoursesMainModel(
+  CoursesMainModel(
     id: 3,
     generalName: 'Data Structures',
     catExercise: pythonDataStructuresModelEN,
@@ -88,7 +90,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+ /*  CoursesMainModel(
     id: 4,
     generalName: 'File Handling',
     catExercise: pythonFileHandlingModelEN,

@@ -1075,7 +1075,318 @@
   "python192HintContent2": "然后:\nprint(squares)",
 
   "python192SolutionTitle": "答案",
-  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)"
+  "python192SolutionContent": "nums = [1, 2, 3, 4]\nsquares = '{x: x * x for x in nums}'\nprint(squares)", 
+   "python192ExampleTitle": "示例",
+  "python192ExampleCode1": "nums = [1, 2, 3, 4]",
+  "python192ExampleCode2Prefix": "squares = ",
+  "python192ExampleCode2Inner": "x: x * x for x in nums",
+  "python192ExampleCode3": "print(squares)",
+  "python192ExampleCode4": "print(\"Done\")",
+  "python192ExampleOutput": "输出:\n1->1, 2->4, 3->9, 4->16\nDone",
+  "python192EnterCodeHint": "在这里输入你的代码... 📦✨",
+
+  "python192InstructionsTitle": "字典推导式 📦✨",
+  "python192InstructionsContent": "欢迎! 😄\n\n今天你要用一行代码创建字典。\n\n你的任务:\n1) 创建 nums = [1, 2, 3, 4]\n2) 用字典推导式创建 squares\n3) 打印 squares\n\n你现在很像魔法师 🧙🔥",
+
+  "python192HintTitle1": "提示 1",
+  "python192HintContent1Prefix": "模板:\nsquares = ",
+
+  "python192HintTitle2": "提示 2",
+  "python192HintContent2": "用 nums 作为来源，然后:\nprint(squares)",
+
+  "python192SolutionTitle": "答案",
+  "python192SolutionContentPrefix": "nums = [1, 2, 3, 4]\nsquares = ",
+  "python192SolutionContentSuffix": "print(squares)", 
+   "python193ExampleTitle": "示例",
+  "python193ExampleCode1": "nums = [1, 2, 3, 4, 5, 6]",
+  "python193ExampleCode2Prefix": "evens = ",
+  "python193ExampleCode2Inner": "x for x in nums if x % 2 == 0",
+  "python193ExampleCode3": "print(evens)",
+  "python193ExampleCode4": "print(\"Done\")",
+  "python193ExampleOutput": "输出:\n2, 4, 6\nDone",
+  "python193EnterCodeHint": "在这里输入你的代码... 🧪😈",
+
+  "python193InstructionsTitle": "集合推导式 🧪✨",
+  "python193InstructionsContent": "嘿! 😄\n\n用一行代码创建集合（set）。\n\n你的任务:\n1) 创建 nums = [1, 2, 3, 4, 5, 6]\n2) 用集合推导式创建 evens（只要偶数）\n3) 打印 evens\n\n集合不会重复，就像 VIP 名单 😎",
+
+  "python193HintTitle1": "提示 1",
+  "python193HintContent1Prefix": "模板:\nevens = ",
+
+  "python193HintTitle2": "提示 2",
+  "python193HintContent2": "用 x % 2 == 0 过滤，并且来源是 nums。\n然后:\nprint(evens)",
+
+  "python193SolutionTitle": "答案",
+  "python193SolutionContentPrefix": "nums = [1, 2, 3, 4, 5, 6]\nevens = ",
+  "python193SolutionContentSuffix": "print(evens)", 
+   "python194ExampleTitle": "示例",
+  "python194ExampleCode1": "t = (\"A\", \"B\", 3)",
+  "python194ExampleCode2": "first = t[0]",
+  "python194ExampleCode3": "print(first)",
+  "python194ExampleOutput": "输出:\nA",
+  "python194EnterCodeHint": "在这里输入你的代码... 🧩",
+
+  "python194InstructionsTitle": "元组基础 🧩",
+  "python194InstructionsContent": "来玩元组吧 😄\n\n你的任务:\n1) 创建一个至少 3 个元素的元组\n2) 用索引访问一个元素，比如 t[0]\n3) 用 print(...) 打印出来\n\n小提示: 元组用 ( )，索引从 0 开始 👀",
+
+  "python194HintTitle1": "提示 1",
+  "python194HintContent1": "创建一个元组，比如:\nt = (\"A\", \"B\", 3)",
+
+  "python194HintTitle2": "提示 2",
+  "python194HintContent2": "用索引访问并打印:\nprint(t[0])",
+
+  "python194SolutionTitle": "答案",
+  "python194SolutionContent": "t = (\"A\", \"B\", 3)\nprint(t[0])", 
+   "python195ExampleTitle": "示例",
+  "python195ExampleCode1": "t = (\"A\", \"B\", 3)",
+  "python195ExampleCode2": "a, b, c = t",
+  "python195ExampleCode3": "print(a)",
+  "python195ExampleCode4": "print(c)",
+  "python195ExampleOutput": "输出:\nA\n3",
+  "python195EnterCodeHint": "在这里输入你的代码... 🎁",
+
+  "python195InstructionsTitle": "元组解包 🎁",
+  "python195InstructionsContent": "太好了 😄 今天来做元组解包！\n\n你的任务:\n1) 创建一个 3 个元素的元组\n2) 解包: a, b, c = t\n3) 打印其中一个变量\n\n解包 = 元组变成多个变量 💥",
+
+  "python195HintTitle1": "提示 1",
+  "python195HintContent1": "先创建元组:\nt = (\"A\", \"B\", 3)",
+
+  "python195HintTitle2": "提示 2",
+  "python195HintContent2": "然后解包:\na, b, c = t\n再打印一个:\nprint(a)",
+
+  "python195SolutionTitle": "答案",
+  "python195SolutionContent": "t = (\"A\", \"B\", 3)\na, b, c = t\nprint(a)", 
+   "python196ExampleTitle": "示例",
+  "python196ExampleCode1": "nums = [10, 20, 30]",
+  "python196ExampleCode2": "print(nums[1])",
+  "python196ExampleCode3": "print(\"Nice!\")",
+  "python196ExampleOutput": "输出:\n20\nNice!",
+  "python196EnterCodeHint": "在这里输入你的代码... 📚",
+
+  "python196InstructionsTitle": "列表：创建与索引 📚",
+  "python196InstructionsContent": "好耶! 😄 我们来用列表。\n\n你的任务:\n1) 创建一个至少 3 个元素的列表\n2) 用 [0]、[1] 或 [2] 访问一个元素\n3) 用 print(...) 打印它\n\n提示: 列表用 [ ]，索引从 0 开始 👀",
+
+  "python196HintTitle1": "提示 1",
+  "python196HintContent1": "创建一个列表，比如:\nnums = [10, 20, 30]",
+
+  "python196HintTitle2": "提示 2",
+  "python196HintContent2": "按索引打印一个元素:\nprint(nums[1])",
+
+  "python196SolutionTitle": "答案",
+  "python196SolutionContent": "nums = [10, 20, 30]\nprint(nums[1])", 
+   "python197ExampleTitle": "示例",
+  "python197ExampleCode1": "items = [\"a\", \"b\", \"c\"]",
+  "python197ExampleCode2": "items.append(\"d\")",
+  "python197ExampleCode3": "items.pop()",
+  "python197ExampleCode4": "print(items)",
+  "python197ExampleOutput": "输出:\n['a', 'b', 'c']",
+  "python197EnterCodeHint": "在这里输入你的代码... 🧠",
+
+  "python197InstructionsTitle": "列表方法：append 和 pop 🧠",
+  "python197InstructionsContent": "好耶 😄 现在来修改列表!\n\n你的任务:\n1) 创建一个列表\n2) 用 append(...) 添加一个元素\n3) 用 pop() 删除最后一个元素\n4) 打印列表\n\nappend = 添加 ✅\npop = 删除最后一个 👋",
+
+  "python197HintTitle1": "提示 1",
+  "python197HintContent1": "先创建列表:\nitems = [\"a\", \"b\", \"c\"]",
+
+  "python197HintTitle2": "提示 2",
+  "python197HintContent2": "然后用两个方法:\nitems.append(\"d\")\nitems.pop()\nprint(items)",
+
+  "python197SolutionTitle": "答案",
+  "python197SolutionContent": "items = [\"a\", \"b\", \"c\"]\nitems.append(\"d\")\nitems.pop()\nprint(items)", 
+   "python198ExampleTitle": "示例",
+  "python198ExampleCode1": "d = dict()",
+  "python198ExampleCode2": "d[\"mode\"] = \"fast\"",
+  "python198ExampleCode3": "d[\"level\"] = 2",
+  "python198ExampleCode4": "print(d[\"mode\"])",
+  "python198ExampleCode5": "print(d)",
+  "python198ExampleOutput": "输出:\nfast\n已保存 mode 和 level!",
+  "python198EnterCodeHint": "在这里输入你的代码... 🗝️",
+
+  "python198InstructionsTitle": "字典：添加与读取 🗝️",
+  "python198InstructionsContent": "来做一个字典吧 😄\n\n你的任务:\n1) 创建一个 dict（dict() 或类似方式）\n2) 用 d[\"key\"] = value 添加至少一个键\n3) 用 d[\"key\"] 读取一个键\n4) 打印点什么（值或整个 dict）\n\n字典就像装着键和值的小背包 🎒",
+
+  "python198HintTitle1": "提示 1",
+  "python198HintContent1": "先写:\nd = dict()\n然后添加键:\nd[\"mode\"] = \"fast\"",
+
+  "python198HintTitle2": "提示 2",
+  "python198HintContent2": "读取并打印:\nprint(d[\"mode\"])\n也可以打印整个 dict。",
+
+  "python198SolutionTitle": "答案",
+  "python198SolutionContent": "d = dict()\nd[\"mode\"] = \"fast\"\nprint(d[\"mode\"])", 
+   "python199ExampleTitle": "示例",
+  "python199ExampleCode1": "s = set([1, 2, 3])",
+  "python199ExampleCode2": "s.add(4)",
+  "python199ExampleCode3": "s.remove(2)",
+  "python199ExampleCode4": "print(s)",
+  "python199ExampleCode5": "print(\"Done\")",
+  "python199ExampleOutput": "输出:\n1, 3, 4\nDone",
+  "python199EnterCodeHint": "在这里输入你的代码... 🧺",
+
+  "python199InstructionsTitle": "集合：add 和 remove 🧺",
+  "python199InstructionsContent": "好耶 😄 来玩集合（set）!\n\n你的任务:\n1) 创建一个集合（set([...]) 完全可以）\n2) 用 add(...) 添加一个元素\n3) 用 remove(...) 删除一个元素\n4) 打印集合\n\n集合不会重复，就像禁止复制区 😎",
+
+  "python199HintTitle1": "提示 1",
+  "python199HintContent1": "先这样写:\ns = set([1, 2, 3])\n然后添加:\ns.add(4)",
+
+  "python199HintTitle2": "提示 2",
+  "python199HintContent2": "删除一个元素并打印:\ns.remove(2)\nprint(s)",
+
+  "python199SolutionTitle": "答案",
+  "python199SolutionContent": "s = set([1, 2, 3])\ns.add(4)\ns.remove(2)\nprint(s)", 
+   "python200ExampleTitle": "示例",
+  "python200ExampleCode1": "d = dict()",
+  "python200ExampleCode2": "d[\"a\"] = 1",
+  "python200ExampleCode3": "d[\"b\"] = 2",
+  "python200ExampleCode4": "for k in d:",
+  "python200ExampleCode5": "  print(k)",
+  "python200ExampleOutput": "输出:\na\nb",
+  "python200EnterCodeHint": "在这里输入你的代码... 🔁",
+
+  "python200InstructionsTitle": "遍历字典 🔁",
+  "python200InstructionsContent": "太棒了 😄 现在来遍历字典!\n\n你的任务:\n1) 创建一个 dict\n2) 添加至少一个键\n3) 用 for k in d: 遍历\n4) 在循环里打印 k 或者打印 d[k]\n\n你就是在字典里散步 😎",
+
+  "python200HintTitle1": "提示 1",
+  "python200HintContent1": "试试这个循环:\nfor k in d:\n  print(k)",
+
+  "python200HintTitle2": "提示 2",
+  "python200HintContent2": "想打印值?\nfor k in d:\n  print(d[k])",
+
+  "python200SolutionTitle": "答案",
+  "python200SolutionContent": "d = dict()\nd[\"a\"] = 1\nd[\"b\"] = 2\nfor k in d:\n  print(k)", 
+    "python201ExampleTitle": "示例",
+  "python201ExampleCode1": "d = dict()",
+  "python201ExampleCode2": "d[\"a\"] = 1",
+  "python201ExampleCode3": "d[\"b\"] = 2",
+  "python201ExampleCode4": "for k, v in d.items():",
+  "python201ExampleCode5": "  print(k, v)",
+  "python201ExampleCode6": "print(\"Done\")",
+  "python201ExampleOutput": "输出:\na 1\nb 2\nDone",
+  "python201EnterCodeHint": "在这里输入你的代码... 🧩",
+
+  "python201InstructionsTitle": "items(): 键和值 🧩",
+  "python201InstructionsContent": "太好了 😄 现在是高级遍历!\n\n你的任务:\n1) 创建一个 dict\n2) 添加至少一个键\n3) 用: for k, v in d.items(): 遍历\n4) 在循环里同时打印 k 和 v\n\n键+值组合拳 💪",
+
+  "python201HintTitle1": "提示 1",
+  "python201HintContent1": "循环长这样:\nfor k, v in d.items():\n  print(k, v)",
+
+  "python201HintTitle2": "提示 2",
+  "python201HintContent2": "先添加一些键:\nd[\"a\"] = 1\nd[\"b\"] = 2",
+
+  "python201SolutionTitle": "答案",
+  "python201SolutionContent": "d = dict()\nd[\"a\"] = 1\nd[\"b\"] = 2\nfor k, v in d.items():\n  print(k, v)", 
+   "python202ExampleTitle": "示例",
+  "python202ExampleCode1": "grid = [[1, 2, 3], [4, 5, 6]]",
+  "python202ExampleCode2": "print(grid[0][1])",
+  "python202ExampleCode3": "print(\"Nice!\")",
+  "python202ExampleOutput": "输出:\n2\nNice!",
+  "python202EnterCodeHint": "在这里输入你的代码... 🧱",
+
+  "python202InstructionsTitle": "二维列表：双重索引 🧱",
+  "python202InstructionsContent": "好耶 😄 现在是列表套列表!\n\n你的任务:\n1) 创建二维列表: grid = [[...], [...]]\n2) 用 grid[i][j] 访问一个元素\n3) 打印它\n\n两个中括号 = 两个坐标 🎯",
+
+  "python202HintTitle1": "提示 1",
+  "python202HintContent1": "创建二维列表:\ngrid = [[1, 2, 3], [4, 5, 6]]",
+
+  "python202HintTitle2": "提示 2",
+  "python202HintContent2": "访问并打印:\nprint(grid[0][1])",
+
+  "python202SolutionTitle": "答案",
+  "python202SolutionContent": "grid = [[1, 2, 3], [4, 5, 6]]\nprint(grid[0][1])", 
+    "python203ExampleTitle": "示例",
+  "python203ExampleCode1": "t = (\"A\", 99)",
+  "python203ExampleCode2": "a, b = t",
+  "python203ExampleCode3": "print(a, b)",
+  "python203ExampleOutput": "输出:\nA 99",
+  "python203EnterCodeHint": "在这里输入你的代码... 🎁",
+
+  "python203InstructionsTitle": "元组：拆包啦 🎁",
+  "python203InstructionsContent": "好耶 😄 现在是元组!\n\n你的任务:\n1) 创建元组: t = (\"A\", 99)\n2) 拆包: a, b = t\n3) 打印 a 和 b\n\n就像拆礼物，把里面的东西拿出来 🎁",
+
+  "python203HintTitle1": "提示 1",
+  "python203HintContent1": "创建元组:\nt = (\"A\", 99)",
+
+  "python203HintTitle2": "提示 2",
+  "python203HintContent2": "拆包并打印:\na, b = t\nprint(a, b)",
+
+  "python203SolutionTitle": "答案",
+  "python203SolutionContent": "t = (\"A\", 99)\na, b = t\nprint(a, b)", 
+  "python204ExampleTitle": "示例",
+  "python204ExampleCode1": "a = set([1, 2, 3])",
+  "python204ExampleCode2": "b = set([3, 4, 5])",
+  "python204ExampleCode3": "u = a | b",
+  "python204ExampleCode4": "i = a & b",
+  "python204ExampleCode5": "print(u)",
+  "python204ExampleCode6": "print(i)",
+  "python204ExampleOutput": "输出:\n1, 2, 3, 4, 5\n3",
+  "python204EnterCodeHint": "在这里输入你的代码... ⚔️",
+
+  "python204InstructionsTitle": "集合：并集与交集 ⚔️",
+  "python204InstructionsContent": "好耶 😄 集合对决!\n\n你的任务:\n1) 创建两个集合（a 和 b）\n2) 求并集（a | b）\n3) 求交集（a & b）\n4) 打印结果\n\n并集 = 全部 🧠\n交集 = 共有的部分 🤝",
+
+  "python204HintTitle1": "提示 1",
+  "python204HintContent1": "并集:\nu = a | b\n（或 a.union(b)）",
+
+  "python204HintTitle2": "提示 2",
+  "python204HintContent2": "交集:\ni = a & b\n（或 a.intersection(b)）",
+
+  "python204SolutionTitle": "答案",
+  "python204SolutionContent": "a = set([1, 2, 3])\nb = set([3, 4, 5])\nu = a | b\ni = a & b\nprint(u)\nprint(i)", 
+   "python205ExampleTitle": "示例",
+  "python205ExampleCode1": "d = dict()",
+  "python205ExampleCode2": "d[\"name\"] = \"Neo\"",
+  "python205ExampleCode3": "result = d.get(\"age\", 0)",
+  "python205ExampleCode4": "print(result)",
+  "python205ExampleCode5": "print(\"Done\")",
+  "python205ExampleOutput": "输出:\n0\nDone",
+  "python205EnterCodeHint": "在这里输入你的代码... 🧠",
+
+  "python205InstructionsTitle": "dict.get(): 安全查找 🧠",
+  "python205InstructionsContent": "好耶 😄 来做一个安全的字典查找!\n\n你的任务:\n1) 创建一个 dict\n2) 添加至少一个键\n3) 使用 get(key, default)\n4) 打印结果\n\n如果键不存在，get 会给你默认值。稳稳的 😎",
+
+  "python205HintTitle1": "提示 1",
+  "python205HintContent1": "get 要两个参数:\nresult = d.get(\"age\", 0)",
+
+  "python205HintTitle2": "提示 2",
+  "python205HintContent2": "然后打印:\nprint(result)",
+
+  "python205SolutionTitle": "答案",
+  "python205SolutionContent": "d = dict()\nd[\"name\"] = \"Neo\"\nresult = d.get(\"age\", 0)\nprint(result)", 
+   "python206ExampleTitle": "示例",
+  "python206ExampleCode1": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]",
+  "python206ExampleCode2": "counts = dict()",
+  "python206ExampleCode3": "for p in points:",
+  "python206ExampleCode4": "  counts[p] = counts.get(p, 0) + 1",
+  "python206ExampleCode5": "for k, v in counts.items():",
+  "python206ExampleCode6": "  print(k, v)",
+  "python206ExampleCode7": "print(\"Done\")",
+  "python206ExampleOutput": "输出:\n(0, 0) 2\n(1, 0) 1\n(2, 2) 1\nDone",
+  "python206EnterCodeHint": "在这里输入你的代码... 🧩",
+
+  "python206InstructionsTitle": "挑战 2：统计元组键 🧩",
+  "python206InstructionsContent": "冲呀 😄 这个像个小项目!\n\n你的任务:\n1) 创建元组列表 points\n2) 创建空字典 counts\n3) 遍历 points，用 get(p, 0) 计数\n4) 打印结果\n\n别想太多 — 就是统计重复项 😎",
+
+  "python206HintTitle1": "提示 1",
+  "python206HintContent1": "核心代码:\ncounts[p] = counts.get(p, 0) + 1",
+
+  "python206HintTitle2": "提示 2",
+  "python206HintContent2": "随便怎么打印都行:\nprint(counts)\n（或遍历 items() 打印 k, v）",
+
+  "python206SolutionTitle": "答案",
+  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

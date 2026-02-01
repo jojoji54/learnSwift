@@ -1371,7 +1371,330 @@
   "python206HintContent2": "随便怎么打印都行:\nprint(counts)\n（或遍历 items() 打印 k, v）",
 
   "python206SolutionTitle": "答案",
-  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)"
+  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)", 
+   "python207ExampleTitle": "示例",
+  "python207ExampleCode1": "f = open(\"data.txt\", \"r\")",
+  "python207ExampleCode2": "text = f.read()",
+  "python207ExampleCode3": "f.close()",
+  "python207ExampleCode4": "print(text)",
+  "python207ExampleOutput": "输出:\nHello from file!",
+  "python207EnterCodeHint": "在这里输入你的代码... 📂",
+
+  "python207InstructionsTitle": "打开并读取文件 📂",
+  "python207InstructionsContent": "欢迎来到文件处理 😄\n\n你的任务:\n1) 用读取模式打开文件\n2) 读取内容\n3) 关闭文件\n4) 打印读取到的内容\n\n小提示: open(..., \"r\") 然后 .read() 然后 .close() 😎",
+
+  "python207HintTitle1": "提示 1",
+  "python207HintContent1": "你需要: open(..., \"r\"), .read(), .close() 和 print(...).",
+
+  "python207HintTitle2": "提示 2",
+  "python207HintContent2": "常见写法:\nf = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)",
+
+  "python207SolutionTitle": "答案",
+  "python207SolutionContent": "f = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)", 
+   "python208ExampleTitle": "示例",
+  "python208ExampleCode1": "f = open(\"notes.txt\", \"w\")",
+  "python208ExampleCode2": "f.write(\"Hello file!\")",
+  "python208ExampleCode3": "f.close()",
+  "python208ExampleCode4": "print(\"Saved!\")",
+  "python208ExampleOutput": "输出:\nSaved!",
+  "python208EnterCodeHint": "在这里写代码... 📝",
+
+  "python208InstructionsTitle": "写入文件 ✍️",
+  "python208InstructionsContent": "写作模式启动 😄\n\n你的任务:\n1) 用 \"w\" 打开文件\n2) 用 .write(...) 写入文本\n3) 关闭文件\n4) 打印一句话，比如 \"Saved!\"\n\n小提示: open(..., \"w\") 然后 .write(...) 然后 .close()。别忘了 close 😎",
+
+  "python208HintTitle1": "提示 1",
+  "python208HintContent1": "你需要: open(..., \"w\"), .write(\"...\") 和 .close(), 还有 print(...).",
+
+  "python208HintTitle2": "提示 2",
+  "python208HintContent2": "常见写法:\nf = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
+
+  "python208SolutionTitle": "答案",
+  "python208SolutionContent": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
+   "python209ExampleTitle": "示例",
+  "python209ExampleCode1": "f = open(\"log.txt\", \"a\")",
+  "python209ExampleCode2": "f.write(\"New line\\n\")",
+  "python209ExampleCode3": "f.close()",
+  "python209ExampleCode4": "print(\"Appended!\")",
+  "python209ExampleOutput": "输出:\nAppended!",
+  "python209EnterCodeHint": "在这里输入你的代码... ➕📄",
+
+  "python209InstructionsTitle": "追加模式 (a) ➕",
+  "python209InstructionsContent": "来加点内容，不要删掉原来的东西 😄\n\n你的任务:\n1) 用追加模式 \"a\" 打开文件\n2) 用 .write(...) 写入内容\n3) 关闭文件\n4) 打印一句话，比如 \"Appended!\"\n\nBonus: 用 \\n 加一个换行，这样更清爽 😎",
+
+  "python209HintTitle1": "提示 1",
+  "python209HintContent1": "用 open(..., \"a\")，然后 .write(\"...\")，再 .close()。别忘了 print(...).",
+
+  "python209HintTitle2": "提示 2",
+  "python209HintContent2": "常见写法:\nf = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")",
+
+  "python209SolutionTitle": "答案",
+  "python209SolutionContent": "f = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")", 
+   "python210ExampleTitle": "示例",
+  "python210ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python210ExampleCode2": "  text = f.read()",
+  "python210ExampleCode3": "print(text)",
+  "python210ExampleOutput": "输出:\nHello from file!",
+  "python210EnterCodeHint": "在这里输入你的代码... 🧠📂",
+
+  "python210InstructionsTitle": "With 语句（自动关闭）😎",
+  "python210InstructionsContent": "现在用更干净的方法 😄\n\n你的任务:\n1) 使用: with open(\"file\", \"r\") as f:\n2) 在块内调用 f.read() 或 f.write(...)\n3) 打印点东西（比如 print(text)）\n\n重点: 不需要 f.close()！with 会自动关闭 🧼✨",
+
+  "python210HintTitle1": "提示 1",
+  "python210HintContent1": "从: with open(\"data.txt\", \"r\") as f: 开始，下一行要缩进。",
+
+  "python210HintTitle2": "提示 2",
+  "python210HintContent2": "常见写法:\nwith open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)",
+
+  "python210SolutionTitle": "答案",
+  "python210SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)", 
+    "python211ExampleTitle": "示例",
+  "python211ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python211ExampleCode2": "  for line in f:",
+  "python211ExampleCode3": "    print(line.strip())",
+  "python211ExampleCode4": "",
+  "python211ExampleOutput": "输出:\nLine 1\nLine 2",
+  "python211EnterCodeHint": "在这里输入你的代码... 📄👀",
+
+  "python211InstructionsTitle": "按行读取文件 😄",
+  "python211InstructionsContent": "我们来一行一行地读文件 📄\n\n你的任务:\n1) 使用: with open(\"file\", \"r\") as f:\n2) 用以下任意一种方式读取行:\n   - lines = f.readlines()\n   - for line in f:\n3) 打印行内容\n\nBonus: 用 .strip() 去掉多余换行，看起来更干净 ✨",
+
+  "python211HintTitle1": "提示 1",
+  "python211HintContent1": "试试: for line in f: 然后 print(line)。",
+
+  "python211HintTitle2": "提示 2",
+  "python211HintContent2": "两种常见写法:\n方式 A:\nlines = f.readlines()\nprint(lines)\n\n方式 B:\nfor line in f:\n  print(line.strip())",
+
+  "python211SolutionTitle": "答案",
+  "python211SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  for line in f:\n    print(line.strip())", 
+   "python212ExampleTitle": "示例",
+  "python212ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python212ExampleCode2": "  first = f.read(1)",
+  "python212ExampleCode3": "  pos = f.tell()",
+  "python212ExampleCode4": "  print(first, pos)",
+  "python212ExampleCode5": "  f.seek(0)",
+  "python212ExampleCode6": "  print(f.read(1))",
+  "python212ExampleOutput": "输出:\nH 1\nH",
+  "python212EnterCodeHint": "在这里输入你的代码... 🎯📂",
+
+  "python212InstructionsTitle": "seek() 和 tell()（文件指针）🎯",
+  "python212InstructionsContent": "现在我们来控制文件指针，像魔法一样 🧙‍♂️\n\n你的任务:\n1) 使用: with open(\"file\", \"r\") as f:\n2) 读一点内容（例如 f.read(1)）\n3) 用 f.tell() 查看当前位置\n4) 用 f.seek(0) 跳回开头\n5) 打印一些内容来确认成功\n\n提示: tell() = 你在哪，seek(n) = 瞬移 😄",
+
+  "python212HintTitle1": "提示 1",
+  "python212HintContent1": "试试: read(1) -> tell() -> seek(0) -> 再 read(1)。",
+
+  "python212HintTitle2": "提示 2",
+  "python212HintContent2": "常见写法:\nwith open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))",
+
+  "python212SolutionTitle": "答案",
+  "python212SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))", 
+   "python213ExampleTitle": "示例",
+  "python213ExampleCode1": "from pathlib import Path",
+  "python213ExampleCode2": "p = Path(\"notes.txt\")",
+  "python213ExampleCode3": "print(p.name, p.suffix)",
+  "python213ExampleCode4": "print(p.exists())",
+  "python213ExampleOutput": "输出:\nnotes.txt .txt\nFalse",
+  "python213EnterCodeHint": "在这里输入你的代码... 🧭📁",
+
+  "python213InstructionsTitle": "用 pathlib 处理路径 🧭",
+  "python213InstructionsContent": "我们来用 pathlib 玩路径 😄\n\n你的任务:\n1) 导入 Path: from pathlib import Path（或 import pathlib）\n2) 创建路径: p = Path(\"file.txt\")\n3) 至少使用一个:\n   - p.exists()\n   - p.name\n   - p.suffix\n   - p.parent\n   - p.stem\n4) 打印结果\n\nBonus: 一个 print() 打印多个东西，帅 😎",
+
+  "python213HintTitle1": "提示 1",
+  "python213HintContent1": "试试: p = Path(\"notes.txt\") 然后 print(p.name) 和 print(p.exists()).",
+
+  "python213HintTitle2": "提示 2",
+  "python213HintContent2": "示例:\nfrom pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())",
+
+  "python213SolutionTitle": "答案",
+  "python213SolutionContent": "from pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())", 
+   "python214ExampleTitle": "示例",
+  "python214ExampleCode1": "try:",
+  "python214ExampleCode2": "  with open(\"missing.txt\", \"r\") as f:",
+  "python214ExampleCode3": "    print(f.read())",
+  "python214ExampleCode4": "except FileNotFoundError:",
+  "python214ExampleCode5": "  print(\"File not found!\")",
+  "python214ExampleOutput": "输出:\nFile not found!",
+  "python214EnterCodeHint": "在这里输入你的代码... 💥📂",
+
+  "python214InstructionsTitle": "文件异常处理（try/except）💥",
+  "python214InstructionsContent": "现在来当错误捕手 😄\n\n你的任务:\n1) 写一个 try: 块\n2) 在 try 里尝试打开文件\n3) 用 except FileNotFoundError: 捕获错误\n4) 文件不存在时打印提示信息\n\nBonus: 也可以写 ''except FileNotFoundError as e:'' 然后 print(e) 😄",
+
+  "python214HintTitle1": "提示 1",
+  "python214HintContent1": "你需要: try: ... except FileNotFoundError: ...",
+
+  "python214HintTitle2": "提示 2",
+  "python214HintContent2": "常见写法:\ntry:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"File not found!\")",
+
+  "python214SolutionTitle": "答案",
+  "python214SolutionContent": "try:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"File not found!\")", 
+   "python215ExampleTitle": "示例",
+  "python215ExampleCode1": "try:",
+  "python215ExampleCode2": "  with open(\"input.txt\", \"r\") as f:",
+  "python215ExampleCode3": "    lines = f.readlines()",
+  "python215ExampleCode4": "  with open(\"output.txt\", \"w\") as out:",
+  "python215ExampleCode5": "    for line in lines:",
+  "python215ExampleCode6": "      out.write(line)",
+  "python215ExampleCode7": "  print(\"Done!\")",
+  "python215ExampleCode8": "except FileNotFoundError:",
+  "python215ExampleCode9": "  print(\"Missing file!\")",
+  "python215ExampleOutput": "输出:\nDone!",
+  "python215EnterCodeHint": "轮到你了... 搞定它 😄📄",
+
+  "python215InstructionsTitle": "挑战 1：复制文件 😈📄",
+  "python215InstructionsContent": "挑战时间到 😄\n\n你的任务:\n1) 使用 try/except FileNotFoundError\n2) 读取文件（比如 \"input.txt\"）\n3) 写入另一个文件（比如 \"output.txt\"）\n4) 最后 print 一句话（比如 \"Done!\"）\n\nBonus: 一行一行复制，变成小小文件克隆器 🧬📁",
+
+  "python215HintTitle1": "提示 1",
+  "python215HintContent1": "你需要: try: + with open(...,\"r\") + with open(...,\"w\") + except FileNotFoundError.",
+
+  "python215HintTitle2": "提示 2",
+  "python215HintContent2": "模板:\ntry:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"Done!\")\nexcept FileNotFoundError:\n  print(\"Missing file!\")",
+
+  "python215SolutionTitle": "答案",
+  "python215SolutionContent": "try:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"Done!\")\nexcept FileNotFoundError:\n  print(\"Missing file!\")", 
+   "python216ExampleTitle": "示例",
+  "python216ExampleCode1": "import csv",
+  "python216ExampleCode2": "with open(\"data.csv\", \"r\", newline=\"\") as f:",
+  "python216ExampleCode3": "  reader = csv.reader(f)",
+  "python216ExampleCode4": "  for row in reader:",
+  "python216ExampleCode5": "    print(row)",
+  "python216ExampleCode6": "",
+  "python216ExampleOutput": "输出:\n['name', 'age']\n['Ana', '20']",
+  "python216EnterCodeHint": "读 CSV，走起 😄📊",
+
+  "python216InstructionsTitle": "读取 CSV（csv.reader）📊",
+  "python216InstructionsContent": "来玩 CSV 😄\n\n你的任务:\n1) import csv\n2) 打开 .csv: with open(\"data.csv\", \"r\") as f:\n3) 创建 reader: reader = csv.reader(f)\n4) 循环: for row in reader:\n5) print(row)\n\n提示: 每一行都是一个列表，print 出来就看得很清楚 👀",
+
+  "python216HintTitle1": "提示 1",
+  "python216HintContent1": "需要 csv.reader(f) 和一个 for 循环，然后 print(row)。",
+
+  "python216HintTitle2": "提示 2",
+  "python216HintContent2": "模板:\nimport csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)",
+
+  "python216SolutionTitle": "答案",
+  "python216SolutionContent": "import csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)", 
+   "python217ExampleTitle": "示例",
+  "python217ExampleCode1": "import csv",
+  "python217ExampleCode2": "with open(\"out.csv\", \"w\", newline=\"\") as f:",
+  "python217ExampleCode3": "  writer = csv.writer(f)",
+  "python217ExampleCode4": "  writer.writerow([\"name\", \"age\"])",
+  "python217ExampleCode5": "  writer.writerow([\"Ana\", 20])",
+  "python217ExampleCode6": "  writer.writerow([\"Leo\", 25])",
+  "python217ExampleCode7": "print(\"CSV saved!\")",
+  "python217ExampleOutput": "输出:\nCSV saved!",
+  "python217EnterCodeHint": "写一个 CSV 😄✍️📊",
+
+  "python217InstructionsTitle": "写入 CSV（csv.writer）✍️📊",
+  "python217InstructionsContent": "我们来写个 CSV 😄\n\n你的任务:\n1) import csv\n2) 用写入模式打开: with open(\"out.csv\", \"w\") as f:\n3) 创建 writer: writer = csv.writer(f)\n4) 至少写一行: writer.writerow([...])\n5) 最后 print 一句，比如 \"CSV saved!\"\n\n提示: CSV 的一行就是一个列表。writer.writerow([\"name\", \"age\"]) 👌",
+
+  "python217HintTitle1": "提示 1",
+  "python217HintContent1": "用 csv.writer(f)，然后 writer.writerow([...])，最后 print().",
+
+  "python217HintTitle2": "提示 2",
+  "python217HintContent2": "模板:\nimport csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\nprint(\"CSV saved!\")",
+
+  "python217SolutionTitle": "答案",
+  "python217SolutionContent": "import csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\n  writer.writerow([\"Leo\", 25])\nprint(\"CSV saved!\")", 
+   "python218ExampleTitle": "示例",
+  "python218ExampleCode1": "import json",
+  "python218ExampleCode2": "with open(\"data.json\", \"r\") as f:",
+  "python218ExampleCode3": "  data = json.load(f)",
+  "python218ExampleCode4": "  print(data)",
+  "python218ExampleCode5": "",
+  "python218ExampleOutput": "输出:\n这会打印读取到的 JSON 对象",
+  "python218EnterCodeHint": "读取 JSON 然后打印 😄📦",
+
+  "python218InstructionsTitle": "读取 JSON（json.load）📦",
+  "python218InstructionsContent": "来玩 JSON 😄\n\n你的任务:\n1) import json\n2) 用 with open(\"data.json\", \"r\") as f: 打开文件\n3) 读取: data = json.load(f)\n4) 打印: print(data)\n\n提示: json.load 读取文件对象，json.loads 读取字符串 😉",
+
+  "python218HintTitle1": "提示 1",
+  "python218HintContent1": "需要: import json + with open(...,\"r\") + json.load(f) + print(data)。",
+
+  "python218HintTitle2": "提示 2",
+  "python218HintContent2": "模板:\nimport json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)",
+
+  "python218SolutionTitle": "答案",
+  "python218SolutionContent": "import json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)", 
+   "python219ExampleTitle": "示例",
+  "python219ExampleCode1": "import json",
+  "python219ExampleCode2": "data = dict(name=\"Ana\", age=20, active=True)",
+  "python219ExampleCode3": "with open(\"out.json\", \"w\") as f:",
+  "python219ExampleCode4": "  json.dump(data, f, indent=2)",
+  "python219ExampleCode5": "print(\"JSON saved!\")",
+  "python219ExampleCode6": "",
+  "python219ExampleOutput": "输出:\nJSON saved!",
+  "python219EnterCodeHint": "把 JSON 写进文件 😄✍️📦",
+
+  "python219InstructionsTitle": "写入 JSON（json.dump）✍️📦",
+  "python219InstructionsContent": "来写 JSON 😄\n\n你的任务:\n1) import json\n2) 创建数据对象（dict 或 list）\n3) 用 with open(\"out.json\", \"w\") as f: 打开文件\n4) 用 json.dump(data, f) 保存\n5) 最后 print 一句，比如 \"JSON saved!\"\n\n提示: indent=2 会更好看 👌",
+
+  "python219HintTitle1": "提示 1",
+  "python219HintContent1": "在 with open(...,\"w\") 里面用 json.dump(data, f)。",
+
+  "python219HintTitle2": "提示 2",
+  "python219HintContent2": "模板:\nimport json\ndata = dict(name=\"Ana\", age=20)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"JSON saved!\")",
+
+  "python219SolutionTitle": "答案",
+  "python219SolutionContent": "import json\ndata = dict(name=\"Ana\", age=20, active=True)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"JSON saved!\")", 
+  "python220ExampleTitle": "示例",
+  "python220ExampleCode1": "from pathlib import Path",
+  "python220ExampleCode2": "folder = Path(\"my_folder\")",
+  "python220ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python220ExampleCode4": "for item in folder.iterdir():",
+  "python220ExampleCode5": "  if item.is_file():",
+  "python220ExampleCode6": "    print(\"FILE:\", item.name)",
+  "python220ExampleCode7": "  if item.is_dir():",
+  "python220ExampleCode8": "    print(\"DIR:\", item.name)",
+  "python220ExampleOutput": "输出:\n会打印目录里找到的文件和文件夹",
+  "python220EnterCodeHint": "用 pathlib 玩转目录 😄📁",
+
+  "python220InstructionsTitle": "目录与文件（pathlib）📁",
+  "python220InstructionsContent": "来探索文件夹 😄\n\n你的任务:\n1) 导入 Path（from pathlib import Path）\n2) 创建 Path: folder = Path(\"my_folder\")\n3) 创建目录: folder.mkdir(exist_ok=True)\n4) 遍历: for item in folder.iterdir():\n5) 使用 item.is_file() 或 item.is_dir()\n6) 打印结果\n\n提示: item.name 是文件或文件夹的名字 👀",
+
+  "python220HintTitle1": "提示 1",
+  "python220HintContent1": "用 Path + mkdir + iterdir，然后 is_file() 或 is_dir() 再 print。",
+
+  "python220HintTitle2": "提示 2",
+  "python220HintContent2": "模板:\nfrom pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"FILE:\", item.name)",
+
+  "python220SolutionTitle": "答案",
+  "python220SolutionContent": "from pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"FILE:\", item.name)\n  if item.is_dir():\n    print(\"DIR:\", item.name)", 
+  "python221ExampleTitle": "示例",
+  "python221ExampleCode1": "from pathlib import Path",
+  "python221ExampleCode2": "folder = Path(\"demo_folder\")",
+  "python221ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python221ExampleCode4": "file_path = folder / \"note.txt\"",
+  "python221ExampleCode5": "file_path.write_text(\"Hello!\\nSecond line\")",
+  "python221ExampleCode6": "text = file_path.read_text()",
+  "python221ExampleCode7": "print(text)",
+  "python221ExampleCode8": "",
+  "python221ExampleOutput": "输出:\nHello!\nSecond line",
+  "python221EnterCodeHint": "挑战: 文件夹 + 写入 + 读取 + 打印 😈📁📝",
+
+  "python221InstructionsTitle": "挑战 2: 小文件项目 😈📁📝",
+  "python221InstructionsContent": "来做个小项目 😄\n\n你的任务:\n1) 用 Path 和 mkdir 创建文件夹\n2) 在文件夹里创建一个 txt 文件\n3) 写入两行文本\n4) 再读取回来\n5) 打印读取到的内容\n\n加分项: 用 write_text 和 read_text 会更爽 😉",
+
+  "python221HintTitle1": "提示 1",
+  "python221HintContent1": "用 pathlib: folder = Path(\"demo_folder\"); folder.mkdir(exist_ok=True); file_path = folder / \"note.txt\".",
+
+  "python221HintTitle2": "提示 2",
+  "python221HintContent2": "模板:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Line 1\\nLine 2\")\ntext = file_path.read_text()\nprint(text)",
+
+  "python221SolutionTitle": "答案",
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

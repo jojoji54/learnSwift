@@ -1381,7 +1381,330 @@
   "python206HintContent2": "Print it however you want:\nprint(counts)\n(or loop items() and print k, v)",
 
   "python206SolutionTitle": "Solution",
-  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)"
+  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)", 
+   "python207ExampleTitle": "Example",
+  "python207ExampleCode1": "f = open(\"data.txt\", \"r\")",
+  "python207ExampleCode2": "text = f.read()",
+  "python207ExampleCode3": "f.close()",
+  "python207ExampleCode4": "print(text)",
+  "python207ExampleOutput": "Output:\nHello from file!",
+  "python207EnterCodeHint": "Type your code here... 📂",
+
+  "python207InstructionsTitle": "Open and read a file 📂",
+  "python207InstructionsContent": "Welcome to File Handling! 😄\n\nYour mission:\n1) Open a file in read mode\n2) Read the content\n3) Close the file\n4) Print what you read\n\nTip: open(..., \"r\") then .read() then .close()\nDon''t forget the close 😎",
+
+  "python207HintTitle1": "Hint 1",
+  "python207HintContent1": "You need these pieces: open(..., \"r\"), .read(), .close(), and print(...).",
+
+  "python207HintTitle2": "Hint 2",
+  "python207HintContent2": "Common pattern:\nf = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)",
+
+  "python207SolutionTitle": "Solution",
+  "python207SolutionContent": "f = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)", 
+   "python208ExampleTitle": "Example",
+  "python208ExampleCode1": "f = open(\"notes.txt\", \"w\")",
+  "python208ExampleCode2": "f.write(\"Hello file!\")",
+  "python208ExampleCode3": "f.close()",
+  "python208ExampleCode4": "print(\"Saved!\")",
+  "python208ExampleOutput": "Output:\nSaved!",
+  "python208EnterCodeHint": "Write your code here... 📝",
+
+  "python208InstructionsTitle": "Write a file ✍️",
+  "python208InstructionsContent": "Ok writer mode 😄\n\nYour mission:\n1) Open a file in write mode using \"w\"\n2) Write some text using .write(...)\n3) Close the file\n4) Print a message like \"Saved!\"\n\nTip: Use open(..., \"w\") then .write(...) then .close(). Don''t skip the close 😎",
+
+  "python208HintTitle1": "Hint 1",
+  "python208HintContent1": "You need: open(..., \"w\"), then .write(\"...\") and .close(), plus print(...).",
+
+  "python208HintTitle2": "Hint 2",
+  "python208HintContent2": "Classic pattern:\nf = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
+
+  "python208SolutionTitle": "Solution",
+  "python208SolutionContent": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")" ,
+   "python209ExampleTitle": "Example",
+  "python209ExampleCode1": "f = open(\"log.txt\", \"a\")",
+  "python209ExampleCode2": "f.write(\"New line\\n\")",
+  "python209ExampleCode3": "f.close()",
+  "python209ExampleCode4": "print(\"Appended!\")",
+  "python209ExampleOutput": "Output:\nAppended!",
+  "python209EnterCodeHint": "Type your code here... ➕📄",
+
+  "python209InstructionsTitle": "Append mode (a) ➕",
+  "python209InstructionsContent": "Time to add stuff without deleting anything 😄\n\nYour mission:\n1) Open a file using append mode \"a\"\n2) Write something with .write(...)\n3) Close the file\n4) Print a message like \"Appended!\"\n\nBonus: add a newline using \\n so it doesn''t all stick together 😎",
+
+  "python209HintTitle1": "Hint 1",
+  "python209HintContent1": "Use open(..., \"a\") then .write(\"...\") then .close(). And don''t forget print(...).",
+
+  "python209HintTitle2": "Hint 2",
+  "python209HintContent2": "Classic pattern:\nf = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")",
+
+  "python209SolutionTitle": "Solution",
+  "python209SolutionContent": "f = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")", 
+   "python210ExampleTitle": "Example",
+  "python210ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python210ExampleCode2": "  text = f.read()",
+  "python210ExampleCode3": "print(text)",
+  "python210ExampleOutput": "Output:\nHello from file!",
+  "python210EnterCodeHint": "Type your code here... 🧠📂",
+
+  "python210InstructionsTitle": "With statement (auto-close) 😎",
+  "python210InstructionsContent": "Now we do it the clean way 😄\n\nYour mission:\n1) Use: with open(\"file\", \"r\") as f:\n2) Inside the block, call f.read() OR f.write(...)\n3) Print something (for example, print(text))\n\nThe cool part: you don''t need f.close() anymore. With does it for you 🧼✨",
+
+  "python210HintTitle1": "Hint 1",
+  "python210HintContent1": "Start with: with open(\"data.txt\", \"r\") as f: (then indent the next line).",
+
+  "python210HintTitle2": "Hint 2",
+  "python210HintContent2": "Typical pattern:\nwith open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)",
+
+  "python210SolutionTitle": "Solution",
+  "python210SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)", 
+    "python211ExampleTitle": "Example",
+  "python211ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python211ExampleCode2": "  for line in f:",
+  "python211ExampleCode3": "    print(line.strip())",
+  "python211ExampleCode4": "",
+  "python211ExampleOutput": "Output:\nLine 1\nLine 2",
+  "python211EnterCodeHint": "Type your code here... 📄👀",
+
+  "python211InstructionsTitle": "Read lines like a boss 😄",
+  "python211InstructionsContent": "Let''s read a file line by line 📄\n\nYour mission:\n1) Use: with open(\"file\", \"r\") as f:\n2) Read lines using ONE of these:\n   - lines = f.readlines()\n   - for line in f:\n3) Print something from the lines\n\nBonus: use .strip() so the output looks clean ✨",
+
+  "python211HintTitle1": "Hint 1",
+  "python211HintContent1": "Try a for loop: for line in f: then print(line).",
+
+  "python211HintTitle2": "Hint 2",
+  "python211HintContent2": "Two common options:\nOption A:\nlines = f.readlines()\nprint(lines)\n\nOption B:\nfor line in f:\n  print(line.strip())",
+
+  "python211SolutionTitle": "Solution",
+  "python211SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  for line in f:\n    print(line.strip())", 
+   "python212ExampleTitle": "Example",
+  "python212ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python212ExampleCode2": "  first = f.read(1)",
+  "python212ExampleCode3": "  pos = f.tell()",
+  "python212ExampleCode4": "  print(first, pos)",
+  "python212ExampleCode5": "  f.seek(0)",
+  "python212ExampleCode6": "  print(f.read(1))",
+  "python212ExampleOutput": "Output:\nH 1\nH",
+  "python212EnterCodeHint": "Type your code here... 🎯📂",
+
+  "python212InstructionsTitle": "seek() and tell() (file cursor) 🎯",
+  "python212InstructionsContent": "Ok, now we control the file cursor like a wizard 🧙‍♂️\n\nYour mission:\n1) Open a file with: with open(\"file\", \"r\") as f:\n2) Read something (like f.read(1))\n3) Use f.tell() to get the cursor position\n4) Use f.seek(0) to jump back to the start\n5) Print something so we can see it worked\n\nTip: tell() = where you are, seek(n) = teleport 😄",
+
+  "python212HintTitle1": "Hint 1",
+  "python212HintContent1": "Try: read(1) then tell() then seek(0) then read(1) again.",
+
+  "python212HintTitle2": "Hint 2",
+  "python212HintContent2": "Pattern:\nwith open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))",
+
+  "python212SolutionTitle": "Solution",
+  "python212SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))", 
+   "python213ExampleTitle": "Example",
+  "python213ExampleCode1": "from pathlib import Path",
+  "python213ExampleCode2": "p = Path(\"notes.txt\")",
+  "python213ExampleCode3": "print(p.name, p.suffix)",
+  "python213ExampleCode4": "print(p.exists())",
+  "python213ExampleOutput": "Output:\nnotes.txt .txt\nFalse",
+  "python213EnterCodeHint": "Type your code here... 🧭📁",
+
+  "python213InstructionsTitle": "Paths with pathlib 🧭",
+  "python213InstructionsContent": "Let''s use pathlib like a pro 😄\n\nYour mission:\n1) Import Path: from pathlib import Path (or import pathlib)\n2) Create a path: p = Path(\"file.txt\")\n3) Use at least one of these:\n   - p.exists()\n   - p.name\n   - p.suffix\n   - p.parent\n   - p.stem\n4) Print the result\n\nBonus: print multiple things in one print() like a legend 😎",
+
+  "python213HintTitle1": "Hint 1",
+  "python213HintContent1": "Try: p = Path(\"notes.txt\") then print(p.name) and print(p.exists()).",
+
+  "python213HintTitle2": "Hint 2",
+  "python213HintContent2": "Example:\nfrom pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())",
+
+  "python213SolutionTitle": "Solution",
+  "python213SolutionContent": "from pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())", 
+    "python214ExampleTitle": "Example",
+  "python214ExampleCode1": "try:",
+  "python214ExampleCode2": "  with open(\"missing.txt\", \"r\") as f:",
+  "python214ExampleCode3": "    print(f.read())",
+  "python214ExampleCode4": "except FileNotFoundError:",
+  "python214ExampleCode5": "  print(\"File not found!\")",
+  "python214ExampleOutput": "Output:\nFile not found!",
+  "python214EnterCodeHint": "Type your code here... 💥📂",
+
+  "python214InstructionsTitle": "File exceptions (try/except) 💥",
+  "python214InstructionsContent": "Time to catch errors like a superhero 🦸‍♂️\n\nYour mission:\n1) Write a try: block\n2) Inside try:, attempt to open a file\n3) Catch the error using: except FileNotFoundError:\n4) Print a friendly message when the file is missing\n\nBonus: you can do ''except FileNotFoundError as e:'' and print(e) 😄",
+
+  "python214HintTitle1": "Hint 1",
+  "python214HintContent1": "You need these lines: try: ... except FileNotFoundError: ...",
+
+  "python214HintTitle2": "Hint 2",
+  "python214HintContent2": "Pattern:\ntry:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"File not found!\")",
+
+  "python214SolutionTitle": "Solution",
+  "python214SolutionContent": "try:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"File not found!\")", 
+  "python215ExampleTitle": "Example",
+  "python215ExampleCode1": "try:",
+  "python215ExampleCode2": "  with open(\"input.txt\", \"r\") as f:",
+  "python215ExampleCode3": "    lines = f.readlines()",
+  "python215ExampleCode4": "  with open(\"output.txt\", \"w\") as out:",
+  "python215ExampleCode5": "    for line in lines:",
+  "python215ExampleCode6": "      out.write(line)",
+  "python215ExampleCode7": "  print(\"Done!\")",
+  "python215ExampleCode8": "except FileNotFoundError:",
+  "python215ExampleCode9": "  print(\"Missing file!\")",
+  "python215ExampleOutput": "Output:\nDone!",
+  "python215EnterCodeHint": "Your turn... make it work 😄📄",
+
+  "python215InstructionsTitle": "Challenge 1: Copy a file 😈📄",
+  "python215InstructionsContent": "Ok, challenge time 😄\n\nYour mission:\n1) Use try/except FileNotFoundError\n2) Read from a file (like \"input.txt\")\n3) Write to another file (like \"output.txt\")\n4) Print something at the end (like \"Done!\")\n\nBonus points if you loop line by line and copy everything like a tiny file-cloner 🧬📁",
+
+  "python215HintTitle1": "Hint 1",
+  "python215HintContent1": "You need: try: + with open(...,\"r\") + with open(...,\"w\") + except FileNotFoundError.",
+
+  "python215HintTitle2": "Hint 2",
+  "python215HintContent2": "Pattern:\ntry:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"Done!\")\nexcept FileNotFoundError:\n  print(\"Missing file!\")",
+
+  "python215SolutionTitle": "Solution",
+  "python215SolutionContent": "try:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"Done!\")\nexcept FileNotFoundError:\n  print(\"Missing file!\")", 
+  "python216ExampleTitle": "Example",
+  "python216ExampleCode1": "import csv",
+  "python216ExampleCode2": "with open(\"data.csv\", \"r\", newline=\"\") as f:",
+  "python216ExampleCode3": "  reader = csv.reader(f)",
+  "python216ExampleCode4": "  for row in reader:",
+  "python216ExampleCode5": "    print(row)",
+  "python216ExampleCode6": "",
+  "python216ExampleOutput": "Output:\n['name', 'age']\n['Ana', '20']",
+  "python216EnterCodeHint": "Read that CSV like a boss 😄📊",
+
+  "python216InstructionsTitle": "Read CSV (csv.reader) 📊",
+  "python216InstructionsContent": "Alright, CSV time 😄\n\nYour mission:\n1) import csv\n2) Open a .csv file with: with open(\"data.csv\", \"r\") as f:\n3) Create a reader: reader = csv.reader(f)\n4) Loop rows: for row in reader:\n5) print(row)\n\nTip: CSV rows come as lists. Print them and you will see everything 👀",
+
+  "python216HintTitle1": "Hint 1",
+  "python216HintContent1": "You need csv.reader(f) and a for loop that prints row.",
+
+  "python216HintTitle2": "Hint 2",
+  "python216HintContent2": "Pattern:\nimport csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)",
+
+  "python216SolutionTitle": "Solution",
+  "python216SolutionContent": "import csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)", 
+   "python217ExampleTitle": "Example",
+  "python217ExampleCode1": "import csv",
+  "python217ExampleCode2": "with open(\"out.csv\", \"w\", newline=\"\") as f:",
+  "python217ExampleCode3": "  writer = csv.writer(f)",
+  "python217ExampleCode4": "  writer.writerow([\"name\", \"age\"])",
+  "python217ExampleCode5": "  writer.writerow([\"Ana\", 20])",
+  "python217ExampleCode6": "  writer.writerow([\"Leo\", 25])",
+  "python217ExampleCode7": "print(\"CSV saved!\")",
+  "python217ExampleOutput": "Output:\nCSV saved!",
+  "python217EnterCodeHint": "Write a CSV file! 😄✍️📊",
+
+  "python217InstructionsTitle": "Write CSV (csv.writer) ✍️📊",
+  "python217InstructionsContent": "Let''s create a CSV 😄\n\nYour mission:\n1) import csv\n2) Open a .csv file in write mode: with open(\"out.csv\", \"w\") as f:\n3) Create a writer: writer = csv.writer(f)\n4) Write at least one row using writer.writerow([...])\n5) Print something like \"CSV saved!\"\n\nTip: A CSV row is just a list. writer.writerow([\"name\", \"age\"]) 👌",
+
+  "python217HintTitle1": "Hint 1",
+  "python217HintContent1": "Use csv.writer(f) then writer.writerow([...]) and finish with print().",
+
+  "python217HintTitle2": "Hint 2",
+  "python217HintContent2": "Pattern:\nimport csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\nprint(\"CSV saved!\")",
+
+  "python217SolutionTitle": "Solution",
+  "python217SolutionContent": "import csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\n  writer.writerow([\"Leo\", 25])\nprint(\"CSV saved!\")", 
+   "python218ExampleTitle": "Example",
+  "python218ExampleCode1": "import json",
+  "python218ExampleCode2": "with open(\"data.json\", \"r\") as f:",
+  "python218ExampleCode3": "  data = json.load(f)",
+  "python218ExampleCode4": "  print(data)",
+  "python218ExampleCode5": "",
+  "python218ExampleOutput": "Output:\nThis prints the loaded JSON object",
+  "python218EnterCodeHint": "Load JSON and print it 😄📦",
+
+  "python218InstructionsTitle": "Read JSON (json.load) 📦",
+  "python218InstructionsContent": "JSON time 😄\n\nYour mission:\n1) import json\n2) Open a .json file using with open(\"data.json\", \"r\") as f:\n3) Load it: data = json.load(f)\n4) Print the result: print(data)\n\nTip: json.load reads from a file object. json.loads reads from a string 😉",
+
+  "python218HintTitle1": "Hint 1",
+  "python218HintContent1": "You need: import json + with open(...,\"r\") + json.load(f) + print(data).",
+
+  "python218HintTitle2": "Hint 2",
+  "python218HintContent2": "Pattern:\nimport json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)",
+
+  "python218SolutionTitle": "Solution",
+  "python218SolutionContent": "import json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)",
+   "python219ExampleTitle": "Example",
+  "python219ExampleCode1": "import json",
+  "python219ExampleCode2": "data = dict(name=\"Ana\", age=20, active=True)",
+  "python219ExampleCode3": "with open(\"out.json\", \"w\") as f:",
+  "python219ExampleCode4": "  json.dump(data, f, indent=2)",
+  "python219ExampleCode5": "print(\"JSON saved!\")",
+  "python219ExampleCode6": "",
+  "python219ExampleOutput": "Output:\nJSON saved!",
+  "python219EnterCodeHint": "Save JSON to a file 😄✍️📦",
+
+  "python219InstructionsTitle": "Write JSON (json.dump) ✍️📦",
+  "python219InstructionsContent": "Ok, let''s write some JSON 😄\n\nYour mission:\n1) import json\n2) Create a data object (a dict or a list)\n3) Open a .json file with with open(\"out.json\", \"w\") as f:\n4) Save it using json.dump(data, f)\n5) Print something like \"JSON saved!\"\n\nTip: indent=2 makes it pretty 👌",
+
+  "python219HintTitle1": "Hint 1",
+  "python219HintContent1": "Use json.dump(yourData, f) inside a with open(...,\"w\") block.",
+
+  "python219HintTitle2": "Hint 2",
+  "python219HintContent2": "Pattern:\nimport json\ndata = dict(name=\"Ana\", age=20)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"JSON saved!\")",
+
+  "python219SolutionTitle": "Solution",
+  "python219SolutionContent": "import json\ndata = dict(name=\"Ana\", age=20, active=True)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"JSON saved!\")", 
+  "python220ExampleTitle": "Example",
+  "python220ExampleCode1": "from pathlib import Path",
+  "python220ExampleCode2": "folder = Path(\"my_folder\")",
+  "python220ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python220ExampleCode4": "for item in folder.iterdir():",
+  "python220ExampleCode5": "  if item.is_file():",
+  "python220ExampleCode6": "    print(\"FILE:\", item.name)",
+  "python220ExampleCode7": "  if item.is_dir():",
+  "python220ExampleCode8": "    print(\"DIR:\", item.name)",
+  "python220ExampleOutput": "Output:\nPrints files and folders found inside the directory",
+  "python220EnterCodeHint": "Explore folders with pathlib 😄📁",
+
+  "python220InstructionsTitle": "Directories & Files (pathlib) 📁",
+  "python220InstructionsContent": "Time to explore folders 😄\n\nYour mission:\n1) Import Path (from pathlib import Path)\n2) Create a Path: folder = Path(\"my_folder\")\n3) Create it with folder.mkdir(exist_ok=True)\n4) Loop through it: for item in folder.iterdir():\n5) Use item.is_file() or item.is_dir()\n6) Print what you find\n\nTip: item.name gives the file or folder name 👀",
+
+  "python220HintTitle1": "Hint 1",
+  "python220HintContent1": "Use Path + mkdir + iterdir. Then check is_file() or is_dir() and print.",
+
+  "python220HintTitle2": "Hint 2",
+  "python220HintContent2": "Pattern:\nfrom pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"FILE:\", item.name)",
+
+  "python220SolutionTitle": "Solution",
+  "python220SolutionContent": "from pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"FILE:\", item.name)\n  if item.is_dir():\n    print(\"DIR:\", item.name)", 
+   "python221ExampleTitle": "Example",
+  "python221ExampleCode1": "from pathlib import Path",
+  "python221ExampleCode2": "folder = Path(\"demo_folder\")",
+  "python221ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python221ExampleCode4": "file_path = folder / \"note.txt\"",
+  "python221ExampleCode5": "file_path.write_text(\"Hello from a file!\\nSecond line\")",
+  "python221ExampleCode6": "text = file_path.read_text()",
+  "python221ExampleCode7": "print(text)",
+  "python221ExampleCode8": "",
+  "python221ExampleOutput": "Output:\nHello from a file!\nSecond line",
+  "python221EnterCodeHint": "Challenge: folder + write + read + print 😈📁📝",
+
+  "python221InstructionsTitle": "Challenge 2: Mini File Project 😈📁📝",
+  "python221InstructionsContent": "Let''s do a tiny mini-project 😄\n\nYour mission:\n1) Create a folder using Path and mkdir\n2) Create a text file inside the folder\n3) Write 2 lines of text into the file\n4) Read the file back\n5) Print what you read\n\nBonus style points: use write_text and read_text 😉",
+
+  "python221HintTitle1": "Hint 1",
+  "python221HintContent1": "Use pathlib: folder = Path(\"demo_folder\"); folder.mkdir(exist_ok=True); file_path = folder / \"note.txt\".",
+
+  "python221HintTitle2": "Hint 2",
+  "python221HintContent2": "Pattern:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Line 1\\nLine 2\")\ntext = file_path.read_text()\nprint(text)",
+
+  "python221SolutionTitle": "Solution",
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello from a file!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

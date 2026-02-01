@@ -1366,7 +1366,330 @@
   "python206HintContent2": "Imprime como quieras:\nprint(counts)\n(o recorre items() e imprime k, v)",
 
   "python206SolutionTitle": "Solucion",
-  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)"
+  "python206SolutionContent": "points = [(0, 0), (1, 0), (0, 0), (2, 2)]\ncounts = dict()\nfor p in points:\n  counts[p] = counts.get(p, 0) + 1\nfor k, v in counts.items():\n  print(k, v)",
+   "python207ExampleTitle": "Ejemplo",
+  "python207ExampleCode1": "f = open(\"data.txt\", \"r\")",
+  "python207ExampleCode2": "text = f.read()",
+  "python207ExampleCode3": "f.close()",
+  "python207ExampleCode4": "print(text)",
+  "python207ExampleOutput": "Salida:\nHello from file!",
+  "python207EnterCodeHint": "Escribe tu codigo aqui... 📂",
+
+  "python207InstructionsTitle": "Abrir y leer un archivo 📂",
+  "python207InstructionsContent": "Bienvenido a File Handling 😄\n\nTu mision:\n1) Abre un archivo en modo lectura\n2) Lee el contenido\n3) Cierra el archivo\n4) Imprime lo que has leido\n\nPista: open(..., \"r\"), luego .read(), luego .close().",
+
+  "python207HintTitle1": "Pista 1",
+  "python207HintContent1": "Necesitas: open(..., \"r\"), .read(), .close() y print(...).",
+
+  "python207HintTitle2": "Pista 2",
+  "python207HintContent2": "Patron tipico:\nf = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)",
+
+  "python207SolutionTitle": "Solucion",
+  "python207SolutionContent": "f = open(\"data.txt\", \"r\")\ntext = f.read()\nf.close()\nprint(text)", 
+   "python208ExampleTitle": "Ejemplo",
+  "python208ExampleCode1": "f = open(\"notes.txt\", \"w\")",
+  "python208ExampleCode2": "f.write(\"Hello file!\")",
+  "python208ExampleCode3": "f.close()",
+  "python208ExampleCode4": "print(\"Saved!\")",
+  "python208ExampleOutput": "Salida:\nSaved!",
+  "python208EnterCodeHint": "Escribe tu codigo aqui... 📝",
+
+  "python208InstructionsTitle": "Escribir un archivo ✍️",
+  "python208InstructionsContent": "Modo escritor activado 😄\n\nTu mision:\n1) Abre un archivo en modo escritura usando \"w\"\n2) Escribe texto con .write(...)\n3) Cierra el archivo\n4) Imprime un mensaje tipo \"Saved!\"\n\nPista: open(..., \"w\"), luego .write(...), luego .close().",
+
+  "python208HintTitle1": "Pista 1",
+  "python208HintContent1": "Necesitas: open(..., \"w\"), luego .write(\"...\") y .close(), y tambien print(...).",
+
+  "python208HintTitle2": "Pista 2",
+  "python208HintContent2": "Patron tipico:\nf = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
+
+  "python208SolutionTitle": "Solucion",
+  "python208SolutionContent": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
+    "python209ExampleTitle": "Ejemplo",
+  "python209ExampleCode1": "f = open(\"log.txt\", \"a\")",
+  "python209ExampleCode2": "f.write(\"New line\\n\")",
+  "python209ExampleCode3": "f.close()",
+  "python209ExampleCode4": "print(\"Appended!\")",
+  "python209ExampleOutput": "Salida:\nAppended!",
+  "python209EnterCodeHint": "Escribe tu codigo aqui... ➕📄",
+
+  "python209InstructionsTitle": "Modo append (a) ➕",
+  "python209InstructionsContent": "Hora de anadir texto sin borrar lo anterior 😄\n\nTu mision:\n1) Abre un archivo en modo append usando \"a\"\n2) Escribe algo con .write(...)\n3) Cierra el archivo\n4) Imprime un mensaje tipo \"Appended!\"\n\nBonus: mete un salto de linea con \\n para que quede bonito 😎",
+
+  "python209HintTitle1": "Pista 1",
+  "python209HintContent1": "Usa open(..., \"a\"), luego .write(\"...\") y .close(). Y no te olvides del print(...).",
+
+  "python209HintTitle2": "Pista 2",
+  "python209HintContent2": "Patron tipico:\nf = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")",
+
+  "python209SolutionTitle": "Solucion",
+  "python209SolutionContent": "f = open(\"log.txt\", \"a\")\nf.write(\"New line\\n\")\nf.close()\nprint(\"Appended!\")", 
+   "python210ExampleTitle": "Ejemplo",
+  "python210ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python210ExampleCode2": "  text = f.read()",
+  "python210ExampleCode3": "print(text)",
+  "python210ExampleOutput": "Salida:\nHello from file!",
+  "python210EnterCodeHint": "Escribe tu codigo aqui... 🧠📂",
+
+  "python210InstructionsTitle": "With (cierre automatico) 😎",
+  "python210InstructionsContent": "Ahora lo hacemos en modo pro 😄\n\nTu mision:\n1) Usa: with open(\"archivo\", \"r\") as f:\n2) Dentro del bloque, llama a f.read() O f.write(...)\n3) Imprime algo (por ejemplo print(text))\n\nLa gracia: ya no necesitas f.close(). With lo cierra por ti 🧼✨",
+
+  "python210HintTitle1": "Pista 1",
+  "python210HintContent1": "Empieza con: with open(\"data.txt\", \"r\") as f: y la siguiente linea va indentada.",
+
+  "python210HintTitle2": "Pista 2",
+  "python210HintContent2": "Patron tipico:\nwith open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)",
+
+  "python210SolutionTitle": "Solucion",
+  "python210SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  text = f.read()\nprint(text)", 
+   "python211ExampleTitle": "Ejemplo",
+  "python211ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python211ExampleCode2": "  for line in f:",
+  "python211ExampleCode3": "    print(line.strip())",
+  "python211ExampleCode4": "",
+  "python211ExampleOutput": "Salida:\nLine 1\nLine 2",
+  "python211EnterCodeHint": "Escribe tu codigo aqui... 📄👀",
+
+  "python211InstructionsTitle": "Leer lineas sin drama 😄",
+  "python211InstructionsContent": "Vamos a leer un archivo linea por linea 📄\n\nTu mision:\n1) Usa: with open(\"archivo\", \"r\") as f:\n2) Lee lineas usando UNA de estas:\n   - lines = f.readlines()\n   - for line in f:\n3) Imprime algo de esas lineas\n\nBonus: usa .strip() para que quede limpito ✨",
+
+  "python211HintTitle1": "Pista 1",
+  "python211HintContent1": "Prueba con un bucle: for line in f: y luego print(line).",
+
+  "python211HintTitle2": "Pista 2",
+  "python211HintContent2": "Dos opciones comunes:\nOpcion A:\nlines = f.readlines()\nprint(lines)\n\nOpcion B:\nfor line in f:\n  print(line.strip())",
+
+  "python211SolutionTitle": "Solucion",
+  "python211SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  for line in f:\n    print(line.strip())", 
+   "python212ExampleTitle": "Ejemplo",
+  "python212ExampleCode1": "with open(\"data.txt\", \"r\") as f:",
+  "python212ExampleCode2": "  first = f.read(1)",
+  "python212ExampleCode3": "  pos = f.tell()",
+  "python212ExampleCode4": "  print(first, pos)",
+  "python212ExampleCode5": "  f.seek(0)",
+  "python212ExampleCode6": "  print(f.read(1))",
+  "python212ExampleOutput": "Salida:\nH 1\nH",
+  "python212EnterCodeHint": "Escribe tu codigo aqui... 🎯📂",
+
+  "python212InstructionsTitle": "seek() y tell() (cursor del archivo) 🎯",
+  "python212InstructionsContent": "Ahora controlamos el cursor del archivo como magos 🧙‍♂️\n\nTu mision:\n1) Abre un archivo con: with open(\"archivo\", \"r\") as f:\n2) Lee algo (por ejemplo f.read(1))\n3) Usa f.tell() para ver en que posicion estas\n4) Usa f.seek(0) para volver al inicio\n5) Imprime algo para comprobarlo\n\nPista: tell() = donde estas, seek(n) = teletransporte 😄",
+
+  "python212HintTitle1": "Pista 1",
+  "python212HintContent1": "Prueba: read(1), luego tell(), luego seek(0), luego read(1) otra vez.",
+
+  "python212HintTitle2": "Pista 2",
+  "python212HintContent2": "Patron:\nwith open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))",
+
+  "python212SolutionTitle": "Solucion",
+  "python212SolutionContent": "with open(\"data.txt\", \"r\") as f:\n  first = f.read(1)\n  pos = f.tell()\n  print(first, pos)\n  f.seek(0)\n  print(f.read(1))", 
+   "python213ExampleTitle": "Ejemplo",
+  "python213ExampleCode1": "from pathlib import Path",
+  "python213ExampleCode2": "p = Path(\"notes.txt\")",
+  "python213ExampleCode3": "print(p.name, p.suffix)",
+  "python213ExampleCode4": "print(p.exists())",
+  "python213ExampleOutput": "Salida:\nnotes.txt .txt\nFalse",
+  "python213EnterCodeHint": "Escribe tu codigo aqui... 🧭📁",
+
+  "python213InstructionsTitle": "Rutas con pathlib 🧭",
+  "python213InstructionsContent": "Vamos a usar pathlib en modo pro 😄\n\nTu mision:\n1) Importa Path: from pathlib import Path (o import pathlib)\n2) Crea una ruta: p = Path(\"archivo.txt\")\n3) Usa al menos una de estas:\n   - p.exists()\n   - p.name\n   - p.suffix\n   - p.parent\n   - p.stem\n4) Imprime el resultado\n\nBonus: imprime varias cosas en un solo print() como una leyenda 😎",
+
+  "python213HintTitle1": "Pista 1",
+  "python213HintContent1": "Prueba: p = Path(\"notes.txt\") y luego print(p.name) y print(p.exists()).",
+
+  "python213HintTitle2": "Pista 2",
+  "python213HintContent2": "Ejemplo:\nfrom pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())",
+
+  "python213SolutionTitle": "Solucion",
+  "python213SolutionContent": "from pathlib import Path\np = Path(\"notes.txt\")\nprint(p.name, p.suffix)\nprint(p.exists())", 
+   "python214ExampleTitle": "Ejemplo",
+  "python214ExampleCode1": "try:",
+  "python214ExampleCode2": "  with open(\"missing.txt\", \"r\") as f:",
+  "python214ExampleCode3": "    print(f.read())",
+  "python214ExampleCode4": "except FileNotFoundError:",
+  "python214ExampleCode5": "  print(\"¡Archivo no encontrado!\")",
+  "python214ExampleOutput": "Salida:\n¡Archivo no encontrado!",
+  "python214EnterCodeHint": "Escribe tu codigo aqui... 💥📂",
+
+  "python214InstructionsTitle": "Excepciones en archivos (try/except) 💥",
+  "python214InstructionsContent": "Hora de atrapar errores como un superheroe 🦸‍♂️\n\nTu mision:\n1) Escribe un bloque try:\n2) Dentro del try:, intenta abrir un archivo\n3) Captura el error con: except FileNotFoundError:\n4) Imprime un mensaje friendly si no existe\n\nBonus: puedes usar ''except FileNotFoundError as e:'' y hacer print(e) 😄",
+
+  "python214HintTitle1": "Pista 1",
+  "python214HintContent1": "Necesitas estas lineas: try: ... except FileNotFoundError: ...",
+
+  "python214HintTitle2": "Pista 2",
+  "python214HintContent2": "Patron:\ntry:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"¡Archivo no encontrado!\")",
+
+  "python214SolutionTitle": "Solucion",
+  "python214SolutionContent": "try:\n  with open(\"missing.txt\", \"r\") as f:\n    print(f.read())\nexcept FileNotFoundError:\n  print(\"¡Archivo no encontrado!\")", 
+   "python215ExampleTitle": "Ejemplo",
+  "python215ExampleCode1": "try:",
+  "python215ExampleCode2": "  with open(\"input.txt\", \"r\") as f:",
+  "python215ExampleCode3": "    lines = f.readlines()",
+  "python215ExampleCode4": "  with open(\"output.txt\", \"w\") as out:",
+  "python215ExampleCode5": "    for line in lines:",
+  "python215ExampleCode6": "      out.write(line)",
+  "python215ExampleCode7": "  print(\"¡Hecho!\")",
+  "python215ExampleCode8": "except FileNotFoundError:",
+  "python215ExampleCode9": "  print(\"¡Falta el archivo!\")",
+  "python215ExampleOutput": "Salida:\n¡Hecho!",
+  "python215EnterCodeHint": "Tu turno... que funcione 😄📄",
+
+  "python215InstructionsTitle": "Desafio 1: Copiar un archivo 😈📄",
+  "python215InstructionsContent": "Ok, toca desafio 😄\n\nTu mision:\n1) Usa try/except FileNotFoundError\n2) Lee de un archivo (por ejemplo \"input.txt\")\n3) Escribe en otro archivo (por ejemplo \"output.txt\")\n4) Imprime algo al final (rollo \"¡Hecho!\")\n\nBonus si copias linea a linea y te marcas un mini-clonador de archivos 🧬📁",
+
+  "python215HintTitle1": "Pista 1",
+  "python215HintContent1": "Necesitas: try: + with open(...,\"r\") + with open(...,\"w\") + except FileNotFoundError.",
+
+  "python215HintTitle2": "Pista 2",
+  "python215HintContent2": "Patron:\ntry:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"¡Hecho!\")\nexcept FileNotFoundError:\n  print(\"¡Falta el archivo!\")",
+
+  "python215SolutionTitle": "Solucion",
+  "python215SolutionContent": "try:\n  with open(\"input.txt\", \"r\") as f:\n    lines = f.readlines()\n  with open(\"output.txt\", \"w\") as out:\n    for line in lines:\n      out.write(line)\n  print(\"¡Hecho!\")\nexcept FileNotFoundError:\n  print(\"¡Falta el archivo!\")", 
+   "python216ExampleTitle": "Ejemplo",
+  "python216ExampleCode1": "import csv",
+  "python216ExampleCode2": "with open(\"data.csv\", \"r\", newline=\"\") as f:",
+  "python216ExampleCode3": "  reader = csv.reader(f)",
+  "python216ExampleCode4": "  for row in reader:",
+  "python216ExampleCode5": "    print(row)",
+  "python216ExampleCode6": "",
+  "python216ExampleOutput": "Salida:\n['name', 'age']\n['Ana', '20']",
+  "python216EnterCodeHint": "A leer CSV como un crack 😄📊",
+
+  "python216InstructionsTitle": "Leer CSV (csv.reader) 📊",
+  "python216InstructionsContent": "Vale, toca CSV 😄\n\nTu mision:\n1) import csv\n2) Abre un .csv con: with open(\"data.csv\", \"r\") as f:\n3) Crea el reader: reader = csv.reader(f)\n4) Recorre filas: for row in reader:\n5) print(row)\n\nPista: cada fila sale como una lista. Imprimela y lo veras clarisimo 👀",
+
+  "python216HintTitle1": "Pista 1",
+  "python216HintContent1": "Necesitas csv.reader(f) y un bucle for que haga print(row).",
+
+  "python216HintTitle2": "Pista 2",
+  "python216HintContent2": "Patron:\nimport csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)",
+
+  "python216SolutionTitle": "Solucion",
+  "python216SolutionContent": "import csv\nwith open(\"data.csv\", \"r\", newline=\"\") as f:\n  reader = csv.reader(f)\n  for row in reader:\n    print(row)", 
+   "python217ExampleTitle": "Ejemplo",
+  "python217ExampleCode1": "import csv",
+  "python217ExampleCode2": "with open(\"out.csv\", \"w\", newline=\"\") as f:",
+  "python217ExampleCode3": "  writer = csv.writer(f)",
+  "python217ExampleCode4": "  writer.writerow([\"name\", \"age\"])",
+  "python217ExampleCode5": "  writer.writerow([\"Ana\", 20])",
+  "python217ExampleCode6": "  writer.writerow([\"Leo\", 25])",
+  "python217ExampleCode7": "print(\"¡CSV guardado!\")",
+  "python217ExampleOutput": "Salida:\n¡CSV guardado!",
+  "python217EnterCodeHint": "Escribe un CSV 😄✍️📊",
+
+  "python217InstructionsTitle": "Escribir CSV (csv.writer) ✍️📊",
+  "python217InstructionsContent": "Vamos a crear un CSV 😄\n\nTu mision:\n1) import csv\n2) Abre un .csv en modo escritura: with open(\"out.csv\", \"w\") as f:\n3) Crea el writer: writer = csv.writer(f)\n4) Escribe al menos una fila con writer.writerow([...])\n5) Imprime algo tipo \"¡CSV guardado!\"\n\nPista: una fila CSV es una lista. writer.writerow([\"name\", \"age\"]) 👌",
+
+  "python217HintTitle1": "Pista 1",
+  "python217HintContent1": "Usa csv.writer(f) luego writer.writerow([...]) y termina con print().",
+
+  "python217HintTitle2": "Pista 2",
+  "python217HintContent2": "Patron:\nimport csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\nprint(\"¡CSV guardado!\")",
+
+  "python217SolutionTitle": "Solucion",
+  "python217SolutionContent": "import csv\nwith open(\"out.csv\", \"w\", newline=\"\") as f:\n  writer = csv.writer(f)\n  writer.writerow([\"name\", \"age\"])\n  writer.writerow([\"Ana\", 20])\n  writer.writerow([\"Leo\", 25])\nprint(\"¡CSV guardado!\")", 
+   "python218ExampleTitle": "Ejemplo",
+  "python218ExampleCode1": "import json",
+  "python218ExampleCode2": "with open(\"data.json\", \"r\") as f:",
+  "python218ExampleCode3": "  data = json.load(f)",
+  "python218ExampleCode4": "  print(data)",
+  "python218ExampleCode5": "",
+  "python218ExampleOutput": "Salida:\nEsto imprime el objeto JSON cargado",
+  "python218EnterCodeHint": "Carga JSON y haz print 😄📦",
+
+  "python218InstructionsTitle": "Leer JSON (json.load) 📦",
+  "python218InstructionsContent": "Hora de JSON 😄\n\nTu mision:\n1) import json\n2) Abre un .json con with open(\"data.json\", \"r\") as f:\n3) Cargalo: data = json.load(f)\n4) Imprimelo: print(data)\n\nTip: json.load lee desde un archivo. json.loads lee desde un string 😉",
+
+  "python218HintTitle1": "Pista 1",
+  "python218HintContent1": "Necesitas: import json + with open(...,\"r\") + json.load(f) + print(data).",
+
+  "python218HintTitle2": "Pista 2",
+  "python218HintContent2": "Patron:\nimport json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)",
+
+  "python218SolutionTitle": "Solucion",
+  "python218SolutionContent": "import json\nwith open(\"data.json\", \"r\") as f:\n  data = json.load(f)\n  print(data)",
+   "python219ExampleTitle": "Ejemplo",
+  "python219ExampleCode1": "import json",
+  "python219ExampleCode2": "data = dict(name=\"Ana\", age=20, active=True)",
+  "python219ExampleCode3": "with open(\"out.json\", \"w\") as f:",
+  "python219ExampleCode4": "  json.dump(data, f, indent=2)",
+  "python219ExampleCode5": "print(\"¡JSON guardado!\")",
+  "python219ExampleCode6": "",
+  "python219ExampleOutput": "Salida:\n¡JSON guardado!",
+  "python219EnterCodeHint": "Guarda JSON en un archivo 😄✍️📦",
+
+  "python219InstructionsTitle": "Escribir JSON (json.dump) ✍️📦",
+  "python219InstructionsContent": "Vale, vamos a escribir JSON 😄\n\nTu mision:\n1) import json\n2) Crea un objeto de datos (dict o lista)\n3) Abre un .json con with open(\"out.json\", \"w\") as f:\n4) Guardalo con json.dump(data, f)\n5) Imprime algo tipo \"¡JSON guardado!\"\n\nTip: indent=2 lo deja bonito 👌",
+
+  "python219HintTitle1": "Pista 1",
+  "python219HintContent1": "Usa json.dump(tusDatos, f) dentro del with open(...,\"w\").",
+
+  "python219HintTitle2": "Pista 2",
+  "python219HintContent2": "Patron:\nimport json\ndata = dict(name=\"Ana\", age=20)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"¡JSON guardado!\")",
+
+  "python219SolutionTitle": "Solucion",
+  "python219SolutionContent": "import json\ndata = dict(name=\"Ana\", age=20, active=True)\nwith open(\"out.json\", \"w\") as f:\n  json.dump(data, f, indent=2)\nprint(\"¡JSON guardado!\")", 
+  "python220ExampleTitle": "Ejemplo",
+  "python220ExampleCode1": "from pathlib import Path",
+  "python220ExampleCode2": "folder = Path(\"my_folder\")",
+  "python220ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python220ExampleCode4": "for item in folder.iterdir():",
+  "python220ExampleCode5": "  if item.is_file():",
+  "python220ExampleCode6": "    print(\"ARCHIVO:\", item.name)",
+  "python220ExampleCode7": "  if item.is_dir():",
+  "python220ExampleCode8": "    print(\"CARPETA:\", item.name)",
+  "python220ExampleOutput": "Salida:\nImprime los archivos y carpetas encontrados dentro del directorio",
+  "python220EnterCodeHint": "Explora carpetas con pathlib 😄📁",
+
+  "python220InstructionsTitle": "Directorios y archivos (pathlib) 📁",
+  "python220InstructionsContent": "Hora de explorar carpetas 😄\n\nTu mision:\n1) Importa Path (from pathlib import Path)\n2) Crea un Path: folder = Path(\"my_folder\")\n3) Crealo con folder.mkdir(exist_ok=True)\n4) Recorre: for item in folder.iterdir():\n5) Usa item.is_file() o item.is_dir()\n6) Imprime lo que encuentres\n\nPista: item.name te da el nombre del archivo o carpeta 👀",
+
+  "python220HintTitle1": "Pista 1",
+  "python220HintContent1": "Usa Path + mkdir + iterdir. Luego is_file() o is_dir() y print.",
+
+  "python220HintTitle2": "Pista 2",
+  "python220HintContent2": "Patron:\nfrom pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"ARCHIVO:\", item.name)",
+
+  "python220SolutionTitle": "Solucion",
+  "python220SolutionContent": "from pathlib import Path\nfolder = Path(\"my_folder\")\nfolder.mkdir(exist_ok=True)\nfor item in folder.iterdir():\n  if item.is_file():\n    print(\"ARCHIVO:\", item.name)\n  if item.is_dir():\n    print(\"CARPETA:\", item.name)", 
+   "python221ExampleTitle": "Ejemplo",
+  "python221ExampleCode1": "from pathlib import Path",
+  "python221ExampleCode2": "folder = Path(\"demo_folder\")",
+  "python221ExampleCode3": "folder.mkdir(exist_ok=True)",
+  "python221ExampleCode4": "file_path = folder / \"note.txt\"",
+  "python221ExampleCode5": "file_path.write_text(\"Hola desde un archivo!\\nSegunda linea\")",
+  "python221ExampleCode6": "text = file_path.read_text()",
+  "python221ExampleCode7": "print(text)",
+  "python221ExampleCode8": "",
+  "python221ExampleOutput": "Salida:\nHola desde un archivo!\nSegunda linea",
+  "python221EnterCodeHint": "Desafio: carpeta + escribir + leer + print 😈📁📝",
+
+  "python221InstructionsTitle": "Desafio 2: Mini proyecto de archivos 😈📁📝",
+  "python221InstructionsContent": "Mini-proyecto rapido 😄\n\nTu mision:\n1) Crea una carpeta con Path y mkdir\n2) Crea un archivo de texto dentro de esa carpeta\n3) Escribe 2 lineas dentro del archivo\n4) Lee el archivo otra vez\n5) Imprime lo que has leido\n\nBonus: si usas write_text y read_text, quedas como un pro 😎",
+
+  "python221HintTitle1": "Pista 1",
+  "python221HintContent1": "Usa pathlib: folder = Path(\"demo_folder\"); folder.mkdir(exist_ok=True); file_path = folder / \"note.txt\".",
+
+  "python221HintTitle2": "Pista 2",
+  "python221HintContent2": "Patron:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Linea 1\\nLinea 2\")\ntext = file_path.read_text()\nprint(text)",
+
+  "python221SolutionTitle": "Solucion",
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hola desde un archivo!\\nSegunda linea\")\ntext = file_path.read_text()\nprint(text)"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,9 +5,11 @@ import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 import '../../../Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
 import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
 import '../../../Screens/Courses/python/pythonDataStructures/DataStructuresExMain.dart';
+import '../../../Screens/Courses/python/pythonFileHandling/PythonFileHandlingExMain.dart';
 import '../../../Screens/Courses/python/pythonFunctions/pythonFunctionExMain.dart';
 import '../../courses/Python/pythonBasics/pyBasicsExModelListZH.dart';
 import '../../courses/Python/pythonDataStructures/pythonDataStructuresModelZH.dart';
+import '../../courses/Python/pythonFileHandling/pythonFileHandlingModelZH.dart';
 import '../../courses/Python/pythonFunctions/pythonFunctionsModelZH.dart';
 
 
@@ -92,7 +94,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-   /*CoursesMainModel(
+CoursesMainModel(
     id: 4,
     generalName: '文件操作',
     catExercise: pythonFileHandlingModelZH,
@@ -112,7 +114,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+   /*  CoursesMainModel(
     id: 5,
     generalName: '错误处理',
     catExercise: pythonErrorHandlingModelZH,

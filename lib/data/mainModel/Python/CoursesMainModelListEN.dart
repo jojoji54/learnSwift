@@ -1,4 +1,5 @@
 import 'package:learnswift/Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonFileHandling/PythonFileHandlingExMain.dart';
 import 'package:learnswift/data/courses/Python/pythonBasics/pyBasicsExModelListEN.dart';
 import 'package:learnswift/data/courses/Python/pythonControlFlow/pythonControlFlowModelEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
@@ -7,6 +8,7 @@ import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMai
 import '../../../Screens/Courses/python/pythonDataStructures/DataStructuresExMain.dart';
 import '../../../Screens/Courses/python/pythonFunctions/pythonFunctionExMain.dart';
 import '../../courses/Python/pythonDataStructures/pythonDataStructuresModelEN.dart';
+import '../../courses/Python/pythonFileHandling/pythonFileHandlingModelEN.dart';
 import '../../courses/Python/pythonFunctions/pythonFunctionsModelEN.dart';
 
 List<CoursesMainModel> coursesPythonMainModelListEN = [
@@ -90,7 +92,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
- /*  CoursesMainModel(
+ CoursesMainModel(
     id: 4,
     generalName: 'File Handling',
     catExercise: pythonFileHandlingModelEN,
@@ -110,7 +112,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+   /*  CoursesMainModel(
     id: 5,
     generalName: 'Error Handling',
     catExercise: pythonErrorHandlingModelEN,

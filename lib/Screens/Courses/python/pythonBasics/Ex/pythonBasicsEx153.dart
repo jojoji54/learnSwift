@@ -7,12 +7,12 @@ import 'package:provider/provider.dart';
 
 import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
-class PythonBasicsEx149 extends StatefulWidget {
+class PythonBasicsEx153 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
 
-  const PythonBasicsEx149({
+  const PythonBasicsEx153({
     super.key,
     required this.title,
     required this.id,
@@ -20,27 +20,24 @@ class PythonBasicsEx149 extends StatefulWidget {
   });
 
   @override
-  State<PythonBasicsEx149> createState() => _PythonBasicsEx149State();
+  State<PythonBasicsEx153> createState() => _PythonBasicsEx153State();
 }
 
-class _PythonBasicsEx149State extends State<PythonBasicsEx149> {
+class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.grey;
 
-  // Acepta:
-  // - print("text".upper()) / print("text".lower())
-  // - text = "..." + print(text.upper()) / print(text.lower())
+  // Requisito del challenge:
+  // 1) variable = input(...)
+  // 2) print(...) usando ESA misma variable
   //
-  // Requisitos mínimos:
-  // 1) Debe aparecer alguna cadena (comillas simples o dobles)
-  // 2) Debe haber un print(...) que use .upper() o .lower()
-final RegExp _codeRegex = RegExp(
-  '(?=.*[\'"][^\'"]+[\'"])(?=.*\\bprint\\s*\\(\\s*(?:\\w+|[\'"][^\'"]+[\'"])\\s*\\.\\s*(?:upper|lower)\\s*\\(\\s*\\)\\s*\\))',
-  multiLine: true,
-  dotAll: true,
-);
-
+  // Captura el nombre de la variable y exige que aparezca en el print.
+  final RegExp _codeRegex = RegExp(
+    r'(\b[a-zA-Z_]\w*)\s*=\s*input\s*\(.*?\).*?\bprint\s*\(.*?\b\1\b.*?\)',
+    multiLine: true,
+    dotAll: true,
+  );
 
   @override
   void dispose() {
@@ -85,7 +82,7 @@ final RegExp _codeRegex = RegExp(
   }
 
   void _validateInput(String userInput) {
-    if (_codeRegex.hasMatch(userInput)) {
+    if (_codeRegex.hasMatch(userInput.trim())) {
       setState(() => _inputTextColor = Colors.green);
     } else {
       setState(() => _inputTextColor = Colors.red);
@@ -103,9 +100,8 @@ final RegExp _codeRegex = RegExp(
         completed: true,
       );
 
-      allprovider.data[Constant.catIndex]
-          .catExercise[widget.id]
-          .completed = true;
+      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
+          true;
 
       allprovider.setData(allprovider.data);
       _controller.clear();
@@ -123,18 +119,18 @@ final RegExp _codeRegex = RegExp(
 
       if (_failedAttempts == 1) {
         _showDialog(
-          loc.python149HintTitle1,
-          loc.python149HintContent1,
+          loc.python153HintTitle1,
+          loc.python153HintContent1,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          loc.python149HintTitle2,
-          loc.python149HintContent2,
+          loc.python153HintTitle2,
+          loc.python153HintContent2,
         );
       } else {
         _showDialog(
-          loc.python149SolutionTitle,
-          loc.python149SolutionContent,
+          loc.python153SolutionTitle,
+          loc.python153SolutionContent('{name}'),
           titleColor: Colors.red,
         );
       }
@@ -153,11 +149,11 @@ final RegExp _codeRegex = RegExp(
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonPythonBasics149",
+              heroTag: "introButtonPythonBasics153",
               onPressed: () {
                 _showDialog(
-                  loc.python149InstructionsTitle,
-                  loc.python149InstructionsContent,
+                  loc.python153InstructionsTitle,
+                  loc.python153InstructionsContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -167,7 +163,7 @@ final RegExp _codeRegex = RegExp(
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonPythonBasics149",
+              heroTag: "runButtonPythonBasics153",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -191,19 +187,27 @@ final RegExp _codeRegex = RegExp(
                     ),
                     children: [
                       TextSpan(
-                        text: "${loc.python149ExampleTitle}\n",
+                        text: "${loc.python153ExampleTitle}\n",
                         style: const TextStyle(color: Colors.grey),
                       ),
                       const TextSpan(
                         text: ">>> ",
                         style: TextStyle(color: Colors.blue),
                       ),
+                      TextSpan(
+                        text: loc.python153ExampleCode1,
+                        style: const TextStyle(color: Colors.green),
+                      ),
                       const TextSpan(
-                        text: 'print("hello".upper())\n',
-                        style: TextStyle(color: Colors.green),
+                        text: ">>> ",
+                        style: TextStyle(color: Colors.blue),
                       ),
                       TextSpan(
-                        text: loc.python149ExampleOutput,
+                        text: loc.python153ExampleCode2,
+                        style: const TextStyle(color: Colors.green),
+                      ),
+                      TextSpan(
+                        text: "\n${loc.python153ExampleOutput}",
                         style: const TextStyle(color: Colors.grey),
                       ),
                     ],
@@ -222,7 +226,7 @@ final RegExp _codeRegex = RegExp(
                   onChanged: _validateInput,
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    hintText: loc.python149EnterCodeHint,
+                    hintText: loc.python153EnterCodeHint,
                     hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),

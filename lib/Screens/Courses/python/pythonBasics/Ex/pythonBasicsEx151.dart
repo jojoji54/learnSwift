@@ -7,12 +7,12 @@ import 'package:provider/provider.dart';
 
 import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
-class PythonBasicsEx149 extends StatefulWidget {
+class PythonBasicsEx151 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
 
-  const PythonBasicsEx149({
+  const PythonBasicsEx151({
     super.key,
     required this.title,
     required this.id,
@@ -20,27 +20,19 @@ class PythonBasicsEx149 extends StatefulWidget {
   });
 
   @override
-  State<PythonBasicsEx149> createState() => _PythonBasicsEx149State();
+  State<PythonBasicsEx151> createState() => _PythonBasicsEx151State();
 }
 
-class _PythonBasicsEx149State extends State<PythonBasicsEx149> {
+class _PythonBasicsEx151State extends State<PythonBasicsEx151> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.grey;
 
-  // Acepta:
-  // - print("text".upper()) / print("text".lower())
-  // - text = "..." + print(text.upper()) / print(text.lower())
-  //
-  // Requisitos mínimos:
-  // 1) Debe aparecer alguna cadena (comillas simples o dobles)
-  // 2) Debe haber un print(...) que use .upper() o .lower()
-final RegExp _codeRegex = RegExp(
-  '(?=.*[\'"][^\'"]+[\'"])(?=.*\\bprint\\s*\\(\\s*(?:\\w+|[\'"][^\'"]+[\'"])\\s*\\.\\s*(?:upper|lower)\\s*\\(\\s*\\)\\s*\\))',
-  multiLine: true,
-  dotAll: true,
-);
-
+  // Requisito: debe existir al menos un print(...)
+  final RegExp _codeRegex = RegExp(
+    r"^.*\bprint\s*\(\s*.+\s*\)\s*.*$",
+    multiLine: true,
+  );
 
   @override
   void dispose() {
@@ -85,7 +77,7 @@ final RegExp _codeRegex = RegExp(
   }
 
   void _validateInput(String userInput) {
-    if (_codeRegex.hasMatch(userInput)) {
+    if (_codeRegex.hasMatch(userInput.trim())) {
       setState(() => _inputTextColor = Colors.green);
     } else {
       setState(() => _inputTextColor = Colors.red);
@@ -123,18 +115,18 @@ final RegExp _codeRegex = RegExp(
 
       if (_failedAttempts == 1) {
         _showDialog(
-          loc.python149HintTitle1,
-          loc.python149HintContent1,
+          loc.python151HintTitle1,
+          loc.python151HintContent1,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          loc.python149HintTitle2,
-          loc.python149HintContent2,
+          loc.python151HintTitle2,
+          loc.python151HintContent2,
         );
       } else {
         _showDialog(
-          loc.python149SolutionTitle,
-          loc.python149SolutionContent,
+          loc.python151SolutionTitle,
+          loc.python151SolutionContent,
           titleColor: Colors.red,
         );
       }
@@ -153,11 +145,11 @@ final RegExp _codeRegex = RegExp(
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonPythonBasics149",
+              heroTag: "introButtonPythonBasics151",
               onPressed: () {
                 _showDialog(
-                  loc.python149InstructionsTitle,
-                  loc.python149InstructionsContent,
+                  loc.python151InstructionsTitle,
+                  loc.python151InstructionsContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -167,7 +159,7 @@ final RegExp _codeRegex = RegExp(
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonPythonBasics149",
+              heroTag: "runButtonPythonBasics151",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -191,19 +183,19 @@ final RegExp _codeRegex = RegExp(
                     ),
                     children: [
                       TextSpan(
-                        text: "${loc.python149ExampleTitle}\n",
+                        text: "${loc.python151ExampleTitle}\n",
                         style: const TextStyle(color: Colors.grey),
                       ),
                       const TextSpan(
                         text: ">>> ",
                         style: TextStyle(color: Colors.blue),
                       ),
-                      const TextSpan(
-                        text: 'print("hello".upper())\n',
-                        style: TextStyle(color: Colors.green),
+                      TextSpan(
+                        text: loc.python151ExampleCode,
+                        style: const TextStyle(color: Colors.green),
                       ),
                       TextSpan(
-                        text: loc.python149ExampleOutput,
+                        text: loc.python151ExampleOutput,
                         style: const TextStyle(color: Colors.grey),
                       ),
                     ],
@@ -222,7 +214,7 @@ final RegExp _codeRegex = RegExp(
                   onChanged: _validateInput,
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    hintText: loc.python149EnterCodeHint,
+                    hintText: loc.python151EnterCodeHint,
                     hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),

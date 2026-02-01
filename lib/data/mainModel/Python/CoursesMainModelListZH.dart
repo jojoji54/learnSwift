@@ -1,7 +1,9 @@
 
+import 'package:learnswift/data/courses/Python/pythonControlFlow/pythonControlFlowModelZH.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
+import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
 import '../../courses/Python/pythonBasics/pyBasicsExModelListZH.dart';
 
 
@@ -26,7 +28,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-  /* CoursesMainModel(
+  CoursesMainModel(
     id: 1,
     generalName: '控制流',
     catExercise: pythonControlFlowModelZH,
@@ -46,7 +48,7 @@ List<CoursesMainModel> coursesPythonMainModelListZH = [
       color2: color2,
     ),
   ),
-  CoursesMainModel(
+ /* CoursesMainModel(
     id: 2,
     generalName: '函数',
     catExercise: pythonFunctionsModelZH,

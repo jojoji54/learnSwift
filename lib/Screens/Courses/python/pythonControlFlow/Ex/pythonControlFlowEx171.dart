@@ -7,12 +7,12 @@ import 'package:provider/provider.dart';
 
 import '../../../../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
-class PythonBasicsEx153 extends StatefulWidget {
+class PythonControlFlowEx171 extends StatefulWidget {
   final String title;
   final int id;
   final bool completed;
 
-  const PythonBasicsEx153({
+  const PythonControlFlowEx171({
     super.key,
     required this.title,
     required this.id,
@@ -20,24 +20,47 @@ class PythonBasicsEx153 extends StatefulWidget {
   });
 
   @override
-  State<PythonBasicsEx153> createState() => _PythonBasicsEx153State();
+  State<PythonControlFlowEx171> createState() => _PythonControlFlowEx171State();
 }
 
-class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
+class _PythonControlFlowEx171State extends State<PythonControlFlowEx171> {
   final TextEditingController _controller = TextEditingController();
   int _failedAttempts = 0;
   Color _inputTextColor = Colors.grey;
 
-  // Requisito del challenge:
-  // 1) variable = input(...)
-  // 2) print(...) usando ESA misma variable
-  //
-  // Captura el nombre de la variable y exige que aparezca en el print.
-  final RegExp _codeRegex = RegExp(
-    r'(\b[a-zA-Z_]\w*)\s*=\s*input\s*\(.*?\).*?\bprint\s*\(.*?\b\1\b.*?\)',
-    multiLine: true,
-    dotAll: true,
-  );
+  // ✅ Requisitos:
+  // - while True:
+  // - input(...)
+  // - if ... : (con comparación a una cadena o variable)
+  // - break
+  // - print(...)
+  bool _isValid171(String code) {
+    final whileTrueRegex =
+        RegExp(r'^\s*while\s+True\s*:\s*$', multiLine: true);
+
+    final inputRegex = RegExp(r'\binput\s*\(');
+    final ifLineRegex = RegExp(r'^\s*if\s+.+\s*:\s*$', multiLine: true);
+
+    // Comparación (incluye 'exit' o cualquier string)
+    final comparisonRegex = RegExp(r'(==|!=)');
+    final stringRegex = RegExp(r"""["'][^"']+["']"""); // alguna cadena
+
+    final breakRegex = RegExp(r'\bbreak\b');
+    final printRegex = RegExp(r'\bprint\s*\(');
+
+    if (!whileTrueRegex.hasMatch(code)) return false;
+    if (!inputRegex.hasMatch(code)) return false;
+    if (!ifLineRegex.hasMatch(code)) return false;
+
+    // exigimos al menos una comparación, y que exista alguna cadena
+    if (!comparisonRegex.hasMatch(code)) return false;
+    if (!stringRegex.hasMatch(code)) return false;
+
+    if (!breakRegex.hasMatch(code)) return false;
+    if (!printRegex.hasMatch(code)) return false;
+
+    return true;
+  }
 
   @override
   void dispose() {
@@ -82,18 +105,15 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
   }
 
   void _validateInput(String userInput) {
-    if (_codeRegex.hasMatch(userInput.trim())) {
-      setState(() => _inputTextColor = Colors.green);
-    } else {
-      setState(() => _inputTextColor = Colors.red);
-    }
+    final ok = _isValid171(userInput.trim());
+    setState(() => _inputTextColor = ok ? Colors.green : Colors.red);
   }
 
   void _submit(AllProvider allprovider) {
     final userInput = _controller.text.trim();
     final loc = AppLocalizations.of(context)!;
 
-    if (_codeRegex.hasMatch(userInput)) {
+    if (_isValid171(userInput)) {
       purchaseManagerHive.updatePurchase(
         widget.id,
         purchased: true,
@@ -119,18 +139,18 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
 
       if (_failedAttempts == 1) {
         _showDialog(
-          loc.python153HintTitle1,
-          loc.python153HintContent1,
+          loc.python171HintTitle1,
+          loc.python171HintContent1,
         );
       } else if (_failedAttempts == 2) {
         _showDialog(
-          loc.python153HintTitle2,
-          loc.python153HintContent2,
+          loc.python171HintTitle2,
+          loc.python171HintContent2,
         );
       } else {
         _showDialog(
-          loc.python153SolutionTitle,
-          loc.python153SolutionContent,
+          loc.python171SolutionTitle,
+          loc.python171SolutionContent,
           titleColor: Colors.red,
         );
       }
@@ -149,11 +169,11 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "introButtonPythonBasics153",
+              heroTag: "introButtonPythonControlFlow171",
               onPressed: () {
                 _showDialog(
-                  loc.python153InstructionsTitle,
-                  loc.python153InstructionsContent,
+                  loc.python171InstructionsTitle,
+                  loc.python171InstructionsContent,
                 );
               },
               backgroundColor: const Color(0xFFfbce72),
@@ -163,7 +183,7 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
-              heroTag: "runButtonPythonBasics153",
+              heroTag: "runButtonPythonControlFlow171",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,
               child: const Icon(Icons.play_arrow, color: Colors.white),
@@ -187,7 +207,7 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
                     ),
                     children: [
                       TextSpan(
-                        text: "${loc.python153ExampleTitle}\n",
+                        text: "${loc.python171ExampleTitle}\n",
                         style: const TextStyle(color: Colors.grey),
                       ),
                       const TextSpan(
@@ -195,7 +215,7 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
                         style: TextStyle(color: Colors.blue),
                       ),
                       TextSpan(
-                        text: loc.python153ExampleCode1,
+                        text: loc.python171ExampleCode1,
                         style: const TextStyle(color: Colors.green),
                       ),
                       const TextSpan(
@@ -203,11 +223,11 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
                         style: TextStyle(color: Colors.blue),
                       ),
                       TextSpan(
-                        text: loc.python153ExampleCode2,
+                        text: loc.python171ExampleCode2,
                         style: const TextStyle(color: Colors.green),
                       ),
                       TextSpan(
-                        text: "\n${loc.python153ExampleOutput}",
+                        text: "\n${loc.python171ExampleOutput}",
                         style: const TextStyle(color: Colors.grey),
                       ),
                     ],
@@ -226,7 +246,7 @@ class _PythonBasicsEx153State extends State<PythonBasicsEx153> {
                   onChanged: _validateInput,
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(vertical: 8),
-                    hintText: loc.python153EnterCodeHint,
+                    hintText: loc.python171EnterCodeHint,
                     hintStyle: const TextStyle(color: Colors.grey),
                     border: InputBorder.none,
                   ),

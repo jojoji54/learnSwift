@@ -1,0 +1,96 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+
+List<CoursesExModel> swiftSetsExModelES = [
+  CoursesExModel(
+    id: 105,
+    exerciseName: 'Conjuntos: añadir elementos a un set',
+    productID: 'com.mrrubik.learnswift.swiftbasicex105',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(105),
+    completed: purchaseManagerHive.getCompleted(105),
+  ),
+  CoursesExModel(
+    id: 106,
+    exerciseName: 'Comprobar si un elemento existe',
+    productID: 'com.mrrubik.learnswift.swiftbasicex106',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(106),
+    completed: purchaseManagerHive.getCompleted(106),
+  ),
+  CoursesExModel(
+    id: 107,
+    exerciseName: 'Eliminar elementos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex107',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(107),
+    completed: purchaseManagerHive.getCompleted(107),
+  ),
+  CoursesExModel(
+    id: 108,
+    exerciseName: 'Eliminar elementos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex108',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(108),
+    completed: purchaseManagerHive.getCompleted(108),
+  ),
+  CoursesExModel(
+    id: 109,
+    exerciseName: 'Unión de dos sets',
+    productID: 'com.mrrubik.learnswift.swiftbasicex109',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(109),
+    completed: purchaseManagerHive.getCompleted(109),
+  ),
+  CoursesExModel(
+    id: 110,
+    exerciseName: 'Unión de dos sets',
+    productID: 'com.mrrubik.learnswift.swiftbasicex110',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(110),
+    completed: purchaseManagerHive.getCompleted(110),
+  ),
+  CoursesExModel(
+    id: 111,
+    exerciseName: 'Diferencia simétrica de dos sets',
+    productID: 'com.mrrubik.learnswift.swiftbasicex111',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(111),
+    completed: purchaseManagerHive.getCompleted(111),
+  ),
+  CoursesExModel(
+    id: 112,
+    exerciseName: 'Encontrar subconjuntos y superconjuntos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex112',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(112),
+    completed: purchaseManagerHive.getCompleted(112),
+  ),
+  CoursesExModel(
+    id: 113,
+    exerciseName: 'Desafío: diferencia simétrica y elementos únicos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex113',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(113),
+    completed: purchaseManagerHive.getCompleted(113),
+  ),
+  CoursesExModel(
+    id: 114,
+    exerciseName: 'Desafío: encontrar elementos comunes en sets',
+    productID: 'com.mrrubik.learnswift.swiftbasicex114',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(114),
+    completed: purchaseManagerHive.getCompleted(114),
+  ),
+  CoursesExModel(
+    id: 115,
+    exerciseName: 'Desafío: intersección',
+    productID: 'com.mrrubik.learnswift.swiftbasicex115',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(115),
+    completed: purchaseManagerHive.getCompleted(115),
+  ),
+  CoursesExModel(
+    id: 116,
+    exerciseName: 'Comprobar subconjunto y superconjunto',
+    productID: 'com.mrrubik.learnswift.swiftbasicex116',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(116),
+    completed: purchaseManagerHive.getCompleted(116),
+  ),
+  CoursesExModel(
+    id: 117,
+    exerciseName: 'Filtrar strings únicos',
+    productID: 'com.mrrubik.learnswift.swiftbasicex117',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(117),
+    completed: purchaseManagerHive.getCompleted(117),
+  ),
+];

@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+
+List<CoursesExModel> swiftOptionalsExModelES = [
+  CoursesExModel(
+    id: 133,
+    exerciseName: 'Entender los básicos de los opcionales',
+    productID: 'com.mrrubik.learnswift.swiftbasicex133',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(133),
+    completed: purchaseManagerHive.getCompleted(133),
+  ),
+  CoursesExModel(
+    id: 134,
+    exerciseName: 'Desenvolver a la fuerza un opcional',
+    productID: 'com.mrrubik.learnswift.swiftbasicex134',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(134),
+    completed: purchaseManagerHive.getCompleted(134),
+  ),
+  CoursesExModel(
+    id: 135,
+    exerciseName: 'Enlace de opcionales (optional binding)',
+    productID: 'com.mrrubik.learnswift.swiftbasicex135',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(135),
+    completed: purchaseManagerHive.getCompleted(135),
+  ),
+  CoursesExModel(
+    id: 136,
+    exerciseName: 'Encadenamiento de opcionales (optional chaining)',
+    productID: 'com.mrrubik.learnswift.swiftbasicex136',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(136),
+    completed: purchaseManagerHive.getCompleted(136),
+  ),
+  CoursesExModel(
+    id: 137,
+    exerciseName: 'Usar el enlace de opcionales',
+    productID: 'com.mrrubik.learnswift.swiftbasicex137',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(137),
+    completed: purchaseManagerHive.getCompleted(137),
+  ),
+  CoursesExModel(
+    id: 138,
+    exerciseName: 'Usar el operador de fusión con nil (??)',
+    productID: 'com.mrrubik.learnswift.swiftbasicex138',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(138),
+    completed: purchaseManagerHive.getCompleted(138),
+  ),
+  CoursesExModel(
+    id: 139,
+    exerciseName: 'Desenvolver opcionales con if let',
+    productID: 'com.mrrubik.learnswift.swiftbasicex139',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(139),
+    completed: purchaseManagerHive.getCompleted(139),
+  ),
+  CoursesExModel(
+    id: 140,
+    exerciseName: 'Manejar opcionales con guard let',
+    productID: 'com.mrrubik.learnswift.swiftbasicex140',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(140),
+    completed: purchaseManagerHive.getCompleted(140),
+  ),
+  CoursesExModel(
+    id: 141,
+    exerciseName: 'Desenvolver opcionales de forma segura con guard',
+    productID: 'com.mrrubik.learnswift.swiftbasicex141',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(141),
+    completed: purchaseManagerHive.getCompleted(141),
+  ),
+  CoursesExModel(
+    id: 142,
+    exerciseName: 'Usar optional chaining para acceder a propiedades',
+    productID: 'com.mrrubik.learnswift.swiftbasicex142',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(142),
+    completed: purchaseManagerHive.getCompleted(142),
+  ),
+  CoursesExModel(
+    id: 143,
+    exerciseName: 'Desafío: manejar opcionales anidados',
+    productID: 'com.mrrubik.learnswift.swiftbasicex143',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(143),
+    completed: purchaseManagerHive.getCompleted(143),
+  ),
+  CoursesExModel(
+    id: 144,
+    exerciseName: 'Desafío: acceder a valores de forma segura',
+    productID: 'com.mrrubik.learnswift.swiftbasicex144',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(144),
+    completed: purchaseManagerHive.getCompleted(144),
+  ),
+  CoursesExModel(
+    id: 145,
+    exerciseName: 'Desafío: opcionales en diccionarios',
+    productID: 'com.mrrubik.learnswift.swiftbasicex145',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(145),
+    completed: purchaseManagerHive.getCompleted(145),
+  ),
+  CoursesExModel(
+    id: 146,
+    exerciseName: 'Desafío: opcionales en diccionarios anidados',
+    productID: 'com.mrrubik.learnswift.swiftbasicex146',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(146),
+    completed: purchaseManagerHive.getCompleted(146),
+  ),
+];

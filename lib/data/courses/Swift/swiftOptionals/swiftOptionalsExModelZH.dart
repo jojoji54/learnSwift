@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+
+List<CoursesExModel> swiftOptionalsExModelZH = [
+  CoursesExModel(
+    id: 133,
+    exerciseName: '理解可选值基础',
+    productID: 'com.mrrubik.learnswift.swiftbasicex133',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(133),
+    completed: purchaseManagerHive.getCompleted(133),
+  ),
+  CoursesExModel(
+    id: 134,
+    exerciseName: '强制解包可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex134',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(134),
+    completed: purchaseManagerHive.getCompleted(134),
+  ),
+  CoursesExModel(
+    id: 135,
+    exerciseName: '可选绑定（Optional Binding）',
+    productID: 'com.mrrubik.learnswift.swiftbasicex135',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(135),
+    completed: purchaseManagerHive.getCompleted(135),
+  ),
+  CoursesExModel(
+    id: 136,
+    exerciseName: '可选链（Optional Chaining）',
+    productID: 'com.mrrubik.learnswift.swiftbasicex136',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(136),
+    completed: purchaseManagerHive.getCompleted(136),
+  ),
+  CoursesExModel(
+    id: 137,
+    exerciseName: '使用可选绑定',
+    productID: 'com.mrrubik.learnswift.swiftbasicex137',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(137),
+    completed: purchaseManagerHive.getCompleted(137),
+  ),
+  CoursesExModel(
+    id: 138,
+    exerciseName: '使用 nil 合并运算符（??）',
+    productID: 'com.mrrubik.learnswift.swiftbasicex138',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(138),
+    completed: purchaseManagerHive.getCompleted(138),
+  ),
+  CoursesExModel(
+    id: 139,
+    exerciseName: '使用 if let 解包可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex139',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(139),
+    completed: purchaseManagerHive.getCompleted(139),
+  ),
+  CoursesExModel(
+    id: 140,
+    exerciseName: '使用 guard let 处理可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex140',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(140),
+    completed: purchaseManagerHive.getCompleted(140),
+  ),
+  CoursesExModel(
+    id: 141,
+    exerciseName: '使用 guard 安全解包可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex141',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(141),
+    completed: purchaseManagerHive.getCompleted(141),
+  ),
+  CoursesExModel(
+    id: 142,
+    exerciseName: '用可选链访问属性',
+    productID: 'com.mrrubik.learnswift.swiftbasicex142',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(142),
+    completed: purchaseManagerHive.getCompleted(142),
+  ),
+  CoursesExModel(
+    id: 143,
+    exerciseName: '挑战：处理嵌套可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex143',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(143),
+    completed: purchaseManagerHive.getCompleted(143),
+  ),
+  CoursesExModel(
+    id: 144,
+    exerciseName: '挑战：安全访问值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex144',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(144),
+    completed: purchaseManagerHive.getCompleted(144),
+  ),
+  CoursesExModel(
+    id: 145,
+    exerciseName: '挑战：字典中的可选值处理',
+    productID: 'com.mrrubik.learnswift.swiftbasicex145',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(145),
+    completed: purchaseManagerHive.getCompleted(145),
+  ),
+  CoursesExModel(
+    id: 146,
+    exerciseName: '挑战：嵌套字典中的可选值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex146',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(146),
+    completed: purchaseManagerHive.getCompleted(146),
+  ),
+];

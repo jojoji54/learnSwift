@@ -1,0 +1,96 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
+
+List<CoursesExModel> swiftDictionariesExModelZH = [
+  CoursesExModel(
+    id: 92,
+    exerciseName: '字典基础：通过键获取值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex92',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(92),
+    completed: purchaseManagerHive.getCompleted(92),
+  ),
+  CoursesExModel(
+    id: 93,
+    exerciseName: '向字典添加键值对',
+    productID: 'com.mrrubik.learnswift.swiftbasicex93',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(93),
+    completed: purchaseManagerHive.getCompleted(93),
+  ),
+  CoursesExModel(
+    id: 94,
+    exerciseName: '从字典中删除元素',
+    productID: 'com.mrrubik.learnswift.swiftbasicex94',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(94),
+    completed: purchaseManagerHive.getCompleted(94),
+  ),
+  CoursesExModel(
+    id: 95,
+    exerciseName: '合并两个字典',
+    productID: 'com.mrrubik.learnswift.swiftbasicex95',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(95),
+    completed: purchaseManagerHive.getCompleted(95),
+  ),
+  CoursesExModel(
+    id: 96,
+    exerciseName: '向字典添加键值对',
+    productID: 'com.mrrubik.learnswift.swiftbasicex96',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(96),
+    completed: purchaseManagerHive.getCompleted(96),
+  ),
+  CoursesExModel(
+    id: 97,
+    exerciseName: '更新字典中的值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex97',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(97),
+    completed: purchaseManagerHive.getCompleted(97),
+  ),
+  CoursesExModel(
+    id: 98,
+    exerciseName: '检查字典中是否存在某个键',
+    productID: 'com.mrrubik.learnswift.swiftbasicex98',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(98),
+    completed: purchaseManagerHive.getCompleted(98),
+  ),
+  CoursesExModel(
+    id: 99,
+    exerciseName: '更新与删除字典中的键值对',
+    productID: 'com.mrrubik.learnswift.swiftbasicex99',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(99),
+    completed: purchaseManagerHive.getCompleted(99),
+  ),
+  CoursesExModel(
+    id: 100,
+    exerciseName: '遍历字典',
+    productID: 'com.mrrubik.learnswift.swiftbasicex100',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(100),
+    completed: purchaseManagerHive.getCompleted(100),
+  ),
+  CoursesExModel(
+    id: 101,
+    exerciseName: '过滤字典中的键和值',
+    productID: 'com.mrrubik.learnswift.swiftbasicex101',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(101),
+    completed: purchaseManagerHive.getCompleted(101),
+  ),
+  CoursesExModel(
+    id: 102,
+    exerciseName: '挑战：过滤并更新字典',
+    productID: 'com.mrrubik.learnswift.swiftbasicex102',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(102),
+    completed: purchaseManagerHive.getCompleted(102),
+  ),
+  CoursesExModel(
+    id: 103,
+    exerciseName: '挑战：合并字典并处理键冲突',
+    productID: 'com.mrrubik.learnswift.swiftbasicex103',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(103),
+    completed: purchaseManagerHive.getCompleted(103),
+  ),
+  CoursesExModel(
+    id: 104,
+    exerciseName: '挑战：过滤并修改字典',
+    productID: 'com.mrrubik.learnswift.swiftbasicex104',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(104),
+    completed: purchaseManagerHive.getCompleted(104),
+  ),
+];

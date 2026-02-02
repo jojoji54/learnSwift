@@ -11,14 +11,14 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 791,
-    exerciseName: '使用 std::array',
+    exerciseName: '使用 std::array 并输出 size',
     productID: 'com.mrrubik.learnswift.cpparraysex791',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(791),
     completed: purchaseManagerHive.getCompleted(791),
   ),
   CoursesExModel(
     id: 792,
-    exerciseName: '获取 size',
+    exerciseName: '获取 size 并输出',
     productID: 'com.mrrubik.learnswift.cpparraysex792',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(792),
     completed: purchaseManagerHive.getCompleted(792),
@@ -46,7 +46,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 796,
-    exerciseName: '使用 std::array',
+    exerciseName: '使用 std::array 并输出 size',
     productID: 'com.mrrubik.learnswift.cpparraysex796',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(796),
     completed: purchaseManagerHive.getCompleted(796),
@@ -67,7 +67,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 799,
-    exerciseName: '创建一个 int 变量',
+    exerciseName: '创建一个 int 变量并输出它',
     productID: 'com.mrrubik.learnswift.cpparraysex799',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(799),
     completed: purchaseManagerHive.getCompleted(799),
@@ -81,7 +81,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 801,
-    exerciseName: '用索引读取数组值',
+    exerciseName: '用索引读取数组值并输出',
     productID: 'com.mrrubik.learnswift.cpparraysex801',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(801),
     completed: purchaseManagerHive.getCompleted(801),
@@ -95,7 +95,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 803,
-    exerciseName: '使用 std::array',
+    exerciseName: '使用 std::array 并输出 size',
     productID: 'com.mrrubik.learnswift.cpparraysex803',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(803),
     completed: purchaseManagerHive.getCompleted(803),

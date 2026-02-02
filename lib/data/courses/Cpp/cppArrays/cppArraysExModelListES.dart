@@ -46,14 +46,14 @@ List<CoursesExModel> cppArraysModelES = [
   ),
   CoursesExModel(
     id: 796,
-    exerciseName: 'Uso de std::array',
+    exerciseName: 'Usa std::array y muestra su size',
     productID: 'com.mrrubik.learnswift.cpparraysex796',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(796),
     completed: purchaseManagerHive.getCompleted(796),
   ),
   CoursesExModel(
     id: 797,
-    exerciseName: 'Uso de std::array',
+    exerciseName: 'Usa std::array y muestra su size',
     productID: 'com.mrrubik.learnswift.cpparraysex797',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(797),
     completed: purchaseManagerHive.getCompleted(797),
@@ -95,7 +95,7 @@ List<CoursesExModel> cppArraysModelES = [
   ),
   CoursesExModel(
     id: 803,
-    exerciseName: 'Uso de std::array',
+    exerciseName: 'Usa std::array y muestra su size',
     productID: 'com.mrrubik.learnswift.cpparraysex803',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(803),
     completed: purchaseManagerHive.getCompleted(803),

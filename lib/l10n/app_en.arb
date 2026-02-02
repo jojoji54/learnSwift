@@ -91,12 +91,6 @@
     "buyExercise": "Buy this exercise",
     "buyAllExercises": "Unlock all exercises",
     "restorePurchases": "Restore purchases",
-    "@unlockExerciseContent": {\n      "description": "Message displayed when asking the user if they want to unlock a specific exercise",
-      "placeholders": {\n        "exerciseName": {\n          "type": "String",
-          "example": "Hello World"
-        }
-      }
-    }, 
     "purchaseUnavailable": "Purchases are not available at the moment.",
   "purchaseInitiated": "The purchase has been initiated.",
   "productNotFound": "Product not found.", 
@@ -1416,7 +1410,8 @@
   "python208HintContent2": "Classic pattern:\nf = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")",
 
   "python208SolutionTitle": "Solution",
-  "python208SolutionContent": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")" ,\n   "python209ExampleTitle": "Example",
+  "python208SolutionContent": "f = open(\"notes.txt\", \"w\")\nf.write(\"Hello file!\")\nf.close()\nprint(\"Saved!\")" ,
+  "python209ExampleTitle": "Example",
   "python209ExampleCode1": "f = open(\"log.txt\", \"a\")",
   "python209ExampleCode2": "f.write(\"New line\\n\")",
   "python209ExampleCode3": "f.close()",
@@ -1758,7 +1753,8 @@
   "js303HintContent2": "No quotes. Use at least two operators and include * or / or %.",
 
   "js303SolutionTitle": "Solution ✅",
-  "js303SolutionContent": "One possible solution is:\n\nconst a = 8;\nconst b = 2;\nconsole.log((a + b) * 3);" , \n   "js304InstructionsTitle": "Mission 304 🚀",
+  "js303SolutionContent": "One possible solution is:\n\nconst a = 8;\nconst b = 2;\nconsole.log((a + b) * 3);" , 
+  "js304InstructionsTitle": "Mission 304 🚀",
   "js304InstructionsContent": "Create a string variable and print its length.\n\nRules:\n1) Create a string using let or const.\n2) Use .length.\n3) Print the length using console.log(...).\n\nExample:\nconst word = \"JavaScript\";\nconsole.log(word.length);",
 
   "js304ExampleTitle": "Example",
@@ -4084,3 +4080,4 @@
   "js464HintContent2": "Remember to use console.log for output.",
   "js464SolutionTitle": "Solution ✅",
   "js464SolutionContent": "One possible solution is:\n\nconst v = await Promise.resolve('OK');\nconsole.log(v);"
+}

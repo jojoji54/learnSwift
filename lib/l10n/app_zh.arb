@@ -83,12 +83,6 @@
   "buyExercise": "购买此练习",
   "buyAllExercises": "解锁所有练习",
   "restorePurchases": "恢复购买",
-  "@unlockExerciseContent": {\n    "description": "提示用户是否希望解锁特定练习的消息",
-    "placeholders": {\n      "exerciseName": {\n        "type": "String",
-        "example": "你好世界"
-      }
-    }
-  },
   "purchaseUnavailable": "目前无法进行购买。",
   "purchaseInitiated": "购买已开始。",
   "productNotFound": "未找到产品。",
@@ -4077,3 +4071,4 @@
   "js464HintContent2": "记得用 console.log 输出。",
   "js464SolutionTitle": "答案 ✅",
   "js464SolutionContent": "一种可行的写法：\n\nconst v = await Promise.resolve('OK');\nconsole.log(v);"
+}

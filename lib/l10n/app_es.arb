@@ -91,12 +91,6 @@
   "buyExercise": "Comprar este ejercicio",
   "buyAllExercises": "Desbloquear todos los ejercicios",
   "restorePurchases": "Restaurar compras",
-  "@unlockExerciseContent": {\n    "description": "Mensaje que se muestra al preguntar al usuario si desea desbloquear un ejercicio específico",
-    "placeholders": {\n      "exerciseName": {\n        "type": "String",
-        "example": "Hola Mundo"
-      }
-    }
-  },
   "purchaseUnavailable": "Las compras no están disponibles en este momento.",
   "purchaseInitiated": "La compra se ha iniciado.",
   "productNotFound": "Producto no encontrado.",
@@ -4072,3 +4066,4 @@
   "js464HintContent2": "Recuerda usar console.log para la salida.",
   "js464SolutionTitle": "Solución ✅",
   "js464SolutionContent": "Una posible solución es:\n\nconst v = await Promise.resolve('OK');\nconsole.log(v);"
+}

@@ -1,9 +1,11 @@
 
 
 import 'package:learnswift/Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListEN.dart';
+import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListEN.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (EN)
@@ -31,9 +33,6 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
     ),
   ),
 
-  /*
-
-
   CoursesMainModel(
     id: 1,
     generalName: 'Boolean Basics',
@@ -54,6 +53,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 2,

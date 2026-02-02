@@ -1,7 +1,9 @@
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListZH.dart';
+import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListZH.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ZH)
@@ -29,15 +31,12 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     ),
   ),
 
-  /*
-
-
   CoursesMainModel(
     id: 1,
-    generalName: 'Boolean Basics',
-    catExercise: jsBooleanModelEN,
+    generalName: '布尔基础',
+    catExercise: jsBooleanModelZH,
     description:
-        'Covers boolean logic, comparisons, and logical operators. Essential for decision-making in your code.',
+        '学习布尔逻辑、比较和逻辑运算符，是代码分支判断的关键基础。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -52,6 +51,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 2,

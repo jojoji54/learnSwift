@@ -64,10 +64,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'C++',
     productID: 'com.mrrubik.learnswift.ccc',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(5),
-    coursesList: [],
+    coursesList: coursesJavaMainModelListEN,
     color1: Color(0xFF00599C),
     color2: Color(0xFF4D4D4D),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: C++ helps you master this language used for high-performance systems, video games, and critical applications.\n\nVersion: C++20',
   ),

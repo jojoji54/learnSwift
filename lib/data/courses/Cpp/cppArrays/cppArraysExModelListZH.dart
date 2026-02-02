@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> cppArraysModelZH = [
   CoursesExModel(
     id: 790,
-    exerciseName: '创建 int 数组并输出首元素',
+    exerciseName: '创建 int 数组',
     productID: 'com.mrrubik.learnswift.cpparraysex790',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(790),
     completed: purchaseManagerHive.getCompleted(790),
@@ -25,21 +25,21 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 793,
-    exerciseName: '访问索引 0 并输出',
+    exerciseName: '访问索引 0',
     productID: 'com.mrrubik.learnswift.cpparraysex793',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(793),
     completed: purchaseManagerHive.getCompleted(793),
   ),
   CoursesExModel(
     id: 794,
-    exerciseName: '访问索引 1 并输出',
+    exerciseName: '访问索引 1',
     productID: 'com.mrrubik.learnswift.cpparraysex794',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(794),
     completed: purchaseManagerHive.getCompleted(794),
   ),
   CoursesExModel(
     id: 795,
-    exerciseName: '用 new 分配并输出值',
+    exerciseName: '用 new 分配',
     productID: 'com.mrrubik.learnswift.cpparraysex795',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(795),
     completed: purchaseManagerHive.getCompleted(795),
@@ -53,14 +53,14 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 797,
-    exerciseName: '使用 std::array 并输出 size',
+    exerciseName: '使用 std::array',
     productID: 'com.mrrubik.learnswift.cpparraysex797',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(797),
     completed: purchaseManagerHive.getCompleted(797),
   ),
   CoursesExModel(
     id: 798,
-    exerciseName: '写一个 for 循环输出序列',
+    exerciseName: 'for 循环序列',
     productID: 'com.mrrubik.learnswift.cpparraysex798',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(798),
     completed: purchaseManagerHive.getCompleted(798),
@@ -74,7 +74,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 800,
-    exerciseName: '对数组求和并输出',
+    exerciseName: '对数组求和',
     productID: 'com.mrrubik.learnswift.cpparraysex800',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(800),
     completed: purchaseManagerHive.getCompleted(800),
@@ -88,7 +88,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 802,
-    exerciseName: '获取 size 并输出',
+    exerciseName: '获取 size',
     productID: 'com.mrrubik.learnswift.cpparraysex802',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(802),
     completed: purchaseManagerHive.getCompleted(802),
@@ -102,7 +102,7 @@ List<CoursesExModel> cppArraysModelZH = [
   ),
   CoursesExModel(
     id: 804,
-    exerciseName: '获取 size 并输出',
+    exerciseName: '获取 size',
     productID: 'com.mrrubik.learnswift.cpparraysex804',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(804),
     completed: purchaseManagerHive.getCompleted(804),

@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> cppArraysModelEN = [
   CoursesExModel(
     id: 790,
-    exerciseName: 'Create a C-style int array and print the first element',
+    exerciseName: 'C-style int array',
     productID: 'com.mrrubik.learnswift.cpparraysex790',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(790),
     completed: purchaseManagerHive.getCompleted(790),
@@ -18,35 +18,35 @@ List<CoursesExModel> cppArraysModelEN = [
   ),
   CoursesExModel(
     id: 792,
-    exerciseName: 'Get the size of a collection and print it',
+    exerciseName: 'Get the size of a collection',
     productID: 'com.mrrubik.learnswift.cpparraysex792',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(792),
     completed: purchaseManagerHive.getCompleted(792),
   ),
   CoursesExModel(
     id: 793,
-    exerciseName: 'Access index 0 in an array and print it',
+    exerciseName: 'Access index 0 in an array',
     productID: 'com.mrrubik.learnswift.cpparraysex793',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(793),
     completed: purchaseManagerHive.getCompleted(793),
   ),
   CoursesExModel(
     id: 794,
-    exerciseName: 'Access index 1 in an array and print it',
+    exerciseName: 'Access index 1 in an array',
     productID: 'com.mrrubik.learnswift.cpparraysex794',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(794),
     completed: purchaseManagerHive.getCompleted(794),
   ),
   CoursesExModel(
     id: 795,
-    exerciseName: 'Allocate with new and print the value',
+    exerciseName: 'Allocate with new',
     productID: 'com.mrrubik.learnswift.cpparraysex795',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(795),
     completed: purchaseManagerHive.getCompleted(795),
   ),
   CoursesExModel(
     id: 796,
-    exerciseName: 'Use std::array and print its size',
+    exerciseName: 'Using std::array',
     productID: 'com.mrrubik.learnswift.cpparraysex796',
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(796),
     completed: purchaseManagerHive.getCompleted(796),
@@ -67,7 +67,7 @@ List<CoursesExModel> cppArraysModelEN = [
   ),
   CoursesExModel(
     id: 799,
-    exerciseName: 'Create an int variable and print its value',
+    exerciseName: 'Create an int variable',
     productID: 'com.mrrubik.learnswift.cpparraysex799',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(799),
     completed: purchaseManagerHive.getCompleted(799),
@@ -102,7 +102,7 @@ List<CoursesExModel> cppArraysModelEN = [
   ),
   CoursesExModel(
     id: 804,
-    exerciseName: 'Get the size of a collection and print it',
+    exerciseName: 'Get the size of a collection',
     productID: 'com.mrrubik.learnswift.cpparraysex804',
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(804),
     completed: purchaseManagerHive.getCompleted(804),

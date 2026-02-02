@@ -17,11 +17,6 @@ import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListES.dart';
 import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListES.dart';
 import '../../courses/JavaScript/jsLoops/jsLoopsExModelListES.dart';
 import '../../courses/JavaScript/jsArrays/jsArraysExModelListES.dart';
-import '../../courses/JavaScript/jsObjects/jsObjectsExModelListES.dart';
-import '../../courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExModelListES.dart';
-import '../../courses/JavaScript/jsFunctions/jsFunctionsExModelListES.dart';
-import '../../courses/JavaScript/jsNullUndefined/jsNullUndefinedExModelListES.dart';
-import '../../courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExModelListES.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ES)
@@ -69,6 +64,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 2,
@@ -153,6 +150,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 6,

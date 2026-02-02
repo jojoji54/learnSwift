@@ -2195,12 +2195,23 @@
   "js329SolutionTitle": "Solution ✅",
   "js329SolutionContent": "One possible solution is:\n\nconst isMember = true;\nconst hasTicket = false;\nconsole.log(isMember && hasTicket || true);",
   "js330InstructionsTitle": "Mission 330 🚀",
-  "js330InstructionsContent": "Practice if and else conditions.\n\nRules:\n1) Follow the concept for this lesson.\n2) Use console.log for output.\n3) Keep it simple.\n\nExample:\nconst n = 10;\nif (n > 5) console.log(\"Big\");\n// Try another number",
+  "js330InstructionsContent": "Practice if and else conditions.
+
+Rules:
+1) Follow the concept for this lesson.
+2) Use console.log for output.
+3) Keep it simple.
+
+Example:
+const n = 10;
+if (n > 5) console.log(\"Big\");
+// Try another number",
   "js330ExampleTitle": "Example",
   "js330ExampleCode1": "const n = 10;",
   "js330ExampleCode2": "if (n > 5) console.log(\"Big\");",
   "js330ExampleCode3": "// Try another number",
-  "js330ExampleOutput": "Output:\nBig",
+  "js330ExampleOutput": "Output:
+Big",
   "js330EnterCodeHint": "Type your JavaScript code here...",
   "js330HintTitle1": "Hint 1 💡",
   "js330HintContent1": "Follow the example pattern.",

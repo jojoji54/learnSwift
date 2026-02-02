@@ -2,8 +2,16 @@ import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListES.dart';
 import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListES.dart';
+import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListES.dart';
+import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListES.dart';
+import '../../courses/JavaScript/jsLoops/jsLoopsExModelListES.dart';
+import '../../courses/JavaScript/jsArrays/jsArraysExModelListES.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ES)
@@ -57,9 +65,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
-    catExercise: jsIfElseModelEN,
+    catExercise: jsIfElseModelES,
     description:
-        'Learn conditional branching to control program flow with if, else if, and else.',
+        'Aprende ramas condicionales con if, else if y else para controlar el flujo.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -78,9 +86,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
-    catExercise: jsSwitchModelEN,
+    catExercise: jsSwitchModelES,
     description:
-        'Use switch statements to handle multiple cases in a clean, readable way.',
+        'Usa switch para manejar múltiples casos de forma clara y ordenada.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -98,10 +106,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 4,
-    generalName: 'Loops',
-    catExercise: jsLoopsModelEN,
+    generalName: 'Bucles',
+    catExercise: jsLoopsModelES,
     description:
-        'Master for, while, do...while, and iteration patterns to automate repetitive tasks.',
+        'Domina for, while, do while y patrones de iteración para automatizar tareas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -120,9 +128,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
-    catExercise: jsArraysModelEN,
+    catExercise: jsArraysModelES,
     description:
-        'Work with arrays, indexing, and common methods like push/pop/map/filter to handle collections.',
+        'Trabaja con arrays, índices y métodos como push, pop, map y filter.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -137,6 +145,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 6,

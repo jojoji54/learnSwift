@@ -187,11 +187,10 @@ class _JsBooleanEx319State extends State<JsBooleanEx319> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-  lines: exampleLines,
-  withLineNumbers: true,
-  language: CodeLanguage.javascript,
-),
-
+                  lines: exampleLines,
+                  withLineNumbers: true,
+                  language: CodeLanguage.javascript,
+                ),
                 const SizedBox(height: 10),
                 Text(
                   loc.js319ExampleOutput,

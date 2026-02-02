@@ -239,10 +239,10 @@ class _JsBasicsEx308State extends State<JsBasicsEx308> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-  lines: exampleLines,
-  withLineNumbers: true,
-  language: CodeLanguage.javascript,
-),
+                  lines: exampleLines,
+                  withLineNumbers: true,
+                  language: CodeLanguage.javascript,
+                ),
 
                 const SizedBox(height: 10),
                 Text(

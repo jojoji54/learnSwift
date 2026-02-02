@@ -2,10 +2,18 @@
 
 import 'package:learnswift/Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
 import 'package:learnswift/Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListEN.dart';
 import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListEN.dart';
+import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListEN.dart';
+import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListEN.dart';
+import '../../courses/JavaScript/jsLoops/jsLoopsExModelListEN.dart';
+import '../../courses/JavaScript/jsArrays/jsArraysExModelListEN.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (EN)
@@ -139,6 +147,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 6,

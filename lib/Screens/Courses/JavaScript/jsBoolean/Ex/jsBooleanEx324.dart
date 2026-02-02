@@ -189,11 +189,10 @@ class _JsBooleanEx324State extends State<JsBooleanEx324> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-  lines: exampleLines,
-  withLineNumbers: true,
-  language: CodeLanguage.javascript,
-),
-
+                  lines: exampleLines,
+                  withLineNumbers: true,
+                  language: CodeLanguage.javascript,
+                ),
                 const SizedBox(height: 10),
                 Text(
                   loc.js324ExampleOutput,

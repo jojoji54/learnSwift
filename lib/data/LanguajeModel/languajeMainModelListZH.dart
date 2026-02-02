@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 
+import '../mainModel/Java/CoursesMainModelListZH.dart';
 import '../mainModel/JavaScript/CoursesMainModelListZH.dart';
 
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
@@ -51,10 +52,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Java',
     productID: 'com.mrrubik.learnswift.java',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(4),
-    coursesList: [],
+    coursesList: coursesJavaMainModelListZH,
     color1: Color(0xFF5382A1),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Java 教授这一流行的语言，用于企业应用程序、移动应用和稳健系统。\n\n版本: Java 20',
   ),

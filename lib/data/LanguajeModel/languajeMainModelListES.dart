@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListES.dart';
 
+import '../mainModel/Java/CoursesMainModelListES.dart';
 import '../mainModel/JavaScript/CoursesMainModelListES.dart';
 
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
@@ -51,10 +52,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Java',
     productID: 'com.mrrubik.learnswift.java',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(4),
-    coursesList: [],
+    coursesList: coursesJavaMainModelListES,
     color1: Color(0xFF5382A1),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Java te enseña uno de los lenguajes más populares para aplicaciones empresariales, móviles y sistemas robustos.\n\nVersión: Java 20',
   ),

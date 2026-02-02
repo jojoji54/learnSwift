@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> jsBasicsModelES = [
+  CoursesExModel(
+    id: 300,
+    exerciseName: '¡Hola, JavaScript!',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex300',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(300),
+    completed: purchaseManagerHive.getCompleted(300),
+  ),
+  CoursesExModel(
+    id: 301,
+    exerciseName: 'console.log()',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex301',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(301),
+    completed: purchaseManagerHive.getCompleted(301),
+  ),
+  CoursesExModel(
+    id: 302,
+    exerciseName: 'Variables: let y const',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex302',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(302),
+    completed: purchaseManagerHive.getCompleted(302),
+  ),
+  CoursesExModel(
+    id: 303,
+    exerciseName: 'Números y matemáticas',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex303',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(303),
+    completed: purchaseManagerHive.getCompleted(303),
+  ),
+  CoursesExModel(
+    id: 304,
+    exerciseName: 'Conceptos básicos de Strings',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex304',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(304),
+    completed: purchaseManagerHive.getCompleted(304),
+  ),
+  CoursesExModel(
+    id: 305,
+    exerciseName: 'Template Literals',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex305',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(305),
+    completed: purchaseManagerHive.getCompleted(305),
+  ),
+  CoursesExModel(
+    id: 306,
+    exerciseName: 'Booleanos',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex306',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(306),
+    completed: purchaseManagerHive.getCompleted(306),
+  ),
+  CoursesExModel(
+    id: 307,
+    exerciseName: 'Operadores de comparación',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex307',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(307),
+    completed: purchaseManagerHive.getCompleted(307),
+  ),
+  CoursesExModel(
+    id: 308,
+    exerciseName: 'Sentencias if',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex308',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(308),
+    completed: purchaseManagerHive.getCompleted(308),
+  ),
+  CoursesExModel(
+    id: 309,
+    exerciseName: 'Operadores lógicos',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex309',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(309),
+    completed: purchaseManagerHive.getCompleted(309),
+  ),
+  CoursesExModel(
+    id: 310,
+    exerciseName: 'Desafío 1',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex310',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(310),
+    completed: purchaseManagerHive.getCompleted(310),
+  ),
+  CoursesExModel(
+    id: 311,
+    exerciseName: 'Bucles for',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex311',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(311),
+    completed: purchaseManagerHive.getCompleted(311),
+  ),
+  CoursesExModel(
+    id: 312,
+    exerciseName: 'Bucles while',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex312',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(312),
+    completed: purchaseManagerHive.getCompleted(312),
+  ),
+  CoursesExModel(
+    id: 313,
+    exerciseName: 'Arrays',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex313',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(313),
+    completed: purchaseManagerHive.getCompleted(313),
+  ),
+  CoursesExModel(
+    id: 314,
+    exerciseName: 'Funciones',
+    productID: 'com.mrrubik.learnswift.javascriptbasicex314',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(314),
+    completed: purchaseManagerHive.getCompleted(314),
+  ),
+];

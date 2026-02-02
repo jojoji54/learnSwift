@@ -1679,7 +1679,305 @@
   "python221HintContent2": "模板:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Line 1\\nLine 2\")\ntext = file_path.read_text()\nprint(text)",
 
   "python221SolutionTitle": "答案",
-  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)"
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)", 
+   "jsCorrectTitle": "正确！✅",
+  "jsCorrectExplanation": "不错 😄 你已经打印出第一个 JavaScript 消息了！",
+
+  "js300InstructionsTitle": "任务 300 🚀",
+  "js300InstructionsContent": "编写 JavaScript 代码，用 console.log() 打印一条消息。\n\n你的消息必须包含 Hello 和 JavaScript 这两个词。\n示例：console.log(\"Hello, JavaScript!\");",
+
+  "js300ExampleTitle": "示例",
+  "js300ExampleCode1": "// 打印一条消息",
+  "js300ExampleCode2": "console.log(\"Hello, JavaScript!\");",
+  "js300ExampleOutput": "输出：\nHello, JavaScript!",
+  "js300EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js300HintTitle1": "提示 1 💡",
+  "js300HintContent1": "使用 console.log(...) 可以把文字打印到屏幕上。",
+  "js300HintTitle2": "提示 2 🧩",
+  "js300HintContent2": "把消息写在引号里。示例：console.log(\"Hello, JavaScript!\");",
+
+  "js300SolutionTitle": "答案 ✅",
+  "js300SolutionContent": "一种可行的写法：\n\nconsole.log(\"Hello, JavaScript!\");", 
+   "js301InstructionsTitle": "任务 301 🚀",
+  "js301InstructionsContent": "编写 JavaScript 代码，包含两行 console.log()：\n\n1) 一行打印文本（字符串）。\n2) 另一行打印数字或数学表达式。\n\n示例：\nconsole.log(\"你好！\");\nconsole.log(2 + 2);",
+
+  "js301ExampleTitle": "示例",
+  "js301ExampleCode1": "// 打印文本",
+  "js301ExampleCode2": "console.log(\"你好！\");",
+  "js301ExampleCode3": "// 打印数字（或数学表达式）",
+  "js301ExampleCode4": "console.log(2 + 2);",
+  "js301ExampleOutput": "输出：\n你好！\n4",
+  "js301EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js301HintTitle1": "提示 1 💡",
+  "js301HintContent1": "你需要至少两行 console.log(...).",
+  "js301HintTitle2": "提示 2 🧩",
+  "js301HintContent2": "一行要用引号打印字符串，另一行要打印数字或算式，比如 10 或 3 * 7。",
+
+  "js301SolutionTitle": "答案 ✅",
+  "js301SolutionContent": "一种可行的写法：\n\nconsole.log(\"你好！\");\nconsole.log(2 + 2);", 
+  "js302InstructionsTitle": "任务 302 🚀",
+  "js302InstructionsContent": "编写 JavaScript 代码：\n\n1) 使用 let 创建一个变量。\n2) 使用 const 创建一个常量。\n3) 在同一个 console.log(...) 里打印这两个变量。\n\n提示：可以用 + 把文本和变量拼接起来。",
+
+  "js302ExampleTitle": "示例",
+  "js302ExampleCode1": "let x = 5;",
+  "js302ExampleCode2": "const y = 10;",
+  "js302ExampleCode3": "console.log(\"x=\" + x + \", y=\" + y);",
+  "js302ExampleCode4": "// 试试你自己的数字",
+  "js302ExampleOutput": "输出：\nx=5, y=10",
+  "js302EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js302HintTitle1": "提示 1 💡",
+  "js302HintContent1": "你需要同时写 let 和 const。",
+  "js302HintTitle2": "提示 2 🧩",
+  "js302HintContent2": "console.log(...) 里要同时使用两个变量名，比如：console.log(x + y) 或 console.log(\"x=\" + x + \", y=\" + y)。",
+
+  "js302SolutionTitle": "答案 ✅",
+  "js302SolutionContent": "一种可行的写法：\n\nlet x = 5;\nconst y = 10;\nconsole.log(\"x=\" + x + \", y=\" + y);", 
+   "js303InstructionsTitle": "任务 303 🚀",
+  "js303InstructionsContent": "编写 JavaScript 代码，用 console.log(...) 打印一个数学运算结果。\n\n规则：\n- 必须是真正的数学表达式（不要加引号）。\n- 至少使用两个运算符。\n- 至少包含其中一个：* 或 / 或 %。\n\n示例：\nconsole.log((8 + 2) * 3);",
+
+  "js303ExampleTitle": "示例",
+  "js303ExampleCode1": "const a = 8;",
+  "js303ExampleCode2": "const b = 2;",
+  "js303ExampleCode3": "console.log((a + b) * 3);",
+  "js303ExampleCode4": "// 试试你自己的数字",
+  "js303ExampleOutput": "输出：\n30",
+  "js303EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js303HintTitle1": "提示 1 💡",
+  "js303HintContent1": "在 console.log(...) 里写一个算式，比如 (8 + 2) * 3。",
+  "js303HintTitle2": "提示 2 🧩",
+  "js303HintContent2": "不要加引号。至少用两个运算符，并且包含 * 或 / 或 %。",
+
+  "js303SolutionTitle": "答案 ✅",
+  "js303SolutionContent": "一种可行的写法：\n\nconst a = 8;\nconst b = 2;\nconsole.log((a + b) * 3);", 
+   "js304InstructionsTitle": "任务 304 🚀",
+  "js304InstructionsContent": "创建一个字符串变量，并打印它的长度。\n\n规则：\n1) 用 let 或 const 创建一个字符串。\n2) 使用 .length。\n3) 用 console.log(...) 打印长度。\n\n示例：\nconst word = \"JavaScript\";\nconsole.log(word.length);",
+
+  "js304ExampleTitle": "示例",
+  "js304ExampleCode1": "const word = \"JavaScript\";",
+  "js304ExampleCode2": "const len = word.length;",
+  "js304ExampleCode3": "console.log(len);",
+  "js304ExampleCode4": "// 换个单词试试",
+  "js304ExampleOutput": "输出：\n10",
+  "js304EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js304HintTitle1": "提示 1 💡",
+  "js304HintContent1": "用引号写一个字符串，然后使用 .length。",
+  "js304HintTitle2": "提示 2 🧩",
+  "js304HintContent2": "你的 console.log(...) 里要包含类似：myString.length",
+
+  "js304SolutionTitle": "答案 ✅",
+  "js304SolutionContent": "一种可行的写法：\n\nconst word = \"JavaScript\";\nconsole.log(word.length);", 
+  "js305InstructionsTitle": "任务 305 🚀",
+  "js305InstructionsContent": "写一个模板字符串！\n\n规则：\n1) 用 let 或 const 创建一个数字变量。\n2) 用反引号 `...` 输出模板字符串。\n3) 在模板里使用 $｛变量｝。\n\n示例：\nconst age = 20;\nconsole.log(`Age: $｛age｝`);",
+  "js305ExampleTitle": "示例",
+  "js305ExampleCode1": "const age = 20;",
+
+  "js305ExampleCode3": "console.log(msg);",
+  "js305ExampleCode4": "// 试试你自己的变量名",
+  "js305ExampleOutput": "输出：\nAge: 20",
+  "js305EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js305HintTitle1": "提示 1 💡",
+  "js305HintContent1": "模板字符串使用反引号：`像这样`",
+  "js305HintTitle2": "提示 2 🧩",
+  "js305ExampleCode2": "console.log(`Value: $｛x｝`);",
+
+  "js305HintContent2": "在反引号里，用 $｛变量｝ 插入变量。在编辑器里请使用普通的大括号。",
+  "js305SolutionContent": "一种可行的写法：\n\nconst x = 5;\nconsole.log(`Value: $｛x｝`);",
+
+  "js305SolutionTitle": "答案 ✅",
+
+   "js306InstructionsTitle": "任务 306 🚀",
+  "js306InstructionsContent": "布尔值时间到！\n\n规则：\n1) 用 let 或 const 创建一个布尔变量。\n2) 使用 ! 来取反。\n3) 用 console.log(...) 打印原值和取反后的值。\n\n示例：\nconst isReady = true;\nconsole.log(isReady, !isReady);",
+
+  "js306ExampleTitle": "示例",
+  "js306ExampleCode1": "const isReady = true;",
+  "js306ExampleCode2": "const isNotReady = !isReady;",
+  "js306ExampleCode3": "console.log(isReady);",
+  "js306ExampleCode4": "console.log(isNotReady);",
+  "js306ExampleOutput": "输出：\ntrue\nfalse",
+  "js306EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js306HintTitle1": "提示 1 💡",
+  "js306HintContent1": "布尔值只有 true 或 false。",
+  "js306HintTitle2": "提示 2 🧩",
+  "js306HintContent2": "用 ! 来取反，例如：!isReady",
+
+  "js306SolutionTitle": "答案 ✅",
+  "js306SolutionContent": "一种可行的写法：\n\nconst isReady = true;\nconsole.log(isReady, !isReady);", 
+   "js307InstructionsTitle": "任务 307 🚀",
+  "js307InstructionsContent": "比较运算符时间到！\n\n规则：\n1) 至少使用一次 ===。\n2) 至少使用一次 !==。\n3) 用 console.log(...) 打印至少两条比较结果。\n4) 不要使用 == 或 !=。\n\n示例：\nconsole.log(5 === 5);\nconsole.log(5 !== 3);",
+
+  "js307ExampleTitle": "示例",
+  "js307ExampleCode1": "// 严格相等",
+  "js307ExampleCode2": "console.log(5 === 5);",
+  "js307ExampleCode3": "// 严格不相等",
+  "js307ExampleCode4": "console.log(5 !== 3);",
+  "js307ExampleCode5": "// 试试你自己的比较",
+  "js307ExampleOutput": "输出：\ntrue\ntrue",
+  "js307EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js307HintTitle1": "提示 1 💡",
+  "js307HintContent1": "使用 === 和 !==（严格比较）。",
+  "js307HintTitle2": "提示 2 🧩",
+  "js307HintContent2": "你需要两行 console.log(...)，每行包含一个比较，例如 10 === 10 或 7 !== 9。",
+
+  "js307SolutionTitle": "答案 ✅",
+  "js307SolutionContent": "一种可行的写法：\n\nconsole.log(5 === 5);\nconsole.log(5 !== 3);", 
+    "js308InstructionsTitle": "任务 308 🚀",
+  "js308InstructionsContent": "写一个 if 语句！\n\n规则：\n1) 用 let 或 const 创建一个数字变量。\n2) 写一个 if (...)，用 > < >= <= === 或 !== 来比较这个变量。\n3) 在 if 里用 console.log(...) 打印点东西。\n\n示例（单行写法）：\nconst n = 10;\nif (n > 5) console.log(\"Big!\");",
+
+  "js308ExampleTitle": "示例",
+  "js308ExampleCode1": "const n = 10;",
+  "js308ExampleCode2": "if (n > 5) console.log(\"Big!\");",
+  "js308ExampleCode3": "if (n < 5) console.log(\"Small!\");",
+  "js308ExampleCode4": "// 试试你自己的条件",
+  "js308ExampleOutput": "输出：\nBig!",
+  "js308EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js308HintTitle1": "提示 1 💡",
+  "js308HintContent1": "if 语句长这样：if (条件) console.log(...);",
+  "js308HintTitle2": "提示 2 🧩",
+  "js308HintContent2": "条件里要用你的数字变量，并且写一个比较运算符，比如 > 或 ===。",
+
+  "js308SolutionTitle": "答案 ✅",
+  "js308SolutionContent": "一种可行的写法：\n\nconst n = 10;\nif (n > 5) console.log(\"Big!\");", 
+    "js309InstructionsTitle": "任务 309 🚀",
+  "js309InstructionsContent": "逻辑运算符！\n\n规则：\n1) 创建两个布尔变量。\n2) 至少使用一次 &&。\n3) 至少使用一次 ||。\n4) 用两行 console.log(...) 打印结果。\n\n示例：\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);",
+
+  "js309ExampleTitle": "示例",
+  "js309ExampleCode1": "const a = true;",
+  "js309ExampleCode2": "const b = false;",
+  "js309ExampleCode3": "console.log(a && b);",
+  "js309ExampleCode4": "console.log(a || b);",
+  "js309ExampleCode5": "// 试试你自己的值",
+  "js309ExampleOutput": "输出：\nfalse\ntrue",
+  "js309EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js309HintTitle1": "提示 1 💡",
+  "js309HintContent1": "&& 表示 AND（并且），|| 表示 OR（或者）。",
+  "js309HintTitle2": "提示 2 🧩",
+  "js309HintContent2": "确保 console.log(...) 里同时使用两个变量，例如 a && b 和 a || b。",
+
+  "js309SolutionTitle": "答案 ✅",
+  "js309SolutionContent": "一种可行的写法：\n\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);", 
+   "js310InstructionsTitle": "挑战 1 🕹️",
+  "js310InstructionsContent": "做一个小小的访问判断！\n\n规则：\n1) 创建一个数字变量（age）。\n2) 创建一个布尔变量（hasId）。\n3) 使用 if (...) else ...\n4) if 条件必须同时使用两个变量，并且包含 &&。\n5) if 和 else 里都要用 console.log(...) 打印内容。\n\n示例（单行写法）：\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");",
+
+  "js310ExampleTitle": "示例",
+  "js310ExampleCode1": "const age = 20;",
+  "js310ExampleCode2": "const hasId = true;",
+  "js310ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access granted\");",
+  "js310ExampleCode4": "else console.log(\"Access denied\");",
+  "js310ExampleCode5": "// 改改数值试试看",
+  "js310ExampleOutput": "输出：\nAccess granted",
+  "js310EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js310HintTitle1": "提示 1 💡",
+  "js310HintContent1": "你需要两个变量：一个数字，一个布尔值。",
+  "js310HintTitle2": "提示 2 🧩",
+  "js310HintContent2": "if 条件里必须包含 && 并且使用两个变量。同时写一个 else，并在里面再写一个 console.log(...).",
+
+  "js310SolutionTitle": "答案 ✅",
+  "js310SolutionContent": "一种可行的写法：\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");", 
+  "js311InstructionsTitle": "任务 311 🚀",
+  "js311InstructionsContent": "写一个 for 循环！\n\n规则：\n1) 使用 for (初始化; 条件; 更新)。\n2) 在循环内部，用 console.log(...) 打印循环变量。\n\n示例：\nfor (let i = 1; i <= 5; i++) console.log(i);",
+
+  "js311ExampleTitle": "示例",
+  "js311ExampleCode1": "// 打印 1 到 5",
+  "js311ExampleCode2": "for (let i = 1; i <= 5; i++) console.log(i);",
+  "js311ExampleCode3": "// 也可以用代码块",
+  "js311ExampleCode4": "for (let i = 0; i < 3; i++) console.log(i);",
+  "js311ExampleCode5": "// 试试你自己的循环",
+  "js311ExampleOutput": "输出：\n1\n2\n3\n4\n5",
+  "js311EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js311HintTitle1": "提示 1 💡",
+  "js311HintContent1": "for 循环长这样：for (let i = 0; i < 5; i++) ...",
+  "js311HintTitle2": "提示 2 🧩",
+  "js311HintContent2": "确保 console.log(...) 打印的是循环变量（比如 i）。",
+
+  "js311SolutionTitle": "答案 ✅",
+  "js311SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 5; i++) console.log(i);", 
+   "js312InstructionsTitle": "任务 312 🚀",
+  "js312InstructionsContent": "写一个 while 循环！\n\n规则：\n1) 创建一个计数器变量（比如 i）。\n2) 写一个 while (条件) 循环。\n3) 在循环内部：\n   - console.log(i)\n   - 更新 i（i++、i += 1 等）\n\n示例：\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;",
+
+  "js312ExampleTitle": "示例",
+  "js312ExampleCode1": "// 用 while 打印 1 到 5",
+  "js312ExampleCode2": "let i = 1;",
+  "js312ExampleCode3": "while (i <= 5) console.log(i), i++;",
+  "js312ExampleCode4": "// 小提示：在循环里更新 i",
+  "js312ExampleCode5": "// 轮到你啦 😄",
+
+  "js312ExampleOutput": "输出：\n1\n2\n3\n4\n5",
+  "js312EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js312HintTitle1": "提示 1 💡",
+  "js312HintContent1": "先创建计数器：let i = 0;",
+  "js312HintTitle2": "提示 2 🧩",
+  "js312HintContent2": "别忘了在循环里更新计数器（i++），否则会无限循环。",
+
+  "js312SolutionTitle": "答案 ✅",
+  "js312SolutionContent": "一种可行的写法：\n\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;", 
+   "js313InstructionsTitle": "任务 313 🚀",
+  "js313InstructionsContent": "数组时间到！\n\n规则：\n1) 用 [ ] 创建一个数组。\n2) 用 .push(...) 添加一个元素。\n3) 用 console.log(...) 打印数组。\n\n示例：\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
+
+  "js313ExampleTitle": "示例",
+  "js313ExampleCode1": "const nums = [1, 2];",
+  "js313ExampleCode2": "nums.push(3);",
+  "js313ExampleCode3": "console.log(nums);",
+  "js313ExampleCode4": "// 也可以试试字符串",
+  "js313ExampleCode5": "// 轮到你啦 😄",
+
+  "js313ExampleOutput": "输出：\n[1, 2, 3]",
+  "js313EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js313HintTitle1": "提示 1 💡",
+  "js313HintContent1": "数组长这样：const a = [1, 2, 3];",
+  "js313HintTitle2": "提示 2 🧩",
+  "js313HintContent2": "用 .push(值) 添加元素，然后 console.log(a)。",
+
+  "js313SolutionTitle": "答案 ✅",
+  "js313SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);", 
+   "js314InstructionsTitle": "任务 314 🚀",
+  "js314InstructionsContent": "函数时间到！\n\n规则：\n1) 写一个只有一个参数的函数。\n2) 返回一个值（return）。\n3) 调用函数，并用 console.log(...) 打印结果。\n\n你可以写：\n- function addOne(x) ...\n- 或者：const addOne = (x) => x + 1\n\n示例：\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));",
+
+  "js314ExampleTitle": "示例",
+  "js314ExampleCode1": "// 箭头函数示例",
+  "js314ExampleCode2": "const addOne = (x) => x + 1;",
+  "js314ExampleCode3": "console.log(addOne(5));",
+  "js314ExampleCode4": "// 也可以用 function 名称(参数)",
+  "js314ExampleCode5": "// 轮到你啦 😄",
+
+  "js314ExampleOutput": "输出：\n6",
+  "js314EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+
+  "js314HintTitle1": "提示 1 💡",
+  "js314HintContent1": "写一个只有一个参数的函数，比如 (x)。",
+  "js314HintTitle2": "提示 2 🧩",
+  "js314HintContent2": "你要调用它并打印结果：console.log(myFn(123));",
+
+  "js314SolutionTitle": "答案 ✅",
+  "js314SolutionContent": "一种可行的写法：\n\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

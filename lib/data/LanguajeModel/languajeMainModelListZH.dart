@@ -5,6 +5,8 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 
+import '../mainModel/JavaScript/CoursesMainModelListZH.dart';
+
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
 final List<ProgrammingItem> programmingItemsZH = [
   // 编程语言
@@ -37,10 +39,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'JavaScript',
     productID: 'com.mrrubik.learnswift.javaScript',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(3),
-    coursesList: [],
+    coursesList: coursesJavaScriptMainModelListZH,
     color1: Color.fromARGB(255, 205, 184, 27),
     color2: Color(0xFF000000),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: JavaScript 是您掌握最广泛用于网页开发的语言的指南，从前端动态效果到完整应用程序。\n\n版本: ECMAScript 2023',
   ),

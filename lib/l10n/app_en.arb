@@ -1689,7 +1689,304 @@
   "python221HintContent2": "Pattern:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Line 1\\nLine 2\")\ntext = file_path.read_text()\nprint(text)",
 
   "python221SolutionTitle": "Solution",
-  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello from a file!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)"
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hello from a file!\\nSecond line\")\ntext = file_path.read_text()\nprint(text)", 
+   "jsCorrectTitle": "Correct! ✅",
+  "jsCorrectExplanation": "Nice 😄 You just printed your first JavaScript message!",
+
+  "js300InstructionsTitle": "Mission 300 🚀",
+  "js300InstructionsContent": "Write JavaScript code that prints a message using console.log().\n\nYour message must contain the words Hello and JavaScript.\nExample: console.log(\"Hello, JavaScript!\");",
+
+  "js300ExampleTitle": "Example",
+  "js300ExampleCode1": "// Print a message",
+  "js300ExampleCode2": "console.log(\"Hello, JavaScript!\");",
+  "js300ExampleOutput": "Output:\nHello, JavaScript!",
+  "js300EnterCodeHint": "Type your JavaScript code here...",
+
+  "js300HintTitle1": "Hint 1 💡",
+  "js300HintContent1": "Use console.log(...) to print text on the screen.",
+  "js300HintTitle2": "Hint 2 🧩",
+  "js300HintContent2": "Put your message inside quotes. Example: console.log(\"Hello, JavaScript!\");",
+
+  "js300SolutionTitle": "Solution ✅",
+  "js300SolutionContent": "One possible solution is:\n\nconsole.log(\"Hello, JavaScript!\");", 
+   "js301InstructionsTitle": "Mission 301 🚀",
+  "js301InstructionsContent": "Write JavaScript code with TWO console.log() lines:\n\n1) One must print a text (a string).\n2) The other must print a number or a math expression.\n\nExample:\nconsole.log(\"Hi!\");\nconsole.log(2 + 2);",
+
+  "js301ExampleTitle": "Example",
+  "js301ExampleCode1": "// Print a text",
+  "js301ExampleCode2": "console.log(\"Hi!\");",
+  "js301ExampleCode3": "// Print a number (or math)",
+  "js301ExampleCode4": "console.log(2 + 2);",
+  "js301ExampleOutput": "Output:\nHi!\n4",
+  "js301EnterCodeHint": "Type your JavaScript code here...",
+
+  "js301HintTitle1": "Hint 1 💡",
+  "js301HintContent1": "You need at least TWO console.log(...) lines.",
+  "js301HintTitle2": "Hint 2 🧩",
+  "js301HintContent2": "One console.log must have quotes (text) and the other must be a number or math, like 10 or 3 * 7.",
+
+  "js301SolutionTitle": "Solution ✅",
+  "js301SolutionContent": "One possible solution is:\n\nconsole.log(\"Hi!\");\nconsole.log(2 + 2);", 
+   "js302InstructionsTitle": "Mission 302 🚀",
+  "js302InstructionsContent": "Write JavaScript code that:\n\n1) Creates a variable using let.\n2) Creates a constant using const.\n3) Prints BOTH of them in one console.log(...).\n\nTip: Use + to join text and variables.",
+
+  "js302ExampleTitle": "Example",
+  "js302ExampleCode1": "let x = 5;",
+  "js302ExampleCode2": "const y = 10;",
+  "js302ExampleCode3": "console.log(\"x=\" + x + \", y=\" + y);",
+  "js302ExampleCode4": "// Try your own numbers",
+  "js302ExampleOutput": "Output:\nx=5, y=10",
+  "js302EnterCodeHint": "Type your JavaScript code here...",
+
+  "js302HintTitle1": "Hint 1 💡",
+  "js302HintContent1": "You need BOTH: one let and one const.",
+  "js302HintTitle2": "Hint 2 🧩",
+  "js302HintContent2": "Your console.log(...) must use both variable names, for example: console.log(x + y) or console.log(\"x=\" + x + \", y=\" + y).",
+
+  "js302SolutionTitle": "Solution ✅",
+  "js302SolutionContent": "One possible solution is:\n\nlet x = 5;\nconst y = 10;\nconsole.log(\"x=\" + x + \", y=\" + y);", 
+   "js303InstructionsTitle": "Mission 303 🚀",
+  "js303InstructionsContent": "Write JavaScript code that prints a math result using console.log(...).\n\nRules:\n- It must be a real math expression (no quotes).\n- Use at least TWO operators.\n- Include at least one of these: * or / or %.\n\nExample:\nconsole.log((8 + 2) * 3);",
+
+  "js303ExampleTitle": "Example",
+  "js303ExampleCode1": "const a = 8;",
+  "js303ExampleCode2": "const b = 2;",
+  "js303ExampleCode3": "console.log((a + b) * 3);",
+  "js303ExampleCode4": "// Try your own numbers",
+  "js303ExampleOutput": "Output:\n30",
+  "js303EnterCodeHint": "Type your JavaScript code here...",
+
+  "js303HintTitle1": "Hint 1 💡",
+  "js303HintContent1": "Use console.log(...) with a math expression like (8 + 2) * 3.",
+  "js303HintTitle2": "Hint 2 🧩",
+  "js303HintContent2": "No quotes. Use at least two operators and include * or / or %.",
+
+  "js303SolutionTitle": "Solution ✅",
+  "js303SolutionContent": "One possible solution is:\n\nconst a = 8;\nconst b = 2;\nconsole.log((a + b) * 3);" , 
+   "js304InstructionsTitle": "Mission 304 🚀",
+  "js304InstructionsContent": "Create a string variable and print its length.\n\nRules:\n1) Create a string using let or const.\n2) Use .length.\n3) Print the length using console.log(...).\n\nExample:\nconst word = \"JavaScript\";\nconsole.log(word.length);",
+
+  "js304ExampleTitle": "Example",
+  "js304ExampleCode1": "const word = \"JavaScript\";",
+  "js304ExampleCode2": "const len = word.length;",
+  "js304ExampleCode3": "console.log(len);",
+  "js304ExampleCode4": "// Try with another word",
+  "js304ExampleOutput": "Output:\n10",
+  "js304EnterCodeHint": "Type your JavaScript code here...",
+
+  "js304HintTitle1": "Hint 1 💡",
+  "js304HintContent1": "Create a string with quotes and use .length.",
+  "js304HintTitle2": "Hint 2 🧩",
+  "js304HintContent2": "Your console.log(...) must include something like: myString.length",
+
+  "js304SolutionTitle": "Solution ✅",
+  "js304SolutionContent": "One possible solution is:\n\nconst word = \"JavaScript\";\nconsole.log(word.length);", 
+   "js305InstructionsTitle": "Mission 305 🚀",
+ "js305InstructionsContent": "Use a template literal!\n\nRules:\n1) Create a number variable with let or const.\n2) Print a template literal using backticks `...`.\n3) Inside the template, use $｛variable｝.\n\nExample:\nconst age = 20;\nconsole.log(`Age: $｛age｝`);",
+  "js305ExampleTitle": "Example",
+  "js305ExampleCode1": "const age = 20;",
+ "js305ExampleCode2": "console.log(`Value: $｛x｝`);",
+  "js305ExampleCode3": "console.log(msg);",
+  "js305ExampleCode4": "// Try your own variable name",
+  "js305ExampleOutput": "Output:\nAge: 20",
+  "js305EnterCodeHint": "Type your JavaScript code here...",
+
+  "js305HintTitle1": "Hint 1 💡",
+  "js305HintContent1": "Template literals use backticks: `like this`",
+  "js305HintTitle2": "Hint 2 🧩",
+  "js305HintContent2": "Inside backticks, use $｛variable｝ to insert a variable. In the editor, use normal curly braces.",
+  "js305SolutionContent": "One possible solution is:\n\nconst x = 5;\nconsole.log(`Value: $｛x｝`);",
+
+
+  "js305SolutionTitle": "Solution ✅",
+
+   "js306InstructionsTitle": "Mission 306 🚀",
+  "js306InstructionsContent": "Booleans time!\n\nRules:\n1) Create a boolean variable using let or const.\n2) Use ! to negate it.\n3) Print BOTH the original and the negated value using console.log(...).\n\nExample:\nconst isReady = true;\nconsole.log(isReady, !isReady);",
+
+  "js306ExampleTitle": "Example",
+  "js306ExampleCode1": "const isReady = true;",
+  "js306ExampleCode2": "const isNotReady = !isReady;",
+  "js306ExampleCode3": "console.log(isReady);",
+  "js306ExampleCode4": "console.log(isNotReady);",
+  "js306ExampleOutput": "Output:\ntrue\nfalse",
+  "js306EnterCodeHint": "Type your JavaScript code here...",
+
+  "js306HintTitle1": "Hint 1 💡",
+  "js306HintContent1": "A boolean value is true or false.",
+  "js306HintTitle2": "Hint 2 🧩",
+  "js306HintContent2": "Use ! to invert it. Example: !isReady",
+
+  "js306SolutionTitle": "Solution ✅",
+  "js306SolutionContent": "One possible solution is:\n\nconst isReady = true;\nconsole.log(isReady, !isReady);", 
+  "js307InstructionsTitle": "Mission 307 🚀",
+  "js307InstructionsContent": "Comparison operators time!\n\nRules:\n1) Use === at least once.\n2) Use !== at least once.\n3) Print at least TWO comparison results using console.log(...).\n4) Don''t use == or !=.\n\nExample:\nconsole.log(5 === 5);\nconsole.log(5 !== 3);",
+
+  "js307ExampleTitle": "Example",
+  "js307ExampleCode1": "// Strict equality",
+  "js307ExampleCode2": "console.log(5 === 5);",
+  "js307ExampleCode3": "// Strict inequality",
+  "js307ExampleCode4": "console.log(5 !== 3);",
+  "js307ExampleCode5": "// Try your own comparisons",
+  "js307ExampleOutput": "Output:\ntrue\ntrue",
+  "js307EnterCodeHint": "Type your JavaScript code here...",
+
+  "js307HintTitle1": "Hint 1 💡",
+  "js307HintContent1": "Use === and !== (strict comparison).",
+  "js307HintTitle2": "Hint 2 🧩",
+  "js307HintContent2": "You need TWO console.log(...) lines, each with a comparison like 10 === 10 or 7 !== 9.",
+
+  "js307SolutionTitle": "Solution ✅",
+  "js307SolutionContent": "One possible solution is:\n\nconsole.log(5 === 5);\nconsole.log(5 !== 3);", 
+   "js308InstructionsTitle": "Mission 308 🚀",
+  "js308InstructionsContent": "Write an if statement!\n\nRules:\n1) Create a number variable using let or const.\n2) Write an if (...) that compares that variable using > < >= <= === or !==.\n3) Inside the if, print something with console.log(...).\n\nExample (one line):\nconst n = 10;\nif (n > 5) console.log(\"Big!\");",
+
+  "js308ExampleTitle": "Example",
+  "js308ExampleCode1": "const n = 10;",
+  "js308ExampleCode2": "if (n > 5) console.log(\"Big!\");",
+  "js308ExampleCode3": "if (n < 5) console.log(\"Small!\");",
+  "js308ExampleCode4": "// Try your own condition",
+  "js308ExampleOutput": "Output:\nBig!",
+  "js308EnterCodeHint": "Type your JavaScript code here...",
+
+  "js308HintTitle1": "Hint 1 💡",
+  "js308HintContent1": "An if statement looks like: if (condition) console.log(...);",
+  "js308HintTitle2": "Hint 2 🧩",
+  "js308HintContent2": "Make sure the condition uses your number variable and a comparison operator like > or ===.",
+
+  "js308SolutionTitle": "Solution ✅",
+  "js308SolutionContent": "One possible solution is:\n\nconst n = 10;\nif (n > 5) console.log(\"Big!\");", 
+    "js309InstructionsTitle": "Mission 309 🚀",
+  "js309InstructionsContent": "Logical operators!\n\nRules:\n1) Create TWO boolean variables.\n2) Use && at least once.\n3) Use || at least once.\n4) Print the results using TWO console.log(...) lines.\n\nExample:\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);",
+
+  "js309ExampleTitle": "Example",
+  "js309ExampleCode1": "const a = true;",
+  "js309ExampleCode2": "const b = false;",
+  "js309ExampleCode3": "console.log(a && b);",
+  "js309ExampleCode4": "console.log(a || b);",
+  "js309ExampleCode5": "// Try your own values",
+  "js309ExampleOutput": "Output:\nfalse\ntrue",
+  "js309EnterCodeHint": "Type your JavaScript code here...",
+
+  "js309HintTitle1": "Hint 1 💡",
+  "js309HintContent1": "&& means AND, || means OR.",
+  "js309HintTitle2": "Hint 2 🧩",
+  "js309HintContent2": "Make sure your console.log(...) includes both variables, like a && b and a || b.",
+
+  "js309SolutionTitle": "Solution ✅",
+  "js309SolutionContent": "One possible solution is:\n\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);", 
+    "js310InstructionsTitle": "Challenge 1 🕹️",
+  "js310InstructionsContent": "Build a small access check!\n\nRules:\n1) Create a number variable (age).\n2) Create a boolean variable (hasId).\n3) Use if (...) else ...\n4) The if condition must use both variables and &&.\n5) Print something in BOTH branches using console.log(...).\n\nExample (one line):\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");",
+
+  "js310ExampleTitle": "Example",
+  "js310ExampleCode1": "const age = 20;",
+  "js310ExampleCode2": "const hasId = true;",
+  "js310ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access granted\");",
+  "js310ExampleCode4": "else console.log(\"Access denied\");",
+  "js310ExampleCode5": "// Change the values and test!",
+  "js310ExampleOutput": "Output:\nAccess granted",
+  "js310EnterCodeHint": "Type your JavaScript code here...",
+
+  "js310HintTitle1": "Hint 1 💡",
+  "js310HintContent1": "You need TWO variables: one number and one boolean.",
+  "js310HintTitle2": "Hint 2 🧩",
+  "js310HintContent2": "Your if condition must include && and use both variables. Also: write an else with another console.log(...).",
+
+  "js310SolutionTitle": "Solution ✅",
+  "js310SolutionContent": "One possible solution is:\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");", 
+   "js311InstructionsTitle": "Mission 311 🚀",
+  "js311InstructionsContent": "Write a for loop!\n\nRules:\n1) Use for (init; condition; update).\n2) Inside the loop, print the loop variable with console.log(...).\n\nExample:\nfor (let i = 1; i <= 5; i++) console.log(i);",
+
+  "js311ExampleTitle": "Example",
+  "js311ExampleCode1": "// Print numbers 1 to 5",
+  "js311ExampleCode2": "for (let i = 1; i <= 5; i++) console.log(i);",
+  "js311ExampleCode3": "// You can also use a block",
+  "js311ExampleCode4": "for (let i = 0; i < 3; i++) console.log(i);",
+  "js311ExampleCode5": "// Try your own loop",
+  "js311ExampleOutput": "Output:\n1\n2\n3\n4\n5",
+  "js311EnterCodeHint": "Type your JavaScript code here...",
+
+  "js311HintTitle1": "Hint 1 💡",
+  "js311HintContent1": "A for loop looks like: for (let i = 0; i < 5; i++) ...",
+  "js311HintTitle2": "Hint 2 🧩",
+  "js311HintContent2": "Make sure console.log(...) prints the loop variable (like i).",
+
+  "js311SolutionTitle": "Solution ✅",
+  "js311SolutionContent": "One possible solution is:\n\nfor (let i = 1; i <= 5; i++) console.log(i);", 
+    "js312InstructionsTitle": "Mission 312 🚀",
+  "js312InstructionsContent": "Write a while loop!\n\nRules:\n1) Create a counter variable (like i).\n2) Write a while (condition) loop.\n3) Inside the loop:\n   - console.log(i)\n   - update i (i++, i += 1, etc.)\n\nExample:\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;",
+
+  "js312ExampleTitle": "Example",
+  "js312ExampleCode1": "// Print 1 to 5 with while",
+  "js312ExampleCode2": "let i = 1;",
+  "js312ExampleCode3": "while (i <= 5) console.log(i), i++;",
+  "js312ExampleCode4": "// Tip: update i inside the loop",
+  "js312ExampleCode5": "// Your turn 😄",
+
+  "js312ExampleOutput": "Output:\n1\n2\n3\n4\n5",
+  "js312EnterCodeHint": "Type your JavaScript code here...",
+
+  "js312HintTitle1": "Hint 1 💡",
+  "js312HintContent1": "Create a counter first: let i = 0;",
+  "js312HintTitle2": "Hint 2 🧩",
+  "js312HintContent2": "Don''t forget to update the counter inside the loop (i++), or it will loop forever.",
+
+  "js312SolutionTitle": "Solution ✅",
+  "js312SolutionContent": "One possible solution is:\n\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;", 
+   "js313InstructionsTitle": "Mission 313 🚀",
+  "js313InstructionsContent": "Arrays time!\n\nRules:\n1) Create an array using [ ].\n2) Add ONE element using .push(...).\n3) Print the array using console.log(...).\n\nExample:\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
+
+  "js313ExampleTitle": "Example",
+  "js313ExampleCode1": "const nums = [1, 2];",
+  "js313ExampleCode2": "nums.push(3);",
+  "js313ExampleCode3": "console.log(nums);",
+  "js313ExampleCode4": "// Try with strings too",
+  "js313ExampleCode5": "// Your turn 😄",
+
+  "js313ExampleOutput": "Output:\n[1, 2, 3]",
+  "js313EnterCodeHint": "Type your JavaScript code here...",
+
+  "js313HintTitle1": "Hint 1 💡",
+  "js313HintContent1": "An array looks like this: const a = [1, 2, 3];",
+  "js313HintTitle2": "Hint 2 🧩",
+  "js313HintContent2": "Use .push(value) to add an element. Then console.log(a).",
+
+  "js313SolutionTitle": "Solution ✅",
+  "js313SolutionContent": "One possible solution is:\n\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);", 
+   "js314InstructionsTitle": "Mission 314 🚀",
+  "js314InstructionsContent": "Functions time!\n\nRules:\n1) Create a function with ONE parameter.\n2) Return a value.\n3) Call the function and print the result with console.log(...).\n\nYou can use:\n- function addOne(x) ...\n- or: const addOne = (x) => x + 1\n\nExample:\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));",
+
+  "js314ExampleTitle": "Example",
+  "js314ExampleCode1": "// Arrow function example",
+  "js314ExampleCode2": "const addOne = (x) => x + 1;",
+  "js314ExampleCode3": "console.log(addOne(5));",
+  "js314ExampleCode4": "// You can also use function name(param)",
+  "js314ExampleCode5": "// Your turn 😄",
+
+  "js314ExampleOutput": "Output:\n6",
+  "js314EnterCodeHint": "Type your JavaScript code here...",
+
+  "js314HintTitle1": "Hint 1 💡",
+  "js314HintContent1": "Make a function with ONE parameter, like (x).",
+  "js314HintTitle2": "Hint 2 🧩",
+  "js314HintContent2": "You must call it and print the result: console.log(myFn(123));",
+
+  "js314SolutionTitle": "Solution ✅",
+  "js314SolutionContent": "One possible solution is:\n\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

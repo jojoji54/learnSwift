@@ -1674,7 +1674,305 @@
   "python221HintContent2": "Patron:\nfrom pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Linea 1\\nLinea 2\")\ntext = file_path.read_text()\nprint(text)",
 
   "python221SolutionTitle": "Solucion",
-  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hola desde un archivo!\\nSegunda linea\")\ntext = file_path.read_text()\nprint(text)"
+  "python221SolutionContent": "from pathlib import Path\nfolder = Path(\"demo_folder\")\nfolder.mkdir(exist_ok=True)\nfile_path = folder / \"note.txt\"\nfile_path.write_text(\"Hola desde un archivo!\\nSegunda linea\")\ntext = file_path.read_text()\nprint(text)", 
+   "jsCorrectTitle": "¡Correcto! ✅",
+  "jsCorrectExplanation": "Bien 😄 ¡Acabas de imprimir tu primer mensaje en JavaScript!",
+
+  "js300InstructionsTitle": "Misión 300 🚀",
+  "js300InstructionsContent": "Escribe código JavaScript que imprima un mensaje usando console.log().\n\nTu mensaje debe contener las palabras Hello y JavaScript.\nEjemplo: console.log(\"Hello, JavaScript!\");",
+
+  "js300ExampleTitle": "Ejemplo",
+  "js300ExampleCode1": "// Imprime un mensaje",
+  "js300ExampleCode2": "console.log(\"Hello, JavaScript!\");",
+  "js300ExampleOutput": "Salida:\nHello, JavaScript!",
+  "js300EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js300HintTitle1": "Pista 1 💡",
+  "js300HintContent1": "Usa console.log(...) para imprimir texto en pantalla.",
+  "js300HintTitle2": "Pista 2 🧩",
+  "js300HintContent2": "Pon el mensaje entre comillas. Ejemplo: console.log(\"Hello, JavaScript!\");",
+
+  "js300SolutionTitle": "Solución ✅",
+  "js300SolutionContent": "Una posible solución es:\n\nconsole.log(\"Hello, JavaScript!\");", 
+   "js301InstructionsTitle": "Misión 301 🚀",
+  "js301InstructionsContent": "Escribe código JavaScript con DOS líneas de console.log():\n\n1) Una debe imprimir un texto (string).\n2) La otra debe imprimir un número o una expresión matemática.\n\nEjemplo:\nconsole.log(\"¡Hola!\");\nconsole.log(2 + 2);",
+
+  "js301ExampleTitle": "Ejemplo",
+  "js301ExampleCode1": "// Imprime un texto",
+  "js301ExampleCode2": "console.log(\"¡Hola!\");",
+  "js301ExampleCode3": "// Imprime un número (o matemáticas)",
+  "js301ExampleCode4": "console.log(2 + 2);",
+  "js301ExampleOutput": "Salida:\n¡Hola!\n4",
+  "js301EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js301HintTitle1": "Pista 1 💡",
+  "js301HintContent1": "Necesitas al menos DOS líneas con console.log(...).",
+  "js301HintTitle2": "Pista 2 🧩",
+  "js301HintContent2": "Un console.log debe llevar comillas (texto) y el otro debe ser un número o una cuenta, por ejemplo 10 o 3 * 7.",
+
+  "js301SolutionTitle": "Solución ✅",
+  "js301SolutionContent": "Una posible solución es:\n\nconsole.log(\"¡Hola!\");\nconsole.log(2 + 2);", 
+   "js302InstructionsTitle": "Misión 302 🚀",
+  "js302InstructionsContent": "Escribe código JavaScript que:\n\n1) Cree una variable usando let.\n2) Cree una constante usando const.\n3) Imprima AMBAS en un solo console.log(...).\n\nPista: Usa + para unir texto y variables.",
+
+  "js302ExampleTitle": "Ejemplo",
+  "js302ExampleCode1": "let x = 5;",
+  "js302ExampleCode2": "const y = 10;",
+  "js302ExampleCode3": "console.log(\"x=\" + x + \", y=\" + y);",
+  "js302ExampleCode4": "// Prueba con tus propios números",
+  "js302ExampleOutput": "Salida:\nx=5, y=10",
+  "js302EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js302HintTitle1": "Pista 1 💡",
+  "js302HintContent1": "Necesitas AMBOS: un let y un const.",
+  "js302HintTitle2": "Pista 2 🧩",
+  "js302HintContent2": "Tu console.log(...) debe usar los dos nombres de variables. Por ejemplo: console.log(x + y) o console.log(\"x=\" + x + \", y=\" + y).",
+
+  "js302SolutionTitle": "Solución ✅",
+  "js302SolutionContent": "Una posible solución es:\n\nlet x = 5;\nconst y = 10;\nconsole.log(\"x=\" + x + \", y=\" + y);", 
+   "js303InstructionsTitle": "Misión 303 🚀",
+  "js303InstructionsContent": "Escribe código JavaScript que imprima un resultado matemático usando console.log(...).\n\nReglas:\n- Debe ser una expresión matemática real (sin comillas).\n- Usa al menos DOS operadores.\n- Incluye al menos uno de estos: * o / o %.\n\nEjemplo:\nconsole.log((8 + 2) * 3);",
+
+  "js303ExampleTitle": "Ejemplo",
+  "js303ExampleCode1": "const a = 8;",
+  "js303ExampleCode2": "const b = 2;",
+  "js303ExampleCode3": "console.log((a + b) * 3);",
+  "js303ExampleCode4": "// Prueba con tus propios números",
+  "js303ExampleOutput": "Salida:\n30",
+  "js303EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js303HintTitle1": "Pista 1 💡",
+  "js303HintContent1": "Usa console.log(...) con una expresión tipo (8 + 2) * 3.",
+  "js303HintTitle2": "Pista 2 🧩",
+  "js303HintContent2": "Sin comillas. Usa al menos dos operadores e incluye * o / o %.",
+
+  "js303SolutionTitle": "Solución ✅",
+  "js303SolutionContent": "Una posible solución es:\n\nconst a = 8;\nconst b = 2;\nconsole.log((a + b) * 3);", 
+   "js304InstructionsTitle": "Misión 304 🚀",
+  "js304InstructionsContent": "Crea una variable string e imprime su longitud.\n\nReglas:\n1) Crea un string con let o const.\n2) Usa .length.\n3) Imprime la longitud con console.log(...).\n\nEjemplo:\nconst word = \"JavaScript\";\nconsole.log(word.length);",
+
+  "js304ExampleTitle": "Ejemplo",
+  "js304ExampleCode1": "const word = \"JavaScript\";",
+  "js304ExampleCode2": "const len = word.length;",
+  "js304ExampleCode3": "console.log(len);",
+  "js304ExampleCode4": "// Prueba con otra palabra",
+  "js304ExampleOutput": "Salida:\n10",
+  "js304EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js304HintTitle1": "Pista 1 💡",
+  "js304HintContent1": "Crea un string con comillas y usa .length.",
+  "js304HintTitle2": "Pista 2 🧩",
+  "js304HintContent2": "Tu console.log(...) debe incluir algo como: miString.length",
+
+  "js304SolutionTitle": "Solución ✅",
+  "js304SolutionContent": "Una posible solución es:\n\nconst word = \"JavaScript\";\nconsole.log(word.length);", 
+   "js305InstructionsTitle": "Misión 305 🚀",
+   "js305InstructionsContent": "¡Usa un template literal!\n\nReglas:\n1) Crea una variable numérica con let o const.\n2) Imprime un template literal usando backticks `...`.\n3) Dentro del template, usa $｛variable｝.\n\nEjemplo:\nconst age = 20;\nconsole.log(`Age: $｛age｝`);",
+  "js305ExampleTitle": "Ejemplo",
+  "js305ExampleCode1": "const age = 20;",
+  "js305ExampleCode3": "console.log(msg);",
+  "js305ExampleCode4": "// Prueba con tu propio nombre de variable",
+  "js305ExampleOutput": "Salida:\nAge: 20",
+  "js305EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js305HintTitle1": "Pista 1 💡",
+  "js305HintContent1": "Los template literals usan backticks: `así`",
+  "js305HintTitle2": "Pista 2 🧩",
+  "js305ExampleCode2": "console.log(`Value: $｛x｝`);",
+
+  "js305HintContent2": "Dentro de los backticks, usa $｛variable｝ para insertar una variable. En el editor usa llaves normales.",
+  "js305SolutionContent": "Una posible solución es:\n\nconst x = 5;\nconsole.log(`Value: $｛x｝`);",
+
+
+  "js305SolutionTitle": "Solución ✅",
+
+   "js306InstructionsTitle": "Misión 306 🚀",
+  "js306InstructionsContent": "¡Hora de booleanos!\n\nReglas:\n1) Crea una variable booleana con let o const.\n2) Usa ! para negarla.\n3) Imprime el valor original y el negado con console.log(...).\n\nEjemplo:\nconst isReady = true;\nconsole.log(isReady, !isReady);",
+
+  "js306ExampleTitle": "Ejemplo",
+  "js306ExampleCode1": "const isReady = true;",
+  "js306ExampleCode2": "const isNotReady = !isReady;",
+  "js306ExampleCode3": "console.log(isReady);",
+  "js306ExampleCode4": "console.log(isNotReady);",
+  "js306ExampleOutput": "Salida:\ntrue\nfalse",
+  "js306EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js306HintTitle1": "Pista 1 💡",
+  "js306HintContent1": "Un booleano solo puede ser true o false.",
+  "js306HintTitle2": "Pista 2 🧩",
+  "js306HintContent2": "Usa ! para invertirlo. Ejemplo: !isReady",
+
+  "js306SolutionTitle": "Solución ✅",
+  "js306SolutionContent": "Una posible solución es:\n\nconst isReady = true;\nconsole.log(isReady, !isReady);", 
+   "js307InstructionsTitle": "Misión 307 🚀",
+  "js307InstructionsContent": "¡Toca comparar!\n\nReglas:\n1) Usa === al menos una vez.\n2) Usa !== al menos una vez.\n3) Imprime al menos DOS resultados de comparaciones con console.log(...).\n4) No uses == ni !=.\n\nEjemplo:\nconsole.log(5 === 5);\nconsole.log(5 !== 3);",
+
+  "js307ExampleTitle": "Ejemplo",
+  "js307ExampleCode1": "// Igualdad estricta",
+  "js307ExampleCode2": "console.log(5 === 5);",
+  "js307ExampleCode3": "// Desigualdad estricta",
+  "js307ExampleCode4": "console.log(5 !== 3);",
+  "js307ExampleCode5": "// Prueba tus propias comparaciones",
+  "js307ExampleOutput": "Salida:\ntrue\ntrue",
+  "js307EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js307HintTitle1": "Pista 1 💡",
+  "js307HintContent1": "Usa === y !== (comparación estricta).",
+  "js307HintTitle2": "Pista 2 🧩",
+  "js307HintContent2": "Necesitas DOS líneas con console.log(...) y cada una debe tener una comparación como 10 === 10 o 7 !== 9.",
+
+  "js307SolutionTitle": "Solución ✅",
+  "js307SolutionContent": "Una posible solución es:\n\nconsole.log(5 === 5);\nconsole.log(5 !== 3);", 
+    "js308InstructionsTitle": "Misión 308 🚀",
+  "js308InstructionsContent": "¡Escribe un if!\n\nReglas:\n1) Crea una variable numérica con let o const.\n2) Escribe un if (...) que compare esa variable usando > < >= <= === o !==.\n3) Dentro del if, imprime algo con console.log(...).\n\nEjemplo (una línea):\nconst n = 10;\nif (n > 5) console.log(\"Big!\");",
+
+  "js308ExampleTitle": "Ejemplo",
+  "js308ExampleCode1": "const n = 10;",
+  "js308ExampleCode2": "if (n > 5) console.log(\"Big!\");",
+  "js308ExampleCode3": "if (n < 5) console.log(\"Small!\");",
+  "js308ExampleCode4": "// Prueba tu propia condición",
+  "js308ExampleOutput": "Salida:\nBig!",
+  "js308EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js308HintTitle1": "Pista 1 💡",
+  "js308HintContent1": "Un if se ve así: if (condicion) console.log(...);",
+  "js308HintTitle2": "Pista 2 🧩",
+  "js308HintContent2": "Asegúrate de que la condición use tu variable y un operador de comparación como > o ===.",
+
+  "js308SolutionTitle": "Solución ✅",
+  "js308SolutionContent": "Una posible solución es:\n\nconst n = 10;\nif (n > 5) console.log(\"Big!\");", 
+   "js309InstructionsTitle": "Misión 309 🚀",
+  "js309InstructionsContent": "¡Operadores lógicos!\n\nReglas:\n1) Crea DOS variables booleanas.\n2) Usa && al menos una vez.\n3) Usa || al menos una vez.\n4) Imprime los resultados con DOS líneas de console.log(...).\n\nEjemplo:\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);",
+
+  "js309ExampleTitle": "Ejemplo",
+  "js309ExampleCode1": "const a = true;",
+  "js309ExampleCode2": "const b = false;",
+  "js309ExampleCode3": "console.log(a && b);",
+  "js309ExampleCode4": "console.log(a || b);",
+  "js309ExampleCode5": "// Prueba con tus propios valores",
+  "js309ExampleOutput": "Salida:\nfalse\ntrue",
+  "js309EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js309HintTitle1": "Pista 1 💡",
+  "js309HintContent1": "&& significa Y, || significa O.",
+  "js309HintTitle2": "Pista 2 🧩",
+  "js309HintContent2": "Asegúrate de que tu console.log(...) use las dos variables: a && b y a || b.",
+
+  "js309SolutionTitle": "Solución ✅",
+  "js309SolutionContent": "Una posible solución es:\n\nconst a = true;\nconst b = false;\nconsole.log(a && b);\nconsole.log(a || b);", 
+   "js310InstructionsTitle": "Reto 1 🕹️",
+  "js310InstructionsContent": "¡Construye un control de acceso!\n\nReglas:\n1) Crea una variable numérica (age).\n2) Crea una variable booleana (hasId).\n3) Usa if (...) else ...\n4) La condición del if debe usar ambas variables y &&.\n5) Imprime algo en AMBAS ramas con console.log(...).\n\nEjemplo (una línea):\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");",
+
+  "js310ExampleTitle": "Ejemplo",
+  "js310ExampleCode1": "const age = 20;",
+  "js310ExampleCode2": "const hasId = true;",
+  "js310ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access granted\");",
+  "js310ExampleCode4": "else console.log(\"Access denied\");",
+  "js310ExampleCode5": "// Cambia los valores y prueba",
+  "js310ExampleOutput": "Salida:\nAccess granted",
+  "js310EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js310HintTitle1": "Pista 1 💡",
+  "js310HintContent1": "Necesitas DOS variables: un número y un booleano.",
+  "js310HintTitle2": "Pista 2 🧩",
+  "js310HintContent2": "La condición del if debe incluir && y usar las dos variables. Y además: escribe un else con otro console.log(...).",
+
+  "js310SolutionTitle": "Solución ✅",
+  "js310SolutionContent": "Una posible solución es:\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");", 
+   "js311InstructionsTitle": "Misión 311 🚀",
+  "js311InstructionsContent": "¡Escribe un bucle for!\n\nReglas:\n1) Usa for (inicio; condición; actualización).\n2) Dentro del bucle, imprime la variable del bucle con console.log(...).\n\nEjemplo:\nfor (let i = 1; i <= 5; i++) console.log(i);",
+
+  "js311ExampleTitle": "Ejemplo",
+  "js311ExampleCode1": "// Imprime números del 1 al 5",
+  "js311ExampleCode2": "for (let i = 1; i <= 5; i++) console.log(i);",
+  "js311ExampleCode3": "// También puedes usar un bloque",
+  "js311ExampleCode4": "for (let i = 0; i < 3; i++) console.log(i);",
+  "js311ExampleCode5": "// Prueba tu propio bucle",
+  "js311ExampleOutput": "Salida:\n1\n2\n3\n4\n5",
+  "js311EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js311HintTitle1": "Pista 1 💡",
+  "js311HintContent1": "Un for se ve así: for (let i = 0; i < 5; i++) ...",
+  "js311HintTitle2": "Pista 2 🧩",
+  "js311HintContent2": "Asegúrate de que console.log(...) imprima la variable del bucle (como i).",
+
+  "js311SolutionTitle": "Solución ✅",
+  "js311SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 5; i++) console.log(i);", 
+   "js312InstructionsTitle": "Misión 312 🚀",
+  "js312InstructionsContent": "¡Escribe un bucle while!\n\nReglas:\n1) Crea una variable contador (como i).\n2) Escribe un while (condición).\n3) Dentro del bucle:\n   - console.log(i)\n   - actualiza i (i++, i += 1, etc.)\n\nEjemplo:\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;",
+
+  "js312ExampleTitle": "Ejemplo",
+  "js312ExampleCode1": "// Imprime del 1 al 5 con while",
+  "js312ExampleCode2": "let i = 1;",
+  "js312ExampleCode3": "while (i <= 5) console.log(i), i++;",
+  "js312ExampleCode4": "// Tip: actualiza i dentro del bucle",
+  "js312ExampleCode5": "// ¡Tu turno 😄!",
+
+  "js312ExampleOutput": "Salida:\n1\n2\n3\n4\n5",
+  "js312EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js312HintTitle1": "Pista 1 💡",
+  "js312HintContent1": "Primero crea un contador: let i = 0;",
+  "js312HintTitle2": "Pista 2 🧩",
+  "js312HintContent2": "No te olvides de actualizar el contador dentro del bucle (i++), o será un bucle infinito.",
+
+  "js312SolutionTitle": "Solución ✅",
+  "js312SolutionContent": "Una posible solución es:\n\nlet i = 1;\nwhile (i <= 5) console.log(i), i++;", 
+    "js313InstructionsTitle": "Misión 313 🚀",
+  "js313InstructionsContent": "¡Hora de arrays!\n\nReglas:\n1) Crea un array usando [ ].\n2) Añade UN elemento usando .push(...).\n3) Imprime el array con console.log(...).\n\nEjemplo:\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
+
+  "js313ExampleTitle": "Ejemplo",
+  "js313ExampleCode1": "const nums = [1, 2];",
+  "js313ExampleCode2": "nums.push(3);",
+  "js313ExampleCode3": "console.log(nums);",
+  "js313ExampleCode4": "// Prueba también con strings",
+  "js313ExampleCode5": "// ¡Tu turno 😄!",
+
+  "js313ExampleOutput": "Salida:\n[1, 2, 3]",
+  "js313EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js313HintTitle1": "Pista 1 💡",
+  "js313HintContent1": "Un array se ve así: const a = [1, 2, 3];",
+  "js313HintTitle2": "Pista 2 🧩",
+  "js313HintContent2": "Usa .push(valor) para añadir un elemento. Luego console.log(a).",
+
+  "js313SolutionTitle": "Solución ✅",
+  "js313SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);", 
+   "js314InstructionsTitle": "Misión 314 🚀",
+  "js314InstructionsContent": "¡Hora de funciones!\n\nReglas:\n1) Crea una función con UN parámetro.\n2) Devuelve un valor (return).\n3) Llama a la función e imprime el resultado con console.log(...).\n\nPuedes usar:\n- function addOne(x) ...\n- o: const addOne = (x) => x + 1\n\nEjemplo:\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));",
+
+  "js314ExampleTitle": "Ejemplo",
+  "js314ExampleCode1": "// Ejemplo con arrow function",
+  "js314ExampleCode2": "const addOne = (x) => x + 1;",
+  "js314ExampleCode3": "console.log(addOne(5));",
+  "js314ExampleCode4": "// También vale function nombre(param)",
+  "js314ExampleCode5": "// ¡Tu turno 😄!",
+
+  "js314ExampleOutput": "Salida:\n6",
+  "js314EnterCodeHint": "Escribe tu código JavaScript aquí...",
+
+  "js314HintTitle1": "Pista 1 💡",
+  "js314HintContent1": "Haz una función con UN parámetro, por ejemplo (x).",
+  "js314HintTitle2": "Pista 2 🧩",
+  "js314HintContent2": "Tienes que llamarla e imprimir el resultado: console.log(miFn(123));",
+
+  "js314SolutionTitle": "Solución ✅",
+  "js314SolutionContent": "Una posible solución es:\n\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

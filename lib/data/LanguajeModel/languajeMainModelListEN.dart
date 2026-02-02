@@ -5,6 +5,8 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
 
+import '../mainModel/JavaScript/CoursesMainModelListEN.dart';
+
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
 final List<ProgrammingItem> programmingItemsEN = [
   // Languages
@@ -37,10 +39,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'JavaScript',
     productID: 'com.mrrubik.learnswift.javaScript',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(3),
-    coursesList: [],
+    coursesList: coursesJavaScriptMainModelListEN,
     color1: Color.fromARGB(255, 205, 184, 27),
     color2: Color(0xFF000000),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: JavaScript guides you to master the most popular language for web development, from frontend dynamics to full-stack applications.\n\nVersion: ECMAScript 2023',
   ),

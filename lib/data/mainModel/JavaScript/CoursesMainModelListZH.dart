@@ -1,14 +1,24 @@
+import 'package:learnswift/Screens/Courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExMain.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsFunctions/jsFunctionsExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsNullUndefined/jsNullUndefinedExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsObjects/jsObjectsExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListZH.dart';
 import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListZH.dart';
+import '../../courses/JavaScript/jsFunctions/jsFunctionsExModelListZH.dart';
 import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListZH.dart';
+import '../../courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExModelListZH.dart';
+import '../../courses/JavaScript/jsNullUndefined/jsNullUndefinedExModelListZH.dart';
+import '../../courses/JavaScript/jsObjects/jsObjectsExModelListZH.dart';
+import '../../courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExModelListZH.dart';
 import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListZH.dart';
 import '../../courses/JavaScript/jsLoops/jsLoopsExModelListZH.dart';
 import '../../courses/JavaScript/jsArrays/jsArraysExModelListZH.dart';
@@ -59,8 +69,6 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
       color2: color2,
     ),
   ),
-
-  /*
 
   CoursesMainModel(
     id: 2,
@@ -146,8 +154,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     ),
   ),
 
-  /*
-
+  
   CoursesMainModel(
     id: 6,
     generalName: '对象',

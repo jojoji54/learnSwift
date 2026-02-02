@@ -72,7 +72,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
     ),
   ),
 
-  /*
+
 
   CoursesMainModel(
     id: 2,
@@ -158,7 +158,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
     ),
   ),
 
-  /*
+
 
   CoursesMainModel(
     id: 6,

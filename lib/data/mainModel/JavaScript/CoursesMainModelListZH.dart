@@ -60,6 +60,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     ),
   ),
 
+  /*
+
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',

@@ -62,6 +62,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
     ),
   ),
 
+  /*
+
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',

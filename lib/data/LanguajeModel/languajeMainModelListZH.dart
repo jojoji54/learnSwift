@@ -5,6 +5,8 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 
+import '../mainModel/Cpp/CoursesMainModelListZH.dart';
+import '../mainModel/Java/CoursesMainModelListZH.dart';
 import '../mainModel/JavaScript/CoursesMainModelListZH.dart';
 
 final languagePurchaseManagerHive = LanguagePurchaseManagerHive();
@@ -51,10 +53,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Java',
     productID: 'com.mrrubik.learnswift.java',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(4),
-    coursesList: [],
+    coursesList: coursesJavaMainModelListZH,
     color1: Color(0xFF5382A1),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Java 教授这一流行的语言，用于企业应用程序、移动应用和稳健系统。\n\n版本: Java 20',
   ),
@@ -63,10 +65,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'C++',
     productID: 'com.mrrubik.learnswift.ccc',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(5),
-    coursesList: [],
+    coursesList: coursesCppMainModelListZH,
     color1: Color(0xFF00599C),
     color2: Color(0xFF4D4D4D),
-    isActive: false,
+    isActive: true,
     description: 'CodeCrafters: C++ 帮助您掌握用于高性能系统、电子游戏和关键应用的语言。\n\n版本: C++20',
   ),
   ProgrammingItem(

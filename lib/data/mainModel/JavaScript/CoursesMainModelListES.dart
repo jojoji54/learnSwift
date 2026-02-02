@@ -1,7 +1,9 @@
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListES.dart';
+import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListES.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ES)
@@ -29,15 +31,12 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     ),
   ),
 
-  /*
-
-
   CoursesMainModel(
     id: 1,
-    generalName: 'Boolean Basics',
-    catExercise: jsBooleanModelEN,
+    generalName: 'Booleanos básicos',
+    catExercise: jsBooleanModelES,
     description:
-        'Covers boolean logic, comparisons, and logical operators. Essential for decision-making in your code.',
+        'Aprende lógica booleana, comparaciones y operadores lógicos. Clave para tomar decisiones en tu código.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -52,6 +51,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 2,

@@ -70,6 +70,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     ),
   ),
 
+
+
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
@@ -153,6 +155,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
+
+  
 
   CoursesMainModel(
     id: 6,

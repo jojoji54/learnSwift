@@ -1,3 +1,4 @@
+import 'package:learnswift/Screens/Courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExMain.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
@@ -154,6 +155,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     ),
   ),
 
+  
   CoursesMainModel(
     id: 6,
     generalName: '对象',

@@ -188,9 +188,11 @@ class _JsBooleanEx321State extends State<JsBooleanEx321> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-                  lines: exampleLines,
-                  withLineNumbers: true,
-                ),
+  lines: exampleLines,
+  withLineNumbers: true,
+  language: CodeLanguage.javascript,
+),
+
                 const SizedBox(height: 10),
                 Text(
                   loc.js321ExampleOutput,

@@ -194,9 +194,11 @@ class _JsBooleanEx323State extends State<JsBooleanEx323> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-                  lines: exampleLines,
-                  withLineNumbers: true,
-                ),
+  lines: exampleLines,
+  withLineNumbers: true,
+  language: CodeLanguage.javascript,
+),
+
                 const SizedBox(height: 10),
                 Text(
                   loc.js323ExampleOutput,

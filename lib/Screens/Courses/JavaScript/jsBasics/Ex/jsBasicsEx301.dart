@@ -225,10 +225,10 @@ class _JsBasicsEx301State extends State<JsBasicsEx301> {
                 ),
                 const SizedBox(height: 10),
                 CodePreview(
-  lines: exampleLines,
-  withLineNumbers: true,
-  language: CodeLanguage.javascript,
-),
+                  lines: exampleLines,
+                  withLineNumbers: true,
+                  language: CodeLanguage.javascript,
+                ),
 
                 const SizedBox(height: 10),
                 Text(

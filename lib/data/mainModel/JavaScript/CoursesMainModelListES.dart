@@ -1,7 +1,27 @@
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsObjects/jsObjectsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsFunctions/jsFunctionsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsNullUndefined/jsNullUndefinedExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListES.dart';
+import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListES.dart';
+import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListES.dart';
+import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListES.dart';
+import '../../courses/JavaScript/jsLoops/jsLoopsExModelListES.dart';
+import '../../courses/JavaScript/jsArrays/jsArraysExModelListES.dart';
+import '../../courses/JavaScript/jsObjects/jsObjectsExModelListES.dart';
+import '../../courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExModelListES.dart';
+import '../../courses/JavaScript/jsFunctions/jsFunctionsExModelListES.dart';
+import '../../courses/JavaScript/jsNullUndefined/jsNullUndefinedExModelListES.dart';
+import '../../courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExModelListES.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ES)
@@ -29,15 +49,12 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     ),
   ),
 
-  /*
-
-
   CoursesMainModel(
     id: 1,
-    generalName: 'Boolean Basics',
-    catExercise: jsBooleanModelEN,
+    generalName: 'Booleanos básicos',
+    catExercise: jsBooleanModelES,
     description:
-        'Covers boolean logic, comparisons, and logical operators. Essential for decision-making in your code.',
+        'Aprende lógica booleana, comparaciones y operadores lógicos. Clave para tomar decisiones en tu código.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -56,9 +73,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
-    catExercise: jsIfElseModelEN,
+    catExercise: jsIfElseModelES,
     description:
-        'Learn conditional branching to control program flow with if, else if, and else.',
+        'Aprende ramas condicionales con if, else if y else para controlar el flujo.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -77,9 +94,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
-    catExercise: jsSwitchModelEN,
+    catExercise: jsSwitchModelES,
     description:
-        'Use switch statements to handle multiple cases in a clean, readable way.',
+        'Usa switch para manejar múltiples casos de forma clara y ordenada.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -97,10 +114,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 4,
-    generalName: 'Loops',
-    catExercise: jsLoopsModelEN,
+    generalName: 'Bucles',
+    catExercise: jsLoopsModelES,
     description:
-        'Master for, while, do...while, and iteration patterns to automate repetitive tasks.',
+        'Domina for, while, do while y patrones de iteración para automatizar tareas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -119,9 +136,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
   CoursesMainModel(
     id: 5,
     generalName: 'Arrays',
-    catExercise: jsArraysModelEN,
+    catExercise: jsArraysModelES,
     description:
-        'Work with arrays, indexing, and common methods like push/pop/map/filter to handle collections.',
+        'Trabaja con arrays, índices y métodos como push, pop, map y filter.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -139,10 +156,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 6,
-    generalName: 'Objects',
-    catExercise: jsObjectsModelEN,
+    generalName: 'Objetos',
+    catExercise: jsObjectsModelES,
     description:
-        'Learn objects, properties, methods, and how to model real-world data with key-value structures.',
+        'Aprende objetos, propiedades y métodos para modelar datos reales.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -160,10 +177,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 7,
-    generalName: 'Maps & Sets',
-    catExercise: jsMapsAndSetsModelEN,
+    generalName: 'Maps y Sets',
+    catExercise: jsMapsAndSetsModelES,
     description:
-        'Use Set for unique values and Map for efficient key-value storage beyond plain objects.',
+        'Usa Set para valores únicos y Map para pares clave-valor.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -181,10 +198,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 8,
-    generalName: 'Functions',
-    catExercise: jsFunctionsModelEN,
+    generalName: 'Funciones',
+    catExercise: jsFunctionsModelES,
     description:
-        'Understand functions, parameters, return values, scope, and arrow functions for reusable code.',
+        'Entiende funciones, parámetros, retorno y scope para reutilizar código.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -202,10 +219,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 9,
-    generalName: 'Null & Undefined',
-    catExercise: jsNullUndefinedModelEN,
+    generalName: 'Null y Undefined',
+    catExercise: jsNullUndefinedModelES,
     description:
-        'Learn the difference between null and undefined, and avoid common bugs with checks and defaults.',
+        'Aprende la diferencia entre null y undefined y evita errores comunes.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -223,10 +240,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 10,
-    generalName: 'Promises & Async/Await',
-    catExercise: jsPromisesAsyncModelEN,
+    generalName: 'Promises y Async/Await',
+    catExercise: jsPromisesAsyncModelES,
     description:
-        'Handle async code with Promises and async/await. Key for networking, timers, and modern JS apps.',
+        'Maneja código async con Promises y async/await. Clave en apps modernas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -241,5 +258,4 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
-  */
 ];

@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+List<CoursesExModel> csharpLoopsModelES = [
+  CoursesExModel(
+    id: 975,
+    exerciseName: 'Bucle for',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex975',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(975),
+    completed: purchaseManagerHive.getCompleted(975),
+  ),
+  CoursesExModel(
+    id: 976,
+    exerciseName: 'Bucle while',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex976',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(976),
+    completed: purchaseManagerHive.getCompleted(976),
+  ),
+  CoursesExModel(
+    id: 977,
+    exerciseName: 'Bucle do-while',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex977',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(977),
+    completed: purchaseManagerHive.getCompleted(977),
+  ),
+  CoursesExModel(
+    id: 978,
+    exerciseName: 'Bucle foreach',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex978',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(978),
+    completed: purchaseManagerHive.getCompleted(978),
+  ),
+  CoursesExModel(
+    id: 979,
+    exerciseName: 'Break en bucle',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex979',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(979),
+    completed: purchaseManagerHive.getCompleted(979),
+  ),
+  CoursesExModel(
+    id: 980,
+    exerciseName: 'Continue en bucle',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex980',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(980),
+    completed: purchaseManagerHive.getCompleted(980),
+  ),
+  CoursesExModel(
+    id: 981,
+    exerciseName: 'Suma en bucle',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex981',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(981),
+    completed: purchaseManagerHive.getCompleted(981),
+  ),
+  CoursesExModel(
+    id: 982,
+    exerciseName: 'Cuenta atrás',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex982',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(982),
+    completed: purchaseManagerHive.getCompleted(982),
+  ),
+  CoursesExModel(
+    id: 983,
+    exerciseName: 'Bucle anidado',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex983',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(983),
+    completed: purchaseManagerHive.getCompleted(983),
+  ),
+  CoursesExModel(
+    id: 984,
+    exerciseName: 'Filtrar pares',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex984',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(984),
+    completed: purchaseManagerHive.getCompleted(984),
+  ),
+  CoursesExModel(
+    id: 985,
+    exerciseName: 'Índice del bucle',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex985',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(985),
+    completed: purchaseManagerHive.getCompleted(985),
+  ),
+  CoursesExModel(
+    id: 986,
+    exerciseName: 'Desafío: Suma',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex986',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(986),
+    completed: purchaseManagerHive.getCompleted(986),
+  ),
+  CoursesExModel(
+    id: 987,
+    exerciseName: 'Dibuja estrellas',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex987',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(987),
+    completed: purchaseManagerHive.getCompleted(987),
+  ),
+  CoursesExModel(
+    id: 988,
+    exerciseName: 'Desafío: Impares',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex988',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(988),
+    completed: purchaseManagerHive.getCompleted(988),
+  ),
+];

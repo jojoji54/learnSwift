@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+List<CoursesExModel> csharpLoopsModelZH = [
+  CoursesExModel(
+    id: 975,
+    exerciseName: 'for 循环',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex975',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(975),
+    completed: purchaseManagerHive.getCompleted(975),
+  ),
+  CoursesExModel(
+    id: 976,
+    exerciseName: 'while 循环',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex976',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(976),
+    completed: purchaseManagerHive.getCompleted(976),
+  ),
+  CoursesExModel(
+    id: 977,
+    exerciseName: 'do-while 循环',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex977',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(977),
+    completed: purchaseManagerHive.getCompleted(977),
+  ),
+  CoursesExModel(
+    id: 978,
+    exerciseName: 'foreach 循环',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex978',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(978),
+    completed: purchaseManagerHive.getCompleted(978),
+  ),
+  CoursesExModel(
+    id: 979,
+    exerciseName: 'break 跳出',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex979',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(979),
+    completed: purchaseManagerHive.getCompleted(979),
+  ),
+  CoursesExModel(
+    id: 980,
+    exerciseName: 'continue 跳过',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex980',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(980),
+    completed: purchaseManagerHive.getCompleted(980),
+  ),
+  CoursesExModel(
+    id: 981,
+    exerciseName: '循环求和',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex981',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(981),
+    completed: purchaseManagerHive.getCompleted(981),
+  ),
+  CoursesExModel(
+    id: 982,
+    exerciseName: '倒计时',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex982',
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(982),
+    completed: purchaseManagerHive.getCompleted(982),
+  ),
+  CoursesExModel(
+    id: 983,
+    exerciseName: '嵌套循环',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex983',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(983),
+    completed: purchaseManagerHive.getCompleted(983),
+  ),
+  CoursesExModel(
+    id: 984,
+    exerciseName: '筛选偶数',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex984',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(984),
+    completed: purchaseManagerHive.getCompleted(984),
+  ),
+  CoursesExModel(
+    id: 985,
+    exerciseName: '循环索引',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex985',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(985),
+    completed: purchaseManagerHive.getCompleted(985),
+  ),
+  CoursesExModel(
+    id: 986,
+    exerciseName: '挑战：求和',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex986',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(986),
+    completed: purchaseManagerHive.getCompleted(986),
+  ),
+  CoursesExModel(
+    id: 987,
+    exerciseName: '打印星号',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex987',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(987),
+    completed: purchaseManagerHive.getCompleted(987),
+  ),
+  CoursesExModel(
+    id: 988,
+    exerciseName: '挑战：奇数',
+    productID: 'com.mrrubik.learnswift.csharpLoopsex988',
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(988),
+    completed: purchaseManagerHive.getCompleted(988),
+  ),
+];

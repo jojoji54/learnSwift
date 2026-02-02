@@ -62,7 +62,7 @@ class PyCodeTheme {
   );
 }
 
-enum CodeLanguage { python, javascript, java }
+enum CodeLanguage { python, javascript, java, cpp }
 
 class PythonMiniHighlighter {
   static final Set<String> _keywords = {
@@ -451,6 +451,128 @@ class JavaMiniHighlighter {
   }
 }
 
+class CppMiniHighlighter {
+  static final Set<String> _keywords = {
+    'class','public','private','protected','static','const','constexpr',
+    'void','int','double','float','long','short','bool','char','unsigned',
+    'if','else','switch','case','default',
+    'for','while','do','break','continue',
+    'return','new','delete','this','nullptr',
+    'struct','enum','using','auto'
+  };
+
+  static final Set<String> _builtins = {
+    'std','cout','cin','string','vector','array','size_t'
+  };
+
+  static final RegExp _stringRegex =
+      RegExp(r'''("([^"\\]|\\.)*"|'([^'\\]|\\.)*')''');
+
+  static final RegExp _numberRegex = RegExp(r'\b\d+(\.\d+)?\b');
+  static final RegExp _identifierRegex = RegExp(r'\b[A-Za-z_]\w*\b');
+
+  static List<TextSpan> highlightLine(String line, {bool showPrompt = false}) {
+    final split = _splitCppComment(line);
+    final codePart = split.code;
+    final commentPart = split.comment;
+
+    final spans = <TextSpan>[];
+
+    if (showPrompt) {
+      spans.add(const TextSpan(text: '>>> ', style: PyCodeTheme.prompt));
+    }
+
+    spans.addAll(_tokenize(codePart));
+
+    if (commentPart != null) {
+      spans.add(TextSpan(text: commentPart, style: PyCodeTheme.comment));
+    }
+
+    return spans;
+  }
+
+  static _Split _splitCppComment(String line) {
+    bool inSingle = false;
+    bool inDouble = false;
+    bool escaped = false;
+
+    for (int i = 0; i < line.length; i++) {
+      final ch = line[i];
+
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+
+      if (ch == r'\') {
+        if (inSingle || inDouble) escaped = true;
+        continue;
+      }
+
+      if (ch == "'" && !inDouble) {
+        inSingle = !inSingle;
+        continue;
+      }
+
+      if (ch == '"' && !inSingle) {
+        inDouble = !inDouble;
+        continue;
+      }
+
+      if (!inSingle && !inDouble) {
+        if (i + 1 < line.length) {
+          final two = line.substring(i, i + 2);
+          if (two == '//' || two == '/*') {
+            return _Split(line.substring(0, i), line.substring(i));
+          }
+        }
+      }
+    }
+
+    return _Split(line, null);
+  }
+
+  static List<TextSpan> _tokenize(String text) {
+    final spans = <TextSpan>[];
+    int i = 0;
+
+    while (i < text.length) {
+      final strMatch = _stringRegex.matchAsPrefix(text, i);
+      if (strMatch != null) {
+        spans.add(TextSpan(text: strMatch.group(0)!, style: PyCodeTheme.string));
+        i = strMatch.end;
+        continue;
+      }
+
+      final numMatch = _numberRegex.matchAsPrefix(text, i);
+      if (numMatch != null) {
+        spans.add(TextSpan(text: numMatch.group(0)!, style: PyCodeTheme.number));
+        i = numMatch.end;
+        continue;
+      }
+
+      final idMatch = _identifierRegex.matchAsPrefix(text, i);
+      if (idMatch != null) {
+        final token = idMatch.group(0)!;
+        if (_keywords.contains(token)) {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.keyword));
+        } else if (_builtins.contains(token)) {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.builtin));
+        } else {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.identifier));
+        }
+        i = idMatch.end;
+        continue;
+      }
+
+      spans.add(TextSpan(text: text[i], style: PyCodeTheme.punctuation));
+      i++;
+    }
+
+    return spans;
+  }
+}
+
 class CodePreview extends StatelessWidget {
   final List<String> lines;
   final bool withLineNumbers;
@@ -482,10 +604,15 @@ class CodePreview extends StatelessWidget {
                     lines[index],
                     showPrompt: withPrompt,
                   )
-                : PythonMiniHighlighter.highlightLine(
-                    lines[index],
-                    showPrompt: withPrompt,
-                  );
+                : language == CodeLanguage.cpp
+                    ? CppMiniHighlighter.highlightLine(
+                        lines[index],
+                        showPrompt: withPrompt,
+                      )
+                    : PythonMiniHighlighter.highlightLine(
+                        lines[index],
+                        showPrompt: withPrompt,
+                      );
 
         return Row(
           crossAxisAlignment: CrossAxisAlignment.start,

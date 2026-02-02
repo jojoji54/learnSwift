@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
 
+import '../mainModel/Cpp/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
 import '../mainModel/JavaScript/CoursesMainModelListEN.dart';
 
@@ -64,7 +65,7 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'C++',
     productID: 'com.mrrubik.learnswift.ccc',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(5),
-    coursesList: coursesJavaMainModelListEN,
+    coursesList: coursesCppMainModelListEN,
     color1: Color(0xFF00599C),
     color2: Color(0xFF4D4D4D),
     isActive: true,

@@ -6,6 +6,11 @@ import 'package:learnswift/Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.da
 import 'package:learnswift/Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
 import 'package:learnswift/Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
 import 'package:learnswift/Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsObjects/jsObjectsExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsFunctions/jsFunctionsExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsNullUndefined/jsNullUndefinedExMain.dart';
+import 'package:learnswift/Screens/Courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExMain.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListEN.dart';
@@ -14,6 +19,11 @@ import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListEN.dart';
 import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListEN.dart';
 import '../../courses/JavaScript/jsLoops/jsLoopsExModelListEN.dart';
 import '../../courses/JavaScript/jsArrays/jsArraysExModelListEN.dart';
+import '../../courses/JavaScript/jsObjects/jsObjectsExModelListEN.dart';
+import '../../courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExModelListEN.dart';
+import '../../courses/JavaScript/jsFunctions/jsFunctionsExModelListEN.dart';
+import '../../courses/JavaScript/jsNullUndefined/jsNullUndefinedExModelListEN.dart';
+import '../../courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExModelListEN.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (EN)
@@ -254,5 +264,4 @@ List<CoursesMainModel> coursesJavaScriptMainModelListEN = [
       color2: color2,
     ),
   ),
-  */
 ];

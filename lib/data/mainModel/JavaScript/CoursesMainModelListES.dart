@@ -6,6 +6,11 @@ import '../../../Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
 import '../../../Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsObjects/jsObjectsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsMapsAndSets/jsMapsAndSetsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsFunctions/jsFunctionsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsNullUndefined/jsNullUndefinedExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsPromisesAsync/jsPromisesAsyncExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListES.dart';
 import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListES.dart';
 import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListES.dart';
@@ -150,10 +155,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 6,
-    generalName: 'Objects',
-    catExercise: jsObjectsModelEN,
+    generalName: 'Objetos',
+    catExercise: jsObjectsModelES,
     description:
-        'Learn objects, properties, methods, and how to model real-world data with key-value structures.',
+        'Aprende objetos, propiedades y métodos para modelar datos reales.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -171,10 +176,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 7,
-    generalName: 'Maps & Sets',
-    catExercise: jsMapsAndSetsModelEN,
+    generalName: 'Maps y Sets',
+    catExercise: jsMapsAndSetsModelES,
     description:
-        'Use Set for unique values and Map for efficient key-value storage beyond plain objects.',
+        'Usa Set para valores únicos y Map para pares clave-valor.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -192,10 +197,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 8,
-    generalName: 'Functions',
-    catExercise: jsFunctionsModelEN,
+    generalName: 'Funciones',
+    catExercise: jsFunctionsModelES,
     description:
-        'Understand functions, parameters, return values, scope, and arrow functions for reusable code.',
+        'Entiende funciones, parámetros, retorno y scope para reutilizar código.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -213,10 +218,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 9,
-    generalName: 'Null & Undefined',
-    catExercise: jsNullUndefinedModelEN,
+    generalName: 'Null y Undefined',
+    catExercise: jsNullUndefinedModelES,
     description:
-        'Learn the difference between null and undefined, and avoid common bugs with checks and defaults.',
+        'Aprende la diferencia entre null y undefined y evita errores comunes.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -234,10 +239,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
 
   CoursesMainModel(
     id: 10,
-    generalName: 'Promises & Async/Await',
-    catExercise: jsPromisesAsyncModelEN,
+    generalName: 'Promises y Async/Await',
+    catExercise: jsPromisesAsyncModelES,
     description:
-        'Handle async code with Promises and async/await. Key for networking, timers, and modern JS apps.',
+        'Maneja código async con Promises y async/await. Clave en apps modernas.',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -252,5 +257,4 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
       color2: color2,
     ),
   ),
-  */
 ];

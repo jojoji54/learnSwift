@@ -83,11 +83,8 @@
   "buyExercise": "购买此练习",
   "buyAllExercises": "解锁所有练习",
   "restorePurchases": "恢复购买",
-  "@unlockExerciseContent": {
-    "description": "提示用户是否希望解锁特定练习的消息",
-    "placeholders": {
-      "exerciseName": {
-        "type": "String",
+  "@unlockExerciseContent": {\n    "description": "提示用户是否希望解锁特定练习的消息",
+    "placeholders": {\n      "exerciseName": {\n        "type": "String",
         "example": "你好世界"
       }
     }
@@ -2191,1766 +2188,1893 @@
   "js329SolutionTitle": "答案 ✅",
   "js329SolutionContent": "一种可行的写法：\n\nconst isMember = true;\nconst hasTicket = false;\nconsole.log(isMember && hasTicket || true);",
   "js330InstructionsTitle": "任务 330 🚀",
-  "js330InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const n = 10;
-if (n > 5) console.log(\"Big\");
-// Try another number",
+  "js330InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst n = 10;\nif (n > 5) console.log(\"Big\");\n// Try another number",
   "js330ExampleTitle": "示例",
   "js330ExampleCode1": "const n = 10;",
   "js330ExampleCode2": "if (n > 5) console.log(\"Big\");",
   "js330ExampleCode3": "// Try another number",
-  "js330ExampleOutput": "输出：
-Big",
+  "js330ExampleOutput": "输出：\nBig",
   "js330EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js330HintTitle1": "提示 1 💡",
   "js330HintContent1": "参考示例写法。",
   "js330HintTitle2": "提示 2 🧩",
   "js330HintContent2": "记得用 console.log 输出。",
   "js330SolutionTitle": "答案 ✅",
-  "js330SolutionContent": "一种可行的写法：
-
-const n = 10;
-if (n > 5) console.log(\"Big\");
-// Try another number",
+  "js330SolutionContent": "一种可行的写法：\n\nconst n = 10;\nif (n > 5) console.log(\"Big\");\n// Try another number",
   "js331InstructionsTitle": "任务 331 🚀",
-  "js331InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const age = 20;
-if (age >= 18) console.log(\"Adult\");
-else console.log(\"Minor\");",
+  "js331InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst age = 20;\nif (age >= 18) console.log(\"Adult\");\nelse console.log(\"Minor\");",
   "js331ExampleTitle": "示例",
   "js331ExampleCode1": "const age = 20;",
   "js331ExampleCode2": "if (age >= 18) console.log(\"Adult\");",
   "js331ExampleCode3": "else console.log(\"Minor\");",
-  "js331ExampleOutput": "输出：
-Adult",
+  "js331ExampleOutput": "输出：\nAdult",
   "js331EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js331HintTitle1": "提示 1 💡",
   "js331HintContent1": "参考示例写法。",
   "js331HintTitle2": "提示 2 🧩",
   "js331HintContent2": "记得用 console.log 输出。",
   "js331SolutionTitle": "答案 ✅",
-  "js331SolutionContent": "一种可行的写法：
-
-const age = 20;
-if (age >= 18) console.log(\"Adult\");
-else console.log(\"Minor\");",
+  "js331SolutionContent": "一种可行的写法：\n\nconst age = 20;\nif (age >= 18) console.log(\"Adult\");\nelse console.log(\"Minor\");",
   "js332InstructionsTitle": "任务 332 🚀",
-  "js332InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const score = 75;
-if (score >= 90) console.log(\"A\");
-else if (score >= 70) console.log(\"B\");",
+  "js332InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst score = 75;\nif (score >= 90) console.log(\"A\");\nelse if (score >= 70) console.log(\"B\");",
   "js332ExampleTitle": "示例",
   "js332ExampleCode1": "const score = 75;",
   "js332ExampleCode2": "if (score >= 90) console.log(\"A\");",
   "js332ExampleCode3": "else if (score >= 70) console.log(\"B\");",
-  "js332ExampleOutput": "输出：
-B",
+  "js332ExampleOutput": "输出：\nB",
   "js332EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js332HintTitle1": "提示 1 💡",
   "js332HintContent1": "参考示例写法。",
   "js332HintTitle2": "提示 2 🧩",
   "js332HintContent2": "记得用 console.log 输出。",
   "js332SolutionTitle": "答案 ✅",
-  "js332SolutionContent": "一种可行的写法：
-
-const score = 75;
-if (score >= 90) console.log(\"A\");
-else if (score >= 70) console.log(\"B\");",
+  "js332SolutionContent": "一种可行的写法：\n\nconst score = 75;\nif (score >= 90) console.log(\"A\");\nelse if (score >= 70) console.log(\"B\");",
   "js333InstructionsTitle": "任务 333 🚀",
-  "js333InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const lang = \"js\";
-if (lang === \"js\") console.log(\"OK\");
-// Try another value",
+  "js333InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst lang = \"js\";\nif (lang === \"js\") console.log(\"OK\");\n// Try another value",
   "js333ExampleTitle": "示例",
   "js333ExampleCode1": "const lang = \"js\";",
   "js333ExampleCode2": "if (lang === \"js\") console.log(\"OK\");",
   "js333ExampleCode3": "// Try another value",
-  "js333ExampleOutput": "输出：
-OK",
+  "js333ExampleOutput": "输出：\nOK",
   "js333EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js333HintTitle1": "提示 1 💡",
   "js333HintContent1": "参考示例写法。",
   "js333HintTitle2": "提示 2 🧩",
   "js333HintContent2": "记得用 console.log 输出。",
   "js333SolutionTitle": "答案 ✅",
-  "js333SolutionContent": "一种可行的写法：
-
-const lang = \"js\";
-if (lang === \"js\") console.log(\"OK\");
-// Try another value",
+  "js333SolutionContent": "一种可行的写法：\n\nconst lang = \"js\";\nif (lang === \"js\") console.log(\"OK\");\n// Try another value",
   "js334InstructionsTitle": "任务 334 🚀",
-  "js334InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const age = 20;
-const hasId = true;
-if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access\");",
   "js334ExampleTitle": "示例",
   "js334ExampleCode1": "const age = 20;",
   "js334ExampleCode2": "const hasId = true;",
   "js334ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access\");",
-  "js334ExampleOutput": "输出：
-Access",
+  "js334ExampleOutput": "输出：\nAccess",
   "js334EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js334HintTitle1": "提示 1 💡",
   "js334HintContent1": "参考示例写法。",
   "js334HintTitle2": "提示 2 🧩",
   "js334HintContent2": "记得用 console.log 输出。",
   "js334SolutionTitle": "答案 ✅",
-  "js334SolutionContent": "一种可行的写法：
-
-const age = 20;
-const hasId = true;
-if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334SolutionContent": "一种可行的写法：\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access\");",
   "js335InstructionsTitle": "任务 335 🚀",
-  "js335InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const isMember = false;
-const hasPass = true;
-if (isMember || hasPass) console.log(\"Enter\");",
+  "js335InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst isMember = false;\nconst hasPass = true;\nif (isMember || hasPass) console.log(\"Enter\");",
   "js335ExampleTitle": "示例",
   "js335ExampleCode1": "const isMember = false;",
   "js335ExampleCode2": "const hasPass = true;",
   "js335ExampleCode3": "if (isMember || hasPass) console.log(\"Enter\");",
-  "js335ExampleOutput": "输出：
-Enter",
+  "js335ExampleOutput": "输出：\nEnter",
   "js335EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js335HintTitle1": "提示 1 💡",
   "js335HintContent1": "参考示例写法。",
   "js335HintTitle2": "提示 2 🧩",
   "js335HintContent2": "记得用 console.log 输出。",
   "js335SolutionTitle": "答案 ✅",
-  "js335SolutionContent": "一种可行的写法：
-
-const isMember = false;
-const hasPass = true;
-if (isMember || hasPass) console.log(\"Enter\");",
+  "js335SolutionContent": "一种可行的写法：\n\nconst isMember = false;\nconst hasPass = true;\nif (isMember || hasPass) console.log(\"Enter\");",
   "js336InstructionsTitle": "任务 336 🚀",
-  "js336InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const age = 20;
-if (age > 10) if (age < 30) console.log(\"OK\");
-// Nested if",
+  "js336InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst age = 20;\nif (age > 10) if (age < 30) console.log(\"OK\");\n// Nested if",
   "js336ExampleTitle": "示例",
   "js336ExampleCode1": "const age = 20;",
   "js336ExampleCode2": "if (age > 10) if (age < 30) console.log(\"OK\");",
   "js336ExampleCode3": "// Nested if",
-  "js336ExampleOutput": "输出：
-OK",
+  "js336ExampleOutput": "输出：\nOK",
   "js336EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js336HintTitle1": "提示 1 💡",
   "js336HintContent1": "参考示例写法。",
   "js336HintTitle2": "提示 2 🧩",
   "js336HintContent2": "记得用 console.log 输出。",
   "js336SolutionTitle": "答案 ✅",
-  "js336SolutionContent": "一种可行的写法：
-
-const age = 20;
-if (age > 10) if (age < 30) console.log(\"OK\");
-// Nested if",
+  "js336SolutionContent": "一种可行的写法：\n\nconst age = 20;\nif (age > 10) if (age < 30) console.log(\"OK\");\n// Nested if",
   "js337InstructionsTitle": "任务 337 🚀",
-  "js337InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const isReady = true;
-if (isReady) console.log(\"Go\");
-// Try false",
+  "js337InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst isReady = true;\nif (isReady) console.log(\"Go\");\n// Try false",
   "js337ExampleTitle": "示例",
   "js337ExampleCode1": "const isReady = true;",
   "js337ExampleCode2": "if (isReady) console.log(\"Go\");",
   "js337ExampleCode3": "// Try false",
-  "js337ExampleOutput": "输出：
-Go",
+  "js337ExampleOutput": "输出：\nGo",
   "js337EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js337HintTitle1": "提示 1 💡",
   "js337HintContent1": "参考示例写法。",
   "js337HintTitle2": "提示 2 🧩",
   "js337HintContent2": "记得用 console.log 输出。",
   "js337SolutionTitle": "答案 ✅",
-  "js337SolutionContent": "一种可行的写法：
-
-const isReady = true;
-if (isReady) console.log(\"Go\");
-// Try false",
+  "js337SolutionContent": "一种可行的写法：\n\nconst isReady = true;\nif (isReady) console.log(\"Go\");\n// Try false",
   "js338InstructionsTitle": "任务 338 🚀",
-  "js338InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const role = \"guest\";
-if (role !== \"admin\") console.log(\"Limited\");
-// Try admin",
+  "js338InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst role = \"guest\";\nif (role !== \"admin\") console.log(\"Limited\");\n// Try admin",
   "js338ExampleTitle": "示例",
   "js338ExampleCode1": "const role = \"guest\";",
   "js338ExampleCode2": "if (role !== \"admin\") console.log(\"Limited\");",
   "js338ExampleCode3": "// Try admin",
-  "js338ExampleOutput": "输出：
-Limited",
+  "js338ExampleOutput": "输出：\nLimited",
   "js338EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js338HintTitle1": "提示 1 💡",
   "js338HintContent1": "参考示例写法。",
   "js338HintTitle2": "提示 2 🧩",
   "js338HintContent2": "记得用 console.log 输出。",
   "js338SolutionTitle": "答案 ✅",
-  "js338SolutionContent": "一种可行的写法：
-
-const role = \"guest\";
-if (role !== \"admin\") console.log(\"Limited\");
-// Try admin",
+  "js338SolutionContent": "一种可行的写法：\n\nconst role = \"guest\";\nif (role !== \"admin\") console.log(\"Limited\");\n// Try admin",
   "js339InstructionsTitle": "任务 339 🚀",
-  "js339InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const name = \"Ana\";
-if (name.length < 5) console.log(\"Short\");
-// Try another name",
+  "js339InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst name = \"Ana\";\nif (name.length < 5) console.log(\"Short\");\n// Try another name",
   "js339ExampleTitle": "示例",
   "js339ExampleCode1": "const name = \"Ana\";",
   "js339ExampleCode2": "if (name.length < 5) console.log(\"Short\");",
   "js339ExampleCode3": "// Try another name",
-  "js339ExampleOutput": "输出：
-Short",
+  "js339ExampleOutput": "输出：\nShort",
   "js339EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js339HintTitle1": "提示 1 💡",
   "js339HintContent1": "参考示例写法。",
   "js339HintTitle2": "提示 2 🧩",
   "js339HintContent2": "记得用 console.log 输出。",
   "js339SolutionTitle": "答案 ✅",
-  "js339SolutionContent": "一种可行的写法：
-
-const name = \"Ana\";
-if (name.length < 5) console.log(\"Short\");
-// Try another name",
+  "js339SolutionContent": "一种可行的写法：\n\nconst name = \"Ana\";\nif (name.length < 5) console.log(\"Short\");\n// Try another name",
   "js340InstructionsTitle": "任务 340 🚀",
-  "js340InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const temp = 22;
-if (temp >= 18 && temp <= 26) console.log(\"Ok\");
-// Range check",
+  "js340InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst temp = 22;\nif (temp >= 18 && temp <= 26) console.log(\"Ok\");\n// Range check",
   "js340ExampleTitle": "示例",
   "js340ExampleCode1": "const temp = 22;",
   "js340ExampleCode2": "if (temp >= 18 && temp <= 26) console.log(\"Ok\");",
   "js340ExampleCode3": "// Range check",
-  "js340ExampleOutput": "输出：
-Ok",
+  "js340ExampleOutput": "输出：\nOk",
   "js340EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js340HintTitle1": "提示 1 💡",
   "js340HintContent1": "参考示例写法。",
   "js340HintTitle2": "提示 2 🧩",
   "js340HintContent2": "记得用 console.log 输出。",
   "js340SolutionTitle": "答案 ✅",
-  "js340SolutionContent": "一种可行的写法：
-
-const temp = 22;
-if (temp >= 18 && temp <= 26) console.log(\"Ok\");
-// Range check",
+  "js340SolutionContent": "一种可行的写法：\n\nconst temp = 22;\nif (temp >= 18 && temp <= 26) console.log(\"Ok\");\n// Range check",
   "js341InstructionsTitle": "任务 341 🚀",
-  "js341InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const n = 4;
-if (n % 2 === 0) console.log(\"Even\");
-else console.log(\"Odd\");",
+  "js341InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst n = 4;\nif (n % 2 === 0) console.log(\"Even\");\nelse console.log(\"Odd\");",
   "js341ExampleTitle": "示例",
   "js341ExampleCode1": "const n = 4;",
   "js341ExampleCode2": "if (n % 2 === 0) console.log(\"Even\");",
   "js341ExampleCode3": "else console.log(\"Odd\");",
-  "js341ExampleOutput": "输出：
-Even",
+  "js341ExampleOutput": "输出：\nEven",
   "js341EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js341HintTitle1": "提示 1 💡",
   "js341HintContent1": "参考示例写法。",
   "js341HintTitle2": "提示 2 🧩",
   "js341HintContent2": "记得用 console.log 输出。",
   "js341SolutionTitle": "答案 ✅",
-  "js341SolutionContent": "一种可行的写法：
-
-const n = 4;
-if (n % 2 === 0) console.log(\"Even\");
-else console.log(\"Odd\");",
+  "js341SolutionContent": "一种可行的写法：\n\nconst n = 4;\nif (n % 2 === 0) console.log(\"Even\");\nelse console.log(\"Odd\");",
   "js342InstructionsTitle": "任务 342 🚀",
-  "js342InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const age = 16;
-const hasPass = true;
-if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst age = 16;\nconst hasPass = true;\nif (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
   "js342ExampleTitle": "示例",
   "js342ExampleCode1": "const age = 16;",
   "js342ExampleCode2": "const hasPass = true;",
   "js342ExampleCode3": "if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
-  "js342ExampleOutput": "输出：
-No",
+  "js342ExampleOutput": "输出：\nNo",
   "js342EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js342HintTitle1": "提示 1 💡",
   "js342HintContent1": "参考示例写法。",
   "js342HintTitle2": "提示 2 🧩",
   "js342HintContent2": "记得用 console.log 输出。",
   "js342SolutionTitle": "答案 ✅",
-  "js342SolutionContent": "一种可行的写法：
-
-const age = 16;
-const hasPass = true;
-if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342SolutionContent": "一种可行的写法：\n\nconst age = 16;\nconst hasPass = true;\nif (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
   "js343InstructionsTitle": "任务 343 🚀",
-  "js343InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const name = \"\";
-if (name) console.log(\"Hi\");
-else console.log(\"Empty\");",
+  "js343InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst name = \"\";\nif (name) console.log(\"Hi\");\nelse console.log(\"Empty\");",
   "js343ExampleTitle": "示例",
   "js343ExampleCode1": "const name = \"\";",
   "js343ExampleCode2": "if (name) console.log(\"Hi\");",
   "js343ExampleCode3": "else console.log(\"Empty\");",
-  "js343ExampleOutput": "输出：
-Empty",
+  "js343ExampleOutput": "输出：\nEmpty",
   "js343EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js343HintTitle1": "提示 1 💡",
   "js343HintContent1": "参考示例写法。",
   "js343HintTitle2": "提示 2 🧩",
   "js343HintContent2": "记得用 console.log 输出。",
   "js343SolutionTitle": "答案 ✅",
-  "js343SolutionContent": "一种可行的写法：
-
-const name = \"\";
-if (name) console.log(\"Hi\");
-else console.log(\"Empty\");",
+  "js343SolutionContent": "一种可行的写法：\n\nconst name = \"\";\nif (name) console.log(\"Hi\");\nelse console.log(\"Empty\");",
   "js344InstructionsTitle": "任务 344 🚀",
-  "js344InstructionsContent": "练习 if 和 else 条件。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const hour = 9;
-if (hour >= 6 && hour <= 12) console.log(\"Morning\");
-// Use a range",
+  "js344InstructionsContent": "练习 if 和 else 条件。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst hour = 9;\nif (hour >= 6 && hour <= 12) console.log(\"Morning\");\n// Use a range",
   "js344ExampleTitle": "示例",
   "js344ExampleCode1": "const hour = 9;",
   "js344ExampleCode2": "if (hour >= 6 && hour <= 12) console.log(\"Morning\");",
   "js344ExampleCode3": "// Use a range",
-  "js344ExampleOutput": "输出：
-Morning",
+  "js344ExampleOutput": "输出：\nMorning",
   "js344EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js344HintTitle1": "提示 1 💡",
   "js344HintContent1": "参考示例写法。",
   "js344HintTitle2": "提示 2 🧩",
   "js344HintContent2": "记得用 console.log 输出。",
   "js344SolutionTitle": "答案 ✅",
-  "js344SolutionContent": "一种可行的写法：
-
-const hour = 9;
-if (hour >= 6 && hour <= 12) console.log(\"Morning\");
-// Use a range",
+  "js344SolutionContent": "一种可行的写法：\n\nconst hour = 9;\nif (hour >= 6 && hour <= 12) console.log(\"Morning\");\n// Use a range",
   "js345InstructionsTitle": "任务 345 🚀",
-  "js345InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const day = 1;
-switch (day)
-case 1: console.log(\"Mon\"); break;",
+  "js345InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst day = 1;\nswitch (day)\ncase 1: console.log(\"Mon\"); break;",
   "js345ExampleTitle": "示例",
   "js345ExampleCode1": "const day = 1;",
   "js345ExampleCode2": "switch (day)",
   "js345ExampleCode3": "case 1: console.log(\"Mon\"); break;",
-  "js345ExampleOutput": "输出：
-Mon",
+  "js345ExampleOutput": "输出：\nMon",
   "js345EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js345HintTitle1": "提示 1 💡",
   "js345HintContent1": "参考示例写法。",
   "js345HintTitle2": "提示 2 🧩",
   "js345HintContent2": "记得用 console.log 输出。",
   "js345SolutionTitle": "答案 ✅",
-  "js345SolutionContent": "一种可行的写法：
-
-const day = 1;
-switch (day)
-case 1: console.log(\"Mon\"); break;",
+  "js345SolutionContent": "一种可行的写法：\n\nconst day = 1;\nswitch (day)\ncase 1: console.log(\"Mon\"); break;",
   "js346InstructionsTitle": "任务 346 🚀",
-  "js346InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const n = 2;
-switch (n)
-case 2: console.log(\"Two\"); break;",
+  "js346InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst n = 2;\nswitch (n)\ncase 2: console.log(\"Two\"); break;",
   "js346ExampleTitle": "示例",
   "js346ExampleCode1": "const n = 2;",
   "js346ExampleCode2": "switch (n)",
   "js346ExampleCode3": "case 2: console.log(\"Two\"); break;",
-  "js346ExampleOutput": "输出：
-Two",
+  "js346ExampleOutput": "输出：\nTwo",
   "js346EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js346HintTitle1": "提示 1 💡",
   "js346HintContent1": "参考示例写法。",
   "js346HintTitle2": "提示 2 🧩",
   "js346HintContent2": "记得用 console.log 输出。",
   "js346SolutionTitle": "答案 ✅",
-  "js346SolutionContent": "一种可行的写法：
-
-const n = 2;
-switch (n)
-case 2: console.log(\"Two\"); break;",
+  "js346SolutionContent": "一种可行的写法：\n\nconst n = 2;\nswitch (n)\ncase 2: console.log(\"Two\"); break;",
   "js347InstructionsTitle": "任务 347 🚀",
-  "js347InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const day = 9;
-switch (day)
-default: console.log(\"Other\");",
+  "js347InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst day = 9;\nswitch (day)\ndefault: console.log(\"Other\");",
   "js347ExampleTitle": "示例",
   "js347ExampleCode1": "const day = 9;",
   "js347ExampleCode2": "switch (day)",
   "js347ExampleCode3": "default: console.log(\"Other\");",
-  "js347ExampleOutput": "输出：
-Other",
+  "js347ExampleOutput": "输出：\nOther",
   "js347EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js347HintTitle1": "提示 1 💡",
   "js347HintContent1": "参考示例写法。",
   "js347HintTitle2": "提示 2 🧩",
   "js347HintContent2": "记得用 console.log 输出。",
   "js347SolutionTitle": "答案 ✅",
-  "js347SolutionContent": "一种可行的写法：
-
-const day = 9;
-switch (day)
-default: console.log(\"Other\");",
+  "js347SolutionContent": "一种可行的写法：\n\nconst day = 9;\nswitch (day)\ndefault: console.log(\"Other\");",
   "js348InstructionsTitle": "任务 348 🚀",
-  "js348InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const color = \"red\";
-switch (color)
-case \"red\": console.log(\"Stop\"); break;",
+  "js348InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst color = \"red\";\nswitch (color)\ncase \"red\": console.log(\"Stop\"); break;",
   "js348ExampleTitle": "示例",
   "js348ExampleCode1": "const color = \"red\";",
   "js348ExampleCode2": "switch (color)",
   "js348ExampleCode3": "case \"red\": console.log(\"Stop\"); break;",
-  "js348ExampleOutput": "输出：
-Stop",
+  "js348ExampleOutput": "输出：\nStop",
   "js348EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js348HintTitle1": "提示 1 💡",
   "js348HintContent1": "参考示例写法。",
   "js348HintTitle2": "提示 2 🧩",
   "js348HintContent2": "记得用 console.log 输出。",
   "js348SolutionTitle": "答案 ✅",
-  "js348SolutionContent": "一种可行的写法：
-
-const color = \"red\";
-switch (color)
-case \"red\": console.log(\"Stop\"); break;",
+  "js348SolutionContent": "一种可行的写法：\n\nconst color = \"red\";\nswitch (color)\ncase \"red\": console.log(\"Stop\"); break;",
   "js349InstructionsTitle": "任务 349 🚀",
-  "js349InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const level = 3;
-switch (level)
-case 3: console.log(\"Pro\"); break;",
+  "js349InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst level = 3;\nswitch (level)\ncase 3: console.log(\"Pro\"); break;",
   "js349ExampleTitle": "示例",
   "js349ExampleCode1": "const level = 3;",
   "js349ExampleCode2": "switch (level)",
   "js349ExampleCode3": "case 3: console.log(\"Pro\"); break;",
-  "js349ExampleOutput": "输出：
-Pro",
+  "js349ExampleOutput": "输出：\nPro",
   "js349EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js349HintTitle1": "提示 1 💡",
   "js349HintContent1": "参考示例写法。",
   "js349HintTitle2": "提示 2 🧩",
   "js349HintContent2": "记得用 console.log 输出。",
   "js349SolutionTitle": "答案 ✅",
-  "js349SolutionContent": "一种可行的写法：
-
-const level = 3;
-switch (level)
-case 3: console.log(\"Pro\"); break;",
+  "js349SolutionContent": "一种可行的写法：\n\nconst level = 3;\nswitch (level)\ncase 3: console.log(\"Pro\"); break;",
   "js350InstructionsTitle": "任务 350 🚀",
-  "js350InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const ready = true;
-switch (ready)
-case true: console.log(\"Go\"); break;",
+  "js350InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst ready = true;\nswitch (ready)\ncase true: console.log(\"Go\"); break;",
   "js350ExampleTitle": "示例",
   "js350ExampleCode1": "const ready = true;",
   "js350ExampleCode2": "switch (ready)",
   "js350ExampleCode3": "case true: console.log(\"Go\"); break;",
-  "js350ExampleOutput": "输出：
-Go",
+  "js350ExampleOutput": "输出：\nGo",
   "js350EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js350HintTitle1": "提示 1 💡",
   "js350HintContent1": "参考示例写法。",
   "js350HintTitle2": "提示 2 🧩",
   "js350HintContent2": "记得用 console.log 输出。",
   "js350SolutionTitle": "答案 ✅",
-  "js350SolutionContent": "一种可行的写法：
-
-const ready = true;
-switch (ready)
-case true: console.log(\"Go\"); break;",
+  "js350SolutionContent": "一种可行的写法：\n\nconst ready = true;\nswitch (ready)\ncase true: console.log(\"Go\"); break;",
   "js351InstructionsTitle": "任务 351 🚀",
-  "js351InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const grade = \"B\";
-switch (grade)
-case \"B\": console.log(\"Good\"); break;",
+  "js351InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst grade = \"B\";\nswitch (grade)\ncase \"B\": console.log(\"Good\"); break;",
   "js351ExampleTitle": "示例",
   "js351ExampleCode1": "const grade = \"B\";",
   "js351ExampleCode2": "switch (grade)",
   "js351ExampleCode3": "case \"B\": console.log(\"Good\"); break;",
-  "js351ExampleOutput": "输出：
-Good",
+  "js351ExampleOutput": "输出：\nGood",
   "js351EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js351HintTitle1": "提示 1 💡",
   "js351HintContent1": "参考示例写法。",
   "js351HintTitle2": "提示 2 🧩",
   "js351HintContent2": "记得用 console.log 输出。",
   "js351SolutionTitle": "答案 ✅",
-  "js351SolutionContent": "一种可行的写法：
-
-const grade = \"B\";
-switch (grade)
-case \"B\": console.log(\"Good\"); break;",
+  "js351SolutionContent": "一种可行的写法：\n\nconst grade = \"B\";\nswitch (grade)\ncase \"B\": console.log(\"Good\"); break;",
   "js352InstructionsTitle": "任务 352 🚀",
-  "js352InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const n = 1;
-switch (n)
-case 1: case 2: console.log(\"Small\"); break;",
+  "js352InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst n = 1;\nswitch (n)\ncase 1: case 2: console.log(\"Small\"); break;",
   "js352ExampleTitle": "示例",
   "js352ExampleCode1": "const n = 1;",
   "js352ExampleCode2": "switch (n)",
   "js352ExampleCode3": "case 1: case 2: console.log(\"Small\"); break;",
-  "js352ExampleOutput": "输出：
-Small",
+  "js352ExampleOutput": "输出：\nSmall",
   "js352EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js352HintTitle1": "提示 1 💡",
   "js352HintContent1": "参考示例写法。",
   "js352HintTitle2": "提示 2 🧩",
   "js352HintContent2": "记得用 console.log 输出。",
   "js352SolutionTitle": "答案 ✅",
-  "js352SolutionContent": "一种可行的写法：
-
-const n = 1;
-switch (n)
-case 1: case 2: console.log(\"Small\"); break;",
+  "js352SolutionContent": "一种可行的写法：\n\nconst n = 1;\nswitch (n)\ncase 1: case 2: console.log(\"Small\"); break;",
   "js353InstructionsTitle": "任务 353 🚀",
-  "js353InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const month = 12;
-switch (month)
-case 12: console.log(\"Dec\"); break;",
+  "js353InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst month = 12;\nswitch (month)\ncase 12: console.log(\"Dec\"); break;",
   "js353ExampleTitle": "示例",
   "js353ExampleCode1": "const month = 12;",
   "js353ExampleCode2": "switch (month)",
   "js353ExampleCode3": "case 12: console.log(\"Dec\"); break;",
-  "js353ExampleOutput": "输出：
-Dec",
+  "js353ExampleOutput": "输出：\nDec",
   "js353EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js353HintTitle1": "提示 1 💡",
   "js353HintContent1": "参考示例写法。",
   "js353HintTitle2": "提示 2 🧩",
   "js353HintContent2": "记得用 console.log 输出。",
   "js353SolutionTitle": "答案 ✅",
-  "js353SolutionContent": "一种可行的写法：
-
-const month = 12;
-switch (month)
-case 12: console.log(\"Dec\"); break;",
+  "js353SolutionContent": "一种可行的写法：\n\nconst month = 12;\nswitch (month)\ncase 12: console.log(\"Dec\"); break;",
   "js354InstructionsTitle": "任务 354 🚀",
-  "js354InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const value = 3;
-switch (value)
-case 3: console.log(\"Three\"); break;",
+  "js354InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = 3;\nswitch (value)\ncase 3: console.log(\"Three\"); break;",
   "js354ExampleTitle": "示例",
   "js354ExampleCode1": "const value = 3;",
   "js354ExampleCode2": "switch (value)",
   "js354ExampleCode3": "case 3: console.log(\"Three\"); break;",
-  "js354ExampleOutput": "输出：
-Three",
+  "js354ExampleOutput": "输出：\nThree",
   "js354EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js354HintTitle1": "提示 1 💡",
   "js354HintContent1": "参考示例写法。",
   "js354HintTitle2": "提示 2 🧩",
   "js354HintContent2": "记得用 console.log 输出。",
   "js354SolutionTitle": "答案 ✅",
-  "js354SolutionContent": "一种可行的写法：
-
-const value = 3;
-switch (value)
-case 3: console.log(\"Three\"); break;",
+  "js354SolutionContent": "一种可行的写法：\n\nconst value = 3;\nswitch (value)\ncase 3: console.log(\"Three\"); break;",
   "js355InstructionsTitle": "任务 355 🚀",
-  "js355InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const value = 2 + 2;
-switch (value)
-case 4: console.log(\"Four\"); break;",
+  "js355InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = 2 + 2;\nswitch (value)\ncase 4: console.log(\"Four\"); break;",
   "js355ExampleTitle": "示例",
   "js355ExampleCode1": "const value = 2 + 2;",
   "js355ExampleCode2": "switch (value)",
   "js355ExampleCode3": "case 4: console.log(\"Four\"); break;",
-  "js355ExampleOutput": "输出：
-Four",
+  "js355ExampleOutput": "输出：\nFour",
   "js355EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js355HintTitle1": "提示 1 💡",
   "js355HintContent1": "参考示例写法。",
   "js355HintTitle2": "提示 2 🧩",
   "js355HintContent2": "记得用 console.log 输出。",
   "js355SolutionTitle": "答案 ✅",
-  "js355SolutionContent": "一种可行的写法：
-
-const value = 2 + 2;
-switch (value)
-case 4: console.log(\"Four\"); break;",
+  "js355SolutionContent": "一种可行的写法：\n\nconst value = 2 + 2;\nswitch (value)\ncase 4: console.log(\"Four\"); break;",
   "js356InstructionsTitle": "任务 356 🚀",
-  "js356InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const option = 1;
-switch (option)
-case 1: console.log(\"Play\"); break;",
+  "js356InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst option = 1;\nswitch (option)\ncase 1: console.log(\"Play\"); break;",
   "js356ExampleTitle": "示例",
   "js356ExampleCode1": "const option = 1;",
   "js356ExampleCode2": "switch (option)",
   "js356ExampleCode3": "case 1: console.log(\"Play\"); break;",
-  "js356ExampleOutput": "输出：
-Play",
+  "js356ExampleOutput": "输出：\nPlay",
   "js356EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js356HintTitle1": "提示 1 💡",
   "js356HintContent1": "参考示例写法。",
   "js356HintTitle2": "提示 2 🧩",
   "js356HintContent2": "记得用 console.log 输出。",
   "js356SolutionTitle": "答案 ✅",
-  "js356SolutionContent": "一种可行的写法：
-
-const option = 1;
-switch (option)
-case 1: console.log(\"Play\"); break;",
+  "js356SolutionContent": "一种可行的写法：\n\nconst option = 1;\nswitch (option)\ncase 1: console.log(\"Play\"); break;",
   "js357InstructionsTitle": "任务 357 🚀",
-  "js357InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const light = \"green\";
-switch (light)
-case \"green\": console.log(\"Go\"); break;",
+  "js357InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst light = \"green\";\nswitch (light)\ncase \"green\": console.log(\"Go\"); break;",
   "js357ExampleTitle": "示例",
   "js357ExampleCode1": "const light = \"green\";",
   "js357ExampleCode2": "switch (light)",
   "js357ExampleCode3": "case \"green\": console.log(\"Go\"); break;",
-  "js357ExampleOutput": "输出：
-Go",
+  "js357ExampleOutput": "输出：\nGo",
   "js357EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js357HintTitle1": "提示 1 💡",
   "js357HintContent1": "参考示例写法。",
   "js357HintTitle2": "提示 2 🧩",
   "js357HintContent2": "记得用 console.log 输出。",
   "js357SolutionTitle": "答案 ✅",
-  "js357SolutionContent": "一种可行的写法：
-
-const light = \"green\";
-switch (light)
-case \"green\": console.log(\"Go\"); break;",
+  "js357SolutionContent": "一种可行的写法：\n\nconst light = \"green\";\nswitch (light)\ncase \"green\": console.log(\"Go\"); break;",
   "js358InstructionsTitle": "任务 358 🚀",
-  "js358InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const code = 0;
-switch (code)
-default: console.log(\"Unknown\"); break;",
+  "js358InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst code = 0;\nswitch (code)\ndefault: console.log(\"Unknown\"); break;",
   "js358ExampleTitle": "示例",
   "js358ExampleCode1": "const code = 0;",
   "js358ExampleCode2": "switch (code)",
   "js358ExampleCode3": "default: console.log(\"Unknown\"); break;",
-  "js358ExampleOutput": "输出：
-Unknown",
+  "js358ExampleOutput": "输出：\nUnknown",
   "js358EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js358HintTitle1": "提示 1 💡",
   "js358HintContent1": "参考示例写法。",
   "js358HintTitle2": "提示 2 🧩",
   "js358HintContent2": "记得用 console.log 输出。",
   "js358SolutionTitle": "答案 ✅",
-  "js358SolutionContent": "一种可行的写法：
-
-const code = 0;
-switch (code)
-default: console.log(\"Unknown\"); break;",
+  "js358SolutionContent": "一种可行的写法：\n\nconst code = 0;\nswitch (code)\ndefault: console.log(\"Unknown\"); break;",
   "js359InstructionsTitle": "任务 359 🚀",
-  "js359InstructionsContent": "练习 switch 的 case 和 default。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const lang = \"es\";
-switch (lang)
-case \"es\": console.log(\"Hola\"); break;",
+  "js359InstructionsContent": "练习 switch 的 case 和 default。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst lang = \"es\";\nswitch (lang)\ncase \"es\": console.log(\"Hola\"); break;",
   "js359ExampleTitle": "示例",
   "js359ExampleCode1": "const lang = \"es\";",
   "js359ExampleCode2": "switch (lang)",
   "js359ExampleCode3": "case \"es\": console.log(\"Hola\"); break;",
-  "js359ExampleOutput": "输出：
-Hola",
+  "js359ExampleOutput": "输出：\nHola",
   "js359EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js359HintTitle1": "提示 1 💡",
   "js359HintContent1": "参考示例写法。",
   "js359HintTitle2": "提示 2 🧩",
   "js359HintContent2": "记得用 console.log 输出。",
   "js359SolutionTitle": "答案 ✅",
-  "js359SolutionContent": "一种可行的写法：
-
-const lang = \"es\";
-switch (lang)
-case \"es\": console.log(\"Hola\"); break;",
+  "js359SolutionContent": "一种可行的写法：\n\nconst lang = \"es\";\nswitch (lang)\ncase \"es\": console.log(\"Hola\"); break;",
   "js360InstructionsTitle": "任务 360 🚀",
-  "js360InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 1; i <= 3; i++) console.log(i);
-// Loop 1 to 3
-// Try 1 to 5",
+  "js360InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 1; i <= 3; i++) console.log(i);\n// Loop 1 to 3\n// Try 1 to 5",
   "js360ExampleTitle": "示例",
   "js360ExampleCode1": "for (let i = 1; i <= 3; i++) console.log(i);",
   "js360ExampleCode2": "// Loop 1 to 3",
   "js360ExampleCode3": "// Try 1 to 5",
-  "js360ExampleOutput": "输出：
-1
-2
-3",
+  "js360ExampleOutput": "输出：\n1\n2\n3",
   "js360EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js360HintTitle1": "提示 1 💡",
   "js360HintContent1": "参考示例写法。",
   "js360HintTitle2": "提示 2 🧩",
   "js360HintContent2": "记得用 console.log 输出。",
   "js360SolutionTitle": "答案 ✅",
-  "js360SolutionContent": "一种可行的写法：
-
-for (let i = 1; i <= 3; i++) console.log(i);
-// Loop 1 to 3
-// Try 1 to 5",
+  "js360SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 3; i++) console.log(i);\n// Loop 1 to 3\n// Try 1 to 5",
   "js361InstructionsTitle": "任务 361 🚀",
-  "js361InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-let sum = 0;
-for (let i = 1; i <= 3; i++) sum += i;
-console.log(sum);",
+  "js361InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) sum += i;\nconsole.log(sum);",
   "js361ExampleTitle": "示例",
   "js361ExampleCode1": "let sum = 0;",
   "js361ExampleCode2": "for (let i = 1; i <= 3; i++) sum += i;",
   "js361ExampleCode3": "console.log(sum);",
-  "js361ExampleOutput": "输出：
-6",
+  "js361ExampleOutput": "输出：\n6",
   "js361EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js361HintTitle1": "提示 1 💡",
   "js361HintContent1": "参考示例写法。",
   "js361HintTitle2": "提示 2 🧩",
   "js361HintContent2": "记得用 console.log 输出。",
   "js361SolutionTitle": "答案 ✅",
-  "js361SolutionContent": "一种可行的写法：
-
-let sum = 0;
-for (let i = 1; i <= 3; i++) sum += i;
-console.log(sum);",
+  "js361SolutionContent": "一种可行的写法：\n\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) sum += i;\nconsole.log(sum);",
   "js362InstructionsTitle": "任务 362 🚀",
-  "js362InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-let i = 1;
-while (i <= 3) console.log(i), i++;
-// Print 1 to 3",
+  "js362InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet i = 1;\nwhile (i <= 3) console.log(i), i++;\n// Print 1 to 3",
   "js362ExampleTitle": "示例",
   "js362ExampleCode1": "let i = 1;",
   "js362ExampleCode2": "while (i <= 3) console.log(i), i++;",
   "js362ExampleCode3": "// Print 1 to 3",
-  "js362ExampleOutput": "输出：
-1
-2
-3",
+  "js362ExampleOutput": "输出：\n1\n2\n3",
   "js362EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js362HintTitle1": "提示 1 💡",
   "js362HintContent1": "参考示例写法。",
   "js362HintTitle2": "提示 2 🧩",
   "js362HintContent2": "记得用 console.log 输出。",
   "js362SolutionTitle": "答案 ✅",
-  "js362SolutionContent": "一种可行的写法：
-
-let i = 1;
-while (i <= 3) console.log(i), i++;
-// Print 1 to 3",
+  "js362SolutionContent": "一种可行的写法：\n\nlet i = 1;\nwhile (i <= 3) console.log(i), i++;\n// Print 1 to 3",
   "js363InstructionsTitle": "任务 363 🚀",
-  "js363InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-let n = 0;
-do console.log(n); while (n++ < 1);
-// Runs at least once",
+  "js363InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet n = 0;\ndo console.log(n); while (n++ < 1);\n// Runs at least once",
   "js363ExampleTitle": "示例",
   "js363ExampleCode1": "let n = 0;",
   "js363ExampleCode2": "do console.log(n); while (n++ < 1);",
   "js363ExampleCode3": "// Runs at least once",
-  "js363ExampleOutput": "输出：
-0
-1",
+  "js363ExampleOutput": "输出：\n0\n1",
   "js363EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js363HintTitle1": "提示 1 💡",
   "js363HintContent1": "参考示例写法。",
   "js363HintTitle2": "提示 2 🧩",
   "js363HintContent2": "记得用 console.log 输出。",
   "js363SolutionTitle": "答案 ✅",
-  "js363SolutionContent": "一种可行的写法：
-
-let n = 0;
-do console.log(n); while (n++ < 1);
-// Runs at least once",
+  "js363SolutionContent": "一种可行的写法：\n\nlet n = 0;\ndo console.log(n); while (n++ < 1);\n// Runs at least once",
   "js364InstructionsTitle": "任务 364 🚀",
-  "js364InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-for (const n of nums) console.log(n);
-// Iterate values",
+  "js364InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nfor (const n of nums) console.log(n);\n// Iterate values",
   "js364ExampleTitle": "示例",
   "js364ExampleCode1": "const nums = [1, 2, 3];",
   "js364ExampleCode2": "for (const n of nums) console.log(n);",
   "js364ExampleCode3": "// Iterate values",
-  "js364ExampleOutput": "输出：
-1
-2
-3",
+  "js364ExampleOutput": "输出：\n1\n2\n3",
   "js364EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js364HintTitle1": "提示 1 💡",
   "js364HintContent1": "参考示例写法。",
   "js364HintTitle2": "提示 2 🧩",
   "js364HintContent2": "记得用 console.log 输出。",
   "js364SolutionTitle": "答案 ✅",
-  "js364SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-for (const n of nums) console.log(n);
-// Iterate values",
+  "js364SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nfor (const n of nums) console.log(n);\n// Iterate values",
   "js365InstructionsTitle": "任务 365 🚀",
-  "js365InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [10, 20];
-for (const i in nums) console.log(i);
-// Iterate indexes",
+  "js365InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [10, 20];\nfor (const i in nums) console.log(i);\n// Iterate indexes",
   "js365ExampleTitle": "示例",
   "js365ExampleCode1": "const nums = [10, 20];",
   "js365ExampleCode2": "for (const i in nums) console.log(i);",
   "js365ExampleCode3": "// Iterate indexes",
-  "js365ExampleOutput": "输出：
-0
-1",
+  "js365ExampleOutput": "输出：\n0\n1",
   "js365EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js365HintTitle1": "提示 1 💡",
   "js365HintContent1": "参考示例写法。",
   "js365HintTitle2": "提示 2 🧩",
   "js365HintContent2": "记得用 console.log 输出。",
   "js365SolutionTitle": "答案 ✅",
-  "js365SolutionContent": "一种可行的写法：
-
-const nums = [10, 20];
-for (const i in nums) console.log(i);
-// Iterate indexes",
+  "js365SolutionContent": "一种可行的写法：\n\nconst nums = [10, 20];\nfor (const i in nums) console.log(i);\n// Iterate indexes",
   "js366InstructionsTitle": "任务 366 🚀",
-  "js366InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 1; i <= 5; i++)
-if (i === 3) break; else console.log(i);
-// Stops early",
+  "js366InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 1; i <= 5; i++)\nif (i === 3) break; else console.log(i);\n// Stops early",
   "js366ExampleTitle": "示例",
   "js366ExampleCode1": "for (let i = 1; i <= 5; i++)",
   "js366ExampleCode2": "if (i === 3) break; else console.log(i);",
   "js366ExampleCode3": "// Stops early",
-  "js366ExampleOutput": "输出：
-1
-2",
+  "js366ExampleOutput": "输出：\n1\n2",
   "js366EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js366HintTitle1": "提示 1 💡",
   "js366HintContent1": "参考示例写法。",
   "js366HintTitle2": "提示 2 🧩",
   "js366HintContent2": "记得用 console.log 输出。",
   "js366SolutionTitle": "答案 ✅",
-  "js366SolutionContent": "一种可行的写法：
-
-for (let i = 1; i <= 5; i++)
-if (i === 3) break; else console.log(i);
-// Stops early",
+  "js366SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 5; i++)\nif (i === 3) break; else console.log(i);\n// Stops early",
   "js367InstructionsTitle": "任务 367 🚀",
-  "js367InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 1; i <= 3; i++)
-if (i === 2) continue; else console.log(i);
-// Skips 2",
+  "js367InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 1; i <= 3; i++)\nif (i === 2) continue; else console.log(i);\n// Skips 2",
   "js367ExampleTitle": "示例",
   "js367ExampleCode1": "for (let i = 1; i <= 3; i++)",
   "js367ExampleCode2": "if (i === 2) continue; else console.log(i);",
   "js367ExampleCode3": "// Skips 2",
-  "js367ExampleOutput": "输出：
-1
-3",
+  "js367ExampleOutput": "输出：\n1\n3",
   "js367EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js367HintTitle1": "提示 1 💡",
   "js367HintContent1": "参考示例写法。",
   "js367HintTitle2": "提示 2 🧩",
   "js367HintContent2": "记得用 console.log 输出。",
   "js367SolutionTitle": "答案 ✅",
-  "js367SolutionContent": "一种可行的写法：
-
-for (let i = 1; i <= 3; i++)
-if (i === 2) continue; else console.log(i);
-// Skips 2",
+  "js367SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 3; i++)\nif (i === 2) continue; else console.log(i);\n// Skips 2",
   "js368InstructionsTitle": "任务 368 🚀",
-  "js368InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 1; i <= 2; i++)
-for (let j = 1; j <= 2; j++) console.log(i + j);
-// Nested loop",
+  "js368InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 1; i <= 2; i++)\nfor (let j = 1; j <= 2; j++) console.log(i + j);\n// Nested loop",
   "js368ExampleTitle": "示例",
   "js368ExampleCode1": "for (let i = 1; i <= 2; i++)",
   "js368ExampleCode2": "for (let j = 1; j <= 2; j++) console.log(i + j);",
   "js368ExampleCode3": "// Nested loop",
-  "js368ExampleOutput": "输出：
-2
-3
-3
-4",
+  "js368ExampleOutput": "输出：\n2\n3\n3\n4",
   "js368EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js368HintTitle1": "提示 1 💡",
   "js368HintContent1": "参考示例写法。",
   "js368HintTitle2": "提示 2 🧩",
   "js368HintContent2": "记得用 console.log 输出。",
   "js368SolutionTitle": "答案 ✅",
-  "js368SolutionContent": "一种可行的写法：
-
-for (let i = 1; i <= 2; i++)
-for (let j = 1; j <= 2; j++) console.log(i + j);
-// Nested loop",
+  "js368SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 2; i++)\nfor (let j = 1; j <= 2; j++) console.log(i + j);\n// Nested loop",
   "js369InstructionsTitle": "任务 369 🚀",
-  "js369InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 3; i >= 1; i--) console.log(i);
-// Countdown
-// Try other start",
+  "js369InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 3; i >= 1; i--) console.log(i);\n// Countdown\n// Try other start",
   "js369ExampleTitle": "示例",
   "js369ExampleCode1": "for (let i = 3; i >= 1; i--) console.log(i);",
   "js369ExampleCode2": "// Countdown",
   "js369ExampleCode3": "// Try other start",
-  "js369ExampleOutput": "输出：
-3
-2
-1",
+  "js369ExampleOutput": "输出：\n3\n2\n1",
   "js369EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js369HintTitle1": "提示 1 💡",
   "js369HintContent1": "参考示例写法。",
   "js369HintTitle2": "提示 2 🧩",
   "js369HintContent2": "记得用 console.log 输出。",
   "js369SolutionTitle": "答案 ✅",
-  "js369SolutionContent": "一种可行的写法：
-
-for (let i = 3; i >= 1; i--) console.log(i);
-// Countdown
-// Try other start",
+  "js369SolutionContent": "一种可行的写法：\n\nfor (let i = 3; i >= 1; i--) console.log(i);\n// Countdown\n// Try other start",
   "js370InstructionsTitle": "任务 370 🚀",
-  "js370InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-for (let i = 0; i < nums.length; i++) console.log(nums[i]);
-// Use length",
+  "js370InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nfor (let i = 0; i < nums.length; i++) console.log(nums[i]);\n// Use length",
   "js370ExampleTitle": "示例",
   "js370ExampleCode1": "const nums = [1, 2, 3];",
   "js370ExampleCode2": "for (let i = 0; i < nums.length; i++) console.log(nums[i]);",
   "js370ExampleCode3": "// Use length",
-  "js370ExampleOutput": "输出：
-1
-2
-3",
+  "js370ExampleOutput": "输出：\n1\n2\n3",
   "js370EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js370HintTitle1": "提示 1 💡",
   "js370HintContent1": "参考示例写法。",
   "js370HintTitle2": "提示 2 🧩",
   "js370HintContent2": "记得用 console.log 输出。",
   "js370SolutionTitle": "答案 ✅",
-  "js370SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-for (let i = 0; i < nums.length; i++) console.log(nums[i]);
-// Use length",
+  "js370SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nfor (let i = 0; i < nums.length; i++) console.log(nums[i]);\n// Use length",
   "js371InstructionsTitle": "任务 371 🚀",
-  "js371InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-for (let i = 1; i <= 6; i++)
-if (i % 2 === 0) console.log(i);
-// Print evens",
+  "js371InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfor (let i = 1; i <= 6; i++)\nif (i % 2 === 0) console.log(i);\n// Print evens",
   "js371ExampleTitle": "示例",
   "js371ExampleCode1": "for (let i = 1; i <= 6; i++)",
   "js371ExampleCode2": "if (i % 2 === 0) console.log(i);",
   "js371ExampleCode3": "// Print evens",
-  "js371ExampleOutput": "输出：
-2
-4
-6",
+  "js371ExampleOutput": "输出：\n2\n4\n6",
   "js371EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js371HintTitle1": "提示 1 💡",
   "js371HintContent1": "参考示例写法。",
   "js371HintTitle2": "提示 2 🧩",
   "js371HintContent2": "记得用 console.log 输出。",
   "js371SolutionTitle": "答案 ✅",
-  "js371SolutionContent": "一种可行的写法：
-
-for (let i = 1; i <= 6; i++)
-if (i % 2 === 0) console.log(i);
-// Print evens",
+  "js371SolutionContent": "一种可行的写法：\n\nfor (let i = 1; i <= 6; i++)\nif (i % 2 === 0) console.log(i);\n// Print evens",
   "js372InstructionsTitle": "任务 372 🚀",
-  "js372InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-let i = 3;
-while (i >= 1) console.log(i), i--;
-// Countdown",
+  "js372InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet i = 3;\nwhile (i >= 1) console.log(i), i--;\n// Countdown",
   "js372ExampleTitle": "示例",
   "js372ExampleCode1": "let i = 3;",
   "js372ExampleCode2": "while (i >= 1) console.log(i), i--;",
   "js372ExampleCode3": "// Countdown",
-  "js372ExampleOutput": "输出：
-3
-2
-1",
+  "js372ExampleOutput": "输出：\n3\n2\n1",
   "js372EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js372HintTitle1": "提示 1 💡",
   "js372HintContent1": "参考示例写法。",
   "js372HintTitle2": "提示 2 🧩",
   "js372HintContent2": "记得用 console.log 输出。",
   "js372SolutionTitle": "答案 ✅",
-  "js372SolutionContent": "一种可行的写法：
-
-let i = 3;
-while (i >= 1) console.log(i), i--;
-// Countdown",
+  "js372SolutionContent": "一种可行的写法：\n\nlet i = 3;\nwhile (i >= 1) console.log(i), i--;\n// Countdown",
   "js373InstructionsTitle": "任务 373 🚀",
-  "js373InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-let text = \"\";
-for (let i = 0; i < 3; i++) text += \"*\";
-console.log(text);",
+  "js373InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet text = \"\";\nfor (let i = 0; i < 3; i++) text += \"*\";\nconsole.log(text);",
   "js373ExampleTitle": "示例",
   "js373ExampleCode1": "let text = \"\";",
   "js373ExampleCode2": "for (let i = 0; i < 3; i++) text += \"*\";",
   "js373ExampleCode3": "console.log(text);",
-  "js373ExampleOutput": "输出：
-***",
+  "js373ExampleOutput": "输出：\n***",
   "js373EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js373HintTitle1": "提示 1 💡",
   "js373HintContent1": "参考示例写法。",
   "js373HintTitle2": "提示 2 🧩",
   "js373HintContent2": "记得用 console.log 输出。",
   "js373SolutionTitle": "答案 ✅",
-  "js373SolutionContent": "一种可行的写法：
-
-let text = \"\";
-for (let i = 0; i < 3; i++) text += \"*\";
-console.log(text);",
+  "js373SolutionContent": "一种可行的写法：\n\nlet text = \"\";\nfor (let i = 0; i < 3; i++) text += \"*\";\nconsole.log(text);",
   "js374InstructionsTitle": "任务 374 🚀",
-  "js374InstructionsContent": "练习循环与迭代。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [2, 5, 8];
-for (const n of nums) if (n === 5) console.log(\"Found\");
-// Search in loop",
+  "js374InstructionsContent": "练习循环与迭代。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [2, 5, 8];\nfor (const n of nums) if (n === 5) console.log(\"Found\");\n// Search in loop",
   "js374ExampleTitle": "示例",
   "js374ExampleCode1": "const nums = [2, 5, 8];",
   "js374ExampleCode2": "for (const n of nums) if (n === 5) console.log(\"Found\");",
   "js374ExampleCode3": "// Search in loop",
-  "js374ExampleOutput": "输出：
-Found",
+  "js374ExampleOutput": "输出：\nFound",
   "js374EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js374HintTitle1": "提示 1 💡",
   "js374HintContent1": "参考示例写法。",
   "js374HintTitle2": "提示 2 🧩",
   "js374HintContent2": "记得用 console.log 输出。",
   "js374SolutionTitle": "答案 ✅",
-  "js374SolutionContent": "一种可行的写法：
-
-const nums = [2, 5, 8];
-for (const n of nums) if (n === 5) console.log(\"Found\");
-// Search in loop",
+  "js374SolutionContent": "一种可行的写法：\n\nconst nums = [2, 5, 8];\nfor (const n of nums) if (n === 5) console.log(\"Found\");\n// Search in loop",
   "js375InstructionsTitle": "任务 375 🚀",
-  "js375InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-console.log(nums);
-// Create an array",
+  "js375InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nconsole.log(nums);\n// Create an array",
   "js375ExampleTitle": "示例",
   "js375ExampleCode1": "const nums = [1, 2, 3];",
   "js375ExampleCode2": "console.log(nums);",
   "js375ExampleCode3": "// Create an array",
-  "js375ExampleOutput": "输出：
-[1, 2, 3]",
+  "js375ExampleOutput": "输出：\n[1, 2, 3]",
   "js375EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js375HintTitle1": "提示 1 💡",
   "js375HintContent1": "参考示例写法。",
   "js375HintTitle2": "提示 2 🧩",
   "js375HintContent2": "记得用 console.log 输出。",
   "js375SolutionTitle": "答案 ✅",
-  "js375SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-console.log(nums);
-// Create an array",
+  "js375SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nconsole.log(nums);\n// Create an array",
   "js376InstructionsTitle": "任务 376 🚀",
-  "js376InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2];
-nums.push(3);
-console.log(nums);",
+  "js376InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
   "js376ExampleTitle": "示例",
   "js376ExampleCode1": "const nums = [1, 2];",
   "js376ExampleCode2": "nums.push(3);",
   "js376ExampleCode3": "console.log(nums);",
-  "js376ExampleOutput": "输出：
-[1, 2, 3]",
+  "js376ExampleOutput": "输出：\n[1, 2, 3]",
   "js376EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js376HintTitle1": "提示 1 💡",
   "js376HintContent1": "参考示例写法。",
   "js376HintTitle2": "提示 2 🧩",
   "js376HintContent2": "记得用 console.log 输出。",
   "js376SolutionTitle": "答案 ✅",
-  "js376SolutionContent": "一种可行的写法：
-
-const nums = [1, 2];
-nums.push(3);
-console.log(nums);",
+  "js376SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
   "js377InstructionsTitle": "任务 377 🚀",
-  "js377InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-nums.pop();
-console.log(nums);",
+  "js377InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nnums.pop();\nconsole.log(nums);",
   "js377ExampleTitle": "示例",
   "js377ExampleCode1": "const nums = [1, 2, 3];",
   "js377ExampleCode2": "nums.pop();",
   "js377ExampleCode3": "console.log(nums);",
-  "js377ExampleOutput": "输出：
-[1, 2]",
+  "js377ExampleOutput": "输出：\n[1, 2]",
   "js377EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js377HintTitle1": "提示 1 💡",
   "js377HintContent1": "参考示例写法。",
   "js377HintTitle2": "提示 2 🧩",
   "js377HintContent2": "记得用 console.log 输出。",
   "js377SolutionTitle": "答案 ✅",
-  "js377SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-nums.pop();
-console.log(nums);",
+  "js377SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nnums.pop();\nconsole.log(nums);",
   "js378InstructionsTitle": "任务 378 🚀",
-  "js378InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [5, 7, 9];
-console.log(nums[1]);
-// Index access",
+  "js378InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [5, 7, 9];\nconsole.log(nums[1]);\n// Index access",
   "js378ExampleTitle": "示例",
   "js378ExampleCode1": "const nums = [5, 7, 9];",
   "js378ExampleCode2": "console.log(nums[1]);",
   "js378ExampleCode3": "// Index access",
-  "js378ExampleOutput": "输出：
-7",
+  "js378ExampleOutput": "输出：\n7",
   "js378EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js378HintTitle1": "提示 1 💡",
   "js378HintContent1": "参考示例写法。",
   "js378HintTitle2": "提示 2 🧩",
   "js378HintContent2": "记得用 console.log 输出。",
   "js378SolutionTitle": "答案 ✅",
-  "js378SolutionContent": "一种可行的写法：
-
-const nums = [5, 7, 9];
-console.log(nums[1]);
-// Index access",
+  "js378SolutionContent": "一种可行的写法：\n\nconst nums = [5, 7, 9];\nconsole.log(nums[1]);\n// Index access",
   "js379InstructionsTitle": "任务 379 🚀",
-  "js379InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-nums[1] = 99;
-console.log(nums);",
+  "js379InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nnums[1] = 99;\nconsole.log(nums);",
   "js379ExampleTitle": "示例",
   "js379ExampleCode1": "const nums = [1, 2, 3];",
   "js379ExampleCode2": "nums[1] = 99;",
   "js379ExampleCode3": "console.log(nums);",
-  "js379ExampleOutput": "输出：
-[1, 99, 3]",
+  "js379ExampleOutput": "输出：\n[1, 99, 3]",
   "js379EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js379HintTitle1": "提示 1 💡",
   "js379HintContent1": "参考示例写法。",
   "js379HintTitle2": "提示 2 🧩",
   "js379HintContent2": "记得用 console.log 输出。",
   "js379SolutionTitle": "答案 ✅",
-  "js379SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-nums[1] = 99;
-console.log(nums);",
+  "js379SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nnums[1] = 99;\nconsole.log(nums);",
   "js380InstructionsTitle": "任务 380 🚀",
-  "js380InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3, 4];
-console.log(nums.length);
-// Use length",
+  "js380InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.length);\n// Use length",
   "js380ExampleTitle": "示例",
   "js380ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js380ExampleCode2": "console.log(nums.length);",
   "js380ExampleCode3": "// Use length",
-  "js380ExampleOutput": "输出：
-4",
+  "js380ExampleOutput": "输出：\n4",
   "js380EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js380HintTitle1": "提示 1 💡",
   "js380HintContent1": "参考示例写法。",
   "js380HintTitle2": "提示 2 🧩",
   "js380HintContent2": "记得用 console.log 输出。",
   "js380SolutionTitle": "答案 ✅",
-  "js380SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3, 4];
-console.log(nums.length);
-// Use length",
+  "js380SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.length);\n// Use length",
   "js381InstructionsTitle": "任务 381 🚀",
-  "js381InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const letters = [\"a\", \"b\", \"c\"];
-console.log(letters.join(\"-\"));
-// Join items",
+  "js381InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst letters = [\"a\", \"b\", \"c\"];\nconsole.log(letters.join(\"-\"));\n// Join items",
   "js381ExampleTitle": "示例",
   "js381ExampleCode1": "const letters = [\"a\", \"b\", \"c\"];",
   "js381ExampleCode2": "console.log(letters.join(\"-\"));",
   "js381ExampleCode3": "// Join items",
-  "js381ExampleOutput": "输出：
-a-b-c",
+  "js381ExampleOutput": "输出：\na-b-c",
   "js381EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js381HintTitle1": "提示 1 💡",
   "js381HintContent1": "参考示例写法。",
   "js381HintTitle2": "提示 2 🧩",
   "js381HintContent2": "记得用 console.log 输出。",
   "js381SolutionTitle": "答案 ✅",
-  "js381SolutionContent": "一种可行的写法：
-
-const letters = [\"a\", \"b\", \"c\"];
-console.log(letters.join(\"-\"));
-// Join items",
+  "js381SolutionContent": "一种可行的写法：\n\nconst letters = [\"a\", \"b\", \"c\"];\nconsole.log(letters.join(\"-\"));\n// Join items",
   "js382InstructionsTitle": "任务 382 🚀",
-  "js382InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const items = [\"a\", \"b\"];
-console.log(items.includes(\"b\"));
-// Check includes",
+  "js382InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst items = [\"a\", \"b\"];\nconsole.log(items.includes(\"b\"));\n// Check includes",
   "js382ExampleTitle": "示例",
   "js382ExampleCode1": "const items = [\"a\", \"b\"];",
   "js382ExampleCode2": "console.log(items.includes(\"b\"));",
   "js382ExampleCode3": "// Check includes",
-  "js382ExampleOutput": "输出：
-true",
+  "js382ExampleOutput": "输出：\ntrue",
   "js382EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js382HintTitle1": "提示 1 💡",
   "js382HintContent1": "参考示例写法。",
   "js382HintTitle2": "提示 2 🧩",
   "js382HintContent2": "记得用 console.log 输出。",
   "js382SolutionTitle": "答案 ✅",
-  "js382SolutionContent": "一种可行的写法：
-
-const items = [\"a\", \"b\"];
-console.log(items.includes(\"b\"));
-// Check includes",
+  "js382SolutionContent": "一种可行的写法：\n\nconst items = [\"a\", \"b\"];\nconsole.log(items.includes(\"b\"));\n// Check includes",
   "js383InstructionsTitle": "任务 383 🚀",
-  "js383InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-const doubled = nums.map(n => n * 2);
-console.log(doubled);",
+  "js383InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nconst doubled = nums.map(n => n * 2);\nconsole.log(doubled);",
   "js383ExampleTitle": "示例",
   "js383ExampleCode1": "const nums = [1, 2, 3];",
   "js383ExampleCode2": "const doubled = nums.map(n => n * 2);",
   "js383ExampleCode3": "console.log(doubled);",
-  "js383ExampleOutput": "输出：
-[2, 4, 6]",
+  "js383ExampleOutput": "输出：\n[2, 4, 6]",
   "js383EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js383HintTitle1": "提示 1 💡",
   "js383HintContent1": "参考示例写法。",
   "js383HintTitle2": "提示 2 🧩",
   "js383HintContent2": "记得用 console.log 输出。",
   "js383SolutionTitle": "答案 ✅",
-  "js383SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-const doubled = nums.map(n => n * 2);
-console.log(doubled);",
+  "js383SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nconst doubled = nums.map(n => n * 2);\nconsole.log(doubled);",
   "js384InstructionsTitle": "任务 384 🚀",
-  "js384InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3, 4];
-const evens = nums.filter(n => n % 2 === 0);
-console.log(evens);",
+  "js384InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);",
   "js384ExampleTitle": "示例",
   "js384ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js384ExampleCode2": "const evens = nums.filter(n => n % 2 === 0);",
   "js384ExampleCode3": "console.log(evens);",
-  "js384ExampleOutput": "输出：
-[2, 4]",
+  "js384ExampleOutput": "输出：\n[2, 4]",
   "js384EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js384HintTitle1": "提示 1 💡",
   "js384HintContent1": "参考示例写法。",
   "js384HintTitle2": "提示 2 🧩",
   "js384HintContent2": "记得用 console.log 输出。",
   "js384SolutionTitle": "答案 ✅",
-  "js384SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3, 4];
-const evens = nums.filter(n => n % 2 === 0);
-console.log(evens);",
+  "js384SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);",
   "js385InstructionsTitle": "任务 385 🚀",
-  "js385InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-nums.forEach(n => console.log(n));
-// For each item",
+  "js385InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nnums.forEach(n => console.log(n));\n// For each item",
   "js385ExampleTitle": "示例",
   "js385ExampleCode1": "const nums = [1, 2, 3];",
   "js385ExampleCode2": "nums.forEach(n => console.log(n));",
   "js385ExampleCode3": "// For each item",
-  "js385ExampleOutput": "输出：
-1
-2
-3",
+  "js385ExampleOutput": "输出：\n1\n2\n3",
   "js385EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js385HintTitle1": "提示 1 💡",
   "js385HintContent1": "参考示例写法。",
   "js385HintTitle2": "提示 2 🧩",
   "js385HintContent2": "记得用 console.log 输出。",
   "js385SolutionTitle": "答案 ✅",
-  "js385SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-nums.forEach(n => console.log(n));
-// For each item",
+  "js385SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nnums.forEach(n => console.log(n));\n// For each item",
   "js386InstructionsTitle": "任务 386 🚀",
-  "js386InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3, 4];
-console.log(nums.slice(1, 3));
-// Slice part",
+  "js386InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.slice(1, 3));\n// Slice part",
   "js386ExampleTitle": "示例",
   "js386ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js386ExampleCode2": "console.log(nums.slice(1, 3));",
   "js386ExampleCode3": "// Slice part",
-  "js386ExampleOutput": "输出：
-[2, 3]",
+  "js386ExampleOutput": "输出：\n[2, 3]",
   "js386EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js386HintTitle1": "提示 1 💡",
   "js386HintContent1": "参考示例写法。",
   "js386HintTitle2": "提示 2 🧩",
   "js386HintContent2": "记得用 console.log 输出。",
   "js386SolutionTitle": "答案 ✅",
-  "js386SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3, 4];
-console.log(nums.slice(1, 3));
-// Slice part",
+  "js386SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.slice(1, 3));\n// Slice part",
   "js387InstructionsTitle": "任务 387 🚀",
-  "js387InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const a = [1, 2];
-const b = [3, 4];
-console.log(a.concat(b));",
+  "js387InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst a = [1, 2];\nconst b = [3, 4];\nconsole.log(a.concat(b));",
   "js387ExampleTitle": "示例",
   "js387ExampleCode1": "const a = [1, 2];",
   "js387ExampleCode2": "const b = [3, 4];",
   "js387ExampleCode3": "console.log(a.concat(b));",
-  "js387ExampleOutput": "输出：
-[1, 2, 3, 4]",
+  "js387ExampleOutput": "输出：\n[1, 2, 3, 4]",
   "js387EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js387HintTitle1": "提示 1 💡",
   "js387HintContent1": "参考示例写法。",
   "js387HintTitle2": "提示 2 🧩",
   "js387HintContent2": "记得用 console.log 输出。",
   "js387SolutionTitle": "答案 ✅",
-  "js387SolutionContent": "一种可行的写法：
-
-const a = [1, 2];
-const b = [3, 4];
-console.log(a.concat(b));",
+  "js387SolutionContent": "一种可行的写法：\n\nconst a = [1, 2];\nconst b = [3, 4];\nconsole.log(a.concat(b));",
   "js388InstructionsTitle": "任务 388 🚀",
-  "js388InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-let sum = 0; for (const n of nums) sum += n;
-console.log(sum);",
+  "js388InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nlet sum = 0; for (const n of nums) sum += n;\nconsole.log(sum);",
   "js388ExampleTitle": "示例",
   "js388ExampleCode1": "const nums = [1, 2, 3];",
   "js388ExampleCode2": "let sum = 0; for (const n of nums) sum += n;",
   "js388ExampleCode3": "console.log(sum);",
-  "js388ExampleOutput": "输出：
-6",
+  "js388ExampleOutput": "输出：\n6",
   "js388EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js388HintTitle1": "提示 1 💡",
   "js388HintContent1": "参考示例写法。",
   "js388HintTitle2": "提示 2 🧩",
   "js388HintContent2": "记得用 console.log 输出。",
   "js388SolutionTitle": "答案 ✅",
-  "js388SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-let sum = 0; for (const n of nums) sum += n;
-console.log(sum);",
+  "js388SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nlet sum = 0; for (const n of nums) sum += n;\nconsole.log(sum);",
   "js389InstructionsTitle": "任务 389 🚀",
-  "js389InstructionsContent": "练习数组基础与常用方法。
-
-规则:
-1) 按本课概念来写。
-2) 使用 console.log 输出。
-3) 保持简单。
-
-示例:
-const nums = [1, 2, 3];
-nums.reverse();
-console.log(nums);",
+  "js389InstructionsContent": "练习数组基础与常用方法。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2, 3];\nnums.reverse();\nconsole.log(nums);",
   "js389ExampleTitle": "示例",
   "js389ExampleCode1": "const nums = [1, 2, 3];",
   "js389ExampleCode2": "nums.reverse();",
   "js389ExampleCode3": "console.log(nums);",
-  "js389ExampleOutput": "输出：
-[3, 2, 1]",
+  "js389ExampleOutput": "输出：\n[3, 2, 1]",
   "js389EnterCodeHint": "在这里输入你的 JavaScript 代码...",
   "js389HintTitle1": "提示 1 💡",
   "js389HintContent1": "参考示例写法。",
   "js389HintTitle2": "提示 2 🧩",
   "js389HintContent2": "记得用 console.log 输出。",
   "js389SolutionTitle": "答案 ✅",
-  "js389SolutionContent": "一种可行的写法：
-
-const nums = [1, 2, 3];
-nums.reverse();
-console.log(nums);"
+  "js389SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2, 3];\nnums.reverse();\nconsole.log(nums);",
+  "js390InstructionsTitle": "任务 390 🚀",
+  "js390InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nconsole.log(user);\n// Object literal",
+  "js390ExampleTitle": "示例",
+  "js390ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js390ExampleCode2": "console.log(user);",
+  "js390ExampleCode3": "// Object literal",
+  "js390ExampleOutput": "输出：\nObject",
+  "js390EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js390HintTitle1": "提示 1 💡",
+  "js390HintContent1": "参考示例写法。",
+  "js390HintTitle2": "提示 2 🧩",
+  "js390HintContent2": "记得用 console.log 输出。",
+  "js390SolutionTitle": "答案 ✅",
+  "js390SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(user);\n// Object literal",
+  "js391InstructionsTitle": "任务 391 🚀",
+  "js391InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana'};\nconsole.log(user.name);\n// Access property",
+  "js391ExampleTitle": "示例",
+  "js391ExampleCode1": "const user = {name: 'Ana'};",
+  "js391ExampleCode2": "console.log(user.name);",
+  "js391ExampleCode3": "// Access property",
+  "js391ExampleOutput": "输出：\nAna",
+  "js391EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js391HintTitle1": "提示 1 💡",
+  "js391HintContent1": "参考示例写法。",
+  "js391HintTitle2": "提示 2 🧩",
+  "js391HintContent2": "记得用 console.log 输出。",
+  "js391SolutionTitle": "答案 ✅",
+  "js391SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana'};\nconsole.log(user.name);\n// Access property",
+  "js392InstructionsTitle": "任务 392 🚀",
+  "js392InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana'};\nuser.name = 'Lia';\nconsole.log(user.name);",
+  "js392ExampleTitle": "示例",
+  "js392ExampleCode1": "const user = {name: 'Ana'};",
+  "js392ExampleCode2": "user.name = 'Lia';",
+  "js392ExampleCode3": "console.log(user.name);",
+  "js392ExampleOutput": "输出：\nLia",
+  "js392EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js392HintTitle1": "提示 1 💡",
+  "js392HintContent1": "参考示例写法。",
+  "js392HintTitle2": "提示 2 🧩",
+  "js392HintContent2": "记得用 console.log 输出。",
+  "js392SolutionTitle": "答案 ✅",
+  "js392SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana'};\nuser.name = 'Lia';\nconsole.log(user.name);",
+  "js393InstructionsTitle": "任务 393 🚀",
+  "js393InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana'};\nuser.city = 'Madrid';\nconsole.log(user.city);",
+  "js393ExampleTitle": "示例",
+  "js393ExampleCode1": "const user = {name: 'Ana'};",
+  "js393ExampleCode2": "user.city = 'Madrid';",
+  "js393ExampleCode3": "console.log(user.city);",
+  "js393ExampleOutput": "输出：\nMadrid",
+  "js393EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js393HintTitle1": "提示 1 💡",
+  "js393HintContent1": "参考示例写法。",
+  "js393HintTitle2": "提示 2 🧩",
+  "js393HintContent2": "记得用 console.log 输出。",
+  "js393SolutionTitle": "答案 ✅",
+  "js393SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana'};\nuser.city = 'Madrid';\nconsole.log(user.city);",
+  "js394InstructionsTitle": "任务 394 🚀",
+  "js394InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\ndelete user.age;\nconsole.log(user.age);",
+  "js394ExampleTitle": "示例",
+  "js394ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js394ExampleCode2": "delete user.age;",
+  "js394ExampleCode3": "console.log(user.age);",
+  "js394ExampleOutput": "输出：\nundefined",
+  "js394EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js394HintTitle1": "提示 1 💡",
+  "js394HintContent1": "参考示例写法。",
+  "js394HintTitle2": "提示 2 🧩",
+  "js394HintContent2": "记得用 console.log 输出。",
+  "js394SolutionTitle": "答案 ✅",
+  "js394SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\ndelete user.age;\nconsole.log(user.age);",
+  "js395InstructionsTitle": "任务 395 🚀",
+  "js395InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.keys(user));\n// Keys",
+  "js395ExampleTitle": "示例",
+  "js395ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js395ExampleCode2": "console.log(Object.keys(user));",
+  "js395ExampleCode3": "// Keys",
+  "js395ExampleOutput": "输出：\nname, age",
+  "js395EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js395HintTitle1": "提示 1 💡",
+  "js395HintContent1": "参考示例写法。",
+  "js395HintTitle2": "提示 2 🧩",
+  "js395HintContent2": "记得用 console.log 输出。",
+  "js395SolutionTitle": "答案 ✅",
+  "js395SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.keys(user));\n// Keys",
+  "js396InstructionsTitle": "任务 396 🚀",
+  "js396InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.values(user));\n// Values",
+  "js396ExampleTitle": "示例",
+  "js396ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js396ExampleCode2": "console.log(Object.values(user));",
+  "js396ExampleCode3": "// Values",
+  "js396ExampleOutput": "输出：\nAna, 20",
+  "js396EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js396HintTitle1": "提示 1 💡",
+  "js396HintContent1": "参考示例写法。",
+  "js396HintTitle2": "提示 2 🧩",
+  "js396HintContent2": "记得用 console.log 输出。",
+  "js396SolutionTitle": "答案 ✅",
+  "js396SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.values(user));\n// Values",
+  "js397InstructionsTitle": "任务 397 🚀",
+  "js397InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana'};\nconsole.log('name' in user);\n// in operator",
+  "js397ExampleTitle": "示例",
+  "js397ExampleCode1": "const user = {name: 'Ana'};",
+  "js397ExampleCode2": "console.log('name' in user);",
+  "js397ExampleCode3": "// in operator",
+  "js397ExampleOutput": "输出：\ntrue",
+  "js397EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js397HintTitle1": "提示 1 💡",
+  "js397HintContent1": "参考示例写法。",
+  "js397HintTitle2": "提示 2 🧩",
+  "js397HintContent2": "记得用 console.log 输出。",
+  "js397SolutionTitle": "答案 ✅",
+  "js397SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana'};\nconsole.log('name' in user);\n// in operator",
+  "js398InstructionsTitle": "任务 398 🚀",
+  "js398InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', greet() { return 'Hi'; }};\nconsole.log(user.greet());\n// Method",
+  "js398ExampleTitle": "示例",
+  "js398ExampleCode1": "const user = {name: 'Ana', greet() { return 'Hi'; }};",
+  "js398ExampleCode2": "console.log(user.greet());",
+  "js398ExampleCode3": "// Method",
+  "js398ExampleOutput": "输出：\nHi",
+  "js398EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js398HintTitle1": "提示 1 💡",
+  "js398HintContent1": "参考示例写法。",
+  "js398HintTitle2": "提示 2 🧩",
+  "js398HintContent2": "记得用 console.log 输出。",
+  "js398SolutionTitle": "答案 ✅",
+  "js398SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', greet() { return 'Hi'; }};\nconsole.log(user.greet());\n// Method",
+  "js399InstructionsTitle": "任务 399 🚀",
+  "js399InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', greet() { return this.name; }};\nconsole.log(user.greet());\n// this",
+  "js399ExampleTitle": "示例",
+  "js399ExampleCode1": "const user = {name: 'Ana', greet() { return this.name; }};",
+  "js399ExampleCode2": "console.log(user.greet());",
+  "js399ExampleCode3": "// this",
+  "js399ExampleOutput": "输出：\nAna",
+  "js399EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js399HintTitle1": "提示 1 💡",
+  "js399HintContent1": "参考示例写法。",
+  "js399HintTitle2": "提示 2 🧩",
+  "js399HintContent2": "记得用 console.log 输出。",
+  "js399SolutionTitle": "答案 ✅",
+  "js399SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', greet() { return this.name; }};\nconsole.log(user.greet());\n// this",
+  "js400InstructionsTitle": "任务 400 🚀",
+  "js400InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nconst {name} = user;\nconsole.log(name);",
+  "js400ExampleTitle": "示例",
+  "js400ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js400ExampleCode2": "const {name} = user;",
+  "js400ExampleCode3": "console.log(name);",
+  "js400ExampleOutput": "输出：\nAna",
+  "js400EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js400HintTitle1": "提示 1 💡",
+  "js400HintContent1": "参考示例写法。",
+  "js400HintTitle2": "提示 2 🧩",
+  "js400HintContent2": "记得用 console.log 输出。",
+  "js400SolutionTitle": "答案 ✅",
+  "js400SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nconst {name} = user;\nconsole.log(name);",
+  "js401InstructionsTitle": "任务 401 🚀",
+  "js401InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {profile: {name: 'Ana'}};\nconsole.log(user.profile.name);\n// Nested",
+  "js401ExampleTitle": "示例",
+  "js401ExampleCode1": "const user = {profile: {name: 'Ana'}};",
+  "js401ExampleCode2": "console.log(user.profile.name);",
+  "js401ExampleCode3": "// Nested",
+  "js401ExampleOutput": "输出：\nAna",
+  "js401EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js401HintTitle1": "提示 1 💡",
+  "js401HintContent1": "参考示例写法。",
+  "js401HintTitle2": "提示 2 🧩",
+  "js401HintContent2": "记得用 console.log 输出。",
+  "js401SolutionTitle": "答案 ✅",
+  "js401SolutionContent": "一种可行的写法：\n\nconst user = {profile: {name: 'Ana'}};\nconsole.log(user.profile.name);\n// Nested",
+  "js402InstructionsTitle": "挑战 402 🕹️",
+  "js402InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nif (user.age >= 18) console.log('Adult'); else console.log('Minor');\n// Challenge",
+  "js402ExampleTitle": "示例",
+  "js402ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js402ExampleCode2": "if (user.age >= 18) console.log('Adult'); else console.log('Minor');",
+  "js402ExampleCode3": "// Challenge",
+  "js402ExampleOutput": "输出：\nAdult",
+  "js402EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js402HintTitle1": "提示 1 💡",
+  "js402HintContent1": "参考示例写法。",
+  "js402HintTitle2": "提示 2 🧩",
+  "js402HintContent2": "记得用 console.log 输出。",
+  "js402SolutionTitle": "答案 ✅",
+  "js402SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nif (user.age >= 18) console.log('Adult'); else console.log('Minor');\n// Challenge",
+  "js403InstructionsTitle": "任务 403 🚀",
+  "js403InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst a = {x: 1};\nconst b = {...a, y: 2};\nconsole.log(b.y);",
+  "js403ExampleTitle": "示例",
+  "js403ExampleCode1": "const a = {x: 1};",
+  "js403ExampleCode2": "const b = {...a, y: 2};",
+  "js403ExampleCode3": "console.log(b.y);",
+  "js403ExampleOutput": "输出：\n2",
+  "js403EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js403HintTitle1": "提示 1 💡",
+  "js403HintContent1": "参考示例写法。",
+  "js403HintTitle2": "提示 2 🧩",
+  "js403HintContent2": "记得用 console.log 输出。",
+  "js403SolutionTitle": "答案 ✅",
+  "js403SolutionContent": "一种可行的写法：\n\nconst a = {x: 1};\nconst b = {...a, y: 2};\nconsole.log(b.y);",
+  "js404InstructionsTitle": "任务 404 🚀",
+  "js404InstructionsContent": "练习 JavaScript 对象。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.entries(user));\n// Entries",
+  "js404ExampleTitle": "示例",
+  "js404ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js404ExampleCode2": "console.log(Object.entries(user));",
+  "js404ExampleCode3": "// Entries",
+  "js404ExampleOutput": "输出：\nentries",
+  "js404EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js404HintTitle1": "提示 1 💡",
+  "js404HintContent1": "参考示例写法。",
+  "js404HintTitle2": "提示 2 🧩",
+  "js404HintContent2": "记得用 console.log 输出。",
+  "js404SolutionTitle": "答案 ✅",
+  "js404SolutionContent": "一种可行的写法：\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.entries(user));\n// Entries",
+  "js405InstructionsTitle": "任务 405 🚀",
+  "js405InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set([1, 2, 2]);\nconsole.log(nums.size);\n// Set size",
+  "js405ExampleTitle": "示例",
+  "js405ExampleCode1": "const nums = new Set([1, 2, 2]);",
+  "js405ExampleCode2": "console.log(nums.size);",
+  "js405ExampleCode3": "// Set size",
+  "js405ExampleOutput": "输出：\n2",
+  "js405EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js405HintTitle1": "提示 1 💡",
+  "js405HintContent1": "参考示例写法。",
+  "js405HintTitle2": "提示 2 🧩",
+  "js405HintContent2": "记得用 console.log 输出。",
+  "js405SolutionTitle": "答案 ✅",
+  "js405SolutionContent": "一种可行的写法：\n\nconst nums = new Set([1, 2, 2]);\nconsole.log(nums.size);\n// Set size",
+  "js406InstructionsTitle": "任务 406 🚀",
+  "js406InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set();\nnums.add(1);\nconsole.log(nums.has(1));",
+  "js406ExampleTitle": "示例",
+  "js406ExampleCode1": "const nums = new Set();",
+  "js406ExampleCode2": "nums.add(1);",
+  "js406ExampleCode3": "console.log(nums.has(1));",
+  "js406ExampleOutput": "输出：\ntrue",
+  "js406EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js406HintTitle1": "提示 1 💡",
+  "js406HintContent1": "参考示例写法。",
+  "js406HintTitle2": "提示 2 🧩",
+  "js406HintContent2": "记得用 console.log 输出。",
+  "js406SolutionTitle": "答案 ✅",
+  "js406SolutionContent": "一种可行的写法：\n\nconst nums = new Set();\nnums.add(1);\nconsole.log(nums.has(1));",
+  "js407InstructionsTitle": "任务 407 🚀",
+  "js407InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set([1, 2]);\nnums.delete(2);\nconsole.log(nums.has(2));",
+  "js407ExampleTitle": "示例",
+  "js407ExampleCode1": "const nums = new Set([1, 2]);",
+  "js407ExampleCode2": "nums.delete(2);",
+  "js407ExampleCode3": "console.log(nums.has(2));",
+  "js407ExampleOutput": "输出：\nfalse",
+  "js407EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js407HintTitle1": "提示 1 💡",
+  "js407HintContent1": "参考示例写法。",
+  "js407HintTitle2": "提示 2 🧩",
+  "js407HintContent2": "记得用 console.log 输出。",
+  "js407SolutionTitle": "答案 ✅",
+  "js407SolutionContent": "一种可行的写法：\n\nconst nums = new Set([1, 2]);\nnums.delete(2);\nconsole.log(nums.has(2));",
+  "js408InstructionsTitle": "任务 408 🚀",
+  "js408InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set([1, 2]);\nconsole.log(nums.has(1));\n// has",
+  "js408ExampleTitle": "示例",
+  "js408ExampleCode1": "const nums = new Set([1, 2]);",
+  "js408ExampleCode2": "console.log(nums.has(1));",
+  "js408ExampleCode3": "// has",
+  "js408ExampleOutput": "输出：\ntrue",
+  "js408EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js408HintTitle1": "提示 1 💡",
+  "js408HintContent1": "参考示例写法。",
+  "js408HintTitle2": "提示 2 🧩",
+  "js408HintContent2": "记得用 console.log 输出。",
+  "js408SolutionTitle": "答案 ✅",
+  "js408SolutionContent": "一种可行的写法：\n\nconst nums = new Set([1, 2]);\nconsole.log(nums.has(1));\n// has",
+  "js409InstructionsTitle": "任务 409 🚀",
+  "js409InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set([1, 2, 3]);\nconsole.log(nums.size);\n// size",
+  "js409ExampleTitle": "示例",
+  "js409ExampleCode1": "const nums = new Set([1, 2, 3]);",
+  "js409ExampleCode2": "console.log(nums.size);",
+  "js409ExampleCode3": "// size",
+  "js409ExampleOutput": "输出：\n3",
+  "js409EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js409HintTitle1": "提示 1 💡",
+  "js409HintContent1": "参考示例写法。",
+  "js409HintTitle2": "提示 2 🧩",
+  "js409HintContent2": "记得用 console.log 输出。",
+  "js409SolutionTitle": "答案 ✅",
+  "js409SolutionContent": "一种可行的写法：\n\nconst nums = new Set([1, 2, 3]);\nconsole.log(nums.size);\n// size",
+  "js410InstructionsTitle": "任务 410 🚀",
+  "js410InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map();\nmap.set('a', 1);\nconsole.log(map.get('a'));",
+  "js410ExampleTitle": "示例",
+  "js410ExampleCode1": "const map = new Map();",
+  "js410ExampleCode2": "map.set('a', 1);",
+  "js410ExampleCode3": "console.log(map.get('a'));",
+  "js410ExampleOutput": "输出：\n1",
+  "js410EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js410HintTitle1": "提示 1 💡",
+  "js410HintContent1": "参考示例写法。",
+  "js410HintTitle2": "提示 2 🧩",
+  "js410HintContent2": "记得用 console.log 输出。",
+  "js410SolutionTitle": "答案 ✅",
+  "js410SolutionContent": "一种可行的写法：\n\nconst map = new Map();\nmap.set('a', 1);\nconsole.log(map.get('a'));",
+  "js411InstructionsTitle": "任务 411 🚀",
+  "js411InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map();\nmap.set('x', 10);\nconsole.log(map.has('x'));",
+  "js411ExampleTitle": "示例",
+  "js411ExampleCode1": "const map = new Map();",
+  "js411ExampleCode2": "map.set('x', 10);",
+  "js411ExampleCode3": "console.log(map.has('x'));",
+  "js411ExampleOutput": "输出：\ntrue",
+  "js411EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js411HintTitle1": "提示 1 💡",
+  "js411HintContent1": "参考示例写法。",
+  "js411HintTitle2": "提示 2 🧩",
+  "js411HintContent2": "记得用 console.log 输出。",
+  "js411SolutionTitle": "答案 ✅",
+  "js411SolutionContent": "一种可行的写法：\n\nconst map = new Map();\nmap.set('x', 10);\nconsole.log(map.has('x'));",
+  "js412InstructionsTitle": "任务 412 🚀",
+  "js412InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map([['x', 10]]);\nconsole.log(map.get('x'));\n// get",
+  "js412ExampleTitle": "示例",
+  "js412ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js412ExampleCode2": "console.log(map.get('x'));",
+  "js412ExampleCode3": "// get",
+  "js412ExampleOutput": "输出：\n10",
+  "js412EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js412HintTitle1": "提示 1 💡",
+  "js412HintContent1": "参考示例写法。",
+  "js412HintTitle2": "提示 2 🧩",
+  "js412HintContent2": "记得用 console.log 输出。",
+  "js412SolutionTitle": "答案 ✅",
+  "js412SolutionContent": "一种可行的写法：\n\nconst map = new Map([['x', 10]]);\nconsole.log(map.get('x'));\n// get",
+  "js413InstructionsTitle": "任务 413 🚀",
+  "js413InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map([['x', 10]]);\nconsole.log(map.has('x'));\n// has",
+  "js413ExampleTitle": "示例",
+  "js413ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js413ExampleCode2": "console.log(map.has('x'));",
+  "js413ExampleCode3": "// has",
+  "js413ExampleOutput": "输出：\ntrue",
+  "js413EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js413HintTitle1": "提示 1 💡",
+  "js413HintContent1": "参考示例写法。",
+  "js413HintTitle2": "提示 2 🧩",
+  "js413HintContent2": "记得用 console.log 输出。",
+  "js413SolutionTitle": "答案 ✅",
+  "js413SolutionContent": "一种可行的写法：\n\nconst map = new Map([['x', 10]]);\nconsole.log(map.has('x'));\n// has",
+  "js414InstructionsTitle": "任务 414 🚀",
+  "js414InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map([['x', 10]]);\nmap.delete('x');\nconsole.log(map.has('x'));",
+  "js414ExampleTitle": "示例",
+  "js414ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js414ExampleCode2": "map.delete('x');",
+  "js414ExampleCode3": "console.log(map.has('x'));",
+  "js414ExampleOutput": "输出：\nfalse",
+  "js414EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js414HintTitle1": "提示 1 💡",
+  "js414HintContent1": "参考示例写法。",
+  "js414HintTitle2": "提示 2 🧩",
+  "js414HintContent2": "记得用 console.log 输出。",
+  "js414SolutionTitle": "答案 ✅",
+  "js414SolutionContent": "一种可行的写法：\n\nconst map = new Map([['x', 10]]);\nmap.delete('x');\nconsole.log(map.has('x'));",
+  "js415InstructionsTitle": "任务 415 🚀",
+  "js415InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map([['x', 10], ['y', 20]]);\nconsole.log(map.size);\n// size",
+  "js415ExampleTitle": "示例",
+  "js415ExampleCode1": "const map = new Map([['x', 10], ['y', 20]]);",
+  "js415ExampleCode2": "console.log(map.size);",
+  "js415ExampleCode3": "// size",
+  "js415ExampleOutput": "输出：\n2",
+  "js415EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js415HintTitle1": "提示 1 💡",
+  "js415HintContent1": "参考示例写法。",
+  "js415HintTitle2": "提示 2 🧩",
+  "js415HintContent2": "记得用 console.log 输出。",
+  "js415SolutionTitle": "答案 ✅",
+  "js415SolutionContent": "一种可行的写法：\n\nconst map = new Map([['x', 10], ['y', 20]]);\nconsole.log(map.size);\n// size",
+  "js416InstructionsTitle": "任务 416 🚀",
+  "js416InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = new Set([1, 2]);\nfor (const n of nums) console.log(n);\n// loop",
+  "js416ExampleTitle": "示例",
+  "js416ExampleCode1": "const nums = new Set([1, 2]);",
+  "js416ExampleCode2": "for (const n of nums) console.log(n);",
+  "js416ExampleCode3": "// loop",
+  "js416ExampleOutput": "输出：\n1\n2",
+  "js416EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js416HintTitle1": "提示 1 💡",
+  "js416HintContent1": "参考示例写法。",
+  "js416HintTitle2": "提示 2 🧩",
+  "js416HintContent2": "记得用 console.log 输出。",
+  "js416SolutionTitle": "答案 ✅",
+  "js416SolutionContent": "一种可行的写法：\n\nconst nums = new Set([1, 2]);\nfor (const n of nums) console.log(n);\n// loop",
+  "js417InstructionsTitle": "任务 417 🚀",
+  "js417InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map([['x', 1], ['y', 2]]);\nfor (const [k, v] of map) console.log(k);\n// keys",
+  "js417ExampleTitle": "示例",
+  "js417ExampleCode1": "const map = new Map([['x', 1], ['y', 2]]);",
+  "js417ExampleCode2": "for (const [k, v] of map) console.log(k);",
+  "js417ExampleCode3": "// keys",
+  "js417ExampleOutput": "输出：\nx\ny",
+  "js417EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js417HintTitle1": "提示 1 💡",
+  "js417HintContent1": "参考示例写法。",
+  "js417HintTitle2": "提示 2 🧩",
+  "js417HintContent2": "记得用 console.log 输出。",
+  "js417SolutionTitle": "答案 ✅",
+  "js417SolutionContent": "一种可行的写法：\n\nconst map = new Map([['x', 1], ['y', 2]]);\nfor (const [k, v] of map) console.log(k);\n// keys",
+  "js418InstructionsTitle": "挑战 418 🕹️",
+  "js418InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 1, 2];\nconst unique = new Set(nums);\nconsole.log(unique.size);",
+  "js418ExampleTitle": "示例",
+  "js418ExampleCode1": "const nums = [1, 1, 2];",
+  "js418ExampleCode2": "const unique = new Set(nums);",
+  "js418ExampleCode3": "console.log(unique.size);",
+  "js418ExampleOutput": "输出：\n2",
+  "js418EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js418HintTitle1": "提示 1 💡",
+  "js418HintContent1": "参考示例写法。",
+  "js418HintTitle2": "提示 2 🧩",
+  "js418HintContent2": "记得用 console.log 输出。",
+  "js418SolutionTitle": "答案 ✅",
+  "js418SolutionContent": "一种可行的写法：\n\nconst nums = [1, 1, 2];\nconst unique = new Set(nums);\nconsole.log(unique.size);",
+  "js419InstructionsTitle": "任务 419 🚀",
+  "js419InstructionsContent": "练习 Map 和 Set。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst map = new Map();\nmap.set('score', 10);\nconsole.log(map.get('score'));",
+  "js419ExampleTitle": "示例",
+  "js419ExampleCode1": "const map = new Map();",
+  "js419ExampleCode2": "map.set('score', 10);",
+  "js419ExampleCode3": "console.log(map.get('score'));",
+  "js419ExampleOutput": "输出：\n10",
+  "js419EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js419HintTitle1": "提示 1 💡",
+  "js419HintContent1": "参考示例写法。",
+  "js419HintTitle2": "提示 2 🧩",
+  "js419HintContent2": "记得用 console.log 输出。",
+  "js419SolutionTitle": "答案 ✅",
+  "js419SolutionContent": "一种可行的写法：\n\nconst map = new Map();\nmap.set('score', 10);\nconsole.log(map.get('score'));",
+  "js420InstructionsTitle": "任务 420 🚀",
+  "js420InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfunction greet() { return 'Hi'; }\nconsole.log(greet());\n// function",
+  "js420ExampleTitle": "示例",
+  "js420ExampleCode1": "function greet() { return 'Hi'; }",
+  "js420ExampleCode2": "console.log(greet());",
+  "js420ExampleCode3": "// function",
+  "js420ExampleOutput": "输出：\nHi",
+  "js420EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js420HintTitle1": "提示 1 💡",
+  "js420HintContent1": "参考示例写法。",
+  "js420HintTitle2": "提示 2 🧩",
+  "js420HintContent2": "记得用 console.log 输出。",
+  "js420SolutionTitle": "答案 ✅",
+  "js420SolutionContent": "一种可行的写法：\n\nfunction greet() { return 'Hi'; }\nconsole.log(greet());\n// function",
+  "js421InstructionsTitle": "任务 421 🚀",
+  "js421InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\n// arrow",
+  "js421ExampleTitle": "示例",
+  "js421ExampleCode1": "const add = (a, b) => a + b;",
+  "js421ExampleCode2": "console.log(add(2, 3));",
+  "js421ExampleCode3": "// arrow",
+  "js421ExampleOutput": "输出：\n5",
+  "js421EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js421HintTitle1": "提示 1 💡",
+  "js421HintContent1": "参考示例写法。",
+  "js421HintTitle2": "提示 2 🧩",
+  "js421HintContent2": "记得用 console.log 输出。",
+  "js421SolutionTitle": "答案 ✅",
+  "js421SolutionContent": "一种可行的写法：\n\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\n// arrow",
+  "js422InstructionsTitle": "任务 422 🚀",
+  "js422InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfunction square(x) { return x * x; }\nconsole.log(square(4));\n// param",
+  "js422ExampleTitle": "示例",
+  "js422ExampleCode1": "function square(x) { return x * x; }",
+  "js422ExampleCode2": "console.log(square(4));",
+  "js422ExampleCode3": "// param",
+  "js422ExampleOutput": "输出：\n16",
+  "js422EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js422HintTitle1": "提示 1 💡",
+  "js422HintContent1": "参考示例写法。",
+  "js422HintTitle2": "提示 2 🧩",
+  "js422HintContent2": "记得用 console.log 输出。",
+  "js422SolutionTitle": "答案 ✅",
+  "js422SolutionContent": "一种可行的写法：\n\nfunction square(x) { return x * x; }\nconsole.log(square(4));\n// param",
+  "js423InstructionsTitle": "任务 423 🚀",
+  "js423InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst double = (n) => { return n * 2; };\nconsole.log(double(5));\n// return",
+  "js423ExampleTitle": "示例",
+  "js423ExampleCode1": "const double = (n) => { return n * 2; };",
+  "js423ExampleCode2": "console.log(double(5));",
+  "js423ExampleCode3": "// return",
+  "js423ExampleOutput": "输出：\n10",
+  "js423EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js423HintTitle1": "提示 1 💡",
+  "js423HintContent1": "参考示例写法。",
+  "js423HintTitle2": "提示 2 🧩",
+  "js423HintContent2": "记得用 console.log 输出。",
+  "js423SolutionTitle": "答案 ✅",
+  "js423SolutionContent": "一种可行的写法：\n\nconst double = (n) => { return n * 2; };\nconsole.log(double(5));\n// return",
+  "js424InstructionsTitle": "任务 424 🚀",
+  "js424InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfunction greet(name = 'Ana') { return name; }\nconsole.log(greet());\n// default",
+  "js424ExampleTitle": "示例",
+  "js424ExampleCode1": "function greet(name = 'Ana') { return name; }",
+  "js424ExampleCode2": "console.log(greet());",
+  "js424ExampleCode3": "// default",
+  "js424ExampleOutput": "输出：\nAna",
+  "js424EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js424HintTitle1": "提示 1 💡",
+  "js424HintContent1": "参考示例写法。",
+  "js424HintTitle2": "提示 2 🧩",
+  "js424HintContent2": "记得用 console.log 输出。",
+  "js424SolutionTitle": "答案 ✅",
+  "js424SolutionContent": "一种可行的写法：\n\nfunction greet(name = 'Ana') { return name; }\nconsole.log(greet());\n// default",
+  "js425InstructionsTitle": "任务 425 🚀",
+  "js425InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfunction sum(...nums) { return nums.length; }\nconsole.log(sum(1, 2, 3));\n// rest",
+  "js425ExampleTitle": "示例",
+  "js425ExampleCode1": "function sum(...nums) { return nums.length; }",
+  "js425ExampleCode2": "console.log(sum(1, 2, 3));",
+  "js425ExampleCode3": "// rest",
+  "js425ExampleOutput": "输出：\n3",
+  "js425EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js425HintTitle1": "提示 1 💡",
+  "js425HintContent1": "参考示例写法。",
+  "js425HintTitle2": "提示 2 🧩",
+  "js425HintContent2": "记得用 console.log 输出。",
+  "js425SolutionTitle": "答案 ✅",
+  "js425SolutionContent": "一种可行的写法：\n\nfunction sum(...nums) { return nums.length; }\nconsole.log(sum(1, 2, 3));\n// rest",
+  "js426InstructionsTitle": "任务 426 🚀",
+  "js426InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst nums = [1, 2];\nnums.forEach(n => console.log(n));\n// callback",
+  "js426ExampleTitle": "示例",
+  "js426ExampleCode1": "const nums = [1, 2];",
+  "js426ExampleCode2": "nums.forEach(n => console.log(n));",
+  "js426ExampleCode3": "// callback",
+  "js426ExampleOutput": "输出：\n1\n2",
+  "js426EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js426HintTitle1": "提示 1 💡",
+  "js426HintContent1": "参考示例写法。",
+  "js426HintTitle2": "提示 2 🧩",
+  "js426HintContent2": "记得用 console.log 输出。",
+  "js426SolutionTitle": "答案 ✅",
+  "js426SolutionContent": "一种可行的写法：\n\nconst nums = [1, 2];\nnums.forEach(n => console.log(n));\n// callback",
+  "js427InstructionsTitle": "任务 427 🚀",
+  "js427InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst greet = function() { return 'Hi'; };\nconsole.log(greet());\n// expression",
+  "js427ExampleTitle": "示例",
+  "js427ExampleCode1": "const greet = function() { return 'Hi'; };",
+  "js427ExampleCode2": "console.log(greet());",
+  "js427ExampleCode3": "// expression",
+  "js427ExampleOutput": "输出：\nHi",
+  "js427EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js427HintTitle1": "提示 1 💡",
+  "js427HintContent1": "参考示例写法。",
+  "js427HintTitle2": "提示 2 🧩",
+  "js427HintContent2": "记得用 console.log 输出。",
+  "js427SolutionTitle": "答案 ✅",
+  "js427SolutionContent": "一种可行的写法：\n\nconst greet = function() { return 'Hi'; };\nconsole.log(greet());\n// expression",
+  "js428InstructionsTitle": "任务 428 🚀",
+  "js428InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst getFive = () => 5;\nconsole.log(getFive());\n// implicit",
+  "js428ExampleTitle": "示例",
+  "js428ExampleCode1": "const getFive = () => 5;",
+  "js428ExampleCode2": "console.log(getFive());",
+  "js428ExampleCode3": "// implicit",
+  "js428ExampleOutput": "输出：\n5",
+  "js428EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js428HintTitle1": "提示 1 💡",
+  "js428HintContent1": "参考示例写法。",
+  "js428HintTitle2": "提示 2 🧩",
+  "js428HintContent2": "记得用 console.log 输出。",
+  "js428SolutionTitle": "答案 ✅",
+  "js428SolutionContent": "一种可行的写法：\n\nconst getFive = () => 5;\nconsole.log(getFive());\n// implicit",
+  "js429InstructionsTitle": "任务 429 🚀",
+  "js429InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet x = 1;\nfunction show() { let x = 2; console.log(x); }\nshow();",
+  "js429ExampleTitle": "示例",
+  "js429ExampleCode1": "let x = 1;",
+  "js429ExampleCode2": "function show() { let x = 2; console.log(x); }",
+  "js429ExampleCode3": "show();",
+  "js429ExampleOutput": "输出：\n2",
+  "js429EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js429HintTitle1": "提示 1 💡",
+  "js429HintContent1": "参考示例写法。",
+  "js429HintTitle2": "提示 2 🧩",
+  "js429HintContent2": "记得用 console.log 输出。",
+  "js429SolutionTitle": "答案 ✅",
+  "js429SolutionContent": "一种可行的写法：\n\nlet x = 1;\nfunction show() { let x = 2; console.log(x); }\nshow();",
+  "js430InstructionsTitle": "任务 430 🚀",
+  "js430InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\n(function(){ console.log('Hi'); })();\n// IIFE\n// runs",
+  "js430ExampleTitle": "示例",
+  "js430ExampleCode1": "(function(){ console.log('Hi'); })();",
+  "js430ExampleCode2": "// IIFE",
+  "js430ExampleCode3": "// runs",
+  "js430ExampleOutput": "输出：\nHi",
+  "js430EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js430HintTitle1": "提示 1 💡",
+  "js430HintContent1": "参考示例写法。",
+  "js430HintTitle2": "提示 2 🧩",
+  "js430HintContent2": "记得用 console.log 输出。",
+  "js430SolutionTitle": "答案 ✅",
+  "js430SolutionContent": "一种可行的写法：\n\n(function(){ console.log('Hi'); })();\n// IIFE\n// runs",
+  "js431InstructionsTitle": "任务 431 🚀",
+  "js431InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst apply = (fn, x) => fn(x);\nconsole.log(apply(n => n * 2, 3));\n// higher",
+  "js431ExampleTitle": "示例",
+  "js431ExampleCode1": "const apply = (fn, x) => fn(x);",
+  "js431ExampleCode2": "console.log(apply(n => n * 2, 3));",
+  "js431ExampleCode3": "// higher",
+  "js431ExampleOutput": "输出：\n6",
+  "js431EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js431HintTitle1": "提示 1 💡",
+  "js431HintContent1": "参考示例写法。",
+  "js431HintTitle2": "提示 2 🧩",
+  "js431HintContent2": "记得用 console.log 输出。",
+  "js431SolutionTitle": "答案 ✅",
+  "js431SolutionContent": "一种可行的写法：\n\nconst apply = (fn, x) => fn(x);\nconsole.log(apply(n => n * 2, 3));\n// higher",
+  "js432InstructionsTitle": "任务 432 🚀",
+  "js432InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst make = () => () => 'Hi';\nconsole.log(make()());\n// returns fn",
+  "js432ExampleTitle": "示例",
+  "js432ExampleCode1": "const make = () => () => 'Hi';",
+  "js432ExampleCode2": "console.log(make()());",
+  "js432ExampleCode3": "// returns fn",
+  "js432ExampleOutput": "输出：\nHi",
+  "js432EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js432HintTitle1": "提示 1 💡",
+  "js432HintContent1": "参考示例写法。",
+  "js432HintTitle2": "提示 2 🧩",
+  "js432HintContent2": "记得用 console.log 输出。",
+  "js432SolutionTitle": "答案 ✅",
+  "js432SolutionContent": "一种可行的写法：\n\nconst make = () => () => 'Hi';\nconsole.log(make()());\n// returns fn",
+  "js433InstructionsTitle": "挑战 433 🕹️",
+  "js433InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst sum = (a, b) => a + b;\nconsole.log(sum(3, 4));\n// challenge",
+  "js433ExampleTitle": "示例",
+  "js433ExampleCode1": "const sum = (a, b) => a + b;",
+  "js433ExampleCode2": "console.log(sum(3, 4));",
+  "js433ExampleCode3": "// challenge",
+  "js433ExampleOutput": "输出：\n7",
+  "js433EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js433HintTitle1": "提示 1 💡",
+  "js433HintContent1": "参考示例写法。",
+  "js433HintTitle2": "提示 2 🧩",
+  "js433HintContent2": "记得用 console.log 输出。",
+  "js433SolutionTitle": "答案 ✅",
+  "js433SolutionContent": "一种可行的写法：\n\nconst sum = (a, b) => a + b;\nconsole.log(sum(3, 4));\n// challenge",
+  "js434InstructionsTitle": "挑战 434 🕹️",
+  "js434InstructionsContent": "练习 JavaScript 函数。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst isEven = n => n % 2 === 0;\nconsole.log(isEven(4));\n// challenge",
+  "js434ExampleTitle": "示例",
+  "js434ExampleCode1": "const isEven = n => n % 2 === 0;",
+  "js434ExampleCode2": "console.log(isEven(4));",
+  "js434ExampleCode3": "// challenge",
+  "js434ExampleOutput": "输出：\ntrue",
+  "js434EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js434HintTitle1": "提示 1 💡",
+  "js434HintContent1": "参考示例写法。",
+  "js434HintTitle2": "提示 2 🧩",
+  "js434HintContent2": "记得用 console.log 输出。",
+  "js434SolutionTitle": "答案 ✅",
+  "js434SolutionContent": "一种可行的写法：\n\nconst isEven = n => n % 2 === 0;\nconsole.log(isEven(4));\n// challenge",
+  "js435InstructionsTitle": "任务 435 🚀",
+  "js435InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet value;\nconsole.log(value);\n// undefined",
+  "js435ExampleTitle": "示例",
+  "js435ExampleCode1": "let value;",
+  "js435ExampleCode2": "console.log(value);",
+  "js435ExampleCode3": "// undefined",
+  "js435ExampleOutput": "输出：\nundefined",
+  "js435EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js435HintTitle1": "提示 1 💡",
+  "js435HintContent1": "参考示例写法。",
+  "js435HintTitle2": "提示 2 🧩",
+  "js435HintContent2": "记得用 console.log 输出。",
+  "js435SolutionTitle": "答案 ✅",
+  "js435SolutionContent": "一种可行的写法：\n\nlet value;\nconsole.log(value);\n// undefined",
+  "js436InstructionsTitle": "任务 436 🚀",
+  "js436InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = null;\nconsole.log(value);\n// null",
+  "js436ExampleTitle": "示例",
+  "js436ExampleCode1": "const value = null;",
+  "js436ExampleCode2": "console.log(value);",
+  "js436ExampleCode3": "// null",
+  "js436ExampleOutput": "输出：\nnull",
+  "js436EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js436HintTitle1": "提示 1 💡",
+  "js436HintContent1": "参考示例写法。",
+  "js436HintTitle2": "提示 2 🧩",
+  "js436HintContent2": "记得用 console.log 输出。",
+  "js436SolutionTitle": "答案 ✅",
+  "js436SolutionContent": "一种可行的写法：\n\nconst value = null;\nconsole.log(value);\n// null",
+  "js437InstructionsTitle": "任务 437 🚀",
+  "js437InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet value;\nconsole.log(typeof value);\n// typeof",
+  "js437ExampleTitle": "示例",
+  "js437ExampleCode1": "let value;",
+  "js437ExampleCode2": "console.log(typeof value);",
+  "js437ExampleCode3": "// typeof",
+  "js437ExampleOutput": "输出：\nundefined",
+  "js437EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js437HintTitle1": "提示 1 💡",
+  "js437HintContent1": "参考示例写法。",
+  "js437HintTitle2": "提示 2 🧩",
+  "js437HintContent2": "记得用 console.log 输出。",
+  "js437SolutionTitle": "答案 ✅",
+  "js437SolutionContent": "一种可行的写法：\n\nlet value;\nconsole.log(typeof value);\n// typeof",
+  "js438InstructionsTitle": "任务 438 🚀",
+  "js438InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = null;\nconsole.log(typeof value);\n// typeof",
+  "js438ExampleTitle": "示例",
+  "js438ExampleCode1": "const value = null;",
+  "js438ExampleCode2": "console.log(typeof value);",
+  "js438ExampleCode3": "// typeof",
+  "js438ExampleOutput": "输出：\nobject",
+  "js438EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js438HintTitle1": "提示 1 💡",
+  "js438HintContent1": "参考示例写法。",
+  "js438HintTitle2": "提示 2 🧩",
+  "js438HintContent2": "记得用 console.log 输出。",
+  "js438SolutionTitle": "答案 ✅",
+  "js438SolutionContent": "一种可行的写法：\n\nconst value = null;\nconsole.log(typeof value);\n// typeof",
+  "js439InstructionsTitle": "任务 439 🚀",
+  "js439InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = null;\nconsole.log(value === null);\n// compare",
+  "js439ExampleTitle": "示例",
+  "js439ExampleCode1": "const value = null;",
+  "js439ExampleCode2": "console.log(value === null);",
+  "js439ExampleCode3": "// compare",
+  "js439ExampleOutput": "输出：\ntrue",
+  "js439EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js439HintTitle1": "提示 1 💡",
+  "js439HintContent1": "参考示例写法。",
+  "js439HintTitle2": "提示 2 🧩",
+  "js439HintContent2": "记得用 console.log 输出。",
+  "js439SolutionTitle": "答案 ✅",
+  "js439SolutionContent": "一种可行的写法：\n\nconst value = null;\nconsole.log(value === null);\n// compare",
+  "js440InstructionsTitle": "任务 440 🚀",
+  "js440InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet value;\nconsole.log(value === undefined);\n// compare",
+  "js440ExampleTitle": "示例",
+  "js440ExampleCode1": "let value;",
+  "js440ExampleCode2": "console.log(value === undefined);",
+  "js440ExampleCode3": "// compare",
+  "js440ExampleOutput": "输出：\ntrue",
+  "js440EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js440HintTitle1": "提示 1 💡",
+  "js440HintContent1": "参考示例写法。",
+  "js440HintTitle2": "提示 2 🧩",
+  "js440HintContent2": "记得用 console.log 输出。",
+  "js440SolutionTitle": "答案 ✅",
+  "js440SolutionContent": "一种可行的写法：\n\nlet value;\nconsole.log(value === undefined);\n// compare",
+  "js441InstructionsTitle": "任务 441 🚀",
+  "js441InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = null;\nconsole.log(value ?? 'default');\n// ??",
+  "js441ExampleTitle": "示例",
+  "js441ExampleCode1": "const value = null;",
+  "js441ExampleCode2": "console.log(value ?? 'default');",
+  "js441ExampleCode3": "// ??",
+  "js441ExampleOutput": "输出：\ndefault",
+  "js441EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js441HintTitle1": "提示 1 💡",
+  "js441HintContent1": "参考示例写法。",
+  "js441HintTitle2": "提示 2 🧩",
+  "js441HintContent2": "记得用 console.log 输出。",
+  "js441SolutionTitle": "答案 ✅",
+  "js441SolutionContent": "一种可行的写法：\n\nconst value = null;\nconsole.log(value ?? 'default');\n// ??",
+  "js442InstructionsTitle": "任务 442 🚀",
+  "js442InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {};\nconsole.log(user.profile?.name);\n// ?.",
+  "js442ExampleTitle": "示例",
+  "js442ExampleCode1": "const user = {};",
+  "js442ExampleCode2": "console.log(user.profile?.name);",
+  "js442ExampleCode3": "// ?.",
+  "js442ExampleOutput": "输出：\nundefined",
+  "js442EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js442HintTitle1": "提示 1 💡",
+  "js442HintContent1": "参考示例写法。",
+  "js442HintTitle2": "提示 2 🧩",
+  "js442HintContent2": "记得用 console.log 输出。",
+  "js442SolutionTitle": "答案 ✅",
+  "js442SolutionContent": "一种可行的写法：\n\nconst user = {};\nconsole.log(user.profile?.name);\n// ?.",
+  "js443InstructionsTitle": "任务 443 🚀",
+  "js443InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst name = '';\nconsole.log(name || 'Guest');\n// ||",
+  "js443ExampleTitle": "示例",
+  "js443ExampleCode1": "const name = '';",
+  "js443ExampleCode2": "console.log(name || 'Guest');",
+  "js443ExampleCode3": "// ||",
+  "js443ExampleOutput": "输出：\nGuest",
+  "js443EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js443HintTitle1": "提示 1 💡",
+  "js443HintContent1": "参考示例写法。",
+  "js443HintTitle2": "提示 2 🧩",
+  "js443HintContent2": "记得用 console.log 输出。",
+  "js443SolutionTitle": "答案 ✅",
+  "js443SolutionContent": "一种可行的写法：\n\nconst name = '';\nconsole.log(name || 'Guest');\n// ||",
+  "js444InstructionsTitle": "任务 444 🚀",
+  "js444InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = null;\nif (value === null) console.log('Null');\n// check",
+  "js444ExampleTitle": "示例",
+  "js444ExampleCode1": "const value = null;",
+  "js444ExampleCode2": "if (value === null) console.log('Null');",
+  "js444ExampleCode3": "// check",
+  "js444ExampleOutput": "输出：\nNull",
+  "js444EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js444HintTitle1": "提示 1 💡",
+  "js444HintContent1": "参考示例写法。",
+  "js444HintTitle2": "提示 2 🧩",
+  "js444HintContent2": "记得用 console.log 输出。",
+  "js444SolutionTitle": "答案 ✅",
+  "js444SolutionContent": "一种可行的写法：\n\nconst value = null;\nif (value === null) console.log('Null');\n// check",
+  "js445InstructionsTitle": "任务 445 🚀",
+  "js445InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nlet value;\nif (value === undefined) console.log('Undefined');\n// check",
+  "js445ExampleTitle": "示例",
+  "js445ExampleCode1": "let value;",
+  "js445ExampleCode2": "if (value === undefined) console.log('Undefined');",
+  "js445ExampleCode3": "// check",
+  "js445ExampleOutput": "输出：\nUndefined",
+  "js445EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js445HintTitle1": "提示 1 💡",
+  "js445HintContent1": "参考示例写法。",
+  "js445HintTitle2": "提示 2 🧩",
+  "js445HintContent2": "记得用 console.log 输出。",
+  "js445SolutionTitle": "答案 ✅",
+  "js445SolutionContent": "一种可行的写法：\n\nlet value;\nif (value === undefined) console.log('Undefined');\n// check",
+  "js446InstructionsTitle": "任务 446 🚀",
+  "js446InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = 0;\nconsole.log(value ?? 5);\n// ??",
+  "js446ExampleTitle": "示例",
+  "js446ExampleCode1": "const value = 0;",
+  "js446ExampleCode2": "console.log(value ?? 5);",
+  "js446ExampleCode3": "// ??",
+  "js446ExampleOutput": "输出：\n0",
+  "js446EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js446HintTitle1": "提示 1 💡",
+  "js446HintContent1": "参考示例写法。",
+  "js446HintTitle2": "提示 2 🧩",
+  "js446HintContent2": "记得用 console.log 输出。",
+  "js446SolutionTitle": "答案 ✅",
+  "js446SolutionContent": "一种可行的写法：\n\nconst value = 0;\nconsole.log(value ?? 5);\n// ??",
+  "js447InstructionsTitle": "任务 447 🚀",
+  "js447InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nfunction test() {}\nconsole.log(test());\n// undefined",
+  "js447ExampleTitle": "示例",
+  "js447ExampleCode1": "function test() {}",
+  "js447ExampleCode2": "console.log(test());",
+  "js447ExampleCode3": "// undefined",
+  "js447ExampleOutput": "输出：\nundefined",
+  "js447EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js447HintTitle1": "提示 1 💡",
+  "js447HintContent1": "参考示例写法。",
+  "js447HintTitle2": "提示 2 🧩",
+  "js447HintContent2": "记得用 console.log 输出。",
+  "js447SolutionTitle": "答案 ✅",
+  "js447SolutionContent": "一种可行的写法：\n\nfunction test() {}\nconsole.log(test());\n// undefined",
+  "js448InstructionsTitle": "挑战 448 🕹️",
+  "js448InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst value = undefined;\nconsole.log(value ?? 'OK');\n// challenge",
+  "js448ExampleTitle": "示例",
+  "js448ExampleCode1": "const value = undefined;",
+  "js448ExampleCode2": "console.log(value ?? 'OK');",
+  "js448ExampleCode3": "// challenge",
+  "js448ExampleOutput": "输出：\nOK",
+  "js448EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js448HintTitle1": "提示 1 💡",
+  "js448HintContent1": "参考示例写法。",
+  "js448HintTitle2": "提示 2 🧩",
+  "js448HintContent2": "记得用 console.log 输出。",
+  "js448SolutionTitle": "答案 ✅",
+  "js448SolutionContent": "一种可行的写法：\n\nconst value = undefined;\nconsole.log(value ?? 'OK');\n// challenge",
+  "js449InstructionsTitle": "挑战 449 🕹️",
+  "js449InstructionsContent": "练习 null 与 undefined。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst user = {};\nconsole.log(user.profile?.name ?? 'NA');\n// challenge",
+  "js449ExampleTitle": "示例",
+  "js449ExampleCode1": "const user = {};",
+  "js449ExampleCode2": "console.log(user.profile?.name ?? 'NA');",
+  "js449ExampleCode3": "// challenge",
+  "js449ExampleOutput": "输出：\nNA",
+  "js449EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js449HintTitle1": "提示 1 💡",
+  "js449HintContent1": "参考示例写法。",
+  "js449HintTitle2": "提示 2 🧩",
+  "js449HintContent2": "记得用 console.log 输出。",
+  "js449SolutionTitle": "答案 ✅",
+  "js449SolutionContent": "一种可行的写法：\n\nconst user = {};\nconsole.log(user.profile?.name ?? 'NA');\n// challenge",
+  "js450InstructionsTitle": "任务 450 🚀",
+  "js450InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst promise = new Promise((resolve) => resolve('OK'));\npromise.then(v => console.log(v));\n// promise",
+  "js450ExampleTitle": "示例",
+  "js450ExampleCode1": "const promise = new Promise((resolve) => resolve('OK'));",
+  "js450ExampleCode2": "promise.then(v => console.log(v));",
+  "js450ExampleCode3": "// promise",
+  "js450ExampleOutput": "输出：\nOK",
+  "js450EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js450HintTitle1": "提示 1 💡",
+  "js450HintContent1": "参考示例写法。",
+  "js450HintTitle2": "提示 2 🧩",
+  "js450HintContent2": "记得用 console.log 输出。",
+  "js450SolutionTitle": "答案 ✅",
+  "js450SolutionContent": "一种可行的写法：\n\nconst promise = new Promise((resolve) => resolve('OK'));\npromise.then(v => console.log(v));\n// promise",
+  "js451InstructionsTitle": "任务 451 🚀",
+  "js451InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst promise = Promise.resolve(5);\npromise.then(v => console.log(v));\n// resolve",
+  "js451ExampleTitle": "示例",
+  "js451ExampleCode1": "const promise = Promise.resolve(5);",
+  "js451ExampleCode2": "promise.then(v => console.log(v));",
+  "js451ExampleCode3": "// resolve",
+  "js451ExampleOutput": "输出：\n5",
+  "js451EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js451HintTitle1": "提示 1 💡",
+  "js451HintContent1": "参考示例写法。",
+  "js451HintTitle2": "提示 2 🧩",
+  "js451HintContent2": "记得用 console.log 输出。",
+  "js451SolutionTitle": "答案 ✅",
+  "js451SolutionContent": "一种可行的写法：\n\nconst promise = Promise.resolve(5);\npromise.then(v => console.log(v));\n// resolve",
+  "js452InstructionsTitle": "任务 452 🚀",
+  "js452InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst promise = Promise.reject('Err');\npromise.catch(e => console.log(e));\n// reject",
+  "js452ExampleTitle": "示例",
+  "js452ExampleCode1": "const promise = Promise.reject('Err');",
+  "js452ExampleCode2": "promise.catch(e => console.log(e));",
+  "js452ExampleCode3": "// reject",
+  "js452ExampleOutput": "输出：\nErr",
+  "js452EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js452HintTitle1": "提示 1 💡",
+  "js452HintContent1": "参考示例写法。",
+  "js452HintTitle2": "提示 2 🧩",
+  "js452HintContent2": "记得用 console.log 输出。",
+  "js452SolutionTitle": "答案 ✅",
+  "js452SolutionContent": "一种可行的写法：\n\nconst promise = Promise.reject('Err');\npromise.catch(e => console.log(e));\n// reject",
+  "js453InstructionsTitle": "任务 453 🚀",
+  "js453InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nPromise.resolve(1)\n.then(v => v + 1)\n.then(v => console.log(v));",
+  "js453ExampleTitle": "示例",
+  "js453ExampleCode1": "Promise.resolve(1)",
+  "js453ExampleCode2": ".then(v => v + 1)",
+  "js453ExampleCode3": ".then(v => console.log(v));",
+  "js453ExampleOutput": "输出：\n2",
+  "js453EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js453HintTitle1": "提示 1 💡",
+  "js453HintContent1": "参考示例写法。",
+  "js453HintTitle2": "提示 2 🧩",
+  "js453HintContent2": "记得用 console.log 输出。",
+  "js453SolutionTitle": "答案 ✅",
+  "js453SolutionContent": "一种可行的写法：\n\nPromise.resolve(1)\n.then(v => v + 1)\n.then(v => console.log(v));",
+  "js454InstructionsTitle": "任务 454 🚀",
+  "js454InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nPromise.reject('Oops')\n.catch(e => console.log(e));\n// catch",
+  "js454ExampleTitle": "示例",
+  "js454ExampleCode1": "Promise.reject('Oops')",
+  "js454ExampleCode2": ".catch(e => console.log(e));",
+  "js454ExampleCode3": "// catch",
+  "js454ExampleOutput": "输出：\nOops",
+  "js454EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js454HintTitle1": "提示 1 💡",
+  "js454HintContent1": "参考示例写法。",
+  "js454HintTitle2": "提示 2 🧩",
+  "js454HintContent2": "记得用 console.log 输出。",
+  "js454SolutionTitle": "答案 ✅",
+  "js454SolutionContent": "一种可行的写法：\n\nPromise.reject('Oops')\n.catch(e => console.log(e));\n// catch",
+  "js455InstructionsTitle": "任务 455 🚀",
+  "js455InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nPromise.resolve('OK')\n.finally(() => console.log('Done'));\n// finally",
+  "js455ExampleTitle": "示例",
+  "js455ExampleCode1": "Promise.resolve('OK')",
+  "js455ExampleCode2": ".finally(() => console.log('Done'));",
+  "js455ExampleCode3": "// finally",
+  "js455ExampleOutput": "输出：\nDone",
+  "js455EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js455HintTitle1": "提示 1 💡",
+  "js455HintContent1": "参考示例写法。",
+  "js455HintTitle2": "提示 2 🧩",
+  "js455HintContent2": "记得用 console.log 输出。",
+  "js455SolutionTitle": "答案 ✅",
+  "js455SolutionContent": "一种可行的写法：\n\nPromise.resolve('OK')\n.finally(() => console.log('Done'));\n// finally",
+  "js456InstructionsTitle": "任务 456 🚀",
+  "js456InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() { return 'Hi'; }\nrun().then(v => console.log(v));\n// async",
+  "js456ExampleTitle": "示例",
+  "js456ExampleCode1": "async function run() { return 'Hi'; }",
+  "js456ExampleCode2": "run().then(v => console.log(v));",
+  "js456ExampleCode3": "// async",
+  "js456ExampleOutput": "输出：\nHi",
+  "js456EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js456HintTitle1": "提示 1 💡",
+  "js456HintContent1": "参考示例写法。",
+  "js456HintTitle2": "提示 2 🧩",
+  "js456HintContent2": "记得用 console.log 输出。",
+  "js456SolutionTitle": "答案 ✅",
+  "js456SolutionContent": "一种可行的写法：\n\nasync function run() { return 'Hi'; }\nrun().then(v => console.log(v));\n// async",
+  "js457InstructionsTitle": "任务 457 🚀",
+  "js457InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() {\nconst v = await Promise.resolve(3);\nconsole.log(v); }",
+  "js457ExampleTitle": "示例",
+  "js457ExampleCode1": "async function run() {",
+  "js457ExampleCode2": "const v = await Promise.resolve(3);",
+  "js457ExampleCode3": "console.log(v); }",
+  "js457ExampleOutput": "输出：\n3",
+  "js457EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js457HintTitle1": "提示 1 💡",
+  "js457HintContent1": "参考示例写法。",
+  "js457HintTitle2": "提示 2 🧩",
+  "js457HintContent2": "记得用 console.log 输出。",
+  "js457SolutionTitle": "答案 ✅",
+  "js457SolutionContent": "一种可行的写法：\n\nasync function run() {\nconst v = await Promise.resolve(3);\nconsole.log(v); }",
+  "js458InstructionsTitle": "任务 458 🚀",
+  "js458InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() {\nconst v = await Promise.resolve('ok');\nconsole.log(v); }",
+  "js458ExampleTitle": "示例",
+  "js458ExampleCode1": "async function run() {",
+  "js458ExampleCode2": "const v = await Promise.resolve('ok');",
+  "js458ExampleCode3": "console.log(v); }",
+  "js458ExampleOutput": "输出：\nok",
+  "js458EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js458HintTitle1": "提示 1 💡",
+  "js458HintContent1": "参考示例写法。",
+  "js458HintTitle2": "提示 2 🧩",
+  "js458HintContent2": "记得用 console.log 输出。",
+  "js458SolutionTitle": "答案 ✅",
+  "js458SolutionContent": "一种可行的写法：\n\nasync function run() {\nconst v = await Promise.resolve('ok');\nconsole.log(v); }",
+  "js459InstructionsTitle": "任务 459 🚀",
+  "js459InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nconst run = async () => {\nreturn 5;\n};",
+  "js459ExampleTitle": "示例",
+  "js459ExampleCode1": "const run = async () => {",
+  "js459ExampleCode2": "return 5;",
+  "js459ExampleCode3": "};",
+  "js459ExampleOutput": "输出：\n5",
+  "js459EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js459HintTitle1": "提示 1 💡",
+  "js459HintContent1": "参考示例写法。",
+  "js459HintTitle2": "提示 2 🧩",
+  "js459HintContent2": "记得用 console.log 输出。",
+  "js459SolutionTitle": "答案 ✅",
+  "js459SolutionContent": "一种可行的写法：\n\nconst run = async () => {\nreturn 5;\n};",
+  "js460InstructionsTitle": "任务 460 🚀",
+  "js460InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nPromise.all([Promise.resolve(1), Promise.resolve(2)])\n.then(v => console.log(v));\n// all",
+  "js460ExampleTitle": "示例",
+  "js460ExampleCode1": "Promise.all([Promise.resolve(1), Promise.resolve(2)])",
+  "js460ExampleCode2": ".then(v => console.log(v));",
+  "js460ExampleCode3": "// all",
+  "js460ExampleOutput": "输出：\n[1, 2]",
+  "js460EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js460HintTitle1": "提示 1 💡",
+  "js460HintContent1": "参考示例写法。",
+  "js460HintTitle2": "提示 2 🧩",
+  "js460HintContent2": "记得用 console.log 输出。",
+  "js460SolutionTitle": "答案 ✅",
+  "js460SolutionContent": "一种可行的写法：\n\nPromise.all([Promise.resolve(1), Promise.resolve(2)])\n.then(v => console.log(v));\n// all",
+  "js461InstructionsTitle": "任务 461 🚀",
+  "js461InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nPromise.race([Promise.resolve('a'), Promise.resolve('b')])\n.then(v => console.log(v));\n// race",
+  "js461ExampleTitle": "示例",
+  "js461ExampleCode1": "Promise.race([Promise.resolve('a'), Promise.resolve('b')])",
+  "js461ExampleCode2": ".then(v => console.log(v));",
+  "js461ExampleCode3": "// race",
+  "js461ExampleOutput": "输出：\na",
+  "js461EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js461HintTitle1": "提示 1 💡",
+  "js461HintContent1": "参考示例写法。",
+  "js461HintTitle2": "提示 2 🧩",
+  "js461HintContent2": "记得用 console.log 输出。",
+  "js461SolutionTitle": "答案 ✅",
+  "js461SolutionContent": "一种可行的写法：\n\nPromise.race([Promise.resolve('a'), Promise.resolve('b')])\n.then(v => console.log(v));\n// race",
+  "js462InstructionsTitle": "任务 462 🚀",
+  "js462InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() {\nconst v = await Promise.resolve(1);\nconsole.log(v + 1); }",
+  "js462ExampleTitle": "示例",
+  "js462ExampleCode1": "async function run() {",
+  "js462ExampleCode2": "const v = await Promise.resolve(1);",
+  "js462ExampleCode3": "console.log(v + 1); }",
+  "js462ExampleOutput": "输出：\n2",
+  "js462EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js462HintTitle1": "提示 1 💡",
+  "js462HintContent1": "参考示例写法。",
+  "js462HintTitle2": "提示 2 🧩",
+  "js462HintContent2": "记得用 console.log 输出。",
+  "js462SolutionTitle": "答案 ✅",
+  "js462SolutionContent": "一种可行的写法：\n\nasync function run() {\nconst v = await Promise.resolve(1);\nconsole.log(v + 1); }",
+  "js463InstructionsTitle": "任务 463 🚀",
+  "js463InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() {\ntry { await Promise.reject('Err'); } catch (e) { console.log(e); }\n}",
+  "js463ExampleTitle": "示例",
+  "js463ExampleCode1": "async function run() {",
+  "js463ExampleCode2": "try { await Promise.reject('Err'); } catch (e) { console.log(e); }",
+  "js463ExampleCode3": "}",
+  "js463ExampleOutput": "输出：\nErr",
+  "js463EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js463HintTitle1": "提示 1 💡",
+  "js463HintContent1": "参考示例写法。",
+  "js463HintTitle2": "提示 2 🧩",
+  "js463HintContent2": "记得用 console.log 输出。",
+  "js463SolutionTitle": "答案 ✅",
+  "js463SolutionContent": "一种可行的写法：\n\nasync function run() {\ntry { await Promise.reject('Err'); } catch (e) { console.log(e); }\n}",
+  "js464InstructionsTitle": "挑战 464 🕹️",
+  "js464InstructionsContent": "练习 Promise 和 async/await。\n\n规则:\n1) 按本课概念来写。\n2) 使用 console.log 输出。\n3) 保持简单。\n\n示例:\nasync function run() {\nconst v = await Promise.resolve('OK');\nconsole.log(v); }",
+  "js464ExampleTitle": "示例",
+  "js464ExampleCode1": "async function run() {",
+  "js464ExampleCode2": "const v = await Promise.resolve('OK');",
+  "js464ExampleCode3": "console.log(v); }",
+  "js464ExampleOutput": "输出：\nOK",
+  "js464EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js464HintTitle1": "提示 1 💡",
+  "js464HintContent1": "参考示例写法。",
+  "js464HintTitle2": "提示 2 🧩",
+  "js464HintContent2": "记得用 console.log 输出。",
+  "js464SolutionTitle": "答案 ✅",
+  "js464SolutionContent": "一种可行的写法：\n\nasync function run() {\nconst v = await Promise.resolve('OK');\nconsole.log(v); }"
 }

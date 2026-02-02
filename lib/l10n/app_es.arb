@@ -91,11 +91,8 @@
   "buyExercise": "Comprar este ejercicio",
   "buyAllExercises": "Desbloquear todos los ejercicios",
   "restorePurchases": "Restaurar compras",
-  "@unlockExerciseContent": {
-    "description": "Mensaje que se muestra al preguntar al usuario si desea desbloquear un ejercicio específico",
-    "placeholders": {
-      "exerciseName": {
-        "type": "String",
+  "@unlockExerciseContent": {\n    "description": "Mensaje que se muestra al preguntar al usuario si desea desbloquear un ejercicio específico",
+    "placeholders": {\n      "exerciseName": {\n        "type": "String",
         "example": "Hola Mundo"
       }
     }
@@ -2186,1766 +2183,1893 @@
   "js329SolutionTitle": "Solución ✅",
   "js329SolutionContent": "Una posible solución es:\n\nconst isMember = true;\nconst hasTicket = false;\nconsole.log(isMember && hasTicket || true);",
   "js330InstructionsTitle": "Misión 330 🚀",
-  "js330InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const n = 10;
-if (n > 5) console.log(\"Big\");
-// Try another number",
+  "js330InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst n = 10;\nif (n > 5) console.log(\"Big\");\n// Try another number",
   "js330ExampleTitle": "Ejemplo",
   "js330ExampleCode1": "const n = 10;",
   "js330ExampleCode2": "if (n > 5) console.log(\"Big\");",
   "js330ExampleCode3": "// Try another number",
-  "js330ExampleOutput": "Salida:
-Big",
+  "js330ExampleOutput": "Salida:\nBig",
   "js330EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js330HintTitle1": "Pista 1 💡",
   "js330HintContent1": "Sigue el patrón del ejemplo.",
   "js330HintTitle2": "Pista 2 🧩",
   "js330HintContent2": "Recuerda usar console.log para la salida.",
   "js330SolutionTitle": "Solución ✅",
-  "js330SolutionContent": "Una posible solución es:
-
-const n = 10;
-if (n > 5) console.log(\"Big\");
-// Try another number",
+  "js330SolutionContent": "Una posible solución es:\n\nconst n = 10;\nif (n > 5) console.log(\"Big\");\n// Try another number",
   "js331InstructionsTitle": "Misión 331 🚀",
-  "js331InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const age = 20;
-if (age >= 18) console.log(\"Adult\");
-else console.log(\"Minor\");",
+  "js331InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst age = 20;\nif (age >= 18) console.log(\"Adult\");\nelse console.log(\"Minor\");",
   "js331ExampleTitle": "Ejemplo",
   "js331ExampleCode1": "const age = 20;",
   "js331ExampleCode2": "if (age >= 18) console.log(\"Adult\");",
   "js331ExampleCode3": "else console.log(\"Minor\");",
-  "js331ExampleOutput": "Salida:
-Adult",
+  "js331ExampleOutput": "Salida:\nAdult",
   "js331EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js331HintTitle1": "Pista 1 💡",
   "js331HintContent1": "Sigue el patrón del ejemplo.",
   "js331HintTitle2": "Pista 2 🧩",
   "js331HintContent2": "Recuerda usar console.log para la salida.",
   "js331SolutionTitle": "Solución ✅",
-  "js331SolutionContent": "Una posible solución es:
-
-const age = 20;
-if (age >= 18) console.log(\"Adult\");
-else console.log(\"Minor\");",
+  "js331SolutionContent": "Una posible solución es:\n\nconst age = 20;\nif (age >= 18) console.log(\"Adult\");\nelse console.log(\"Minor\");",
   "js332InstructionsTitle": "Misión 332 🚀",
-  "js332InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const score = 75;
-if (score >= 90) console.log(\"A\");
-else if (score >= 70) console.log(\"B\");",
+  "js332InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst score = 75;\nif (score >= 90) console.log(\"A\");\nelse if (score >= 70) console.log(\"B\");",
   "js332ExampleTitle": "Ejemplo",
   "js332ExampleCode1": "const score = 75;",
   "js332ExampleCode2": "if (score >= 90) console.log(\"A\");",
   "js332ExampleCode3": "else if (score >= 70) console.log(\"B\");",
-  "js332ExampleOutput": "Salida:
-B",
+  "js332ExampleOutput": "Salida:\nB",
   "js332EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js332HintTitle1": "Pista 1 💡",
   "js332HintContent1": "Sigue el patrón del ejemplo.",
   "js332HintTitle2": "Pista 2 🧩",
   "js332HintContent2": "Recuerda usar console.log para la salida.",
   "js332SolutionTitle": "Solución ✅",
-  "js332SolutionContent": "Una posible solución es:
-
-const score = 75;
-if (score >= 90) console.log(\"A\");
-else if (score >= 70) console.log(\"B\");",
+  "js332SolutionContent": "Una posible solución es:\n\nconst score = 75;\nif (score >= 90) console.log(\"A\");\nelse if (score >= 70) console.log(\"B\");",
   "js333InstructionsTitle": "Misión 333 🚀",
-  "js333InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const lang = \"js\";
-if (lang === \"js\") console.log(\"OK\");
-// Try another value",
+  "js333InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst lang = \"js\";\nif (lang === \"js\") console.log(\"OK\");\n// Try another value",
   "js333ExampleTitle": "Ejemplo",
   "js333ExampleCode1": "const lang = \"js\";",
   "js333ExampleCode2": "if (lang === \"js\") console.log(\"OK\");",
   "js333ExampleCode3": "// Try another value",
-  "js333ExampleOutput": "Salida:
-OK",
+  "js333ExampleOutput": "Salida:\nOK",
   "js333EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js333HintTitle1": "Pista 1 💡",
   "js333HintContent1": "Sigue el patrón del ejemplo.",
   "js333HintTitle2": "Pista 2 🧩",
   "js333HintContent2": "Recuerda usar console.log para la salida.",
   "js333SolutionTitle": "Solución ✅",
-  "js333SolutionContent": "Una posible solución es:
-
-const lang = \"js\";
-if (lang === \"js\") console.log(\"OK\");
-// Try another value",
+  "js333SolutionContent": "Una posible solución es:\n\nconst lang = \"js\";\nif (lang === \"js\") console.log(\"OK\");\n// Try another value",
   "js334InstructionsTitle": "Misión 334 🚀",
-  "js334InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const age = 20;
-const hasId = true;
-if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access\");",
   "js334ExampleTitle": "Ejemplo",
   "js334ExampleCode1": "const age = 20;",
   "js334ExampleCode2": "const hasId = true;",
   "js334ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access\");",
-  "js334ExampleOutput": "Salida:
-Access",
+  "js334ExampleOutput": "Salida:\nAccess",
   "js334EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js334HintTitle1": "Pista 1 💡",
   "js334HintContent1": "Sigue el patrón del ejemplo.",
   "js334HintTitle2": "Pista 2 🧩",
   "js334HintContent2": "Recuerda usar console.log para la salida.",
   "js334SolutionTitle": "Solución ✅",
-  "js334SolutionContent": "Una posible solución es:
-
-const age = 20;
-const hasId = true;
-if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334SolutionContent": "Una posible solución es:\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access\");",
   "js335InstructionsTitle": "Misión 335 🚀",
-  "js335InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const isMember = false;
-const hasPass = true;
-if (isMember || hasPass) console.log(\"Enter\");",
+  "js335InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst isMember = false;\nconst hasPass = true;\nif (isMember || hasPass) console.log(\"Enter\");",
   "js335ExampleTitle": "Ejemplo",
   "js335ExampleCode1": "const isMember = false;",
   "js335ExampleCode2": "const hasPass = true;",
   "js335ExampleCode3": "if (isMember || hasPass) console.log(\"Enter\");",
-  "js335ExampleOutput": "Salida:
-Enter",
+  "js335ExampleOutput": "Salida:\nEnter",
   "js335EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js335HintTitle1": "Pista 1 💡",
   "js335HintContent1": "Sigue el patrón del ejemplo.",
   "js335HintTitle2": "Pista 2 🧩",
   "js335HintContent2": "Recuerda usar console.log para la salida.",
   "js335SolutionTitle": "Solución ✅",
-  "js335SolutionContent": "Una posible solución es:
-
-const isMember = false;
-const hasPass = true;
-if (isMember || hasPass) console.log(\"Enter\");",
+  "js335SolutionContent": "Una posible solución es:\n\nconst isMember = false;\nconst hasPass = true;\nif (isMember || hasPass) console.log(\"Enter\");",
   "js336InstructionsTitle": "Misión 336 🚀",
-  "js336InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const age = 20;
-if (age > 10) if (age < 30) console.log(\"OK\");
-// Nested if",
+  "js336InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst age = 20;\nif (age > 10) if (age < 30) console.log(\"OK\");\n// Nested if",
   "js336ExampleTitle": "Ejemplo",
   "js336ExampleCode1": "const age = 20;",
   "js336ExampleCode2": "if (age > 10) if (age < 30) console.log(\"OK\");",
   "js336ExampleCode3": "// Nested if",
-  "js336ExampleOutput": "Salida:
-OK",
+  "js336ExampleOutput": "Salida:\nOK",
   "js336EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js336HintTitle1": "Pista 1 💡",
   "js336HintContent1": "Sigue el patrón del ejemplo.",
   "js336HintTitle2": "Pista 2 🧩",
   "js336HintContent2": "Recuerda usar console.log para la salida.",
   "js336SolutionTitle": "Solución ✅",
-  "js336SolutionContent": "Una posible solución es:
-
-const age = 20;
-if (age > 10) if (age < 30) console.log(\"OK\");
-// Nested if",
+  "js336SolutionContent": "Una posible solución es:\n\nconst age = 20;\nif (age > 10) if (age < 30) console.log(\"OK\");\n// Nested if",
   "js337InstructionsTitle": "Misión 337 🚀",
-  "js337InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const isReady = true;
-if (isReady) console.log(\"Go\");
-// Try false",
+  "js337InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst isReady = true;\nif (isReady) console.log(\"Go\");\n// Try false",
   "js337ExampleTitle": "Ejemplo",
   "js337ExampleCode1": "const isReady = true;",
   "js337ExampleCode2": "if (isReady) console.log(\"Go\");",
   "js337ExampleCode3": "// Try false",
-  "js337ExampleOutput": "Salida:
-Go",
+  "js337ExampleOutput": "Salida:\nGo",
   "js337EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js337HintTitle1": "Pista 1 💡",
   "js337HintContent1": "Sigue el patrón del ejemplo.",
   "js337HintTitle2": "Pista 2 🧩",
   "js337HintContent2": "Recuerda usar console.log para la salida.",
   "js337SolutionTitle": "Solución ✅",
-  "js337SolutionContent": "Una posible solución es:
-
-const isReady = true;
-if (isReady) console.log(\"Go\");
-// Try false",
+  "js337SolutionContent": "Una posible solución es:\n\nconst isReady = true;\nif (isReady) console.log(\"Go\");\n// Try false",
   "js338InstructionsTitle": "Misión 338 🚀",
-  "js338InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const role = \"guest\";
-if (role !== \"admin\") console.log(\"Limited\");
-// Try admin",
+  "js338InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst role = \"guest\";\nif (role !== \"admin\") console.log(\"Limited\");\n// Try admin",
   "js338ExampleTitle": "Ejemplo",
   "js338ExampleCode1": "const role = \"guest\";",
   "js338ExampleCode2": "if (role !== \"admin\") console.log(\"Limited\");",
   "js338ExampleCode3": "// Try admin",
-  "js338ExampleOutput": "Salida:
-Limited",
+  "js338ExampleOutput": "Salida:\nLimited",
   "js338EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js338HintTitle1": "Pista 1 💡",
   "js338HintContent1": "Sigue el patrón del ejemplo.",
   "js338HintTitle2": "Pista 2 🧩",
   "js338HintContent2": "Recuerda usar console.log para la salida.",
   "js338SolutionTitle": "Solución ✅",
-  "js338SolutionContent": "Una posible solución es:
-
-const role = \"guest\";
-if (role !== \"admin\") console.log(\"Limited\");
-// Try admin",
+  "js338SolutionContent": "Una posible solución es:\n\nconst role = \"guest\";\nif (role !== \"admin\") console.log(\"Limited\");\n// Try admin",
   "js339InstructionsTitle": "Misión 339 🚀",
-  "js339InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const name = \"Ana\";
-if (name.length < 5) console.log(\"Short\");
-// Try another name",
+  "js339InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst name = \"Ana\";\nif (name.length < 5) console.log(\"Short\");\n// Try another name",
   "js339ExampleTitle": "Ejemplo",
   "js339ExampleCode1": "const name = \"Ana\";",
   "js339ExampleCode2": "if (name.length < 5) console.log(\"Short\");",
   "js339ExampleCode3": "// Try another name",
-  "js339ExampleOutput": "Salida:
-Short",
+  "js339ExampleOutput": "Salida:\nShort",
   "js339EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js339HintTitle1": "Pista 1 💡",
   "js339HintContent1": "Sigue el patrón del ejemplo.",
   "js339HintTitle2": "Pista 2 🧩",
   "js339HintContent2": "Recuerda usar console.log para la salida.",
   "js339SolutionTitle": "Solución ✅",
-  "js339SolutionContent": "Una posible solución es:
-
-const name = \"Ana\";
-if (name.length < 5) console.log(\"Short\");
-// Try another name",
+  "js339SolutionContent": "Una posible solución es:\n\nconst name = \"Ana\";\nif (name.length < 5) console.log(\"Short\");\n// Try another name",
   "js340InstructionsTitle": "Misión 340 🚀",
-  "js340InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const temp = 22;
-if (temp >= 18 && temp <= 26) console.log(\"Ok\");
-// Range check",
+  "js340InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst temp = 22;\nif (temp >= 18 && temp <= 26) console.log(\"Ok\");\n// Range check",
   "js340ExampleTitle": "Ejemplo",
   "js340ExampleCode1": "const temp = 22;",
   "js340ExampleCode2": "if (temp >= 18 && temp <= 26) console.log(\"Ok\");",
   "js340ExampleCode3": "// Range check",
-  "js340ExampleOutput": "Salida:
-Ok",
+  "js340ExampleOutput": "Salida:\nOk",
   "js340EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js340HintTitle1": "Pista 1 💡",
   "js340HintContent1": "Sigue el patrón del ejemplo.",
   "js340HintTitle2": "Pista 2 🧩",
   "js340HintContent2": "Recuerda usar console.log para la salida.",
   "js340SolutionTitle": "Solución ✅",
-  "js340SolutionContent": "Una posible solución es:
-
-const temp = 22;
-if (temp >= 18 && temp <= 26) console.log(\"Ok\");
-// Range check",
+  "js340SolutionContent": "Una posible solución es:\n\nconst temp = 22;\nif (temp >= 18 && temp <= 26) console.log(\"Ok\");\n// Range check",
   "js341InstructionsTitle": "Misión 341 🚀",
-  "js341InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const n = 4;
-if (n % 2 === 0) console.log(\"Even\");
-else console.log(\"Odd\");",
+  "js341InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst n = 4;\nif (n % 2 === 0) console.log(\"Even\");\nelse console.log(\"Odd\");",
   "js341ExampleTitle": "Ejemplo",
   "js341ExampleCode1": "const n = 4;",
   "js341ExampleCode2": "if (n % 2 === 0) console.log(\"Even\");",
   "js341ExampleCode3": "else console.log(\"Odd\");",
-  "js341ExampleOutput": "Salida:
-Even",
+  "js341ExampleOutput": "Salida:\nEven",
   "js341EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js341HintTitle1": "Pista 1 💡",
   "js341HintContent1": "Sigue el patrón del ejemplo.",
   "js341HintTitle2": "Pista 2 🧩",
   "js341HintContent2": "Recuerda usar console.log para la salida.",
   "js341SolutionTitle": "Solución ✅",
-  "js341SolutionContent": "Una posible solución es:
-
-const n = 4;
-if (n % 2 === 0) console.log(\"Even\");
-else console.log(\"Odd\");",
+  "js341SolutionContent": "Una posible solución es:\n\nconst n = 4;\nif (n % 2 === 0) console.log(\"Even\");\nelse console.log(\"Odd\");",
   "js342InstructionsTitle": "Misión 342 🚀",
-  "js342InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const age = 16;
-const hasPass = true;
-if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst age = 16;\nconst hasPass = true;\nif (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
   "js342ExampleTitle": "Ejemplo",
   "js342ExampleCode1": "const age = 16;",
   "js342ExampleCode2": "const hasPass = true;",
   "js342ExampleCode3": "if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
-  "js342ExampleOutput": "Salida:
-No",
+  "js342ExampleOutput": "Salida:\nNo",
   "js342EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js342HintTitle1": "Pista 1 💡",
   "js342HintContent1": "Sigue el patrón del ejemplo.",
   "js342HintTitle2": "Pista 2 🧩",
   "js342HintContent2": "Recuerda usar console.log para la salida.",
   "js342SolutionTitle": "Solución ✅",
-  "js342SolutionContent": "Una posible solución es:
-
-const age = 16;
-const hasPass = true;
-if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342SolutionContent": "Una posible solución es:\n\nconst age = 16;\nconst hasPass = true;\nif (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
   "js343InstructionsTitle": "Misión 343 🚀",
-  "js343InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const name = \"\";
-if (name) console.log(\"Hi\");
-else console.log(\"Empty\");",
+  "js343InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst name = \"\";\nif (name) console.log(\"Hi\");\nelse console.log(\"Empty\");",
   "js343ExampleTitle": "Ejemplo",
   "js343ExampleCode1": "const name = \"\";",
   "js343ExampleCode2": "if (name) console.log(\"Hi\");",
   "js343ExampleCode3": "else console.log(\"Empty\");",
-  "js343ExampleOutput": "Salida:
-Empty",
+  "js343ExampleOutput": "Salida:\nEmpty",
   "js343EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js343HintTitle1": "Pista 1 💡",
   "js343HintContent1": "Sigue el patrón del ejemplo.",
   "js343HintTitle2": "Pista 2 🧩",
   "js343HintContent2": "Recuerda usar console.log para la salida.",
   "js343SolutionTitle": "Solución ✅",
-  "js343SolutionContent": "Una posible solución es:
-
-const name = \"\";
-if (name) console.log(\"Hi\");
-else console.log(\"Empty\");",
+  "js343SolutionContent": "Una posible solución es:\n\nconst name = \"\";\nif (name) console.log(\"Hi\");\nelse console.log(\"Empty\");",
   "js344InstructionsTitle": "Misión 344 🚀",
-  "js344InstructionsContent": "Practica condiciones con if y else.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const hour = 9;
-if (hour >= 6 && hour <= 12) console.log(\"Morning\");
-// Use a range",
+  "js344InstructionsContent": "Practica condiciones con if y else.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst hour = 9;\nif (hour >= 6 && hour <= 12) console.log(\"Morning\");\n// Use a range",
   "js344ExampleTitle": "Ejemplo",
   "js344ExampleCode1": "const hour = 9;",
   "js344ExampleCode2": "if (hour >= 6 && hour <= 12) console.log(\"Morning\");",
   "js344ExampleCode3": "// Use a range",
-  "js344ExampleOutput": "Salida:
-Morning",
+  "js344ExampleOutput": "Salida:\nMorning",
   "js344EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js344HintTitle1": "Pista 1 💡",
   "js344HintContent1": "Sigue el patrón del ejemplo.",
   "js344HintTitle2": "Pista 2 🧩",
   "js344HintContent2": "Recuerda usar console.log para la salida.",
   "js344SolutionTitle": "Solución ✅",
-  "js344SolutionContent": "Una posible solución es:
-
-const hour = 9;
-if (hour >= 6 && hour <= 12) console.log(\"Morning\");
-// Use a range",
+  "js344SolutionContent": "Una posible solución es:\n\nconst hour = 9;\nif (hour >= 6 && hour <= 12) console.log(\"Morning\");\n// Use a range",
   "js345InstructionsTitle": "Misión 345 🚀",
-  "js345InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const day = 1;
-switch (day)
-case 1: console.log(\"Mon\"); break;",
+  "js345InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst day = 1;\nswitch (day)\ncase 1: console.log(\"Mon\"); break;",
   "js345ExampleTitle": "Ejemplo",
   "js345ExampleCode1": "const day = 1;",
   "js345ExampleCode2": "switch (day)",
   "js345ExampleCode3": "case 1: console.log(\"Mon\"); break;",
-  "js345ExampleOutput": "Salida:
-Mon",
+  "js345ExampleOutput": "Salida:\nMon",
   "js345EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js345HintTitle1": "Pista 1 💡",
   "js345HintContent1": "Sigue el patrón del ejemplo.",
   "js345HintTitle2": "Pista 2 🧩",
   "js345HintContent2": "Recuerda usar console.log para la salida.",
   "js345SolutionTitle": "Solución ✅",
-  "js345SolutionContent": "Una posible solución es:
-
-const day = 1;
-switch (day)
-case 1: console.log(\"Mon\"); break;",
+  "js345SolutionContent": "Una posible solución es:\n\nconst day = 1;\nswitch (day)\ncase 1: console.log(\"Mon\"); break;",
   "js346InstructionsTitle": "Misión 346 🚀",
-  "js346InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const n = 2;
-switch (n)
-case 2: console.log(\"Two\"); break;",
+  "js346InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst n = 2;\nswitch (n)\ncase 2: console.log(\"Two\"); break;",
   "js346ExampleTitle": "Ejemplo",
   "js346ExampleCode1": "const n = 2;",
   "js346ExampleCode2": "switch (n)",
   "js346ExampleCode3": "case 2: console.log(\"Two\"); break;",
-  "js346ExampleOutput": "Salida:
-Two",
+  "js346ExampleOutput": "Salida:\nTwo",
   "js346EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js346HintTitle1": "Pista 1 💡",
   "js346HintContent1": "Sigue el patrón del ejemplo.",
   "js346HintTitle2": "Pista 2 🧩",
   "js346HintContent2": "Recuerda usar console.log para la salida.",
   "js346SolutionTitle": "Solución ✅",
-  "js346SolutionContent": "Una posible solución es:
-
-const n = 2;
-switch (n)
-case 2: console.log(\"Two\"); break;",
+  "js346SolutionContent": "Una posible solución es:\n\nconst n = 2;\nswitch (n)\ncase 2: console.log(\"Two\"); break;",
   "js347InstructionsTitle": "Misión 347 🚀",
-  "js347InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const day = 9;
-switch (day)
-default: console.log(\"Other\");",
+  "js347InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst day = 9;\nswitch (day)\ndefault: console.log(\"Other\");",
   "js347ExampleTitle": "Ejemplo",
   "js347ExampleCode1": "const day = 9;",
   "js347ExampleCode2": "switch (day)",
   "js347ExampleCode3": "default: console.log(\"Other\");",
-  "js347ExampleOutput": "Salida:
-Other",
+  "js347ExampleOutput": "Salida:\nOther",
   "js347EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js347HintTitle1": "Pista 1 💡",
   "js347HintContent1": "Sigue el patrón del ejemplo.",
   "js347HintTitle2": "Pista 2 🧩",
   "js347HintContent2": "Recuerda usar console.log para la salida.",
   "js347SolutionTitle": "Solución ✅",
-  "js347SolutionContent": "Una posible solución es:
-
-const day = 9;
-switch (day)
-default: console.log(\"Other\");",
+  "js347SolutionContent": "Una posible solución es:\n\nconst day = 9;\nswitch (day)\ndefault: console.log(\"Other\");",
   "js348InstructionsTitle": "Misión 348 🚀",
-  "js348InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const color = \"red\";
-switch (color)
-case \"red\": console.log(\"Stop\"); break;",
+  "js348InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst color = \"red\";\nswitch (color)\ncase \"red\": console.log(\"Stop\"); break;",
   "js348ExampleTitle": "Ejemplo",
   "js348ExampleCode1": "const color = \"red\";",
   "js348ExampleCode2": "switch (color)",
   "js348ExampleCode3": "case \"red\": console.log(\"Stop\"); break;",
-  "js348ExampleOutput": "Salida:
-Stop",
+  "js348ExampleOutput": "Salida:\nStop",
   "js348EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js348HintTitle1": "Pista 1 💡",
   "js348HintContent1": "Sigue el patrón del ejemplo.",
   "js348HintTitle2": "Pista 2 🧩",
   "js348HintContent2": "Recuerda usar console.log para la salida.",
   "js348SolutionTitle": "Solución ✅",
-  "js348SolutionContent": "Una posible solución es:
-
-const color = \"red\";
-switch (color)
-case \"red\": console.log(\"Stop\"); break;",
+  "js348SolutionContent": "Una posible solución es:\n\nconst color = \"red\";\nswitch (color)\ncase \"red\": console.log(\"Stop\"); break;",
   "js349InstructionsTitle": "Misión 349 🚀",
-  "js349InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const level = 3;
-switch (level)
-case 3: console.log(\"Pro\"); break;",
+  "js349InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst level = 3;\nswitch (level)\ncase 3: console.log(\"Pro\"); break;",
   "js349ExampleTitle": "Ejemplo",
   "js349ExampleCode1": "const level = 3;",
   "js349ExampleCode2": "switch (level)",
   "js349ExampleCode3": "case 3: console.log(\"Pro\"); break;",
-  "js349ExampleOutput": "Salida:
-Pro",
+  "js349ExampleOutput": "Salida:\nPro",
   "js349EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js349HintTitle1": "Pista 1 💡",
   "js349HintContent1": "Sigue el patrón del ejemplo.",
   "js349HintTitle2": "Pista 2 🧩",
   "js349HintContent2": "Recuerda usar console.log para la salida.",
   "js349SolutionTitle": "Solución ✅",
-  "js349SolutionContent": "Una posible solución es:
-
-const level = 3;
-switch (level)
-case 3: console.log(\"Pro\"); break;",
+  "js349SolutionContent": "Una posible solución es:\n\nconst level = 3;\nswitch (level)\ncase 3: console.log(\"Pro\"); break;",
   "js350InstructionsTitle": "Misión 350 🚀",
-  "js350InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const ready = true;
-switch (ready)
-case true: console.log(\"Go\"); break;",
+  "js350InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst ready = true;\nswitch (ready)\ncase true: console.log(\"Go\"); break;",
   "js350ExampleTitle": "Ejemplo",
   "js350ExampleCode1": "const ready = true;",
   "js350ExampleCode2": "switch (ready)",
   "js350ExampleCode3": "case true: console.log(\"Go\"); break;",
-  "js350ExampleOutput": "Salida:
-Go",
+  "js350ExampleOutput": "Salida:\nGo",
   "js350EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js350HintTitle1": "Pista 1 💡",
   "js350HintContent1": "Sigue el patrón del ejemplo.",
   "js350HintTitle2": "Pista 2 🧩",
   "js350HintContent2": "Recuerda usar console.log para la salida.",
   "js350SolutionTitle": "Solución ✅",
-  "js350SolutionContent": "Una posible solución es:
-
-const ready = true;
-switch (ready)
-case true: console.log(\"Go\"); break;",
+  "js350SolutionContent": "Una posible solución es:\n\nconst ready = true;\nswitch (ready)\ncase true: console.log(\"Go\"); break;",
   "js351InstructionsTitle": "Misión 351 🚀",
-  "js351InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const grade = \"B\";
-switch (grade)
-case \"B\": console.log(\"Good\"); break;",
+  "js351InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst grade = \"B\";\nswitch (grade)\ncase \"B\": console.log(\"Good\"); break;",
   "js351ExampleTitle": "Ejemplo",
   "js351ExampleCode1": "const grade = \"B\";",
   "js351ExampleCode2": "switch (grade)",
   "js351ExampleCode3": "case \"B\": console.log(\"Good\"); break;",
-  "js351ExampleOutput": "Salida:
-Good",
+  "js351ExampleOutput": "Salida:\nGood",
   "js351EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js351HintTitle1": "Pista 1 💡",
   "js351HintContent1": "Sigue el patrón del ejemplo.",
   "js351HintTitle2": "Pista 2 🧩",
   "js351HintContent2": "Recuerda usar console.log para la salida.",
   "js351SolutionTitle": "Solución ✅",
-  "js351SolutionContent": "Una posible solución es:
-
-const grade = \"B\";
-switch (grade)
-case \"B\": console.log(\"Good\"); break;",
+  "js351SolutionContent": "Una posible solución es:\n\nconst grade = \"B\";\nswitch (grade)\ncase \"B\": console.log(\"Good\"); break;",
   "js352InstructionsTitle": "Misión 352 🚀",
-  "js352InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const n = 1;
-switch (n)
-case 1: case 2: console.log(\"Small\"); break;",
+  "js352InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst n = 1;\nswitch (n)\ncase 1: case 2: console.log(\"Small\"); break;",
   "js352ExampleTitle": "Ejemplo",
   "js352ExampleCode1": "const n = 1;",
   "js352ExampleCode2": "switch (n)",
   "js352ExampleCode3": "case 1: case 2: console.log(\"Small\"); break;",
-  "js352ExampleOutput": "Salida:
-Small",
+  "js352ExampleOutput": "Salida:\nSmall",
   "js352EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js352HintTitle1": "Pista 1 💡",
   "js352HintContent1": "Sigue el patrón del ejemplo.",
   "js352HintTitle2": "Pista 2 🧩",
   "js352HintContent2": "Recuerda usar console.log para la salida.",
   "js352SolutionTitle": "Solución ✅",
-  "js352SolutionContent": "Una posible solución es:
-
-const n = 1;
-switch (n)
-case 1: case 2: console.log(\"Small\"); break;",
+  "js352SolutionContent": "Una posible solución es:\n\nconst n = 1;\nswitch (n)\ncase 1: case 2: console.log(\"Small\"); break;",
   "js353InstructionsTitle": "Misión 353 🚀",
-  "js353InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const month = 12;
-switch (month)
-case 12: console.log(\"Dec\"); break;",
+  "js353InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst month = 12;\nswitch (month)\ncase 12: console.log(\"Dec\"); break;",
   "js353ExampleTitle": "Ejemplo",
   "js353ExampleCode1": "const month = 12;",
   "js353ExampleCode2": "switch (month)",
   "js353ExampleCode3": "case 12: console.log(\"Dec\"); break;",
-  "js353ExampleOutput": "Salida:
-Dec",
+  "js353ExampleOutput": "Salida:\nDec",
   "js353EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js353HintTitle1": "Pista 1 💡",
   "js353HintContent1": "Sigue el patrón del ejemplo.",
   "js353HintTitle2": "Pista 2 🧩",
   "js353HintContent2": "Recuerda usar console.log para la salida.",
   "js353SolutionTitle": "Solución ✅",
-  "js353SolutionContent": "Una posible solución es:
-
-const month = 12;
-switch (month)
-case 12: console.log(\"Dec\"); break;",
+  "js353SolutionContent": "Una posible solución es:\n\nconst month = 12;\nswitch (month)\ncase 12: console.log(\"Dec\"); break;",
   "js354InstructionsTitle": "Misión 354 🚀",
-  "js354InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const value = 3;
-switch (value)
-case 3: console.log(\"Three\"); break;",
+  "js354InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = 3;\nswitch (value)\ncase 3: console.log(\"Three\"); break;",
   "js354ExampleTitle": "Ejemplo",
   "js354ExampleCode1": "const value = 3;",
   "js354ExampleCode2": "switch (value)",
   "js354ExampleCode3": "case 3: console.log(\"Three\"); break;",
-  "js354ExampleOutput": "Salida:
-Three",
+  "js354ExampleOutput": "Salida:\nThree",
   "js354EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js354HintTitle1": "Pista 1 💡",
   "js354HintContent1": "Sigue el patrón del ejemplo.",
   "js354HintTitle2": "Pista 2 🧩",
   "js354HintContent2": "Recuerda usar console.log para la salida.",
   "js354SolutionTitle": "Solución ✅",
-  "js354SolutionContent": "Una posible solución es:
-
-const value = 3;
-switch (value)
-case 3: console.log(\"Three\"); break;",
+  "js354SolutionContent": "Una posible solución es:\n\nconst value = 3;\nswitch (value)\ncase 3: console.log(\"Three\"); break;",
   "js355InstructionsTitle": "Misión 355 🚀",
-  "js355InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const value = 2 + 2;
-switch (value)
-case 4: console.log(\"Four\"); break;",
+  "js355InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = 2 + 2;\nswitch (value)\ncase 4: console.log(\"Four\"); break;",
   "js355ExampleTitle": "Ejemplo",
   "js355ExampleCode1": "const value = 2 + 2;",
   "js355ExampleCode2": "switch (value)",
   "js355ExampleCode3": "case 4: console.log(\"Four\"); break;",
-  "js355ExampleOutput": "Salida:
-Four",
+  "js355ExampleOutput": "Salida:\nFour",
   "js355EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js355HintTitle1": "Pista 1 💡",
   "js355HintContent1": "Sigue el patrón del ejemplo.",
   "js355HintTitle2": "Pista 2 🧩",
   "js355HintContent2": "Recuerda usar console.log para la salida.",
   "js355SolutionTitle": "Solución ✅",
-  "js355SolutionContent": "Una posible solución es:
-
-const value = 2 + 2;
-switch (value)
-case 4: console.log(\"Four\"); break;",
+  "js355SolutionContent": "Una posible solución es:\n\nconst value = 2 + 2;\nswitch (value)\ncase 4: console.log(\"Four\"); break;",
   "js356InstructionsTitle": "Misión 356 🚀",
-  "js356InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const option = 1;
-switch (option)
-case 1: console.log(\"Play\"); break;",
+  "js356InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst option = 1;\nswitch (option)\ncase 1: console.log(\"Play\"); break;",
   "js356ExampleTitle": "Ejemplo",
   "js356ExampleCode1": "const option = 1;",
   "js356ExampleCode2": "switch (option)",
   "js356ExampleCode3": "case 1: console.log(\"Play\"); break;",
-  "js356ExampleOutput": "Salida:
-Play",
+  "js356ExampleOutput": "Salida:\nPlay",
   "js356EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js356HintTitle1": "Pista 1 💡",
   "js356HintContent1": "Sigue el patrón del ejemplo.",
   "js356HintTitle2": "Pista 2 🧩",
   "js356HintContent2": "Recuerda usar console.log para la salida.",
   "js356SolutionTitle": "Solución ✅",
-  "js356SolutionContent": "Una posible solución es:
-
-const option = 1;
-switch (option)
-case 1: console.log(\"Play\"); break;",
+  "js356SolutionContent": "Una posible solución es:\n\nconst option = 1;\nswitch (option)\ncase 1: console.log(\"Play\"); break;",
   "js357InstructionsTitle": "Misión 357 🚀",
-  "js357InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const light = \"green\";
-switch (light)
-case \"green\": console.log(\"Go\"); break;",
+  "js357InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst light = \"green\";\nswitch (light)\ncase \"green\": console.log(\"Go\"); break;",
   "js357ExampleTitle": "Ejemplo",
   "js357ExampleCode1": "const light = \"green\";",
   "js357ExampleCode2": "switch (light)",
   "js357ExampleCode3": "case \"green\": console.log(\"Go\"); break;",
-  "js357ExampleOutput": "Salida:
-Go",
+  "js357ExampleOutput": "Salida:\nGo",
   "js357EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js357HintTitle1": "Pista 1 💡",
   "js357HintContent1": "Sigue el patrón del ejemplo.",
   "js357HintTitle2": "Pista 2 🧩",
   "js357HintContent2": "Recuerda usar console.log para la salida.",
   "js357SolutionTitle": "Solución ✅",
-  "js357SolutionContent": "Una posible solución es:
-
-const light = \"green\";
-switch (light)
-case \"green\": console.log(\"Go\"); break;",
+  "js357SolutionContent": "Una posible solución es:\n\nconst light = \"green\";\nswitch (light)\ncase \"green\": console.log(\"Go\"); break;",
   "js358InstructionsTitle": "Misión 358 🚀",
-  "js358InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const code = 0;
-switch (code)
-default: console.log(\"Unknown\"); break;",
+  "js358InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst code = 0;\nswitch (code)\ndefault: console.log(\"Unknown\"); break;",
   "js358ExampleTitle": "Ejemplo",
   "js358ExampleCode1": "const code = 0;",
   "js358ExampleCode2": "switch (code)",
   "js358ExampleCode3": "default: console.log(\"Unknown\"); break;",
-  "js358ExampleOutput": "Salida:
-Unknown",
+  "js358ExampleOutput": "Salida:\nUnknown",
   "js358EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js358HintTitle1": "Pista 1 💡",
   "js358HintContent1": "Sigue el patrón del ejemplo.",
   "js358HintTitle2": "Pista 2 🧩",
   "js358HintContent2": "Recuerda usar console.log para la salida.",
   "js358SolutionTitle": "Solución ✅",
-  "js358SolutionContent": "Una posible solución es:
-
-const code = 0;
-switch (code)
-default: console.log(\"Unknown\"); break;",
+  "js358SolutionContent": "Una posible solución es:\n\nconst code = 0;\nswitch (code)\ndefault: console.log(\"Unknown\"); break;",
   "js359InstructionsTitle": "Misión 359 🚀",
-  "js359InstructionsContent": "Practica casos de switch y default.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const lang = \"es\";
-switch (lang)
-case \"es\": console.log(\"Hola\"); break;",
+  "js359InstructionsContent": "Practica casos de switch y default.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst lang = \"es\";\nswitch (lang)\ncase \"es\": console.log(\"Hola\"); break;",
   "js359ExampleTitle": "Ejemplo",
   "js359ExampleCode1": "const lang = \"es\";",
   "js359ExampleCode2": "switch (lang)",
   "js359ExampleCode3": "case \"es\": console.log(\"Hola\"); break;",
-  "js359ExampleOutput": "Salida:
-Hola",
+  "js359ExampleOutput": "Salida:\nHola",
   "js359EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js359HintTitle1": "Pista 1 💡",
   "js359HintContent1": "Sigue el patrón del ejemplo.",
   "js359HintTitle2": "Pista 2 🧩",
   "js359HintContent2": "Recuerda usar console.log para la salida.",
   "js359SolutionTitle": "Solución ✅",
-  "js359SolutionContent": "Una posible solución es:
-
-const lang = \"es\";
-switch (lang)
-case \"es\": console.log(\"Hola\"); break;",
+  "js359SolutionContent": "Una posible solución es:\n\nconst lang = \"es\";\nswitch (lang)\ncase \"es\": console.log(\"Hola\"); break;",
   "js360InstructionsTitle": "Misión 360 🚀",
-  "js360InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 1; i <= 3; i++) console.log(i);
-// Loop 1 to 3
-// Try 1 to 5",
+  "js360InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 1; i <= 3; i++) console.log(i);\n// Loop 1 to 3\n// Try 1 to 5",
   "js360ExampleTitle": "Ejemplo",
   "js360ExampleCode1": "for (let i = 1; i <= 3; i++) console.log(i);",
   "js360ExampleCode2": "// Loop 1 to 3",
   "js360ExampleCode3": "// Try 1 to 5",
-  "js360ExampleOutput": "Salida:
-1
-2
-3",
+  "js360ExampleOutput": "Salida:\n1\n2\n3",
   "js360EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js360HintTitle1": "Pista 1 💡",
   "js360HintContent1": "Sigue el patrón del ejemplo.",
   "js360HintTitle2": "Pista 2 🧩",
   "js360HintContent2": "Recuerda usar console.log para la salida.",
   "js360SolutionTitle": "Solución ✅",
-  "js360SolutionContent": "Una posible solución es:
-
-for (let i = 1; i <= 3; i++) console.log(i);
-// Loop 1 to 3
-// Try 1 to 5",
+  "js360SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 3; i++) console.log(i);\n// Loop 1 to 3\n// Try 1 to 5",
   "js361InstructionsTitle": "Misión 361 🚀",
-  "js361InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-let sum = 0;
-for (let i = 1; i <= 3; i++) sum += i;
-console.log(sum);",
+  "js361InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) sum += i;\nconsole.log(sum);",
   "js361ExampleTitle": "Ejemplo",
   "js361ExampleCode1": "let sum = 0;",
   "js361ExampleCode2": "for (let i = 1; i <= 3; i++) sum += i;",
   "js361ExampleCode3": "console.log(sum);",
-  "js361ExampleOutput": "Salida:
-6",
+  "js361ExampleOutput": "Salida:\n6",
   "js361EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js361HintTitle1": "Pista 1 💡",
   "js361HintContent1": "Sigue el patrón del ejemplo.",
   "js361HintTitle2": "Pista 2 🧩",
   "js361HintContent2": "Recuerda usar console.log para la salida.",
   "js361SolutionTitle": "Solución ✅",
-  "js361SolutionContent": "Una posible solución es:
-
-let sum = 0;
-for (let i = 1; i <= 3; i++) sum += i;
-console.log(sum);",
+  "js361SolutionContent": "Una posible solución es:\n\nlet sum = 0;\nfor (let i = 1; i <= 3; i++) sum += i;\nconsole.log(sum);",
   "js362InstructionsTitle": "Misión 362 🚀",
-  "js362InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-let i = 1;
-while (i <= 3) console.log(i), i++;
-// Print 1 to 3",
+  "js362InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet i = 1;\nwhile (i <= 3) console.log(i), i++;\n// Print 1 to 3",
   "js362ExampleTitle": "Ejemplo",
   "js362ExampleCode1": "let i = 1;",
   "js362ExampleCode2": "while (i <= 3) console.log(i), i++;",
   "js362ExampleCode3": "// Print 1 to 3",
-  "js362ExampleOutput": "Salida:
-1
-2
-3",
+  "js362ExampleOutput": "Salida:\n1\n2\n3",
   "js362EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js362HintTitle1": "Pista 1 💡",
   "js362HintContent1": "Sigue el patrón del ejemplo.",
   "js362HintTitle2": "Pista 2 🧩",
   "js362HintContent2": "Recuerda usar console.log para la salida.",
   "js362SolutionTitle": "Solución ✅",
-  "js362SolutionContent": "Una posible solución es:
-
-let i = 1;
-while (i <= 3) console.log(i), i++;
-// Print 1 to 3",
+  "js362SolutionContent": "Una posible solución es:\n\nlet i = 1;\nwhile (i <= 3) console.log(i), i++;\n// Print 1 to 3",
   "js363InstructionsTitle": "Misión 363 🚀",
-  "js363InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-let n = 0;
-do console.log(n); while (n++ < 1);
-// Runs at least once",
+  "js363InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet n = 0;\ndo console.log(n); while (n++ < 1);\n// Runs at least once",
   "js363ExampleTitle": "Ejemplo",
   "js363ExampleCode1": "let n = 0;",
   "js363ExampleCode2": "do console.log(n); while (n++ < 1);",
   "js363ExampleCode3": "// Runs at least once",
-  "js363ExampleOutput": "Salida:
-0
-1",
+  "js363ExampleOutput": "Salida:\n0\n1",
   "js363EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js363HintTitle1": "Pista 1 💡",
   "js363HintContent1": "Sigue el patrón del ejemplo.",
   "js363HintTitle2": "Pista 2 🧩",
   "js363HintContent2": "Recuerda usar console.log para la salida.",
   "js363SolutionTitle": "Solución ✅",
-  "js363SolutionContent": "Una posible solución es:
-
-let n = 0;
-do console.log(n); while (n++ < 1);
-// Runs at least once",
+  "js363SolutionContent": "Una posible solución es:\n\nlet n = 0;\ndo console.log(n); while (n++ < 1);\n// Runs at least once",
   "js364InstructionsTitle": "Misión 364 🚀",
-  "js364InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-for (const n of nums) console.log(n);
-// Iterate values",
+  "js364InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nfor (const n of nums) console.log(n);\n// Iterate values",
   "js364ExampleTitle": "Ejemplo",
   "js364ExampleCode1": "const nums = [1, 2, 3];",
   "js364ExampleCode2": "for (const n of nums) console.log(n);",
   "js364ExampleCode3": "// Iterate values",
-  "js364ExampleOutput": "Salida:
-1
-2
-3",
+  "js364ExampleOutput": "Salida:\n1\n2\n3",
   "js364EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js364HintTitle1": "Pista 1 💡",
   "js364HintContent1": "Sigue el patrón del ejemplo.",
   "js364HintTitle2": "Pista 2 🧩",
   "js364HintContent2": "Recuerda usar console.log para la salida.",
   "js364SolutionTitle": "Solución ✅",
-  "js364SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-for (const n of nums) console.log(n);
-// Iterate values",
+  "js364SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nfor (const n of nums) console.log(n);\n// Iterate values",
   "js365InstructionsTitle": "Misión 365 🚀",
-  "js365InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [10, 20];
-for (const i in nums) console.log(i);
-// Iterate indexes",
+  "js365InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [10, 20];\nfor (const i in nums) console.log(i);\n// Iterate indexes",
   "js365ExampleTitle": "Ejemplo",
   "js365ExampleCode1": "const nums = [10, 20];",
   "js365ExampleCode2": "for (const i in nums) console.log(i);",
   "js365ExampleCode3": "// Iterate indexes",
-  "js365ExampleOutput": "Salida:
-0
-1",
+  "js365ExampleOutput": "Salida:\n0\n1",
   "js365EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js365HintTitle1": "Pista 1 💡",
   "js365HintContent1": "Sigue el patrón del ejemplo.",
   "js365HintTitle2": "Pista 2 🧩",
   "js365HintContent2": "Recuerda usar console.log para la salida.",
   "js365SolutionTitle": "Solución ✅",
-  "js365SolutionContent": "Una posible solución es:
-
-const nums = [10, 20];
-for (const i in nums) console.log(i);
-// Iterate indexes",
+  "js365SolutionContent": "Una posible solución es:\n\nconst nums = [10, 20];\nfor (const i in nums) console.log(i);\n// Iterate indexes",
   "js366InstructionsTitle": "Misión 366 🚀",
-  "js366InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 1; i <= 5; i++)
-if (i === 3) break; else console.log(i);
-// Stops early",
+  "js366InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 1; i <= 5; i++)\nif (i === 3) break; else console.log(i);\n// Stops early",
   "js366ExampleTitle": "Ejemplo",
   "js366ExampleCode1": "for (let i = 1; i <= 5; i++)",
   "js366ExampleCode2": "if (i === 3) break; else console.log(i);",
   "js366ExampleCode3": "// Stops early",
-  "js366ExampleOutput": "Salida:
-1
-2",
+  "js366ExampleOutput": "Salida:\n1\n2",
   "js366EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js366HintTitle1": "Pista 1 💡",
   "js366HintContent1": "Sigue el patrón del ejemplo.",
   "js366HintTitle2": "Pista 2 🧩",
   "js366HintContent2": "Recuerda usar console.log para la salida.",
   "js366SolutionTitle": "Solución ✅",
-  "js366SolutionContent": "Una posible solución es:
-
-for (let i = 1; i <= 5; i++)
-if (i === 3) break; else console.log(i);
-// Stops early",
+  "js366SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 5; i++)\nif (i === 3) break; else console.log(i);\n// Stops early",
   "js367InstructionsTitle": "Misión 367 🚀",
-  "js367InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 1; i <= 3; i++)
-if (i === 2) continue; else console.log(i);
-// Skips 2",
+  "js367InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 1; i <= 3; i++)\nif (i === 2) continue; else console.log(i);\n// Skips 2",
   "js367ExampleTitle": "Ejemplo",
   "js367ExampleCode1": "for (let i = 1; i <= 3; i++)",
   "js367ExampleCode2": "if (i === 2) continue; else console.log(i);",
   "js367ExampleCode3": "// Skips 2",
-  "js367ExampleOutput": "Salida:
-1
-3",
+  "js367ExampleOutput": "Salida:\n1\n3",
   "js367EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js367HintTitle1": "Pista 1 💡",
   "js367HintContent1": "Sigue el patrón del ejemplo.",
   "js367HintTitle2": "Pista 2 🧩",
   "js367HintContent2": "Recuerda usar console.log para la salida.",
   "js367SolutionTitle": "Solución ✅",
-  "js367SolutionContent": "Una posible solución es:
-
-for (let i = 1; i <= 3; i++)
-if (i === 2) continue; else console.log(i);
-// Skips 2",
+  "js367SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 3; i++)\nif (i === 2) continue; else console.log(i);\n// Skips 2",
   "js368InstructionsTitle": "Misión 368 🚀",
-  "js368InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 1; i <= 2; i++)
-for (let j = 1; j <= 2; j++) console.log(i + j);
-// Nested loop",
+  "js368InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 1; i <= 2; i++)\nfor (let j = 1; j <= 2; j++) console.log(i + j);\n// Nested loop",
   "js368ExampleTitle": "Ejemplo",
   "js368ExampleCode1": "for (let i = 1; i <= 2; i++)",
   "js368ExampleCode2": "for (let j = 1; j <= 2; j++) console.log(i + j);",
   "js368ExampleCode3": "// Nested loop",
-  "js368ExampleOutput": "Salida:
-2
-3
-3
-4",
+  "js368ExampleOutput": "Salida:\n2\n3\n3\n4",
   "js368EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js368HintTitle1": "Pista 1 💡",
   "js368HintContent1": "Sigue el patrón del ejemplo.",
   "js368HintTitle2": "Pista 2 🧩",
   "js368HintContent2": "Recuerda usar console.log para la salida.",
   "js368SolutionTitle": "Solución ✅",
-  "js368SolutionContent": "Una posible solución es:
-
-for (let i = 1; i <= 2; i++)
-for (let j = 1; j <= 2; j++) console.log(i + j);
-// Nested loop",
+  "js368SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 2; i++)\nfor (let j = 1; j <= 2; j++) console.log(i + j);\n// Nested loop",
   "js369InstructionsTitle": "Misión 369 🚀",
-  "js369InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 3; i >= 1; i--) console.log(i);
-// Countdown
-// Try other start",
+  "js369InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 3; i >= 1; i--) console.log(i);\n// Countdown\n// Try other start",
   "js369ExampleTitle": "Ejemplo",
   "js369ExampleCode1": "for (let i = 3; i >= 1; i--) console.log(i);",
   "js369ExampleCode2": "// Countdown",
   "js369ExampleCode3": "// Try other start",
-  "js369ExampleOutput": "Salida:
-3
-2
-1",
+  "js369ExampleOutput": "Salida:\n3\n2\n1",
   "js369EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js369HintTitle1": "Pista 1 💡",
   "js369HintContent1": "Sigue el patrón del ejemplo.",
   "js369HintTitle2": "Pista 2 🧩",
   "js369HintContent2": "Recuerda usar console.log para la salida.",
   "js369SolutionTitle": "Solución ✅",
-  "js369SolutionContent": "Una posible solución es:
-
-for (let i = 3; i >= 1; i--) console.log(i);
-// Countdown
-// Try other start",
+  "js369SolutionContent": "Una posible solución es:\n\nfor (let i = 3; i >= 1; i--) console.log(i);\n// Countdown\n// Try other start",
   "js370InstructionsTitle": "Misión 370 🚀",
-  "js370InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-for (let i = 0; i < nums.length; i++) console.log(nums[i]);
-// Use length",
+  "js370InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nfor (let i = 0; i < nums.length; i++) console.log(nums[i]);\n// Use length",
   "js370ExampleTitle": "Ejemplo",
   "js370ExampleCode1": "const nums = [1, 2, 3];",
   "js370ExampleCode2": "for (let i = 0; i < nums.length; i++) console.log(nums[i]);",
   "js370ExampleCode3": "// Use length",
-  "js370ExampleOutput": "Salida:
-1
-2
-3",
+  "js370ExampleOutput": "Salida:\n1\n2\n3",
   "js370EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js370HintTitle1": "Pista 1 💡",
   "js370HintContent1": "Sigue el patrón del ejemplo.",
   "js370HintTitle2": "Pista 2 🧩",
   "js370HintContent2": "Recuerda usar console.log para la salida.",
   "js370SolutionTitle": "Solución ✅",
-  "js370SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-for (let i = 0; i < nums.length; i++) console.log(nums[i]);
-// Use length",
+  "js370SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nfor (let i = 0; i < nums.length; i++) console.log(nums[i]);\n// Use length",
   "js371InstructionsTitle": "Misión 371 🚀",
-  "js371InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-for (let i = 1; i <= 6; i++)
-if (i % 2 === 0) console.log(i);
-// Print evens",
+  "js371InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfor (let i = 1; i <= 6; i++)\nif (i % 2 === 0) console.log(i);\n// Print evens",
   "js371ExampleTitle": "Ejemplo",
   "js371ExampleCode1": "for (let i = 1; i <= 6; i++)",
   "js371ExampleCode2": "if (i % 2 === 0) console.log(i);",
   "js371ExampleCode3": "// Print evens",
-  "js371ExampleOutput": "Salida:
-2
-4
-6",
+  "js371ExampleOutput": "Salida:\n2\n4\n6",
   "js371EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js371HintTitle1": "Pista 1 💡",
   "js371HintContent1": "Sigue el patrón del ejemplo.",
   "js371HintTitle2": "Pista 2 🧩",
   "js371HintContent2": "Recuerda usar console.log para la salida.",
   "js371SolutionTitle": "Solución ✅",
-  "js371SolutionContent": "Una posible solución es:
-
-for (let i = 1; i <= 6; i++)
-if (i % 2 === 0) console.log(i);
-// Print evens",
+  "js371SolutionContent": "Una posible solución es:\n\nfor (let i = 1; i <= 6; i++)\nif (i % 2 === 0) console.log(i);\n// Print evens",
   "js372InstructionsTitle": "Misión 372 🚀",
-  "js372InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-let i = 3;
-while (i >= 1) console.log(i), i--;
-// Countdown",
+  "js372InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet i = 3;\nwhile (i >= 1) console.log(i), i--;\n// Countdown",
   "js372ExampleTitle": "Ejemplo",
   "js372ExampleCode1": "let i = 3;",
   "js372ExampleCode2": "while (i >= 1) console.log(i), i--;",
   "js372ExampleCode3": "// Countdown",
-  "js372ExampleOutput": "Salida:
-3
-2
-1",
+  "js372ExampleOutput": "Salida:\n3\n2\n1",
   "js372EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js372HintTitle1": "Pista 1 💡",
   "js372HintContent1": "Sigue el patrón del ejemplo.",
   "js372HintTitle2": "Pista 2 🧩",
   "js372HintContent2": "Recuerda usar console.log para la salida.",
   "js372SolutionTitle": "Solución ✅",
-  "js372SolutionContent": "Una posible solución es:
-
-let i = 3;
-while (i >= 1) console.log(i), i--;
-// Countdown",
+  "js372SolutionContent": "Una posible solución es:\n\nlet i = 3;\nwhile (i >= 1) console.log(i), i--;\n// Countdown",
   "js373InstructionsTitle": "Misión 373 🚀",
-  "js373InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-let text = \"\";
-for (let i = 0; i < 3; i++) text += \"*\";
-console.log(text);",
+  "js373InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet text = \"\";\nfor (let i = 0; i < 3; i++) text += \"*\";\nconsole.log(text);",
   "js373ExampleTitle": "Ejemplo",
   "js373ExampleCode1": "let text = \"\";",
   "js373ExampleCode2": "for (let i = 0; i < 3; i++) text += \"*\";",
   "js373ExampleCode3": "console.log(text);",
-  "js373ExampleOutput": "Salida:
-***",
+  "js373ExampleOutput": "Salida:\n***",
   "js373EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js373HintTitle1": "Pista 1 💡",
   "js373HintContent1": "Sigue el patrón del ejemplo.",
   "js373HintTitle2": "Pista 2 🧩",
   "js373HintContent2": "Recuerda usar console.log para la salida.",
   "js373SolutionTitle": "Solución ✅",
-  "js373SolutionContent": "Una posible solución es:
-
-let text = \"\";
-for (let i = 0; i < 3; i++) text += \"*\";
-console.log(text);",
+  "js373SolutionContent": "Una posible solución es:\n\nlet text = \"\";\nfor (let i = 0; i < 3; i++) text += \"*\";\nconsole.log(text);",
   "js374InstructionsTitle": "Misión 374 🚀",
-  "js374InstructionsContent": "Practica bucles e iteración.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [2, 5, 8];
-for (const n of nums) if (n === 5) console.log(\"Found\");
-// Search in loop",
+  "js374InstructionsContent": "Practica bucles e iteración.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [2, 5, 8];\nfor (const n of nums) if (n === 5) console.log(\"Found\");\n// Search in loop",
   "js374ExampleTitle": "Ejemplo",
   "js374ExampleCode1": "const nums = [2, 5, 8];",
   "js374ExampleCode2": "for (const n of nums) if (n === 5) console.log(\"Found\");",
   "js374ExampleCode3": "// Search in loop",
-  "js374ExampleOutput": "Salida:
-Found",
+  "js374ExampleOutput": "Salida:\nFound",
   "js374EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js374HintTitle1": "Pista 1 💡",
   "js374HintContent1": "Sigue el patrón del ejemplo.",
   "js374HintTitle2": "Pista 2 🧩",
   "js374HintContent2": "Recuerda usar console.log para la salida.",
   "js374SolutionTitle": "Solución ✅",
-  "js374SolutionContent": "Una posible solución es:
-
-const nums = [2, 5, 8];
-for (const n of nums) if (n === 5) console.log(\"Found\");
-// Search in loop",
+  "js374SolutionContent": "Una posible solución es:\n\nconst nums = [2, 5, 8];\nfor (const n of nums) if (n === 5) console.log(\"Found\");\n// Search in loop",
   "js375InstructionsTitle": "Misión 375 🚀",
-  "js375InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-console.log(nums);
-// Create an array",
+  "js375InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nconsole.log(nums);\n// Create an array",
   "js375ExampleTitle": "Ejemplo",
   "js375ExampleCode1": "const nums = [1, 2, 3];",
   "js375ExampleCode2": "console.log(nums);",
   "js375ExampleCode3": "// Create an array",
-  "js375ExampleOutput": "Salida:
-[1, 2, 3]",
+  "js375ExampleOutput": "Salida:\n[1, 2, 3]",
   "js375EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js375HintTitle1": "Pista 1 💡",
   "js375HintContent1": "Sigue el patrón del ejemplo.",
   "js375HintTitle2": "Pista 2 🧩",
   "js375HintContent2": "Recuerda usar console.log para la salida.",
   "js375SolutionTitle": "Solución ✅",
-  "js375SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-console.log(nums);
-// Create an array",
+  "js375SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nconsole.log(nums);\n// Create an array",
   "js376InstructionsTitle": "Misión 376 🚀",
-  "js376InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2];
-nums.push(3);
-console.log(nums);",
+  "js376InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
   "js376ExampleTitle": "Ejemplo",
   "js376ExampleCode1": "const nums = [1, 2];",
   "js376ExampleCode2": "nums.push(3);",
   "js376ExampleCode3": "console.log(nums);",
-  "js376ExampleOutput": "Salida:
-[1, 2, 3]",
+  "js376ExampleOutput": "Salida:\n[1, 2, 3]",
   "js376EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js376HintTitle1": "Pista 1 💡",
   "js376HintContent1": "Sigue el patrón del ejemplo.",
   "js376HintTitle2": "Pista 2 🧩",
   "js376HintContent2": "Recuerda usar console.log para la salida.",
   "js376SolutionTitle": "Solución ✅",
-  "js376SolutionContent": "Una posible solución es:
-
-const nums = [1, 2];
-nums.push(3);
-console.log(nums);",
+  "js376SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2];\nnums.push(3);\nconsole.log(nums);",
   "js377InstructionsTitle": "Misión 377 🚀",
-  "js377InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-nums.pop();
-console.log(nums);",
+  "js377InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nnums.pop();\nconsole.log(nums);",
   "js377ExampleTitle": "Ejemplo",
   "js377ExampleCode1": "const nums = [1, 2, 3];",
   "js377ExampleCode2": "nums.pop();",
   "js377ExampleCode3": "console.log(nums);",
-  "js377ExampleOutput": "Salida:
-[1, 2]",
+  "js377ExampleOutput": "Salida:\n[1, 2]",
   "js377EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js377HintTitle1": "Pista 1 💡",
   "js377HintContent1": "Sigue el patrón del ejemplo.",
   "js377HintTitle2": "Pista 2 🧩",
   "js377HintContent2": "Recuerda usar console.log para la salida.",
   "js377SolutionTitle": "Solución ✅",
-  "js377SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-nums.pop();
-console.log(nums);",
+  "js377SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nnums.pop();\nconsole.log(nums);",
   "js378InstructionsTitle": "Misión 378 🚀",
-  "js378InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [5, 7, 9];
-console.log(nums[1]);
-// Index access",
+  "js378InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [5, 7, 9];\nconsole.log(nums[1]);\n// Index access",
   "js378ExampleTitle": "Ejemplo",
   "js378ExampleCode1": "const nums = [5, 7, 9];",
   "js378ExampleCode2": "console.log(nums[1]);",
   "js378ExampleCode3": "// Index access",
-  "js378ExampleOutput": "Salida:
-7",
+  "js378ExampleOutput": "Salida:\n7",
   "js378EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js378HintTitle1": "Pista 1 💡",
   "js378HintContent1": "Sigue el patrón del ejemplo.",
   "js378HintTitle2": "Pista 2 🧩",
   "js378HintContent2": "Recuerda usar console.log para la salida.",
   "js378SolutionTitle": "Solución ✅",
-  "js378SolutionContent": "Una posible solución es:
-
-const nums = [5, 7, 9];
-console.log(nums[1]);
-// Index access",
+  "js378SolutionContent": "Una posible solución es:\n\nconst nums = [5, 7, 9];\nconsole.log(nums[1]);\n// Index access",
   "js379InstructionsTitle": "Misión 379 🚀",
-  "js379InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-nums[1] = 99;
-console.log(nums);",
+  "js379InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nnums[1] = 99;\nconsole.log(nums);",
   "js379ExampleTitle": "Ejemplo",
   "js379ExampleCode1": "const nums = [1, 2, 3];",
   "js379ExampleCode2": "nums[1] = 99;",
   "js379ExampleCode3": "console.log(nums);",
-  "js379ExampleOutput": "Salida:
-[1, 99, 3]",
+  "js379ExampleOutput": "Salida:\n[1, 99, 3]",
   "js379EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js379HintTitle1": "Pista 1 💡",
   "js379HintContent1": "Sigue el patrón del ejemplo.",
   "js379HintTitle2": "Pista 2 🧩",
   "js379HintContent2": "Recuerda usar console.log para la salida.",
   "js379SolutionTitle": "Solución ✅",
-  "js379SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-nums[1] = 99;
-console.log(nums);",
+  "js379SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nnums[1] = 99;\nconsole.log(nums);",
   "js380InstructionsTitle": "Misión 380 🚀",
-  "js380InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3, 4];
-console.log(nums.length);
-// Use length",
+  "js380InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.length);\n// Use length",
   "js380ExampleTitle": "Ejemplo",
   "js380ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js380ExampleCode2": "console.log(nums.length);",
   "js380ExampleCode3": "// Use length",
-  "js380ExampleOutput": "Salida:
-4",
+  "js380ExampleOutput": "Salida:\n4",
   "js380EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js380HintTitle1": "Pista 1 💡",
   "js380HintContent1": "Sigue el patrón del ejemplo.",
   "js380HintTitle2": "Pista 2 🧩",
   "js380HintContent2": "Recuerda usar console.log para la salida.",
   "js380SolutionTitle": "Solución ✅",
-  "js380SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3, 4];
-console.log(nums.length);
-// Use length",
+  "js380SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.length);\n// Use length",
   "js381InstructionsTitle": "Misión 381 🚀",
-  "js381InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const letters = [\"a\", \"b\", \"c\"];
-console.log(letters.join(\"-\"));
-// Join items",
+  "js381InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst letters = [\"a\", \"b\", \"c\"];\nconsole.log(letters.join(\"-\"));\n// Join items",
   "js381ExampleTitle": "Ejemplo",
   "js381ExampleCode1": "const letters = [\"a\", \"b\", \"c\"];",
   "js381ExampleCode2": "console.log(letters.join(\"-\"));",
   "js381ExampleCode3": "// Join items",
-  "js381ExampleOutput": "Salida:
-a-b-c",
+  "js381ExampleOutput": "Salida:\na-b-c",
   "js381EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js381HintTitle1": "Pista 1 💡",
   "js381HintContent1": "Sigue el patrón del ejemplo.",
   "js381HintTitle2": "Pista 2 🧩",
   "js381HintContent2": "Recuerda usar console.log para la salida.",
   "js381SolutionTitle": "Solución ✅",
-  "js381SolutionContent": "Una posible solución es:
-
-const letters = [\"a\", \"b\", \"c\"];
-console.log(letters.join(\"-\"));
-// Join items",
+  "js381SolutionContent": "Una posible solución es:\n\nconst letters = [\"a\", \"b\", \"c\"];\nconsole.log(letters.join(\"-\"));\n// Join items",
   "js382InstructionsTitle": "Misión 382 🚀",
-  "js382InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const items = [\"a\", \"b\"];
-console.log(items.includes(\"b\"));
-// Check includes",
+  "js382InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst items = [\"a\", \"b\"];\nconsole.log(items.includes(\"b\"));\n// Check includes",
   "js382ExampleTitle": "Ejemplo",
   "js382ExampleCode1": "const items = [\"a\", \"b\"];",
   "js382ExampleCode2": "console.log(items.includes(\"b\"));",
   "js382ExampleCode3": "// Check includes",
-  "js382ExampleOutput": "Salida:
-true",
+  "js382ExampleOutput": "Salida:\ntrue",
   "js382EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js382HintTitle1": "Pista 1 💡",
   "js382HintContent1": "Sigue el patrón del ejemplo.",
   "js382HintTitle2": "Pista 2 🧩",
   "js382HintContent2": "Recuerda usar console.log para la salida.",
   "js382SolutionTitle": "Solución ✅",
-  "js382SolutionContent": "Una posible solución es:
-
-const items = [\"a\", \"b\"];
-console.log(items.includes(\"b\"));
-// Check includes",
+  "js382SolutionContent": "Una posible solución es:\n\nconst items = [\"a\", \"b\"];\nconsole.log(items.includes(\"b\"));\n// Check includes",
   "js383InstructionsTitle": "Misión 383 🚀",
-  "js383InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-const doubled = nums.map(n => n * 2);
-console.log(doubled);",
+  "js383InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nconst doubled = nums.map(n => n * 2);\nconsole.log(doubled);",
   "js383ExampleTitle": "Ejemplo",
   "js383ExampleCode1": "const nums = [1, 2, 3];",
   "js383ExampleCode2": "const doubled = nums.map(n => n * 2);",
   "js383ExampleCode3": "console.log(doubled);",
-  "js383ExampleOutput": "Salida:
-[2, 4, 6]",
+  "js383ExampleOutput": "Salida:\n[2, 4, 6]",
   "js383EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js383HintTitle1": "Pista 1 💡",
   "js383HintContent1": "Sigue el patrón del ejemplo.",
   "js383HintTitle2": "Pista 2 🧩",
   "js383HintContent2": "Recuerda usar console.log para la salida.",
   "js383SolutionTitle": "Solución ✅",
-  "js383SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-const doubled = nums.map(n => n * 2);
-console.log(doubled);",
+  "js383SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nconst doubled = nums.map(n => n * 2);\nconsole.log(doubled);",
   "js384InstructionsTitle": "Misión 384 🚀",
-  "js384InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3, 4];
-const evens = nums.filter(n => n % 2 === 0);
-console.log(evens);",
+  "js384InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);",
   "js384ExampleTitle": "Ejemplo",
   "js384ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js384ExampleCode2": "const evens = nums.filter(n => n % 2 === 0);",
   "js384ExampleCode3": "console.log(evens);",
-  "js384ExampleOutput": "Salida:
-[2, 4]",
+  "js384ExampleOutput": "Salida:\n[2, 4]",
   "js384EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js384HintTitle1": "Pista 1 💡",
   "js384HintContent1": "Sigue el patrón del ejemplo.",
   "js384HintTitle2": "Pista 2 🧩",
   "js384HintContent2": "Recuerda usar console.log para la salida.",
   "js384SolutionTitle": "Solución ✅",
-  "js384SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3, 4];
-const evens = nums.filter(n => n % 2 === 0);
-console.log(evens);",
+  "js384SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(n => n % 2 === 0);\nconsole.log(evens);",
   "js385InstructionsTitle": "Misión 385 🚀",
-  "js385InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-nums.forEach(n => console.log(n));
-// For each item",
+  "js385InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nnums.forEach(n => console.log(n));\n// For each item",
   "js385ExampleTitle": "Ejemplo",
   "js385ExampleCode1": "const nums = [1, 2, 3];",
   "js385ExampleCode2": "nums.forEach(n => console.log(n));",
   "js385ExampleCode3": "// For each item",
-  "js385ExampleOutput": "Salida:
-1
-2
-3",
+  "js385ExampleOutput": "Salida:\n1\n2\n3",
   "js385EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js385HintTitle1": "Pista 1 💡",
   "js385HintContent1": "Sigue el patrón del ejemplo.",
   "js385HintTitle2": "Pista 2 🧩",
   "js385HintContent2": "Recuerda usar console.log para la salida.",
   "js385SolutionTitle": "Solución ✅",
-  "js385SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-nums.forEach(n => console.log(n));
-// For each item",
+  "js385SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nnums.forEach(n => console.log(n));\n// For each item",
   "js386InstructionsTitle": "Misión 386 🚀",
-  "js386InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3, 4];
-console.log(nums.slice(1, 3));
-// Slice part",
+  "js386InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.slice(1, 3));\n// Slice part",
   "js386ExampleTitle": "Ejemplo",
   "js386ExampleCode1": "const nums = [1, 2, 3, 4];",
   "js386ExampleCode2": "console.log(nums.slice(1, 3));",
   "js386ExampleCode3": "// Slice part",
-  "js386ExampleOutput": "Salida:
-[2, 3]",
+  "js386ExampleOutput": "Salida:\n[2, 3]",
   "js386EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js386HintTitle1": "Pista 1 💡",
   "js386HintContent1": "Sigue el patrón del ejemplo.",
   "js386HintTitle2": "Pista 2 🧩",
   "js386HintContent2": "Recuerda usar console.log para la salida.",
   "js386SolutionTitle": "Solución ✅",
-  "js386SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3, 4];
-console.log(nums.slice(1, 3));
-// Slice part",
+  "js386SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3, 4];\nconsole.log(nums.slice(1, 3));\n// Slice part",
   "js387InstructionsTitle": "Misión 387 🚀",
-  "js387InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const a = [1, 2];
-const b = [3, 4];
-console.log(a.concat(b));",
+  "js387InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst a = [1, 2];\nconst b = [3, 4];\nconsole.log(a.concat(b));",
   "js387ExampleTitle": "Ejemplo",
   "js387ExampleCode1": "const a = [1, 2];",
   "js387ExampleCode2": "const b = [3, 4];",
   "js387ExampleCode3": "console.log(a.concat(b));",
-  "js387ExampleOutput": "Salida:
-[1, 2, 3, 4]",
+  "js387ExampleOutput": "Salida:\n[1, 2, 3, 4]",
   "js387EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js387HintTitle1": "Pista 1 💡",
   "js387HintContent1": "Sigue el patrón del ejemplo.",
   "js387HintTitle2": "Pista 2 🧩",
   "js387HintContent2": "Recuerda usar console.log para la salida.",
   "js387SolutionTitle": "Solución ✅",
-  "js387SolutionContent": "Una posible solución es:
-
-const a = [1, 2];
-const b = [3, 4];
-console.log(a.concat(b));",
+  "js387SolutionContent": "Una posible solución es:\n\nconst a = [1, 2];\nconst b = [3, 4];\nconsole.log(a.concat(b));",
   "js388InstructionsTitle": "Misión 388 🚀",
-  "js388InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-let sum = 0; for (const n of nums) sum += n;
-console.log(sum);",
+  "js388InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nlet sum = 0; for (const n of nums) sum += n;\nconsole.log(sum);",
   "js388ExampleTitle": "Ejemplo",
   "js388ExampleCode1": "const nums = [1, 2, 3];",
   "js388ExampleCode2": "let sum = 0; for (const n of nums) sum += n;",
   "js388ExampleCode3": "console.log(sum);",
-  "js388ExampleOutput": "Salida:
-6",
+  "js388ExampleOutput": "Salida:\n6",
   "js388EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js388HintTitle1": "Pista 1 💡",
   "js388HintContent1": "Sigue el patrón del ejemplo.",
   "js388HintTitle2": "Pista 2 🧩",
   "js388HintContent2": "Recuerda usar console.log para la salida.",
   "js388SolutionTitle": "Solución ✅",
-  "js388SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-let sum = 0; for (const n of nums) sum += n;
-console.log(sum);",
+  "js388SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nlet sum = 0; for (const n of nums) sum += n;\nconsole.log(sum);",
   "js389InstructionsTitle": "Misión 389 🚀",
-  "js389InstructionsContent": "Practica arrays y métodos comunes.
-
-Reglas:
-1) Sigue el concepto de la lección.
-2) Usa console.log para la salida.
-3) Manténlo simple.
-
-Ejemplo:
-const nums = [1, 2, 3];
-nums.reverse();
-console.log(nums);",
+  "js389InstructionsContent": "Practica arrays y métodos comunes.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2, 3];\nnums.reverse();\nconsole.log(nums);",
   "js389ExampleTitle": "Ejemplo",
   "js389ExampleCode1": "const nums = [1, 2, 3];",
   "js389ExampleCode2": "nums.reverse();",
   "js389ExampleCode3": "console.log(nums);",
-  "js389ExampleOutput": "Salida:
-[3, 2, 1]",
+  "js389ExampleOutput": "Salida:\n[3, 2, 1]",
   "js389EnterCodeHint": "Escribe tu código JavaScript aquí...",
   "js389HintTitle1": "Pista 1 💡",
   "js389HintContent1": "Sigue el patrón del ejemplo.",
   "js389HintTitle2": "Pista 2 🧩",
   "js389HintContent2": "Recuerda usar console.log para la salida.",
   "js389SolutionTitle": "Solución ✅",
-  "js389SolutionContent": "Una posible solución es:
-
-const nums = [1, 2, 3];
-nums.reverse();
-console.log(nums);"
+  "js389SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2, 3];\nnums.reverse();\nconsole.log(nums);",
+  "js390InstructionsTitle": "Misión 390 🚀",
+  "js390InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nconsole.log(user);\n// Object literal",
+  "js390ExampleTitle": "Ejemplo",
+  "js390ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js390ExampleCode2": "console.log(user);",
+  "js390ExampleCode3": "// Object literal",
+  "js390ExampleOutput": "Salida:\nObject",
+  "js390EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js390HintTitle1": "Pista 1 💡",
+  "js390HintContent1": "Sigue el patrón del ejemplo.",
+  "js390HintTitle2": "Pista 2 🧩",
+  "js390HintContent2": "Recuerda usar console.log para la salida.",
+  "js390SolutionTitle": "Solución ✅",
+  "js390SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(user);\n// Object literal",
+  "js391InstructionsTitle": "Misión 391 🚀",
+  "js391InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana'};\nconsole.log(user.name);\n// Access property",
+  "js391ExampleTitle": "Ejemplo",
+  "js391ExampleCode1": "const user = {name: 'Ana'};",
+  "js391ExampleCode2": "console.log(user.name);",
+  "js391ExampleCode3": "// Access property",
+  "js391ExampleOutput": "Salida:\nAna",
+  "js391EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js391HintTitle1": "Pista 1 💡",
+  "js391HintContent1": "Sigue el patrón del ejemplo.",
+  "js391HintTitle2": "Pista 2 🧩",
+  "js391HintContent2": "Recuerda usar console.log para la salida.",
+  "js391SolutionTitle": "Solución ✅",
+  "js391SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana'};\nconsole.log(user.name);\n// Access property",
+  "js392InstructionsTitle": "Misión 392 🚀",
+  "js392InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana'};\nuser.name = 'Lia';\nconsole.log(user.name);",
+  "js392ExampleTitle": "Ejemplo",
+  "js392ExampleCode1": "const user = {name: 'Ana'};",
+  "js392ExampleCode2": "user.name = 'Lia';",
+  "js392ExampleCode3": "console.log(user.name);",
+  "js392ExampleOutput": "Salida:\nLia",
+  "js392EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js392HintTitle1": "Pista 1 💡",
+  "js392HintContent1": "Sigue el patrón del ejemplo.",
+  "js392HintTitle2": "Pista 2 🧩",
+  "js392HintContent2": "Recuerda usar console.log para la salida.",
+  "js392SolutionTitle": "Solución ✅",
+  "js392SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana'};\nuser.name = 'Lia';\nconsole.log(user.name);",
+  "js393InstructionsTitle": "Misión 393 🚀",
+  "js393InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana'};\nuser.city = 'Madrid';\nconsole.log(user.city);",
+  "js393ExampleTitle": "Ejemplo",
+  "js393ExampleCode1": "const user = {name: 'Ana'};",
+  "js393ExampleCode2": "user.city = 'Madrid';",
+  "js393ExampleCode3": "console.log(user.city);",
+  "js393ExampleOutput": "Salida:\nMadrid",
+  "js393EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js393HintTitle1": "Pista 1 💡",
+  "js393HintContent1": "Sigue el patrón del ejemplo.",
+  "js393HintTitle2": "Pista 2 🧩",
+  "js393HintContent2": "Recuerda usar console.log para la salida.",
+  "js393SolutionTitle": "Solución ✅",
+  "js393SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana'};\nuser.city = 'Madrid';\nconsole.log(user.city);",
+  "js394InstructionsTitle": "Misión 394 🚀",
+  "js394InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\ndelete user.age;\nconsole.log(user.age);",
+  "js394ExampleTitle": "Ejemplo",
+  "js394ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js394ExampleCode2": "delete user.age;",
+  "js394ExampleCode3": "console.log(user.age);",
+  "js394ExampleOutput": "Salida:\nundefined",
+  "js394EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js394HintTitle1": "Pista 1 💡",
+  "js394HintContent1": "Sigue el patrón del ejemplo.",
+  "js394HintTitle2": "Pista 2 🧩",
+  "js394HintContent2": "Recuerda usar console.log para la salida.",
+  "js394SolutionTitle": "Solución ✅",
+  "js394SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\ndelete user.age;\nconsole.log(user.age);",
+  "js395InstructionsTitle": "Misión 395 🚀",
+  "js395InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.keys(user));\n// Keys",
+  "js395ExampleTitle": "Ejemplo",
+  "js395ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js395ExampleCode2": "console.log(Object.keys(user));",
+  "js395ExampleCode3": "// Keys",
+  "js395ExampleOutput": "Salida:\nname, age",
+  "js395EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js395HintTitle1": "Pista 1 💡",
+  "js395HintContent1": "Sigue el patrón del ejemplo.",
+  "js395HintTitle2": "Pista 2 🧩",
+  "js395HintContent2": "Recuerda usar console.log para la salida.",
+  "js395SolutionTitle": "Solución ✅",
+  "js395SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.keys(user));\n// Keys",
+  "js396InstructionsTitle": "Misión 396 🚀",
+  "js396InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.values(user));\n// Values",
+  "js396ExampleTitle": "Ejemplo",
+  "js396ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js396ExampleCode2": "console.log(Object.values(user));",
+  "js396ExampleCode3": "// Values",
+  "js396ExampleOutput": "Salida:\nAna, 20",
+  "js396EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js396HintTitle1": "Pista 1 💡",
+  "js396HintContent1": "Sigue el patrón del ejemplo.",
+  "js396HintTitle2": "Pista 2 🧩",
+  "js396HintContent2": "Recuerda usar console.log para la salida.",
+  "js396SolutionTitle": "Solución ✅",
+  "js396SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.values(user));\n// Values",
+  "js397InstructionsTitle": "Misión 397 🚀",
+  "js397InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana'};\nconsole.log('name' in user);\n// in operator",
+  "js397ExampleTitle": "Ejemplo",
+  "js397ExampleCode1": "const user = {name: 'Ana'};",
+  "js397ExampleCode2": "console.log('name' in user);",
+  "js397ExampleCode3": "// in operator",
+  "js397ExampleOutput": "Salida:\ntrue",
+  "js397EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js397HintTitle1": "Pista 1 💡",
+  "js397HintContent1": "Sigue el patrón del ejemplo.",
+  "js397HintTitle2": "Pista 2 🧩",
+  "js397HintContent2": "Recuerda usar console.log para la salida.",
+  "js397SolutionTitle": "Solución ✅",
+  "js397SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana'};\nconsole.log('name' in user);\n// in operator",
+  "js398InstructionsTitle": "Misión 398 🚀",
+  "js398InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', greet() { return 'Hi'; }};\nconsole.log(user.greet());\n// Method",
+  "js398ExampleTitle": "Ejemplo",
+  "js398ExampleCode1": "const user = {name: 'Ana', greet() { return 'Hi'; }};",
+  "js398ExampleCode2": "console.log(user.greet());",
+  "js398ExampleCode3": "// Method",
+  "js398ExampleOutput": "Salida:\nHi",
+  "js398EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js398HintTitle1": "Pista 1 💡",
+  "js398HintContent1": "Sigue el patrón del ejemplo.",
+  "js398HintTitle2": "Pista 2 🧩",
+  "js398HintContent2": "Recuerda usar console.log para la salida.",
+  "js398SolutionTitle": "Solución ✅",
+  "js398SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', greet() { return 'Hi'; }};\nconsole.log(user.greet());\n// Method",
+  "js399InstructionsTitle": "Misión 399 🚀",
+  "js399InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', greet() { return this.name; }};\nconsole.log(user.greet());\n// this",
+  "js399ExampleTitle": "Ejemplo",
+  "js399ExampleCode1": "const user = {name: 'Ana', greet() { return this.name; }};",
+  "js399ExampleCode2": "console.log(user.greet());",
+  "js399ExampleCode3": "// this",
+  "js399ExampleOutput": "Salida:\nAna",
+  "js399EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js399HintTitle1": "Pista 1 💡",
+  "js399HintContent1": "Sigue el patrón del ejemplo.",
+  "js399HintTitle2": "Pista 2 🧩",
+  "js399HintContent2": "Recuerda usar console.log para la salida.",
+  "js399SolutionTitle": "Solución ✅",
+  "js399SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', greet() { return this.name; }};\nconsole.log(user.greet());\n// this",
+  "js400InstructionsTitle": "Misión 400 🚀",
+  "js400InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nconst {name} = user;\nconsole.log(name);",
+  "js400ExampleTitle": "Ejemplo",
+  "js400ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js400ExampleCode2": "const {name} = user;",
+  "js400ExampleCode3": "console.log(name);",
+  "js400ExampleOutput": "Salida:\nAna",
+  "js400EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js400HintTitle1": "Pista 1 💡",
+  "js400HintContent1": "Sigue el patrón del ejemplo.",
+  "js400HintTitle2": "Pista 2 🧩",
+  "js400HintContent2": "Recuerda usar console.log para la salida.",
+  "js400SolutionTitle": "Solución ✅",
+  "js400SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nconst {name} = user;\nconsole.log(name);",
+  "js401InstructionsTitle": "Misión 401 🚀",
+  "js401InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {profile: {name: 'Ana'}};\nconsole.log(user.profile.name);\n// Nested",
+  "js401ExampleTitle": "Ejemplo",
+  "js401ExampleCode1": "const user = {profile: {name: 'Ana'}};",
+  "js401ExampleCode2": "console.log(user.profile.name);",
+  "js401ExampleCode3": "// Nested",
+  "js401ExampleOutput": "Salida:\nAna",
+  "js401EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js401HintTitle1": "Pista 1 💡",
+  "js401HintContent1": "Sigue el patrón del ejemplo.",
+  "js401HintTitle2": "Pista 2 🧩",
+  "js401HintContent2": "Recuerda usar console.log para la salida.",
+  "js401SolutionTitle": "Solución ✅",
+  "js401SolutionContent": "Una posible solución es:\n\nconst user = {profile: {name: 'Ana'}};\nconsole.log(user.profile.name);\n// Nested",
+  "js402InstructionsTitle": "Reto 402 🕹️",
+  "js402InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nif (user.age >= 18) console.log('Adult'); else console.log('Minor');\n// Challenge",
+  "js402ExampleTitle": "Ejemplo",
+  "js402ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js402ExampleCode2": "if (user.age >= 18) console.log('Adult'); else console.log('Minor');",
+  "js402ExampleCode3": "// Challenge",
+  "js402ExampleOutput": "Salida:\nAdult",
+  "js402EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js402HintTitle1": "Pista 1 💡",
+  "js402HintContent1": "Sigue el patrón del ejemplo.",
+  "js402HintTitle2": "Pista 2 🧩",
+  "js402HintContent2": "Recuerda usar console.log para la salida.",
+  "js402SolutionTitle": "Solución ✅",
+  "js402SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nif (user.age >= 18) console.log('Adult'); else console.log('Minor');\n// Challenge",
+  "js403InstructionsTitle": "Misión 403 🚀",
+  "js403InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst a = {x: 1};\nconst b = {...a, y: 2};\nconsole.log(b.y);",
+  "js403ExampleTitle": "Ejemplo",
+  "js403ExampleCode1": "const a = {x: 1};",
+  "js403ExampleCode2": "const b = {...a, y: 2};",
+  "js403ExampleCode3": "console.log(b.y);",
+  "js403ExampleOutput": "Salida:\n2",
+  "js403EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js403HintTitle1": "Pista 1 💡",
+  "js403HintContent1": "Sigue el patrón del ejemplo.",
+  "js403HintTitle2": "Pista 2 🧩",
+  "js403HintContent2": "Recuerda usar console.log para la salida.",
+  "js403SolutionTitle": "Solución ✅",
+  "js403SolutionContent": "Una posible solución es:\n\nconst a = {x: 1};\nconst b = {...a, y: 2};\nconsole.log(b.y);",
+  "js404InstructionsTitle": "Misión 404 🚀",
+  "js404InstructionsContent": "Practica objetos en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.entries(user));\n// Entries",
+  "js404ExampleTitle": "Ejemplo",
+  "js404ExampleCode1": "const user = {name: 'Ana', age: 20};",
+  "js404ExampleCode2": "console.log(Object.entries(user));",
+  "js404ExampleCode3": "// Entries",
+  "js404ExampleOutput": "Salida:\nentries",
+  "js404EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js404HintTitle1": "Pista 1 💡",
+  "js404HintContent1": "Sigue el patrón del ejemplo.",
+  "js404HintTitle2": "Pista 2 🧩",
+  "js404HintContent2": "Recuerda usar console.log para la salida.",
+  "js404SolutionTitle": "Solución ✅",
+  "js404SolutionContent": "Una posible solución es:\n\nconst user = {name: 'Ana', age: 20};\nconsole.log(Object.entries(user));\n// Entries",
+  "js405InstructionsTitle": "Misión 405 🚀",
+  "js405InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set([1, 2, 2]);\nconsole.log(nums.size);\n// Set size",
+  "js405ExampleTitle": "Ejemplo",
+  "js405ExampleCode1": "const nums = new Set([1, 2, 2]);",
+  "js405ExampleCode2": "console.log(nums.size);",
+  "js405ExampleCode3": "// Set size",
+  "js405ExampleOutput": "Salida:\n2",
+  "js405EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js405HintTitle1": "Pista 1 💡",
+  "js405HintContent1": "Sigue el patrón del ejemplo.",
+  "js405HintTitle2": "Pista 2 🧩",
+  "js405HintContent2": "Recuerda usar console.log para la salida.",
+  "js405SolutionTitle": "Solución ✅",
+  "js405SolutionContent": "Una posible solución es:\n\nconst nums = new Set([1, 2, 2]);\nconsole.log(nums.size);\n// Set size",
+  "js406InstructionsTitle": "Misión 406 🚀",
+  "js406InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set();\nnums.add(1);\nconsole.log(nums.has(1));",
+  "js406ExampleTitle": "Ejemplo",
+  "js406ExampleCode1": "const nums = new Set();",
+  "js406ExampleCode2": "nums.add(1);",
+  "js406ExampleCode3": "console.log(nums.has(1));",
+  "js406ExampleOutput": "Salida:\ntrue",
+  "js406EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js406HintTitle1": "Pista 1 💡",
+  "js406HintContent1": "Sigue el patrón del ejemplo.",
+  "js406HintTitle2": "Pista 2 🧩",
+  "js406HintContent2": "Recuerda usar console.log para la salida.",
+  "js406SolutionTitle": "Solución ✅",
+  "js406SolutionContent": "Una posible solución es:\n\nconst nums = new Set();\nnums.add(1);\nconsole.log(nums.has(1));",
+  "js407InstructionsTitle": "Misión 407 🚀",
+  "js407InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set([1, 2]);\nnums.delete(2);\nconsole.log(nums.has(2));",
+  "js407ExampleTitle": "Ejemplo",
+  "js407ExampleCode1": "const nums = new Set([1, 2]);",
+  "js407ExampleCode2": "nums.delete(2);",
+  "js407ExampleCode3": "console.log(nums.has(2));",
+  "js407ExampleOutput": "Salida:\nfalse",
+  "js407EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js407HintTitle1": "Pista 1 💡",
+  "js407HintContent1": "Sigue el patrón del ejemplo.",
+  "js407HintTitle2": "Pista 2 🧩",
+  "js407HintContent2": "Recuerda usar console.log para la salida.",
+  "js407SolutionTitle": "Solución ✅",
+  "js407SolutionContent": "Una posible solución es:\n\nconst nums = new Set([1, 2]);\nnums.delete(2);\nconsole.log(nums.has(2));",
+  "js408InstructionsTitle": "Misión 408 🚀",
+  "js408InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set([1, 2]);\nconsole.log(nums.has(1));\n// has",
+  "js408ExampleTitle": "Ejemplo",
+  "js408ExampleCode1": "const nums = new Set([1, 2]);",
+  "js408ExampleCode2": "console.log(nums.has(1));",
+  "js408ExampleCode3": "// has",
+  "js408ExampleOutput": "Salida:\ntrue",
+  "js408EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js408HintTitle1": "Pista 1 💡",
+  "js408HintContent1": "Sigue el patrón del ejemplo.",
+  "js408HintTitle2": "Pista 2 🧩",
+  "js408HintContent2": "Recuerda usar console.log para la salida.",
+  "js408SolutionTitle": "Solución ✅",
+  "js408SolutionContent": "Una posible solución es:\n\nconst nums = new Set([1, 2]);\nconsole.log(nums.has(1));\n// has",
+  "js409InstructionsTitle": "Misión 409 🚀",
+  "js409InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set([1, 2, 3]);\nconsole.log(nums.size);\n// size",
+  "js409ExampleTitle": "Ejemplo",
+  "js409ExampleCode1": "const nums = new Set([1, 2, 3]);",
+  "js409ExampleCode2": "console.log(nums.size);",
+  "js409ExampleCode3": "// size",
+  "js409ExampleOutput": "Salida:\n3",
+  "js409EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js409HintTitle1": "Pista 1 💡",
+  "js409HintContent1": "Sigue el patrón del ejemplo.",
+  "js409HintTitle2": "Pista 2 🧩",
+  "js409HintContent2": "Recuerda usar console.log para la salida.",
+  "js409SolutionTitle": "Solución ✅",
+  "js409SolutionContent": "Una posible solución es:\n\nconst nums = new Set([1, 2, 3]);\nconsole.log(nums.size);\n// size",
+  "js410InstructionsTitle": "Misión 410 🚀",
+  "js410InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map();\nmap.set('a', 1);\nconsole.log(map.get('a'));",
+  "js410ExampleTitle": "Ejemplo",
+  "js410ExampleCode1": "const map = new Map();",
+  "js410ExampleCode2": "map.set('a', 1);",
+  "js410ExampleCode3": "console.log(map.get('a'));",
+  "js410ExampleOutput": "Salida:\n1",
+  "js410EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js410HintTitle1": "Pista 1 💡",
+  "js410HintContent1": "Sigue el patrón del ejemplo.",
+  "js410HintTitle2": "Pista 2 🧩",
+  "js410HintContent2": "Recuerda usar console.log para la salida.",
+  "js410SolutionTitle": "Solución ✅",
+  "js410SolutionContent": "Una posible solución es:\n\nconst map = new Map();\nmap.set('a', 1);\nconsole.log(map.get('a'));",
+  "js411InstructionsTitle": "Misión 411 🚀",
+  "js411InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map();\nmap.set('x', 10);\nconsole.log(map.has('x'));",
+  "js411ExampleTitle": "Ejemplo",
+  "js411ExampleCode1": "const map = new Map();",
+  "js411ExampleCode2": "map.set('x', 10);",
+  "js411ExampleCode3": "console.log(map.has('x'));",
+  "js411ExampleOutput": "Salida:\ntrue",
+  "js411EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js411HintTitle1": "Pista 1 💡",
+  "js411HintContent1": "Sigue el patrón del ejemplo.",
+  "js411HintTitle2": "Pista 2 🧩",
+  "js411HintContent2": "Recuerda usar console.log para la salida.",
+  "js411SolutionTitle": "Solución ✅",
+  "js411SolutionContent": "Una posible solución es:\n\nconst map = new Map();\nmap.set('x', 10);\nconsole.log(map.has('x'));",
+  "js412InstructionsTitle": "Misión 412 🚀",
+  "js412InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map([['x', 10]]);\nconsole.log(map.get('x'));\n// get",
+  "js412ExampleTitle": "Ejemplo",
+  "js412ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js412ExampleCode2": "console.log(map.get('x'));",
+  "js412ExampleCode3": "// get",
+  "js412ExampleOutput": "Salida:\n10",
+  "js412EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js412HintTitle1": "Pista 1 💡",
+  "js412HintContent1": "Sigue el patrón del ejemplo.",
+  "js412HintTitle2": "Pista 2 🧩",
+  "js412HintContent2": "Recuerda usar console.log para la salida.",
+  "js412SolutionTitle": "Solución ✅",
+  "js412SolutionContent": "Una posible solución es:\n\nconst map = new Map([['x', 10]]);\nconsole.log(map.get('x'));\n// get",
+  "js413InstructionsTitle": "Misión 413 🚀",
+  "js413InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map([['x', 10]]);\nconsole.log(map.has('x'));\n// has",
+  "js413ExampleTitle": "Ejemplo",
+  "js413ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js413ExampleCode2": "console.log(map.has('x'));",
+  "js413ExampleCode3": "// has",
+  "js413ExampleOutput": "Salida:\ntrue",
+  "js413EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js413HintTitle1": "Pista 1 💡",
+  "js413HintContent1": "Sigue el patrón del ejemplo.",
+  "js413HintTitle2": "Pista 2 🧩",
+  "js413HintContent2": "Recuerda usar console.log para la salida.",
+  "js413SolutionTitle": "Solución ✅",
+  "js413SolutionContent": "Una posible solución es:\n\nconst map = new Map([['x', 10]]);\nconsole.log(map.has('x'));\n// has",
+  "js414InstructionsTitle": "Misión 414 🚀",
+  "js414InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map([['x', 10]]);\nmap.delete('x');\nconsole.log(map.has('x'));",
+  "js414ExampleTitle": "Ejemplo",
+  "js414ExampleCode1": "const map = new Map([['x', 10]]);",
+  "js414ExampleCode2": "map.delete('x');",
+  "js414ExampleCode3": "console.log(map.has('x'));",
+  "js414ExampleOutput": "Salida:\nfalse",
+  "js414EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js414HintTitle1": "Pista 1 💡",
+  "js414HintContent1": "Sigue el patrón del ejemplo.",
+  "js414HintTitle2": "Pista 2 🧩",
+  "js414HintContent2": "Recuerda usar console.log para la salida.",
+  "js414SolutionTitle": "Solución ✅",
+  "js414SolutionContent": "Una posible solución es:\n\nconst map = new Map([['x', 10]]);\nmap.delete('x');\nconsole.log(map.has('x'));",
+  "js415InstructionsTitle": "Misión 415 🚀",
+  "js415InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map([['x', 10], ['y', 20]]);\nconsole.log(map.size);\n// size",
+  "js415ExampleTitle": "Ejemplo",
+  "js415ExampleCode1": "const map = new Map([['x', 10], ['y', 20]]);",
+  "js415ExampleCode2": "console.log(map.size);",
+  "js415ExampleCode3": "// size",
+  "js415ExampleOutput": "Salida:\n2",
+  "js415EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js415HintTitle1": "Pista 1 💡",
+  "js415HintContent1": "Sigue el patrón del ejemplo.",
+  "js415HintTitle2": "Pista 2 🧩",
+  "js415HintContent2": "Recuerda usar console.log para la salida.",
+  "js415SolutionTitle": "Solución ✅",
+  "js415SolutionContent": "Una posible solución es:\n\nconst map = new Map([['x', 10], ['y', 20]]);\nconsole.log(map.size);\n// size",
+  "js416InstructionsTitle": "Misión 416 🚀",
+  "js416InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = new Set([1, 2]);\nfor (const n of nums) console.log(n);\n// loop",
+  "js416ExampleTitle": "Ejemplo",
+  "js416ExampleCode1": "const nums = new Set([1, 2]);",
+  "js416ExampleCode2": "for (const n of nums) console.log(n);",
+  "js416ExampleCode3": "// loop",
+  "js416ExampleOutput": "Salida:\n1\n2",
+  "js416EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js416HintTitle1": "Pista 1 💡",
+  "js416HintContent1": "Sigue el patrón del ejemplo.",
+  "js416HintTitle2": "Pista 2 🧩",
+  "js416HintContent2": "Recuerda usar console.log para la salida.",
+  "js416SolutionTitle": "Solución ✅",
+  "js416SolutionContent": "Una posible solución es:\n\nconst nums = new Set([1, 2]);\nfor (const n of nums) console.log(n);\n// loop",
+  "js417InstructionsTitle": "Misión 417 🚀",
+  "js417InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map([['x', 1], ['y', 2]]);\nfor (const [k, v] of map) console.log(k);\n// keys",
+  "js417ExampleTitle": "Ejemplo",
+  "js417ExampleCode1": "const map = new Map([['x', 1], ['y', 2]]);",
+  "js417ExampleCode2": "for (const [k, v] of map) console.log(k);",
+  "js417ExampleCode3": "// keys",
+  "js417ExampleOutput": "Salida:\nx\ny",
+  "js417EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js417HintTitle1": "Pista 1 💡",
+  "js417HintContent1": "Sigue el patrón del ejemplo.",
+  "js417HintTitle2": "Pista 2 🧩",
+  "js417HintContent2": "Recuerda usar console.log para la salida.",
+  "js417SolutionTitle": "Solución ✅",
+  "js417SolutionContent": "Una posible solución es:\n\nconst map = new Map([['x', 1], ['y', 2]]);\nfor (const [k, v] of map) console.log(k);\n// keys",
+  "js418InstructionsTitle": "Reto 418 🕹️",
+  "js418InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 1, 2];\nconst unique = new Set(nums);\nconsole.log(unique.size);",
+  "js418ExampleTitle": "Ejemplo",
+  "js418ExampleCode1": "const nums = [1, 1, 2];",
+  "js418ExampleCode2": "const unique = new Set(nums);",
+  "js418ExampleCode3": "console.log(unique.size);",
+  "js418ExampleOutput": "Salida:\n2",
+  "js418EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js418HintTitle1": "Pista 1 💡",
+  "js418HintContent1": "Sigue el patrón del ejemplo.",
+  "js418HintTitle2": "Pista 2 🧩",
+  "js418HintContent2": "Recuerda usar console.log para la salida.",
+  "js418SolutionTitle": "Solución ✅",
+  "js418SolutionContent": "Una posible solución es:\n\nconst nums = [1, 1, 2];\nconst unique = new Set(nums);\nconsole.log(unique.size);",
+  "js419InstructionsTitle": "Misión 419 🚀",
+  "js419InstructionsContent": "Practica Maps y Sets.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst map = new Map();\nmap.set('score', 10);\nconsole.log(map.get('score'));",
+  "js419ExampleTitle": "Ejemplo",
+  "js419ExampleCode1": "const map = new Map();",
+  "js419ExampleCode2": "map.set('score', 10);",
+  "js419ExampleCode3": "console.log(map.get('score'));",
+  "js419ExampleOutput": "Salida:\n10",
+  "js419EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js419HintTitle1": "Pista 1 💡",
+  "js419HintContent1": "Sigue el patrón del ejemplo.",
+  "js419HintTitle2": "Pista 2 🧩",
+  "js419HintContent2": "Recuerda usar console.log para la salida.",
+  "js419SolutionTitle": "Solución ✅",
+  "js419SolutionContent": "Una posible solución es:\n\nconst map = new Map();\nmap.set('score', 10);\nconsole.log(map.get('score'));",
+  "js420InstructionsTitle": "Misión 420 🚀",
+  "js420InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfunction greet() { return 'Hi'; }\nconsole.log(greet());\n// function",
+  "js420ExampleTitle": "Ejemplo",
+  "js420ExampleCode1": "function greet() { return 'Hi'; }",
+  "js420ExampleCode2": "console.log(greet());",
+  "js420ExampleCode3": "// function",
+  "js420ExampleOutput": "Salida:\nHi",
+  "js420EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js420HintTitle1": "Pista 1 💡",
+  "js420HintContent1": "Sigue el patrón del ejemplo.",
+  "js420HintTitle2": "Pista 2 🧩",
+  "js420HintContent2": "Recuerda usar console.log para la salida.",
+  "js420SolutionTitle": "Solución ✅",
+  "js420SolutionContent": "Una posible solución es:\n\nfunction greet() { return 'Hi'; }\nconsole.log(greet());\n// function",
+  "js421InstructionsTitle": "Misión 421 🚀",
+  "js421InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\n// arrow",
+  "js421ExampleTitle": "Ejemplo",
+  "js421ExampleCode1": "const add = (a, b) => a + b;",
+  "js421ExampleCode2": "console.log(add(2, 3));",
+  "js421ExampleCode3": "// arrow",
+  "js421ExampleOutput": "Salida:\n5",
+  "js421EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js421HintTitle1": "Pista 1 💡",
+  "js421HintContent1": "Sigue el patrón del ejemplo.",
+  "js421HintTitle2": "Pista 2 🧩",
+  "js421HintContent2": "Recuerda usar console.log para la salida.",
+  "js421SolutionTitle": "Solución ✅",
+  "js421SolutionContent": "Una posible solución es:\n\nconst add = (a, b) => a + b;\nconsole.log(add(2, 3));\n// arrow",
+  "js422InstructionsTitle": "Misión 422 🚀",
+  "js422InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfunction square(x) { return x * x; }\nconsole.log(square(4));\n// param",
+  "js422ExampleTitle": "Ejemplo",
+  "js422ExampleCode1": "function square(x) { return x * x; }",
+  "js422ExampleCode2": "console.log(square(4));",
+  "js422ExampleCode3": "// param",
+  "js422ExampleOutput": "Salida:\n16",
+  "js422EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js422HintTitle1": "Pista 1 💡",
+  "js422HintContent1": "Sigue el patrón del ejemplo.",
+  "js422HintTitle2": "Pista 2 🧩",
+  "js422HintContent2": "Recuerda usar console.log para la salida.",
+  "js422SolutionTitle": "Solución ✅",
+  "js422SolutionContent": "Una posible solución es:\n\nfunction square(x) { return x * x; }\nconsole.log(square(4));\n// param",
+  "js423InstructionsTitle": "Misión 423 🚀",
+  "js423InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst double = (n) => { return n * 2; };\nconsole.log(double(5));\n// return",
+  "js423ExampleTitle": "Ejemplo",
+  "js423ExampleCode1": "const double = (n) => { return n * 2; };",
+  "js423ExampleCode2": "console.log(double(5));",
+  "js423ExampleCode3": "// return",
+  "js423ExampleOutput": "Salida:\n10",
+  "js423EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js423HintTitle1": "Pista 1 💡",
+  "js423HintContent1": "Sigue el patrón del ejemplo.",
+  "js423HintTitle2": "Pista 2 🧩",
+  "js423HintContent2": "Recuerda usar console.log para la salida.",
+  "js423SolutionTitle": "Solución ✅",
+  "js423SolutionContent": "Una posible solución es:\n\nconst double = (n) => { return n * 2; };\nconsole.log(double(5));\n// return",
+  "js424InstructionsTitle": "Misión 424 🚀",
+  "js424InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfunction greet(name = 'Ana') { return name; }\nconsole.log(greet());\n// default",
+  "js424ExampleTitle": "Ejemplo",
+  "js424ExampleCode1": "function greet(name = 'Ana') { return name; }",
+  "js424ExampleCode2": "console.log(greet());",
+  "js424ExampleCode3": "// default",
+  "js424ExampleOutput": "Salida:\nAna",
+  "js424EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js424HintTitle1": "Pista 1 💡",
+  "js424HintContent1": "Sigue el patrón del ejemplo.",
+  "js424HintTitle2": "Pista 2 🧩",
+  "js424HintContent2": "Recuerda usar console.log para la salida.",
+  "js424SolutionTitle": "Solución ✅",
+  "js424SolutionContent": "Una posible solución es:\n\nfunction greet(name = 'Ana') { return name; }\nconsole.log(greet());\n// default",
+  "js425InstructionsTitle": "Misión 425 🚀",
+  "js425InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfunction sum(...nums) { return nums.length; }\nconsole.log(sum(1, 2, 3));\n// rest",
+  "js425ExampleTitle": "Ejemplo",
+  "js425ExampleCode1": "function sum(...nums) { return nums.length; }",
+  "js425ExampleCode2": "console.log(sum(1, 2, 3));",
+  "js425ExampleCode3": "// rest",
+  "js425ExampleOutput": "Salida:\n3",
+  "js425EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js425HintTitle1": "Pista 1 💡",
+  "js425HintContent1": "Sigue el patrón del ejemplo.",
+  "js425HintTitle2": "Pista 2 🧩",
+  "js425HintContent2": "Recuerda usar console.log para la salida.",
+  "js425SolutionTitle": "Solución ✅",
+  "js425SolutionContent": "Una posible solución es:\n\nfunction sum(...nums) { return nums.length; }\nconsole.log(sum(1, 2, 3));\n// rest",
+  "js426InstructionsTitle": "Misión 426 🚀",
+  "js426InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst nums = [1, 2];\nnums.forEach(n => console.log(n));\n// callback",
+  "js426ExampleTitle": "Ejemplo",
+  "js426ExampleCode1": "const nums = [1, 2];",
+  "js426ExampleCode2": "nums.forEach(n => console.log(n));",
+  "js426ExampleCode3": "// callback",
+  "js426ExampleOutput": "Salida:\n1\n2",
+  "js426EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js426HintTitle1": "Pista 1 💡",
+  "js426HintContent1": "Sigue el patrón del ejemplo.",
+  "js426HintTitle2": "Pista 2 🧩",
+  "js426HintContent2": "Recuerda usar console.log para la salida.",
+  "js426SolutionTitle": "Solución ✅",
+  "js426SolutionContent": "Una posible solución es:\n\nconst nums = [1, 2];\nnums.forEach(n => console.log(n));\n// callback",
+  "js427InstructionsTitle": "Misión 427 🚀",
+  "js427InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst greet = function() { return 'Hi'; };\nconsole.log(greet());\n// expression",
+  "js427ExampleTitle": "Ejemplo",
+  "js427ExampleCode1": "const greet = function() { return 'Hi'; };",
+  "js427ExampleCode2": "console.log(greet());",
+  "js427ExampleCode3": "// expression",
+  "js427ExampleOutput": "Salida:\nHi",
+  "js427EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js427HintTitle1": "Pista 1 💡",
+  "js427HintContent1": "Sigue el patrón del ejemplo.",
+  "js427HintTitle2": "Pista 2 🧩",
+  "js427HintContent2": "Recuerda usar console.log para la salida.",
+  "js427SolutionTitle": "Solución ✅",
+  "js427SolutionContent": "Una posible solución es:\n\nconst greet = function() { return 'Hi'; };\nconsole.log(greet());\n// expression",
+  "js428InstructionsTitle": "Misión 428 🚀",
+  "js428InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst getFive = () => 5;\nconsole.log(getFive());\n// implicit",
+  "js428ExampleTitle": "Ejemplo",
+  "js428ExampleCode1": "const getFive = () => 5;",
+  "js428ExampleCode2": "console.log(getFive());",
+  "js428ExampleCode3": "// implicit",
+  "js428ExampleOutput": "Salida:\n5",
+  "js428EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js428HintTitle1": "Pista 1 💡",
+  "js428HintContent1": "Sigue el patrón del ejemplo.",
+  "js428HintTitle2": "Pista 2 🧩",
+  "js428HintContent2": "Recuerda usar console.log para la salida.",
+  "js428SolutionTitle": "Solución ✅",
+  "js428SolutionContent": "Una posible solución es:\n\nconst getFive = () => 5;\nconsole.log(getFive());\n// implicit",
+  "js429InstructionsTitle": "Misión 429 🚀",
+  "js429InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet x = 1;\nfunction show() { let x = 2; console.log(x); }\nshow();",
+  "js429ExampleTitle": "Ejemplo",
+  "js429ExampleCode1": "let x = 1;",
+  "js429ExampleCode2": "function show() { let x = 2; console.log(x); }",
+  "js429ExampleCode3": "show();",
+  "js429ExampleOutput": "Salida:\n2",
+  "js429EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js429HintTitle1": "Pista 1 💡",
+  "js429HintContent1": "Sigue el patrón del ejemplo.",
+  "js429HintTitle2": "Pista 2 🧩",
+  "js429HintContent2": "Recuerda usar console.log para la salida.",
+  "js429SolutionTitle": "Solución ✅",
+  "js429SolutionContent": "Una posible solución es:\n\nlet x = 1;\nfunction show() { let x = 2; console.log(x); }\nshow();",
+  "js430InstructionsTitle": "Misión 430 🚀",
+  "js430InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\n(function(){ console.log('Hi'); })();\n// IIFE\n// runs",
+  "js430ExampleTitle": "Ejemplo",
+  "js430ExampleCode1": "(function(){ console.log('Hi'); })();",
+  "js430ExampleCode2": "// IIFE",
+  "js430ExampleCode3": "// runs",
+  "js430ExampleOutput": "Salida:\nHi",
+  "js430EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js430HintTitle1": "Pista 1 💡",
+  "js430HintContent1": "Sigue el patrón del ejemplo.",
+  "js430HintTitle2": "Pista 2 🧩",
+  "js430HintContent2": "Recuerda usar console.log para la salida.",
+  "js430SolutionTitle": "Solución ✅",
+  "js430SolutionContent": "Una posible solución es:\n\n(function(){ console.log('Hi'); })();\n// IIFE\n// runs",
+  "js431InstructionsTitle": "Misión 431 🚀",
+  "js431InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst apply = (fn, x) => fn(x);\nconsole.log(apply(n => n * 2, 3));\n// higher",
+  "js431ExampleTitle": "Ejemplo",
+  "js431ExampleCode1": "const apply = (fn, x) => fn(x);",
+  "js431ExampleCode2": "console.log(apply(n => n * 2, 3));",
+  "js431ExampleCode3": "// higher",
+  "js431ExampleOutput": "Salida:\n6",
+  "js431EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js431HintTitle1": "Pista 1 💡",
+  "js431HintContent1": "Sigue el patrón del ejemplo.",
+  "js431HintTitle2": "Pista 2 🧩",
+  "js431HintContent2": "Recuerda usar console.log para la salida.",
+  "js431SolutionTitle": "Solución ✅",
+  "js431SolutionContent": "Una posible solución es:\n\nconst apply = (fn, x) => fn(x);\nconsole.log(apply(n => n * 2, 3));\n// higher",
+  "js432InstructionsTitle": "Misión 432 🚀",
+  "js432InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst make = () => () => 'Hi';\nconsole.log(make()());\n// returns fn",
+  "js432ExampleTitle": "Ejemplo",
+  "js432ExampleCode1": "const make = () => () => 'Hi';",
+  "js432ExampleCode2": "console.log(make()());",
+  "js432ExampleCode3": "// returns fn",
+  "js432ExampleOutput": "Salida:\nHi",
+  "js432EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js432HintTitle1": "Pista 1 💡",
+  "js432HintContent1": "Sigue el patrón del ejemplo.",
+  "js432HintTitle2": "Pista 2 🧩",
+  "js432HintContent2": "Recuerda usar console.log para la salida.",
+  "js432SolutionTitle": "Solución ✅",
+  "js432SolutionContent": "Una posible solución es:\n\nconst make = () => () => 'Hi';\nconsole.log(make()());\n// returns fn",
+  "js433InstructionsTitle": "Reto 433 🕹️",
+  "js433InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst sum = (a, b) => a + b;\nconsole.log(sum(3, 4));\n// challenge",
+  "js433ExampleTitle": "Ejemplo",
+  "js433ExampleCode1": "const sum = (a, b) => a + b;",
+  "js433ExampleCode2": "console.log(sum(3, 4));",
+  "js433ExampleCode3": "// challenge",
+  "js433ExampleOutput": "Salida:\n7",
+  "js433EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js433HintTitle1": "Pista 1 💡",
+  "js433HintContent1": "Sigue el patrón del ejemplo.",
+  "js433HintTitle2": "Pista 2 🧩",
+  "js433HintContent2": "Recuerda usar console.log para la salida.",
+  "js433SolutionTitle": "Solución ✅",
+  "js433SolutionContent": "Una posible solución es:\n\nconst sum = (a, b) => a + b;\nconsole.log(sum(3, 4));\n// challenge",
+  "js434InstructionsTitle": "Reto 434 🕹️",
+  "js434InstructionsContent": "Practica funciones en JavaScript.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst isEven = n => n % 2 === 0;\nconsole.log(isEven(4));\n// challenge",
+  "js434ExampleTitle": "Ejemplo",
+  "js434ExampleCode1": "const isEven = n => n % 2 === 0;",
+  "js434ExampleCode2": "console.log(isEven(4));",
+  "js434ExampleCode3": "// challenge",
+  "js434ExampleOutput": "Salida:\ntrue",
+  "js434EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js434HintTitle1": "Pista 1 💡",
+  "js434HintContent1": "Sigue el patrón del ejemplo.",
+  "js434HintTitle2": "Pista 2 🧩",
+  "js434HintContent2": "Recuerda usar console.log para la salida.",
+  "js434SolutionTitle": "Solución ✅",
+  "js434SolutionContent": "Una posible solución es:\n\nconst isEven = n => n % 2 === 0;\nconsole.log(isEven(4));\n// challenge",
+  "js435InstructionsTitle": "Misión 435 🚀",
+  "js435InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet value;\nconsole.log(value);\n// undefined",
+  "js435ExampleTitle": "Ejemplo",
+  "js435ExampleCode1": "let value;",
+  "js435ExampleCode2": "console.log(value);",
+  "js435ExampleCode3": "// undefined",
+  "js435ExampleOutput": "Salida:\nundefined",
+  "js435EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js435HintTitle1": "Pista 1 💡",
+  "js435HintContent1": "Sigue el patrón del ejemplo.",
+  "js435HintTitle2": "Pista 2 🧩",
+  "js435HintContent2": "Recuerda usar console.log para la salida.",
+  "js435SolutionTitle": "Solución ✅",
+  "js435SolutionContent": "Una posible solución es:\n\nlet value;\nconsole.log(value);\n// undefined",
+  "js436InstructionsTitle": "Misión 436 🚀",
+  "js436InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = null;\nconsole.log(value);\n// null",
+  "js436ExampleTitle": "Ejemplo",
+  "js436ExampleCode1": "const value = null;",
+  "js436ExampleCode2": "console.log(value);",
+  "js436ExampleCode3": "// null",
+  "js436ExampleOutput": "Salida:\nnull",
+  "js436EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js436HintTitle1": "Pista 1 💡",
+  "js436HintContent1": "Sigue el patrón del ejemplo.",
+  "js436HintTitle2": "Pista 2 🧩",
+  "js436HintContent2": "Recuerda usar console.log para la salida.",
+  "js436SolutionTitle": "Solución ✅",
+  "js436SolutionContent": "Una posible solución es:\n\nconst value = null;\nconsole.log(value);\n// null",
+  "js437InstructionsTitle": "Misión 437 🚀",
+  "js437InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet value;\nconsole.log(typeof value);\n// typeof",
+  "js437ExampleTitle": "Ejemplo",
+  "js437ExampleCode1": "let value;",
+  "js437ExampleCode2": "console.log(typeof value);",
+  "js437ExampleCode3": "// typeof",
+  "js437ExampleOutput": "Salida:\nundefined",
+  "js437EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js437HintTitle1": "Pista 1 💡",
+  "js437HintContent1": "Sigue el patrón del ejemplo.",
+  "js437HintTitle2": "Pista 2 🧩",
+  "js437HintContent2": "Recuerda usar console.log para la salida.",
+  "js437SolutionTitle": "Solución ✅",
+  "js437SolutionContent": "Una posible solución es:\n\nlet value;\nconsole.log(typeof value);\n// typeof",
+  "js438InstructionsTitle": "Misión 438 🚀",
+  "js438InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = null;\nconsole.log(typeof value);\n// typeof",
+  "js438ExampleTitle": "Ejemplo",
+  "js438ExampleCode1": "const value = null;",
+  "js438ExampleCode2": "console.log(typeof value);",
+  "js438ExampleCode3": "// typeof",
+  "js438ExampleOutput": "Salida:\nobject",
+  "js438EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js438HintTitle1": "Pista 1 💡",
+  "js438HintContent1": "Sigue el patrón del ejemplo.",
+  "js438HintTitle2": "Pista 2 🧩",
+  "js438HintContent2": "Recuerda usar console.log para la salida.",
+  "js438SolutionTitle": "Solución ✅",
+  "js438SolutionContent": "Una posible solución es:\n\nconst value = null;\nconsole.log(typeof value);\n// typeof",
+  "js439InstructionsTitle": "Misión 439 🚀",
+  "js439InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = null;\nconsole.log(value === null);\n// compare",
+  "js439ExampleTitle": "Ejemplo",
+  "js439ExampleCode1": "const value = null;",
+  "js439ExampleCode2": "console.log(value === null);",
+  "js439ExampleCode3": "// compare",
+  "js439ExampleOutput": "Salida:\ntrue",
+  "js439EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js439HintTitle1": "Pista 1 💡",
+  "js439HintContent1": "Sigue el patrón del ejemplo.",
+  "js439HintTitle2": "Pista 2 🧩",
+  "js439HintContent2": "Recuerda usar console.log para la salida.",
+  "js439SolutionTitle": "Solución ✅",
+  "js439SolutionContent": "Una posible solución es:\n\nconst value = null;\nconsole.log(value === null);\n// compare",
+  "js440InstructionsTitle": "Misión 440 🚀",
+  "js440InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet value;\nconsole.log(value === undefined);\n// compare",
+  "js440ExampleTitle": "Ejemplo",
+  "js440ExampleCode1": "let value;",
+  "js440ExampleCode2": "console.log(value === undefined);",
+  "js440ExampleCode3": "// compare",
+  "js440ExampleOutput": "Salida:\ntrue",
+  "js440EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js440HintTitle1": "Pista 1 💡",
+  "js440HintContent1": "Sigue el patrón del ejemplo.",
+  "js440HintTitle2": "Pista 2 🧩",
+  "js440HintContent2": "Recuerda usar console.log para la salida.",
+  "js440SolutionTitle": "Solución ✅",
+  "js440SolutionContent": "Una posible solución es:\n\nlet value;\nconsole.log(value === undefined);\n// compare",
+  "js441InstructionsTitle": "Misión 441 🚀",
+  "js441InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = null;\nconsole.log(value ?? 'default');\n// ??",
+  "js441ExampleTitle": "Ejemplo",
+  "js441ExampleCode1": "const value = null;",
+  "js441ExampleCode2": "console.log(value ?? 'default');",
+  "js441ExampleCode3": "// ??",
+  "js441ExampleOutput": "Salida:\ndefault",
+  "js441EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js441HintTitle1": "Pista 1 💡",
+  "js441HintContent1": "Sigue el patrón del ejemplo.",
+  "js441HintTitle2": "Pista 2 🧩",
+  "js441HintContent2": "Recuerda usar console.log para la salida.",
+  "js441SolutionTitle": "Solución ✅",
+  "js441SolutionContent": "Una posible solución es:\n\nconst value = null;\nconsole.log(value ?? 'default');\n// ??",
+  "js442InstructionsTitle": "Misión 442 🚀",
+  "js442InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {};\nconsole.log(user.profile?.name);\n// ?.",
+  "js442ExampleTitle": "Ejemplo",
+  "js442ExampleCode1": "const user = {};",
+  "js442ExampleCode2": "console.log(user.profile?.name);",
+  "js442ExampleCode3": "// ?.",
+  "js442ExampleOutput": "Salida:\nundefined",
+  "js442EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js442HintTitle1": "Pista 1 💡",
+  "js442HintContent1": "Sigue el patrón del ejemplo.",
+  "js442HintTitle2": "Pista 2 🧩",
+  "js442HintContent2": "Recuerda usar console.log para la salida.",
+  "js442SolutionTitle": "Solución ✅",
+  "js442SolutionContent": "Una posible solución es:\n\nconst user = {};\nconsole.log(user.profile?.name);\n// ?.",
+  "js443InstructionsTitle": "Misión 443 🚀",
+  "js443InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst name = '';\nconsole.log(name || 'Guest');\n// ||",
+  "js443ExampleTitle": "Ejemplo",
+  "js443ExampleCode1": "const name = '';",
+  "js443ExampleCode2": "console.log(name || 'Guest');",
+  "js443ExampleCode3": "// ||",
+  "js443ExampleOutput": "Salida:\nGuest",
+  "js443EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js443HintTitle1": "Pista 1 💡",
+  "js443HintContent1": "Sigue el patrón del ejemplo.",
+  "js443HintTitle2": "Pista 2 🧩",
+  "js443HintContent2": "Recuerda usar console.log para la salida.",
+  "js443SolutionTitle": "Solución ✅",
+  "js443SolutionContent": "Una posible solución es:\n\nconst name = '';\nconsole.log(name || 'Guest');\n// ||",
+  "js444InstructionsTitle": "Misión 444 🚀",
+  "js444InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = null;\nif (value === null) console.log('Null');\n// check",
+  "js444ExampleTitle": "Ejemplo",
+  "js444ExampleCode1": "const value = null;",
+  "js444ExampleCode2": "if (value === null) console.log('Null');",
+  "js444ExampleCode3": "// check",
+  "js444ExampleOutput": "Salida:\nNull",
+  "js444EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js444HintTitle1": "Pista 1 💡",
+  "js444HintContent1": "Sigue el patrón del ejemplo.",
+  "js444HintTitle2": "Pista 2 🧩",
+  "js444HintContent2": "Recuerda usar console.log para la salida.",
+  "js444SolutionTitle": "Solución ✅",
+  "js444SolutionContent": "Una posible solución es:\n\nconst value = null;\nif (value === null) console.log('Null');\n// check",
+  "js445InstructionsTitle": "Misión 445 🚀",
+  "js445InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nlet value;\nif (value === undefined) console.log('Undefined');\n// check",
+  "js445ExampleTitle": "Ejemplo",
+  "js445ExampleCode1": "let value;",
+  "js445ExampleCode2": "if (value === undefined) console.log('Undefined');",
+  "js445ExampleCode3": "// check",
+  "js445ExampleOutput": "Salida:\nUndefined",
+  "js445EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js445HintTitle1": "Pista 1 💡",
+  "js445HintContent1": "Sigue el patrón del ejemplo.",
+  "js445HintTitle2": "Pista 2 🧩",
+  "js445HintContent2": "Recuerda usar console.log para la salida.",
+  "js445SolutionTitle": "Solución ✅",
+  "js445SolutionContent": "Una posible solución es:\n\nlet value;\nif (value === undefined) console.log('Undefined');\n// check",
+  "js446InstructionsTitle": "Misión 446 🚀",
+  "js446InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = 0;\nconsole.log(value ?? 5);\n// ??",
+  "js446ExampleTitle": "Ejemplo",
+  "js446ExampleCode1": "const value = 0;",
+  "js446ExampleCode2": "console.log(value ?? 5);",
+  "js446ExampleCode3": "// ??",
+  "js446ExampleOutput": "Salida:\n0",
+  "js446EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js446HintTitle1": "Pista 1 💡",
+  "js446HintContent1": "Sigue el patrón del ejemplo.",
+  "js446HintTitle2": "Pista 2 🧩",
+  "js446HintContent2": "Recuerda usar console.log para la salida.",
+  "js446SolutionTitle": "Solución ✅",
+  "js446SolutionContent": "Una posible solución es:\n\nconst value = 0;\nconsole.log(value ?? 5);\n// ??",
+  "js447InstructionsTitle": "Misión 447 🚀",
+  "js447InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nfunction test() {}\nconsole.log(test());\n// undefined",
+  "js447ExampleTitle": "Ejemplo",
+  "js447ExampleCode1": "function test() {}",
+  "js447ExampleCode2": "console.log(test());",
+  "js447ExampleCode3": "// undefined",
+  "js447ExampleOutput": "Salida:\nundefined",
+  "js447EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js447HintTitle1": "Pista 1 💡",
+  "js447HintContent1": "Sigue el patrón del ejemplo.",
+  "js447HintTitle2": "Pista 2 🧩",
+  "js447HintContent2": "Recuerda usar console.log para la salida.",
+  "js447SolutionTitle": "Solución ✅",
+  "js447SolutionContent": "Una posible solución es:\n\nfunction test() {}\nconsole.log(test());\n// undefined",
+  "js448InstructionsTitle": "Reto 448 🕹️",
+  "js448InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst value = undefined;\nconsole.log(value ?? 'OK');\n// challenge",
+  "js448ExampleTitle": "Ejemplo",
+  "js448ExampleCode1": "const value = undefined;",
+  "js448ExampleCode2": "console.log(value ?? 'OK');",
+  "js448ExampleCode3": "// challenge",
+  "js448ExampleOutput": "Salida:\nOK",
+  "js448EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js448HintTitle1": "Pista 1 💡",
+  "js448HintContent1": "Sigue el patrón del ejemplo.",
+  "js448HintTitle2": "Pista 2 🧩",
+  "js448HintContent2": "Recuerda usar console.log para la salida.",
+  "js448SolutionTitle": "Solución ✅",
+  "js448SolutionContent": "Una posible solución es:\n\nconst value = undefined;\nconsole.log(value ?? 'OK');\n// challenge",
+  "js449InstructionsTitle": "Reto 449 🕹️",
+  "js449InstructionsContent": "Practica null y undefined.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst user = {};\nconsole.log(user.profile?.name ?? 'NA');\n// challenge",
+  "js449ExampleTitle": "Ejemplo",
+  "js449ExampleCode1": "const user = {};",
+  "js449ExampleCode2": "console.log(user.profile?.name ?? 'NA');",
+  "js449ExampleCode3": "// challenge",
+  "js449ExampleOutput": "Salida:\nNA",
+  "js449EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js449HintTitle1": "Pista 1 💡",
+  "js449HintContent1": "Sigue el patrón del ejemplo.",
+  "js449HintTitle2": "Pista 2 🧩",
+  "js449HintContent2": "Recuerda usar console.log para la salida.",
+  "js449SolutionTitle": "Solución ✅",
+  "js449SolutionContent": "Una posible solución es:\n\nconst user = {};\nconsole.log(user.profile?.name ?? 'NA');\n// challenge",
+  "js450InstructionsTitle": "Misión 450 🚀",
+  "js450InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst promise = new Promise((resolve) => resolve('OK'));\npromise.then(v => console.log(v));\n// promise",
+  "js450ExampleTitle": "Ejemplo",
+  "js450ExampleCode1": "const promise = new Promise((resolve) => resolve('OK'));",
+  "js450ExampleCode2": "promise.then(v => console.log(v));",
+  "js450ExampleCode3": "// promise",
+  "js450ExampleOutput": "Salida:\nOK",
+  "js450EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js450HintTitle1": "Pista 1 💡",
+  "js450HintContent1": "Sigue el patrón del ejemplo.",
+  "js450HintTitle2": "Pista 2 🧩",
+  "js450HintContent2": "Recuerda usar console.log para la salida.",
+  "js450SolutionTitle": "Solución ✅",
+  "js450SolutionContent": "Una posible solución es:\n\nconst promise = new Promise((resolve) => resolve('OK'));\npromise.then(v => console.log(v));\n// promise",
+  "js451InstructionsTitle": "Misión 451 🚀",
+  "js451InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst promise = Promise.resolve(5);\npromise.then(v => console.log(v));\n// resolve",
+  "js451ExampleTitle": "Ejemplo",
+  "js451ExampleCode1": "const promise = Promise.resolve(5);",
+  "js451ExampleCode2": "promise.then(v => console.log(v));",
+  "js451ExampleCode3": "// resolve",
+  "js451ExampleOutput": "Salida:\n5",
+  "js451EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js451HintTitle1": "Pista 1 💡",
+  "js451HintContent1": "Sigue el patrón del ejemplo.",
+  "js451HintTitle2": "Pista 2 🧩",
+  "js451HintContent2": "Recuerda usar console.log para la salida.",
+  "js451SolutionTitle": "Solución ✅",
+  "js451SolutionContent": "Una posible solución es:\n\nconst promise = Promise.resolve(5);\npromise.then(v => console.log(v));\n// resolve",
+  "js452InstructionsTitle": "Misión 452 🚀",
+  "js452InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst promise = Promise.reject('Err');\npromise.catch(e => console.log(e));\n// reject",
+  "js452ExampleTitle": "Ejemplo",
+  "js452ExampleCode1": "const promise = Promise.reject('Err');",
+  "js452ExampleCode2": "promise.catch(e => console.log(e));",
+  "js452ExampleCode3": "// reject",
+  "js452ExampleOutput": "Salida:\nErr",
+  "js452EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js452HintTitle1": "Pista 1 💡",
+  "js452HintContent1": "Sigue el patrón del ejemplo.",
+  "js452HintTitle2": "Pista 2 🧩",
+  "js452HintContent2": "Recuerda usar console.log para la salida.",
+  "js452SolutionTitle": "Solución ✅",
+  "js452SolutionContent": "Una posible solución es:\n\nconst promise = Promise.reject('Err');\npromise.catch(e => console.log(e));\n// reject",
+  "js453InstructionsTitle": "Misión 453 🚀",
+  "js453InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nPromise.resolve(1)\n.then(v => v + 1)\n.then(v => console.log(v));",
+  "js453ExampleTitle": "Ejemplo",
+  "js453ExampleCode1": "Promise.resolve(1)",
+  "js453ExampleCode2": ".then(v => v + 1)",
+  "js453ExampleCode3": ".then(v => console.log(v));",
+  "js453ExampleOutput": "Salida:\n2",
+  "js453EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js453HintTitle1": "Pista 1 💡",
+  "js453HintContent1": "Sigue el patrón del ejemplo.",
+  "js453HintTitle2": "Pista 2 🧩",
+  "js453HintContent2": "Recuerda usar console.log para la salida.",
+  "js453SolutionTitle": "Solución ✅",
+  "js453SolutionContent": "Una posible solución es:\n\nPromise.resolve(1)\n.then(v => v + 1)\n.then(v => console.log(v));",
+  "js454InstructionsTitle": "Misión 454 🚀",
+  "js454InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nPromise.reject('Oops')\n.catch(e => console.log(e));\n// catch",
+  "js454ExampleTitle": "Ejemplo",
+  "js454ExampleCode1": "Promise.reject('Oops')",
+  "js454ExampleCode2": ".catch(e => console.log(e));",
+  "js454ExampleCode3": "// catch",
+  "js454ExampleOutput": "Salida:\nOops",
+  "js454EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js454HintTitle1": "Pista 1 💡",
+  "js454HintContent1": "Sigue el patrón del ejemplo.",
+  "js454HintTitle2": "Pista 2 🧩",
+  "js454HintContent2": "Recuerda usar console.log para la salida.",
+  "js454SolutionTitle": "Solución ✅",
+  "js454SolutionContent": "Una posible solución es:\n\nPromise.reject('Oops')\n.catch(e => console.log(e));\n// catch",
+  "js455InstructionsTitle": "Misión 455 🚀",
+  "js455InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nPromise.resolve('OK')\n.finally(() => console.log('Done'));\n// finally",
+  "js455ExampleTitle": "Ejemplo",
+  "js455ExampleCode1": "Promise.resolve('OK')",
+  "js455ExampleCode2": ".finally(() => console.log('Done'));",
+  "js455ExampleCode3": "// finally",
+  "js455ExampleOutput": "Salida:\nDone",
+  "js455EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js455HintTitle1": "Pista 1 💡",
+  "js455HintContent1": "Sigue el patrón del ejemplo.",
+  "js455HintTitle2": "Pista 2 🧩",
+  "js455HintContent2": "Recuerda usar console.log para la salida.",
+  "js455SolutionTitle": "Solución ✅",
+  "js455SolutionContent": "Una posible solución es:\n\nPromise.resolve('OK')\n.finally(() => console.log('Done'));\n// finally",
+  "js456InstructionsTitle": "Misión 456 🚀",
+  "js456InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() { return 'Hi'; }\nrun().then(v => console.log(v));\n// async",
+  "js456ExampleTitle": "Ejemplo",
+  "js456ExampleCode1": "async function run() { return 'Hi'; }",
+  "js456ExampleCode2": "run().then(v => console.log(v));",
+  "js456ExampleCode3": "// async",
+  "js456ExampleOutput": "Salida:\nHi",
+  "js456EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js456HintTitle1": "Pista 1 💡",
+  "js456HintContent1": "Sigue el patrón del ejemplo.",
+  "js456HintTitle2": "Pista 2 🧩",
+  "js456HintContent2": "Recuerda usar console.log para la salida.",
+  "js456SolutionTitle": "Solución ✅",
+  "js456SolutionContent": "Una posible solución es:\n\nasync function run() { return 'Hi'; }\nrun().then(v => console.log(v));\n// async",
+  "js457InstructionsTitle": "Misión 457 🚀",
+  "js457InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() {\nconst v = await Promise.resolve(3);\nconsole.log(v); }",
+  "js457ExampleTitle": "Ejemplo",
+  "js457ExampleCode1": "async function run() {",
+  "js457ExampleCode2": "const v = await Promise.resolve(3);",
+  "js457ExampleCode3": "console.log(v); }",
+  "js457ExampleOutput": "Salida:\n3",
+  "js457EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js457HintTitle1": "Pista 1 💡",
+  "js457HintContent1": "Sigue el patrón del ejemplo.",
+  "js457HintTitle2": "Pista 2 🧩",
+  "js457HintContent2": "Recuerda usar console.log para la salida.",
+  "js457SolutionTitle": "Solución ✅",
+  "js457SolutionContent": "Una posible solución es:\n\nasync function run() {\nconst v = await Promise.resolve(3);\nconsole.log(v); }",
+  "js458InstructionsTitle": "Misión 458 🚀",
+  "js458InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() {\nconst v = await Promise.resolve('ok');\nconsole.log(v); }",
+  "js458ExampleTitle": "Ejemplo",
+  "js458ExampleCode1": "async function run() {",
+  "js458ExampleCode2": "const v = await Promise.resolve('ok');",
+  "js458ExampleCode3": "console.log(v); }",
+  "js458ExampleOutput": "Salida:\nok",
+  "js458EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js458HintTitle1": "Pista 1 💡",
+  "js458HintContent1": "Sigue el patrón del ejemplo.",
+  "js458HintTitle2": "Pista 2 🧩",
+  "js458HintContent2": "Recuerda usar console.log para la salida.",
+  "js458SolutionTitle": "Solución ✅",
+  "js458SolutionContent": "Una posible solución es:\n\nasync function run() {\nconst v = await Promise.resolve('ok');\nconsole.log(v); }",
+  "js459InstructionsTitle": "Misión 459 🚀",
+  "js459InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nconst run = async () => {\nreturn 5;\n};",
+  "js459ExampleTitle": "Ejemplo",
+  "js459ExampleCode1": "const run = async () => {",
+  "js459ExampleCode2": "return 5;",
+  "js459ExampleCode3": "};",
+  "js459ExampleOutput": "Salida:\n5",
+  "js459EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js459HintTitle1": "Pista 1 💡",
+  "js459HintContent1": "Sigue el patrón del ejemplo.",
+  "js459HintTitle2": "Pista 2 🧩",
+  "js459HintContent2": "Recuerda usar console.log para la salida.",
+  "js459SolutionTitle": "Solución ✅",
+  "js459SolutionContent": "Una posible solución es:\n\nconst run = async () => {\nreturn 5;\n};",
+  "js460InstructionsTitle": "Misión 460 🚀",
+  "js460InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nPromise.all([Promise.resolve(1), Promise.resolve(2)])\n.then(v => console.log(v));\n// all",
+  "js460ExampleTitle": "Ejemplo",
+  "js460ExampleCode1": "Promise.all([Promise.resolve(1), Promise.resolve(2)])",
+  "js460ExampleCode2": ".then(v => console.log(v));",
+  "js460ExampleCode3": "// all",
+  "js460ExampleOutput": "Salida:\n[1, 2]",
+  "js460EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js460HintTitle1": "Pista 1 💡",
+  "js460HintContent1": "Sigue el patrón del ejemplo.",
+  "js460HintTitle2": "Pista 2 🧩",
+  "js460HintContent2": "Recuerda usar console.log para la salida.",
+  "js460SolutionTitle": "Solución ✅",
+  "js460SolutionContent": "Una posible solución es:\n\nPromise.all([Promise.resolve(1), Promise.resolve(2)])\n.then(v => console.log(v));\n// all",
+  "js461InstructionsTitle": "Misión 461 🚀",
+  "js461InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nPromise.race([Promise.resolve('a'), Promise.resolve('b')])\n.then(v => console.log(v));\n// race",
+  "js461ExampleTitle": "Ejemplo",
+  "js461ExampleCode1": "Promise.race([Promise.resolve('a'), Promise.resolve('b')])",
+  "js461ExampleCode2": ".then(v => console.log(v));",
+  "js461ExampleCode3": "// race",
+  "js461ExampleOutput": "Salida:\na",
+  "js461EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js461HintTitle1": "Pista 1 💡",
+  "js461HintContent1": "Sigue el patrón del ejemplo.",
+  "js461HintTitle2": "Pista 2 🧩",
+  "js461HintContent2": "Recuerda usar console.log para la salida.",
+  "js461SolutionTitle": "Solución ✅",
+  "js461SolutionContent": "Una posible solución es:\n\nPromise.race([Promise.resolve('a'), Promise.resolve('b')])\n.then(v => console.log(v));\n// race",
+  "js462InstructionsTitle": "Misión 462 🚀",
+  "js462InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() {\nconst v = await Promise.resolve(1);\nconsole.log(v + 1); }",
+  "js462ExampleTitle": "Ejemplo",
+  "js462ExampleCode1": "async function run() {",
+  "js462ExampleCode2": "const v = await Promise.resolve(1);",
+  "js462ExampleCode3": "console.log(v + 1); }",
+  "js462ExampleOutput": "Salida:\n2",
+  "js462EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js462HintTitle1": "Pista 1 💡",
+  "js462HintContent1": "Sigue el patrón del ejemplo.",
+  "js462HintTitle2": "Pista 2 🧩",
+  "js462HintContent2": "Recuerda usar console.log para la salida.",
+  "js462SolutionTitle": "Solución ✅",
+  "js462SolutionContent": "Una posible solución es:\n\nasync function run() {\nconst v = await Promise.resolve(1);\nconsole.log(v + 1); }",
+  "js463InstructionsTitle": "Misión 463 🚀",
+  "js463InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() {\ntry { await Promise.reject('Err'); } catch (e) { console.log(e); }\n}",
+  "js463ExampleTitle": "Ejemplo",
+  "js463ExampleCode1": "async function run() {",
+  "js463ExampleCode2": "try { await Promise.reject('Err'); } catch (e) { console.log(e); }",
+  "js463ExampleCode3": "}",
+  "js463ExampleOutput": "Salida:\nErr",
+  "js463EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js463HintTitle1": "Pista 1 💡",
+  "js463HintContent1": "Sigue el patrón del ejemplo.",
+  "js463HintTitle2": "Pista 2 🧩",
+  "js463HintContent2": "Recuerda usar console.log para la salida.",
+  "js463SolutionTitle": "Solución ✅",
+  "js463SolutionContent": "Una posible solución es:\n\nasync function run() {\ntry { await Promise.reject('Err'); } catch (e) { console.log(e); }\n}",
+  "js464InstructionsTitle": "Reto 464 🕹️",
+  "js464InstructionsContent": "Practica Promises y async/await.\n\nReglas:\n1) Sigue el concepto de la lección.\n2) Usa console.log para la salida.\n3) Manténlo simple.\n\nEjemplo:\nasync function run() {\nconst v = await Promise.resolve('OK');\nconsole.log(v); }",
+  "js464ExampleTitle": "Ejemplo",
+  "js464ExampleCode1": "async function run() {",
+  "js464ExampleCode2": "const v = await Promise.resolve('OK');",
+  "js464ExampleCode3": "console.log(v); }",
+  "js464ExampleOutput": "Salida:\nOK",
+  "js464EnterCodeHint": "Escribe tu código JavaScript aquí...",
+  "js464HintTitle1": "Pista 1 💡",
+  "js464HintContent1": "Sigue el patrón del ejemplo.",
+  "js464HintTitle2": "Pista 2 🧩",
+  "js464HintContent2": "Recuerda usar console.log para la salida.",
+  "js464SolutionTitle": "Solución ✅",
+  "js464SolutionContent": "Una posible solución es:\n\nasync function run() {\nconst v = await Promise.resolve('OK');\nconsole.log(v); }"
 }

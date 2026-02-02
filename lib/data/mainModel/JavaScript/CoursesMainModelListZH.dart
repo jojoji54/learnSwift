@@ -150,10 +150,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 6,
-    generalName: 'Objects',
-    catExercise: jsObjectsModelEN,
+    generalName: '对象',
+    catExercise: jsObjectsModelZH,
     description:
-        'Learn objects, properties, methods, and how to model real-world data with key-value structures.',
+        '学习对象、属性和方法，用键值对建模真实数据。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -171,10 +171,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 7,
-    generalName: 'Maps & Sets',
-    catExercise: jsMapsAndSetsModelEN,
+    generalName: 'Maps 与 Sets',
+    catExercise: jsMapsAndSetsModelZH,
     description:
-        'Use Set for unique values and Map for efficient key-value storage beyond plain objects.',
+        '使用 Set 保存唯一值，用 Map 做高效键值存储。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -192,10 +192,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 8,
-    generalName: 'Functions',
-    catExercise: jsFunctionsModelEN,
+    generalName: '函数',
+    catExercise: jsFunctionsModelZH,
     description:
-        'Understand functions, parameters, return values, scope, and arrow functions for reusable code.',
+        '理解函数、参数、返回值和作用域，编写可复用代码。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -213,10 +213,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 9,
-    generalName: 'Null & Undefined',
-    catExercise: jsNullUndefinedModelEN,
+    generalName: 'Null 与 Undefined',
+    catExercise: jsNullUndefinedModelZH,
     description:
-        'Learn the difference between null and undefined, and avoid common bugs with checks and defaults.',
+        '了解 null 与 undefined 的区别，避免常见错误。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -234,10 +234,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 10,
-    generalName: 'Promises & Async/Await',
-    catExercise: jsPromisesAsyncModelEN,
+    generalName: 'Promise 与 Async/Await',
+    catExercise: jsPromisesAsyncModelZH,
     description:
-        'Handle async code with Promises and async/await. Key for networking, timers, and modern JS apps.',
+        '用 Promises 和 async/await 处理异步代码，现代 JS 必备。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -252,5 +252,4 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
       color2: color2,
     ),
   ),
-  */
 ];

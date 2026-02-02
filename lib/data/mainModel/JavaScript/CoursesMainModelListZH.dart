@@ -1,7 +1,17 @@
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/JavaScript/jsBasics/jsBasicExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsBoolean/jsBooleanExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsIfElse/jsIfElseExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsLoops/jsLoopsExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsSwitch/jsSwitchExMain.dart';
+import '../../../Screens/Courses/JavaScript/jsArrays/jsArraysExMain.dart';
 import '../../courses/JavaScript/jsBasics/jsBasicsExModelListZH.dart';
+import '../../courses/JavaScript/jsBoolean/jsBooleanExModelListZH.dart';
+import '../../courses/JavaScript/jsIfElse/jsIfElseExModelListZH.dart';
+import '../../courses/JavaScript/jsSwitch/jsSwitchExModelListZH.dart';
+import '../../courses/JavaScript/jsLoops/jsLoopsExModelListZH.dart';
+import '../../courses/JavaScript/jsArrays/jsArraysExModelListZH.dart';
 
 // ------------------------------------------------------------
 // JavaScript – Categories (ZH)
@@ -29,15 +39,12 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     ),
   ),
 
-  /*
-
-
   CoursesMainModel(
     id: 1,
-    generalName: 'Boolean Basics',
-    catExercise: jsBooleanModelEN,
+    generalName: '布尔基础',
+    catExercise: jsBooleanModelZH,
     description:
-        'Covers boolean logic, comparisons, and logical operators. Essential for decision-making in your code.',
+        '学习布尔逻辑、比较和逻辑运算符，是代码分支判断的关键基础。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -56,9 +63,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
   CoursesMainModel(
     id: 2,
     generalName: 'If-Else',
-    catExercise: jsIfElseModelEN,
+    catExercise: jsIfElseModelZH,
     description:
-        'Learn conditional branching to control program flow with if, else if, and else.',
+        '学习 if、else if 和 else 的条件分支来控制流程。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -77,9 +84,9 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
   CoursesMainModel(
     id: 3,
     generalName: 'Switch',
-    catExercise: jsSwitchModelEN,
+    catExercise: jsSwitchModelZH,
     description:
-        'Use switch statements to handle multiple cases in a clean, readable way.',
+        '使用 switch 来处理多个情况，代码更清晰。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -97,10 +104,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 4,
-    generalName: 'Loops',
-    catExercise: jsLoopsModelEN,
+    generalName: '循环',
+    catExercise: jsLoopsModelZH,
     description:
-        'Master for, while, do...while, and iteration patterns to automate repetitive tasks.',
+        '掌握 for、while、do while 等循环来自动化重复任务。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -118,10 +125,10 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
 
   CoursesMainModel(
     id: 5,
-    generalName: 'Arrays',
-    catExercise: jsArraysModelEN,
+    generalName: '数组',
+    catExercise: jsArraysModelZH,
     description:
-        'Work with arrays, indexing, and common methods like push/pop/map/filter to handle collections.',
+        '学习数组、索引以及 push、pop、map、filter 等常用方法。',
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -136,6 +143,8 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
       color2: color2,
     ),
   ),
+
+  /*
 
   CoursesMainModel(
     id: 6,

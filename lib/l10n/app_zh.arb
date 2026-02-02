@@ -1962,92 +1962,1995 @@
   "js314HintContent2": "你要调用它并打印结果：console.log(myFn(123));",
 
   "js314SolutionTitle": "答案 ✅",
-  "js314SolutionContent": "一种可行的写法：\n\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+  "js314SolutionContent": "一种可行的写法：\n\nconst addOne = (x) => x + 1;\nconsole.log(addOne(5));",
+
+  "js315InstructionsTitle": "任务 315 🚀",
+  "js315InstructionsContent": "创建一个布尔变量并打印它。\n\n规则：\n1) 使用 let 或 const。\n2) 赋值 true 或 false。\n3) 用 console.log(...) 打印变量。\n\n示例：\nconst isOnline = true;\nconsole.log(isOnline);",
+  "js315ExampleTitle": "示例",
+  "js315ExampleCode1": "const isOnline = true;",
+  "js315ExampleCode2": "console.log(isOnline);",
+  "js315ExampleOutput": "输出：\ntrue",
+  "js315EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js315HintTitle1": "提示 1 💡",
+  "js315HintContent1": "布尔值只有 true 或 false。",
+  "js315HintTitle2": "提示 2 🧩",
+  "js315HintContent2": "用 let 或 const 声明，然后打印变量名。",
+  "js315SolutionTitle": "答案 ✅",
+  "js315SolutionContent": "一种可行的写法：\n\nconst isOnline = true;\nconsole.log(isOnline);",
+
+  "js316InstructionsTitle": "任务 316 🚀",
+  "js316InstructionsContent": "取反一个布尔值并打印两个结果。\n\n规则：\n1) 创建一个布尔变量。\n2) 使用 ! 取反。\n3) 打印原值和取反后的值。\n\n示例：\nconst isReady = true;\nconsole.log(isReady);\nconsole.log(!isReady);",
+  "js316ExampleTitle": "示例",
+  "js316ExampleCode1": "const isReady = true;",
+  "js316ExampleCode2": "console.log(isReady);",
+  "js316ExampleCode3": "console.log(!isReady);",
+  "js316ExampleOutput": "输出：\ntrue\nfalse",
+  "js316EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js316HintTitle1": "提示 1 💡",
+  "js316HintContent1": "在变量前加 !。",
+  "js316HintTitle2": "提示 2 🧩",
+  "js316HintContent2": "用 console.log 打印两个值。",
+  "js316SolutionTitle": "答案 ✅",
+  "js316SolutionContent": "一种可行的写法：\n\nconst isReady = true;\nconsole.log(isReady);\nconsole.log(!isReady);",
+
+  "js317InstructionsTitle": "任务 317 🚀",
+  "js317InstructionsContent": "练习严格比较。\n\n规则：\n1) 至少使用一次 ===。\n2) 至少使用一次 !==。\n3) 用 console.log(...) 打印至少两个结果。\n\n示例：\nconsole.log(5 === 5);\nconsole.log(5 !== 3);",
+  "js317ExampleTitle": "示例",
+  "js317ExampleCode1": "console.log(5 === 5);",
+  "js317ExampleCode2": "console.log(5 !== 3);",
+  "js317ExampleCode3": "// 试试别的值",
+  "js317ExampleCode4": "console.log(10 !== 10);",
+  "js317ExampleOutput": "输出：\ntrue\ntrue\nfalse",
+  "js317EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js317HintTitle1": "提示 1 💡",
+  "js317HintContent1": "只用 === 和 !==。",
+  "js317HintTitle2": "提示 2 🧩",
+  "js317HintContent2": "至少写两行 console.log。",
+  "js317SolutionTitle": "答案 ✅",
+  "js317SolutionContent": "一种可行的写法：\n\nconsole.log(5 === 5);\nconsole.log(5 !== 3);",
+
+  "js318InstructionsTitle": "任务 318 🚀",
+  "js318InstructionsContent": "做一个比较并打印它。\n\n规则：\n1) 使用 >、<、>= 或 <=。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconsole.log(7 > 3);",
+  "js318ExampleTitle": "示例",
+  "js318ExampleCode1": "const score = 7;",
+  "js318ExampleCode2": "console.log(score >= 5);",
+  "js318ExampleCode3": "// 试试自己的比较",
+  "js318ExampleOutput": "输出：\ntrue",
+  "js318EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js318HintTitle1": "提示 1 💡",
+  "js318HintContent1": "写一个比较表达式，比如 x > y。",
+  "js318HintTitle2": "提示 2 🧩",
+  "js318HintContent2": "别忘了用 console.log 打印。",
+  "js318SolutionTitle": "答案 ✅",
+  "js318SolutionContent": "一种可行的写法：\n\nconst score = 7;\nconsole.log(score >= 5);",
+
+  "js319InstructionsTitle": "任务 319 🚀",
+  "js319InstructionsContent": "使用逻辑 AND。\n\n规则：\n1) 创建两个布尔变量。\n2) 用 && 组合。\n3) 用 console.log(...) 打印结果。\n\n示例：\nconst a = true;\nconst b = false;\nconsole.log(a && b);",
+  "js319ExampleTitle": "示例",
+  "js319ExampleCode1": "const a = true;",
+  "js319ExampleCode2": "const b = false;",
+  "js319ExampleCode3": "console.log(a && b);",
+  "js319ExampleOutput": "输出：\nfalse",
+  "js319EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js319HintTitle1": "提示 1 💡",
+  "js319HintContent1": "&& 表示 AND。",
+  "js319HintTitle2": "提示 2 🧩",
+  "js319HintContent2": "打印类似 a && b 的表达式。",
+  "js319SolutionTitle": "答案 ✅",
+  "js319SolutionContent": "一种可行的写法：\n\nconst a = true;\nconst b = false;\nconsole.log(a && b);",
+
+  "js320InstructionsTitle": "任务 320 🚀",
+  "js320InstructionsContent": "使用逻辑 OR。\n\n规则：\n1) 创建两个布尔变量。\n2) 用 || 组合。\n3) 用 console.log(...) 打印结果。\n\n示例：\nconst a = true;\nconst b = false;\nconsole.log(a || b);",
+  "js320ExampleTitle": "示例",
+  "js320ExampleCode1": "const a = true;",
+  "js320ExampleCode2": "const b = false;",
+  "js320ExampleCode3": "console.log(a || b);",
+  "js320ExampleOutput": "输出：\ntrue",
+  "js320EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js320HintTitle1": "提示 1 💡",
+  "js320HintContent1": "|| 表示 OR。",
+  "js320HintTitle2": "提示 2 🧩",
+  "js320HintContent2": "打印类似 a || b 的表达式。",
+  "js320SolutionTitle": "答案 ✅",
+  "js320SolutionContent": "一种可行的写法：\n\nconst a = true;\nconst b = false;\nconsole.log(a || b);",
+
+  "js321InstructionsTitle": "任务 321 🚀",
+  "js321InstructionsContent": "在同一个表达式里组合 && 和 ||。\n\n规则：\n1) 同时使用 && 和 ||。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconst a = true;\nconst b = false;\nconst c = true;\nconsole.log(a && b || c);",
+  "js321ExampleTitle": "示例",
+  "js321ExampleCode1": "const a = true;",
+  "js321ExampleCode2": "const b = false;",
+  "js321ExampleCode3": "console.log(a && b || true);",
+  "js321ExampleOutput": "输出：\ntrue",
+  "js321EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js321HintTitle1": "提示 1 💡",
+  "js321HintContent1": "表达式里要有 && 和 ||。",
+  "js321HintTitle2": "提示 2 🧩",
+  "js321HintContent2": "别忘了 console.log。",
+  "js321SolutionTitle": "答案 ✅",
+  "js321SolutionContent": "一种可行的写法：\n\nconst a = true;\nconst b = false;\nconsole.log(a && b || true);",
+
+  "js322InstructionsTitle": "任务 322 🚀",
+  "js322InstructionsContent": "使用三元运算符。\n\n规则：\n1) 写出 条件 ? 值1 : 值2。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconst age = 20;\nconsole.log(age >= 18 ? \"Adult\" : \"Minor\");",
+  "js322ExampleTitle": "示例",
+  "js322ExampleCode1": "const age = 20;",
+  "js322ExampleCode2": "const label = age >= 18 ? \"Adult\" : \"Minor\";",
+  "js322ExampleCode3": "console.log(label);",
+  "js322ExampleOutput": "输出：\nAdult",
+  "js322EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js322HintTitle1": "提示 1 💡",
+  "js322HintContent1": "同一行里要有 ? 和 :。",
+  "js322HintTitle2": "提示 2 🧩",
+  "js322HintContent2": "打印结果即可。",
+  "js322SolutionTitle": "答案 ✅",
+  "js322SolutionContent": "一种可行的写法：\n\nconst age = 20;\nconsole.log(age >= 18 ? \"Adult\" : \"Minor\");",
+
+  "js323InstructionsTitle": "挑战 1 🕹️",
+  "js323InstructionsContent": "做一个访问控制。\n\n规则：\n1) 创建数字变量 age。\n2) 创建布尔变量 hasId。\n3) 使用 if 和 else。\n4) if 条件必须包含 &&。\n5) 两个分支都要打印信息。\n\n示例：\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");",
+  "js323ExampleTitle": "示例",
+  "js323ExampleCode1": "const age = 20;",
+  "js323ExampleCode2": "const hasId = true;",
+  "js323ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access granted\");",
+  "js323ExampleCode4": "else console.log(\"Access denied\");",
+  "js323ExampleOutput": "输出：\nAccess granted",
+  "js323EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js323HintTitle1": "提示 1 💡",
+  "js323HintContent1": "用 if 和 else 各打印一行。",
+  "js323HintTitle2": "提示 2 🧩",
+  "js323HintContent2": "条件里要有 && 和两个变量。",
+  "js323SolutionTitle": "答案 ✅",
+  "js323SolutionContent": "一种可行的写法：\n\nconst age = 20;\nconst hasId = true;\nif (age >= 18 && hasId) console.log(\"Access granted\"); else console.log(\"Access denied\");",
+
+  "js324InstructionsTitle": "任务 324 🚀",
+  "js324InstructionsContent": "检查字符串长度。\n\n规则：\n1) 创建一个字符串。\n2) 使用 .length。\n3) 比较长度并打印结果。\n\n示例：\nconst word = \"Swift\";\nconsole.log(word.length > 3);",
+  "js324ExampleTitle": "示例",
+  "js324ExampleCode1": "const word = \"Swift\";",
+  "js324ExampleCode2": "const longEnough = word.length > 3;",
+  "js324ExampleCode3": "console.log(longEnough);",
+  "js324ExampleOutput": "输出：\ntrue",
+  "js324EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js324HintTitle1": "提示 1 💡",
+  "js324HintContent1": "在比较里用 word.length。",
+  "js324HintTitle2": "提示 2 🧩",
+  "js324HintContent2": "打印布尔结果。",
+  "js324SolutionTitle": "答案 ✅",
+  "js324SolutionContent": "一种可行的写法：\n\nconst word = \"Swift\";\nconsole.log(word.length > 3);",
+
+  "js325InstructionsTitle": "任务 325 🚀",
+  "js325InstructionsContent": "把一个值转换成布尔值。\n\n规则：\n1) 使用 Boolean(...)。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconst value = \"\";\nconsole.log(Boolean(value));",
+  "js325ExampleTitle": "示例",
+  "js325ExampleCode1": "const value = \"\";",
+  "js325ExampleCode2": "const isTruthy = Boolean(value);",
+  "js325ExampleCode3": "console.log(isTruthy);",
+  "js325ExampleOutput": "输出：\nfalse",
+  "js325EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js325HintTitle1": "提示 1 💡",
+  "js325HintContent1": "Boolean(value) 会返回 true 或 false。",
+  "js325HintTitle2": "提示 2 🧩",
+  "js325HintContent2": "打印转换后的结果。",
+  "js325SolutionTitle": "答案 ✅",
+  "js325SolutionContent": "一种可行的写法：\n\nconst value = \"\";\nconsole.log(Boolean(value));",
+
+  "js326InstructionsTitle": "任务 326 🚀",
+  "js326InstructionsContent": "使用双重取反。\n\n规则：\n1) 用 !!value 转成布尔值。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconst points = 0;\nconsole.log(!!points);",
+  "js326ExampleTitle": "示例",
+  "js326ExampleCode1": "const points = 0;",
+  "js326ExampleCode2": "const isTruthy = !!points;",
+  "js326ExampleCode3": "console.log(isTruthy);",
+  "js326ExampleOutput": "输出：\nfalse",
+  "js326EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js326HintTitle1": "提示 1 💡",
+  "js326HintContent1": "双重取反长这样：!!value。",
+  "js326HintTitle2": "提示 2 🧩",
+  "js326HintContent2": "记得打印结果。",
+  "js326SolutionTitle": "答案 ✅",
+  "js326SolutionContent": "一种可行的写法：\n\nconst points = 0;\nconsole.log(!!points);",
+
+  "js327InstructionsTitle": "任务 327 🚀",
+  "js327InstructionsContent": "用 if 判断 truthy 和 falsy。\n\n规则：\n1) 使用 if 和 else。\n2) 直接判断一个值。\n3) 两个分支都要打印信息。\n\n示例：\nconst name = \"\";\nif (name) console.log(\"Hello\"); else console.log(\"No name\");",
+  "js327ExampleTitle": "示例",
+  "js327ExampleCode1": "const name = \"\";",
+  "js327ExampleCode2": "if (name) console.log(\"Hello\");",
+  "js327ExampleCode3": "else console.log(\"No name\");",
+  "js327ExampleCode4": "// 试试非空字符串",
+  "js327ExampleOutput": "输出：\nNo name",
+  "js327EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js327HintTitle1": "提示 1 💡",
+  "js327HintContent1": "可以直接写 if (value)。",
+  "js327HintTitle2": "提示 2 🧩",
+  "js327HintContent2": "别忘了 else 分支。",
+  "js327SolutionTitle": "答案 ✅",
+  "js327SolutionContent": "一种可行的写法：\n\nconst name = \"\";\nif (name) console.log(\"Hello\"); else console.log(\"No name\");",
+
+  "js328InstructionsTitle": "任务 328 🚀",
+  "js328InstructionsContent": "创建一个返回布尔值的函数。\n\n规则：\n1) 写一个函数（箭头或 function）。\n2) 返回一个比较结果。\n3) 调用函数并打印结果。\n\n示例：\nconst isEven = (n) => n % 2 === 0;\nconsole.log(isEven(4));",
+  "js328ExampleTitle": "示例",
+  "js328ExampleCode1": "const isEven = (n) => n % 2 === 0;",
+  "js328ExampleCode2": "const result = isEven(4);",
+  "js328ExampleCode3": "console.log(result);",
+  "js328ExampleOutput": "输出：\ntrue",
+  "js328EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js328HintTitle1": "提示 1 💡",
+  "js328HintContent1": "可以写 (n) => n % 2 === 0。",
+  "js328HintTitle2": "提示 2 🧩",
+  "js328HintContent2": "调用函数并打印结果。",
+  "js328SolutionTitle": "答案 ✅",
+  "js328SolutionContent": "一种可行的写法：\n\nconst isEven = (n) => n % 2 === 0;\nconsole.log(isEven(4));",
+
+  "js329InstructionsTitle": "挑战 2 🕹️",
+  "js329InstructionsContent": "在一行里混合 && 和 ||。\n\n规则：\n1) 同时使用 && 和 ||。\n2) 用 console.log(...) 打印结果。\n\n示例：\nconst isMember = true;\nconst hasTicket = false;\nconsole.log(isMember && hasTicket || true);",
+  "js329ExampleTitle": "示例",
+  "js329ExampleCode1": "const isMember = true;",
+  "js329ExampleCode2": "const hasTicket = false;",
+  "js329ExampleCode3": "console.log(isMember && hasTicket || true);",
+  "js329ExampleOutput": "输出：\ntrue",
+  "js329EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js329HintTitle1": "提示 1 💡",
+  "js329HintContent1": "同一行里包含 && 和 ||。",
+  "js329HintTitle2": "提示 2 🧩",
+  "js329HintContent2": "用 console.log 打印最终结果。",
+  "js329SolutionTitle": "答案 ✅",
+  "js329SolutionContent": "一种可行的写法：\n\nconst isMember = true;\nconst hasTicket = false;\nconsole.log(isMember && hasTicket || true);",
+  "js330InstructionsTitle": "任务 330 🚀",
+  "js330InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const n = 10;
+if (n > 5) console.log(\"Big\");
+// Try another number",
+  "js330ExampleTitle": "示例",
+  "js330ExampleCode1": "const n = 10;",
+  "js330ExampleCode2": "if (n > 5) console.log(\"Big\");",
+  "js330ExampleCode3": "// Try another number",
+  "js330ExampleOutput": "输出：
+Big",
+  "js330EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js330HintTitle1": "提示 1 💡",
+  "js330HintContent1": "参考示例写法。",
+  "js330HintTitle2": "提示 2 🧩",
+  "js330HintContent2": "记得用 console.log 输出。",
+  "js330SolutionTitle": "答案 ✅",
+  "js330SolutionContent": "一种可行的写法：
+
+const n = 10;
+if (n > 5) console.log(\"Big\");
+// Try another number",
+  "js331InstructionsTitle": "任务 331 🚀",
+  "js331InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const age = 20;
+if (age >= 18) console.log(\"Adult\");
+else console.log(\"Minor\");",
+  "js331ExampleTitle": "示例",
+  "js331ExampleCode1": "const age = 20;",
+  "js331ExampleCode2": "if (age >= 18) console.log(\"Adult\");",
+  "js331ExampleCode3": "else console.log(\"Minor\");",
+  "js331ExampleOutput": "输出：
+Adult",
+  "js331EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js331HintTitle1": "提示 1 💡",
+  "js331HintContent1": "参考示例写法。",
+  "js331HintTitle2": "提示 2 🧩",
+  "js331HintContent2": "记得用 console.log 输出。",
+  "js331SolutionTitle": "答案 ✅",
+  "js331SolutionContent": "一种可行的写法：
+
+const age = 20;
+if (age >= 18) console.log(\"Adult\");
+else console.log(\"Minor\");",
+  "js332InstructionsTitle": "任务 332 🚀",
+  "js332InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const score = 75;
+if (score >= 90) console.log(\"A\");
+else if (score >= 70) console.log(\"B\");",
+  "js332ExampleTitle": "示例",
+  "js332ExampleCode1": "const score = 75;",
+  "js332ExampleCode2": "if (score >= 90) console.log(\"A\");",
+  "js332ExampleCode3": "else if (score >= 70) console.log(\"B\");",
+  "js332ExampleOutput": "输出：
+B",
+  "js332EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js332HintTitle1": "提示 1 💡",
+  "js332HintContent1": "参考示例写法。",
+  "js332HintTitle2": "提示 2 🧩",
+  "js332HintContent2": "记得用 console.log 输出。",
+  "js332SolutionTitle": "答案 ✅",
+  "js332SolutionContent": "一种可行的写法：
+
+const score = 75;
+if (score >= 90) console.log(\"A\");
+else if (score >= 70) console.log(\"B\");",
+  "js333InstructionsTitle": "任务 333 🚀",
+  "js333InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const lang = \"js\";
+if (lang === \"js\") console.log(\"OK\");
+// Try another value",
+  "js333ExampleTitle": "示例",
+  "js333ExampleCode1": "const lang = \"js\";",
+  "js333ExampleCode2": "if (lang === \"js\") console.log(\"OK\");",
+  "js333ExampleCode3": "// Try another value",
+  "js333ExampleOutput": "输出：
+OK",
+  "js333EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js333HintTitle1": "提示 1 💡",
+  "js333HintContent1": "参考示例写法。",
+  "js333HintTitle2": "提示 2 🧩",
+  "js333HintContent2": "记得用 console.log 输出。",
+  "js333SolutionTitle": "答案 ✅",
+  "js333SolutionContent": "一种可行的写法：
+
+const lang = \"js\";
+if (lang === \"js\") console.log(\"OK\");
+// Try another value",
+  "js334InstructionsTitle": "任务 334 🚀",
+  "js334InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const age = 20;
+const hasId = true;
+if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334ExampleTitle": "示例",
+  "js334ExampleCode1": "const age = 20;",
+  "js334ExampleCode2": "const hasId = true;",
+  "js334ExampleCode3": "if (age >= 18 && hasId) console.log(\"Access\");",
+  "js334ExampleOutput": "输出：
+Access",
+  "js334EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js334HintTitle1": "提示 1 💡",
+  "js334HintContent1": "参考示例写法。",
+  "js334HintTitle2": "提示 2 🧩",
+  "js334HintContent2": "记得用 console.log 输出。",
+  "js334SolutionTitle": "答案 ✅",
+  "js334SolutionContent": "一种可行的写法：
+
+const age = 20;
+const hasId = true;
+if (age >= 18 && hasId) console.log(\"Access\");",
+  "js335InstructionsTitle": "任务 335 🚀",
+  "js335InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const isMember = false;
+const hasPass = true;
+if (isMember || hasPass) console.log(\"Enter\");",
+  "js335ExampleTitle": "示例",
+  "js335ExampleCode1": "const isMember = false;",
+  "js335ExampleCode2": "const hasPass = true;",
+  "js335ExampleCode3": "if (isMember || hasPass) console.log(\"Enter\");",
+  "js335ExampleOutput": "输出：
+Enter",
+  "js335EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js335HintTitle1": "提示 1 💡",
+  "js335HintContent1": "参考示例写法。",
+  "js335HintTitle2": "提示 2 🧩",
+  "js335HintContent2": "记得用 console.log 输出。",
+  "js335SolutionTitle": "答案 ✅",
+  "js335SolutionContent": "一种可行的写法：
+
+const isMember = false;
+const hasPass = true;
+if (isMember || hasPass) console.log(\"Enter\");",
+  "js336InstructionsTitle": "任务 336 🚀",
+  "js336InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const age = 20;
+if (age > 10) if (age < 30) console.log(\"OK\");
+// Nested if",
+  "js336ExampleTitle": "示例",
+  "js336ExampleCode1": "const age = 20;",
+  "js336ExampleCode2": "if (age > 10) if (age < 30) console.log(\"OK\");",
+  "js336ExampleCode3": "// Nested if",
+  "js336ExampleOutput": "输出：
+OK",
+  "js336EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js336HintTitle1": "提示 1 💡",
+  "js336HintContent1": "参考示例写法。",
+  "js336HintTitle2": "提示 2 🧩",
+  "js336HintContent2": "记得用 console.log 输出。",
+  "js336SolutionTitle": "答案 ✅",
+  "js336SolutionContent": "一种可行的写法：
+
+const age = 20;
+if (age > 10) if (age < 30) console.log(\"OK\");
+// Nested if",
+  "js337InstructionsTitle": "任务 337 🚀",
+  "js337InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const isReady = true;
+if (isReady) console.log(\"Go\");
+// Try false",
+  "js337ExampleTitle": "示例",
+  "js337ExampleCode1": "const isReady = true;",
+  "js337ExampleCode2": "if (isReady) console.log(\"Go\");",
+  "js337ExampleCode3": "// Try false",
+  "js337ExampleOutput": "输出：
+Go",
+  "js337EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js337HintTitle1": "提示 1 💡",
+  "js337HintContent1": "参考示例写法。",
+  "js337HintTitle2": "提示 2 🧩",
+  "js337HintContent2": "记得用 console.log 输出。",
+  "js337SolutionTitle": "答案 ✅",
+  "js337SolutionContent": "一种可行的写法：
+
+const isReady = true;
+if (isReady) console.log(\"Go\");
+// Try false",
+  "js338InstructionsTitle": "任务 338 🚀",
+  "js338InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const role = \"guest\";
+if (role !== \"admin\") console.log(\"Limited\");
+// Try admin",
+  "js338ExampleTitle": "示例",
+  "js338ExampleCode1": "const role = \"guest\";",
+  "js338ExampleCode2": "if (role !== \"admin\") console.log(\"Limited\");",
+  "js338ExampleCode3": "// Try admin",
+  "js338ExampleOutput": "输出：
+Limited",
+  "js338EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js338HintTitle1": "提示 1 💡",
+  "js338HintContent1": "参考示例写法。",
+  "js338HintTitle2": "提示 2 🧩",
+  "js338HintContent2": "记得用 console.log 输出。",
+  "js338SolutionTitle": "答案 ✅",
+  "js338SolutionContent": "一种可行的写法：
+
+const role = \"guest\";
+if (role !== \"admin\") console.log(\"Limited\");
+// Try admin",
+  "js339InstructionsTitle": "任务 339 🚀",
+  "js339InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const name = \"Ana\";
+if (name.length < 5) console.log(\"Short\");
+// Try another name",
+  "js339ExampleTitle": "示例",
+  "js339ExampleCode1": "const name = \"Ana\";",
+  "js339ExampleCode2": "if (name.length < 5) console.log(\"Short\");",
+  "js339ExampleCode3": "// Try another name",
+  "js339ExampleOutput": "输出：
+Short",
+  "js339EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js339HintTitle1": "提示 1 💡",
+  "js339HintContent1": "参考示例写法。",
+  "js339HintTitle2": "提示 2 🧩",
+  "js339HintContent2": "记得用 console.log 输出。",
+  "js339SolutionTitle": "答案 ✅",
+  "js339SolutionContent": "一种可行的写法：
+
+const name = \"Ana\";
+if (name.length < 5) console.log(\"Short\");
+// Try another name",
+  "js340InstructionsTitle": "任务 340 🚀",
+  "js340InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const temp = 22;
+if (temp >= 18 && temp <= 26) console.log(\"Ok\");
+// Range check",
+  "js340ExampleTitle": "示例",
+  "js340ExampleCode1": "const temp = 22;",
+  "js340ExampleCode2": "if (temp >= 18 && temp <= 26) console.log(\"Ok\");",
+  "js340ExampleCode3": "// Range check",
+  "js340ExampleOutput": "输出：
+Ok",
+  "js340EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js340HintTitle1": "提示 1 💡",
+  "js340HintContent1": "参考示例写法。",
+  "js340HintTitle2": "提示 2 🧩",
+  "js340HintContent2": "记得用 console.log 输出。",
+  "js340SolutionTitle": "答案 ✅",
+  "js340SolutionContent": "一种可行的写法：
+
+const temp = 22;
+if (temp >= 18 && temp <= 26) console.log(\"Ok\");
+// Range check",
+  "js341InstructionsTitle": "任务 341 🚀",
+  "js341InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const n = 4;
+if (n % 2 === 0) console.log(\"Even\");
+else console.log(\"Odd\");",
+  "js341ExampleTitle": "示例",
+  "js341ExampleCode1": "const n = 4;",
+  "js341ExampleCode2": "if (n % 2 === 0) console.log(\"Even\");",
+  "js341ExampleCode3": "else console.log(\"Odd\");",
+  "js341ExampleOutput": "输出：
+Even",
+  "js341EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js341HintTitle1": "提示 1 💡",
+  "js341HintContent1": "参考示例写法。",
+  "js341HintTitle2": "提示 2 🧩",
+  "js341HintContent2": "记得用 console.log 输出。",
+  "js341SolutionTitle": "答案 ✅",
+  "js341SolutionContent": "一种可行的写法：
+
+const n = 4;
+if (n % 2 === 0) console.log(\"Even\");
+else console.log(\"Odd\");",
+  "js342InstructionsTitle": "任务 342 🚀",
+  "js342InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const age = 16;
+const hasPass = true;
+if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342ExampleTitle": "示例",
+  "js342ExampleCode1": "const age = 16;",
+  "js342ExampleCode2": "const hasPass = true;",
+  "js342ExampleCode3": "if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js342ExampleOutput": "输出：
+No",
+  "js342EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js342HintTitle1": "提示 1 💡",
+  "js342HintContent1": "参考示例写法。",
+  "js342HintTitle2": "提示 2 🧩",
+  "js342HintContent2": "记得用 console.log 输出。",
+  "js342SolutionTitle": "答案 ✅",
+  "js342SolutionContent": "一种可行的写法：
+
+const age = 16;
+const hasPass = true;
+if (age >= 18 && hasPass) console.log(\"Yes\"); else console.log(\"No\");",
+  "js343InstructionsTitle": "任务 343 🚀",
+  "js343InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const name = \"\";
+if (name) console.log(\"Hi\");
+else console.log(\"Empty\");",
+  "js343ExampleTitle": "示例",
+  "js343ExampleCode1": "const name = \"\";",
+  "js343ExampleCode2": "if (name) console.log(\"Hi\");",
+  "js343ExampleCode3": "else console.log(\"Empty\");",
+  "js343ExampleOutput": "输出：
+Empty",
+  "js343EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js343HintTitle1": "提示 1 💡",
+  "js343HintContent1": "参考示例写法。",
+  "js343HintTitle2": "提示 2 🧩",
+  "js343HintContent2": "记得用 console.log 输出。",
+  "js343SolutionTitle": "答案 ✅",
+  "js343SolutionContent": "一种可行的写法：
+
+const name = \"\";
+if (name) console.log(\"Hi\");
+else console.log(\"Empty\");",
+  "js344InstructionsTitle": "任务 344 🚀",
+  "js344InstructionsContent": "练习 if 和 else 条件。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const hour = 9;
+if (hour >= 6 && hour <= 12) console.log(\"Morning\");
+// Use a range",
+  "js344ExampleTitle": "示例",
+  "js344ExampleCode1": "const hour = 9;",
+  "js344ExampleCode2": "if (hour >= 6 && hour <= 12) console.log(\"Morning\");",
+  "js344ExampleCode3": "// Use a range",
+  "js344ExampleOutput": "输出：
+Morning",
+  "js344EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js344HintTitle1": "提示 1 💡",
+  "js344HintContent1": "参考示例写法。",
+  "js344HintTitle2": "提示 2 🧩",
+  "js344HintContent2": "记得用 console.log 输出。",
+  "js344SolutionTitle": "答案 ✅",
+  "js344SolutionContent": "一种可行的写法：
+
+const hour = 9;
+if (hour >= 6 && hour <= 12) console.log(\"Morning\");
+// Use a range",
+  "js345InstructionsTitle": "任务 345 🚀",
+  "js345InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const day = 1;
+switch (day)
+case 1: console.log(\"Mon\"); break;",
+  "js345ExampleTitle": "示例",
+  "js345ExampleCode1": "const day = 1;",
+  "js345ExampleCode2": "switch (day)",
+  "js345ExampleCode3": "case 1: console.log(\"Mon\"); break;",
+  "js345ExampleOutput": "输出：
+Mon",
+  "js345EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js345HintTitle1": "提示 1 💡",
+  "js345HintContent1": "参考示例写法。",
+  "js345HintTitle2": "提示 2 🧩",
+  "js345HintContent2": "记得用 console.log 输出。",
+  "js345SolutionTitle": "答案 ✅",
+  "js345SolutionContent": "一种可行的写法：
+
+const day = 1;
+switch (day)
+case 1: console.log(\"Mon\"); break;",
+  "js346InstructionsTitle": "任务 346 🚀",
+  "js346InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const n = 2;
+switch (n)
+case 2: console.log(\"Two\"); break;",
+  "js346ExampleTitle": "示例",
+  "js346ExampleCode1": "const n = 2;",
+  "js346ExampleCode2": "switch (n)",
+  "js346ExampleCode3": "case 2: console.log(\"Two\"); break;",
+  "js346ExampleOutput": "输出：
+Two",
+  "js346EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js346HintTitle1": "提示 1 💡",
+  "js346HintContent1": "参考示例写法。",
+  "js346HintTitle2": "提示 2 🧩",
+  "js346HintContent2": "记得用 console.log 输出。",
+  "js346SolutionTitle": "答案 ✅",
+  "js346SolutionContent": "一种可行的写法：
+
+const n = 2;
+switch (n)
+case 2: console.log(\"Two\"); break;",
+  "js347InstructionsTitle": "任务 347 🚀",
+  "js347InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const day = 9;
+switch (day)
+default: console.log(\"Other\");",
+  "js347ExampleTitle": "示例",
+  "js347ExampleCode1": "const day = 9;",
+  "js347ExampleCode2": "switch (day)",
+  "js347ExampleCode3": "default: console.log(\"Other\");",
+  "js347ExampleOutput": "输出：
+Other",
+  "js347EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js347HintTitle1": "提示 1 💡",
+  "js347HintContent1": "参考示例写法。",
+  "js347HintTitle2": "提示 2 🧩",
+  "js347HintContent2": "记得用 console.log 输出。",
+  "js347SolutionTitle": "答案 ✅",
+  "js347SolutionContent": "一种可行的写法：
+
+const day = 9;
+switch (day)
+default: console.log(\"Other\");",
+  "js348InstructionsTitle": "任务 348 🚀",
+  "js348InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const color = \"red\";
+switch (color)
+case \"red\": console.log(\"Stop\"); break;",
+  "js348ExampleTitle": "示例",
+  "js348ExampleCode1": "const color = \"red\";",
+  "js348ExampleCode2": "switch (color)",
+  "js348ExampleCode3": "case \"red\": console.log(\"Stop\"); break;",
+  "js348ExampleOutput": "输出：
+Stop",
+  "js348EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js348HintTitle1": "提示 1 💡",
+  "js348HintContent1": "参考示例写法。",
+  "js348HintTitle2": "提示 2 🧩",
+  "js348HintContent2": "记得用 console.log 输出。",
+  "js348SolutionTitle": "答案 ✅",
+  "js348SolutionContent": "一种可行的写法：
+
+const color = \"red\";
+switch (color)
+case \"red\": console.log(\"Stop\"); break;",
+  "js349InstructionsTitle": "任务 349 🚀",
+  "js349InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const level = 3;
+switch (level)
+case 3: console.log(\"Pro\"); break;",
+  "js349ExampleTitle": "示例",
+  "js349ExampleCode1": "const level = 3;",
+  "js349ExampleCode2": "switch (level)",
+  "js349ExampleCode3": "case 3: console.log(\"Pro\"); break;",
+  "js349ExampleOutput": "输出：
+Pro",
+  "js349EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js349HintTitle1": "提示 1 💡",
+  "js349HintContent1": "参考示例写法。",
+  "js349HintTitle2": "提示 2 🧩",
+  "js349HintContent2": "记得用 console.log 输出。",
+  "js349SolutionTitle": "答案 ✅",
+  "js349SolutionContent": "一种可行的写法：
+
+const level = 3;
+switch (level)
+case 3: console.log(\"Pro\"); break;",
+  "js350InstructionsTitle": "任务 350 🚀",
+  "js350InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const ready = true;
+switch (ready)
+case true: console.log(\"Go\"); break;",
+  "js350ExampleTitle": "示例",
+  "js350ExampleCode1": "const ready = true;",
+  "js350ExampleCode2": "switch (ready)",
+  "js350ExampleCode3": "case true: console.log(\"Go\"); break;",
+  "js350ExampleOutput": "输出：
+Go",
+  "js350EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js350HintTitle1": "提示 1 💡",
+  "js350HintContent1": "参考示例写法。",
+  "js350HintTitle2": "提示 2 🧩",
+  "js350HintContent2": "记得用 console.log 输出。",
+  "js350SolutionTitle": "答案 ✅",
+  "js350SolutionContent": "一种可行的写法：
+
+const ready = true;
+switch (ready)
+case true: console.log(\"Go\"); break;",
+  "js351InstructionsTitle": "任务 351 🚀",
+  "js351InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const grade = \"B\";
+switch (grade)
+case \"B\": console.log(\"Good\"); break;",
+  "js351ExampleTitle": "示例",
+  "js351ExampleCode1": "const grade = \"B\";",
+  "js351ExampleCode2": "switch (grade)",
+  "js351ExampleCode3": "case \"B\": console.log(\"Good\"); break;",
+  "js351ExampleOutput": "输出：
+Good",
+  "js351EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js351HintTitle1": "提示 1 💡",
+  "js351HintContent1": "参考示例写法。",
+  "js351HintTitle2": "提示 2 🧩",
+  "js351HintContent2": "记得用 console.log 输出。",
+  "js351SolutionTitle": "答案 ✅",
+  "js351SolutionContent": "一种可行的写法：
+
+const grade = \"B\";
+switch (grade)
+case \"B\": console.log(\"Good\"); break;",
+  "js352InstructionsTitle": "任务 352 🚀",
+  "js352InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const n = 1;
+switch (n)
+case 1: case 2: console.log(\"Small\"); break;",
+  "js352ExampleTitle": "示例",
+  "js352ExampleCode1": "const n = 1;",
+  "js352ExampleCode2": "switch (n)",
+  "js352ExampleCode3": "case 1: case 2: console.log(\"Small\"); break;",
+  "js352ExampleOutput": "输出：
+Small",
+  "js352EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js352HintTitle1": "提示 1 💡",
+  "js352HintContent1": "参考示例写法。",
+  "js352HintTitle2": "提示 2 🧩",
+  "js352HintContent2": "记得用 console.log 输出。",
+  "js352SolutionTitle": "答案 ✅",
+  "js352SolutionContent": "一种可行的写法：
+
+const n = 1;
+switch (n)
+case 1: case 2: console.log(\"Small\"); break;",
+  "js353InstructionsTitle": "任务 353 🚀",
+  "js353InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const month = 12;
+switch (month)
+case 12: console.log(\"Dec\"); break;",
+  "js353ExampleTitle": "示例",
+  "js353ExampleCode1": "const month = 12;",
+  "js353ExampleCode2": "switch (month)",
+  "js353ExampleCode3": "case 12: console.log(\"Dec\"); break;",
+  "js353ExampleOutput": "输出：
+Dec",
+  "js353EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js353HintTitle1": "提示 1 💡",
+  "js353HintContent1": "参考示例写法。",
+  "js353HintTitle2": "提示 2 🧩",
+  "js353HintContent2": "记得用 console.log 输出。",
+  "js353SolutionTitle": "答案 ✅",
+  "js353SolutionContent": "一种可行的写法：
+
+const month = 12;
+switch (month)
+case 12: console.log(\"Dec\"); break;",
+  "js354InstructionsTitle": "任务 354 🚀",
+  "js354InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const value = 3;
+switch (value)
+case 3: console.log(\"Three\"); break;",
+  "js354ExampleTitle": "示例",
+  "js354ExampleCode1": "const value = 3;",
+  "js354ExampleCode2": "switch (value)",
+  "js354ExampleCode3": "case 3: console.log(\"Three\"); break;",
+  "js354ExampleOutput": "输出：
+Three",
+  "js354EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js354HintTitle1": "提示 1 💡",
+  "js354HintContent1": "参考示例写法。",
+  "js354HintTitle2": "提示 2 🧩",
+  "js354HintContent2": "记得用 console.log 输出。",
+  "js354SolutionTitle": "答案 ✅",
+  "js354SolutionContent": "一种可行的写法：
+
+const value = 3;
+switch (value)
+case 3: console.log(\"Three\"); break;",
+  "js355InstructionsTitle": "任务 355 🚀",
+  "js355InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const value = 2 + 2;
+switch (value)
+case 4: console.log(\"Four\"); break;",
+  "js355ExampleTitle": "示例",
+  "js355ExampleCode1": "const value = 2 + 2;",
+  "js355ExampleCode2": "switch (value)",
+  "js355ExampleCode3": "case 4: console.log(\"Four\"); break;",
+  "js355ExampleOutput": "输出：
+Four",
+  "js355EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js355HintTitle1": "提示 1 💡",
+  "js355HintContent1": "参考示例写法。",
+  "js355HintTitle2": "提示 2 🧩",
+  "js355HintContent2": "记得用 console.log 输出。",
+  "js355SolutionTitle": "答案 ✅",
+  "js355SolutionContent": "一种可行的写法：
+
+const value = 2 + 2;
+switch (value)
+case 4: console.log(\"Four\"); break;",
+  "js356InstructionsTitle": "任务 356 🚀",
+  "js356InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const option = 1;
+switch (option)
+case 1: console.log(\"Play\"); break;",
+  "js356ExampleTitle": "示例",
+  "js356ExampleCode1": "const option = 1;",
+  "js356ExampleCode2": "switch (option)",
+  "js356ExampleCode3": "case 1: console.log(\"Play\"); break;",
+  "js356ExampleOutput": "输出：
+Play",
+  "js356EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js356HintTitle1": "提示 1 💡",
+  "js356HintContent1": "参考示例写法。",
+  "js356HintTitle2": "提示 2 🧩",
+  "js356HintContent2": "记得用 console.log 输出。",
+  "js356SolutionTitle": "答案 ✅",
+  "js356SolutionContent": "一种可行的写法：
+
+const option = 1;
+switch (option)
+case 1: console.log(\"Play\"); break;",
+  "js357InstructionsTitle": "任务 357 🚀",
+  "js357InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const light = \"green\";
+switch (light)
+case \"green\": console.log(\"Go\"); break;",
+  "js357ExampleTitle": "示例",
+  "js357ExampleCode1": "const light = \"green\";",
+  "js357ExampleCode2": "switch (light)",
+  "js357ExampleCode3": "case \"green\": console.log(\"Go\"); break;",
+  "js357ExampleOutput": "输出：
+Go",
+  "js357EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js357HintTitle1": "提示 1 💡",
+  "js357HintContent1": "参考示例写法。",
+  "js357HintTitle2": "提示 2 🧩",
+  "js357HintContent2": "记得用 console.log 输出。",
+  "js357SolutionTitle": "答案 ✅",
+  "js357SolutionContent": "一种可行的写法：
+
+const light = \"green\";
+switch (light)
+case \"green\": console.log(\"Go\"); break;",
+  "js358InstructionsTitle": "任务 358 🚀",
+  "js358InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const code = 0;
+switch (code)
+default: console.log(\"Unknown\"); break;",
+  "js358ExampleTitle": "示例",
+  "js358ExampleCode1": "const code = 0;",
+  "js358ExampleCode2": "switch (code)",
+  "js358ExampleCode3": "default: console.log(\"Unknown\"); break;",
+  "js358ExampleOutput": "输出：
+Unknown",
+  "js358EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js358HintTitle1": "提示 1 💡",
+  "js358HintContent1": "参考示例写法。",
+  "js358HintTitle2": "提示 2 🧩",
+  "js358HintContent2": "记得用 console.log 输出。",
+  "js358SolutionTitle": "答案 ✅",
+  "js358SolutionContent": "一种可行的写法：
+
+const code = 0;
+switch (code)
+default: console.log(\"Unknown\"); break;",
+  "js359InstructionsTitle": "任务 359 🚀",
+  "js359InstructionsContent": "练习 switch 的 case 和 default。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const lang = \"es\";
+switch (lang)
+case \"es\": console.log(\"Hola\"); break;",
+  "js359ExampleTitle": "示例",
+  "js359ExampleCode1": "const lang = \"es\";",
+  "js359ExampleCode2": "switch (lang)",
+  "js359ExampleCode3": "case \"es\": console.log(\"Hola\"); break;",
+  "js359ExampleOutput": "输出：
+Hola",
+  "js359EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js359HintTitle1": "提示 1 💡",
+  "js359HintContent1": "参考示例写法。",
+  "js359HintTitle2": "提示 2 🧩",
+  "js359HintContent2": "记得用 console.log 输出。",
+  "js359SolutionTitle": "答案 ✅",
+  "js359SolutionContent": "一种可行的写法：
+
+const lang = \"es\";
+switch (lang)
+case \"es\": console.log(\"Hola\"); break;",
+  "js360InstructionsTitle": "任务 360 🚀",
+  "js360InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 1; i <= 3; i++) console.log(i);
+// Loop 1 to 3
+// Try 1 to 5",
+  "js360ExampleTitle": "示例",
+  "js360ExampleCode1": "for (let i = 1; i <= 3; i++) console.log(i);",
+  "js360ExampleCode2": "// Loop 1 to 3",
+  "js360ExampleCode3": "// Try 1 to 5",
+  "js360ExampleOutput": "输出：
+1
+2
+3",
+  "js360EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js360HintTitle1": "提示 1 💡",
+  "js360HintContent1": "参考示例写法。",
+  "js360HintTitle2": "提示 2 🧩",
+  "js360HintContent2": "记得用 console.log 输出。",
+  "js360SolutionTitle": "答案 ✅",
+  "js360SolutionContent": "一种可行的写法：
+
+for (let i = 1; i <= 3; i++) console.log(i);
+// Loop 1 to 3
+// Try 1 to 5",
+  "js361InstructionsTitle": "任务 361 🚀",
+  "js361InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+let sum = 0;
+for (let i = 1; i <= 3; i++) sum += i;
+console.log(sum);",
+  "js361ExampleTitle": "示例",
+  "js361ExampleCode1": "let sum = 0;",
+  "js361ExampleCode2": "for (let i = 1; i <= 3; i++) sum += i;",
+  "js361ExampleCode3": "console.log(sum);",
+  "js361ExampleOutput": "输出：
+6",
+  "js361EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js361HintTitle1": "提示 1 💡",
+  "js361HintContent1": "参考示例写法。",
+  "js361HintTitle2": "提示 2 🧩",
+  "js361HintContent2": "记得用 console.log 输出。",
+  "js361SolutionTitle": "答案 ✅",
+  "js361SolutionContent": "一种可行的写法：
+
+let sum = 0;
+for (let i = 1; i <= 3; i++) sum += i;
+console.log(sum);",
+  "js362InstructionsTitle": "任务 362 🚀",
+  "js362InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+let i = 1;
+while (i <= 3) console.log(i), i++;
+// Print 1 to 3",
+  "js362ExampleTitle": "示例",
+  "js362ExampleCode1": "let i = 1;",
+  "js362ExampleCode2": "while (i <= 3) console.log(i), i++;",
+  "js362ExampleCode3": "// Print 1 to 3",
+  "js362ExampleOutput": "输出：
+1
+2
+3",
+  "js362EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js362HintTitle1": "提示 1 💡",
+  "js362HintContent1": "参考示例写法。",
+  "js362HintTitle2": "提示 2 🧩",
+  "js362HintContent2": "记得用 console.log 输出。",
+  "js362SolutionTitle": "答案 ✅",
+  "js362SolutionContent": "一种可行的写法：
+
+let i = 1;
+while (i <= 3) console.log(i), i++;
+// Print 1 to 3",
+  "js363InstructionsTitle": "任务 363 🚀",
+  "js363InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+let n = 0;
+do console.log(n); while (n++ < 1);
+// Runs at least once",
+  "js363ExampleTitle": "示例",
+  "js363ExampleCode1": "let n = 0;",
+  "js363ExampleCode2": "do console.log(n); while (n++ < 1);",
+  "js363ExampleCode3": "// Runs at least once",
+  "js363ExampleOutput": "输出：
+0
+1",
+  "js363EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js363HintTitle1": "提示 1 💡",
+  "js363HintContent1": "参考示例写法。",
+  "js363HintTitle2": "提示 2 🧩",
+  "js363HintContent2": "记得用 console.log 输出。",
+  "js363SolutionTitle": "答案 ✅",
+  "js363SolutionContent": "一种可行的写法：
+
+let n = 0;
+do console.log(n); while (n++ < 1);
+// Runs at least once",
+  "js364InstructionsTitle": "任务 364 🚀",
+  "js364InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+for (const n of nums) console.log(n);
+// Iterate values",
+  "js364ExampleTitle": "示例",
+  "js364ExampleCode1": "const nums = [1, 2, 3];",
+  "js364ExampleCode2": "for (const n of nums) console.log(n);",
+  "js364ExampleCode3": "// Iterate values",
+  "js364ExampleOutput": "输出：
+1
+2
+3",
+  "js364EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js364HintTitle1": "提示 1 💡",
+  "js364HintContent1": "参考示例写法。",
+  "js364HintTitle2": "提示 2 🧩",
+  "js364HintContent2": "记得用 console.log 输出。",
+  "js364SolutionTitle": "答案 ✅",
+  "js364SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+for (const n of nums) console.log(n);
+// Iterate values",
+  "js365InstructionsTitle": "任务 365 🚀",
+  "js365InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [10, 20];
+for (const i in nums) console.log(i);
+// Iterate indexes",
+  "js365ExampleTitle": "示例",
+  "js365ExampleCode1": "const nums = [10, 20];",
+  "js365ExampleCode2": "for (const i in nums) console.log(i);",
+  "js365ExampleCode3": "// Iterate indexes",
+  "js365ExampleOutput": "输出：
+0
+1",
+  "js365EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js365HintTitle1": "提示 1 💡",
+  "js365HintContent1": "参考示例写法。",
+  "js365HintTitle2": "提示 2 🧩",
+  "js365HintContent2": "记得用 console.log 输出。",
+  "js365SolutionTitle": "答案 ✅",
+  "js365SolutionContent": "一种可行的写法：
+
+const nums = [10, 20];
+for (const i in nums) console.log(i);
+// Iterate indexes",
+  "js366InstructionsTitle": "任务 366 🚀",
+  "js366InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 1; i <= 5; i++)
+if (i === 3) break; else console.log(i);
+// Stops early",
+  "js366ExampleTitle": "示例",
+  "js366ExampleCode1": "for (let i = 1; i <= 5; i++)",
+  "js366ExampleCode2": "if (i === 3) break; else console.log(i);",
+  "js366ExampleCode3": "// Stops early",
+  "js366ExampleOutput": "输出：
+1
+2",
+  "js366EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js366HintTitle1": "提示 1 💡",
+  "js366HintContent1": "参考示例写法。",
+  "js366HintTitle2": "提示 2 🧩",
+  "js366HintContent2": "记得用 console.log 输出。",
+  "js366SolutionTitle": "答案 ✅",
+  "js366SolutionContent": "一种可行的写法：
+
+for (let i = 1; i <= 5; i++)
+if (i === 3) break; else console.log(i);
+// Stops early",
+  "js367InstructionsTitle": "任务 367 🚀",
+  "js367InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 1; i <= 3; i++)
+if (i === 2) continue; else console.log(i);
+// Skips 2",
+  "js367ExampleTitle": "示例",
+  "js367ExampleCode1": "for (let i = 1; i <= 3; i++)",
+  "js367ExampleCode2": "if (i === 2) continue; else console.log(i);",
+  "js367ExampleCode3": "// Skips 2",
+  "js367ExampleOutput": "输出：
+1
+3",
+  "js367EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js367HintTitle1": "提示 1 💡",
+  "js367HintContent1": "参考示例写法。",
+  "js367HintTitle2": "提示 2 🧩",
+  "js367HintContent2": "记得用 console.log 输出。",
+  "js367SolutionTitle": "答案 ✅",
+  "js367SolutionContent": "一种可行的写法：
+
+for (let i = 1; i <= 3; i++)
+if (i === 2) continue; else console.log(i);
+// Skips 2",
+  "js368InstructionsTitle": "任务 368 🚀",
+  "js368InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 1; i <= 2; i++)
+for (let j = 1; j <= 2; j++) console.log(i + j);
+// Nested loop",
+  "js368ExampleTitle": "示例",
+  "js368ExampleCode1": "for (let i = 1; i <= 2; i++)",
+  "js368ExampleCode2": "for (let j = 1; j <= 2; j++) console.log(i + j);",
+  "js368ExampleCode3": "// Nested loop",
+  "js368ExampleOutput": "输出：
+2
+3
+3
+4",
+  "js368EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js368HintTitle1": "提示 1 💡",
+  "js368HintContent1": "参考示例写法。",
+  "js368HintTitle2": "提示 2 🧩",
+  "js368HintContent2": "记得用 console.log 输出。",
+  "js368SolutionTitle": "答案 ✅",
+  "js368SolutionContent": "一种可行的写法：
+
+for (let i = 1; i <= 2; i++)
+for (let j = 1; j <= 2; j++) console.log(i + j);
+// Nested loop",
+  "js369InstructionsTitle": "任务 369 🚀",
+  "js369InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 3; i >= 1; i--) console.log(i);
+// Countdown
+// Try other start",
+  "js369ExampleTitle": "示例",
+  "js369ExampleCode1": "for (let i = 3; i >= 1; i--) console.log(i);",
+  "js369ExampleCode2": "// Countdown",
+  "js369ExampleCode3": "// Try other start",
+  "js369ExampleOutput": "输出：
+3
+2
+1",
+  "js369EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js369HintTitle1": "提示 1 💡",
+  "js369HintContent1": "参考示例写法。",
+  "js369HintTitle2": "提示 2 🧩",
+  "js369HintContent2": "记得用 console.log 输出。",
+  "js369SolutionTitle": "答案 ✅",
+  "js369SolutionContent": "一种可行的写法：
+
+for (let i = 3; i >= 1; i--) console.log(i);
+// Countdown
+// Try other start",
+  "js370InstructionsTitle": "任务 370 🚀",
+  "js370InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+for (let i = 0; i < nums.length; i++) console.log(nums[i]);
+// Use length",
+  "js370ExampleTitle": "示例",
+  "js370ExampleCode1": "const nums = [1, 2, 3];",
+  "js370ExampleCode2": "for (let i = 0; i < nums.length; i++) console.log(nums[i]);",
+  "js370ExampleCode3": "// Use length",
+  "js370ExampleOutput": "输出：
+1
+2
+3",
+  "js370EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js370HintTitle1": "提示 1 💡",
+  "js370HintContent1": "参考示例写法。",
+  "js370HintTitle2": "提示 2 🧩",
+  "js370HintContent2": "记得用 console.log 输出。",
+  "js370SolutionTitle": "答案 ✅",
+  "js370SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+for (let i = 0; i < nums.length; i++) console.log(nums[i]);
+// Use length",
+  "js371InstructionsTitle": "任务 371 🚀",
+  "js371InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+for (let i = 1; i <= 6; i++)
+if (i % 2 === 0) console.log(i);
+// Print evens",
+  "js371ExampleTitle": "示例",
+  "js371ExampleCode1": "for (let i = 1; i <= 6; i++)",
+  "js371ExampleCode2": "if (i % 2 === 0) console.log(i);",
+  "js371ExampleCode3": "// Print evens",
+  "js371ExampleOutput": "输出：
+2
+4
+6",
+  "js371EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js371HintTitle1": "提示 1 💡",
+  "js371HintContent1": "参考示例写法。",
+  "js371HintTitle2": "提示 2 🧩",
+  "js371HintContent2": "记得用 console.log 输出。",
+  "js371SolutionTitle": "答案 ✅",
+  "js371SolutionContent": "一种可行的写法：
+
+for (let i = 1; i <= 6; i++)
+if (i % 2 === 0) console.log(i);
+// Print evens",
+  "js372InstructionsTitle": "任务 372 🚀",
+  "js372InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+let i = 3;
+while (i >= 1) console.log(i), i--;
+// Countdown",
+  "js372ExampleTitle": "示例",
+  "js372ExampleCode1": "let i = 3;",
+  "js372ExampleCode2": "while (i >= 1) console.log(i), i--;",
+  "js372ExampleCode3": "// Countdown",
+  "js372ExampleOutput": "输出：
+3
+2
+1",
+  "js372EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js372HintTitle1": "提示 1 💡",
+  "js372HintContent1": "参考示例写法。",
+  "js372HintTitle2": "提示 2 🧩",
+  "js372HintContent2": "记得用 console.log 输出。",
+  "js372SolutionTitle": "答案 ✅",
+  "js372SolutionContent": "一种可行的写法：
+
+let i = 3;
+while (i >= 1) console.log(i), i--;
+// Countdown",
+  "js373InstructionsTitle": "任务 373 🚀",
+  "js373InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+let text = \"\";
+for (let i = 0; i < 3; i++) text += \"*\";
+console.log(text);",
+  "js373ExampleTitle": "示例",
+  "js373ExampleCode1": "let text = \"\";",
+  "js373ExampleCode2": "for (let i = 0; i < 3; i++) text += \"*\";",
+  "js373ExampleCode3": "console.log(text);",
+  "js373ExampleOutput": "输出：
+***",
+  "js373EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js373HintTitle1": "提示 1 💡",
+  "js373HintContent1": "参考示例写法。",
+  "js373HintTitle2": "提示 2 🧩",
+  "js373HintContent2": "记得用 console.log 输出。",
+  "js373SolutionTitle": "答案 ✅",
+  "js373SolutionContent": "一种可行的写法：
+
+let text = \"\";
+for (let i = 0; i < 3; i++) text += \"*\";
+console.log(text);",
+  "js374InstructionsTitle": "任务 374 🚀",
+  "js374InstructionsContent": "练习循环与迭代。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [2, 5, 8];
+for (const n of nums) if (n === 5) console.log(\"Found\");
+// Search in loop",
+  "js374ExampleTitle": "示例",
+  "js374ExampleCode1": "const nums = [2, 5, 8];",
+  "js374ExampleCode2": "for (const n of nums) if (n === 5) console.log(\"Found\");",
+  "js374ExampleCode3": "// Search in loop",
+  "js374ExampleOutput": "输出：
+Found",
+  "js374EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js374HintTitle1": "提示 1 💡",
+  "js374HintContent1": "参考示例写法。",
+  "js374HintTitle2": "提示 2 🧩",
+  "js374HintContent2": "记得用 console.log 输出。",
+  "js374SolutionTitle": "答案 ✅",
+  "js374SolutionContent": "一种可行的写法：
+
+const nums = [2, 5, 8];
+for (const n of nums) if (n === 5) console.log(\"Found\");
+// Search in loop",
+  "js375InstructionsTitle": "任务 375 🚀",
+  "js375InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+console.log(nums);
+// Create an array",
+  "js375ExampleTitle": "示例",
+  "js375ExampleCode1": "const nums = [1, 2, 3];",
+  "js375ExampleCode2": "console.log(nums);",
+  "js375ExampleCode3": "// Create an array",
+  "js375ExampleOutput": "输出：
+[1, 2, 3]",
+  "js375EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js375HintTitle1": "提示 1 💡",
+  "js375HintContent1": "参考示例写法。",
+  "js375HintTitle2": "提示 2 🧩",
+  "js375HintContent2": "记得用 console.log 输出。",
+  "js375SolutionTitle": "答案 ✅",
+  "js375SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+console.log(nums);
+// Create an array",
+  "js376InstructionsTitle": "任务 376 🚀",
+  "js376InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2];
+nums.push(3);
+console.log(nums);",
+  "js376ExampleTitle": "示例",
+  "js376ExampleCode1": "const nums = [1, 2];",
+  "js376ExampleCode2": "nums.push(3);",
+  "js376ExampleCode3": "console.log(nums);",
+  "js376ExampleOutput": "输出：
+[1, 2, 3]",
+  "js376EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js376HintTitle1": "提示 1 💡",
+  "js376HintContent1": "参考示例写法。",
+  "js376HintTitle2": "提示 2 🧩",
+  "js376HintContent2": "记得用 console.log 输出。",
+  "js376SolutionTitle": "答案 ✅",
+  "js376SolutionContent": "一种可行的写法：
+
+const nums = [1, 2];
+nums.push(3);
+console.log(nums);",
+  "js377InstructionsTitle": "任务 377 🚀",
+  "js377InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+nums.pop();
+console.log(nums);",
+  "js377ExampleTitle": "示例",
+  "js377ExampleCode1": "const nums = [1, 2, 3];",
+  "js377ExampleCode2": "nums.pop();",
+  "js377ExampleCode3": "console.log(nums);",
+  "js377ExampleOutput": "输出：
+[1, 2]",
+  "js377EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js377HintTitle1": "提示 1 💡",
+  "js377HintContent1": "参考示例写法。",
+  "js377HintTitle2": "提示 2 🧩",
+  "js377HintContent2": "记得用 console.log 输出。",
+  "js377SolutionTitle": "答案 ✅",
+  "js377SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+nums.pop();
+console.log(nums);",
+  "js378InstructionsTitle": "任务 378 🚀",
+  "js378InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [5, 7, 9];
+console.log(nums[1]);
+// Index access",
+  "js378ExampleTitle": "示例",
+  "js378ExampleCode1": "const nums = [5, 7, 9];",
+  "js378ExampleCode2": "console.log(nums[1]);",
+  "js378ExampleCode3": "// Index access",
+  "js378ExampleOutput": "输出：
+7",
+  "js378EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js378HintTitle1": "提示 1 💡",
+  "js378HintContent1": "参考示例写法。",
+  "js378HintTitle2": "提示 2 🧩",
+  "js378HintContent2": "记得用 console.log 输出。",
+  "js378SolutionTitle": "答案 ✅",
+  "js378SolutionContent": "一种可行的写法：
+
+const nums = [5, 7, 9];
+console.log(nums[1]);
+// Index access",
+  "js379InstructionsTitle": "任务 379 🚀",
+  "js379InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+nums[1] = 99;
+console.log(nums);",
+  "js379ExampleTitle": "示例",
+  "js379ExampleCode1": "const nums = [1, 2, 3];",
+  "js379ExampleCode2": "nums[1] = 99;",
+  "js379ExampleCode3": "console.log(nums);",
+  "js379ExampleOutput": "输出：
+[1, 99, 3]",
+  "js379EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js379HintTitle1": "提示 1 💡",
+  "js379HintContent1": "参考示例写法。",
+  "js379HintTitle2": "提示 2 🧩",
+  "js379HintContent2": "记得用 console.log 输出。",
+  "js379SolutionTitle": "答案 ✅",
+  "js379SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+nums[1] = 99;
+console.log(nums);",
+  "js380InstructionsTitle": "任务 380 🚀",
+  "js380InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3, 4];
+console.log(nums.length);
+// Use length",
+  "js380ExampleTitle": "示例",
+  "js380ExampleCode1": "const nums = [1, 2, 3, 4];",
+  "js380ExampleCode2": "console.log(nums.length);",
+  "js380ExampleCode3": "// Use length",
+  "js380ExampleOutput": "输出：
+4",
+  "js380EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js380HintTitle1": "提示 1 💡",
+  "js380HintContent1": "参考示例写法。",
+  "js380HintTitle2": "提示 2 🧩",
+  "js380HintContent2": "记得用 console.log 输出。",
+  "js380SolutionTitle": "答案 ✅",
+  "js380SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3, 4];
+console.log(nums.length);
+// Use length",
+  "js381InstructionsTitle": "任务 381 🚀",
+  "js381InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const letters = [\"a\", \"b\", \"c\"];
+console.log(letters.join(\"-\"));
+// Join items",
+  "js381ExampleTitle": "示例",
+  "js381ExampleCode1": "const letters = [\"a\", \"b\", \"c\"];",
+  "js381ExampleCode2": "console.log(letters.join(\"-\"));",
+  "js381ExampleCode3": "// Join items",
+  "js381ExampleOutput": "输出：
+a-b-c",
+  "js381EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js381HintTitle1": "提示 1 💡",
+  "js381HintContent1": "参考示例写法。",
+  "js381HintTitle2": "提示 2 🧩",
+  "js381HintContent2": "记得用 console.log 输出。",
+  "js381SolutionTitle": "答案 ✅",
+  "js381SolutionContent": "一种可行的写法：
+
+const letters = [\"a\", \"b\", \"c\"];
+console.log(letters.join(\"-\"));
+// Join items",
+  "js382InstructionsTitle": "任务 382 🚀",
+  "js382InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const items = [\"a\", \"b\"];
+console.log(items.includes(\"b\"));
+// Check includes",
+  "js382ExampleTitle": "示例",
+  "js382ExampleCode1": "const items = [\"a\", \"b\"];",
+  "js382ExampleCode2": "console.log(items.includes(\"b\"));",
+  "js382ExampleCode3": "// Check includes",
+  "js382ExampleOutput": "输出：
+true",
+  "js382EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js382HintTitle1": "提示 1 💡",
+  "js382HintContent1": "参考示例写法。",
+  "js382HintTitle2": "提示 2 🧩",
+  "js382HintContent2": "记得用 console.log 输出。",
+  "js382SolutionTitle": "答案 ✅",
+  "js382SolutionContent": "一种可行的写法：
+
+const items = [\"a\", \"b\"];
+console.log(items.includes(\"b\"));
+// Check includes",
+  "js383InstructionsTitle": "任务 383 🚀",
+  "js383InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);",
+  "js383ExampleTitle": "示例",
+  "js383ExampleCode1": "const nums = [1, 2, 3];",
+  "js383ExampleCode2": "const doubled = nums.map(n => n * 2);",
+  "js383ExampleCode3": "console.log(doubled);",
+  "js383ExampleOutput": "输出：
+[2, 4, 6]",
+  "js383EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js383HintTitle1": "提示 1 💡",
+  "js383HintContent1": "参考示例写法。",
+  "js383HintTitle2": "提示 2 🧩",
+  "js383HintContent2": "记得用 console.log 输出。",
+  "js383SolutionTitle": "答案 ✅",
+  "js383SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+const doubled = nums.map(n => n * 2);
+console.log(doubled);",
+  "js384InstructionsTitle": "任务 384 🚀",
+  "js384InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3, 4];
+const evens = nums.filter(n => n % 2 === 0);
+console.log(evens);",
+  "js384ExampleTitle": "示例",
+  "js384ExampleCode1": "const nums = [1, 2, 3, 4];",
+  "js384ExampleCode2": "const evens = nums.filter(n => n % 2 === 0);",
+  "js384ExampleCode3": "console.log(evens);",
+  "js384ExampleOutput": "输出：
+[2, 4]",
+  "js384EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js384HintTitle1": "提示 1 💡",
+  "js384HintContent1": "参考示例写法。",
+  "js384HintTitle2": "提示 2 🧩",
+  "js384HintContent2": "记得用 console.log 输出。",
+  "js384SolutionTitle": "答案 ✅",
+  "js384SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3, 4];
+const evens = nums.filter(n => n % 2 === 0);
+console.log(evens);",
+  "js385InstructionsTitle": "任务 385 🚀",
+  "js385InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+nums.forEach(n => console.log(n));
+// For each item",
+  "js385ExampleTitle": "示例",
+  "js385ExampleCode1": "const nums = [1, 2, 3];",
+  "js385ExampleCode2": "nums.forEach(n => console.log(n));",
+  "js385ExampleCode3": "// For each item",
+  "js385ExampleOutput": "输出：
+1
+2
+3",
+  "js385EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js385HintTitle1": "提示 1 💡",
+  "js385HintContent1": "参考示例写法。",
+  "js385HintTitle2": "提示 2 🧩",
+  "js385HintContent2": "记得用 console.log 输出。",
+  "js385SolutionTitle": "答案 ✅",
+  "js385SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+nums.forEach(n => console.log(n));
+// For each item",
+  "js386InstructionsTitle": "任务 386 🚀",
+  "js386InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3, 4];
+console.log(nums.slice(1, 3));
+// Slice part",
+  "js386ExampleTitle": "示例",
+  "js386ExampleCode1": "const nums = [1, 2, 3, 4];",
+  "js386ExampleCode2": "console.log(nums.slice(1, 3));",
+  "js386ExampleCode3": "// Slice part",
+  "js386ExampleOutput": "输出：
+[2, 3]",
+  "js386EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js386HintTitle1": "提示 1 💡",
+  "js386HintContent1": "参考示例写法。",
+  "js386HintTitle2": "提示 2 🧩",
+  "js386HintContent2": "记得用 console.log 输出。",
+  "js386SolutionTitle": "答案 ✅",
+  "js386SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3, 4];
+console.log(nums.slice(1, 3));
+// Slice part",
+  "js387InstructionsTitle": "任务 387 🚀",
+  "js387InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const a = [1, 2];
+const b = [3, 4];
+console.log(a.concat(b));",
+  "js387ExampleTitle": "示例",
+  "js387ExampleCode1": "const a = [1, 2];",
+  "js387ExampleCode2": "const b = [3, 4];",
+  "js387ExampleCode3": "console.log(a.concat(b));",
+  "js387ExampleOutput": "输出：
+[1, 2, 3, 4]",
+  "js387EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js387HintTitle1": "提示 1 💡",
+  "js387HintContent1": "参考示例写法。",
+  "js387HintTitle2": "提示 2 🧩",
+  "js387HintContent2": "记得用 console.log 输出。",
+  "js387SolutionTitle": "答案 ✅",
+  "js387SolutionContent": "一种可行的写法：
+
+const a = [1, 2];
+const b = [3, 4];
+console.log(a.concat(b));",
+  "js388InstructionsTitle": "任务 388 🚀",
+  "js388InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+let sum = 0; for (const n of nums) sum += n;
+console.log(sum);",
+  "js388ExampleTitle": "示例",
+  "js388ExampleCode1": "const nums = [1, 2, 3];",
+  "js388ExampleCode2": "let sum = 0; for (const n of nums) sum += n;",
+  "js388ExampleCode3": "console.log(sum);",
+  "js388ExampleOutput": "输出：
+6",
+  "js388EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js388HintTitle1": "提示 1 💡",
+  "js388HintContent1": "参考示例写法。",
+  "js388HintTitle2": "提示 2 🧩",
+  "js388HintContent2": "记得用 console.log 输出。",
+  "js388SolutionTitle": "答案 ✅",
+  "js388SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+let sum = 0; for (const n of nums) sum += n;
+console.log(sum);",
+  "js389InstructionsTitle": "任务 389 🚀",
+  "js389InstructionsContent": "练习数组基础与常用方法。
+
+规则:
+1) 按本课概念来写。
+2) 使用 console.log 输出。
+3) 保持简单。
+
+示例:
+const nums = [1, 2, 3];
+nums.reverse();
+console.log(nums);",
+  "js389ExampleTitle": "示例",
+  "js389ExampleCode1": "const nums = [1, 2, 3];",
+  "js389ExampleCode2": "nums.reverse();",
+  "js389ExampleCode3": "console.log(nums);",
+  "js389ExampleOutput": "输出：
+[3, 2, 1]",
+  "js389EnterCodeHint": "在这里输入你的 JavaScript 代码...",
+  "js389HintTitle1": "提示 1 💡",
+  "js389HintContent1": "参考示例写法。",
+  "js389HintTitle2": "提示 2 🧩",
+  "js389HintContent2": "记得用 console.log 输出。",
+  "js389SolutionTitle": "答案 ✅",
+  "js389SolutionContent": "一种可行的写法：
+
+const nums = [1, 2, 3];
+nums.reverse();
+console.log(nums);"
 }

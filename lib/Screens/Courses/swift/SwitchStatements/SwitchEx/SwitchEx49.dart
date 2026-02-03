@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -218,79 +219,33 @@ class _SwitchEx49State extends State<SwitchEx49> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "temperature ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 25;\n2  switch ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "temperature {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3      case ..<0:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "4          print(\"Freezing\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "5      case 0...15:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "6          print(\"Cold\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "7      case 16...30:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "8          print(\"Warm\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "9      case 31...:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "10         print(\"Hot\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "11     default:\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "12         print(\"Invalid temperature\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "13  }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var temperature = 25;',
+                    'switch temperature {',
+                    'case ..<0:',
+                    'print("Freezing");',
+                    'case 0...15:',
+                    'print("Cold");',
+                    'case 16...30:',
+                    'print("Warm");',
+                    'case 31...:',
+                    'print("Hot");',
+                    'default:',
+                    'print("Invalid temperature");',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -198,51 +199,27 @@ class _LoopsEx70State extends State<LoopsEx70> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "numbers ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= [1, 3, 5, 8, 10];\n2  for number in numbers {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3      if number % 2 == 0 {\n",
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: "4          print(\"First even number: \\(number)\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "5          break;\n",
-                        style: TextStyle(color: Colors.red),
-                      ),
-                      const TextSpan(
-                        text: "6      }\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "7  }",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'let numbers = [1, 3, 5, 8, 10];',
+                    'for number in numbers {',
+                    'if number % 2 == 0 {',
+                    'print("First even number: \\(number)");',
+                    'break;',
+                    '}',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

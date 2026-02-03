@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
@@ -198,48 +199,24 @@ class _OptionalsEx145State extends State<OptionalsEx145> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "scores ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= [\"Alice\": 90, \"Bob\": nil];\n"
-                            "2  if let ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "score ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "= scores[\"Alice\"] {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3      print(\"Alice scored \\(score)\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "4  } else { ... }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var scores = ["Alice": 90, "Bob": nil];',
+                    'score = scores["Alice"] {',
+                    'print("Alice scored \\(score)");',
+                    '} else { ... }',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

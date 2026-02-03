@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -197,57 +198,25 @@ class _OptionalsEx146State extends State<OptionalsEx146> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "data ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= [\"person\": [\"age\": 30]];\n"
-                            "2  if let ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "innerDict ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "= data[\"person\"],\n"
-                            "3     let ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "value ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "= innerDict[\"age\"] {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "4      print(\"Value: \\(value)\");\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "5  } else { ... }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var data = ["person": ["age": 30]];',
+                    'innerDict = data["person"],',
+                    'value = innerDict["age"] {',
+                    'print("Value: \\(value)");',
+                    '} else { ... }',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

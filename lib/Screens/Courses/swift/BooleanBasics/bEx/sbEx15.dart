@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/data/Constant/constant.dart';
@@ -196,31 +197,21 @@ class _BEx15State extends State<BEx15> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "isSwiftFun ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= true",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var isSwiftFun = true',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

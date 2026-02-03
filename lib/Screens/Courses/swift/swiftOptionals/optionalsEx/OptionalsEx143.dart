@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListEN.dart';
@@ -191,39 +192,26 @@ class _OptionalsEx143State extends State<OptionalsEx143> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  let ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "nestedArray: [[Int?]?] = [[1, nil, 2], nil, [3, 4]];\n",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "2  if let unwrappedArray = nestedArray?.compactMap { nestedElement in\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3      nestedElement?.compactMap { element in element }\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "4  } {\n5      print(unwrappedArray);\n6  }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'let nestedArray: [[Int?]?] = [[1, nil, 2], nil, [3, 4]];',
+                    'if let unwrappedArray = nestedArray?.compactMap { nestedElement in',
+                    'nestedElement?.compactMap { element in element }',
+                    '} {',
+                    'print(unwrappedArray);',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

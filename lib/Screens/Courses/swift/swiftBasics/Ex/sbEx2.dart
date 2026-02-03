@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -121,6 +122,7 @@ class _SBEx2State extends State<SBEx2> {
   @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);
+    final loc = AppLocalizations.of(context)!;
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -193,27 +195,13 @@ class _SBEx2State extends State<SBEx2> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      TextSpan(
-                        text: "1  ${AppLocalizations.of(context)!.varKeyword} ",
-                        style: const TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "number ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      TextSpan(
-                        text: "= 5;\n2  number = number + 10;",
-                        style: const TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                CodePreview(
+                  lines: <String>[
+                    '${loc.varKeyword} number = 5;',
+                    'number = number + 10;',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

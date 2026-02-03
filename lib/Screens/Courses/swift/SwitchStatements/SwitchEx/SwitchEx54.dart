@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -246,51 +247,24 @@ class _SwitchEx54State extends State<SwitchEx54> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "category ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= \"Fruit\";\n2  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "subcategory ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= \"Citrus\";\n3  switch ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "(category) {\n4      case \"Fruit\":\n5          switch (subcategory) {\n",
-                        style: TextStyle(color: Colors.red),
-                      ),
-                      const TextSpan(
-                        text: "6              case \"Citrus\":\n7                  print(\"Orange or Lemon\");\n",
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: "8              default:\n9                  print(\"Other Fruit\");\n10          }\n11      default:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "12          print(\"Invalid Category\");\n13  }",
-                        style: TextStyle(color: Colors.red),
-                      ),
-                    ],
-                  ),
+                CodePreview(
+                  lines: <String>[
+                    'var category = "Fruit";',
+                    'var subcategory = "Citrus";',
+                    'switch (category) {',
+                    'case "Fruit":',
+                    'switch (subcategory) {',
+                    'case "Citrus":',
+                    'print("Orange or Lemon");',
+                    'default:',
+                    'print("Other Fruit");',
+                    '}',
+                    'default:',
+                    'print("Invalid Category");',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

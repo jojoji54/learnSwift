@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/data/Constant/constant.dart';
@@ -124,6 +125,7 @@ class _BEx27State extends State<BEx27> {
   @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);
+    final loc = AppLocalizations.of(context)!;
     return Scaffold(
       floatingActionButton: Row(
         mainAxisAlignment: MainAxisAlignment.end,
@@ -187,24 +189,29 @@ class _BEx27State extends State<BEx27> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      TextSpan(
-                        text: "${AppLocalizations.of(context)!.example}:\n",
-                        style: const TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text:
-                            "var isAlive = true;\nvar health = 100;\nlet damage = 30;\nhealth -= damage;\nif (health <= 0) {\n  print(\"Game Over\");\n} else {\n  print(\"Keep Playing!\");\n}",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                    ],
-                  ),
+                Text(
+  '${loc.example}:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var isAlive = true;',
+                    'var health = 100;',
+                    'let damage = 30;',
+                    'health -= damage;',
+                    'if (health <= 0) {',
+                    '  print("Game Over");',
+                    '} else {',
+                    '  print("Keep Playing!");',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

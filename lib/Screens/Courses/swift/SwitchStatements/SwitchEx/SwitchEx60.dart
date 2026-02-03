@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -228,55 +229,27 @@ class _SwitchEx60State extends State<SwitchEx60> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "Example:\n",
-                        style: TextStyle(color: Colors.blueGrey),
-                      ),
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "day ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= \"Monday\";\n2  switch ",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "day {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: '3      case "Monday":\n',
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: '4          print("Gym in the evening.");\n',
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      const TextSpan(
-                        text: "5      default:\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: '6          print("Invalid day entered.");\n',
-                        style: TextStyle(color: Colors.grey),
-                      ),
-                      const TextSpan(
-                        text: "7  }",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                    ],
-                  ),
+                Text(
+  'Example:',
+  style: const TextStyle(
+    fontFamily: 'InconsolataRegular',
+    fontSize: 18,
+    color: Colors.blueGrey,
+  ),
+),
+const SizedBox(height: 10),
+                CodePreview(
+                  lines: <String>[
+                    'var day = "Monday";',
+                    'switch day {',
+                    'case "Monday":',
+                    'print("Gym in the evening.");',
+                    'default:',
+                    'print("Invalid day entered.");',
+                    '}',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

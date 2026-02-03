@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:learnswift/data/Constant/constant.dart';
@@ -213,27 +214,12 @@ class _SBEx3State extends State<SBEx3> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Ejemplo predefinido para guiar al usuario
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "1  print(",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: '"Your message here"',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: ")\n",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                    ],
-                  ),
+                CodePreview(
+                  lines: <String>[
+                    'print("Your message here")',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

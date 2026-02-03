@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learnswift/Widgets/codeTheme.dart';
 import 'package:flutter_animator/widgets/fading_entrances/fade_in.dart';
 import 'package:learnswift/data/Constant/constant.dart';
 import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
@@ -200,55 +201,18 @@ class _LoopsEx67State extends State<LoopsEx67> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                RichText(
-                  text: TextSpan(
-                    style: const TextStyle(
-                      fontFamily: 'InconsolataRegular',
-                      fontSize: 18,
-                    ),
-                    children: [
-                      const TextSpan(
-                        text: "1  var ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "sum ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "= 0;\n2  for ",
-                        style: TextStyle(color: Colors.blue),
-                      ),
-                      const TextSpan(
-                        text: "number ",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      const TextSpan(
-                        text: "in 1...49 {\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "3      if number % 3 == 0 || number % 5 == 0 {\n",
-                        style: TextStyle(color: Colors.purple),
-                      ),
-                      const TextSpan(
-                        text: "4          sum += number;\n",
-                        style: TextStyle(color: Colors.teal),
-                      ),
-                      const TextSpan(
-                        text: "5      }\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "6  }\n",
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      const TextSpan(
-                        text: "7  print(sum);",
-                        style: TextStyle(color: Colors.green),
-                      ),
-                    ],
-                  ),
+                CodePreview(
+                  lines: <String>[
+                    'var sum = 0;',
+                    'for number in 1...49 {',
+                    'if number % 3 == 0 || number % 5 == 0 {',
+                    'sum += number;',
+                    '}',
+                    '}',
+                    'print(sum);',
+                  ],
+                  withLineNumbers: true,
+                  language: CodeLanguage.swift,
                 ),
                 const SizedBox(height: 20),
                 TextField(

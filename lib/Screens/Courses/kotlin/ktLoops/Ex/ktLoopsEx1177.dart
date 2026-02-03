@@ -199,7 +199,7 @@ class _KotlinLoopsEx1177State extends State<KotlinLoopsEx1177> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

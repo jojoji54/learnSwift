@@ -198,7 +198,7 @@ class _KotlinOperatorsEx1129State extends State<KotlinOperatorsEx1129> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

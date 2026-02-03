@@ -199,7 +199,7 @@ class _KotlinDataclassesEx1274State extends State<KotlinDataclassesEx1274> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

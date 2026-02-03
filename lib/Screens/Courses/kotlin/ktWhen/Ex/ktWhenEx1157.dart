@@ -199,7 +199,7 @@ class _KotlinWhenEx1157State extends State<KotlinWhenEx1157> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

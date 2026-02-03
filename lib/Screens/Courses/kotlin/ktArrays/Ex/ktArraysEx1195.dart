@@ -199,7 +199,7 @@ class _KotlinArraysEx1195State extends State<KotlinArraysEx1195> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

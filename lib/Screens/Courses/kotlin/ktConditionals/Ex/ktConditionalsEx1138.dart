@@ -200,7 +200,7 @@ class _KotlinConditionalsEx1138State extends State<KotlinConditionalsEx1138> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

@@ -199,7 +199,7 @@ class _KotlinNullsafetyEx1287State extends State<KotlinNullsafetyEx1287> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

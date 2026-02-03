@@ -199,7 +199,7 @@ class _KotlinMapsEx1220State extends State<KotlinMapsEx1220> {
                 CodePreview(
                   lines: exampleLines,
                   withLineNumbers: true,
-                  language: CodeLanguage.java,
+                  language: CodeLanguage.kotlin,
                 ),
                 const SizedBox(height: 10),
                 Text(

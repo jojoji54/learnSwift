@@ -7,6 +7,7 @@ import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
@@ -116,10 +117,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Ruby',
     productID: 'com.mrrubik.learnswift.ruby',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(9),
-    coursesList: [],
+    coursesList: coursesRubyMainModelListEN,
     color1: Color(0xFFCC342D),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Ruby teaches you this language known for its simplicity and elegance, widely used in web development and startups.\n\nVersion: Ruby 3.3',
   ),

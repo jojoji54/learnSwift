@@ -7,6 +7,7 @@ import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
 import '../mainModel/Java/CoursesMainModelListZH.dart';
@@ -115,10 +116,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Ruby',
     productID: 'com.mrrubik.learnswift.ruby',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(9),
-    coursesList: [],
+    coursesList: coursesRubyMainModelListZH,
     color1: Color(0xFFCC342D),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Ruby 教授这种以其简单和优雅著称的语言，用于网页开发和初创公司。\n\n版本: Ruby 3.3',
   ),

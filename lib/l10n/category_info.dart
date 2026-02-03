@@ -179,6 +179,36 @@ class CategoryInfoL10n {
         return loc.pythonCat8InfoTitle;
       case 'pythonCat9InfoTitle':
         return loc.pythonCat9InfoTitle;
+      case 'rubyCat0InfoTitle':
+        return loc.rubyCat0InfoTitle;
+      case 'rubyCat10InfoTitle':
+        return loc.rubyCat10InfoTitle;
+      case 'rubyCat11InfoTitle':
+        return loc.rubyCat11InfoTitle;
+      case 'rubyCat12InfoTitle':
+        return loc.rubyCat12InfoTitle;
+      case 'rubyCat13InfoTitle':
+        return loc.rubyCat13InfoTitle;
+      case 'rubyCat14InfoTitle':
+        return loc.rubyCat14InfoTitle;
+      case 'rubyCat1InfoTitle':
+        return loc.rubyCat1InfoTitle;
+      case 'rubyCat2InfoTitle':
+        return loc.rubyCat2InfoTitle;
+      case 'rubyCat3InfoTitle':
+        return loc.rubyCat3InfoTitle;
+      case 'rubyCat4InfoTitle':
+        return loc.rubyCat4InfoTitle;
+      case 'rubyCat5InfoTitle':
+        return loc.rubyCat5InfoTitle;
+      case 'rubyCat6InfoTitle':
+        return loc.rubyCat6InfoTitle;
+      case 'rubyCat7InfoTitle':
+        return loc.rubyCat7InfoTitle;
+      case 'rubyCat8InfoTitle':
+        return loc.rubyCat8InfoTitle;
+      case 'rubyCat9InfoTitle':
+        return loc.rubyCat9InfoTitle;
       case 'swiftCat0InfoTitle':
         return loc.swiftCat0InfoTitle;
       case 'swiftCat10InfoTitle':
@@ -400,6 +430,36 @@ class CategoryInfoL10n {
         return loc.pythonCat8InfoContent;
       case 'pythonCat9InfoContent':
         return loc.pythonCat9InfoContent;
+      case 'rubyCat0InfoContent':
+        return loc.rubyCat0InfoContent;
+      case 'rubyCat10InfoContent':
+        return loc.rubyCat10InfoContent;
+      case 'rubyCat11InfoContent':
+        return loc.rubyCat11InfoContent;
+      case 'rubyCat12InfoContent':
+        return loc.rubyCat12InfoContent;
+      case 'rubyCat13InfoContent':
+        return loc.rubyCat13InfoContent;
+      case 'rubyCat14InfoContent':
+        return loc.rubyCat14InfoContent;
+      case 'rubyCat1InfoContent':
+        return loc.rubyCat1InfoContent;
+      case 'rubyCat2InfoContent':
+        return loc.rubyCat2InfoContent;
+      case 'rubyCat3InfoContent':
+        return loc.rubyCat3InfoContent;
+      case 'rubyCat4InfoContent':
+        return loc.rubyCat4InfoContent;
+      case 'rubyCat5InfoContent':
+        return loc.rubyCat5InfoContent;
+      case 'rubyCat6InfoContent':
+        return loc.rubyCat6InfoContent;
+      case 'rubyCat7InfoContent':
+        return loc.rubyCat7InfoContent;
+      case 'rubyCat8InfoContent':
+        return loc.rubyCat8InfoContent;
+      case 'rubyCat9InfoContent':
+        return loc.rubyCat9InfoContent;
       case 'swiftCat0InfoContent':
         return loc.swiftCat0InfoContent;
       case 'swiftCat10InfoContent':

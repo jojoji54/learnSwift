@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goChannelsModelZH = [
   CoursesExModel(
     id: 2310,
-    exerciseName: "练习 1: Make 通道",
+    exerciseName: "练习 1: Make channel",
     productID: "com.mrrubik.learnswift.goex2310", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2310),
     completed: purchaseManagerHive.getCompleted(2310),
@@ -67,21 +67,21 @@ List<CoursesExModel> goChannelsModelZH = [
   ),
   CoursesExModel(
     id: 2319,
-    exerciseName: "挑战 10: Done 通道",
+    exerciseName: "挑战 10: Done channel",
     productID: "com.mrrubik.learnswift.goex2319", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2319),
     completed: purchaseManagerHive.getCompleted(2319),
   ),
   CoursesExModel(
     id: 2320,
-    exerciseName: "练习 11: Bool 通道",
+    exerciseName: "练习 11: Bool channel",
     productID: "com.mrrubik.learnswift.goex2320", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2320),
     completed: purchaseManagerHive.getCompleted(2320),
   ),
   CoursesExModel(
     id: 2321,
-    exerciseName: "挑战 12: String 通道",
+    exerciseName: "挑战 12: 字符串 channel",
     productID: "com.mrrubik.learnswift.goex2321", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2321),
     completed: purchaseManagerHive.getCompleted(2321),

@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goConditionalsModelES = [
   CoursesExModel(
     id: 2145,
-    exerciseName: "Desafío 1: Simple if",
+    exerciseName: "Desafío 1: If simple",
     productID: "com.mrrubik.learnswift.goex2145", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2145),
     completed: purchaseManagerHive.getCompleted(2145),
@@ -88,7 +88,7 @@ List<CoursesExModel> goConditionalsModelES = [
   ),
   CoursesExModel(
     id: 2157,
-    exerciseName: "Desafío 13: String compare",
+    exerciseName: "Desafío 13: string compare",
     productID: "com.mrrubik.learnswift.goex2157", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2157),
     completed: purchaseManagerHive.getCompleted(2157),

@@ -39,14 +39,14 @@ List<CoursesExModel> goLoopsModelZH = [
   ),
   CoursesExModel(
     id: 2180,
-    exerciseName: "练习 6: Range 切片",
+    exerciseName: "练习 6: Range slice",
     productID: "com.mrrubik.learnswift.goex2180", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2180),
     completed: purchaseManagerHive.getCompleted(2180),
   ),
   CoursesExModel(
     id: 2181,
-    exerciseName: "挑战 7: Range 映射",
+    exerciseName: "挑战 7: Range map",
     productID: "com.mrrubik.learnswift.goex2181", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2181),
     completed: purchaseManagerHive.getCompleted(2181),
@@ -74,7 +74,7 @@ List<CoursesExModel> goLoopsModelZH = [
   ),
   CoursesExModel(
     id: 2185,
-    exerciseName: "挑战 11: Range 字符串",
+    exerciseName: "挑战 11: Range string",
     productID: "com.mrrubik.learnswift.goex2185", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2185),
     completed: purchaseManagerHive.getCompleted(2185),

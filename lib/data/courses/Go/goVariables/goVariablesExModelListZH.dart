@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goVariablesModelZH = [
   CoursesExModel(
     id: 2115,
-    exerciseName: "挑战 1: Zero 值",
+    exerciseName: "挑战 1: Zero values",
     productID: "com.mrrubik.learnswift.goex2115", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2115),
     completed: purchaseManagerHive.getCompleted(2115),
@@ -18,7 +18,7 @@ List<CoursesExModel> goVariablesModelZH = [
   ),
   CoursesExModel(
     id: 2117,
-    exerciseName: "挑战 3: Multiple var",
+    exerciseName: "挑战 3: 多重 var",
     productID: "com.mrrubik.learnswift.goex2117", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2117),
     completed: purchaseManagerHive.getCompleted(2117),
@@ -39,14 +39,14 @@ List<CoursesExModel> goVariablesModelZH = [
   ),
   CoursesExModel(
     id: 2120,
-    exerciseName: "练习 6: Rune 与 字符串",
+    exerciseName: "练习 6: Rune 与 string",
     productID: "com.mrrubik.learnswift.goex2120", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2120),
     completed: purchaseManagerHive.getCompleted(2120),
   ),
   CoursesExModel(
     id: 2121,
-    exerciseName: "挑战 7: Boolean type",
+    exerciseName: "挑战 7: 布尔值 type",
     productID: "com.mrrubik.learnswift.goex2121", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2121),
     completed: purchaseManagerHive.getCompleted(2121),
@@ -60,7 +60,7 @@ List<CoursesExModel> goVariablesModelZH = [
   ),
   CoursesExModel(
     id: 2123,
-    exerciseName: "挑战 9: Byte 切片",
+    exerciseName: "挑战 9: Byte slice",
     productID: "com.mrrubik.learnswift.goex2123", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2123),
     completed: purchaseManagerHive.getCompleted(2123),
@@ -88,7 +88,7 @@ List<CoursesExModel> goVariablesModelZH = [
   ),
   CoursesExModel(
     id: 2127,
-    exerciseName: "挑战 13: Multiple assignment",
+    exerciseName: "挑战 13: 多重赋值",
     productID: "com.mrrubik.learnswift.goex2127", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2127),
     completed: purchaseManagerHive.getCompleted(2127),
@@ -102,7 +102,7 @@ List<CoursesExModel> goVariablesModelZH = [
   ),
   CoursesExModel(
     id: 2129,
-    exerciseName: "挑战 15: String 到 rune",
+    exerciseName: "挑战 15: 字符串 到 rune",
     productID: "com.mrrubik.learnswift.goex2129", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2129),
     completed: purchaseManagerHive.getCompleted(2129),

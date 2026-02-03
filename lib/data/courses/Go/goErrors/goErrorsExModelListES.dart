@@ -32,7 +32,7 @@ List<CoursesExModel> goErrorsModelES = [
   ),
   CoursesExModel(
     id: 2284,
-    exerciseName: "Ejercicio 5: Error var",
+    exerciseName: "Ejercicio 5: error var",
     productID: "com.mrrubik.learnswift.goex2284", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2284),
     completed: purchaseManagerHive.getCompleted(2284),
@@ -95,14 +95,14 @@ List<CoursesExModel> goErrorsModelES = [
   ),
   CoursesExModel(
     id: 2293,
-    exerciseName: "Desafío 14: Error interfaz",
+    exerciseName: "Desafío 14: error interface",
     productID: "com.mrrubik.learnswift.goex2293", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2293),
     completed: purchaseManagerHive.getCompleted(2293),
   ),
   CoursesExModel(
     id: 2294,
-    exerciseName: "Ejercicio 15: Return valor",
+    exerciseName: "Ejercicio 15: Return value",
     productID: "com.mrrubik.learnswift.goex2294", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2294),
     completed: purchaseManagerHive.getCompleted(2294),

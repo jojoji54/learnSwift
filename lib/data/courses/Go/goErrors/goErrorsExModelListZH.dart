@@ -4,21 +4,21 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goErrorsModelZH = [
   CoursesExModel(
     id: 2280,
-    exerciseName: "练习 1: Return 错误",
+    exerciseName: "练习 1: Return error",
     productID: "com.mrrubik.learnswift.goex2280", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2280),
     completed: purchaseManagerHive.getCompleted(2280),
   ),
   CoursesExModel(
     id: 2281,
-    exerciseName: "挑战 2: Check 错误",
+    exerciseName: "挑战 2: Check error",
     productID: "com.mrrubik.learnswift.goex2281", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2281),
     completed: purchaseManagerHive.getCompleted(2281),
   ),
   CoursesExModel(
     id: 2282,
-    exerciseName: "练习 3: Custom 错误",
+    exerciseName: "练习 3: Custom error",
     productID: "com.mrrubik.learnswift.goex2282", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2282),
     completed: purchaseManagerHive.getCompleted(2282),
@@ -32,14 +32,14 @@ List<CoursesExModel> goErrorsModelZH = [
   ),
   CoursesExModel(
     id: 2284,
-    exerciseName: "练习 5: Error var",
+    exerciseName: "练习 5: 错误 var",
     productID: "com.mrrubik.learnswift.goex2284", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2284),
     completed: purchaseManagerHive.getCompleted(2284),
   ),
   CoursesExModel(
     id: 2285,
-    exerciseName: "挑战 6: Wrap 错误",
+    exerciseName: "挑战 6: Wrap error",
     productID: "com.mrrubik.learnswift.goex2285", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2285),
     completed: purchaseManagerHive.getCompleted(2285),
@@ -95,14 +95,14 @@ List<CoursesExModel> goErrorsModelZH = [
   ),
   CoursesExModel(
     id: 2293,
-    exerciseName: "挑战 14: Error 接口",
+    exerciseName: "挑战 14: 错误 interface",
     productID: "com.mrrubik.learnswift.goex2293", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2293),
     completed: purchaseManagerHive.getCompleted(2293),
   ),
   CoursesExModel(
     id: 2294,
-    exerciseName: "练习 15: Return 值",
+    exerciseName: "练习 15: Return value",
     productID: "com.mrrubik.learnswift.goex2294", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2294),
     completed: purchaseManagerHive.getCompleted(2294),

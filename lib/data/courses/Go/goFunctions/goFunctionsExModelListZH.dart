@@ -18,14 +18,14 @@ List<CoursesExModel> goFunctionsModelZH = [
   ),
   CoursesExModel(
     id: 2237,
-    exerciseName: "挑战 3: Return 字符串",
+    exerciseName: "挑战 3: Return string",
     productID: "com.mrrubik.learnswift.goex2237", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2237),
     completed: purchaseManagerHive.getCompleted(2237),
   ),
   CoursesExModel(
     id: 2238,
-    exerciseName: "练习 4: Multiple returns",
+    exerciseName: "练习 4: 多重 returns",
     productID: "com.mrrubik.learnswift.goex2238", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2238),
     completed: purchaseManagerHive.getCompleted(2238),
@@ -46,7 +46,7 @@ List<CoursesExModel> goFunctionsModelZH = [
   ),
   CoursesExModel(
     id: 2241,
-    exerciseName: "挑战 7: Call 函数",
+    exerciseName: "挑战 7: Call function",
     productID: "com.mrrubik.learnswift.goex2241", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2241),
     completed: purchaseManagerHive.getCompleted(2241),
@@ -74,7 +74,7 @@ List<CoursesExModel> goFunctionsModelZH = [
   ),
   CoursesExModel(
     id: 2245,
-    exerciseName: "挑战 11: String param",
+    exerciseName: "挑战 11: 字符串 param",
     productID: "com.mrrubik.learnswift.goex2245", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2245),
     completed: purchaseManagerHive.getCompleted(2245),
@@ -95,14 +95,14 @@ List<CoursesExModel> goFunctionsModelZH = [
   ),
   CoursesExModel(
     id: 2248,
-    exerciseName: "练习 14: Multiple params",
+    exerciseName: "练习 14: 多重 params",
     productID: "com.mrrubik.learnswift.goex2248", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2248),
     completed: purchaseManagerHive.getCompleted(2248),
   ),
   CoursesExModel(
     id: 2249,
-    exerciseName: "挑战 15: Return 错误",
+    exerciseName: "挑战 15: Return error",
     productID: "com.mrrubik.learnswift.goex2249", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2249),
     completed: purchaseManagerHive.getCompleted(2249),

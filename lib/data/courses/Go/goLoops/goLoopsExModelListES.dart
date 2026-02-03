@@ -46,7 +46,7 @@ List<CoursesExModel> goLoopsModelES = [
   ),
   CoursesExModel(
     id: 2181,
-    exerciseName: "Desafío 7: Range mapa",
+    exerciseName: "Desafío 7: Range map",
     productID: "com.mrrubik.learnswift.goex2181", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2181),
     completed: purchaseManagerHive.getCompleted(2181),

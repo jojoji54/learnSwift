@@ -25,7 +25,7 @@ List<CoursesExModel> goFunctionsModelES = [
   ),
   CoursesExModel(
     id: 2238,
-    exerciseName: "Ejercicio 4: Multiple returns",
+    exerciseName: "Ejercicio 4: múltiple returns",
     productID: "com.mrrubik.learnswift.goex2238", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2238),
     completed: purchaseManagerHive.getCompleted(2238),
@@ -46,7 +46,7 @@ List<CoursesExModel> goFunctionsModelES = [
   ),
   CoursesExModel(
     id: 2241,
-    exerciseName: "Desafío 7: Call función",
+    exerciseName: "Desafío 7: Call function",
     productID: "com.mrrubik.learnswift.goex2241", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2241),
     completed: purchaseManagerHive.getCompleted(2241),
@@ -74,7 +74,7 @@ List<CoursesExModel> goFunctionsModelES = [
   ),
   CoursesExModel(
     id: 2245,
-    exerciseName: "Desafío 11: String param",
+    exerciseName: "Desafío 11: string param",
     productID: "com.mrrubik.learnswift.goex2245", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2245),
     completed: purchaseManagerHive.getCompleted(2245),
@@ -95,7 +95,7 @@ List<CoursesExModel> goFunctionsModelES = [
   ),
   CoursesExModel(
     id: 2248,
-    exerciseName: "Ejercicio 14: Multiple params",
+    exerciseName: "Ejercicio 14: múltiple params",
     productID: "com.mrrubik.learnswift.goex2248", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2248),
     completed: purchaseManagerHive.getCompleted(2248),

@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goStringsModelES = [
   CoursesExModel(
     id: 2220,
-    exerciseName: "Ejercicio 1: Length",
+    exerciseName: "Ejercicio 1: longitud",
     productID: "com.mrrubik.learnswift.goex2220", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2220),
     completed: purchaseManagerHive.getCompleted(2220),

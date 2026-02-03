@@ -53,7 +53,7 @@ List<CoursesExModel> goGoroutinesModelES = [
   ),
   CoursesExModel(
     id: 2302,
-    exerciseName: "Ejercicio 8: Channel sync",
+    exerciseName: "Ejercicio 8: canal sync",
     productID: "com.mrrubik.learnswift.goex2302", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2302),
     completed: purchaseManagerHive.getCompleted(2302),
@@ -95,7 +95,7 @@ List<CoursesExModel> goGoroutinesModelES = [
   ),
   CoursesExModel(
     id: 2308,
-    exerciseName: "Ejercicio 14: Close canal",
+    exerciseName: "Ejercicio 14: Close channel",
     productID: "com.mrrubik.learnswift.goex2308", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2308),
     completed: purchaseManagerHive.getCompleted(2308),

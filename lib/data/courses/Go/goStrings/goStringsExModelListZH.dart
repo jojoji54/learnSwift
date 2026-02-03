@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goStringsModelZH = [
   CoursesExModel(
     id: 2220,
-    exerciseName: "练习 1: Length",
+    exerciseName: "练习 1: 长度",
     productID: "com.mrrubik.learnswift.goex2220", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2220),
     completed: purchaseManagerHive.getCompleted(2220),
@@ -102,7 +102,7 @@ List<CoursesExModel> goStringsModelZH = [
   ),
   CoursesExModel(
     id: 2234,
-    exerciseName: "练习 15: Byte 切片",
+    exerciseName: "练习 15: Byte slice",
     productID: "com.mrrubik.learnswift.goex2234", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2234),
     completed: purchaseManagerHive.getCompleted(2234),

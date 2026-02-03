@@ -18,7 +18,7 @@ List<CoursesExModel> goStructsModelES = [
   ),
   CoursesExModel(
     id: 2252,
-    exerciseName: "Ejercicio 3: Struct literal",
+    exerciseName: "Ejercicio 3: struct literal",
     productID: "com.mrrubik.learnswift.goex2252", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2252),
     completed: purchaseManagerHive.getCompleted(2252),
@@ -67,7 +67,7 @@ List<CoursesExModel> goStructsModelES = [
   ),
   CoursesExModel(
     id: 2259,
-    exerciseName: "Desafío 10: Struct slice",
+    exerciseName: "Desafío 10: struct slice",
     productID: "com.mrrubik.learnswift.goex2259", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2259),
     completed: purchaseManagerHive.getCompleted(2259),
@@ -81,7 +81,7 @@ List<CoursesExModel> goStructsModelES = [
   ),
   CoursesExModel(
     id: 2261,
-    exerciseName: "Desafío 12: Zero valor",
+    exerciseName: "Desafío 12: Zero value",
     productID: "com.mrrubik.learnswift.goex2261", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2261),
     completed: purchaseManagerHive.getCompleted(2261),

@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goVariablesModelES = [
   CoursesExModel(
     id: 2115,
-    exerciseName: "Desafío 1: Zero valores",
+    exerciseName: "Desafío 1: Zero values",
     productID: "com.mrrubik.learnswift.goex2115", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2115),
     completed: purchaseManagerHive.getCompleted(2115),
@@ -18,7 +18,7 @@ List<CoursesExModel> goVariablesModelES = [
   ),
   CoursesExModel(
     id: 2117,
-    exerciseName: "Desafío 3: Multiple var",
+    exerciseName: "Desafío 3: múltiple var",
     productID: "com.mrrubik.learnswift.goex2117", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2117),
     completed: purchaseManagerHive.getCompleted(2117),
@@ -46,7 +46,7 @@ List<CoursesExModel> goVariablesModelES = [
   ),
   CoursesExModel(
     id: 2121,
-    exerciseName: "Desafío 7: Boolean type",
+    exerciseName: "Desafío 7: booleano type",
     productID: "com.mrrubik.learnswift.goex2121", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2121),
     completed: purchaseManagerHive.getCompleted(2121),
@@ -88,7 +88,7 @@ List<CoursesExModel> goVariablesModelES = [
   ),
   CoursesExModel(
     id: 2127,
-    exerciseName: "Desafío 13: Multiple assignment",
+    exerciseName: "Desafío 13: Asignación múltiple",
     productID: "com.mrrubik.learnswift.goex2127", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2127),
     completed: purchaseManagerHive.getCompleted(2127),
@@ -102,7 +102,7 @@ List<CoursesExModel> goVariablesModelES = [
   ),
   CoursesExModel(
     id: 2129,
-    exerciseName: "Desafío 15: String a rune",
+    exerciseName: "Desafío 15: string a rune",
     productID: "com.mrrubik.learnswift.goex2129", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2129),
     completed: purchaseManagerHive.getCompleted(2129),

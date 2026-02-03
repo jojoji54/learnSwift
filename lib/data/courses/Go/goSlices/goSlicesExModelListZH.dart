@@ -4,7 +4,7 @@ import 'package:learnswift/data/courses/coursesExModel.dart';
 List<CoursesExModel> goSlicesModelZH = [
   CoursesExModel(
     id: 2190,
-    exerciseName: "练习 1: Make 切片",
+    exerciseName: "练习 1: Make slice",
     productID: "com.mrrubik.learnswift.goex2190", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2190),
     completed: purchaseManagerHive.getCompleted(2190),
@@ -46,28 +46,28 @@ List<CoursesExModel> goSlicesModelZH = [
   ),
   CoursesExModel(
     id: 2196,
-    exerciseName: "练习 7: Range 切片",
+    exerciseName: "练习 7: Range slice",
     productID: "com.mrrubik.learnswift.goex2196", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2196),
     completed: purchaseManagerHive.getCompleted(2196),
   ),
   CoursesExModel(
     id: 2197,
-    exerciseName: "挑战 8: Nil 切片",
+    exerciseName: "挑战 8: Nil slice",
     productID: "com.mrrubik.learnswift.goex2197", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2197),
     completed: purchaseManagerHive.getCompleted(2197),
   ),
   CoursesExModel(
     id: 2198,
-    exerciseName: "练习 9: Empty 切片",
+    exerciseName: "练习 9: Empty slice",
     productID: "com.mrrubik.learnswift.goex2198", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2198),
     completed: purchaseManagerHive.getCompleted(2198),
   ),
   CoursesExModel(
     id: 2199,
-    exerciseName: "挑战 10: Slice literal",
+    exerciseName: "挑战 10: 切片 literal",
     productID: "com.mrrubik.learnswift.goex2199", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2199),
     completed: purchaseManagerHive.getCompleted(2199),
@@ -81,7 +81,7 @@ List<CoursesExModel> goSlicesModelZH = [
   ),
   CoursesExModel(
     id: 2201,
-    exerciseName: "挑战 12: Slice 的 字符串",
+    exerciseName: "挑战 12: 切片 的 strings",
     productID: "com.mrrubik.learnswift.goex2201", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2201),
     completed: purchaseManagerHive.getCompleted(2201),

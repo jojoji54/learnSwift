@@ -67,7 +67,7 @@ List<CoursesExModel> goSlicesModelES = [
   ),
   CoursesExModel(
     id: 2199,
-    exerciseName: "Desafío 10: Slice literal",
+    exerciseName: "Desafío 10: slice literal",
     productID: "com.mrrubik.learnswift.goex2199", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2199),
     completed: purchaseManagerHive.getCompleted(2199),
@@ -81,7 +81,7 @@ List<CoursesExModel> goSlicesModelES = [
   ),
   CoursesExModel(
     id: 2201,
-    exerciseName: "Desafío 12: Slice de strings",
+    exerciseName: "Desafío 12: slice de strings",
     productID: "com.mrrubik.learnswift.goex2201", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2201),
     completed: purchaseManagerHive.getCompleted(2201),

@@ -18,7 +18,7 @@ List<CoursesExModel> goSwitchModelZH = [
   ),
   CoursesExModel(
     id: 2162,
-    exerciseName: "练习 3: Number case",
+    exerciseName: "练习 3: 数字 case",
     productID: "com.mrrubik.learnswift.goex2162", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2162),
     completed: purchaseManagerHive.getCompleted(2162),
@@ -46,7 +46,7 @@ List<CoursesExModel> goSwitchModelZH = [
   ),
   CoursesExModel(
     id: 2166,
-    exerciseName: "练习 7: String cases",
+    exerciseName: "练习 7: 字符串 cases",
     productID: "com.mrrubik.learnswift.goex2166", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2166),
     completed: purchaseManagerHive.getCompleted(2166),

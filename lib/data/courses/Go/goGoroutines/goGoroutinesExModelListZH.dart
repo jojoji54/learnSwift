@@ -11,7 +11,7 @@ List<CoursesExModel> goGoroutinesModelZH = [
   ),
   CoursesExModel(
     id: 2296,
-    exerciseName: "练习 2: Anon 协程",
+    exerciseName: "练习 2: Anon goroutine",
     productID: "com.mrrubik.learnswift.goex2296", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2296),
     completed: purchaseManagerHive.getCompleted(2296),
@@ -53,7 +53,7 @@ List<CoursesExModel> goGoroutinesModelZH = [
   ),
   CoursesExModel(
     id: 2302,
-    exerciseName: "练习 8: Channel sync",
+    exerciseName: "练习 8: 通道 sync",
     productID: "com.mrrubik.learnswift.goex2302", 
     alreadyBuy: purchaseManagerHive.getPurchasedTrue(2302),
     completed: purchaseManagerHive.getCompleted(2302),
@@ -95,7 +95,7 @@ List<CoursesExModel> goGoroutinesModelZH = [
   ),
   CoursesExModel(
     id: 2308,
-    exerciseName: "练习 14: Close 通道",
+    exerciseName: "练习 14: Close channel",
     productID: "com.mrrubik.learnswift.goex2308", 
     alreadyBuy: purchaseManagerHive.getPurchasedFalse(2308),
     completed: purchaseManagerHive.getCompleted(2308),

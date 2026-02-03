@@ -10,6 +10,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListES.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListES.dart';
+import '../mainModel/Go/CoursesMainModelListES.dart';
 import '../mainModel/Java/CoursesMainModelListES.dart';
 import '../mainModel/JavaScript/CoursesMainModelListES.dart';
 
@@ -129,12 +130,12 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Go',
     productID: 'com.mrrubik.learnswift.go',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(10),
-    coursesList: [],
+    coursesList: coursesGoMainModelListES,
     color1: Color(0xFF00ADD8),
-    color2: Color(0xFFFFFFFF),
-    isActive: false,
+    color2: Color(0xFF5DC9E2),
+    isActive: true,
     description:
-        'CodeCrafters: Go es tu herramienta para aprender este lenguaje eficiente, ideal para sistemas distribuidos y escalables.\n\nVersión: Go 1.21',
+        'CodeCrafters: Go te enseña un lenguaje moderno de sistemas creado para velocidad, simplicidad y concurrencia. Aprende con ejercicios prácticos para backend y herramientas.\n\nVersión: Go 1.22',
   ),
   ProgrammingItem(
     id: 11,
@@ -269,5 +270,17 @@ final List<ProgrammingItem> programmingItemsES = [
     isActive: false,
     description:
         'CodeCrafters: TensorFlow es tu guía para construir modelos de inteligencia artificial y aprendizaje automático.\n\nVersión: TensorFlow 2.13',
+  ),
+  ProgrammingItem(
+    id: 10,
+    name: 'Go',
+    productID: 'com.mrrubik.learnswift.go',
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(10),
+    coursesList: coursesGoMainModelListES,
+    color1: Color(0xFF00ADD8),
+    color2: Color(0xFF5DC9E2),
+    isActive: true,
+    description:
+        'CodeCrafters: Go te enseña un lenguaje moderno de sistemas creado para velocidad, simplicidad y concurrencia. Aprende con ejercicios prácticos para backend y herramientas.\n\nVersión: Go 1.22',
   ),
 ];

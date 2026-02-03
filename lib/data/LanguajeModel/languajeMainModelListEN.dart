@@ -10,6 +10,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
+import '../mainModel/Go/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
 import '../mainModel/JavaScript/CoursesMainModelListEN.dart';
 
@@ -129,12 +130,12 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Go',
     productID: 'com.mrrubik.learnswift.go',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(10),
-    coursesList: [],
+    coursesList: coursesGoMainModelListEN,
     color1: Color(0xFF00ADD8),
-    color2: Color(0xFFFFFFFF),
-    isActive: false,
+    color2: Color(0xFF5DC9E2),
+    isActive: true,
     description:
-        'CodeCrafters: Go helps you learn this efficient language, ideal for distributed and scalable systems.\n\nVersion: Go 1.21',
+        'CodeCrafters: Go teaches you a modern systems language built for speed, simplicity, and concurrency. Learn with practical exercises for backend and tooling.\n\nVersion: Go 1.22',
   ),
   ProgrammingItem(
     id: 11,
@@ -270,4 +271,5 @@ final List<ProgrammingItem> programmingItemsEN = [
     description:
         'CodeCrafters: TensorFlow is your guide to building artificial intelligence and machine learning models.\n\nVersion: TensorFlow 2.13',
   ),
+
 ];

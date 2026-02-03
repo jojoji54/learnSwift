@@ -159,6 +159,36 @@ class CategoryInfoL10n {
         return loc.phpCat8InfoTitle;
       case 'phpCat9InfoTitle':
         return loc.phpCat9InfoTitle;
+      case 'goCat0InfoTitle':
+        return loc.goCat0InfoTitle;
+      case 'goCat1InfoTitle':
+        return loc.goCat1InfoTitle;
+      case 'goCat2InfoTitle':
+        return loc.goCat2InfoTitle;
+      case 'goCat3InfoTitle':
+        return loc.goCat3InfoTitle;
+      case 'goCat4InfoTitle':
+        return loc.goCat4InfoTitle;
+      case 'goCat5InfoTitle':
+        return loc.goCat5InfoTitle;
+      case 'goCat6InfoTitle':
+        return loc.goCat6InfoTitle;
+      case 'goCat7InfoTitle':
+        return loc.goCat7InfoTitle;
+      case 'goCat8InfoTitle':
+        return loc.goCat8InfoTitle;
+      case 'goCat9InfoTitle':
+        return loc.goCat9InfoTitle;
+      case 'goCat10InfoTitle':
+        return loc.goCat10InfoTitle;
+      case 'goCat11InfoTitle':
+        return loc.goCat11InfoTitle;
+      case 'goCat12InfoTitle':
+        return loc.goCat12InfoTitle;
+      case 'goCat13InfoTitle':
+        return loc.goCat13InfoTitle;
+      case 'goCat14InfoTitle':
+        return loc.goCat14InfoTitle;
       case 'pythonCat0InfoTitle':
         return loc.pythonCat0InfoTitle;
       case 'pythonCat1InfoTitle':
@@ -410,6 +440,36 @@ class CategoryInfoL10n {
         return loc.phpCat8InfoContent;
       case 'phpCat9InfoContent':
         return loc.phpCat9InfoContent;
+      case 'goCat0InfoContent':
+        return loc.goCat0InfoContent;
+      case 'goCat1InfoContent':
+        return loc.goCat1InfoContent;
+      case 'goCat2InfoContent':
+        return loc.goCat2InfoContent;
+      case 'goCat3InfoContent':
+        return loc.goCat3InfoContent;
+      case 'goCat4InfoContent':
+        return loc.goCat4InfoContent;
+      case 'goCat5InfoContent':
+        return loc.goCat5InfoContent;
+      case 'goCat6InfoContent':
+        return loc.goCat6InfoContent;
+      case 'goCat7InfoContent':
+        return loc.goCat7InfoContent;
+      case 'goCat8InfoContent':
+        return loc.goCat8InfoContent;
+      case 'goCat9InfoContent':
+        return loc.goCat9InfoContent;
+      case 'goCat10InfoContent':
+        return loc.goCat10InfoContent;
+      case 'goCat11InfoContent':
+        return loc.goCat11InfoContent;
+      case 'goCat12InfoContent':
+        return loc.goCat12InfoContent;
+      case 'goCat13InfoContent':
+        return loc.goCat13InfoContent;
+      case 'goCat14InfoContent':
+        return loc.goCat14InfoContent;
       case 'pythonCat0InfoContent':
         return loc.pythonCat0InfoContent;
       case 'pythonCat1InfoContent':

@@ -1,7 +1,17 @@
+import 'package:learnswift/Screens/Courses/python/pythonAPIs/pythonAPIsExMain.dart';
 import 'package:learnswift/Screens/Courses/python/pythonBasics/PythonBasicExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonDataAnalysis/pythonDataAnalysisExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonErrorHandling/pythonErrorHandlingExMain.dart';
 import 'package:learnswift/Screens/Courses/python/pythonFileHandling/PythonFileHandlingExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonModules/pythonModulesExMain.dart';
+import 'package:learnswift/Screens/Courses/python/pythonOOP/pythonOOPExMain.dart';
+import 'package:learnswift/data/courses/Python/pythonAPIs/pythonAPIsModelEN.dart';
 import 'package:learnswift/data/courses/Python/pythonBasics/pyBasicsExModelListEN.dart';
 import 'package:learnswift/data/courses/Python/pythonControlFlow/pythonControlFlowModelEN.dart';
+import 'package:learnswift/data/courses/Python/pythonDataAnalysis/pythonDataAnalysisModelEN.dart';
+import 'package:learnswift/data/courses/Python/pythonErrorHandling/pythonErrorHandlingModelEN.dart';
+import 'package:learnswift/data/courses/Python/pythonModules/pythonModulesModelEN.dart';
+import 'package:learnswift/data/courses/Python/pythonOOP/pythonOOPModelEN.dart';
 import 'package:learnswift/data/mainModel/coursesMainModel.dart';
 
 import '../../../Screens/Courses/python/pythonControlFlow/pythonControlFlowExMain.dart';
@@ -107,7 +117,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color2: color2,
     ),
   ),
-   /*  CoursesMainModel(
+  CoursesMainModel(
     id: 5,
     generalName: 'Error Handling',
     catExercise: pythonErrorHandlingModelEN,
@@ -201,5 +211,5 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
       color1: color1,
       color2: color2,
     ),
-  ), */
+  ),
 ];

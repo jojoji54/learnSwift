@@ -33,7 +33,7 @@ import '../../courses/Go/goChannels/goChannelsExModelListZH.dart';
 List<CoursesMainModel> coursesGoMainModelListZH = [
   CoursesMainModel(
     id: 0,
-    generalName: "通道",
+    generalName: "Go 基础",
     catExercise: goBasicsModelZH,
     description: "goCat0InfoContent",
     numCompletedCourses: 0,
@@ -53,7 +53,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 1,
-    generalName: "Variables and Types",
+    generalName: "变量与类型",
     catExercise: goVariablesModelZH,
     description: "goCat1InfoContent",
     numCompletedCourses: 0,
@@ -73,7 +73,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 2,
-    generalName: "Operators",
+    generalName: "运算符",
     catExercise: goOperatorsModelZH,
     description: "goCat2InfoContent",
     numCompletedCourses: 0,
@@ -93,7 +93,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 3,
-    generalName: "Conditionals",
+    generalName: "条件",
     catExercise: goConditionalsModelZH,
     description: "goCat3InfoContent",
     numCompletedCourses: 0,
@@ -133,7 +133,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 5,
-    generalName: "Loops",
+    generalName: "循环",
     catExercise: goLoopsModelZH,
     description: "goCat5InfoContent",
     numCompletedCourses: 0,
@@ -153,7 +153,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 6,
-    generalName: "Slices",
+    generalName: "切片",
     catExercise: goSlicesModelZH,
     description: "goCat6InfoContent",
     numCompletedCourses: 0,
@@ -173,7 +173,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 7,
-    generalName: "Maps",
+    generalName: "映射",
     catExercise: goMapsModelZH,
     description: "goCat7InfoContent",
     numCompletedCourses: 0,
@@ -193,7 +193,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 8,
-    generalName: "Strings",
+    generalName: "字符串",
     catExercise: goStringsModelZH,
     description: "goCat8InfoContent",
     numCompletedCourses: 0,
@@ -213,7 +213,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 9,
-    generalName: "Functions",
+    generalName: "函数",
     catExercise: goFunctionsModelZH,
     description: "goCat9InfoContent",
     numCompletedCourses: 0,
@@ -233,7 +233,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 10,
-    generalName: "Structs",
+    generalName: "结构体",
     catExercise: goStructsModelZH,
     description: "goCat10InfoContent",
     numCompletedCourses: 0,
@@ -253,7 +253,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 11,
-    generalName: "Interfaces",
+    generalName: "接口",
     catExercise: goInterfacesModelZH,
     description: "goCat11InfoContent",
     numCompletedCourses: 0,
@@ -273,7 +273,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 12,
-    generalName: "Error Handling",
+    generalName: "错误处理",
     catExercise: goErrorsModelZH,
     description: "goCat12InfoContent",
     numCompletedCourses: 0,
@@ -293,7 +293,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 13,
-    generalName: "Goroutines",
+    generalName: "协程",
     catExercise: goGoroutinesModelZH,
     description: "goCat13InfoContent",
     numCompletedCourses: 0,
@@ -313,7 +313,7 @@ List<CoursesMainModel> coursesGoMainModelListZH = [
 
   CoursesMainModel(
     id: 14,
-    generalName: "Channels",
+    generalName: "通道",
     catExercise: goChannelsModelZH,
     description: "goCat14InfoContent",
     numCompletedCourses: 0,

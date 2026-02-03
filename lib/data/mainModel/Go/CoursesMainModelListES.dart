@@ -33,7 +33,7 @@ import '../../courses/Go/goChannels/goChannelsExModelListES.dart';
 List<CoursesMainModel> coursesGoMainModelListES = [
   CoursesMainModel(
     id: 0,
-    generalName: "Canales",
+    generalName: "Go Básico",
     catExercise: goBasicsModelES,
     description: "goCat0InfoContent",
     numCompletedCourses: 0,
@@ -53,7 +53,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 1,
-    generalName: "Variables and Types",
+    generalName: "Variables y Tipos",
     catExercise: goVariablesModelES,
     description: "goCat1InfoContent",
     numCompletedCourses: 0,
@@ -73,7 +73,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 2,
-    generalName: "Operators",
+    generalName: "Operadores",
     catExercise: goOperatorsModelES,
     description: "goCat2InfoContent",
     numCompletedCourses: 0,
@@ -93,7 +93,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 3,
-    generalName: "Conditionals",
+    generalName: "Condicionales",
     catExercise: goConditionalsModelES,
     description: "goCat3InfoContent",
     numCompletedCourses: 0,
@@ -133,7 +133,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 5,
-    generalName: "Loops",
+    generalName: "Bucles",
     catExercise: goLoopsModelES,
     description: "goCat5InfoContent",
     numCompletedCourses: 0,
@@ -173,7 +173,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 7,
-    generalName: "Maps",
+    generalName: "Mapas",
     catExercise: goMapsModelES,
     description: "goCat7InfoContent",
     numCompletedCourses: 0,
@@ -193,7 +193,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 8,
-    generalName: "Strings",
+    generalName: "Cadenas",
     catExercise: goStringsModelES,
     description: "goCat8InfoContent",
     numCompletedCourses: 0,
@@ -213,7 +213,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 9,
-    generalName: "Functions",
+    generalName: "Funciones",
     catExercise: goFunctionsModelES,
     description: "goCat9InfoContent",
     numCompletedCourses: 0,
@@ -273,7 +273,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 12,
-    generalName: "Error Handling",
+    generalName: "Manejo de Errores",
     catExercise: goErrorsModelES,
     description: "goCat12InfoContent",
     numCompletedCourses: 0,
@@ -313,7 +313,7 @@ List<CoursesMainModel> coursesGoMainModelListES = [
 
   CoursesMainModel(
     id: 14,
-    generalName: "Channels",
+    generalName: "Canales",
     catExercise: goChannelsModelES,
     description: "goCat14InfoContent",
     numCompletedCourses: 0,

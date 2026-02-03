@@ -9,6 +9,7 @@ import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 
+import '../mainModel/COBOL/CoursesMainModelListZH.dart';
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
 import '../mainModel/Go/CoursesMainModelListZH.dart';
 import '../mainModel/Java/CoursesMainModelListZH.dart';
@@ -136,17 +137,17 @@ final List<ProgrammingItem> programmingItemsZH = [
     description:
         'CodeCrafters: Go 是一门现代系统语言，强调速度、简洁与并发。通过练习学习后端与工具开发。\n\n版本: Go 1.22',
   ),
-  ProgrammingItem(
+   ProgrammingItem(
     id: 11,
     name: 'COBOL',
     productID: 'com.mrrubik.learnswift.cobol',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(11),
-    coursesList: [],
-    color1: Color(0xFF005CA5),
-    color2: Color(0xFFFCE94F),
-    isActive: false,
+    coursesList: coursesCobolMainModelListZH,
+    color1: Color(0xFF2D2D2D),
+    color2: Color(0xFFB8C3C7),
+    isActive: true,
     description:
-        'CodeCrafters: COBOL 是学习这一经典企业语言的指南，用于金融和政府系统。\n\n版本: COBOL 2023',
+        'CodeCrafters: COBOL 是经典的商业语言，广泛用于银行、金融与批处理系统。通过结构化练习学习。\n\n版本: COBOL 2014',
   ),
 
   // 框架
@@ -266,5 +267,6 @@ final List<ProgrammingItem> programmingItemsZH = [
     description:
         'CodeCrafters: TensorFlow 是构建人工智能和机器学习模型的指南。\n\n版本: TensorFlow 2.13',
   ),
+
 
 ];

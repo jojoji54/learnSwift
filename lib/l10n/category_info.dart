@@ -239,6 +239,36 @@ class CategoryInfoL10n {
         return loc.rubyCat8InfoTitle;
       case 'rubyCat9InfoTitle':
         return loc.rubyCat9InfoTitle;
+      case 'cobolCat0InfoTitle':
+        return loc.cobolCat0InfoTitle;
+      case 'cobolCat1InfoTitle':
+        return loc.cobolCat1InfoTitle;
+      case 'cobolCat2InfoTitle':
+        return loc.cobolCat2InfoTitle;
+      case 'cobolCat3InfoTitle':
+        return loc.cobolCat3InfoTitle;
+      case 'cobolCat4InfoTitle':
+        return loc.cobolCat4InfoTitle;
+      case 'cobolCat5InfoTitle':
+        return loc.cobolCat5InfoTitle;
+      case 'cobolCat6InfoTitle':
+        return loc.cobolCat6InfoTitle;
+      case 'cobolCat7InfoTitle':
+        return loc.cobolCat7InfoTitle;
+      case 'cobolCat8InfoTitle':
+        return loc.cobolCat8InfoTitle;
+      case 'cobolCat9InfoTitle':
+        return loc.cobolCat9InfoTitle;
+      case 'cobolCat10InfoTitle':
+        return loc.cobolCat10InfoTitle;
+      case 'cobolCat11InfoTitle':
+        return loc.cobolCat11InfoTitle;
+      case 'cobolCat12InfoTitle':
+        return loc.cobolCat12InfoTitle;
+      case 'cobolCat13InfoTitle':
+        return loc.cobolCat13InfoTitle;
+      case 'cobolCat14InfoTitle':
+        return loc.cobolCat14InfoTitle;
       case 'swiftCat0InfoTitle':
         return loc.swiftCat0InfoTitle;
       case 'swiftCat10InfoTitle':
@@ -520,6 +550,36 @@ class CategoryInfoL10n {
         return loc.rubyCat8InfoContent;
       case 'rubyCat9InfoContent':
         return loc.rubyCat9InfoContent;
+      case 'cobolCat0InfoContent':
+        return loc.cobolCat0InfoContent;
+      case 'cobolCat1InfoContent':
+        return loc.cobolCat1InfoContent;
+      case 'cobolCat2InfoContent':
+        return loc.cobolCat2InfoContent;
+      case 'cobolCat3InfoContent':
+        return loc.cobolCat3InfoContent;
+      case 'cobolCat4InfoContent':
+        return loc.cobolCat4InfoContent;
+      case 'cobolCat5InfoContent':
+        return loc.cobolCat5InfoContent;
+      case 'cobolCat6InfoContent':
+        return loc.cobolCat6InfoContent;
+      case 'cobolCat7InfoContent':
+        return loc.cobolCat7InfoContent;
+      case 'cobolCat8InfoContent':
+        return loc.cobolCat8InfoContent;
+      case 'cobolCat9InfoContent':
+        return loc.cobolCat9InfoContent;
+      case 'cobolCat10InfoContent':
+        return loc.cobolCat10InfoContent;
+      case 'cobolCat11InfoContent':
+        return loc.cobolCat11InfoContent;
+      case 'cobolCat12InfoContent':
+        return loc.cobolCat12InfoContent;
+      case 'cobolCat13InfoContent':
+        return loc.cobolCat13InfoContent;
+      case 'cobolCat14InfoContent':
+        return loc.cobolCat14InfoContent;
       case 'swiftCat0InfoContent':
         return loc.swiftCat0InfoContent;
       case 'swiftCat10InfoContent':

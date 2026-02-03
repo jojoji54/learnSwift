@@ -9,6 +9,7 @@ import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListES.dart';
 
+import '../mainModel/COBOL/CoursesMainModelListES.dart';
 import '../mainModel/Cpp/CoursesMainModelListES.dart';
 import '../mainModel/Go/CoursesMainModelListES.dart';
 import '../mainModel/Java/CoursesMainModelListES.dart';
@@ -142,12 +143,12 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'COBOL',
     productID: 'com.mrrubik.learnswift.cobol',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(11),
-    coursesList: [],
-    color1: Color(0xFF005CA5),
-    color2: Color(0xFFFCE94F),
-    isActive: false,
+    coursesList: coursesCobolMainModelListES,
+    color1: Color(0xFF2D2D2D),
+    color2: Color(0xFFB8C3C7),
+    isActive: true,
     description:
-        'CodeCrafters: COBOL es tu guía para este clásico lenguaje empresarial, utilizado en sistemas financieros y gubernamentales.\n\nVersión: COBOL 2023',
+        'CodeCrafters: COBOL te enseña el lenguaje clásico de negocios usado en banca, finanzas y procesos batch. Aprende con ejercicios estructurados.\n\nVersión: COBOL 2014',
   ),
 
   // Frameworks
@@ -283,4 +284,5 @@ final List<ProgrammingItem> programmingItemsES = [
     description:
         'CodeCrafters: Go te enseña un lenguaje moderno de sistemas creado para velocidad, simplicidad y concurrencia. Aprende con ejercicios prácticos para backend y herramientas.\n\nVersión: Go 1.22',
   ),
+
 ];

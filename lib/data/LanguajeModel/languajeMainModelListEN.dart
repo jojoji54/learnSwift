@@ -9,6 +9,7 @@ import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
 
+import '../mainModel/COBOL/CoursesMainModelListEN.dart';
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
 import '../mainModel/Go/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
@@ -137,17 +138,18 @@ final List<ProgrammingItem> programmingItemsEN = [
     description:
         'CodeCrafters: Go teaches you a modern systems language built for speed, simplicity, and concurrency. Learn with practical exercises for backend and tooling.\n\nVersion: Go 1.22',
   ),
+
   ProgrammingItem(
     id: 11,
     name: 'COBOL',
     productID: 'com.mrrubik.learnswift.cobol',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(11),
-    coursesList: [],
-    color1: Color(0xFF005CA5),
-    color2: Color(0xFFFCE94F),
-    isActive: false,
+    coursesList: coursesCobolMainModelListEN,
+    color1: Color(0xFF2D2D2D),
+    color2: Color(0xFFB8C3C7),
+    isActive: true,
     description:
-        'CodeCrafters: COBOL is your guide to this classic business-oriented language used in financial and government systems.\n\nVersion: COBOL 2023',
+        'CodeCrafters: COBOL teaches you the classic business language behind banking, finance, and large-scale batch systems. Learn with structured exercises.\n\nVersion: COBOL 2014',
   ),
 
   // Frameworks

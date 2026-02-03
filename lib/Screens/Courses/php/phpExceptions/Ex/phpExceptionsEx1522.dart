@@ -35,19 +35,13 @@ class _PhpExceptionsEx1522State extends State<PhpExceptionsEx1522> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\btry\b', multiLine: true),
-      RegExp(r'\bcatch\b', multiLine: true),
+      RegExp(r'echo', multiLine: true),
+      RegExp(r'fun', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

@@ -35,10 +35,10 @@ class _RubyCaseStatementsEx1606State extends State<RubyCaseStatementsEx1606> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bcase\b', multiLine: true),
-    RegExp(r'\bwhen\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
+      RegExp(r'case', multiLine: true),
+      RegExp(r'when', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'end', multiLine: true),
     ];
 
     for (final rule in required) {

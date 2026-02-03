@@ -35,9 +35,9 @@ class _RubyMethodsEx1686State extends State<RubyMethodsEx1686> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bdef\b', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'def', multiLine: true),
+      RegExp(r'end', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

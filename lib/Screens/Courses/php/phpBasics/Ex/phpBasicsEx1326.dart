@@ -35,18 +35,13 @@ class _PhpBasicsEx1326State extends State<PhpBasicsEx1326> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\$[A-Za-z_]\w*', multiLine: true),
+      RegExp(r'\(int\)\s*"7"', multiLine: true),
+      RegExp(r'echo\s+\$n\s*\+\s*1', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

@@ -35,18 +35,16 @@ class _KotlinFunctionsEx1254State extends State<KotlinFunctionsEx1254> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'println\s*\(', multiLine: true),
-      RegExp(r'\bfun\b', multiLine: true),
+      RegExp(r'do', multiLine: true),
+      RegExp(r'fun', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'else', multiLine: true),
+      RegExp(r'println', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'println\s*\(', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

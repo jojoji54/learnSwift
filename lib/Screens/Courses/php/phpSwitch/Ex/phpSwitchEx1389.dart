@@ -35,18 +35,15 @@ class _PhpSwitchEx1389State extends State<PhpSwitchEx1389> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\bswitch\b', multiLine: true),
+      RegExp(r'switch', multiLine: true),
+      RegExp(r'echo', multiLine: true),
+      RegExp(r'case', multiLine: true),
+      RegExp(r'def', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

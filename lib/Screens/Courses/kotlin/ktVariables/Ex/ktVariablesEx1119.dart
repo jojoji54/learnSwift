@@ -35,18 +35,12 @@ class _KotlinVariablesEx1119State extends State<KotlinVariablesEx1119> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'println\s*\(', multiLine: true),
-      RegExp(r'\bvar\b', multiLine: true),
+      RegExp(r'println', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'println\s*\(', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

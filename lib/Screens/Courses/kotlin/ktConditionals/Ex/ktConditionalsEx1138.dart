@@ -35,19 +35,14 @@ class _KotlinConditionalsEx1138State extends State<KotlinConditionalsEx1138> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'println\s*\(', multiLine: true),
-      RegExp(r'\bif\b', multiLine: true),
-      RegExp(r'\belse\b', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'println', multiLine: true),
+      RegExp(r'else', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'println\s*\(', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

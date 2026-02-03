@@ -35,18 +35,14 @@ class _PhpLoopsEx1395State extends State<PhpLoopsEx1395> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\bfor\b', multiLine: true),
+      RegExp(r'for', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'echo', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

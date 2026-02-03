@@ -35,18 +35,13 @@ class _KotlinNullsafetyEx1300State extends State<KotlinNullsafetyEx1300> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'println\s*\(', multiLine: true),
-      RegExp(r'\?\s*=', multiLine: true),
+      RegExp(r'list', multiLine: true),
+      RegExp(r'println', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'println\s*\(', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

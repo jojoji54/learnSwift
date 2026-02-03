@@ -35,9 +35,9 @@ class _RubyConditionalsEx1591State extends State<RubyConditionalsEx1591> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bif\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'end', multiLine: true),
     ];
 
     for (final rule in required) {

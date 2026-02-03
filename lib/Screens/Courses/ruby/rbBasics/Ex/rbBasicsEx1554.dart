@@ -35,7 +35,9 @@ class _RubyBasicsEx1554State extends State<RubyBasicsEx1554> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'def\s+greet', multiLine: true),
+      RegExp(r'puts\s+"Hey!"', multiLine: true),
+      RegExp(r'^greet$', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,18 +35,15 @@ class _PhpInheritanceEx1508State extends State<PhpInheritanceEx1508> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\bclass\b', multiLine: true),
+      RegExp(r'fun', multiLine: true),
+      RegExp(r'class', multiLine: true),
+      RegExp(r'echo', multiLine: true),
+      RegExp(r'->', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

@@ -35,18 +35,13 @@ class _KotlinBasicsEx1096State extends State<KotlinBasicsEx1096> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'println\s*\(', multiLine: true),
-      RegExp(r'\bval\b', multiLine: true),
+      RegExp(r'val\s+isReady\s*=\s*true', multiLine: true),
+      RegExp(r'println\s*\(\s*isReady\s*\)', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'println\s*\(', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

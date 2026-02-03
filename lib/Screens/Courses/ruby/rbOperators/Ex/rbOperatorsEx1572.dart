@@ -35,7 +35,8 @@ class _RubyOperatorsEx1572State extends State<RubyOperatorsEx1572> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

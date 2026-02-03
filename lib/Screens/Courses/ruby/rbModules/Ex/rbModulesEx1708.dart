@@ -35,11 +35,11 @@ class _RubyModulesEx1708State extends State<RubyModulesEx1708> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bmodule\b', multiLine: true),
-    RegExp(r'\bdef\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
-    RegExp(r'\bclass\b', multiLine: true),
+      RegExp(r'module', multiLine: true),
+      RegExp(r'def', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'end', multiLine: true),
+      RegExp(r'class', multiLine: true),
     ];
 
     for (final rule in required) {

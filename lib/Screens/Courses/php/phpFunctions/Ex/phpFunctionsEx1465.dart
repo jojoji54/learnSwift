@@ -35,18 +35,13 @@ class _PhpFunctionsEx1465State extends State<PhpFunctionsEx1465> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\becho\b', multiLine: true),
-      RegExp(r'\bfunction\b', multiLine: true),
+      RegExp(r'fun', multiLine: true),
+      RegExp(r'echo', multiLine: true),
     ];
 
     for (final rule in required) {
       if (!rule.hasMatch(normalized)) return false;
     }
-
-    final logCount = RegExp(r'\becho\b', multiLine: true)
-        .allMatches(normalized)
-        .length;
-    if (logCount < 1) return false;
 
     return true;
   }

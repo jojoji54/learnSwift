@@ -35,7 +35,7 @@ class _RubyExceptionsEx1739State extends State<RubyExceptionsEx1739> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\braise\b', multiLine: true),
+      RegExp(r'raise', multiLine: true),
     ];
 
     for (final rule in required) {

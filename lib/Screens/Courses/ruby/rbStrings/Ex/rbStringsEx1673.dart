@@ -35,7 +35,7 @@ class _RubyStringsEx1673State extends State<RubyStringsEx1673> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

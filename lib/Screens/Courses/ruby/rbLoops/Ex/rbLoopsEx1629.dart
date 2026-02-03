@@ -35,10 +35,10 @@ class _RubyLoopsEx1629State extends State<RubyLoopsEx1629> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bwhile\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\bif\b', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
+      RegExp(r'while', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'if', multiLine: true),
+      RegExp(r'end', multiLine: true),
     ];
 
     for (final rule in required) {

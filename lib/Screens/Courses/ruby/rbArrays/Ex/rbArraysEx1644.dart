@@ -35,7 +35,7 @@ class _RubyArraysEx1644State extends State<RubyArraysEx1644> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

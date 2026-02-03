@@ -35,7 +35,7 @@ class _RubyVariablesTypesEx1558State extends State<RubyVariablesTypesEx1558> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,10 +35,9 @@ class _RubyHashesEx1652State extends State<RubyHashesEx1652> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bdo\b', multiLine: true),
-    RegExp(r'\beach\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
+      RegExp(r'do', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'end', multiLine: true),
     ];
 
     for (final rule in required) {

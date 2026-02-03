@@ -35,7 +35,7 @@ class _RubyBasicsEx1553State extends State<RubyBasicsEx1553> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'Roses\\nare red', multiLine: true),
     ];
 
     for (final rule in required) {

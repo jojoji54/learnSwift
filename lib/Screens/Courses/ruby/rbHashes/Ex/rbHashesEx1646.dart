@@ -35,7 +35,7 @@ class _RubyHashesEx1646State extends State<RubyHashesEx1646> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

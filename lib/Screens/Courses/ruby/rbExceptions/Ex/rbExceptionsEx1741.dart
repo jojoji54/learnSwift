@@ -35,9 +35,10 @@ class _RubyExceptionsEx1741State extends State<RubyExceptionsEx1741> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'puts\s*', multiLine: true),
-    RegExp(r'\brescue\b', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
+      RegExp(r'puts', multiLine: true),
+      RegExp(r'rescue', multiLine: true),
+      RegExp(r'else', multiLine: true),
+      RegExp(r'end', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,10 +35,10 @@ class _RubyBlocksEnumerablesEx1752State extends State<RubyBlocksEnumerablesEx175
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'\bdo\b', multiLine: true),
-    RegExp(r'\bmap\b', multiLine: true),
-    RegExp(r'\bend\b', multiLine: true),
-    RegExp(r'puts\s*', multiLine: true),
+      RegExp(r'do', multiLine: true),
+      RegExp(r'map', multiLine: true),
+      RegExp(r'end', multiLine: true),
+      RegExp(r'puts', multiLine: true),
     ];
 
     for (final rule in required) {

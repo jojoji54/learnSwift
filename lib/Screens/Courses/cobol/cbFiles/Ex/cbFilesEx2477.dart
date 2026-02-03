@@ -35,7 +35,7 @@ class _CbFilesEx2477State extends State<CbFilesEx2477> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'OPEN\s+INPUT', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

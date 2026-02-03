@@ -35,7 +35,7 @@ class _CbStringsEx2438State extends State<CbStringsEx2438> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'WITH POINTER', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

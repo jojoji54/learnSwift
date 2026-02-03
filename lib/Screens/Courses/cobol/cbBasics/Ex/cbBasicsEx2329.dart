@@ -35,7 +35,7 @@ class _CbBasicsEx2329State extends State<CbBasicsEx2329> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DATA DIVISION\.', multiLine: true),
+      RegExp(r'MOVE\s+7\s+TO\s+WS-COUNT', multiLine: true),
     ];
 
     for (final rule in required) {

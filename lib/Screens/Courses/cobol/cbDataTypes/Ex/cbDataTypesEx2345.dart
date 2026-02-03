@@ -34,17 +34,13 @@ class _CbDataTypesEx2345State extends State<CbDataTypesEx2345> {
   bool _isValid2345(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'01\s+WS-PERSON\.', multiLine: true),
-      RegExp(r'05\s+WS-NAME', multiLine: true),
-      RegExp(r'05\s+WS-AGE', multiLine: true),
-    ];
+    // Accept: 05 WS-STATUS PIC X(2) VALUE "OK".
+    final pattern = RegExp(
+      r'''PIC\s+X\(\s*2\s*\)\s+VALUE\s+["']OK["']\s*\.''',
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

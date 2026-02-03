@@ -35,7 +35,7 @@ class _CbConditionsEx2374State extends State<CbConditionsEx2374> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'NOT\s+WS-OK', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,7 +35,7 @@ class _CbSubprogramsEx2516State extends State<CbSubprogramsEx2516> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'RETURNING\s+WS-STAT', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

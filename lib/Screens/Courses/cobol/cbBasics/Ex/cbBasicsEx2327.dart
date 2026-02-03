@@ -35,7 +35,8 @@ class _CbBasicsEx2327State extends State<CbBasicsEx2327> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'IDENTIFICATION DIVISION\.', multiLine: true),
+      RegExp(r'PROGRAM-ID\.\s+DEMO', multiLine: true),
+      RegExp(r'DISPLAY\s+\"DEMO\"', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,7 +35,7 @@ class _CbSectionsEx2471State extends State<CbSectionsEx2471> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'GO TO', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

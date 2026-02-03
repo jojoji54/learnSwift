@@ -35,8 +35,7 @@ class _CbTablesEx2524State extends State<CbTablesEx2524> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'OCCURS\s+3\s+TIMES', multiLine: true),
-      RegExp(r'OCCURS\s+4\s+TIMES', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

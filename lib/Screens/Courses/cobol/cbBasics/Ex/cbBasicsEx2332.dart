@@ -35,7 +35,7 @@ class _CbBasicsEx2332State extends State<CbBasicsEx2332> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'STOP RUN\.', multiLine: true),
+      RegExp(r'PERFORM\s+MAIN-PARA', multiLine: true),
     ];
 
     for (final rule in required) {

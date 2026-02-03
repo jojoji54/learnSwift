@@ -35,7 +35,7 @@ class _CbSubprogramsEx2515State extends State<CbSubprogramsEx2515> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'USING\s+WS-TABLE', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

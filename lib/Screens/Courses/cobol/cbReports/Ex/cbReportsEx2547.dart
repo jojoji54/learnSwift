@@ -35,7 +35,7 @@ class _CbReportsEx2547State extends State<CbReportsEx2547> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'INITIALIZE', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

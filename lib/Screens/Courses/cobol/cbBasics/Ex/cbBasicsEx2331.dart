@@ -35,8 +35,8 @@ class _CbBasicsEx2331State extends State<CbBasicsEx2331> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'MAIN-LOGIC\.', multiLine: true),
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp(r'IF\s+WS-FLAG\s*=\s+\"Y\"', multiLine: true),
+      RegExp(r'END-IF', multiLine: true),
     ];
 
     for (final rule in required) {

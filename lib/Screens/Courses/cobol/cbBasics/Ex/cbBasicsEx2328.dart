@@ -35,7 +35,7 @@ class _CbBasicsEx2328State extends State<CbBasicsEx2328> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'ENVIRONMENT DIVISION\.', multiLine: true),
+      RegExp(r'STOP RUN\.', multiLine: true),
     ];
 
     for (final rule in required) {

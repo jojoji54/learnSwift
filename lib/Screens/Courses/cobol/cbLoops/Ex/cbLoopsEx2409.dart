@@ -35,7 +35,7 @@ class _CbLoopsEx2409State extends State<CbLoopsEx2409> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'END-PERFORM', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

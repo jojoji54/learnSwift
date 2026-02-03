@@ -35,7 +35,7 @@ class _CbTablesEx2530State extends State<CbTablesEx2530> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'INDEXED BY\s+I\s+J', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,8 +35,7 @@ class _CbSubprogramsEx2517State extends State<CbSubprogramsEx2517> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'CALL', multiLine: true),
-      RegExp(r'CANCEL', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,7 +35,8 @@ class _CbBasicsEx2334State extends State<CbBasicsEx2334> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY\s+\"COBOL\"', multiLine: true),
+      RegExp(r'DISPLAY\s+WS-NAME', multiLine: true),
+      RegExp(r'DISPLAY\s+WS-COUNT', multiLine: true),
     ];
 
     for (final rule in required) {

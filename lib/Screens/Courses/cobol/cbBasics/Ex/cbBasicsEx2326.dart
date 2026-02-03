@@ -35,7 +35,8 @@ class _CbBasicsEx2326State extends State<CbBasicsEx2326> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'PROGRAM-ID\.', multiLine: true),
+      RegExp(r'MOVE\s+\"ANA\"\s+TO\s+WS-NAME', multiLine: true),
+      RegExp(r'DISPLAY\s+WS-NAME', multiLine: true),
     ];
 
     for (final rule in required) {

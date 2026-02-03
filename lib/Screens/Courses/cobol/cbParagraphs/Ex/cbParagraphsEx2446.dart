@@ -35,7 +35,7 @@ class _CbParagraphsEx2446State extends State<CbParagraphsEx2446> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'PERFORM\s+INIT-PARA', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

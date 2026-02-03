@@ -35,7 +35,7 @@ class _CbTablesEx2522State extends State<CbTablesEx2522> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'SEARCH ALL', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

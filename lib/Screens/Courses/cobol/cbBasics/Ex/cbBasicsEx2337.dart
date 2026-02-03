@@ -35,7 +35,7 @@ class _CbBasicsEx2337State extends State<CbBasicsEx2337> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'MOVE\s+\"ANA\"\s+TO\s+WS-NAME', multiLine: true),
+      RegExp(r'DISPLAY\s+\"READY\"', multiLine: true),
     ];
 
     for (final rule in required) {

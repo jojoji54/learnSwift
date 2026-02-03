@@ -31,11 +31,11 @@ class _CbDataTypesEx2353State extends State<CbDataTypesEx2353> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2353(String code) {
+    bool _isValid2353(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'JUSTIFIED', multiLine: true),
+      RegExp(r'PIC\s+S9\(5\)V99\s+COMP-3', multiLine: true),
     ];
 
     for (final rule in required) {

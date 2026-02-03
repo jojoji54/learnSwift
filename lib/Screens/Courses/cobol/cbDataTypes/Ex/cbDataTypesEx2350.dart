@@ -31,11 +31,12 @@ class _CbDataTypesEx2350State extends State<CbDataTypesEx2350> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2350(String code) {
+    bool _isValid2350(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'88\s+WS-OK', multiLine: true),
+      RegExp(r'OCCURS\s+3\s+TIMES', multiLine: true),
+      RegExp(r'PIC\s+9\(2\)', multiLine: true),
     ];
 
     for (final rule in required) {

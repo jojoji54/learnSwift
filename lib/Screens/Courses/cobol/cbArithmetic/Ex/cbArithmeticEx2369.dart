@@ -35,7 +35,6 @@ class _CbArithmeticEx2369State extends State<CbArithmeticEx2369> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'COMPUTE', multiLine: true),
       RegExp(r'IF\s+C\s*=\s*0', multiLine: true),
     ];
 

@@ -35,8 +35,7 @@ class _CbArraysEx2420State extends State<CbArraysEx2420> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'SEARCH', multiLine: true),
-      RegExp(r'WHEN', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

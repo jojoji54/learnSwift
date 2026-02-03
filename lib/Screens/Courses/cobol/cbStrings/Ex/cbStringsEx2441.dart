@@ -35,7 +35,7 @@ class _CbStringsEx2441State extends State<CbStringsEx2441> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DELIMITED BY SIZE', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

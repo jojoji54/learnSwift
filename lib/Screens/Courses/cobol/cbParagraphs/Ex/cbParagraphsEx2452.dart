@@ -35,7 +35,7 @@ class _CbParagraphsEx2452State extends State<CbParagraphsEx2452> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'SUM-PARA\.', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

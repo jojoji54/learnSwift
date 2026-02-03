@@ -35,7 +35,7 @@ class _CbSortEx2501State extends State<CbSortEx2501> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'MERGE\s+SORT-FILE', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

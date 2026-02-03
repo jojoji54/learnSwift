@@ -35,7 +35,7 @@ class _CbReportsEx2545State extends State<CbReportsEx2545> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'AFTER ADVANCING', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

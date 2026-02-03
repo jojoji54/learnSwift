@@ -35,7 +35,7 @@ class _CbArraysEx2422State extends State<CbArraysEx2422> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'SET\s+IDX\s+TO', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

@@ -35,7 +35,7 @@ class _CbBasicsEx2335State extends State<CbBasicsEx2335> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'PIC\s+X\(10\)', multiLine: true),
+      RegExp(r'MOVE\s+SPACES\s+TO\s+WS-NAME', multiLine: true),
     ];
 
     for (final rule in required) {

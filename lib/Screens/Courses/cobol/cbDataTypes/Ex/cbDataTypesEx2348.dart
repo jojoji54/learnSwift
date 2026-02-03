@@ -34,15 +34,17 @@ class _CbDataTypesEx2348State extends State<CbDataTypesEx2348> {
   bool _isValid2348(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'REDEFINES\s+WS-ID', multiLine: true),
-    ];
+    // Accepts base field plus 88 condition name.
+    final baseField = RegExp(
+      r'''05\s+WS-STATUS\s+PIC\s+X\s+VALUE\s+["']P["']\s*\.''',
+      multiLine: true,
+    );
+    final cond = RegExp(
+      r'''88\s+STATUS-PAID\s+VALUE\s+["']Y["']\s*\.''',
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return baseField.hasMatch(normalized) && cond.hasMatch(normalized);
   }
 
   @override

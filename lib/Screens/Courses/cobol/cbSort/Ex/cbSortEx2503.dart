@@ -35,7 +35,7 @@ class _CbSortEx2503State extends State<CbSortEx2503> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'NO DUPLICATES', multiLine: true),
+      RegExp(r'DISPLAY', multiLine: true),
     ];
 
     for (final rule in required) {

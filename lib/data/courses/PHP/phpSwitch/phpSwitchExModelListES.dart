@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+List<CoursesExModel> phpSwitchModelES = [
+  CoursesExModel(
+    id: 1376,
+    exerciseName: "Ejercicio 1: switch day (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1376",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1376),
+    completed: purchaseManagerHive.getCompleted(1376),
+  ),
+  CoursesExModel(
+    id: 1377,
+    exerciseName: "Desafío 2: switch day (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1377",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1377),
+    completed: purchaseManagerHive.getCompleted(1377),
+  ),
+  CoursesExModel(
+    id: 1378,
+    exerciseName: "Ejercicio 3: switch day (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1378",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1378),
+    completed: purchaseManagerHive.getCompleted(1378),
+  ),
+  CoursesExModel(
+    id: 1379,
+    exerciseName: "Desafío 4: switch level (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1379",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1379),
+    completed: purchaseManagerHive.getCompleted(1379),
+  ),
+  CoursesExModel(
+    id: 1380,
+    exerciseName: "Ejercicio 5: switch level (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1380",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1380),
+    completed: purchaseManagerHive.getCompleted(1380),
+  ),
+  CoursesExModel(
+    id: 1381,
+    exerciseName: "Desafío 6: switch level (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1381",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1381),
+    completed: purchaseManagerHive.getCompleted(1381),
+  ),
+  CoursesExModel(
+    id: 1382,
+    exerciseName: "Ejercicio 7: switch menu (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1382",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1382),
+    completed: purchaseManagerHive.getCompleted(1382),
+  ),
+  CoursesExModel(
+    id: 1383,
+    exerciseName: "Desafío 8: switch menu (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1383",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1383),
+    completed: purchaseManagerHive.getCompleted(1383),
+  ),
+  CoursesExModel(
+    id: 1384,
+    exerciseName: "Ejercicio 9: switch menu (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1384",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1384),
+    completed: purchaseManagerHive.getCompleted(1384),
+  ),
+  CoursesExModel(
+    id: 1385,
+    exerciseName: "Desafío 10: switch mode (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1385",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1385),
+    completed: purchaseManagerHive.getCompleted(1385),
+  ),
+  CoursesExModel(
+    id: 1386,
+    exerciseName: "Ejercicio 11: switch mode (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1386",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1386),
+    completed: purchaseManagerHive.getCompleted(1386),
+  ),
+  CoursesExModel(
+    id: 1387,
+    exerciseName: "Desafío 12: switch size (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1387",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1387),
+    completed: purchaseManagerHive.getCompleted(1387),
+  ),
+  CoursesExModel(
+    id: 1388,
+    exerciseName: "Ejercicio 13: switch size (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1388",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1388),
+    completed: purchaseManagerHive.getCompleted(1388),
+  ),
+  CoursesExModel(
+    id: 1389,
+    exerciseName: "Desafío 14: switch size (Switch)",
+    productID: "com.mrrubik.learnswift.phpex1389",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1389),
+    completed: purchaseManagerHive.getCompleted(1389),
+  ),
+];

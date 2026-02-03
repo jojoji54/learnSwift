@@ -6,6 +6,7 @@ import 'package:learnswift/data/mainModel/Python/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
@@ -103,10 +104,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'PHP',
     productID: 'com.mrrubik.learnswift.php',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(8),
-    coursesList: [],
+    coursesList: coursesPhpMainModelListEN,
     color1: Color(0xFF8892BF),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: PHP introduces you to one of the most widely used backend web development languages, ideal for scalable projects.\n\nVersion: PHP 8.3',
   ),

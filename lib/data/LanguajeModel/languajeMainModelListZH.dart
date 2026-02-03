@@ -6,6 +6,7 @@ import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
 import '../mainModel/Java/CoursesMainModelListZH.dart';
@@ -102,10 +103,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'PHP',
     productID: 'com.mrrubik.learnswift.php',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(8),
-    coursesList: [],
+    coursesList: coursesPhpMainModelListZH,
     color1: Color(0xFF8892BF),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: PHP 介绍这一在后端网页开发中广泛使用的语言，非常适合扩展项目。\n\n版本: PHP 8.3',
   ),

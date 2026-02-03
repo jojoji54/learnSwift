@@ -169,6 +169,21 @@ class _JavaExceptionsEx662State extends State<JavaExceptionsEx662> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava662",
+              onPressed: () {
+                _showDialog(
+                  loc.java662InfoTitle,
+                  loc.java662InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaExceptions662",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

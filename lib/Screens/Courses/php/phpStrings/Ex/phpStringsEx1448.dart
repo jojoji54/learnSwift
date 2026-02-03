@@ -170,6 +170,21 @@ class _PhpStringsEx1448State extends State<PhpStringsEx1448> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1448",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1448InfoTitle),
+                  _t(loc.php1448InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1448",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -171,6 +171,21 @@ class _CSharpStructsenumsEx1049State extends State<CSharpStructsenumsEx1049> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1049",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1049InfoTitle),
+                  _t(loc.csharp1049InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1049",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -203,6 +203,21 @@ class _PythonDataStructuresEx203State extends State<PythonDataStructuresEx203> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython203",
+              onPressed: () {
+                _showDialog(
+                  loc.python203InfoTitle,
+                  loc.python203InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonDataStructures203",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

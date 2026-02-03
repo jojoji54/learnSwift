@@ -171,6 +171,21 @@ class _CSharpMethodsEx1030State extends State<CSharpMethodsEx1030> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1030",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1030InfoTitle),
+                  _t(loc.csharp1030InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1030",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

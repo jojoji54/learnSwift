@@ -171,6 +171,21 @@ class _CSharpDictionariesEx1000State extends State<CSharpDictionariesEx1000> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1000",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1000InfoTitle),
+                  _t(loc.csharp1000InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1000",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

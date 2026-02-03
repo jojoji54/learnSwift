@@ -169,6 +169,21 @@ class _JavaBasicsEx505State extends State<JavaBasicsEx505> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava505",
+              onPressed: () {
+                _showDialog(
+                  loc.java505InfoTitle,
+                  loc.java505InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaBasics505",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

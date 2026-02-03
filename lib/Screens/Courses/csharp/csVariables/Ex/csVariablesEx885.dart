@@ -170,6 +170,21 @@ class _CSharpVariablesEx885State extends State<CSharpVariablesEx885> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp885",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp885InfoTitle),
+                  _t(loc.csharp885InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp885",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

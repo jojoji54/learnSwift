@@ -171,6 +171,21 @@ class _KotlinNullsafetyEx1293State extends State<KotlinNullsafetyEx1293> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1293",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1293InfoTitle),
+                  _t(loc.kotlin1293InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1293",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

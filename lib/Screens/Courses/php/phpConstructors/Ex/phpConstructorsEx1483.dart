@@ -171,6 +171,21 @@ class _PhpConstructorsEx1483State extends State<PhpConstructorsEx1483> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1483",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1483InfoTitle),
+                  _t(loc.php1483InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1483",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

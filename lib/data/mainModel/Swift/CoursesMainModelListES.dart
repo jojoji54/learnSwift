@@ -28,8 +28,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 0,
     generalName: 'Conceptos Básicos',
     catExercise: sbModelES,
-    description:
-        'Introduce los fundamentos de Swift, incluyendo sintaxis, variables, constantes y operaciones básicas. Entender estos conceptos es clave porque son la base de todo lo que harás en Swift.',
+    description: "swiftCat0InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -49,8 +48,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 1,
     generalName: 'Booleanos',
     catExercise: booleanBModelES,
-    description:
-        'Cubre la lógica booleana y su uso en programación. Es esencial para tomar decisiones con comparaciones y operadores lógicos.',
+    description: "swiftCat1InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -70,8 +68,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 2,
     generalName: 'If-Else',
     catExercise: ifElseModelES,
-    description:
-        'Aprende a ramificar condiciones para controlar el flujo del programa. Fundamental para implementar lógica en tus aplicaciones.',
+    description: "swiftCat2InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -91,8 +88,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 3,
     generalName: 'Switch',
     catExercise: switchModelES,
-    description:
-        'Explica cómo usar sentencias switch para manejar múltiples casos de forma eficiente. Te ayuda a escribir código más limpio que con muchos if-else anidados.',
+    description: "swiftCat3InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -112,8 +108,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 4,
     generalName: 'Bucles',
     catExercise: loopsModelES,
-    description:
-        'Cubre el uso de bucles como for, while y repeat-while para tareas repetitivas. Vital para reducir redundancia y automatizar procesos.',
+    description: "swiftCat4InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -133,8 +128,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 5,
     generalName: 'Arreglos',
     catExercise: swiftArraysModelES,
-    description:
-        'Explora los arreglos (arrays) y su uso para almacenar colecciones de datos. Clave para manejar muchos elementos de forma ordenada.',
+    description: "swiftCat5InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -154,8 +148,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 6,
     generalName: 'Diccionarios',
     catExercise: swiftDictionariesExModelES,
-    description:
-        'Se centra en diccionarios para almacenar datos en pares clave-valor. Muy útil para búsquedas rápidas y organizar información.',
+    description: "swiftCat6InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -175,8 +168,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 7,
     generalName: 'Conjuntos (Sets)',
     catExercise: swiftSetsExModelES,
-    description:
-        'Explica los sets y su uso para guardar valores únicos. Importante para asegurar unicidad y hacer operaciones de conjuntos.',
+    description: "swiftCat7InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -196,8 +188,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 8,
     generalName: 'Funciones',
     catExercise: swiftFunctionsExModelES,
-    description:
-        'Introduce funciones para estructurar bloques reutilizables. Esencial para programación modular y código bien organizado.',
+    description: "swiftCat8InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -217,8 +208,7 @@ List<CoursesMainModel> coursesSwiftMainModelListES = [
     id: 9,
     generalName: 'Opcionales',
     catExercise: swiftOptionalsExModelES,
-    description:
-        'Aprende a manejar valores que pueden no existir (nil). Clave para escribir código seguro y evitar errores inesperados.',
+    description: "swiftCat9InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

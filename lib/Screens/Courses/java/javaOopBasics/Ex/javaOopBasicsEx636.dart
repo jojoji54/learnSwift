@@ -169,6 +169,21 @@ class _JavaOopBasicsEx636State extends State<JavaOopBasicsEx636> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava636",
+              onPressed: () {
+                _showDialog(
+                  loc.java636InfoTitle,
+                  loc.java636InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaOopBasics636",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

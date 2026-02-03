@@ -169,6 +169,21 @@ class _JavaArraysEx601State extends State<JavaArraysEx601> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava601",
+              onPressed: () {
+                _showDialog(
+                  loc.java601InfoTitle,
+                  loc.java601InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaArrays601",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

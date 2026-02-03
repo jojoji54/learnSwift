@@ -171,6 +171,21 @@ class _CSharpListsEx972State extends State<CSharpListsEx972> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp972",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp972InfoTitle),
+                  _t(loc.csharp972InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp972",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

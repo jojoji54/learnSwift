@@ -171,6 +171,21 @@ class _KotlinClassesEx1257State extends State<KotlinClassesEx1257> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1257",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1257InfoTitle),
+                  _t(loc.kotlin1257InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1257",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

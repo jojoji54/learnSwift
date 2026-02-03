@@ -163,6 +163,21 @@ final RegExp _codeRegex = RegExp(
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython154",
+              onPressed: () {
+                _showDialog(
+                  loc.python154InfoTitle,
+                  loc.python154InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonBasics154",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

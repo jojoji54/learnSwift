@@ -33,8 +33,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 0,
     generalName: 'JavaScript 基础',
     catExercise: jsBasicsModelZH,
-    description:
-        '学习 JavaScript 的基础：变量、类型、运算符，以及简单的输入/输出。这是后续所有内容的基础。',
+    description: "jsCat0InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -54,8 +53,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 1,
     generalName: '布尔基础',
     catExercise: jsBooleanModelZH,
-    description:
-        '学习布尔逻辑、比较和逻辑运算符，是代码分支判断的关键基础。',
+    description: "jsCat1InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -75,8 +73,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 2,
     generalName: 'If-Else',
     catExercise: jsIfElseModelZH,
-    description:
-        '学习 if、else if 和 else 的条件分支来控制流程。',
+    description: "jsCat2InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -96,8 +93,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 3,
     generalName: 'Switch',
     catExercise: jsSwitchModelZH,
-    description:
-        '使用 switch 来处理多个情况，代码更清晰。',
+    description: "jsCat3InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -117,8 +113,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 4,
     generalName: '循环',
     catExercise: jsLoopsModelZH,
-    description:
-        '掌握 for、while、do while 等循环来自动化重复任务。',
+    description: "jsCat4InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -138,8 +133,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 5,
     generalName: '数组',
     catExercise: jsArraysModelZH,
-    description:
-        '学习数组、索引以及 push、pop、map、filter 等常用方法。',
+    description: "jsCat5InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -160,8 +154,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 6,
     generalName: '对象',
     catExercise: jsObjectsModelZH,
-    description:
-        '学习对象、属性和方法，用键值对建模真实数据。',
+    description: "jsCat6InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -181,8 +174,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 7,
     generalName: 'Maps 与 Sets',
     catExercise: jsMapsAndSetsModelZH,
-    description:
-        '使用 Set 保存唯一值，用 Map 做高效键值存储。',
+    description: "jsCat7InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -202,8 +194,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 8,
     generalName: '函数',
     catExercise: jsFunctionsModelZH,
-    description:
-        '理解函数、参数、返回值和作用域，编写可复用代码。',
+    description: "jsCat8InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -223,8 +214,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 9,
     generalName: 'Null 与 Undefined',
     catExercise: jsNullUndefinedModelZH,
-    description:
-        '了解 null 与 undefined 的区别，避免常见错误。',
+    description: "jsCat9InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -244,8 +234,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListZH = [
     id: 10,
     generalName: 'Promise 与 Async/Await',
     catExercise: jsPromisesAsyncModelZH,
-    description:
-        '用 Promises 和 async/await 处理异步代码，现代 JS 必备。',
+    description: "jsCat10InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

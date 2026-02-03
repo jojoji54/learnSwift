@@ -171,6 +171,21 @@ class _PhpLoopsEx1404State extends State<PhpLoopsEx1404> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1404",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1404InfoTitle),
+                  _t(loc.php1404InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1404",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

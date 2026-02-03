@@ -171,6 +171,21 @@ class _PhpAssociativeEx1422State extends State<PhpAssociativeEx1422> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1422",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1422InfoTitle),
+                  _t(loc.php1422InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1422",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

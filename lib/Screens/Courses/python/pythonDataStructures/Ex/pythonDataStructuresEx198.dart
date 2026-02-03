@@ -223,6 +223,21 @@ class _PythonDataStructuresEx198State extends State<PythonDataStructuresEx198> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython198",
+              onPressed: () {
+                _showDialog(
+                  loc.python198InfoTitle,
+                  loc.python198InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonDataStructures198",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

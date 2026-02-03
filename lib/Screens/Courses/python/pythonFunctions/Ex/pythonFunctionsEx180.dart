@@ -197,6 +197,21 @@ class _PythonFunctionsEx180State extends State<PythonFunctionsEx180> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython180",
+              onPressed: () {
+                _showDialog(
+                  loc.python180InfoTitle,
+                  loc.python180InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonFunctions180",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

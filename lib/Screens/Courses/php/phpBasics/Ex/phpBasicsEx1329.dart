@@ -171,6 +171,21 @@ class _PhpBasicsEx1329State extends State<PhpBasicsEx1329> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1329",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1329InfoTitle),
+                  _t(loc.php1329InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1329",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

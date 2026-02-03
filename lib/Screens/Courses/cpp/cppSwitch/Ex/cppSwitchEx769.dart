@@ -169,6 +169,21 @@ class _CppSwitchEx769State extends State<CppSwitchEx769> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp769",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp769InfoTitle,
+                  loc.cpp769InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppSwitch769",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

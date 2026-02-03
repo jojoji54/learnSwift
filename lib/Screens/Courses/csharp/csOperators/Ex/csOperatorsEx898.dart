@@ -170,6 +170,21 @@ class _CSharpOperatorsEx898State extends State<CSharpOperatorsEx898> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp898",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp898InfoTitle),
+                  _t(loc.csharp898InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp898",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

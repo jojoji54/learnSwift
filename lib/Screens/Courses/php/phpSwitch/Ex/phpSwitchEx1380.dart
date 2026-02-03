@@ -171,6 +171,21 @@ class _PhpSwitchEx1380State extends State<PhpSwitchEx1380> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1380",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1380InfoTitle),
+                  _t(loc.php1380InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1380",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

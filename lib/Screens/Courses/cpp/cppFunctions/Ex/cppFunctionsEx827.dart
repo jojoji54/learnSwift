@@ -169,6 +169,21 @@ class _CppFunctionsEx827State extends State<CppFunctionsEx827> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp827",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp827InfoTitle,
+                  loc.cpp827InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppFunctions827",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

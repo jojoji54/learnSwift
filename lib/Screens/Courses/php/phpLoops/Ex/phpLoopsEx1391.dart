@@ -171,6 +171,21 @@ class _PhpLoopsEx1391State extends State<PhpLoopsEx1391> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1391",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1391InfoTitle),
+                  _t(loc.php1391InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1391",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

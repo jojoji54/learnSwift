@@ -225,6 +225,21 @@ class _JsBasicsEx306State extends State<JsBasicsEx306> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs306",
+              onPressed: () {
+                _showDialog(
+                  loc.js306InfoTitle,
+                  loc.js306InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsBasics306",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

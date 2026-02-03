@@ -171,6 +171,21 @@ class _PhpArraysEx1414State extends State<PhpArraysEx1414> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1414",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1414InfoTitle),
+                  _t(loc.php1414InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1414",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

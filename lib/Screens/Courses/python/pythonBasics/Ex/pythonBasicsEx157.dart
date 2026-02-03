@@ -164,6 +164,21 @@ class _PythonBasicsEx157State extends State<PythonBasicsEx157> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython157",
+              onPressed: () {
+                _showDialog(
+                  loc.python157InfoTitle,
+                  loc.python157InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonBasics157",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

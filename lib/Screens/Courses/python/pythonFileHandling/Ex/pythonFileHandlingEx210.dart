@@ -212,6 +212,21 @@ bool _isValid210(String code) {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython210",
+              onPressed: () {
+                _showDialog(
+                  loc.python210InfoTitle,
+                  loc.python210InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonFileHandling210",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

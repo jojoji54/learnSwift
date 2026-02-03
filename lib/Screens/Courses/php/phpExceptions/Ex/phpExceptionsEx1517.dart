@@ -172,6 +172,21 @@ class _PhpExceptionsEx1517State extends State<PhpExceptionsEx1517> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1517",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1517InfoTitle),
+                  _t(loc.php1517InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1517",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

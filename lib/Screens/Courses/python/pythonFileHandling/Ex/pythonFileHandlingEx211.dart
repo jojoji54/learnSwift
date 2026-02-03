@@ -201,6 +201,21 @@ class _PythonFileHandlingEx211State extends State<PythonFileHandlingEx211> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython211",
+              onPressed: () {
+                _showDialog(
+                  loc.python211InfoTitle,
+                  loc.python211InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonFileHandling211",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -170,6 +170,21 @@ class _KotlinOperatorsEx1124State extends State<KotlinOperatorsEx1124> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1124",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1124InfoTitle),
+                  _t(loc.kotlin1124InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1124",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

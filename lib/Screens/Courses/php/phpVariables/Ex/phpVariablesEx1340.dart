@@ -171,6 +171,21 @@ class _PhpVariablesEx1340State extends State<PhpVariablesEx1340> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1340",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1340InfoTitle),
+                  _t(loc.php1340InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1340",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

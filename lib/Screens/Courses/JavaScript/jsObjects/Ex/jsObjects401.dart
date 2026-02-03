@@ -169,6 +169,21 @@ class _JsObjectsEx401State extends State<JsObjectsEx401> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs401",
+              onPressed: () {
+                _showDialog(
+                  loc.js401InfoTitle,
+                  loc.js401InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsObjectsEx401",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

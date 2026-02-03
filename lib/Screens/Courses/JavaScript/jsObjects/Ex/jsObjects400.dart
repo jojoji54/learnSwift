@@ -169,6 +169,21 @@ class _JsObjectsEx400State extends State<JsObjectsEx400> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs400",
+              onPressed: () {
+                _showDialog(
+                  loc.js400InfoTitle,
+                  loc.js400InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsObjectsEx400",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

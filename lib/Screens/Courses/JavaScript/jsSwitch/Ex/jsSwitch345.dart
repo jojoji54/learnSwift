@@ -174,6 +174,21 @@ class _JsSwitchEx345State extends State<JsSwitchEx345> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs345",
+              onPressed: () {
+                _showDialog(
+                  loc.js345InfoTitle,
+                  loc.js345InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsSwitchEx345",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

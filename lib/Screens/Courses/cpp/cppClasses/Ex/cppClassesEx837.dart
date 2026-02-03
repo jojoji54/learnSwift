@@ -169,6 +169,21 @@ class _CppClassesEx837State extends State<CppClassesEx837> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp837",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp837InfoTitle,
+                  loc.cpp837InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppClasses837",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

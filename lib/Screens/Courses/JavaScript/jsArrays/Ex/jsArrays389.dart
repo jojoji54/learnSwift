@@ -168,6 +168,21 @@ class _JsArraysEx389State extends State<JsArraysEx389> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs389",
+              onPressed: () {
+                _showDialog(
+                  loc.js389InfoTitle,
+                  loc.js389InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsArraysEx389",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

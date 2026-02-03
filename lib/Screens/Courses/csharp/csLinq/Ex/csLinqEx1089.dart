@@ -171,6 +171,21 @@ class _CSharpLinqEx1089State extends State<CSharpLinqEx1089> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1089",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1089InfoTitle),
+                  _t(loc.csharp1089InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1089",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

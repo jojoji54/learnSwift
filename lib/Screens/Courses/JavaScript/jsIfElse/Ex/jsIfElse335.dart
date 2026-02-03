@@ -169,6 +169,21 @@ class _JsIfElseEx335State extends State<JsIfElseEx335> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs335",
+              onPressed: () {
+                _showDialog(
+                  loc.js335InfoTitle,
+                  loc.js335InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsIfElseEx335",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

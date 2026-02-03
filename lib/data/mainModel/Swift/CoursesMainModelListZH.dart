@@ -28,8 +28,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 0,
     generalName: 'Swift 基础',
     catExercise: sbModelZH,
-    description:
-        '介绍 Swift 的基础知识，包括语法、变量、常量以及基本运算。理解这些概念非常重要，因为它们是所有 Swift 编程的基础。',
+    description: "swiftCat0InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -48,8 +47,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 1,
     generalName: '布尔基础',
     catExercise: booleanBModelZH,
-    description:
-        '涵盖布尔逻辑及其在编程中的应用。通过比较与逻辑运算做决策，是写代码时必不可少的技能。',
+    description: "swiftCat1InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -68,8 +66,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 2,
     generalName: 'If-Else',
     catExercise: ifElseModelZH,
-    description:
-        '学习条件分支，根据不同条件控制程序流程。这对在应用中实现逻辑判断非常关键。',
+    description: "swiftCat2InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -88,8 +85,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 3,
     generalName: 'Switch',
     catExercise: switchModelZH,
-    description:
-        '讲解如何使用 switch 语句高效处理多种条件。相比嵌套 if-else，它能让代码更整洁、更易维护。',
+    description: "swiftCat3InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -108,8 +104,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 4,
     generalName: '循环',
     catExercise: loopsModelCH,
-    description:
-        '涵盖 for、while、repeat-while 等循环，用于执行重复任务。对减少冗余、自动化操作非常重要。',
+    description: "swiftCat4InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -128,8 +123,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 5,
     generalName: '数组',
     catExercise: swiftArraysModelZH,
-    description:
-        '探索数组及其在存储数据集合中的用法。适合用来有序管理多个元素。',
+    description: "swiftCat5InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -148,8 +142,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 6,
     generalName: '字典',
     catExercise: swiftDictionariesExModelZH,
-    description:
-        '专注于使用字典以键值对形式存储数据。对快速查找与组织信息非常有用。',
+    description: "swiftCat6InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -168,8 +161,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 7,
     generalName: '集合（Sets）',
     catExercise: swiftSetsExModelZH,
-    description:
-        '讲解集合（Set）及其用于存储唯一值的用法。对保证数据唯一性与执行集合运算很重要。',
+    description: "swiftCat7InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -188,8 +180,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 8,
     generalName: '函数',
     catExercise: swiftFunctionsExModelZH,
-    description:
-        '介绍函数，用于组织可复用的代码块。对模块化编程与代码结构化非常关键。',
+    description: "swiftCat8InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -208,8 +199,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
     id: 9,
     generalName: '可选值（Optionals）',
     catExercise: swiftOptionalsExModelZH,
-    description:
-        '学习如何处理可能不存在的值。是编写安全、抗错误 Swift 代码的关键能力。',
+    description: "swiftCat9InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -227,7 +217,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   /*CoursesMainModel(
     id: 10,
     generalName: 'Classes and Structures',
-    description: 'Explains the use of classes and structures to organize data and behavior. Fundamental for object-oriented programming in Swift.',
+    description: "swiftCat10InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -236,7 +226,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 11,
     generalName: 'Enumerations',
-    description: 'Focuses on enums for defining groups of related values. Useful for improving code readability and handling fixed options.',
+    description: "swiftCat11InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -245,7 +235,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 12,
     generalName: 'Protocols and Delegation',
-    description: 'Covers protocols and the delegation pattern for defining and implementing interfaces. Crucial for designing modular and extensible code.',
+    description: "swiftCat12InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -254,7 +244,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 13,
     generalName: 'Closures',
-    description: 'Introduces closures, a powerful feature for passing functionality as arguments. Essential for writing concise and flexible code.',
+    description: "swiftCat13InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -263,7 +253,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 14,
     generalName: 'Error Handling',
-    description: 'Explains how to manage and handle errors gracefully in your code. Vital for creating robust and user-friendly applications.',
+    description: "swiftCat14InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -272,7 +262,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 15,
     generalName: 'Advanced Swift',
-    description: 'Explores advanced topics in Swift, including generics, extensions, and concurrency. Necessary for mastering the language and tackling complex problems.',
+    description: "swiftCat15InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -281,7 +271,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 16,
     generalName: 'Memory Management',
-    description: 'Covers memory management concepts like ARC and memory leaks. Crucial for building efficient and resource-friendly apps.',
+    description: "swiftCat16InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -290,7 +280,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 17,
     generalName: 'Working with Files and Data',
-    description: 'Teaches file handling and data manipulation in Swift. Key for creating apps that interact with the filesystem and external data sources.',
+    description: "swiftCat17InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -299,7 +289,7 @@ List<CoursesMainModel> coursesSwiftMainModelListZH = [
   CoursesMainModel(
     id: 18,
     generalName: 'UI Basics (Bonus para Apps)',
-    description: 'Introduces basic UI design principles and SwiftUI components. Essential for creating interactive and visually appealing applications.',
+    description: "swiftCat18InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

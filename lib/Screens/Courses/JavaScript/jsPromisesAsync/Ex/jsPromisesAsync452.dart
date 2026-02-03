@@ -168,6 +168,21 @@ class _JsPromisesAsyncEx452State extends State<JsPromisesAsyncEx452> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs452",
+              onPressed: () {
+                _showDialog(
+                  loc.js452InfoTitle,
+                  loc.js452InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsPromisesAsyncEx452",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

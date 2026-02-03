@@ -158,6 +158,21 @@ class _SBEx3State extends State<SBEx3> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonexercise",
+              onPressed: () {
+                _showDialog(
+                  AppLocalizations.of(context)!.exerciseInfoTitle.replaceAll("@", "{").replaceAll("&", "}"),
+                  AppLocalizations.of(context)!.exerciseInfoContent.replaceAll("@", "{").replaceAll("&", "}"),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButton3",
               onPressed: () {
                 _validateInput(allProvider);

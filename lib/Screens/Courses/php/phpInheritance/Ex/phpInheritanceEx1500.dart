@@ -171,6 +171,21 @@ class _PhpInheritanceEx1500State extends State<PhpInheritanceEx1500> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1500",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1500InfoTitle),
+                  _t(loc.php1500InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1500",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

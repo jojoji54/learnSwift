@@ -169,6 +169,21 @@ class _CppArraysEx792State extends State<CppArraysEx792> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp792",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp792InfoTitle,
+                  loc.cpp792InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppArrays792",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

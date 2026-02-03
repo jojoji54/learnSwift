@@ -171,6 +171,21 @@ class _KotlinWhenEx1160State extends State<KotlinWhenEx1160> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1160",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1160InfoTitle),
+                  _t(loc.kotlin1160InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1160",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

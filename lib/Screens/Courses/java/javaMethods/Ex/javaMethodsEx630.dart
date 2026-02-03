@@ -169,6 +169,21 @@ class _JavaMethodsEx630State extends State<JavaMethodsEx630> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava630",
+              onPressed: () {
+                _showDialog(
+                  loc.java630InfoTitle,
+                  loc.java630InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaMethods630",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

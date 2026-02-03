@@ -171,6 +171,21 @@ class _KotlinMapsEx1217State extends State<KotlinMapsEx1217> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1217",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1217InfoTitle),
+                  _t(loc.kotlin1217InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1217",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

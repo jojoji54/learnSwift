@@ -169,6 +169,21 @@ class _JavaDataTypesEx517State extends State<JavaDataTypesEx517> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava517",
+              onPressed: () {
+                _showDialog(
+                  loc.java517InfoTitle,
+                  loc.java517InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaDataTypes517",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

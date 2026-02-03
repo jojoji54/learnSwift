@@ -174,6 +174,21 @@ class _JsSwitchEx352State extends State<JsSwitchEx352> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs352",
+              onPressed: () {
+                _showDialog(
+                  loc.js352InfoTitle,
+                  loc.js352InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsSwitchEx352",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

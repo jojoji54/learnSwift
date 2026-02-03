@@ -169,6 +169,21 @@ class _CppArraysEx802State extends State<CppArraysEx802> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp802",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp802InfoTitle,
+                  loc.cpp802InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppArrays802",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

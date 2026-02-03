@@ -170,6 +170,21 @@ class _JsObjectsEx398State extends State<JsObjectsEx398> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs398",
+              onPressed: () {
+                _showDialog(
+                  loc.js398InfoTitle,
+                  loc.js398InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsObjectsEx398",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

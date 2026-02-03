@@ -240,6 +240,21 @@ class _JsBasicsEx310State extends State<JsBasicsEx310> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs310",
+              onPressed: () {
+                _showDialog(
+                  loc.js310InfoTitle,
+                  loc.js310InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsBasics310",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

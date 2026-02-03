@@ -172,6 +172,21 @@ class _CSharpExceptionsEx1065State extends State<CSharpExceptionsEx1065> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1065",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1065InfoTitle),
+                  _t(loc.csharp1065InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1065",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

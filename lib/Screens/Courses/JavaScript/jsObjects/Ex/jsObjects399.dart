@@ -168,6 +168,21 @@ class _JsObjectsEx399State extends State<JsObjectsEx399> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs399",
+              onPressed: () {
+                _showDialog(
+                  loc.js399InfoTitle,
+                  loc.js399InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsObjectsEx399",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

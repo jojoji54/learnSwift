@@ -169,6 +169,21 @@ class _CppVectorsEx817State extends State<CppVectorsEx817> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp817",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp817InfoTitle,
+                  loc.cpp817InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppVectors817",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

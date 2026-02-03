@@ -168,6 +168,21 @@ class _JsBooleanEx328State extends State<JsBooleanEx328> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs328",
+              onPressed: () {
+                _showDialog(
+                  loc.js328InfoTitle,
+                  loc.js328InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsBoolean328",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

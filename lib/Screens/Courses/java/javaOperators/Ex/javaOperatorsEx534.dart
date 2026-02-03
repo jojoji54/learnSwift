@@ -169,6 +169,21 @@ class _JavaOperatorsEx534State extends State<JavaOperatorsEx534> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava534",
+              onPressed: () {
+                _showDialog(
+                  loc.java534InfoTitle,
+                  loc.java534InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaOperators534",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

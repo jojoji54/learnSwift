@@ -169,6 +169,21 @@ class _CppClassesEx844State extends State<CppClassesEx844> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp844",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp844InfoTitle,
+                  loc.cpp844InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppClasses844",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

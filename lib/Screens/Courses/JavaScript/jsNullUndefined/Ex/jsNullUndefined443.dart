@@ -168,6 +168,21 @@ class _JsNullUndefinedEx443State extends State<JsNullUndefinedEx443> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs443",
+              onPressed: () {
+                _showDialog(
+                  loc.js443InfoTitle,
+                  loc.js443InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsNullUndefinedEx443",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

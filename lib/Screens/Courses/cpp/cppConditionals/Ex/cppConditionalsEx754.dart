@@ -169,6 +169,21 @@ class _CppConditionalsEx754State extends State<CppConditionalsEx754> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp754",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp754InfoTitle,
+                  loc.cpp754InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppConditionals754",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

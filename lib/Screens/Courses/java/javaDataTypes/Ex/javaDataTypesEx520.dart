@@ -169,6 +169,21 @@ class _JavaDataTypesEx520State extends State<JavaDataTypesEx520> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava520",
+              onPressed: () {
+                _showDialog(
+                  loc.java520InfoTitle,
+                  loc.java520InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaDataTypes520",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

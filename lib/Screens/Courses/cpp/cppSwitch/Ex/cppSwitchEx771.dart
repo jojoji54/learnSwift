@@ -169,6 +169,21 @@ class _CppSwitchEx771State extends State<CppSwitchEx771> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp771",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp771InfoTitle,
+                  loc.cpp771InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppSwitch771",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

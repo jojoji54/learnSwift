@@ -169,6 +169,21 @@ class _JavaOperatorsEx541State extends State<JavaOperatorsEx541> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava541",
+              onPressed: () {
+                _showDialog(
+                  loc.java541InfoTitle,
+                  loc.java541InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaOperators541",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

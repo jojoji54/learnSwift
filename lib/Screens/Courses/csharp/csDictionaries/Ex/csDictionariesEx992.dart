@@ -171,6 +171,21 @@ class _CSharpDictionariesEx992State extends State<CSharpDictionariesEx992> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp992",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp992InfoTitle),
+                  _t(loc.csharp992InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp992",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

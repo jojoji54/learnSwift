@@ -171,6 +171,21 @@ class _CSharpSwitchEx931State extends State<CSharpSwitchEx931> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp931",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp931InfoTitle),
+                  _t(loc.csharp931InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp931",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

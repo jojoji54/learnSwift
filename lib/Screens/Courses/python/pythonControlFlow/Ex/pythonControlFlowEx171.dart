@@ -183,6 +183,21 @@ class _PythonControlFlowEx171State extends State<PythonControlFlowEx171> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonpython171",
+              onPressed: () {
+                _showDialog(
+                  loc.python171InfoTitle,
+                  loc.python171InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPythonControlFlow171",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

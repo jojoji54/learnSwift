@@ -171,6 +171,21 @@ class _KotlinArraysEx1183State extends State<KotlinArraysEx1183> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1183",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1183InfoTitle),
+                  _t(loc.kotlin1183InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1183",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

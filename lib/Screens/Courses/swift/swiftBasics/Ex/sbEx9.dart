@@ -136,6 +136,21 @@ class _SBEx9State extends State<SBEx9> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonexercise",
+              onPressed: () {
+                _showDialog(
+                  AppLocalizations.of(context)!.exerciseInfoTitle,
+                  AppLocalizations.of(context)!.exerciseInfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButton", // Hero tag único para este botón
             onPressed: () {
                 _validateInput(allProvider);

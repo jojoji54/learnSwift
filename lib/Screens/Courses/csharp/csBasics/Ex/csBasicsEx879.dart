@@ -171,6 +171,21 @@ class _CSharpBasicsEx879State extends State<CSharpBasicsEx879> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp879",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp879InfoTitle),
+                  _t(loc.csharp879InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp879",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

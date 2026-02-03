@@ -169,6 +169,21 @@ class _CppOperatorsEx736State extends State<CppOperatorsEx736> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp736",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp736InfoTitle,
+                  loc.cpp736InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppOperators736",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

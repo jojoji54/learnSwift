@@ -169,6 +169,21 @@ class _JavaSwitchEx560State extends State<JavaSwitchEx560> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava560",
+              onPressed: () {
+                _showDialog(
+                  loc.java560InfoTitle,
+                  loc.java560InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaSwitch560",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

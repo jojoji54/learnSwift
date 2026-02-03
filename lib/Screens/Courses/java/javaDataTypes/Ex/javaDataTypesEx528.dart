@@ -169,6 +169,21 @@ class _JavaDataTypesEx528State extends State<JavaDataTypesEx528> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava528",
+              onPressed: () {
+                _showDialog(
+                  loc.java528InfoTitle,
+                  loc.java528InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaDataTypes528",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

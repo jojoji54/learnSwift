@@ -168,6 +168,21 @@ class _JsNullUndefinedEx442State extends State<JsNullUndefinedEx442> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs442",
+              onPressed: () {
+                _showDialog(
+                  loc.js442InfoTitle,
+                  loc.js442InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsNullUndefinedEx442",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

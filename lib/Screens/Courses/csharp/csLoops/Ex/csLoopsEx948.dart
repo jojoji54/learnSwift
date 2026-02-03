@@ -171,6 +171,21 @@ class _CSharpLoopsEx948State extends State<CSharpLoopsEx948> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp948",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp948InfoTitle),
+                  _t(loc.csharp948InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp948",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -16,8 +16,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 0,
     generalName: 'Python Basics',
     catExercise: pyBasicsExModelListEN,
-    description:
-        'Covers the fundamental concepts of Python, including syntax, variables, and data types. Provides the essential building blocks to start coding in Python.',
+    description: "pythonCat0InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -36,8 +35,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 1,
     generalName: 'Control Flow',
     catExercise: pythonControlFlowModelEN,
-    description:
-        'Explores conditional statements like if-else and loops such as for and while. Crucial for controlling program execution based on conditions.',
+    description: "pythonCat1InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -56,8 +54,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 2,
     generalName: 'Functions',
     catExercise: pythonFunctionsModelEN,
-    description:
-        'Introduces Python functions and their importance in modular programming. Learn to define and call functions for better code organization.',
+    description: "pythonCat2InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -76,8 +73,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 3,
     generalName: 'Data Structures',
     catExercise: pythonDataStructuresModelEN,
-    description:
-        'Covers Python lists, dictionaries, sets, and tuples. Essential for storing, retrieving, and manipulating collections of data efficiently.',
+    description: "pythonCat3InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -96,8 +92,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 4,
     generalName: 'File Handling',
     catExercise: pythonFileHandlingModelEN,
-    description:
-        'Teaches how to work with files in Python, including reading, writing, and managing files. Key for interacting with external data sources.',
+    description: "pythonCat4InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -116,8 +111,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 5,
     generalName: 'Error Handling',
     catExercise: pythonErrorHandlingModelEN,
-    description:
-        'Focuses on handling exceptions and errors in Python using try-except blocks. Crucial for writing robust and error-tolerant applications.',
+    description: "pythonCat5InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -136,8 +130,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 6,
     generalName: 'Object-Oriented Programming',
     catExercise: pythonOOPModelEN,
-    description:
-        'Introduces OOP concepts in Python, such as classes, objects, inheritance, and polymorphism. Essential for building scalable and reusable code.',
+    description: "pythonCat6InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -156,8 +149,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 7,
     generalName: 'Modules and Libraries',
     catExercise: pythonModulesModelEN,
-    description:
-        'Explains how to use and create Python modules and libraries. Key for leveraging pre-built functionality and organizing code into separate files.',
+    description: "pythonCat7InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -176,8 +168,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 8,
     generalName: 'Working with APIs',
     catExercise: pythonAPIsModelEN,
-    description:
-        'Teaches how to interact with web APIs using Python. Essential for retrieving and sending data to external services.',
+    description: "pythonCat8InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -196,8 +187,7 @@ List<CoursesMainModel> coursesPythonMainModelListEN = [
     id: 9,
     generalName: 'Python for Data Analysis',
     catExercise: pythonDataAnalysisModelEN,
-    description:
-        'Introduces data analysis concepts using libraries like NumPy and Pandas. Crucial for processing and analyzing large datasets efficiently.',
+    description: "pythonCat9InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

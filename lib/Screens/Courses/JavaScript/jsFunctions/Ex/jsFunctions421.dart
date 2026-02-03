@@ -168,6 +168,21 @@ class _JsFunctionsEx421State extends State<JsFunctionsEx421> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs421",
+              onPressed: () {
+                _showDialog(
+                  loc.js421InfoTitle,
+                  loc.js421InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsFunctionsEx421",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

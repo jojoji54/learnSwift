@@ -169,6 +169,21 @@ class _JavaArraysEx595State extends State<JavaArraysEx595> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava595",
+              onPressed: () {
+                _showDialog(
+                  loc.java595InfoTitle,
+                  loc.java595InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaArrays595",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

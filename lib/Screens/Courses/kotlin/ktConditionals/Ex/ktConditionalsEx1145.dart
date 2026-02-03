@@ -172,6 +172,21 @@ class _KotlinConditionalsEx1145State extends State<KotlinConditionalsEx1145> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1145",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1145InfoTitle),
+                  _t(loc.kotlin1145InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1145",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

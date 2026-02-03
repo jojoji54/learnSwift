@@ -169,6 +169,21 @@ class _CppBasicsEx709State extends State<CppBasicsEx709> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp709",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp709InfoTitle,
+                  loc.cpp709InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppBasics709",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -171,6 +171,21 @@ class _KotlinLoopsEx1180State extends State<KotlinLoopsEx1180> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonkotlin1180",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.kotlin1180InfoTitle),
+                  _t(loc.kotlin1180InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonKotlin1180",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -169,6 +169,21 @@ class _CppBasicsEx706State extends State<CppBasicsEx706> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp706",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp706InfoTitle,
+                  loc.cpp706InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppBasics706",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

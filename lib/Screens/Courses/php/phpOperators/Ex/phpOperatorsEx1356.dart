@@ -170,6 +170,21 @@ class _PhpOperatorsEx1356State extends State<PhpOperatorsEx1356> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1356",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1356InfoTitle),
+                  _t(loc.php1356InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1356",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

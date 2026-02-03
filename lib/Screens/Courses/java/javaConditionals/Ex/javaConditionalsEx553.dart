@@ -169,6 +169,21 @@ class _JavaConditionalsEx553State extends State<JavaConditionalsEx553> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava553",
+              onPressed: () {
+                _showDialog(
+                  loc.java553InfoTitle,
+                  loc.java553InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaConditionals553",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

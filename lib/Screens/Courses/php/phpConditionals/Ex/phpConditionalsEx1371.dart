@@ -172,6 +172,21 @@ class _PhpConditionalsEx1371State extends State<PhpConditionalsEx1371> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1371",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1371InfoTitle),
+                  _t(loc.php1371InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1371",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

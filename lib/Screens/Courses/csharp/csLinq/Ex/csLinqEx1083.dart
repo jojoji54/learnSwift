@@ -170,6 +170,21 @@ class _CSharpLinqEx1083State extends State<CSharpLinqEx1083> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1083",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1083InfoTitle),
+                  _t(loc.csharp1083InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1083",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

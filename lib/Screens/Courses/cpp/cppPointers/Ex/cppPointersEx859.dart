@@ -169,6 +169,21 @@ class _CppPointersEx859State extends State<CppPointersEx859> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp859",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp859InfoTitle,
+                  loc.cpp859InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppPointers859",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

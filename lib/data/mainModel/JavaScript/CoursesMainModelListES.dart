@@ -32,8 +32,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 0,
     generalName: 'Fundamentos de JS',
     catExercise: jsBasicsModelES,
-    description:
-        'Aprende los fundamentos de JavaScript: variables, tipos, operadores y entrada/salida sencilla. Es la base para todo lo demás.',
+    description: "jsCat0InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -53,8 +52,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 1,
     generalName: 'Booleanos básicos',
     catExercise: jsBooleanModelES,
-    description:
-        'Aprende lógica booleana, comparaciones y operadores lógicos. Clave para tomar decisiones en tu código.',
+    description: "jsCat1InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -76,8 +74,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 2,
     generalName: 'If-Else',
     catExercise: jsIfElseModelES,
-    description:
-        'Aprende ramas condicionales con if, else if y else para controlar el flujo.',
+    description: "jsCat2InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -97,8 +94,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 3,
     generalName: 'Switch',
     catExercise: jsSwitchModelES,
-    description:
-        'Usa switch para manejar múltiples casos de forma clara y ordenada.',
+    description: "jsCat3InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -118,8 +114,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 4,
     generalName: 'Bucles',
     catExercise: jsLoopsModelES,
-    description:
-        'Domina for, while, do while y patrones de iteración para automatizar tareas.',
+    description: "jsCat4InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -139,8 +134,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 5,
     generalName: 'Arrays',
     catExercise: jsArraysModelES,
-    description:
-        'Trabaja con arrays, índices y métodos como push, pop, map y filter.',
+    description: "jsCat5InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -162,8 +156,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 6,
     generalName: 'Objetos',
     catExercise: jsObjectsModelES,
-    description:
-        'Aprende objetos, propiedades y métodos para modelar datos reales.',
+    description: "jsCat6InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -183,8 +176,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 7,
     generalName: 'Maps y Sets',
     catExercise: jsMapsAndSetsModelES,
-    description:
-        'Usa Set para valores únicos y Map para pares clave-valor.',
+    description: "jsCat7InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -204,8 +196,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 8,
     generalName: 'Funciones',
     catExercise: jsFunctionsModelES,
-    description:
-        'Entiende funciones, parámetros, retorno y scope para reutilizar código.',
+    description: "jsCat8InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -225,8 +216,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 9,
     generalName: 'Null y Undefined',
     catExercise: jsNullUndefinedModelES,
-    description:
-        'Aprende la diferencia entre null y undefined y evita errores comunes.',
+    description: "jsCat9InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,
@@ -246,8 +236,7 @@ List<CoursesMainModel> coursesJavaScriptMainModelListES = [
     id: 10,
     generalName: 'Promises y Async/Await',
     catExercise: jsPromisesAsyncModelES,
-    description:
-        'Maneja código async con Promises y async/await. Clave en apps modernas.',
+    description: "jsCat10InfoContent",
     numCompletedCourses: 0,
     totalCourses: 15,
     alreadyBuy: true,

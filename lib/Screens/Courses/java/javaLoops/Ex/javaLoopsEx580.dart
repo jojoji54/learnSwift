@@ -169,6 +169,21 @@ class _JavaLoopsEx580State extends State<JavaLoopsEx580> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava580",
+              onPressed: () {
+                _showDialog(
+                  loc.java580InfoTitle,
+                  loc.java580InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaLoops580",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

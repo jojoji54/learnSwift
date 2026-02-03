@@ -169,6 +169,21 @@ class _CppArraysEx796State extends State<CppArraysEx796> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp796",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp796InfoTitle,
+                  loc.cpp796InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppArrays796",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

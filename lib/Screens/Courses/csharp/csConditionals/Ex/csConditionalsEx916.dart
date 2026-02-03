@@ -172,6 +172,21 @@ class _CSharpConditionalsEx916State extends State<CSharpConditionalsEx916> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp916",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp916InfoTitle),
+                  _t(loc.csharp916InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp916",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

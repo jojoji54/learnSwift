@@ -169,6 +169,21 @@ class _CppDataTypesEx728State extends State<CppDataTypesEx728> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp728",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp728InfoTitle,
+                  loc.cpp728InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppDataTypes728",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

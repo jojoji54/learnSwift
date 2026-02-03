@@ -169,6 +169,21 @@ class _JavaArrayListEx612State extends State<JavaArrayListEx612> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava612",
+              onPressed: () {
+                _showDialog(
+                  loc.java612InfoTitle,
+                  loc.java612InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaArrayList612",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

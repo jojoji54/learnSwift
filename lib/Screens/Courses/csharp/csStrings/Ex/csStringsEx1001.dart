@@ -172,6 +172,21 @@ class _CSharpStringsEx1001State extends State<CSharpStringsEx1001> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp1001",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp1001InfoTitle),
+                  _t(loc.csharp1001InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp1001",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

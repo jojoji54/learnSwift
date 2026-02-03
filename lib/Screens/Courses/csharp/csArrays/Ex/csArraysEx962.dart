@@ -171,6 +171,21 @@ class _CSharpArraysEx962State extends State<CSharpArraysEx962> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncsharp962",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.csharp962InfoTitle),
+                  _t(loc.csharp962InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonCSharp962",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

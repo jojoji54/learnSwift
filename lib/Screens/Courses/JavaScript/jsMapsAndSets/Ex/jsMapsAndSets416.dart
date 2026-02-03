@@ -169,6 +169,21 @@ class _JsMapsAndSetsEx416State extends State<JsMapsAndSetsEx416> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs416",
+              onPressed: () {
+                _showDialog(
+                  loc.js416InfoTitle,
+                  loc.js416InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsMapsAndSetsEx416",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

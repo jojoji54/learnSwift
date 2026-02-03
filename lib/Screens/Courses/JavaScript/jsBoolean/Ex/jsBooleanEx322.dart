@@ -161,6 +161,21 @@ class _JsBooleanEx322State extends State<JsBooleanEx322> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs322",
+              onPressed: () {
+                _showDialog(
+                  loc.js322InfoTitle,
+                  loc.js322InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsBoolean322",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

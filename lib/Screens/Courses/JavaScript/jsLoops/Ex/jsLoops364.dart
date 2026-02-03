@@ -169,6 +169,21 @@ class _JsLoopsEx364State extends State<JsLoopsEx364> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjs364",
+              onPressed: () {
+                _showDialog(
+                  loc.js364InfoTitle,
+                  loc.js364InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonJsLoopsEx364",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

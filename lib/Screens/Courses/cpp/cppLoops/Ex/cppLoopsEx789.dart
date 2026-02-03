@@ -169,6 +169,21 @@ class _CppLoopsEx789State extends State<CppLoopsEx789> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtoncpp789",
+              onPressed: () {
+                _showDialog(
+                  loc.cpp789InfoTitle,
+                  loc.cpp789InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtoncppLoops789",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

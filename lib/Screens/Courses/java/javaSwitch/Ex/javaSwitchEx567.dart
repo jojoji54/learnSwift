@@ -169,6 +169,21 @@ class _JavaSwitchEx567State extends State<JavaSwitchEx567> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonjava567",
+              onPressed: () {
+                _showDialog(
+                  loc.java567InfoTitle,
+                  loc.java567InfoContent,
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonjavaSwitch567",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

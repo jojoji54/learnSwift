@@ -171,6 +171,21 @@ class _PhpFunctionsEx1454State extends State<PhpFunctionsEx1454> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: FloatingActionButton(
+              heroTag: "infoButtonphp1454",
+              onPressed: () {
+                _showDialog(
+                  _t(loc.php1454InfoTitle),
+                  _t(loc.php1454InfoContent),
+                );
+              },
+              backgroundColor: const Color(0xFF90CAF9),
+              child: const Icon(Icons.info_outline, color: Colors.white),
+            ),
+          ),
+
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: FloatingActionButton(
               heroTag: "runButtonPhp1454",
               onPressed: () => _submit(allProvider),
               backgroundColor: Colors.black,

@@ -4,6 +4,7 @@ import 'package:learnswift/data/Hive/LenguajePurchaseManagerHive.dart';
 import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListEN.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
 import '../mainModel/Java/CoursesMainModelListEN.dart';
@@ -77,10 +78,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'C#',
     productID: 'com.mrrubik.learnswift.csharp',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(6),
-    coursesList: [],
+    coursesList: coursesCSharpMainModelListEN,
     color1: Color(0xFF9B4F96),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: C# guides you in developing with this essential language for Windows applications, video games, and enterprise solutions.\n\nVersion: C# 12',
   ),

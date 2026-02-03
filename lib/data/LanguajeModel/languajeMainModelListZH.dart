@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Flutter/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
@@ -170,10 +171,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Flutter',
     productID: 'com.mrrubik.learnswift.flutter',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
-    coursesList: [],
+    coursesList: coursesFlutterMainModelListZH,
     color1: Color(0xFF02569B),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Flutter 介绍这一强大的跨平台框架，用于开发移动和网页应用程序。\n\n版本: Flutter 3.13',
   ),

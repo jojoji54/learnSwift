@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flAssetsModelZH = [
+CoursesExModel(
+  id: 2990,
+  exerciseName: "练习1：Image.asset",
+  productID: "com.mrrubik.learnswift.flutterex2990",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2990),
+  completed: purchaseManagerHive.getCompleted(2990),
+),
+CoursesExModel(
+  id: 2991,
+  exerciseName: "挑战2：AssetImage",
+  productID: "com.mrrubik.learnswift.flutterex2991",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2991),
+  completed: purchaseManagerHive.getCompleted(2991),
+),
+CoursesExModel(
+  id: 2992,
+  exerciseName: "练习3：pubspec",
+  productID: "com.mrrubik.learnswift.flutterex2992",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2992),
+  completed: purchaseManagerHive.getCompleted(2992),
+),
+CoursesExModel(
+  id: 2993,
+  exerciseName: "挑战4：Icon fonts",
+  productID: "com.mrrubik.learnswift.flutterex2993",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2993),
+  completed: purchaseManagerHive.getCompleted(2993),
+),
+CoursesExModel(
+  id: 2994,
+  exerciseName: "练习5：Svg",
+  productID: "com.mrrubik.learnswift.flutterex2994",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2994),
+  completed: purchaseManagerHive.getCompleted(2994),
+),
+CoursesExModel(
+  id: 2995,
+  exerciseName: "挑战6：Image.network",
+  productID: "com.mrrubik.learnswift.flutterex2995",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2995),
+  completed: purchaseManagerHive.getCompleted(2995),
+),
+CoursesExModel(
+  id: 2996,
+  exerciseName: "练习7：FadeInImage",
+  productID: "com.mrrubik.learnswift.flutterex2996",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2996),
+  completed: purchaseManagerHive.getCompleted(2996),
+),
+CoursesExModel(
+  id: 2997,
+  exerciseName: "挑战8：Cached network",
+  productID: "com.mrrubik.learnswift.flutterex2997",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2997),
+  completed: purchaseManagerHive.getCompleted(2997),
+),
+CoursesExModel(
+  id: 2998,
+  exerciseName: "练习9：Video",
+  productID: "com.mrrubik.learnswift.flutterex2998",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2998),
+  completed: purchaseManagerHive.getCompleted(2998),
+),
+CoursesExModel(
+  id: 2999,
+  exerciseName: "挑战10：Audio",
+  productID: "com.mrrubik.learnswift.flutterex2999",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2999),
+  completed: purchaseManagerHive.getCompleted(2999),
+),
+CoursesExModel(
+  id: 3000,
+  exerciseName: "练习11：AssetBundle",
+  productID: "com.mrrubik.learnswift.flutterex3000",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3000),
+  completed: purchaseManagerHive.getCompleted(3000),
+),
+CoursesExModel(
+  id: 3001,
+  exerciseName: "挑战12：Image fit",
+  productID: "com.mrrubik.learnswift.flutterex3001",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3001),
+  completed: purchaseManagerHive.getCompleted(3001),
+),
+CoursesExModel(
+  id: 3002,
+  exerciseName: "练习13：Clip",
+  productID: "com.mrrubik.learnswift.flutterex3002",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3002),
+  completed: purchaseManagerHive.getCompleted(3002),
+),
+CoursesExModel(
+  id: 3003,
+  exerciseName: "挑战14：Hero image",
+  productID: "com.mrrubik.learnswift.flutterex3003",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3003),
+  completed: purchaseManagerHive.getCompleted(3003),
+),
+CoursesExModel(
+  id: 3004,
+  exerciseName: "练习15：Placeholder",
+  productID: "com.mrrubik.learnswift.flutterex3004",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3004),
+  completed: purchaseManagerHive.getCompleted(3004),
+),
+
+];

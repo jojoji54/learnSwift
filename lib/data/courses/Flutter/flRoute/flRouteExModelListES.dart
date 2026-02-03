@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flRouteModelES = [
+CoursesExModel(
+  id: 2945,
+  exerciseName: "Ejercicio 1: Navigator.push",
+  productID: "com.mrrubik.learnswift.flutterex2945",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2945),
+  completed: purchaseManagerHive.getCompleted(2945),
+),
+CoursesExModel(
+  id: 2946,
+  exerciseName: "Desafío 2: pushReplacement",
+  productID: "com.mrrubik.learnswift.flutterex2946",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2946),
+  completed: purchaseManagerHive.getCompleted(2946),
+),
+CoursesExModel(
+  id: 2947,
+  exerciseName: "Ejercicio 3: pushNamed",
+  productID: "com.mrrubik.learnswift.flutterex2947",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2947),
+  completed: purchaseManagerHive.getCompleted(2947),
+),
+CoursesExModel(
+  id: 2948,
+  exerciseName: "Desafío 4: popUntil",
+  productID: "com.mrrubik.learnswift.flutterex2948",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2948),
+  completed: purchaseManagerHive.getCompleted(2948),
+),
+CoursesExModel(
+  id: 2949,
+  exerciseName: "Ejercicio 5: Navigator.of",
+  productID: "com.mrrubik.learnswift.flutterex2949",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2949),
+  completed: purchaseManagerHive.getCompleted(2949),
+),
+CoursesExModel(
+  id: 2950,
+  exerciseName: "Desafío 6: MaterialPageRoute",
+  productID: "com.mrrubik.learnswift.flutterex2950",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2950),
+  completed: purchaseManagerHive.getCompleted(2950),
+),
+CoursesExModel(
+  id: 2951,
+  exerciseName: "Ejercicio 7: CupertinoPageRoute",
+  productID: "com.mrrubik.learnswift.flutterex2951",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2951),
+  completed: purchaseManagerHive.getCompleted(2951),
+),
+CoursesExModel(
+  id: 2952,
+  exerciseName: "Desafío 8: RouteSettings",
+  productID: "com.mrrubik.learnswift.flutterex2952",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2952),
+  completed: purchaseManagerHive.getCompleted(2952),
+),
+CoursesExModel(
+  id: 2953,
+  exerciseName: "Ejercicio 9: onGenerateRoute",
+  productID: "com.mrrubik.learnswift.flutterex2953",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2953),
+  completed: purchaseManagerHive.getCompleted(2953),
+),
+CoursesExModel(
+  id: 2954,
+  exerciseName: "Desafío 10: Unknown route",
+  productID: "com.mrrubik.learnswift.flutterex2954",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2954),
+  completed: purchaseManagerHive.getCompleted(2954),
+),
+CoursesExModel(
+  id: 2955,
+  exerciseName: "Ejercicio 11: NavigatorObserver",
+  productID: "com.mrrubik.learnswift.flutterex2955",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2955),
+  completed: purchaseManagerHive.getCompleted(2955),
+),
+CoursesExModel(
+  id: 2956,
+  exerciseName: "Desafío 12: Hero",
+  productID: "com.mrrubik.learnswift.flutterex2956",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2956),
+  completed: purchaseManagerHive.getCompleted(2956),
+),
+CoursesExModel(
+  id: 2957,
+  exerciseName: "Ejercicio 13: Back button",
+  productID: "com.mrrubik.learnswift.flutterex2957",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2957),
+  completed: purchaseManagerHive.getCompleted(2957),
+),
+CoursesExModel(
+  id: 2958,
+  exerciseName: "Desafío 14: Drawer",
+  productID: "com.mrrubik.learnswift.flutterex2958",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2958),
+  completed: purchaseManagerHive.getCompleted(2958),
+),
+CoursesExModel(
+  id: 2959,
+  exerciseName: "Ejercicio 15: BottomNav",
+  productID: "com.mrrubik.learnswift.flutterex2959",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2959),
+  completed: purchaseManagerHive.getCompleted(2959),
+),
+
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flStyleModelZH = [
+CoursesExModel(
+  id: 2870,
+  exerciseName: "练习1：TextStyle",
+  productID: "com.mrrubik.learnswift.flutterex2870",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2870),
+  completed: purchaseManagerHive.getCompleted(2870),
+),
+CoursesExModel(
+  id: 2871,
+  exerciseName: "挑战2：Colors",
+  productID: "com.mrrubik.learnswift.flutterex2871",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2871),
+  completed: purchaseManagerHive.getCompleted(2871),
+),
+CoursesExModel(
+  id: 2872,
+  exerciseName: "练习3：BoxDecoration",
+  productID: "com.mrrubik.learnswift.flutterex2872",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2872),
+  completed: purchaseManagerHive.getCompleted(2872),
+),
+CoursesExModel(
+  id: 2873,
+  exerciseName: "挑战4：BorderRadius",
+  productID: "com.mrrubik.learnswift.flutterex2873",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2873),
+  completed: purchaseManagerHive.getCompleted(2873),
+),
+CoursesExModel(
+  id: 2874,
+  exerciseName: "练习5：Border",
+  productID: "com.mrrubik.learnswift.flutterex2874",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2874),
+  completed: purchaseManagerHive.getCompleted(2874),
+),
+CoursesExModel(
+  id: 2875,
+  exerciseName: "挑战6：Shadow",
+  productID: "com.mrrubik.learnswift.flutterex2875",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2875),
+  completed: purchaseManagerHive.getCompleted(2875),
+),
+CoursesExModel(
+  id: 2876,
+  exerciseName: "练习7：Opacity",
+  productID: "com.mrrubik.learnswift.flutterex2876",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2876),
+  completed: purchaseManagerHive.getCompleted(2876),
+),
+CoursesExModel(
+  id: 2877,
+  exerciseName: "挑战8：Theme",
+  productID: "com.mrrubik.learnswift.flutterex2877",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2877),
+  completed: purchaseManagerHive.getCompleted(2877),
+),
+CoursesExModel(
+  id: 2878,
+  exerciseName: "练习9：IconTheme",
+  productID: "com.mrrubik.learnswift.flutterex2878",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2878),
+  completed: purchaseManagerHive.getCompleted(2878),
+),
+CoursesExModel(
+  id: 2879,
+  exerciseName: "挑战10：Gradient",
+  productID: "com.mrrubik.learnswift.flutterex2879",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2879),
+  completed: purchaseManagerHive.getCompleted(2879),
+),
+CoursesExModel(
+  id: 2880,
+  exerciseName: "练习11：ClipRRect",
+  productID: "com.mrrubik.learnswift.flutterex2880",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2880),
+  completed: purchaseManagerHive.getCompleted(2880),
+),
+CoursesExModel(
+  id: 2881,
+  exerciseName: "挑战12：SizedBox",
+  productID: "com.mrrubik.learnswift.flutterex2881",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2881),
+  completed: purchaseManagerHive.getCompleted(2881),
+),
+CoursesExModel(
+  id: 2882,
+  exerciseName: "练习13：DefaultTextStyle",
+  productID: "com.mrrubik.learnswift.flutterex2882",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2882),
+  completed: purchaseManagerHive.getCompleted(2882),
+),
+CoursesExModel(
+  id: 2883,
+  exerciseName: "挑战14：RichText",
+  productID: "com.mrrubik.learnswift.flutterex2883",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2883),
+  completed: purchaseManagerHive.getCompleted(2883),
+),
+CoursesExModel(
+  id: 2884,
+  exerciseName: "练习15：Divider",
+  productID: "com.mrrubik.learnswift.flutterex2884",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2884),
+  completed: purchaseManagerHive.getCompleted(2884),
+),
+
+];

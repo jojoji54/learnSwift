@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flPersistModelEN = [
+CoursesExModel(
+  id: 3020,
+  exerciseName: "Exercise 1: SharedPreferences",
+  productID: "com.mrrubik.learnswift.flutterex3020",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3020),
+  completed: purchaseManagerHive.getCompleted(3020),
+),
+CoursesExModel(
+  id: 3021,
+  exerciseName: "Challenge 2: Read prefs",
+  productID: "com.mrrubik.learnswift.flutterex3021",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3021),
+  completed: purchaseManagerHive.getCompleted(3021),
+),
+CoursesExModel(
+  id: 3022,
+  exerciseName: "Exercise 3: Hive box",
+  productID: "com.mrrubik.learnswift.flutterex3022",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3022),
+  completed: purchaseManagerHive.getCompleted(3022),
+),
+CoursesExModel(
+  id: 3023,
+  exerciseName: "Challenge 4: Hive put",
+  productID: "com.mrrubik.learnswift.flutterex3023",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3023),
+  completed: purchaseManagerHive.getCompleted(3023),
+),
+CoursesExModel(
+  id: 3024,
+  exerciseName: "Exercise 5: Hive get",
+  productID: "com.mrrubik.learnswift.flutterex3024",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3024),
+  completed: purchaseManagerHive.getCompleted(3024),
+),
+CoursesExModel(
+  id: 3025,
+  exerciseName: "Challenge 6: SQLite",
+  productID: "com.mrrubik.learnswift.flutterex3025",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3025),
+  completed: purchaseManagerHive.getCompleted(3025),
+),
+CoursesExModel(
+  id: 3026,
+  exerciseName: "Exercise 7: SQL create",
+  productID: "com.mrrubik.learnswift.flutterex3026",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3026),
+  completed: purchaseManagerHive.getCompleted(3026),
+),
+CoursesExModel(
+  id: 3027,
+  exerciseName: "Challenge 8: SQL insert",
+  productID: "com.mrrubik.learnswift.flutterex3027",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3027),
+  completed: purchaseManagerHive.getCompleted(3027),
+),
+CoursesExModel(
+  id: 3028,
+  exerciseName: "Exercise 9: SQL query",
+  productID: "com.mrrubik.learnswift.flutterex3028",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3028),
+  completed: purchaseManagerHive.getCompleted(3028),
+),
+CoursesExModel(
+  id: 3029,
+  exerciseName: "Challenge 10: File write",
+  productID: "com.mrrubik.learnswift.flutterex3029",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3029),
+  completed: purchaseManagerHive.getCompleted(3029),
+),
+CoursesExModel(
+  id: 3030,
+  exerciseName: "Exercise 11: File read",
+  productID: "com.mrrubik.learnswift.flutterex3030",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3030),
+  completed: purchaseManagerHive.getCompleted(3030),
+),
+CoursesExModel(
+  id: 3031,
+  exerciseName: "Challenge 12: Secure storage",
+  productID: "com.mrrubik.learnswift.flutterex3031",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3031),
+  completed: purchaseManagerHive.getCompleted(3031),
+),
+CoursesExModel(
+  id: 3032,
+  exerciseName: "Exercise 13: Delete prefs",
+  productID: "com.mrrubik.learnswift.flutterex3032",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3032),
+  completed: purchaseManagerHive.getCompleted(3032),
+),
+CoursesExModel(
+  id: 3033,
+  exerciseName: "Challenge 14: Clear box",
+  productID: "com.mrrubik.learnswift.flutterex3033",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3033),
+  completed: purchaseManagerHive.getCompleted(3033),
+),
+CoursesExModel(
+  id: 3034,
+  exerciseName: "Exercise 15: Path provider",
+  productID: "com.mrrubik.learnswift.flutterex3034",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3034),
+  completed: purchaseManagerHive.getCompleted(3034),
+),
+
+];

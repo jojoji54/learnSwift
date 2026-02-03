@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flStyleModelES = [
+CoursesExModel(
+  id: 2870,
+  exerciseName: "Ejercicio 1: TextStyle",
+  productID: "com.mrrubik.learnswift.flutterex2870",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2870),
+  completed: purchaseManagerHive.getCompleted(2870),
+),
+CoursesExModel(
+  id: 2871,
+  exerciseName: "Desafío 2: Colors",
+  productID: "com.mrrubik.learnswift.flutterex2871",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2871),
+  completed: purchaseManagerHive.getCompleted(2871),
+),
+CoursesExModel(
+  id: 2872,
+  exerciseName: "Ejercicio 3: BoxDecoration",
+  productID: "com.mrrubik.learnswift.flutterex2872",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2872),
+  completed: purchaseManagerHive.getCompleted(2872),
+),
+CoursesExModel(
+  id: 2873,
+  exerciseName: "Desafío 4: BorderRadius",
+  productID: "com.mrrubik.learnswift.flutterex2873",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2873),
+  completed: purchaseManagerHive.getCompleted(2873),
+),
+CoursesExModel(
+  id: 2874,
+  exerciseName: "Ejercicio 5: Border",
+  productID: "com.mrrubik.learnswift.flutterex2874",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2874),
+  completed: purchaseManagerHive.getCompleted(2874),
+),
+CoursesExModel(
+  id: 2875,
+  exerciseName: "Desafío 6: Shadow",
+  productID: "com.mrrubik.learnswift.flutterex2875",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2875),
+  completed: purchaseManagerHive.getCompleted(2875),
+),
+CoursesExModel(
+  id: 2876,
+  exerciseName: "Ejercicio 7: Opacity",
+  productID: "com.mrrubik.learnswift.flutterex2876",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2876),
+  completed: purchaseManagerHive.getCompleted(2876),
+),
+CoursesExModel(
+  id: 2877,
+  exerciseName: "Desafío 8: Theme",
+  productID: "com.mrrubik.learnswift.flutterex2877",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2877),
+  completed: purchaseManagerHive.getCompleted(2877),
+),
+CoursesExModel(
+  id: 2878,
+  exerciseName: "Ejercicio 9: IconTheme",
+  productID: "com.mrrubik.learnswift.flutterex2878",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2878),
+  completed: purchaseManagerHive.getCompleted(2878),
+),
+CoursesExModel(
+  id: 2879,
+  exerciseName: "Desafío 10: Gradient",
+  productID: "com.mrrubik.learnswift.flutterex2879",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2879),
+  completed: purchaseManagerHive.getCompleted(2879),
+),
+CoursesExModel(
+  id: 2880,
+  exerciseName: "Ejercicio 11: ClipRRect",
+  productID: "com.mrrubik.learnswift.flutterex2880",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2880),
+  completed: purchaseManagerHive.getCompleted(2880),
+),
+CoursesExModel(
+  id: 2881,
+  exerciseName: "Desafío 12: SizedBox",
+  productID: "com.mrrubik.learnswift.flutterex2881",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2881),
+  completed: purchaseManagerHive.getCompleted(2881),
+),
+CoursesExModel(
+  id: 2882,
+  exerciseName: "Ejercicio 13: DefaultTextStyle",
+  productID: "com.mrrubik.learnswift.flutterex2882",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2882),
+  completed: purchaseManagerHive.getCompleted(2882),
+),
+CoursesExModel(
+  id: 2883,
+  exerciseName: "Desafío 14: RichText",
+  productID: "com.mrrubik.learnswift.flutterex2883",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2883),
+  completed: purchaseManagerHive.getCompleted(2883),
+),
+CoursesExModel(
+  id: 2884,
+  exerciseName: "Ejercicio 15: Divider",
+  productID: "com.mrrubik.learnswift.flutterex2884",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2884),
+  completed: purchaseManagerHive.getCompleted(2884),
+),
+
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flListsModelES = [
+CoursesExModel(
+  id: 2885,
+  exerciseName: "Ejercicio 1: ListView",
+  productID: "com.mrrubik.learnswift.flutterex2885",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2885),
+  completed: purchaseManagerHive.getCompleted(2885),
+),
+CoursesExModel(
+  id: 2886,
+  exerciseName: "Desafío 2: ListView.builder",
+  productID: "com.mrrubik.learnswift.flutterex2886",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2886),
+  completed: purchaseManagerHive.getCompleted(2886),
+),
+CoursesExModel(
+  id: 2887,
+  exerciseName: "Ejercicio 3: ListTile",
+  productID: "com.mrrubik.learnswift.flutterex2887",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2887),
+  completed: purchaseManagerHive.getCompleted(2887),
+),
+CoursesExModel(
+  id: 2888,
+  exerciseName: "Desafío 4: Separator",
+  productID: "com.mrrubik.learnswift.flutterex2888",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2888),
+  completed: purchaseManagerHive.getCompleted(2888),
+),
+CoursesExModel(
+  id: 2889,
+  exerciseName: "Ejercicio 5: GridView",
+  productID: "com.mrrubik.learnswift.flutterex2889",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2889),
+  completed: purchaseManagerHive.getCompleted(2889),
+),
+CoursesExModel(
+  id: 2890,
+  exerciseName: "Desafío 6: GridView.builder",
+  productID: "com.mrrubik.learnswift.flutterex2890",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2890),
+  completed: purchaseManagerHive.getCompleted(2890),
+),
+CoursesExModel(
+  id: 2891,
+  exerciseName: "Ejercicio 7: ReorderableListView",
+  productID: "com.mrrubik.learnswift.flutterex2891",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2891),
+  completed: purchaseManagerHive.getCompleted(2891),
+),
+CoursesExModel(
+  id: 2892,
+  exerciseName: "Desafío 8: RefreshIndicator",
+  productID: "com.mrrubik.learnswift.flutterex2892",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2892),
+  completed: purchaseManagerHive.getCompleted(2892),
+),
+CoursesExModel(
+  id: 2893,
+  exerciseName: "Ejercicio 9: ScrollController",
+  productID: "com.mrrubik.learnswift.flutterex2893",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2893),
+  completed: purchaseManagerHive.getCompleted(2893),
+),
+CoursesExModel(
+  id: 2894,
+  exerciseName: "Desafío 10: Scrollbar",
+  productID: "com.mrrubik.learnswift.flutterex2894",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2894),
+  completed: purchaseManagerHive.getCompleted(2894),
+),
+CoursesExModel(
+  id: 2895,
+  exerciseName: "Ejercicio 11: ShrinkWrap",
+  productID: "com.mrrubik.learnswift.flutterex2895",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2895),
+  completed: purchaseManagerHive.getCompleted(2895),
+),
+CoursesExModel(
+  id: 2896,
+  exerciseName: "Desafío 12: ItemExtent",
+  productID: "com.mrrubik.learnswift.flutterex2896",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2896),
+  completed: purchaseManagerHive.getCompleted(2896),
+),
+CoursesExModel(
+  id: 2897,
+  exerciseName: "Ejercicio 13: SliverList",
+  productID: "com.mrrubik.learnswift.flutterex2897",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2897),
+  completed: purchaseManagerHive.getCompleted(2897),
+),
+CoursesExModel(
+  id: 2898,
+  exerciseName: "Desafío 14: SliverAppBar",
+  productID: "com.mrrubik.learnswift.flutterex2898",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2898),
+  completed: purchaseManagerHive.getCompleted(2898),
+),
+CoursesExModel(
+  id: 2899,
+  exerciseName: "Ejercicio 15: PageView",
+  productID: "com.mrrubik.learnswift.flutterex2899",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2899),
+  completed: purchaseManagerHive.getCompleted(2899),
+),
+
+];

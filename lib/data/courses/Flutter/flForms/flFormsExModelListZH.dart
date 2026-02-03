@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flFormsModelZH = [
+CoursesExModel(
+  id: 2915,
+  exerciseName: "练习1：TextField",
+  productID: "com.mrrubik.learnswift.flutterex2915",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2915),
+  completed: purchaseManagerHive.getCompleted(2915),
+),
+CoursesExModel(
+  id: 2916,
+  exerciseName: "挑战2：Controller",
+  productID: "com.mrrubik.learnswift.flutterex2916",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2916),
+  completed: purchaseManagerHive.getCompleted(2916),
+),
+CoursesExModel(
+  id: 2917,
+  exerciseName: "练习3：onChanged",
+  productID: "com.mrrubik.learnswift.flutterex2917",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2917),
+  completed: purchaseManagerHive.getCompleted(2917),
+),
+CoursesExModel(
+  id: 2918,
+  exerciseName: "挑战4：Form",
+  productID: "com.mrrubik.learnswift.flutterex2918",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2918),
+  completed: purchaseManagerHive.getCompleted(2918),
+),
+CoursesExModel(
+  id: 2919,
+  exerciseName: "练习5：Form validation",
+  productID: "com.mrrubik.learnswift.flutterex2919",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2919),
+  completed: purchaseManagerHive.getCompleted(2919),
+),
+CoursesExModel(
+  id: 2920,
+  exerciseName: "挑战6：GlobalKey",
+  productID: "com.mrrubik.learnswift.flutterex2920",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2920),
+  completed: purchaseManagerHive.getCompleted(2920),
+),
+CoursesExModel(
+  id: 2921,
+  exerciseName: "练习7：Checkbox",
+  productID: "com.mrrubik.learnswift.flutterex2921",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2921),
+  completed: purchaseManagerHive.getCompleted(2921),
+),
+CoursesExModel(
+  id: 2922,
+  exerciseName: "挑战8：Switch",
+  productID: "com.mrrubik.learnswift.flutterex2922",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2922),
+  completed: purchaseManagerHive.getCompleted(2922),
+),
+CoursesExModel(
+  id: 2923,
+  exerciseName: "练习9：Radio",
+  productID: "com.mrrubik.learnswift.flutterex2923",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2923),
+  completed: purchaseManagerHive.getCompleted(2923),
+),
+CoursesExModel(
+  id: 2924,
+  exerciseName: "挑战10：Dropdown",
+  productID: "com.mrrubik.learnswift.flutterex2924",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2924),
+  completed: purchaseManagerHive.getCompleted(2924),
+),
+CoursesExModel(
+  id: 2925,
+  exerciseName: "练习11：Slider",
+  productID: "com.mrrubik.learnswift.flutterex2925",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2925),
+  completed: purchaseManagerHive.getCompleted(2925),
+),
+CoursesExModel(
+  id: 2926,
+  exerciseName: "挑战12：FocusNode",
+  productID: "com.mrrubik.learnswift.flutterex2926",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2926),
+  completed: purchaseManagerHive.getCompleted(2926),
+),
+CoursesExModel(
+  id: 2927,
+  exerciseName: "练习13：TextInputType",
+  productID: "com.mrrubik.learnswift.flutterex2927",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2927),
+  completed: purchaseManagerHive.getCompleted(2927),
+),
+CoursesExModel(
+  id: 2928,
+  exerciseName: "挑战14：InputDecoration",
+  productID: "com.mrrubik.learnswift.flutterex2928",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2928),
+  completed: purchaseManagerHive.getCompleted(2928),
+),
+CoursesExModel(
+  id: 2929,
+  exerciseName: "练习15：ObscureText",
+  productID: "com.mrrubik.learnswift.flutterex2929",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2929),
+  completed: purchaseManagerHive.getCompleted(2929),
+),
+
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flThemeModelES = [
+CoursesExModel(
+  id: 2975,
+  exerciseName: "Ejercicio 1: ThemeData",
+  productID: "com.mrrubik.learnswift.flutterex2975",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2975),
+  completed: purchaseManagerHive.getCompleted(2975),
+),
+CoursesExModel(
+  id: 2976,
+  exerciseName: "Desafío 2: Theme.of",
+  productID: "com.mrrubik.learnswift.flutterex2976",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2976),
+  completed: purchaseManagerHive.getCompleted(2976),
+),
+CoursesExModel(
+  id: 2977,
+  exerciseName: "Ejercicio 3: ColorScheme",
+  productID: "com.mrrubik.learnswift.flutterex2977",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2977),
+  completed: purchaseManagerHive.getCompleted(2977),
+),
+CoursesExModel(
+  id: 2978,
+  exerciseName: "Desafío 4: TextTheme",
+  productID: "com.mrrubik.learnswift.flutterex2978",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2978),
+  completed: purchaseManagerHive.getCompleted(2978),
+),
+CoursesExModel(
+  id: 2979,
+  exerciseName: "Ejercicio 5: Dark theme",
+  productID: "com.mrrubik.learnswift.flutterex2979",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2979),
+  completed: purchaseManagerHive.getCompleted(2979),
+),
+CoursesExModel(
+  id: 2980,
+  exerciseName: "Desafío 6: ThemeMode",
+  productID: "com.mrrubik.learnswift.flutterex2980",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2980),
+  completed: purchaseManagerHive.getCompleted(2980),
+),
+CoursesExModel(
+  id: 2981,
+  exerciseName: "Ejercicio 7: IconTheme",
+  productID: "com.mrrubik.learnswift.flutterex2981",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2981),
+  completed: purchaseManagerHive.getCompleted(2981),
+),
+CoursesExModel(
+  id: 2982,
+  exerciseName: "Desafío 8: AppBarTheme",
+  productID: "com.mrrubik.learnswift.flutterex2982",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2982),
+  completed: purchaseManagerHive.getCompleted(2982),
+),
+CoursesExModel(
+  id: 2983,
+  exerciseName: "Ejercicio 9: ButtonTheme",
+  productID: "com.mrrubik.learnswift.flutterex2983",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2983),
+  completed: purchaseManagerHive.getCompleted(2983),
+),
+CoursesExModel(
+  id: 2984,
+  exerciseName: "Desafío 10: InputDecorationTheme",
+  productID: "com.mrrubik.learnswift.flutterex2984",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2984),
+  completed: purchaseManagerHive.getCompleted(2984),
+),
+CoursesExModel(
+  id: 2985,
+  exerciseName: "Ejercicio 11: CardTheme",
+  productID: "com.mrrubik.learnswift.flutterex2985",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2985),
+  completed: purchaseManagerHive.getCompleted(2985),
+),
+CoursesExModel(
+  id: 2986,
+  exerciseName: "Desafío 12: DialogTheme",
+  productID: "com.mrrubik.learnswift.flutterex2986",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2986),
+  completed: purchaseManagerHive.getCompleted(2986),
+),
+CoursesExModel(
+  id: 2987,
+  exerciseName: "Ejercicio 13: TabBarTheme",
+  productID: "com.mrrubik.learnswift.flutterex2987",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2987),
+  completed: purchaseManagerHive.getCompleted(2987),
+),
+CoursesExModel(
+  id: 2988,
+  exerciseName: "Desafío 14: SnackBarTheme",
+  productID: "com.mrrubik.learnswift.flutterex2988",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2988),
+  completed: purchaseManagerHive.getCompleted(2988),
+),
+CoursesExModel(
+  id: 2989,
+  exerciseName: "Ejercicio 15: Theme extensions",
+  productID: "com.mrrubik.learnswift.flutterex2989",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2989),
+  completed: purchaseManagerHive.getCompleted(2989),
+),
+
+];

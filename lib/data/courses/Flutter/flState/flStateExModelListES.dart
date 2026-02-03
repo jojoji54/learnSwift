@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flStateModelES = [
+CoursesExModel(
+  id: 2840,
+  exerciseName: "Ejercicio 1: StatelessWidget",
+  productID: "com.mrrubik.learnswift.flutterex2840",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2840),
+  completed: purchaseManagerHive.getCompleted(2840),
+),
+CoursesExModel(
+  id: 2841,
+  exerciseName: "Desafío 2: StatefulWidget",
+  productID: "com.mrrubik.learnswift.flutterex2841",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2841),
+  completed: purchaseManagerHive.getCompleted(2841),
+),
+CoursesExModel(
+  id: 2842,
+  exerciseName: "Ejercicio 3: setState",
+  productID: "com.mrrubik.learnswift.flutterex2842",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2842),
+  completed: purchaseManagerHive.getCompleted(2842),
+),
+CoursesExModel(
+  id: 2843,
+  exerciseName: "Desafío 4: initState",
+  productID: "com.mrrubik.learnswift.flutterex2843",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2843),
+  completed: purchaseManagerHive.getCompleted(2843),
+),
+CoursesExModel(
+  id: 2844,
+  exerciseName: "Ejercicio 5: dispose",
+  productID: "com.mrrubik.learnswift.flutterex2844",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2844),
+  completed: purchaseManagerHive.getCompleted(2844),
+),
+CoursesExModel(
+  id: 2845,
+  exerciseName: "Desafío 6: const widget",
+  productID: "com.mrrubik.learnswift.flutterex2845",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2845),
+  completed: purchaseManagerHive.getCompleted(2845),
+),
+CoursesExModel(
+  id: 2846,
+  exerciseName: "Ejercicio 7: late var",
+  productID: "com.mrrubik.learnswift.flutterex2846",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2846),
+  completed: purchaseManagerHive.getCompleted(2846),
+),
+CoursesExModel(
+  id: 2847,
+  exerciseName: "Desafío 8: final field",
+  productID: "com.mrrubik.learnswift.flutterex2847",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2847),
+  completed: purchaseManagerHive.getCompleted(2847),
+),
+CoursesExModel(
+  id: 2848,
+  exerciseName: "Ejercicio 9: widget access",
+  productID: "com.mrrubik.learnswift.flutterex2848",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2848),
+  completed: purchaseManagerHive.getCompleted(2848),
+),
+CoursesExModel(
+  id: 2849,
+  exerciseName: "Desafío 10: mounted",
+  productID: "com.mrrubik.learnswift.flutterex2849",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2849),
+  completed: purchaseManagerHive.getCompleted(2849),
+),
+CoursesExModel(
+  id: 2850,
+  exerciseName: "Ejercicio 11: ValueNotifier",
+  productID: "com.mrrubik.learnswift.flutterex2850",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2850),
+  completed: purchaseManagerHive.getCompleted(2850),
+),
+CoursesExModel(
+  id: 2851,
+  exerciseName: "Desafío 12: ValueListenableBuilder",
+  productID: "com.mrrubik.learnswift.flutterex2851",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2851),
+  completed: purchaseManagerHive.getCompleted(2851),
+),
+CoursesExModel(
+  id: 2852,
+  exerciseName: "Ejercicio 13: InheritedWidget",
+  productID: "com.mrrubik.learnswift.flutterex2852",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2852),
+  completed: purchaseManagerHive.getCompleted(2852),
+),
+CoursesExModel(
+  id: 2853,
+  exerciseName: "Desafío 14: State class",
+  productID: "com.mrrubik.learnswift.flutterex2853",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2853),
+  completed: purchaseManagerHive.getCompleted(2853),
+),
+CoursesExModel(
+  id: 2854,
+  exerciseName: "Ejercicio 15: Stateful builder",
+  productID: "com.mrrubik.learnswift.flutterex2854",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2854),
+  completed: purchaseManagerHive.getCompleted(2854),
+),
+
+];

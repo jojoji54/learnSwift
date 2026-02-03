@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flNetModelES = [
+CoursesExModel(
+  id: 3005,
+  exerciseName: "Ejercicio 1: http get",
+  productID: "com.mrrubik.learnswift.flutterex3005",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3005),
+  completed: purchaseManagerHive.getCompleted(3005),
+),
+CoursesExModel(
+  id: 3006,
+  exerciseName: "Desafío 2: jsonDecode",
+  productID: "com.mrrubik.learnswift.flutterex3006",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3006),
+  completed: purchaseManagerHive.getCompleted(3006),
+),
+CoursesExModel(
+  id: 3007,
+  exerciseName: "Ejercicio 3: FutureBuilder",
+  productID: "com.mrrubik.learnswift.flutterex3007",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3007),
+  completed: purchaseManagerHive.getCompleted(3007),
+),
+CoursesExModel(
+  id: 3008,
+  exerciseName: "Desafío 4: Dio",
+  productID: "com.mrrubik.learnswift.flutterex3008",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3008),
+  completed: purchaseManagerHive.getCompleted(3008),
+),
+CoursesExModel(
+  id: 3009,
+  exerciseName: "Ejercicio 5: Headers",
+  productID: "com.mrrubik.learnswift.flutterex3009",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3009),
+  completed: purchaseManagerHive.getCompleted(3009),
+),
+CoursesExModel(
+  id: 3010,
+  exerciseName: "Desafío 6: POST",
+  productID: "com.mrrubik.learnswift.flutterex3010",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3010),
+  completed: purchaseManagerHive.getCompleted(3010),
+),
+CoursesExModel(
+  id: 3011,
+  exerciseName: "Ejercicio 7: Status code",
+  productID: "com.mrrubik.learnswift.flutterex3011",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3011),
+  completed: purchaseManagerHive.getCompleted(3011),
+),
+CoursesExModel(
+  id: 3012,
+  exerciseName: "Desafío 8: Timeout",
+  productID: "com.mrrubik.learnswift.flutterex3012",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3012),
+  completed: purchaseManagerHive.getCompleted(3012),
+),
+CoursesExModel(
+  id: 3013,
+  exerciseName: "Ejercicio 9: Retry",
+  productID: "com.mrrubik.learnswift.flutterex3013",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3013),
+  completed: purchaseManagerHive.getCompleted(3013),
+),
+CoursesExModel(
+  id: 3014,
+  exerciseName: "Desafío 10: Connectivity",
+  productID: "com.mrrubik.learnswift.flutterex3014",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3014),
+  completed: purchaseManagerHive.getCompleted(3014),
+),
+CoursesExModel(
+  id: 3015,
+  exerciseName: "Ejercicio 11: Cache",
+  productID: "com.mrrubik.learnswift.flutterex3015",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3015),
+  completed: purchaseManagerHive.getCompleted(3015),
+),
+CoursesExModel(
+  id: 3016,
+  exerciseName: "Desafío 12: Image cache",
+  productID: "com.mrrubik.learnswift.flutterex3016",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3016),
+  completed: purchaseManagerHive.getCompleted(3016),
+),
+CoursesExModel(
+  id: 3017,
+  exerciseName: "Ejercicio 13: Cancel token",
+  productID: "com.mrrubik.learnswift.flutterex3017",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3017),
+  completed: purchaseManagerHive.getCompleted(3017),
+),
+CoursesExModel(
+  id: 3018,
+  exerciseName: "Desafío 14: Interceptors",
+  productID: "com.mrrubik.learnswift.flutterex3018",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3018),
+  completed: purchaseManagerHive.getCompleted(3018),
+),
+CoursesExModel(
+  id: 3019,
+  exerciseName: "Ejercicio 15: Error handling",
+  productID: "com.mrrubik.learnswift.flutterex3019",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3019),
+  completed: purchaseManagerHive.getCompleted(3019),
+),
+
+];

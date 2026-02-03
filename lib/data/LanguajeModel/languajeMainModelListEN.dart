@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/Flutter/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
@@ -172,10 +173,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Flutter',
     productID: 'com.mrrubik.learnswift.flutter',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
-    coursesList: [],
+    coursesList: coursesFlutterMainModelListEN,
     color1: Color(0xFF02569B),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Flutter introduces you to cross-platform development with this powerful framework for mobile and web applications.\n\nVersion: Flutter 3.13',
   ),

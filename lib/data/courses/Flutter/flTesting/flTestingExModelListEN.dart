@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flTestingModelEN = [
+CoursesExModel(
+  id: 3035,
+  exerciseName: "Exercise 1: testWidgets",
+  productID: "com.mrrubik.learnswift.flutterex3035",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3035),
+  completed: purchaseManagerHive.getCompleted(3035),
+),
+CoursesExModel(
+  id: 3036,
+  exerciseName: "Challenge 2: pumpWidget",
+  productID: "com.mrrubik.learnswift.flutterex3036",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3036),
+  completed: purchaseManagerHive.getCompleted(3036),
+),
+CoursesExModel(
+  id: 3037,
+  exerciseName: "Exercise 3: find.text",
+  productID: "com.mrrubik.learnswift.flutterex3037",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3037),
+  completed: purchaseManagerHive.getCompleted(3037),
+),
+CoursesExModel(
+  id: 3038,
+  exerciseName: "Challenge 4: tap",
+  productID: "com.mrrubik.learnswift.flutterex3038",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3038),
+  completed: purchaseManagerHive.getCompleted(3038),
+),
+CoursesExModel(
+  id: 3039,
+  exerciseName: "Exercise 5: pump",
+  productID: "com.mrrubik.learnswift.flutterex3039",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3039),
+  completed: purchaseManagerHive.getCompleted(3039),
+),
+CoursesExModel(
+  id: 3040,
+  exerciseName: "Challenge 6: mock",
+  productID: "com.mrrubik.learnswift.flutterex3040",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3040),
+  completed: purchaseManagerHive.getCompleted(3040),
+),
+CoursesExModel(
+  id: 3041,
+  exerciseName: "Exercise 7: golden",
+  productID: "com.mrrubik.learnswift.flutterex3041",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3041),
+  completed: purchaseManagerHive.getCompleted(3041),
+),
+CoursesExModel(
+  id: 3042,
+  exerciseName: "Challenge 8: group",
+  productID: "com.mrrubik.learnswift.flutterex3042",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3042),
+  completed: purchaseManagerHive.getCompleted(3042),
+),
+CoursesExModel(
+  id: 3043,
+  exerciseName: "Exercise 9: setUp",
+  productID: "com.mrrubik.learnswift.flutterex3043",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3043),
+  completed: purchaseManagerHive.getCompleted(3043),
+),
+CoursesExModel(
+  id: 3044,
+  exerciseName: "Challenge 10: tearDown",
+  productID: "com.mrrubik.learnswift.flutterex3044",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3044),
+  completed: purchaseManagerHive.getCompleted(3044),
+),
+CoursesExModel(
+  id: 3045,
+  exerciseName: "Exercise 11: expect",
+  productID: "com.mrrubik.learnswift.flutterex3045",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3045),
+  completed: purchaseManagerHive.getCompleted(3045),
+),
+CoursesExModel(
+  id: 3046,
+  exerciseName: "Challenge 12: find.byType",
+  productID: "com.mrrubik.learnswift.flutterex3046",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3046),
+  completed: purchaseManagerHive.getCompleted(3046),
+),
+CoursesExModel(
+  id: 3047,
+  exerciseName: "Exercise 13: ensureVisible",
+  productID: "com.mrrubik.learnswift.flutterex3047",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3047),
+  completed: purchaseManagerHive.getCompleted(3047),
+),
+CoursesExModel(
+  id: 3048,
+  exerciseName: "Challenge 14: pumpAndSettle",
+  productID: "com.mrrubik.learnswift.flutterex3048",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3048),
+  completed: purchaseManagerHive.getCompleted(3048),
+),
+CoursesExModel(
+  id: 3049,
+  exerciseName: "Exercise 15: widget tester",
+  productID: "com.mrrubik.learnswift.flutterex3049",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3049),
+  completed: purchaseManagerHive.getCompleted(3049),
+),
+
+];

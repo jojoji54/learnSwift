@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> flAsyncModelES = [
+CoursesExModel(
+  id: 2930,
+  exerciseName: "Ejercicio 1: FutureBuilder",
+  productID: "com.mrrubik.learnswift.flutterex2930",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2930),
+  completed: purchaseManagerHive.getCompleted(2930),
+),
+CoursesExModel(
+  id: 2931,
+  exerciseName: "Desafío 2: StreamBuilder",
+  productID: "com.mrrubik.learnswift.flutterex2931",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2931),
+  completed: purchaseManagerHive.getCompleted(2931),
+),
+CoursesExModel(
+  id: 2932,
+  exerciseName: "Ejercicio 3: async/await",
+  productID: "com.mrrubik.learnswift.flutterex2932",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2932),
+  completed: purchaseManagerHive.getCompleted(2932),
+),
+CoursesExModel(
+  id: 2933,
+  exerciseName: "Desafío 4: Future.delayed",
+  productID: "com.mrrubik.learnswift.flutterex2933",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2933),
+  completed: purchaseManagerHive.getCompleted(2933),
+),
+CoursesExModel(
+  id: 2934,
+  exerciseName: "Ejercicio 5: setState",
+  productID: "com.mrrubik.learnswift.flutterex2934",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2934),
+  completed: purchaseManagerHive.getCompleted(2934),
+),
+CoursesExModel(
+  id: 2935,
+  exerciseName: "Desafío 6: Timer",
+  productID: "com.mrrubik.learnswift.flutterex2935",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2935),
+  completed: purchaseManagerHive.getCompleted(2935),
+),
+CoursesExModel(
+  id: 2936,
+  exerciseName: "Ejercicio 7: ValueNotifier",
+  productID: "com.mrrubik.learnswift.flutterex2936",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2936),
+  completed: purchaseManagerHive.getCompleted(2936),
+),
+CoursesExModel(
+  id: 2937,
+  exerciseName: "Desafío 8: ValueListenableBuilder",
+  productID: "com.mrrubik.learnswift.flutterex2937",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2937),
+  completed: purchaseManagerHive.getCompleted(2937),
+),
+CoursesExModel(
+  id: 2938,
+  exerciseName: "Ejercicio 9: ChangeNotifier",
+  productID: "com.mrrubik.learnswift.flutterex2938",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2938),
+  completed: purchaseManagerHive.getCompleted(2938),
+),
+CoursesExModel(
+  id: 2939,
+  exerciseName: "Desafío 10: Provider",
+  productID: "com.mrrubik.learnswift.flutterex2939",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2939),
+  completed: purchaseManagerHive.getCompleted(2939),
+),
+CoursesExModel(
+  id: 2940,
+  exerciseName: "Ejercicio 11: Consumer",
+  productID: "com.mrrubik.learnswift.flutterex2940",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2940),
+  completed: purchaseManagerHive.getCompleted(2940),
+),
+CoursesExModel(
+  id: 2941,
+  exerciseName: "Desafío 12: Selector",
+  productID: "com.mrrubik.learnswift.flutterex2941",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2941),
+  completed: purchaseManagerHive.getCompleted(2941),
+),
+CoursesExModel(
+  id: 2942,
+  exerciseName: "Ejercicio 13: mounted",
+  productID: "com.mrrubik.learnswift.flutterex2942",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2942),
+  completed: purchaseManagerHive.getCompleted(2942),
+),
+CoursesExModel(
+  id: 2943,
+  exerciseName: "Desafío 14: Lifecycle",
+  productID: "com.mrrubik.learnswift.flutterex2943",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2943),
+  completed: purchaseManagerHive.getCompleted(2943),
+),
+CoursesExModel(
+  id: 2944,
+  exerciseName: "Ejercicio 15: dispose",
+  productID: "com.mrrubik.learnswift.flutterex2944",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2944),
+  completed: purchaseManagerHive.getCompleted(2944),
+),
+
+];

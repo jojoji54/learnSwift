@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlTableDesignModelEN = [
+CoursesExModel(
+  id: 2735,
+  exerciseName: "Exercise 1: CREATE TABLE",
+  productID: "com.mrrubik.learnswift.sqlex2735",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2735),
+  completed: purchaseManagerHive.getCompleted(2735),
+),
+CoursesExModel(
+  id: 2736,
+  exerciseName: "Challenge 2: CREATE with PK",
+  productID: "com.mrrubik.learnswift.sqlex2736",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2736),
+  completed: purchaseManagerHive.getCompleted(2736),
+),
+CoursesExModel(
+  id: 2737,
+  exerciseName: "Exercise 3: CREATE with NOT NULL",
+  productID: "com.mrrubik.learnswift.sqlex2737",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2737),
+  completed: purchaseManagerHive.getCompleted(2737),
+),
+CoursesExModel(
+  id: 2738,
+  exerciseName: "Challenge 4: CREATE with DEFAULT",
+  productID: "com.mrrubik.learnswift.sqlex2738",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2738),
+  completed: purchaseManagerHive.getCompleted(2738),
+),
+CoursesExModel(
+  id: 2739,
+  exerciseName: "Exercise 5: CREATE with UNIQUE",
+  productID: "com.mrrubik.learnswift.sqlex2739",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2739),
+  completed: purchaseManagerHive.getCompleted(2739),
+),
+CoursesExModel(
+  id: 2740,
+  exerciseName: "Challenge 6: CREATE with CHECK",
+  productID: "com.mrrubik.learnswift.sqlex2740",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2740),
+  completed: purchaseManagerHive.getCompleted(2740),
+),
+CoursesExModel(
+  id: 2741,
+  exerciseName: "Exercise 7: CREATE with FK",
+  productID: "com.mrrubik.learnswift.sqlex2741",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2741),
+  completed: purchaseManagerHive.getCompleted(2741),
+),
+CoursesExModel(
+  id: 2742,
+  exerciseName: "Challenge 8: ALTER TABLE",
+  productID: "com.mrrubik.learnswift.sqlex2742",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2742),
+  completed: purchaseManagerHive.getCompleted(2742),
+),
+CoursesExModel(
+  id: 2743,
+  exerciseName: "Exercise 9: DROP TABLE",
+  productID: "com.mrrubik.learnswift.sqlex2743",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2743),
+  completed: purchaseManagerHive.getCompleted(2743),
+),
+CoursesExModel(
+  id: 2744,
+  exerciseName: "Challenge 10: RENAME TABLE",
+  productID: "com.mrrubik.learnswift.sqlex2744",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2744),
+  completed: purchaseManagerHive.getCompleted(2744),
+),
+CoursesExModel(
+  id: 2745,
+  exerciseName: "Exercise 11: CREATE TEMP",
+  productID: "com.mrrubik.learnswift.sqlex2745",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2745),
+  completed: purchaseManagerHive.getCompleted(2745),
+),
+CoursesExModel(
+  id: 2746,
+  exerciseName: "Challenge 12: CREATE with AUTOINCREMENT",
+  productID: "com.mrrubik.learnswift.sqlex2746",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2746),
+  completed: purchaseManagerHive.getCompleted(2746),
+),
+CoursesExModel(
+  id: 2747,
+  exerciseName: "Exercise 13: CREATE index",
+  productID: "com.mrrubik.learnswift.sqlex2747",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2747),
+  completed: purchaseManagerHive.getCompleted(2747),
+),
+CoursesExModel(
+  id: 2748,
+  exerciseName: "Challenge 14: DROP index",
+  productID: "com.mrrubik.learnswift.sqlex2748",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2748),
+  completed: purchaseManagerHive.getCompleted(2748),
+),
+CoursesExModel(
+  id: 2749,
+  exerciseName: "Exercise 15: TRUNCATE",
+  productID: "com.mrrubik.learnswift.sqlex2749",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2749),
+  completed: purchaseManagerHive.getCompleted(2749),
+),
+
+];

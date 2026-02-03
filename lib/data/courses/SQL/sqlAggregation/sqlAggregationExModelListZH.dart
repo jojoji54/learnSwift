@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlAggregationModelZH = [
+CoursesExModel(
+  id: 2645,
+  exerciseName: "练习1：COUNT rows",
+  productID: "com.mrrubik.learnswift.sqlex2645",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2645),
+  completed: purchaseManagerHive.getCompleted(2645),
+),
+CoursesExModel(
+  id: 2646,
+  exerciseName: "挑战2：COUNT distinct",
+  productID: "com.mrrubik.learnswift.sqlex2646",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2646),
+  completed: purchaseManagerHive.getCompleted(2646),
+),
+CoursesExModel(
+  id: 2647,
+  exerciseName: "练习3：SUM",
+  productID: "com.mrrubik.learnswift.sqlex2647",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2647),
+  completed: purchaseManagerHive.getCompleted(2647),
+),
+CoursesExModel(
+  id: 2648,
+  exerciseName: "挑战4：AVG",
+  productID: "com.mrrubik.learnswift.sqlex2648",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2648),
+  completed: purchaseManagerHive.getCompleted(2648),
+),
+CoursesExModel(
+  id: 2649,
+  exerciseName: "练习5：MIN",
+  productID: "com.mrrubik.learnswift.sqlex2649",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2649),
+  completed: purchaseManagerHive.getCompleted(2649),
+),
+CoursesExModel(
+  id: 2650,
+  exerciseName: "挑战6：MAX",
+  productID: "com.mrrubik.learnswift.sqlex2650",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2650),
+  completed: purchaseManagerHive.getCompleted(2650),
+),
+CoursesExModel(
+  id: 2651,
+  exerciseName: "练习7：GROUP BY",
+  productID: "com.mrrubik.learnswift.sqlex2651",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2651),
+  completed: purchaseManagerHive.getCompleted(2651),
+),
+CoursesExModel(
+  id: 2652,
+  exerciseName: "挑战8：GROUP BY + COUNT",
+  productID: "com.mrrubik.learnswift.sqlex2652",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2652),
+  completed: purchaseManagerHive.getCompleted(2652),
+),
+CoursesExModel(
+  id: 2653,
+  exerciseName: "练习9：HAVING",
+  productID: "com.mrrubik.learnswift.sqlex2653",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2653),
+  completed: purchaseManagerHive.getCompleted(2653),
+),
+CoursesExModel(
+  id: 2654,
+  exerciseName: "挑战10：GROUP BY 2 cols",
+  productID: "com.mrrubik.learnswift.sqlex2654",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2654),
+  completed: purchaseManagerHive.getCompleted(2654),
+),
+CoursesExModel(
+  id: 2655,
+  exerciseName: "练习11：SUM with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2655",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2655),
+  completed: purchaseManagerHive.getCompleted(2655),
+),
+CoursesExModel(
+  id: 2656,
+  exerciseName: "挑战12：AVG with GROUP",
+  productID: "com.mrrubik.learnswift.sqlex2656",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2656),
+  completed: purchaseManagerHive.getCompleted(2656),
+),
+CoursesExModel(
+  id: 2657,
+  exerciseName: "练习13：COUNT with NULL",
+  productID: "com.mrrubik.learnswift.sqlex2657",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2657),
+  completed: purchaseManagerHive.getCompleted(2657),
+),
+CoursesExModel(
+  id: 2658,
+  exerciseName: "挑战14：ROUND avg",
+  productID: "com.mrrubik.learnswift.sqlex2658",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2658),
+  completed: purchaseManagerHive.getCompleted(2658),
+),
+CoursesExModel(
+  id: 2659,
+  exerciseName: "练习15：HAVING SUM",
+  productID: "com.mrrubik.learnswift.sqlex2659",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2659),
+  completed: purchaseManagerHive.getCompleted(2659),
+),
+
+];

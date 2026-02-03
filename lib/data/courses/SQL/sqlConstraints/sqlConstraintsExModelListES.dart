@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlConstraintsModelES = [
+CoursesExModel(
+  id: 2750,
+  exerciseName: "Ejercicio 1: PRIMARY KEY",
+  productID: "com.mrrubik.learnswift.sqlex2750",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2750),
+  completed: purchaseManagerHive.getCompleted(2750),
+),
+CoursesExModel(
+  id: 2751,
+  exerciseName: "Desafío 2: COMPOSITE PK",
+  productID: "com.mrrubik.learnswift.sqlex2751",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2751),
+  completed: purchaseManagerHive.getCompleted(2751),
+),
+CoursesExModel(
+  id: 2752,
+  exerciseName: "Ejercicio 3: FOREIGN KEY",
+  productID: "com.mrrubik.learnswift.sqlex2752",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2752),
+  completed: purchaseManagerHive.getCompleted(2752),
+),
+CoursesExModel(
+  id: 2753,
+  exerciseName: "Desafío 4: ON DELETE",
+  productID: "com.mrrubik.learnswift.sqlex2753",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2753),
+  completed: purchaseManagerHive.getCompleted(2753),
+),
+CoursesExModel(
+  id: 2754,
+  exerciseName: "Ejercicio 5: ON UPDATE",
+  productID: "com.mrrubik.learnswift.sqlex2754",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2754),
+  completed: purchaseManagerHive.getCompleted(2754),
+),
+CoursesExModel(
+  id: 2755,
+  exerciseName: "Desafío 6: UNIQUE",
+  productID: "com.mrrubik.learnswift.sqlex2755",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2755),
+  completed: purchaseManagerHive.getCompleted(2755),
+),
+CoursesExModel(
+  id: 2756,
+  exerciseName: "Ejercicio 7: CHECK",
+  productID: "com.mrrubik.learnswift.sqlex2756",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2756),
+  completed: purchaseManagerHive.getCompleted(2756),
+),
+CoursesExModel(
+  id: 2757,
+  exerciseName: "Desafío 8: NOT NULL",
+  productID: "com.mrrubik.learnswift.sqlex2757",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2757),
+  completed: purchaseManagerHive.getCompleted(2757),
+),
+CoursesExModel(
+  id: 2758,
+  exerciseName: "Ejercicio 9: DEFAULT",
+  productID: "com.mrrubik.learnswift.sqlex2758",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2758),
+  completed: purchaseManagerHive.getCompleted(2758),
+),
+CoursesExModel(
+  id: 2759,
+  exerciseName: "Desafío 10: ALTER add FK",
+  productID: "com.mrrubik.learnswift.sqlex2759",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2759),
+  completed: purchaseManagerHive.getCompleted(2759),
+),
+CoursesExModel(
+  id: 2760,
+  exerciseName: "Ejercicio 11: DROP constraint",
+  productID: "com.mrrubik.learnswift.sqlex2760",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2760),
+  completed: purchaseManagerHive.getCompleted(2760),
+),
+CoursesExModel(
+  id: 2761,
+  exerciseName: "Desafío 12: DEFERRABLE",
+  productID: "com.mrrubik.learnswift.sqlex2761",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2761),
+  completed: purchaseManagerHive.getCompleted(2761),
+),
+CoursesExModel(
+  id: 2762,
+  exerciseName: "Ejercicio 13: CHECK with IN",
+  productID: "com.mrrubik.learnswift.sqlex2762",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2762),
+  completed: purchaseManagerHive.getCompleted(2762),
+),
+CoursesExModel(
+  id: 2763,
+  exerciseName: "Desafío 14: Unique index",
+  productID: "com.mrrubik.learnswift.sqlex2763",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2763),
+  completed: purchaseManagerHive.getCompleted(2763),
+),
+CoursesExModel(
+  id: 2764,
+  exerciseName: "Ejercicio 15: Constraint name",
+  productID: "com.mrrubik.learnswift.sqlex2764",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2764),
+  completed: purchaseManagerHive.getCompleted(2764),
+),
+
+];

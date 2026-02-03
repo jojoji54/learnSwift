@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlInsertModelEN = [
+CoursesExModel(
+  id: 2705,
+  exerciseName: "Exercise 1: INSERT single",
+  productID: "com.mrrubik.learnswift.sqlex2705",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2705),
+  completed: purchaseManagerHive.getCompleted(2705),
+),
+CoursesExModel(
+  id: 2706,
+  exerciseName: "Challenge 2: INSERT multiple",
+  productID: "com.mrrubik.learnswift.sqlex2706",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2706),
+  completed: purchaseManagerHive.getCompleted(2706),
+),
+CoursesExModel(
+  id: 2707,
+  exerciseName: "Exercise 3: INSERT select",
+  productID: "com.mrrubik.learnswift.sqlex2707",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2707),
+  completed: purchaseManagerHive.getCompleted(2707),
+),
+CoursesExModel(
+  id: 2708,
+  exerciseName: "Challenge 4: INSERT default",
+  productID: "com.mrrubik.learnswift.sqlex2708",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2708),
+  completed: purchaseManagerHive.getCompleted(2708),
+),
+CoursesExModel(
+  id: 2709,
+  exerciseName: "Exercise 5: INSERT with column list",
+  productID: "com.mrrubik.learnswift.sqlex2709",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2709),
+  completed: purchaseManagerHive.getCompleted(2709),
+),
+CoursesExModel(
+  id: 2710,
+  exerciseName: "Challenge 6: INSERT date",
+  productID: "com.mrrubik.learnswift.sqlex2710",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2710),
+  completed: purchaseManagerHive.getCompleted(2710),
+),
+CoursesExModel(
+  id: 2711,
+  exerciseName: "Exercise 7: INSERT text",
+  productID: "com.mrrubik.learnswift.sqlex2711",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2711),
+  completed: purchaseManagerHive.getCompleted(2711),
+),
+CoursesExModel(
+  id: 2712,
+  exerciseName: "Challenge 8: INSERT with NULL",
+  productID: "com.mrrubik.learnswift.sqlex2712",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2712),
+  completed: purchaseManagerHive.getCompleted(2712),
+),
+CoursesExModel(
+  id: 2713,
+  exerciseName: "Exercise 9: INSERT with boolean",
+  productID: "com.mrrubik.learnswift.sqlex2713",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2713),
+  completed: purchaseManagerHive.getCompleted(2713),
+),
+CoursesExModel(
+  id: 2714,
+  exerciseName: "Challenge 10: INSERT with returning",
+  productID: "com.mrrubik.learnswift.sqlex2714",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2714),
+  completed: purchaseManagerHive.getCompleted(2714),
+),
+CoursesExModel(
+  id: 2715,
+  exerciseName: "Exercise 11: INSERT ignore",
+  productID: "com.mrrubik.learnswift.sqlex2715",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2715),
+  completed: purchaseManagerHive.getCompleted(2715),
+),
+CoursesExModel(
+  id: 2716,
+  exerciseName: "Challenge 12: INSERT replace",
+  productID: "com.mrrubik.learnswift.sqlex2716",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2716),
+  completed: purchaseManagerHive.getCompleted(2716),
+),
+CoursesExModel(
+  id: 2717,
+  exerciseName: "Exercise 13: INSERT select with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2717",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2717),
+  completed: purchaseManagerHive.getCompleted(2717),
+),
+CoursesExModel(
+  id: 2718,
+  exerciseName: "Challenge 14: INSERT using set",
+  productID: "com.mrrubik.learnswift.sqlex2718",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2718),
+  completed: purchaseManagerHive.getCompleted(2718),
+),
+CoursesExModel(
+  id: 2719,
+  exerciseName: "Exercise 15: INSERT with cast",
+  productID: "com.mrrubik.learnswift.sqlex2719",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2719),
+  completed: purchaseManagerHive.getCompleted(2719),
+),
+
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlViewsModelZH = [
+CoursesExModel(
+  id: 2780,
+  exerciseName: "练习1：Create view",
+  productID: "com.mrrubik.learnswift.sqlex2780",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2780),
+  completed: purchaseManagerHive.getCompleted(2780),
+),
+CoursesExModel(
+  id: 2781,
+  exerciseName: "挑战2：View with join",
+  productID: "com.mrrubik.learnswift.sqlex2781",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2781),
+  completed: purchaseManagerHive.getCompleted(2781),
+),
+CoursesExModel(
+  id: 2782,
+  exerciseName: "练习3：View with filter",
+  productID: "com.mrrubik.learnswift.sqlex2782",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2782),
+  completed: purchaseManagerHive.getCompleted(2782),
+),
+CoursesExModel(
+  id: 2783,
+  exerciseName: "挑战4：Select from view",
+  productID: "com.mrrubik.learnswift.sqlex2783",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2783),
+  completed: purchaseManagerHive.getCompleted(2783),
+),
+CoursesExModel(
+  id: 2784,
+  exerciseName: "练习5：Update view",
+  productID: "com.mrrubik.learnswift.sqlex2784",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2784),
+  completed: purchaseManagerHive.getCompleted(2784),
+),
+CoursesExModel(
+  id: 2785,
+  exerciseName: "挑战6：Drop view",
+  productID: "com.mrrubik.learnswift.sqlex2785",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2785),
+  completed: purchaseManagerHive.getCompleted(2785),
+),
+CoursesExModel(
+  id: 2786,
+  exerciseName: "练习7：Replace view",
+  productID: "com.mrrubik.learnswift.sqlex2786",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2786),
+  completed: purchaseManagerHive.getCompleted(2786),
+),
+CoursesExModel(
+  id: 2787,
+  exerciseName: "挑战8：View with aggregate",
+  productID: "com.mrrubik.learnswift.sqlex2787",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2787),
+  completed: purchaseManagerHive.getCompleted(2787),
+),
+CoursesExModel(
+  id: 2788,
+  exerciseName: "练习9：View with alias",
+  productID: "com.mrrubik.learnswift.sqlex2788",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2788),
+  completed: purchaseManagerHive.getCompleted(2788),
+),
+CoursesExModel(
+  id: 2789,
+  exerciseName: "挑战10：View security",
+  productID: "com.mrrubik.learnswift.sqlex2789",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2789),
+  completed: purchaseManagerHive.getCompleted(2789),
+),
+CoursesExModel(
+  id: 2790,
+  exerciseName: "练习11：Materialized view",
+  productID: "com.mrrubik.learnswift.sqlex2790",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2790),
+  completed: purchaseManagerHive.getCompleted(2790),
+),
+CoursesExModel(
+  id: 2791,
+  exerciseName: "挑战12：Refresh MV",
+  productID: "com.mrrubik.learnswift.sqlex2791",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2791),
+  completed: purchaseManagerHive.getCompleted(2791),
+),
+CoursesExModel(
+  id: 2792,
+  exerciseName: "练习13：View with order",
+  productID: "com.mrrubik.learnswift.sqlex2792",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2792),
+  completed: purchaseManagerHive.getCompleted(2792),
+),
+CoursesExModel(
+  id: 2793,
+  exerciseName: "挑战14：View with limit",
+  productID: "com.mrrubik.learnswift.sqlex2793",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2793),
+  completed: purchaseManagerHive.getCompleted(2793),
+),
+CoursesExModel(
+  id: 2794,
+  exerciseName: "练习15：Rename view",
+  productID: "com.mrrubik.learnswift.sqlex2794",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2794),
+  completed: purchaseManagerHive.getCompleted(2794),
+),
+
+];

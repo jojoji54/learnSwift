@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlSubqueriesModelES = [
+CoursesExModel(
+  id: 2675,
+  exerciseName: "Ejercicio 1: IN subquery",
+  productID: "com.mrrubik.learnswift.sqlex2675",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2675),
+  completed: purchaseManagerHive.getCompleted(2675),
+),
+CoursesExModel(
+  id: 2676,
+  exerciseName: "Desafío 2: NOT IN subquery",
+  productID: "com.mrrubik.learnswift.sqlex2676",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2676),
+  completed: purchaseManagerHive.getCompleted(2676),
+),
+CoursesExModel(
+  id: 2677,
+  exerciseName: "Ejercicio 3: EXISTS",
+  productID: "com.mrrubik.learnswift.sqlex2677",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2677),
+  completed: purchaseManagerHive.getCompleted(2677),
+),
+CoursesExModel(
+  id: 2678,
+  exerciseName: "Desafío 4: Scalar subquery",
+  productID: "com.mrrubik.learnswift.sqlex2678",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2678),
+  completed: purchaseManagerHive.getCompleted(2678),
+),
+CoursesExModel(
+  id: 2679,
+  exerciseName: "Ejercicio 5: Subquery in SELECT",
+  productID: "com.mrrubik.learnswift.sqlex2679",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2679),
+  completed: purchaseManagerHive.getCompleted(2679),
+),
+CoursesExModel(
+  id: 2680,
+  exerciseName: "Desafío 6: Subquery in FROM",
+  productID: "com.mrrubik.learnswift.sqlex2680",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2680),
+  completed: purchaseManagerHive.getCompleted(2680),
+),
+CoursesExModel(
+  id: 2681,
+  exerciseName: "Ejercicio 7: ANY",
+  productID: "com.mrrubik.learnswift.sqlex2681",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2681),
+  completed: purchaseManagerHive.getCompleted(2681),
+),
+CoursesExModel(
+  id: 2682,
+  exerciseName: "Desafío 8: ALL",
+  productID: "com.mrrubik.learnswift.sqlex2682",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2682),
+  completed: purchaseManagerHive.getCompleted(2682),
+),
+CoursesExModel(
+  id: 2683,
+  exerciseName: "Ejercicio 9: Correlated EXISTS",
+  productID: "com.mrrubik.learnswift.sqlex2683",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2683),
+  completed: purchaseManagerHive.getCompleted(2683),
+),
+CoursesExModel(
+  id: 2684,
+  exerciseName: "Desafío 10: Subquery in WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2684",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2684),
+  completed: purchaseManagerHive.getCompleted(2684),
+),
+CoursesExModel(
+  id: 2685,
+  exerciseName: "Ejercicio 11: Subquery in HAVING",
+  productID: "com.mrrubik.learnswift.sqlex2685",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2685),
+  completed: purchaseManagerHive.getCompleted(2685),
+),
+CoursesExModel(
+  id: 2686,
+  exerciseName: "Desafío 12: Nested subquery",
+  productID: "com.mrrubik.learnswift.sqlex2686",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2686),
+  completed: purchaseManagerHive.getCompleted(2686),
+),
+CoursesExModel(
+  id: 2687,
+  exerciseName: "Ejercicio 13: Subquery with ORDER",
+  productID: "com.mrrubik.learnswift.sqlex2687",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2687),
+  completed: purchaseManagerHive.getCompleted(2687),
+),
+CoursesExModel(
+  id: 2688,
+  exerciseName: "Desafío 14: CTE-like",
+  productID: "com.mrrubik.learnswift.sqlex2688",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2688),
+  completed: purchaseManagerHive.getCompleted(2688),
+),
+CoursesExModel(
+  id: 2689,
+  exerciseName: "Ejercicio 15: Correlated count",
+  productID: "com.mrrubik.learnswift.sqlex2689",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2689),
+  completed: purchaseManagerHive.getCompleted(2689),
+),
+
+];

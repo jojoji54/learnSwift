@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlIndexesModelES = [
+CoursesExModel(
+  id: 2765,
+  exerciseName: "Ejercicio 1: Create index",
+  productID: "com.mrrubik.learnswift.sqlex2765",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2765),
+  completed: purchaseManagerHive.getCompleted(2765),
+),
+CoursesExModel(
+  id: 2766,
+  exerciseName: "Desafío 2: Unique index",
+  productID: "com.mrrubik.learnswift.sqlex2766",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2766),
+  completed: purchaseManagerHive.getCompleted(2766),
+),
+CoursesExModel(
+  id: 2767,
+  exerciseName: "Ejercicio 3: Composite index",
+  productID: "com.mrrubik.learnswift.sqlex2767",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2767),
+  completed: purchaseManagerHive.getCompleted(2767),
+),
+CoursesExModel(
+  id: 2768,
+  exerciseName: "Desafío 4: Drop index",
+  productID: "com.mrrubik.learnswift.sqlex2768",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2768),
+  completed: purchaseManagerHive.getCompleted(2768),
+),
+CoursesExModel(
+  id: 2769,
+  exerciseName: "Ejercicio 5: Explain plan",
+  productID: "com.mrrubik.learnswift.sqlex2769",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2769),
+  completed: purchaseManagerHive.getCompleted(2769),
+),
+CoursesExModel(
+  id: 2770,
+  exerciseName: "Desafío 6: Analyze",
+  productID: "com.mrrubik.learnswift.sqlex2770",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2770),
+  completed: purchaseManagerHive.getCompleted(2770),
+),
+CoursesExModel(
+  id: 2771,
+  exerciseName: "Ejercicio 7: Reindex",
+  productID: "com.mrrubik.learnswift.sqlex2771",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2771),
+  completed: purchaseManagerHive.getCompleted(2771),
+),
+CoursesExModel(
+  id: 2772,
+  exerciseName: "Desafío 8: Index on expression",
+  productID: "com.mrrubik.learnswift.sqlex2772",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2772),
+  completed: purchaseManagerHive.getCompleted(2772),
+),
+CoursesExModel(
+  id: 2773,
+  exerciseName: "Ejercicio 9: Partial index",
+  productID: "com.mrrubik.learnswift.sqlex2773",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2773),
+  completed: purchaseManagerHive.getCompleted(2773),
+),
+CoursesExModel(
+  id: 2774,
+  exerciseName: "Desafío 10: Covering index",
+  productID: "com.mrrubik.learnswift.sqlex2774",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2774),
+  completed: purchaseManagerHive.getCompleted(2774),
+),
+CoursesExModel(
+  id: 2775,
+  exerciseName: "Ejercicio 11: Index usage",
+  productID: "com.mrrubik.learnswift.sqlex2775",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2775),
+  completed: purchaseManagerHive.getCompleted(2775),
+),
+CoursesExModel(
+  id: 2776,
+  exerciseName: "Desafío 12: List indexes",
+  productID: "com.mrrubik.learnswift.sqlex2776",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2776),
+  completed: purchaseManagerHive.getCompleted(2776),
+),
+CoursesExModel(
+  id: 2777,
+  exerciseName: "Ejercicio 13: Index info",
+  productID: "com.mrrubik.learnswift.sqlex2777",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2777),
+  completed: purchaseManagerHive.getCompleted(2777),
+),
+CoursesExModel(
+  id: 2778,
+  exerciseName: "Desafío 14: Clustered",
+  productID: "com.mrrubik.learnswift.sqlex2778",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2778),
+  completed: purchaseManagerHive.getCompleted(2778),
+),
+CoursesExModel(
+  id: 2779,
+  exerciseName: "Ejercicio 15: Drop with IF",
+  productID: "com.mrrubik.learnswift.sqlex2779",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2779),
+  completed: purchaseManagerHive.getCompleted(2779),
+),
+
+];

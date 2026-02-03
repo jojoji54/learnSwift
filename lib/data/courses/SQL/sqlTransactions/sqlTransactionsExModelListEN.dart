@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlTransactionsModelEN = [
+CoursesExModel(
+  id: 2795,
+  exerciseName: "Exercise 1: BEGIN",
+  productID: "com.mrrubik.learnswift.sqlex2795",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2795),
+  completed: purchaseManagerHive.getCompleted(2795),
+),
+CoursesExModel(
+  id: 2796,
+  exerciseName: "Challenge 2: COMMIT",
+  productID: "com.mrrubik.learnswift.sqlex2796",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2796),
+  completed: purchaseManagerHive.getCompleted(2796),
+),
+CoursesExModel(
+  id: 2797,
+  exerciseName: "Exercise 3: ROLLBACK",
+  productID: "com.mrrubik.learnswift.sqlex2797",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2797),
+  completed: purchaseManagerHive.getCompleted(2797),
+),
+CoursesExModel(
+  id: 2798,
+  exerciseName: "Challenge 4: BEGIN TRANSACTION",
+  productID: "com.mrrubik.learnswift.sqlex2798",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2798),
+  completed: purchaseManagerHive.getCompleted(2798),
+),
+CoursesExModel(
+  id: 2799,
+  exerciseName: "Exercise 5: SAVEPOINT",
+  productID: "com.mrrubik.learnswift.sqlex2799",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2799),
+  completed: purchaseManagerHive.getCompleted(2799),
+),
+CoursesExModel(
+  id: 2800,
+  exerciseName: "Challenge 6: ROLLBACK TO",
+  productID: "com.mrrubik.learnswift.sqlex2800",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2800),
+  completed: purchaseManagerHive.getCompleted(2800),
+),
+CoursesExModel(
+  id: 2801,
+  exerciseName: "Exercise 7: RELEASE",
+  productID: "com.mrrubik.learnswift.sqlex2801",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2801),
+  completed: purchaseManagerHive.getCompleted(2801),
+),
+CoursesExModel(
+  id: 2802,
+  exerciseName: "Challenge 8: Set isolation",
+  productID: "com.mrrubik.learnswift.sqlex2802",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2802),
+  completed: purchaseManagerHive.getCompleted(2802),
+),
+CoursesExModel(
+  id: 2803,
+  exerciseName: "Exercise 9: Read only",
+  productID: "com.mrrubik.learnswift.sqlex2803",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2803),
+  completed: purchaseManagerHive.getCompleted(2803),
+),
+CoursesExModel(
+  id: 2804,
+  exerciseName: "Challenge 10: Read write",
+  productID: "com.mrrubik.learnswift.sqlex2804",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2804),
+  completed: purchaseManagerHive.getCompleted(2804),
+),
+CoursesExModel(
+  id: 2805,
+  exerciseName: "Exercise 11: Auto commit",
+  productID: "com.mrrubik.learnswift.sqlex2805",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2805),
+  completed: purchaseManagerHive.getCompleted(2805),
+),
+CoursesExModel(
+  id: 2806,
+  exerciseName: "Challenge 12: Lock table",
+  productID: "com.mrrubik.learnswift.sqlex2806",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2806),
+  completed: purchaseManagerHive.getCompleted(2806),
+),
+CoursesExModel(
+  id: 2807,
+  exerciseName: "Exercise 13: Commit and chain",
+  productID: "com.mrrubik.learnswift.sqlex2807",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2807),
+  completed: purchaseManagerHive.getCompleted(2807),
+),
+CoursesExModel(
+  id: 2808,
+  exerciseName: "Challenge 14: Rollback and chain",
+  productID: "com.mrrubik.learnswift.sqlex2808",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2808),
+  completed: purchaseManagerHive.getCompleted(2808),
+),
+CoursesExModel(
+  id: 2809,
+  exerciseName: "Exercise 15: Set constraints",
+  productID: "com.mrrubik.learnswift.sqlex2809",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2809),
+  completed: purchaseManagerHive.getCompleted(2809),
+),
+
+];

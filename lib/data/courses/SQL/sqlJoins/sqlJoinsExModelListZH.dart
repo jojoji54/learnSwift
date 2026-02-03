@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlJoinsModelZH = [
+CoursesExModel(
+  id: 2660,
+  exerciseName: "练习1：INNER JOIN",
+  productID: "com.mrrubik.learnswift.sqlex2660",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2660),
+  completed: purchaseManagerHive.getCompleted(2660),
+),
+CoursesExModel(
+  id: 2661,
+  exerciseName: "挑战2：LEFT JOIN",
+  productID: "com.mrrubik.learnswift.sqlex2661",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2661),
+  completed: purchaseManagerHive.getCompleted(2661),
+),
+CoursesExModel(
+  id: 2662,
+  exerciseName: "练习3：RIGHT JOIN",
+  productID: "com.mrrubik.learnswift.sqlex2662",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2662),
+  completed: purchaseManagerHive.getCompleted(2662),
+),
+CoursesExModel(
+  id: 2663,
+  exerciseName: "挑战4：FULL JOIN",
+  productID: "com.mrrubik.learnswift.sqlex2663",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2663),
+  completed: purchaseManagerHive.getCompleted(2663),
+),
+CoursesExModel(
+  id: 2664,
+  exerciseName: "练习5：JOIN with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2664",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2664),
+  completed: purchaseManagerHive.getCompleted(2664),
+),
+CoursesExModel(
+  id: 2665,
+  exerciseName: "挑战6：JOIN 3 tables",
+  productID: "com.mrrubik.learnswift.sqlex2665",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2665),
+  completed: purchaseManagerHive.getCompleted(2665),
+),
+CoursesExModel(
+  id: 2666,
+  exerciseName: "练习7：Self join",
+  productID: "com.mrrubik.learnswift.sqlex2666",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2666),
+  completed: purchaseManagerHive.getCompleted(2666),
+),
+CoursesExModel(
+  id: 2667,
+  exerciseName: "挑战8：Join + group",
+  productID: "com.mrrubik.learnswift.sqlex2667",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2667),
+  completed: purchaseManagerHive.getCompleted(2667),
+),
+CoursesExModel(
+  id: 2668,
+  exerciseName: "练习9：Using",
+  productID: "com.mrrubik.learnswift.sqlex2668",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2668),
+  completed: purchaseManagerHive.getCompleted(2668),
+),
+CoursesExModel(
+  id: 2669,
+  exerciseName: "挑战10：Cross join",
+  productID: "com.mrrubik.learnswift.sqlex2669",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2669),
+  completed: purchaseManagerHive.getCompleted(2669),
+),
+CoursesExModel(
+  id: 2670,
+  exerciseName: "练习11：Join + order",
+  productID: "com.mrrubik.learnswift.sqlex2670",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2670),
+  completed: purchaseManagerHive.getCompleted(2670),
+),
+CoursesExModel(
+  id: 2671,
+  exerciseName: "挑战12：Left join nulls",
+  productID: "com.mrrubik.learnswift.sqlex2671",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2671),
+  completed: purchaseManagerHive.getCompleted(2671),
+),
+CoursesExModel(
+  id: 2672,
+  exerciseName: "练习13：Join with alias",
+  productID: "com.mrrubik.learnswift.sqlex2672",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2672),
+  completed: purchaseManagerHive.getCompleted(2672),
+),
+CoursesExModel(
+  id: 2673,
+  exerciseName: "挑战14：Natural join",
+  productID: "com.mrrubik.learnswift.sqlex2673",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2673),
+  completed: purchaseManagerHive.getCompleted(2673),
+),
+CoursesExModel(
+  id: 2674,
+  exerciseName: "练习15：Join + limit",
+  productID: "com.mrrubik.learnswift.sqlex2674",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2674),
+  completed: purchaseManagerHive.getCompleted(2674),
+),
+
+];

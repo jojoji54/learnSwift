@@ -8,6 +8,7 @@ import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListZH.dart';
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
@@ -137,7 +138,7 @@ final List<ProgrammingItem> programmingItemsZH = [
     description:
         'CodeCrafters: Go 是一门现代系统语言，强调速度、简洁与并发。通过练习学习后端与工具开发。\n\n版本: Go 1.22',
   ),
-   ProgrammingItem(
+  ProgrammingItem(
     id: 11,
     name: 'COBOL',
     productID: 'com.mrrubik.learnswift.cobol',
@@ -150,12 +151,25 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: COBOL 是经典的商业语言，广泛用于银行、金融与批处理系统。通过结构化练习学习。\n\n版本: COBOL 2014',
   ),
 
-  // 框架
   ProgrammingItem(
     id: 12,
+    name: 'SQL',
+    productID: 'com.mrrubik.learnswift.sql',
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(12),
+    coursesList: coursesSqlMainModelListZH,
+    color1: Color(0xFF0F6CBD),
+    color2: Color(0xFFB3E5FC),
+    isActive: true,
+    description:
+        'CodeCrafters: SQL 教你掌握数据语言。查询、过滤、连接与分析都用练习完成。\n\n版本: SQL 2023',
+  ),
+
+  // 框架
+  ProgrammingItem(
+    id: 13,
     name: 'Flutter',
     productID: 'com.mrrubik.learnswift.flutter',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(12),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
     coursesList: [],
     color1: Color(0xFF02569B),
     color2: Color(0xFFFFFFFF),
@@ -164,10 +178,10 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: Flutter 介绍这一强大的跨平台框架，用于开发移动和网页应用程序。\n\n版本: Flutter 3.13',
   ),
   ProgrammingItem(
-    id: 13,
+    id: 14,
     name: 'React',
     productID: 'com.mrrubik.learnswift.react',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
     coursesList: [],
     color1: Color(0xFF61DAFB),
     color2: Color(0xFF20232A),
@@ -175,10 +189,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     description: 'CodeCrafters: React 教授最流行的库，用于构建动态现代的用户界面。\n\n版本: React 18',
   ),
   ProgrammingItem(
-    id: 14,
+    id: 15,
     name: 'Angular',
     productID: 'com.mrrubik.learnswift.angular',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
     coursesList: [],
     color1: Color(0xFFDD0031),
     color2: Color(0xFFFFFFFF),
@@ -187,10 +201,10 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: Angular 是用于掌握这一强大框架以开发复杂网页应用的工具。\n\n版本: Angular 16',
   ),
   ProgrammingItem(
-    id: 15,
+    id: 16,
     name: 'Vue.js',
     productID: 'com.mrrubik.learnswift.vue',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
     coursesList: [],
     color1: Color(0xFF41B883),
     color2: Color(0xFFFFFFFF),
@@ -198,10 +212,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     description: 'CodeCrafters: Vue.js 指导您使用这一轻量级渐进框架进行网页开发。\n\n版本: Vue 3.3',
   ),
   ProgrammingItem(
-    id: 16,
+    id: 17,
     name: 'Django',
     productID: 'com.mrrubik.learnswift.djano',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(17),
     coursesList: [],
     color1: Color(0xFF092E20),
     color2: Color(0xFFFFFFFF),
@@ -210,10 +224,10 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: Django 教授这一强大的 Python 后端框架，非常适合快速和可扩展的应用程序。\n\n版本: Django 4.2',
   ),
   ProgrammingItem(
-    id: 17,
+    id: 18,
     name: 'Spring',
     productID: 'com.mrrubik.learnswift.sprin',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(17),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
     coursesList: [],
     color1: Color(0xFF6DB33F),
     color2: Color(0xFFFFFFFF),
@@ -221,10 +235,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     description: 'CodeCrafters: Spring 是用于学习 Java 企业开发的工具。\n\n版本: Spring 6',
   ),
   ProgrammingItem(
-    id: 18,
+    id: 19,
     name: 'Symfony',
     productID: 'com.mrrubik.learnswift.symfony',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
     coursesList: [],
     color1: Color(0xFF000000),
     color2: Color(0xFF7289DA),
@@ -233,10 +247,10 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: Symfony 教授这一强大、模块化的 PHP 框架，用于企业级应用程序。\n\n版本: Symfony 6.3',
   ),
   ProgrammingItem(
-    id: 19,
+    id: 20,
     name: 'Laravel',
     productID: 'com.mrrubik.learnswift.laravel',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
     coursesList: [],
     color1: Color(0xFFFF2D20),
     color2: Color(0xFFFFFFFF),
@@ -245,10 +259,10 @@ final List<ProgrammingItem> programmingItemsZH = [
         'CodeCrafters: Laravel 是学习这一以优雅和简单著称的 PHP 框架的工具。\n\n版本: Laravel 10',
   ),
   ProgrammingItem(
-    id: 20,
+    id: 21,
     name: 'ASP.NET',
     productID: 'com.mrrubik.learnswift.asp',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
     coursesList: [],
     color1: Color(0xFF512BD4),
     color2: Color(0xFFFFFFFF),
@@ -256,10 +270,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     description: 'CodeCrafters: ASP.NET 介绍这一由微软开发的强大后端框架。\n\n版本: ASP.NET 8',
   ),
   ProgrammingItem(
-    id: 21,
+    id: 22,
     name: 'TensorFlow',
     productID: 'com.mrrubik.learnswift.tensorflow',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(22),
     coursesList: [],
     color1: Color(0xFFFF6F00),
     color2: Color(0xFFFFFFFF),

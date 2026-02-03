@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlSortingModelES = [
+CoursesExModel(
+  id: 2630,
+  exerciseName: "Ejercicio 1: ORDER BY ASC",
+  productID: "com.mrrubik.learnswift.sqlex2630",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2630),
+  completed: purchaseManagerHive.getCompleted(2630),
+),
+CoursesExModel(
+  id: 2631,
+  exerciseName: "Desafío 2: ORDER BY DESC",
+  productID: "com.mrrubik.learnswift.sqlex2631",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2631),
+  completed: purchaseManagerHive.getCompleted(2631),
+),
+CoursesExModel(
+  id: 2632,
+  exerciseName: "Ejercicio 3: ORDER BY two columns",
+  productID: "com.mrrubik.learnswift.sqlex2632",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2632),
+  completed: purchaseManagerHive.getCompleted(2632),
+),
+CoursesExModel(
+  id: 2633,
+  exerciseName: "Desafío 4: ORDER BY alias",
+  productID: "com.mrrubik.learnswift.sqlex2633",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2633),
+  completed: purchaseManagerHive.getCompleted(2633),
+),
+CoursesExModel(
+  id: 2634,
+  exerciseName: "Ejercicio 5: LIMIT with ORDER",
+  productID: "com.mrrubik.learnswift.sqlex2634",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2634),
+  completed: purchaseManagerHive.getCompleted(2634),
+),
+CoursesExModel(
+  id: 2635,
+  exerciseName: "Desafío 6: OFFSET paging",
+  productID: "com.mrrubik.learnswift.sqlex2635",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2635),
+  completed: purchaseManagerHive.getCompleted(2635),
+),
+CoursesExModel(
+  id: 2636,
+  exerciseName: "Ejercicio 7: NULLS LAST",
+  productID: "com.mrrubik.learnswift.sqlex2636",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2636),
+  completed: purchaseManagerHive.getCompleted(2636),
+),
+CoursesExModel(
+  id: 2637,
+  exerciseName: "Desafío 8: CASE sort",
+  productID: "com.mrrubik.learnswift.sqlex2637",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2637),
+  completed: purchaseManagerHive.getCompleted(2637),
+),
+CoursesExModel(
+  id: 2638,
+  exerciseName: "Ejercicio 9: Random order",
+  productID: "com.mrrubik.learnswift.sqlex2638",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2638),
+  completed: purchaseManagerHive.getCompleted(2638),
+),
+CoursesExModel(
+  id: 2639,
+  exerciseName: "Desafío 10: Collation",
+  productID: "com.mrrubik.learnswift.sqlex2639",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2639),
+  completed: purchaseManagerHive.getCompleted(2639),
+),
+CoursesExModel(
+  id: 2640,
+  exerciseName: "Ejercicio 11: DESC + LIMIT",
+  productID: "com.mrrubik.learnswift.sqlex2640",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2640),
+  completed: purchaseManagerHive.getCompleted(2640),
+),
+CoursesExModel(
+  id: 2641,
+  exerciseName: "Desafío 12: ASC + OFFSET",
+  productID: "com.mrrubik.learnswift.sqlex2641",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2641),
+  completed: purchaseManagerHive.getCompleted(2641),
+),
+CoursesExModel(
+  id: 2642,
+  exerciseName: "Ejercicio 13: ORDER BY length",
+  productID: "com.mrrubik.learnswift.sqlex2642",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2642),
+  completed: purchaseManagerHive.getCompleted(2642),
+),
+CoursesExModel(
+  id: 2643,
+  exerciseName: "Desafío 14: ORDER BY 2",
+  productID: "com.mrrubik.learnswift.sqlex2643",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2643),
+  completed: purchaseManagerHive.getCompleted(2643),
+),
+CoursesExModel(
+  id: 2644,
+  exerciseName: "Ejercicio 15: Mixed order",
+  productID: "com.mrrubik.learnswift.sqlex2644",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2644),
+  completed: purchaseManagerHive.getCompleted(2644),
+),
+
+];

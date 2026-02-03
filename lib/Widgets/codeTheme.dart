@@ -72,6 +72,7 @@ enum CodeLanguage {
   ruby,
   go,
   cobol,
+  sql,
   swift,
 }
 
@@ -794,6 +795,132 @@ class CobolMiniHighlighter {
   }
 }
 
+class SqlMiniHighlighter {
+  static final Set<String> _keywords = {
+    'SELECT','FROM','WHERE','AND','OR','NOT','IN','LIKE','BETWEEN','IS','NULL',
+    'DISTINCT','AS','ORDER','BY','GROUP','HAVING','LIMIT','OFFSET',
+    'JOIN','INNER','LEFT','RIGHT','FULL','CROSS','ON','USING',
+    'INSERT','INTO','VALUES','UPDATE','SET','DELETE',
+    'CREATE','TABLE','ALTER','DROP','TRUNCATE','VIEW','INDEX',
+    'PRIMARY','KEY','FOREIGN','REFERENCES','UNIQUE','CHECK','DEFAULT',
+    'UNION','ALL','INTERSECT','EXCEPT',
+    'BEGIN','COMMIT','ROLLBACK','SAVEPOINT','RELEASE',
+    'OVER','PARTITION','ROWS','RANGE','ORDER',
+    'CASE','WHEN','THEN','ELSE','END'
+  };
+
+  static final Set<String> _builtins = {
+    'COUNT','SUM','AVG','MIN','MAX','ROUND','CAST','COALESCE','NOW','DATE',
+    'ROW_NUMBER','RANK','DENSE_RANK','LAG','LEAD','NTILE','PERCENT_RANK','CUME_DIST',
+    'FIRST_VALUE','LAST_VALUE'
+  };
+
+  static final RegExp _stringRegex =
+      RegExp(r'''("([^"\\]|\\.)*"|'([^'\\]|\\.)*')''');
+
+  static final RegExp _numberRegex = RegExp(r'\b\d+(\.\d+)?\b');
+  static final RegExp _identifierRegex = RegExp(r'\b[A-Za-z_][A-Za-z0-9_]*\b');
+
+  static List<TextSpan> highlightLine(String line, {bool showPrompt = false}) {
+    final split = _splitSqlComment(line);
+    final codePart = split.code;
+    final commentPart = split.comment;
+
+    final spans = <TextSpan>[];
+
+    if (showPrompt) {
+      spans.add(const TextSpan(text: '>>> ', style: PyCodeTheme.prompt));
+    }
+
+    spans.addAll(_tokenize(codePart));
+
+    if (commentPart != null) {
+      spans.add(TextSpan(text: commentPart, style: PyCodeTheme.comment));
+    }
+
+    return spans;
+  }
+
+  static _Split _splitSqlComment(String line) {
+    bool inSingle = false;
+    bool inDouble = false;
+    bool escaped = false;
+
+    for (int i = 0; i < line.length; i++) {
+      final ch = line[i];
+
+      if (escaped) {
+        escaped = false;
+        continue;
+      }
+
+      if (ch == r'\') {
+        if (inSingle || inDouble) escaped = true;
+        continue;
+      }
+
+      if (ch == "'" && !inDouble) {
+        inSingle = !inSingle;
+        continue;
+      }
+
+      if (ch == '"' && !inSingle) {
+        inDouble = !inDouble;
+        continue;
+      }
+
+      if (!inSingle && !inDouble) {
+        if (i + 1 < line.length && line.substring(i, i + 2) == '--') {
+          return _Split(line.substring(0, i), line.substring(i));
+        }
+      }
+    }
+
+    return _Split(line, null);
+  }
+
+  static List<TextSpan> _tokenize(String text) {
+    final spans = <TextSpan>[];
+    int i = 0;
+
+    while (i < text.length) {
+      final strMatch = _stringRegex.matchAsPrefix(text, i);
+      if (strMatch != null) {
+        spans.add(TextSpan(text: strMatch.group(0)!, style: PyCodeTheme.string));
+        i = strMatch.end;
+        continue;
+      }
+
+      final numMatch = _numberRegex.matchAsPrefix(text, i);
+      if (numMatch != null) {
+        spans.add(TextSpan(text: numMatch.group(0)!, style: PyCodeTheme.number));
+        i = numMatch.end;
+        continue;
+      }
+
+      final idMatch = _identifierRegex.matchAsPrefix(text, i);
+      if (idMatch != null) {
+        final token = idMatch.group(0)!;
+        final upper = token.toUpperCase();
+        if (_keywords.contains(upper)) {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.keyword));
+        } else if (_builtins.contains(upper)) {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.builtin));
+        } else {
+          spans.add(TextSpan(text: token, style: PyCodeTheme.identifier));
+        }
+        i = idMatch.end;
+        continue;
+      }
+
+      spans.add(TextSpan(text: text[i], style: PyCodeTheme.punctuation));
+      i++;
+    }
+
+    return spans;
+  }
+}
+
 class SwiftMiniHighlighter {
   static final Set<String> _keywords = {
     'import','class','struct','enum','protocol','extension',
@@ -1339,6 +1466,11 @@ class CodePreview extends StatelessWidget {
                                     lines[index],
                                     showPrompt: withPrompt,
                                   )
+                                : language == CodeLanguage.sql
+                                    ? SqlMiniHighlighter.highlightLine(
+                                        lines[index],
+                                        showPrompt: withPrompt,
+                                      )
                                 : language == CodeLanguage.swift
                                     ? SwiftMiniHighlighter.highlightLine(
                                         lines[index],

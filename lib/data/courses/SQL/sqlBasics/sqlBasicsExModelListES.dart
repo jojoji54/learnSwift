@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlBasicsModelES = [
+CoursesExModel(
+  id: 2600,
+  exerciseName: "Ejercicio 1: Select a literal",
+  productID: "com.mrrubik.learnswift.sqlex2600",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2600),
+  completed: purchaseManagerHive.getCompleted(2600),
+),
+CoursesExModel(
+  id: 2601,
+  exerciseName: "Desafío 2: Select two columns",
+  productID: "com.mrrubik.learnswift.sqlex2601",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2601),
+  completed: purchaseManagerHive.getCompleted(2601),
+),
+CoursesExModel(
+  id: 2602,
+  exerciseName: "Ejercicio 3: Column alias",
+  productID: "com.mrrubik.learnswift.sqlex2602",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2602),
+  completed: purchaseManagerHive.getCompleted(2602),
+),
+CoursesExModel(
+  id: 2603,
+  exerciseName: "Desafío 4: Table alias",
+  productID: "com.mrrubik.learnswift.sqlex2603",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2603),
+  completed: purchaseManagerHive.getCompleted(2603),
+),
+CoursesExModel(
+  id: 2604,
+  exerciseName: "Ejercicio 5: DISTINCT values",
+  productID: "com.mrrubik.learnswift.sqlex2604",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2604),
+  completed: purchaseManagerHive.getCompleted(2604),
+),
+CoursesExModel(
+  id: 2605,
+  exerciseName: "Desafío 6: Simple expression",
+  productID: "com.mrrubik.learnswift.sqlex2605",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2605),
+  completed: purchaseManagerHive.getCompleted(2605),
+),
+CoursesExModel(
+  id: 2606,
+  exerciseName: "Ejercicio 7: String literal",
+  productID: "com.mrrubik.learnswift.sqlex2606",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2606),
+  completed: purchaseManagerHive.getCompleted(2606),
+),
+CoursesExModel(
+  id: 2607,
+  exerciseName: "Desafío 8: Numeric alias",
+  productID: "com.mrrubik.learnswift.sqlex2607",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2607),
+  completed: purchaseManagerHive.getCompleted(2607),
+),
+CoursesExModel(
+  id: 2608,
+  exerciseName: "Ejercicio 9: Order of columns",
+  productID: "com.mrrubik.learnswift.sqlex2608",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2608),
+  completed: purchaseManagerHive.getCompleted(2608),
+),
+CoursesExModel(
+  id: 2609,
+  exerciseName: "Desafío 10: Schema prefix",
+  productID: "com.mrrubik.learnswift.sqlex2609",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2609),
+  completed: purchaseManagerHive.getCompleted(2609),
+),
+CoursesExModel(
+  id: 2610,
+  exerciseName: "Ejercicio 11: Limit rows",
+  productID: "com.mrrubik.learnswift.sqlex2610",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2610),
+  completed: purchaseManagerHive.getCompleted(2610),
+),
+CoursesExModel(
+  id: 2611,
+  exerciseName: "Desafío 12: Offset rows",
+  productID: "com.mrrubik.learnswift.sqlex2611",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2611),
+  completed: purchaseManagerHive.getCompleted(2611),
+),
+CoursesExModel(
+  id: 2612,
+  exerciseName: "Ejercicio 13: Top keyword",
+  productID: "com.mrrubik.learnswift.sqlex2612",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2612),
+  completed: purchaseManagerHive.getCompleted(2612),
+),
+CoursesExModel(
+  id: 2613,
+  exerciseName: "Desafío 14: AS keyword",
+  productID: "com.mrrubik.learnswift.sqlex2613",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2613),
+  completed: purchaseManagerHive.getCompleted(2613),
+),
+CoursesExModel(
+  id: 2614,
+  exerciseName: "Ejercicio 15: Select all",
+  productID: "com.mrrubik.learnswift.sqlex2614",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2614),
+  completed: purchaseManagerHive.getCompleted(2614),
+),
+
+];

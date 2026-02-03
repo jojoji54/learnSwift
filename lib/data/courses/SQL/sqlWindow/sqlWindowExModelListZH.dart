@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlWindowModelZH = [
+CoursesExModel(
+  id: 2810,
+  exerciseName: "练习1：ROW_NUMBER",
+  productID: "com.mrrubik.learnswift.sqlex2810",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2810),
+  completed: purchaseManagerHive.getCompleted(2810),
+),
+CoursesExModel(
+  id: 2811,
+  exerciseName: "挑战2：RANK",
+  productID: "com.mrrubik.learnswift.sqlex2811",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2811),
+  completed: purchaseManagerHive.getCompleted(2811),
+),
+CoursesExModel(
+  id: 2812,
+  exerciseName: "练习3：DENSE_RANK",
+  productID: "com.mrrubik.learnswift.sqlex2812",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2812),
+  completed: purchaseManagerHive.getCompleted(2812),
+),
+CoursesExModel(
+  id: 2813,
+  exerciseName: "挑战4：PARTITION BY",
+  productID: "com.mrrubik.learnswift.sqlex2813",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2813),
+  completed: purchaseManagerHive.getCompleted(2813),
+),
+CoursesExModel(
+  id: 2814,
+  exerciseName: "练习5：LAG",
+  productID: "com.mrrubik.learnswift.sqlex2814",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2814),
+  completed: purchaseManagerHive.getCompleted(2814),
+),
+CoursesExModel(
+  id: 2815,
+  exerciseName: "挑战6：LEAD",
+  productID: "com.mrrubik.learnswift.sqlex2815",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2815),
+  completed: purchaseManagerHive.getCompleted(2815),
+),
+CoursesExModel(
+  id: 2816,
+  exerciseName: "练习7：SUM OVER",
+  productID: "com.mrrubik.learnswift.sqlex2816",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2816),
+  completed: purchaseManagerHive.getCompleted(2816),
+),
+CoursesExModel(
+  id: 2817,
+  exerciseName: "挑战8：AVG OVER",
+  productID: "com.mrrubik.learnswift.sqlex2817",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2817),
+  completed: purchaseManagerHive.getCompleted(2817),
+),
+CoursesExModel(
+  id: 2818,
+  exerciseName: "练习9：COUNT OVER",
+  productID: "com.mrrubik.learnswift.sqlex2818",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2818),
+  completed: purchaseManagerHive.getCompleted(2818),
+),
+CoursesExModel(
+  id: 2819,
+  exerciseName: "挑战10：FIRST_VALUE",
+  productID: "com.mrrubik.learnswift.sqlex2819",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2819),
+  completed: purchaseManagerHive.getCompleted(2819),
+),
+CoursesExModel(
+  id: 2820,
+  exerciseName: "练习11：LAST_VALUE",
+  productID: "com.mrrubik.learnswift.sqlex2820",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2820),
+  completed: purchaseManagerHive.getCompleted(2820),
+),
+CoursesExModel(
+  id: 2821,
+  exerciseName: "挑战12：NTILE",
+  productID: "com.mrrubik.learnswift.sqlex2821",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2821),
+  completed: purchaseManagerHive.getCompleted(2821),
+),
+CoursesExModel(
+  id: 2822,
+  exerciseName: "练习13：PERCENT_RANK",
+  productID: "com.mrrubik.learnswift.sqlex2822",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2822),
+  completed: purchaseManagerHive.getCompleted(2822),
+),
+CoursesExModel(
+  id: 2823,
+  exerciseName: "挑战14：CUME_DIST",
+  productID: "com.mrrubik.learnswift.sqlex2823",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2823),
+  completed: purchaseManagerHive.getCompleted(2823),
+),
+CoursesExModel(
+  id: 2824,
+  exerciseName: "练习15：Frame between",
+  productID: "com.mrrubik.learnswift.sqlex2824",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2824),
+  completed: purchaseManagerHive.getCompleted(2824),
+),
+
+];

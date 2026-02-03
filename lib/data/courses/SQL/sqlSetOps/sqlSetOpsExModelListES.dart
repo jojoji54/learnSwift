@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlSetOpsModelES = [
+CoursesExModel(
+  id: 2690,
+  exerciseName: "Ejercicio 1: UNION",
+  productID: "com.mrrubik.learnswift.sqlex2690",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2690),
+  completed: purchaseManagerHive.getCompleted(2690),
+),
+CoursesExModel(
+  id: 2691,
+  exerciseName: "Desafío 2: UNION ALL",
+  productID: "com.mrrubik.learnswift.sqlex2691",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2691),
+  completed: purchaseManagerHive.getCompleted(2691),
+),
+CoursesExModel(
+  id: 2692,
+  exerciseName: "Ejercicio 3: INTERSECT",
+  productID: "com.mrrubik.learnswift.sqlex2692",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2692),
+  completed: purchaseManagerHive.getCompleted(2692),
+),
+CoursesExModel(
+  id: 2693,
+  exerciseName: "Desafío 4: EXCEPT",
+  productID: "com.mrrubik.learnswift.sqlex2693",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2693),
+  completed: purchaseManagerHive.getCompleted(2693),
+),
+CoursesExModel(
+  id: 2694,
+  exerciseName: "Ejercicio 5: UNION with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2694",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2694),
+  completed: purchaseManagerHive.getCompleted(2694),
+),
+CoursesExModel(
+  id: 2695,
+  exerciseName: "Desafío 6: UNION with ORDER",
+  productID: "com.mrrubik.learnswift.sqlex2695",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2695),
+  completed: purchaseManagerHive.getCompleted(2695),
+),
+CoursesExModel(
+  id: 2696,
+  exerciseName: "Ejercicio 7: INTERSECT with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2696",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2696),
+  completed: purchaseManagerHive.getCompleted(2696),
+),
+CoursesExModel(
+  id: 2697,
+  exerciseName: "Desafío 8: EXCEPT with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2697",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2697),
+  completed: purchaseManagerHive.getCompleted(2697),
+),
+CoursesExModel(
+  id: 2698,
+  exerciseName: "Ejercicio 9: UNION three",
+  productID: "com.mrrubik.learnswift.sqlex2698",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2698),
+  completed: purchaseManagerHive.getCompleted(2698),
+),
+CoursesExModel(
+  id: 2699,
+  exerciseName: "Desafío 10: UNION ALL three",
+  productID: "com.mrrubik.learnswift.sqlex2699",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2699),
+  completed: purchaseManagerHive.getCompleted(2699),
+),
+CoursesExModel(
+  id: 2700,
+  exerciseName: "Ejercicio 11: INTERSECT three",
+  productID: "com.mrrubik.learnswift.sqlex2700",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2700),
+  completed: purchaseManagerHive.getCompleted(2700),
+),
+CoursesExModel(
+  id: 2701,
+  exerciseName: "Desafío 12: EXCEPT chain",
+  productID: "com.mrrubik.learnswift.sqlex2701",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2701),
+  completed: purchaseManagerHive.getCompleted(2701),
+),
+CoursesExModel(
+  id: 2702,
+  exerciseName: "Ejercicio 13: UNION with alias",
+  productID: "com.mrrubik.learnswift.sqlex2702",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2702),
+  completed: purchaseManagerHive.getCompleted(2702),
+),
+CoursesExModel(
+  id: 2703,
+  exerciseName: "Desafío 14: UNION with limit",
+  productID: "com.mrrubik.learnswift.sqlex2703",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2703),
+  completed: purchaseManagerHive.getCompleted(2703),
+),
+CoursesExModel(
+  id: 2704,
+  exerciseName: "Ejercicio 15: EXCEPT with ORDER",
+  productID: "com.mrrubik.learnswift.sqlex2704",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2704),
+  completed: purchaseManagerHive.getCompleted(2704),
+),
+
+];

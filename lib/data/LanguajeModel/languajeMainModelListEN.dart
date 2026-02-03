@@ -8,6 +8,7 @@ import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListEN.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListEN.dart';
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
@@ -152,12 +153,25 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: COBOL teaches you the classic business language behind banking, finance, and large-scale batch systems. Learn with structured exercises.\n\nVersion: COBOL 2014',
   ),
 
-  // Frameworks
   ProgrammingItem(
     id: 12,
+    name: 'SQL',
+    productID: 'com.mrrubik.learnswift.sql',
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(12),
+    coursesList: coursesSqlMainModelListEN,
+    color1: Color(0xFF0F6CBD),
+    color2: Color(0xFFB3E5FC),
+    isActive: true,
+    description:
+        'CodeCrafters: SQL teaches you the language of data. Query, filter, join, and analyze tables with hands on exercises.\n\nVersion: SQL 2023',
+  ),
+
+  // Frameworks
+  ProgrammingItem(
+    id: 13,
     name: 'Flutter',
     productID: 'com.mrrubik.learnswift.flutter',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(12),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
     coursesList: [],
     color1: Color(0xFF02569B),
     color2: Color(0xFFFFFFFF),
@@ -166,10 +180,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Flutter introduces you to cross-platform development with this powerful framework for mobile and web applications.\n\nVersion: Flutter 3.13',
   ),
   ProgrammingItem(
-    id: 13,
+    id: 14,
     name: 'React',
     productID: 'com.mrrubik.learnswift.react',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(13),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
     coursesList: [],
     color1: Color(0xFF61DAFB),
     color2: Color(0xFF20232A),
@@ -178,10 +192,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: React teaches you the most popular library for building dynamic and modern user interfaces.\n\nVersion: React 18',
   ),
   ProgrammingItem(
-    id: 14,
+    id: 15,
     name: 'Angular',
     productID: 'com.mrrubik.learnswift.angular',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
     coursesList: [],
     color1: Color(0xFFDD0031),
     color2: Color(0xFFFFFFFF),
@@ -190,10 +204,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Angular is your tool to master this robust framework for complex web applications.\n\nVersion: Angular 16',
   ),
   ProgrammingItem(
-    id: 15,
+    id: 16,
     name: 'Vue.js',
     productID: 'com.mrrubik.learnswift.vue',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
     coursesList: [],
     color1: Color(0xFF41B883),
     color2: Color(0xFFFFFFFF),
@@ -202,10 +216,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Vue.js guides you in developing with this lightweight and progressive framework for web applications.\n\nVersion: Vue 3.3',
   ),
   ProgrammingItem(
-    id: 16,
+    id: 17,
     name: 'Django',
     productID: 'com.mrrubik.learnswift.djano',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(17),
     coursesList: [],
     color1: Color(0xFF092E20),
     color2: Color(0xFFFFFFFF),
@@ -214,10 +228,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Django teaches you this powerful Python backend framework, ideal for fast and scalable applications.\n\nVersion: Django 4.2',
   ),
   ProgrammingItem(
-    id: 17,
+    id: 18,
     name: 'Spring',
     productID: 'com.mrrubik.learnswift.sprin',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(17),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
     coursesList: [],
     color1: Color(0xFF6DB33F),
     color2: Color(0xFFFFFFFF),
@@ -226,10 +240,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Spring introduces you to enterprise development with this framework for Java.\n\nVersion: Spring 6',
   ),
   ProgrammingItem(
-    id: 18,
+    id: 19,
     name: 'Symfony',
     productID: 'com.mrrubik.learnswift.symfony',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
     coursesList: [],
     color1: Color(0xFF000000),
     color2: Color(0xFF7289DA),
@@ -238,10 +252,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Symfony teaches you this robust and modular PHP framework for enterprise applications.\n\nVersion: Symfony 6.3',
   ),
   ProgrammingItem(
-    id: 19,
+    id: 20,
     name: 'Laravel',
     productID: 'com.mrrubik.learnswift.laravel',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
     coursesList: [],
     color1: Color(0xFFFF2D20),
     color2: Color(0xFFFFFFFF),
@@ -250,10 +264,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: Laravel helps you learn this PHP framework known for its elegance and simplicity.\n\nVersion: Laravel 10',
   ),
   ProgrammingItem(
-    id: 20,
+    id: 21,
     name: 'ASP.NET',
     productID: 'com.mrrubik.learnswift.asp',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
     coursesList: [],
     color1: Color(0xFF512BD4),
     color2: Color(0xFFFFFFFF),
@@ -262,10 +276,10 @@ final List<ProgrammingItem> programmingItemsEN = [
         'CodeCrafters: ASP.NET introduces you to backend development with this powerful Microsoft framework.\n\nVersion: ASP.NET 8',
   ),
   ProgrammingItem(
-    id: 21,
+    id: 22,
     name: 'TensorFlow',
     productID: 'com.mrrubik.learnswift.tensorflow',
-    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
+    alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(22),
     coursesList: [],
     color1: Color(0xFFFF6F00),
     color2: Color(0xFFFFFFFF),

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlUpdateDeleteModelZH = [
+CoursesExModel(
+  id: 2720,
+  exerciseName: "练习1：UPDATE set",
+  productID: "com.mrrubik.learnswift.sqlex2720",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2720),
+  completed: purchaseManagerHive.getCompleted(2720),
+),
+CoursesExModel(
+  id: 2721,
+  exerciseName: "挑战2：UPDATE multiple",
+  productID: "com.mrrubik.learnswift.sqlex2721",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2721),
+  completed: purchaseManagerHive.getCompleted(2721),
+),
+CoursesExModel(
+  id: 2722,
+  exerciseName: "练习3：UPDATE with expression",
+  productID: "com.mrrubik.learnswift.sqlex2722",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2722),
+  completed: purchaseManagerHive.getCompleted(2722),
+),
+CoursesExModel(
+  id: 2723,
+  exerciseName: "挑战4：UPDATE with subquery",
+  productID: "com.mrrubik.learnswift.sqlex2723",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2723),
+  completed: purchaseManagerHive.getCompleted(2723),
+),
+CoursesExModel(
+  id: 2724,
+  exerciseName: "练习5：UPDATE with IN",
+  productID: "com.mrrubik.learnswift.sqlex2724",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2724),
+  completed: purchaseManagerHive.getCompleted(2724),
+),
+CoursesExModel(
+  id: 2725,
+  exerciseName: "挑战6：DELETE all",
+  productID: "com.mrrubik.learnswift.sqlex2725",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2725),
+  completed: purchaseManagerHive.getCompleted(2725),
+),
+CoursesExModel(
+  id: 2726,
+  exerciseName: "练习7：DELETE with WHERE",
+  productID: "com.mrrubik.learnswift.sqlex2726",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2726),
+  completed: purchaseManagerHive.getCompleted(2726),
+),
+CoursesExModel(
+  id: 2727,
+  exerciseName: "挑战8：DELETE with IN",
+  productID: "com.mrrubik.learnswift.sqlex2727",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2727),
+  completed: purchaseManagerHive.getCompleted(2727),
+),
+CoursesExModel(
+  id: 2728,
+  exerciseName: "练习9：DELETE with subquery",
+  productID: "com.mrrubik.learnswift.sqlex2728",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2728),
+  completed: purchaseManagerHive.getCompleted(2728),
+),
+CoursesExModel(
+  id: 2729,
+  exerciseName: "挑战10：UPDATE with CASE",
+  productID: "com.mrrubik.learnswift.sqlex2729",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2729),
+  completed: purchaseManagerHive.getCompleted(2729),
+),
+CoursesExModel(
+  id: 2730,
+  exerciseName: "练习11：UPDATE join",
+  productID: "com.mrrubik.learnswift.sqlex2730",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2730),
+  completed: purchaseManagerHive.getCompleted(2730),
+),
+CoursesExModel(
+  id: 2731,
+  exerciseName: "挑战12：DELETE using",
+  productID: "com.mrrubik.learnswift.sqlex2731",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2731),
+  completed: purchaseManagerHive.getCompleted(2731),
+),
+CoursesExModel(
+  id: 2732,
+  exerciseName: "练习13：UPDATE limit",
+  productID: "com.mrrubik.learnswift.sqlex2732",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2732),
+  completed: purchaseManagerHive.getCompleted(2732),
+),
+CoursesExModel(
+  id: 2733,
+  exerciseName: "挑战14：DELETE returning",
+  productID: "com.mrrubik.learnswift.sqlex2733",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2733),
+  completed: purchaseManagerHive.getCompleted(2733),
+),
+CoursesExModel(
+  id: 2734,
+  exerciseName: "练习15：UPDATE with null",
+  productID: "com.mrrubik.learnswift.sqlex2734",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2734),
+  completed: purchaseManagerHive.getCompleted(2734),
+),
+
+];

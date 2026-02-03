@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> sqlFilteringModelZH = [
+CoursesExModel(
+  id: 2615,
+  exerciseName: "练习1：WHERE equals",
+  productID: "com.mrrubik.learnswift.sqlex2615",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2615),
+  completed: purchaseManagerHive.getCompleted(2615),
+),
+CoursesExModel(
+  id: 2616,
+  exerciseName: "挑战2：WHERE greater",
+  productID: "com.mrrubik.learnswift.sqlex2616",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2616),
+  completed: purchaseManagerHive.getCompleted(2616),
+),
+CoursesExModel(
+  id: 2617,
+  exerciseName: "练习3：WHERE between",
+  productID: "com.mrrubik.learnswift.sqlex2617",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2617),
+  completed: purchaseManagerHive.getCompleted(2617),
+),
+CoursesExModel(
+  id: 2618,
+  exerciseName: "挑战4：WHERE IN",
+  productID: "com.mrrubik.learnswift.sqlex2618",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2618),
+  completed: purchaseManagerHive.getCompleted(2618),
+),
+CoursesExModel(
+  id: 2619,
+  exerciseName: "练习5：WHERE LIKE",
+  productID: "com.mrrubik.learnswift.sqlex2619",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2619),
+  completed: purchaseManagerHive.getCompleted(2619),
+),
+CoursesExModel(
+  id: 2620,
+  exerciseName: "挑战6：WHERE AND",
+  productID: "com.mrrubik.learnswift.sqlex2620",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2620),
+  completed: purchaseManagerHive.getCompleted(2620),
+),
+CoursesExModel(
+  id: 2621,
+  exerciseName: "练习7：WHERE OR",
+  productID: "com.mrrubik.learnswift.sqlex2621",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2621),
+  completed: purchaseManagerHive.getCompleted(2621),
+),
+CoursesExModel(
+  id: 2622,
+  exerciseName: "挑战8：WHERE NOT",
+  productID: "com.mrrubik.learnswift.sqlex2622",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(2622),
+  completed: purchaseManagerHive.getCompleted(2622),
+),
+CoursesExModel(
+  id: 2623,
+  exerciseName: "练习9：IS NULL",
+  productID: "com.mrrubik.learnswift.sqlex2623",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2623),
+  completed: purchaseManagerHive.getCompleted(2623),
+),
+CoursesExModel(
+  id: 2624,
+  exerciseName: "挑战10：IS NOT NULL",
+  productID: "com.mrrubik.learnswift.sqlex2624",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2624),
+  completed: purchaseManagerHive.getCompleted(2624),
+),
+CoursesExModel(
+  id: 2625,
+  exerciseName: "练习11：Date filter",
+  productID: "com.mrrubik.learnswift.sqlex2625",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2625),
+  completed: purchaseManagerHive.getCompleted(2625),
+),
+CoursesExModel(
+  id: 2626,
+  exerciseName: "挑战12：Text starts",
+  productID: "com.mrrubik.learnswift.sqlex2626",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2626),
+  completed: purchaseManagerHive.getCompleted(2626),
+),
+CoursesExModel(
+  id: 2627,
+  exerciseName: "练习13：Text ends",
+  productID: "com.mrrubik.learnswift.sqlex2627",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2627),
+  completed: purchaseManagerHive.getCompleted(2627),
+),
+CoursesExModel(
+  id: 2628,
+  exerciseName: "挑战14：Combined",
+  productID: "com.mrrubik.learnswift.sqlex2628",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2628),
+  completed: purchaseManagerHive.getCompleted(2628),
+),
+CoursesExModel(
+  id: 2629,
+  exerciseName: "练习15：NOT IN",
+  productID: "com.mrrubik.learnswift.sqlex2629",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(2629),
+  completed: purchaseManagerHive.getCompleted(2629),
+),
+
+];

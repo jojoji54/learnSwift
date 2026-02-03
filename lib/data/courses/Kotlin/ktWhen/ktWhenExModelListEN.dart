@@ -1,0 +1,103 @@
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+List<CoursesExModel> ktWhenModelEN = [
+  CoursesExModel(
+    id: 1151,
+    exerciseName: "Exercise 1: when day (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1151",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1151),
+    completed: purchaseManagerHive.getCompleted(1151),
+  ),
+  CoursesExModel(
+    id: 1152,
+    exerciseName: "Challenge 2: when day (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1152",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1152),
+    completed: purchaseManagerHive.getCompleted(1152),
+  ),
+  CoursesExModel(
+    id: 1153,
+    exerciseName: "Exercise 3: when day (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1153",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1153),
+    completed: purchaseManagerHive.getCompleted(1153),
+  ),
+  CoursesExModel(
+    id: 1154,
+    exerciseName: "Challenge 4: when level (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1154",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1154),
+    completed: purchaseManagerHive.getCompleted(1154),
+  ),
+  CoursesExModel(
+    id: 1155,
+    exerciseName: "Exercise 5: when level (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1155",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1155),
+    completed: purchaseManagerHive.getCompleted(1155),
+  ),
+  CoursesExModel(
+    id: 1156,
+    exerciseName: "Challenge 6: when level (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1156",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1156),
+    completed: purchaseManagerHive.getCompleted(1156),
+  ),
+  CoursesExModel(
+    id: 1157,
+    exerciseName: "Exercise 7: when menu (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1157",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1157),
+    completed: purchaseManagerHive.getCompleted(1157),
+  ),
+  CoursesExModel(
+    id: 1158,
+    exerciseName: "Challenge 8: when menu (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1158",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(1158),
+    completed: purchaseManagerHive.getCompleted(1158),
+  ),
+  CoursesExModel(
+    id: 1159,
+    exerciseName: "Exercise 9: when menu (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1159",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1159),
+    completed: purchaseManagerHive.getCompleted(1159),
+  ),
+  CoursesExModel(
+    id: 1160,
+    exerciseName: "Challenge 10: when mode (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1160",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1160),
+    completed: purchaseManagerHive.getCompleted(1160),
+  ),
+  CoursesExModel(
+    id: 1161,
+    exerciseName: "Exercise 11: when mode (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1161",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1161),
+    completed: purchaseManagerHive.getCompleted(1161),
+  ),
+  CoursesExModel(
+    id: 1162,
+    exerciseName: "Challenge 12: when size (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1162",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1162),
+    completed: purchaseManagerHive.getCompleted(1162),
+  ),
+  CoursesExModel(
+    id: 1163,
+    exerciseName: "Exercise 13: when size (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1163",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1163),
+    completed: purchaseManagerHive.getCompleted(1163),
+  ),
+  CoursesExModel(
+    id: 1164,
+    exerciseName: "Challenge 14: when size (When Expressions)",
+    productID: "com.mrrubik.learnswift.kotlinex1164",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(1164),
+    completed: purchaseManagerHive.getCompleted(1164),
+  ),
+];

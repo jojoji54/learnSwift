@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListES.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListES.dart';
 import '../mainModel/Java/CoursesMainModelListES.dart';
@@ -90,10 +91,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Kotlin',
     productID: 'com.mrrubik.learnswift.kotlin',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(7),
-    coursesList: [],
+    coursesList: coursesKotlinMainModelListES,
     color1: Color(0xFF3D77BC),
     color2: Color(0xFFF88909),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Kotlin es tu entrada al desarrollo Android moderno con este lenguaje poderoso y expresivo.\n\nVersión: Kotlin 1.9',
   ),

@@ -5,6 +5,7 @@ import 'package:learnswift/data/LanguajeModel/languajeMainModel.dart';
 import 'package:learnswift/data/mainModel/Python/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Swift/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/CSharp/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
 import '../mainModel/Java/CoursesMainModelListZH.dart';
@@ -89,10 +90,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Kotlin',
     productID: 'com.mrrubik.learnswift.kotlin',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(7),
-    coursesList: [],
+    coursesList: coursesKotlinMainModelListZH,
     color1: Color(0xFF3D77BC),
     color2: Color(0xFFF88909),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Kotlin 是您进入现代 Android 开发的入门语言，功能强大且表达能力丰富。\n\n版本: Kotlin 1.9',
   ),

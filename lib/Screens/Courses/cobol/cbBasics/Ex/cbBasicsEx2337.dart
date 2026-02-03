@@ -34,8 +34,18 @@ class _CbBasicsEx2337State extends State<CbBasicsEx2337> {
   bool _isValid2337(String code) {
     final normalized = code.trim();
 
+    final lit = r'''(?:"ANA"|'ANA')''';
     final required = <RegExp>[
-      RegExp(r'DISPLAY\s+\"READY\"', multiLine: true),
+      RegExp(
+        r'''MOVE\s+''' + lit + r'''\s+TO\s+WS-NAME\s*\.?''',
+        caseSensitive: false,
+        multiLine: true,
+      ),
+      RegExp(
+        r'DISPLAY\s+WS-NAME\s*\.?',
+        caseSensitive: false,
+        multiLine: true,
+      ),
     ];
 
     for (final rule in required) {

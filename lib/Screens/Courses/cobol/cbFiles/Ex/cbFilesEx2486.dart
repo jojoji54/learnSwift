@@ -35,7 +35,9 @@ class _CbFilesEx2486State extends State<CbFilesEx2486> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("WRITE\\s+OUT-REC", caseSensitive: false, multiLine: true),
+      RegExp("AFTER\\s+ADVANCING\\s+1\\s+LINE", caseSensitive: false, multiLine: true),
+      RegExp("END-WRITE", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

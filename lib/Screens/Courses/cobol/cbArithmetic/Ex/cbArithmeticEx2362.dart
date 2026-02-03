@@ -31,11 +31,11 @@ class _CbArithmeticEx2362State extends State<CbArithmeticEx2362> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2362(String code) {
+    bool _isValid2362(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'ON SIZE ERROR', multiLine: true),
+      RegExp(r'DIVIDE\s+100\s+BY\s+4\s+GIVING\s+WS-QUO', caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +44,7 @@ class _CbArithmeticEx2362State extends State<CbArithmeticEx2362> {
 
     return true;
   }
+
 
   @override
   void dispose() {

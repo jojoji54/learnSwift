@@ -35,7 +35,9 @@ class _CbFilesEx2482State extends State<CbFilesEx2482> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("START\\s+DATA-FILE", caseSensitive: false, multiLine: true),
+      RegExp("KEY\\s+IS\\s+>=\\s+WS-KEY", caseSensitive: false, multiLine: true),
+      RegExp("END-START", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

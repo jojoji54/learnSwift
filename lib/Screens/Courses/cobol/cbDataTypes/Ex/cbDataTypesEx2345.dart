@@ -31,17 +31,24 @@ class _CbDataTypesEx2345State extends State<CbDataTypesEx2345> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2345(String code) {
+    bool _isValid2345(String code) {
     final normalized = code.trim();
 
-    // Accept: 05 WS-STATUS PIC X(2) VALUE "OK".
-    final pattern = RegExp(
-      r'''PIC\s+X\(\s*2\s*\)\s+VALUE\s+["']OK["']\s*\.''',
-      multiLine: true,
-    );
+    final required = <RegExp>[
+      RegExp(
+        "PIC\\s+X\\(\\s*3\\s*\\)\\s+VALUE\\s+[\"']YES[\"']",
+        caseSensitive: false,
+        multiLine: true,
+      ),
+    ];
 
-    return pattern.hasMatch(normalized);
+    for (final rule in required) {
+      if (!rule.hasMatch(normalized)) return false;
+    }
+
+    return true;
   }
+
 
   @override
   void dispose() {

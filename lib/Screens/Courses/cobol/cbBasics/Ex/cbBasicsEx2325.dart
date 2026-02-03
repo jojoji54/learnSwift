@@ -34,15 +34,12 @@ class _CbBasicsEx2325State extends State<CbBasicsEx2325> {
   bool _isValid2325(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'DISPLAY\s+\"Hello COBOL\"', multiLine: true),
-    ];
+    final comment = RegExp(
+      r'^\s*\*\>?\s+\S.*$',
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return comment.hasMatch(normalized);
   }
 
   @override

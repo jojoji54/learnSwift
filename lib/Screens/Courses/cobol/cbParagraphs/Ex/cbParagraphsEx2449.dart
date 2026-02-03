@@ -35,7 +35,10 @@ class _CbParagraphsEx2449State extends State<CbParagraphsEx2449> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("COUNT-PARA\\.", caseSensitive: false, multiLine: true),
+      RegExp("ADD\\s+1\\s+TO\\s+WS-CNT", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+WS-CNT", caseSensitive: false, multiLine: true),
+      RegExp("EXIT\\.", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

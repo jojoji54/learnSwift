@@ -35,7 +35,9 @@ class _CbSubprogramsEx2512State extends State<CbSubprogramsEx2512> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("CANCEL\\s+[\"']OLDPGM[\"']", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']CANCEL[\"']", caseSensitive: false, multiLine: true),
+      RegExp("GOBACK\\.", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

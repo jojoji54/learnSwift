@@ -31,13 +31,13 @@ class _CbDataTypesEx2347State extends State<CbDataTypesEx2347> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-    bool _isValid2347(String code) {
+      bool _isValid2347(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'01\s+WS-REC', multiLine: true),
-      RegExp(r'WS-ID\s+PIC\s+9\(4\)', multiLine: true),
-      RegExp(r'WS-NAME\s+PIC\s+X\(8\)', multiLine: true),
+      RegExp(r'01\s+WS-DATE\s*\.', caseSensitive: false, multiLine: true),
+      RegExp(r'05\s+WS-YYYY\s+PIC\s+9\(\s*4\s*\)', caseSensitive: false, multiLine: true),
+      RegExp(r'05\s+WS-MM\s+PIC\s+9\(\s*2\s*\)', caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -46,6 +46,7 @@ class _CbDataTypesEx2347State extends State<CbDataTypesEx2347> {
 
     return true;
   }
+
 
   @override
   void dispose() {

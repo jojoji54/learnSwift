@@ -35,7 +35,10 @@ class _CbStringsEx2433State extends State<CbStringsEx2433> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("UNSTRING\\s+WS-DATE", caseSensitive: false, multiLine: true),
+      RegExp("DELIMITED\\s+BY\\s+[\"']/[\"']", caseSensitive: false, multiLine: true),
+      RegExp("INTO\\s+WS-MM\\s+WS-DD\\s+WS-YY", caseSensitive: false, multiLine: true),
+      RegExp("END-UNSTRING", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

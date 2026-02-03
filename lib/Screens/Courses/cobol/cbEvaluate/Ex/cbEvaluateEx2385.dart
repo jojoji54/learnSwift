@@ -35,7 +35,10 @@ class _CbEvaluateEx2385State extends State<CbEvaluateEx2385> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("EVALUATE\\s+WS-STATUS", caseSensitive: false, multiLine: true),
+      RegExp("WHEN\\s+[\"']OK[\"']", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']GO[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-EVALUATE", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

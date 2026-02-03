@@ -31,11 +31,13 @@ class _CbConditionsEx2384State extends State<CbConditionsEx2384> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2384(String code) {
+        bool _isValid2384(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("IF\\s+WS-DATE\\s*=\\s*[\"']2026-02-03[\"']", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']TODAY[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-IF", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +46,9 @@ class _CbConditionsEx2384State extends State<CbConditionsEx2384> {
 
     return true;
   }
+
+
+
 
   @override
   void dispose() {

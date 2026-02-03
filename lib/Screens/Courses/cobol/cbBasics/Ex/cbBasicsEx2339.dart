@@ -34,8 +34,18 @@ class _CbBasicsEx2339State extends State<CbBasicsEx2339> {
   bool _isValid2339(String code) {
     final normalized = code.trim();
 
+    final lit = r'''(?:"BYE"|'BYE')''';
     final required = <RegExp>[
-      RegExp(r'PIC\s+9\(2\)', multiLine: true),
+      RegExp(
+        r'''DISPLAY\s+''' + lit + r'''\s*\.?''',
+        caseSensitive: false,
+        multiLine: true,
+      ),
+      RegExp(
+        r'STOP\s+RUN\s*\.?',
+        caseSensitive: false,
+        multiLine: true,
+      ),
     ];
 
     for (final rule in required) {

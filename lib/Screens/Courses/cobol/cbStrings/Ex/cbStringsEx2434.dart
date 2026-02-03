@@ -35,7 +35,8 @@ class _CbStringsEx2434State extends State<CbStringsEx2434> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("INSPECT\\s+WS-TXT", caseSensitive: false, multiLine: true),
+      RegExp("TALLYING\\s+WS-CNT\\s+FOR\\s+ALL\\s+[\"']A[\"']", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

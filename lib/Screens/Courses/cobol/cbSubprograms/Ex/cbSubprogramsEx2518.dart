@@ -35,7 +35,9 @@ class _CbSubprogramsEx2518State extends State<CbSubprogramsEx2518> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("CALL\\s+[\"']IO[\"']\\s+USING\\s+WS-REC", caseSensitive: false, multiLine: true),
+      RegExp("ON\\s+EXCEPTION\\s+DISPLAY\\s+[\"']FAIL[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-CALL", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

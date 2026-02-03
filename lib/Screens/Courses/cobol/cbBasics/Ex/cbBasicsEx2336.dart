@@ -34,15 +34,14 @@ class _CbBasicsEx2336State extends State<CbBasicsEx2336> {
   bool _isValid2336(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'EXIT PROGRAM\.', multiLine: true),
-    ];
+    final lit = r'''(?:"READY"|'READY')''';
+    final pattern = RegExp(
+      r'''DISPLAY\s+''' + lit + r'''\s*\.?''',
+      caseSensitive: false,
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

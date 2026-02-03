@@ -35,7 +35,9 @@ class _CbTablesEx2534State extends State<CbTablesEx2534> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("SEARCH\\s+ALL\\s+WS-ITEM", caseSensitive: false, multiLine: true),
+      RegExp("AT\\s+END\\s+DISPLAY\\s+[\"']NONE[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-SEARCH", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

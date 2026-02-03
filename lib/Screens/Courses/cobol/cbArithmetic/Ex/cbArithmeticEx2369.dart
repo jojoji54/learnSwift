@@ -31,11 +31,11 @@ class _CbArithmeticEx2369State extends State<CbArithmeticEx2369> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2369(String code) {
+    bool _isValid2369(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'IF\s+C\s*=\s*0', multiLine: true),
+      RegExp(r'COMPUTE\s+WS-RES\s*=\s*WS-A\s*\+\s*WS-B\s*\*\s*2', caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +44,7 @@ class _CbArithmeticEx2369State extends State<CbArithmeticEx2369> {
 
     return true;
   }
+
 
   @override
   void dispose() {

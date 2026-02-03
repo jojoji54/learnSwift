@@ -35,7 +35,9 @@ class _CbReportsEx2545State extends State<CbReportsEx2545> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("WRITE\\s+PAGE-HEAD", caseSensitive: false, multiLine: true),
+      RegExp("AFTER\\s+ADVANCING\\s+PAGE", caseSensitive: false, multiLine: true),
+      RegExp("END-WRITE", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

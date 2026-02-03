@@ -34,15 +34,13 @@ class _CbBasicsEx2332State extends State<CbBasicsEx2332> {
   bool _isValid2332(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'PERFORM\s+MAIN-PARA', multiLine: true),
-    ];
+    final pattern = RegExp(
+      r'OBJECT-COMPUTER\s*\.\s*IBM-370\s*\.?',
+      caseSensitive: false,
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

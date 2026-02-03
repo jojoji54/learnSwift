@@ -34,15 +34,13 @@ class _CbBasicsEx2335State extends State<CbBasicsEx2335> {
   bool _isValid2335(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'MOVE\s+SPACES\s+TO\s+WS-NAME', multiLine: true),
-    ];
+    final pattern = RegExp(
+      r'PROCEDURE\s+DIVISION\s*\.?',
+      caseSensitive: false,
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

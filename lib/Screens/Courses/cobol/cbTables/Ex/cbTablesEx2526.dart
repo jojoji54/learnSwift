@@ -35,7 +35,9 @@ class _CbTablesEx2526State extends State<CbTablesEx2526> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("SEARCH\\s+WS-NUM", caseSensitive: false, multiLine: true),
+      RegExp("WHEN\\s+WS-NUM\\(IDX\\)\\s*>\\s*10\\s+DISPLAY\\s+[\"']BIG[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-SEARCH", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

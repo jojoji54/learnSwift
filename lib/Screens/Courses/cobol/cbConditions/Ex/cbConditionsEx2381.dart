@@ -31,11 +31,13 @@ class _CbConditionsEx2381State extends State<CbConditionsEx2381> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2381(String code) {
+        bool _isValid2381(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("IF\\s+WS-COUNT\\s*=\\s+0", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']ZERO[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-IF", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +46,9 @@ class _CbConditionsEx2381State extends State<CbConditionsEx2381> {
 
     return true;
   }
+
+
+
 
   @override
   void dispose() {

@@ -35,7 +35,9 @@ class _CbSortEx2493State extends State<CbSortEx2493> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("SORT\\s+SORT-FILE", caseSensitive: false, multiLine: true),
+      RegExp("ON\\s+ASCENDING\\s+KEY\\s+WS-KEY", caseSensitive: false, multiLine: true),
+      RegExp("INPUT\\s+PROCEDURE\\s+IS\\s+IN-PARA", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

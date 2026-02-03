@@ -35,7 +35,9 @@ class _CbFilesEx2475State extends State<CbFilesEx2475> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("SELECT\\s+IN-FILE\\s+ASSIGN\\s+TO\\s+[\"']DATA[\"']", caseSensitive: false, multiLine: true),
+      RegExp("ORGANIZATION\\s+IS\\s+LINE\\s+SEQUENTIAL", caseSensitive: false, multiLine: true),
+      RegExp("FILE\\s+STATUS\\s+IS\\s+WS-STAT", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

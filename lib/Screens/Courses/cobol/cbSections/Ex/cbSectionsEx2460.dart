@@ -35,7 +35,9 @@ class _CbSectionsEx2460State extends State<CbSectionsEx2460> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("INIT-SECTION\\.", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']INIT[\"']", caseSensitive: false, multiLine: true),
+      RegExp("EXIT\\.", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

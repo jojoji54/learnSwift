@@ -34,15 +34,13 @@ class _CbBasicsEx2328State extends State<CbBasicsEx2328> {
   bool _isValid2328(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'STOP RUN\.', multiLine: true),
-    ];
+    final pattern = RegExp(
+      r'AUTHOR\s*\.\s*CODECRAFTERS\s*\.?',
+      caseSensitive: false,
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

@@ -35,7 +35,10 @@ class _CbStringsEx2442State extends State<CbStringsEx2442> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("UNSTRING\\s+WS-TXT", caseSensitive: false, multiLine: true),
+      RegExp("DELIMITED\\s+BY\\s+SPACE\\s+INTO\\s+WS-A\\s+WS-B", caseSensitive: false, multiLine: true),
+      RegExp("WITH\\s+POINTER\\s+WS-PTR", caseSensitive: false, multiLine: true),
+      RegExp("END-UNSTRING", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

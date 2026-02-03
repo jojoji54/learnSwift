@@ -35,7 +35,9 @@ class _CbArraysEx2422State extends State<CbArraysEx2422> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("OCCURS\\s+5\\s+TIMES", caseSensitive: false, multiLine: true),
+      RegExp("MOVE\\s+99\\s+TO\\s+WS-SCORE\\(5\\)", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+WS-SCORE\\(5\\)", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

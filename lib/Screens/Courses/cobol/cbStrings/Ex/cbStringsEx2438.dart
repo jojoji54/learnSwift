@@ -35,7 +35,8 @@ class _CbStringsEx2438State extends State<CbStringsEx2438> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("MOVE\\s+FUNCTION\\s+TRIM\\(WS-TXT\\)", caseSensitive: false, multiLine: true),
+      RegExp("TO\\s+WS-OUT", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

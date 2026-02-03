@@ -35,7 +35,9 @@ class _CbFilesEx2484State extends State<CbFilesEx2484> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("DELETE\\s+DATA-FILE", caseSensitive: false, multiLine: true),
+      RegExp("INVALID\\s+KEY\\s+DISPLAY\\s+[\"']NO[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-DELETE", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

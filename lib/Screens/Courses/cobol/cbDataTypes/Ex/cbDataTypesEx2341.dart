@@ -31,11 +31,15 @@ class _CbDataTypesEx2341State extends State<CbDataTypesEx2341> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-    bool _isValid2341(String code) {
+      bool _isValid2341(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'PIC\s+9\(3\)', multiLine: true),
+      RegExp(
+        r'PIC\s+9\(\s*3\s*\)',
+        caseSensitive: false,
+        multiLine: true,
+      ),
     ];
 
     for (final rule in required) {
@@ -44,6 +48,7 @@ class _CbDataTypesEx2341State extends State<CbDataTypesEx2341> {
 
     return true;
   }
+
 
   @override
   void dispose() {

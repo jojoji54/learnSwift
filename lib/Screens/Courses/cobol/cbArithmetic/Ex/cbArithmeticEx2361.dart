@@ -31,11 +31,11 @@ class _CbArithmeticEx2361State extends State<CbArithmeticEx2361> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2361(String code) {
+    bool _isValid2361(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'ROUNDED', multiLine: true),
+      RegExp(r'MULTIPLY\s+6\s+BY\s+7\s+GIVING\s+WS-PROD', caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +44,7 @@ class _CbArithmeticEx2361State extends State<CbArithmeticEx2361> {
 
     return true;
   }
+
 
   @override
   void dispose() {

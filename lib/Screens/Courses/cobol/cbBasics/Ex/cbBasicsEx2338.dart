@@ -35,7 +35,16 @@ class _CbBasicsEx2338State extends State<CbBasicsEx2338> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'END PROGRAM\s+DEMO', multiLine: true),
+      RegExp(
+        r'ACCEPT\s+WS-NAME\s*\.?',
+        caseSensitive: false,
+        multiLine: true,
+      ),
+      RegExp(
+        r'DISPLAY\s+WS-NAME\s*\.?',
+        caseSensitive: false,
+        multiLine: true,
+      ),
     ];
 
     for (final rule in required) {

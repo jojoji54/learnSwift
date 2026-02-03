@@ -35,7 +35,11 @@ class _CbSectionsEx2471State extends State<CbSectionsEx2471> {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'DISPLAY', multiLine: true),
+      RegExp("CHECK-SECTION\\.", caseSensitive: false, multiLine: true),
+      RegExp("IF\\s+WS-OK\\s*=\\s*[\"']Y[\"']", caseSensitive: false, multiLine: true),
+      RegExp("DISPLAY\\s+[\"']OK[\"']", caseSensitive: false, multiLine: true),
+      RegExp("END-IF\\.", caseSensitive: false, multiLine: true),
+      RegExp("EXIT\\.", caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {

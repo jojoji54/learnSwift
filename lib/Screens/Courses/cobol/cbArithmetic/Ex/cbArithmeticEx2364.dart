@@ -31,11 +31,11 @@ class _CbArithmeticEx2364State extends State<CbArithmeticEx2364> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2364(String code) {
+    bool _isValid2364(String code) {
     final normalized = code.trim();
 
     final required = <RegExp>[
-      RegExp(r'MULTIPLY\s+\w+\s+BY\s+\w+\s+GIVING', multiLine: true),
+      RegExp(r'SUBTRACT\s+WS-DISC\s+FROM\s+WS-AMT', caseSensitive: false, multiLine: true),
     ];
 
     for (final rule in required) {
@@ -44,6 +44,7 @@ class _CbArithmeticEx2364State extends State<CbArithmeticEx2364> {
 
     return true;
   }
+
 
   @override
   void dispose() {

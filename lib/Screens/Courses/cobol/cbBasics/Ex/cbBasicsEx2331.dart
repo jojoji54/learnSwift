@@ -34,16 +34,13 @@ class _CbBasicsEx2331State extends State<CbBasicsEx2331> {
   bool _isValid2331(String code) {
     final normalized = code.trim();
 
-    final required = <RegExp>[
-      RegExp(r'IF\s+WS-FLAG\s*=\s+\"Y\"', multiLine: true),
-      RegExp(r'END-IF', multiLine: true),
-    ];
+    final pattern = RegExp(
+      r'SOURCE-COMPUTER\s*\.\s*IBM-370\s*\.?',
+      caseSensitive: false,
+      multiLine: true,
+    );
 
-    for (final rule in required) {
-      if (!rule.hasMatch(normalized)) return false;
-    }
-
-    return true;
+    return pattern.hasMatch(normalized);
   }
 
   @override

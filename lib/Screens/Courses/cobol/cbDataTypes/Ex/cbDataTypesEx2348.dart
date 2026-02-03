@@ -31,21 +31,34 @@ class _CbDataTypesEx2348State extends State<CbDataTypesEx2348> {
 
   String _t(String s) => s.replaceAll('@', '{').replaceAll('&', '}');
 
-  bool _isValid2348(String code) {
+    bool _isValid2348(String code) {
     final normalized = code.trim();
 
-    // Accepts base field plus 88 condition name.
-    final baseField = RegExp(
-      r'''05\s+WS-STATUS\s+PIC\s+X\s+VALUE\s+["']P["']\s*\.''',
-      multiLine: true,
-    );
-    final cond = RegExp(
-      r'''88\s+STATUS-PAID\s+VALUE\s+["']Y["']\s*\.''',
-      multiLine: true,
-    );
+    final required = <RegExp>[
+      RegExp(
+        "05\\s+WS-STATE\\s+PIC\\s+X\\s+VALUE\\s+[\"']N[\"']",
+        caseSensitive: false,
+        multiLine: true,
+      ),
+      RegExp(
+        "88\\s+STATE-NEW\\s+VALUE\\s+[\"']N[\"']",
+        caseSensitive: false,
+        multiLine: true,
+      ),
+      RegExp(
+        "88\\s+STATE-PAID\\s+VALUE\\s+[\"']P[\"']",
+        caseSensitive: false,
+        multiLine: true,
+      ),
+    ];
 
-    return baseField.hasMatch(normalized) && cond.hasMatch(normalized);
+    for (final rule in required) {
+      if (!rule.hasMatch(normalized)) return false;
+    }
+
+    return true;
   }
+
 
   @override
   void dispose() {

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelRelationsModelEN = [
+  CoursesExModel(
+    id: 4765,
+    exerciseName: "Exercise 1: hasMany relation",
+    productID: "com.mrrubik.learnswift.laravelex4765",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4765),
+    completed: purchaseManagerHive.getCompleted(4765),
+  ),
+  CoursesExModel(
+    id: 4766,
+    exerciseName: "Challenge 2: belongsTo relation",
+    productID: "com.mrrubik.learnswift.laravelex4766",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4766),
+    completed: purchaseManagerHive.getCompleted(4766),
+  ),
+  CoursesExModel(
+    id: 4767,
+    exerciseName: "Exercise 3: many-to-many relation",
+    productID: "com.mrrubik.learnswift.laravelex4767",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4767),
+    completed: purchaseManagerHive.getCompleted(4767),
+  ),
+  CoursesExModel(
+    id: 4768,
+    exerciseName: "Challenge 4: Pivot timestamps",
+    productID: "com.mrrubik.learnswift.laravelex4768",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4768),
+    completed: purchaseManagerHive.getCompleted(4768),
+  ),
+  CoursesExModel(
+    id: 4769,
+    exerciseName: "Exercise 5: hasOne relation",
+    productID: "com.mrrubik.learnswift.laravelex4769",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4769),
+    completed: purchaseManagerHive.getCompleted(4769),
+  ),
+  CoursesExModel(
+    id: 4770,
+    exerciseName: "Challenge 6: Polymorphic morphMany",
+    productID: "com.mrrubik.learnswift.laravelex4770",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4770),
+    completed: purchaseManagerHive.getCompleted(4770),
+  ),
+  CoursesExModel(
+    id: 4771,
+    exerciseName: "Exercise 7: Eager load relationships",
+    productID: "com.mrrubik.learnswift.laravelex4771",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4771),
+    completed: purchaseManagerHive.getCompleted(4771),
+  ),
+  CoursesExModel(
+    id: 4772,
+    exerciseName: "Challenge 8: Nested eager loading",
+    productID: "com.mrrubik.learnswift.laravelex4772",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4772),
+    completed: purchaseManagerHive.getCompleted(4772),
+  ),
+  CoursesExModel(
+    id: 4773,
+    exerciseName: "Exercise 9: Query via relationship",
+    productID: "com.mrrubik.learnswift.laravelex4773",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4773),
+    completed: purchaseManagerHive.getCompleted(4773),
+  ),
+  CoursesExModel(
+    id: 4774,
+    exerciseName: "Challenge 10: withCount",
+    productID: "com.mrrubik.learnswift.laravelex4774",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4774),
+    completed: purchaseManagerHive.getCompleted(4774),
+  ),
+  CoursesExModel(
+    id: 4775,
+    exerciseName: "Exercise 11: Attach in many-to-many",
+    productID: "com.mrrubik.learnswift.laravelex4775",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4775),
+    completed: purchaseManagerHive.getCompleted(4775),
+  ),
+  CoursesExModel(
+    id: 4776,
+    exerciseName: "Challenge 12: Sync in many-to-many",
+    productID: "com.mrrubik.learnswift.laravelex4776",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4776),
+    completed: purchaseManagerHive.getCompleted(4776),
+  ),
+  CoursesExModel(
+    id: 4777,
+    exerciseName: "Exercise 13: Create related model",
+    productID: "com.mrrubik.learnswift.laravelex4777",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4777),
+    completed: purchaseManagerHive.getCompleted(4777),
+  ),
+  CoursesExModel(
+    id: 4778,
+    exerciseName: "Challenge 14: Constrain eager loading",
+    productID: "com.mrrubik.learnswift.laravelex4778",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4778),
+    completed: purchaseManagerHive.getCompleted(4778),
+  ),
+  CoursesExModel(
+    id: 4779,
+    exerciseName: "Exercise 15: Challenge: chain relations in query",
+    productID: "com.mrrubik.learnswift.laravelex4779",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4779),
+    completed: purchaseManagerHive.getCompleted(4779),
+  ),
+];

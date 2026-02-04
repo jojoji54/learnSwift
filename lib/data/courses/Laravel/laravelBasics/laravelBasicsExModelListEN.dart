@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelBasicsModelEN = [
+  CoursesExModel(
+    id: 4675,
+    exerciseName: "Exercise 1: Create a new Laravel project",
+    productID: "com.mrrubik.learnswift.laravelex4675",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4675),
+    completed: purchaseManagerHive.getCompleted(4675),
+  ),
+  CoursesExModel(
+    id: 4676,
+    exerciseName: "Challenge 2: Run the local dev server",
+    productID: "com.mrrubik.learnswift.laravelex4676",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4676),
+    completed: purchaseManagerHive.getCompleted(4676),
+  ),
+  CoursesExModel(
+    id: 4677,
+    exerciseName: "Exercise 3: Generate the app key",
+    productID: "com.mrrubik.learnswift.laravelex4677",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4677),
+    completed: purchaseManagerHive.getCompleted(4677),
+  ),
+  CoursesExModel(
+    id: 4678,
+    exerciseName: "Challenge 4: Run database migrations",
+    productID: "com.mrrubik.learnswift.laravelex4678",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4678),
+    completed: purchaseManagerHive.getCompleted(4678),
+  ),
+  CoursesExModel(
+    id: 4679,
+    exerciseName: "Exercise 5: Create a controller",
+    productID: "com.mrrubik.learnswift.laravelex4679",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4679),
+    completed: purchaseManagerHive.getCompleted(4679),
+  ),
+  CoursesExModel(
+    id: 4680,
+    exerciseName: "Challenge 6: Create a model with a migration",
+    productID: "com.mrrubik.learnswift.laravelex4680",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4680),
+    completed: purchaseManagerHive.getCompleted(4680),
+  ),
+  CoursesExModel(
+    id: 4681,
+    exerciseName: "Exercise 7: Open Tinker to play with code",
+    productID: "com.mrrubik.learnswift.laravelex4681",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4681),
+    completed: purchaseManagerHive.getCompleted(4681),
+  ),
+  CoursesExModel(
+    id: 4682,
+    exerciseName: "Challenge 8: List all routes",
+    productID: "com.mrrubik.learnswift.laravelex4682",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4682),
+    completed: purchaseManagerHive.getCompleted(4682),
+  ),
+  CoursesExModel(
+    id: 4683,
+    exerciseName: "Exercise 9: Clear caches with optimize:clear",
+    productID: "com.mrrubik.learnswift.laravelex4683",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4683),
+    completed: purchaseManagerHive.getCompleted(4683),
+  ),
+  CoursesExModel(
+    id: 4684,
+    exerciseName: "Challenge 10: Cache config for production",
+    productID: "com.mrrubik.learnswift.laravelex4684",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4684),
+    completed: purchaseManagerHive.getCompleted(4684),
+  ),
+  CoursesExModel(
+    id: 4685,
+    exerciseName: "Exercise 11: Cache routes",
+    productID: "com.mrrubik.learnswift.laravelex4685",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4685),
+    completed: purchaseManagerHive.getCompleted(4685),
+  ),
+  CoursesExModel(
+    id: 4686,
+    exerciseName: "Challenge 12: Create a Form Request class",
+    productID: "com.mrrubik.learnswift.laravelex4686",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4686),
+    completed: purchaseManagerHive.getCompleted(4686),
+  ),
+  CoursesExModel(
+    id: 4687,
+    exerciseName: "Exercise 13: Create an API Resource",
+    productID: "com.mrrubik.learnswift.laravelex4687",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4687),
+    completed: purchaseManagerHive.getCompleted(4687),
+  ),
+  CoursesExModel(
+    id: 4688,
+    exerciseName: "Challenge 14: Create a Job",
+    productID: "com.mrrubik.learnswift.laravelex4688",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4688),
+    completed: purchaseManagerHive.getCompleted(4688),
+  ),
+  CoursesExModel(
+    id: 4689,
+    exerciseName: "Exercise 15: Challenge: model + migration + controller in one go",
+    productID: "com.mrrubik.learnswift.laravelex4689",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4689),
+    completed: purchaseManagerHive.getCompleted(4689),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelControllersModelES = [
+  CoursesExModel(
+    id: 4705,
+    exerciseName: "Ejercicio 1: Devolver una vista desde un controlador",
+    productID: "com.mrrubik.learnswift.laravelex4705",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4705),
+    completed: purchaseManagerHive.getCompleted(4705),
+  ),
+  CoursesExModel(
+    id: 4706,
+    exerciseName: "Desafio 2: Inyectar Request en una accion",
+    productID: "com.mrrubik.learnswift.laravelex4706",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4706),
+    completed: purchaseManagerHive.getCompleted(4706),
+  ),
+  CoursesExModel(
+    id: 4707,
+    exerciseName: "Ejercicio 3: Leer input del Request",
+    productID: "com.mrrubik.learnswift.laravelex4707",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4707),
+    completed: purchaseManagerHive.getCompleted(4707),
+  ),
+  CoursesExModel(
+    id: 4708,
+    exerciseName: "Desafio 4: Devolver JSON",
+    productID: "com.mrrubik.learnswift.laravelex4708",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4708),
+    completed: purchaseManagerHive.getCompleted(4708),
+  ),
+  CoursesExModel(
+    id: 4709,
+    exerciseName: "Ejercicio 5: Devolver 201 Created",
+    productID: "com.mrrubik.learnswift.laravelex4709",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4709),
+    completed: purchaseManagerHive.getCompleted(4709),
+  ),
+  CoursesExModel(
+    id: 4710,
+    exerciseName: "Desafio 6: Redirigir a una ruta con nombre",
+    productID: "com.mrrubik.learnswift.laravelex4710",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4710),
+    completed: purchaseManagerHive.getCompleted(4710),
+  ),
+  CoursesExModel(
+    id: 4711,
+    exerciseName: "Ejercicio 7: Validar input en la accion",
+    productID: "com.mrrubik.learnswift.laravelex4711",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4711),
+    completed: purchaseManagerHive.getCompleted(4711),
+  ),
+  CoursesExModel(
+    id: 4712,
+    exerciseName: "Desafio 8: Usar un Form Request",
+    productID: "com.mrrubik.learnswift.laravelex4712",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4712),
+    completed: purchaseManagerHive.getCompleted(4712),
+  ),
+  CoursesExModel(
+    id: 4713,
+    exerciseName: "Ejercicio 9: Route model binding en controlador",
+    productID: "com.mrrubik.learnswift.laravelex4713",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4713),
+    completed: purchaseManagerHive.getCompleted(4713),
+  ),
+  CoursesExModel(
+    id: 4714,
+    exerciseName: "Desafio 10: Inyectar un servicio (Cache)",
+    productID: "com.mrrubik.learnswift.laravelex4714",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4714),
+    completed: purchaseManagerHive.getCompleted(4714),
+  ),
+  CoursesExModel(
+    id: 4715,
+    exerciseName: "Ejercicio 11: Devolver una descarga",
+    productID: "com.mrrubik.learnswift.laravelex4715",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4715),
+    completed: purchaseManagerHive.getCompleted(4715),
+  ),
+  CoursesExModel(
+    id: 4716,
+    exerciseName: "Desafio 12: Abortar con 404",
+    productID: "com.mrrubik.learnswift.laravelex4716",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4716),
+    completed: purchaseManagerHive.getCompleted(4716),
+  ),
+  CoursesExModel(
+    id: 4717,
+    exerciseName: "Ejercicio 13: Devolver 204 No Content",
+    productID: "com.mrrubik.learnswift.laravelex4717",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4717),
+    completed: purchaseManagerHive.getCompleted(4717),
+  ),
+  CoursesExModel(
+    id: 4718,
+    exerciseName: "Desafio 14: Agregar un header personalizado",
+    productID: "com.mrrubik.learnswift.laravelex4718",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4718),
+    completed: purchaseManagerHive.getCompleted(4718),
+  ),
+  CoursesExModel(
+    id: 4719,
+    exerciseName: "Ejercicio 15: Desafio: validar + crear + JSON",
+    productID: "com.mrrubik.learnswift.laravelex4719",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4719),
+    completed: purchaseManagerHive.getCompleted(4719),
+  ),
+];

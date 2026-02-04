@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelEventsModelZH = [
+  CoursesExModel(
+    id: 4855,
+    exerciseName: "练习 1: 创建 event",
+    productID: "com.mrrubik.learnswift.laravelex4855",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4855),
+    completed: purchaseManagerHive.getCompleted(4855),
+  ),
+  CoursesExModel(
+    id: 4856,
+    exerciseName: "挑战 2: 创建 listener",
+    productID: "com.mrrubik.learnswift.laravelex4856",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4856),
+    completed: purchaseManagerHive.getCompleted(4856),
+  ),
+  CoursesExModel(
+    id: 4857,
+    exerciseName: "练习 3: 触发 event",
+    productID: "com.mrrubik.learnswift.laravelex4857",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4857),
+    completed: purchaseManagerHive.getCompleted(4857),
+  ),
+  CoursesExModel(
+    id: 4858,
+    exerciseName: "挑战 4: listener handle()",
+    productID: "com.mrrubik.learnswift.laravelex4858",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4858),
+    completed: purchaseManagerHive.getCompleted(4858),
+  ),
+  CoursesExModel(
+    id: 4859,
+    exerciseName: "练习 5: 创建 notification",
+    productID: "com.mrrubik.learnswift.laravelex4859",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4859),
+    completed: purchaseManagerHive.getCompleted(4859),
+  ),
+  CoursesExModel(
+    id: 4860,
+    exerciseName: "挑战 6: 通知用户",
+    productID: "com.mrrubik.learnswift.laravelex4860",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4860),
+    completed: purchaseManagerHive.getCompleted(4860),
+  ),
+  CoursesExModel(
+    id: 4861,
+    exerciseName: "练习 7: 通知进队列",
+    productID: "com.mrrubik.learnswift.laravelex4861",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4861),
+    completed: purchaseManagerHive.getCompleted(4861),
+  ),
+  CoursesExModel(
+    id: 4862,
+    exerciseName: "挑战 8: database channel",
+    productID: "com.mrrubik.learnswift.laravelex4862",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4862),
+    completed: purchaseManagerHive.getCompleted(4862),
+  ),
+  CoursesExModel(
+    id: 4863,
+    exerciseName: "练习 9: mail channel",
+    productID: "com.mrrubik.learnswift.laravelex4863",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4863),
+    completed: purchaseManagerHive.getCompleted(4863),
+  ),
+  CoursesExModel(
+    id: 4864,
+    exerciseName: "挑战 10: 事件订阅者",
+    productID: "com.mrrubik.learnswift.laravelex4864",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4864),
+    completed: purchaseManagerHive.getCompleted(4864),
+  ),
+  CoursesExModel(
+    id: 4865,
+    exerciseName: "练习 11: 创建 observer",
+    productID: "com.mrrubik.learnswift.laravelex4865",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4865),
+    completed: purchaseManagerHive.getCompleted(4865),
+  ),
+  CoursesExModel(
+    id: 4866,
+    exerciseName: "挑战 12: observer created()",
+    productID: "com.mrrubik.learnswift.laravelex4866",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4866),
+    completed: purchaseManagerHive.getCompleted(4866),
+  ),
+  CoursesExModel(
+    id: 4867,
+    exerciseName: "练习 13: broadcast 概念",
+    productID: "com.mrrubik.learnswift.laravelex4867",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4867),
+    completed: purchaseManagerHive.getCompleted(4867),
+  ),
+  CoursesExModel(
+    id: 4868,
+    exerciseName: "挑战 14: 通知 + 队列",
+    productID: "com.mrrubik.learnswift.laravelex4868",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4868),
+    completed: purchaseManagerHive.getCompleted(4868),
+  ),
+  CoursesExModel(
+    id: 4869,
+    exerciseName: "练习 15: 挑战：event + listener 流程",
+    productID: "com.mrrubik.learnswift.laravelex4869",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4869),
+    completed: purchaseManagerHive.getCompleted(4869),
+  ),
+];

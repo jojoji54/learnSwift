@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelTestingModelZH = [
+  CoursesExModel(
+    id: 4870,
+    exerciseName: "练习 1: 创建测试",
+    productID: "com.mrrubik.learnswift.laravelex4870",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4870),
+    completed: purchaseManagerHive.getCompleted(4870),
+  ),
+  CoursesExModel(
+    id: 4871,
+    exerciseName: "挑战 2: 运行测试",
+    productID: "com.mrrubik.learnswift.laravelex4871",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4871),
+    completed: purchaseManagerHive.getCompleted(4871),
+  ),
+  CoursesExModel(
+    id: 4872,
+    exerciseName: "练习 3: 断言 200",
+    productID: "com.mrrubik.learnswift.laravelex4872",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4872),
+    completed: purchaseManagerHive.getCompleted(4872),
+  ),
+  CoursesExModel(
+    id: 4873,
+    exerciseName: "挑战 4: 断言 JSON",
+    productID: "com.mrrubik.learnswift.laravelex4873",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4873),
+    completed: purchaseManagerHive.getCompleted(4873),
+  ),
+  CoursesExModel(
+    id: 4874,
+    exerciseName: "练习 5: RefreshDatabase",
+    productID: "com.mrrubik.learnswift.laravelex4874",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4874),
+    completed: purchaseManagerHive.getCompleted(4874),
+  ),
+  CoursesExModel(
+    id: 4875,
+    exerciseName: "挑战 6: 使用 factory",
+    productID: "com.mrrubik.learnswift.laravelex4875",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4875),
+    completed: purchaseManagerHive.getCompleted(4875),
+  ),
+  CoursesExModel(
+    id: 4876,
+    exerciseName: "练习 7: 断言数据库",
+    productID: "com.mrrubik.learnswift.laravelex4876",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4876),
+    completed: purchaseManagerHive.getCompleted(4876),
+  ),
+  CoursesExModel(
+    id: 4877,
+    exerciseName: "挑战 8: actingAs",
+    productID: "com.mrrubik.learnswift.laravelex4877",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4877),
+    completed: purchaseManagerHive.getCompleted(4877),
+  ),
+  CoursesExModel(
+    id: 4878,
+    exerciseName: "练习 9: 通知 fake",
+    productID: "com.mrrubik.learnswift.laravelex4878",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4878),
+    completed: purchaseManagerHive.getCompleted(4878),
+  ),
+  CoursesExModel(
+    id: 4879,
+    exerciseName: "挑战 10: 断言通知发送",
+    productID: "com.mrrubik.learnswift.laravelex4879",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4879),
+    completed: purchaseManagerHive.getCompleted(4879),
+  ),
+  CoursesExModel(
+    id: 4880,
+    exerciseName: "练习 11: 事件 fake",
+    productID: "com.mrrubik.learnswift.laravelex4880",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4880),
+    completed: purchaseManagerHive.getCompleted(4880),
+  ),
+  CoursesExModel(
+    id: 4881,
+    exerciseName: "挑战 12: 队列 fake",
+    productID: "com.mrrubik.learnswift.laravelex4881",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4881),
+    completed: purchaseManagerHive.getCompleted(4881),
+  ),
+  CoursesExModel(
+    id: 4882,
+    exerciseName: "练习 13: 断言 job 推送",
+    productID: "com.mrrubik.learnswift.laravelex4882",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4882),
+    completed: purchaseManagerHive.getCompleted(4882),
+  ),
+  CoursesExModel(
+    id: 4883,
+    exerciseName: "挑战 14: HTTP fake",
+    productID: "com.mrrubik.learnswift.laravelex4883",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4883),
+    completed: purchaseManagerHive.getCompleted(4883),
+  ),
+  CoursesExModel(
+    id: 4884,
+    exerciseName: "练习 15: 挑战：测试 API",
+    productID: "com.mrrubik.learnswift.laravelex4884",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4884),
+    completed: purchaseManagerHive.getCompleted(4884),
+  ),
+];

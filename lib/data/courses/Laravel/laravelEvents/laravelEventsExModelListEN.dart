@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelEventsModelEN = [
+  CoursesExModel(
+    id: 4855,
+    exerciseName: "Exercise 1: Create an event",
+    productID: "com.mrrubik.learnswift.laravelex4855",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4855),
+    completed: purchaseManagerHive.getCompleted(4855),
+  ),
+  CoursesExModel(
+    id: 4856,
+    exerciseName: "Challenge 2: Create a listener",
+    productID: "com.mrrubik.learnswift.laravelex4856",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4856),
+    completed: purchaseManagerHive.getCompleted(4856),
+  ),
+  CoursesExModel(
+    id: 4857,
+    exerciseName: "Exercise 3: Dispatch an event",
+    productID: "com.mrrubik.learnswift.laravelex4857",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4857),
+    completed: purchaseManagerHive.getCompleted(4857),
+  ),
+  CoursesExModel(
+    id: 4858,
+    exerciseName: "Challenge 4: Listener handle() method",
+    productID: "com.mrrubik.learnswift.laravelex4858",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4858),
+    completed: purchaseManagerHive.getCompleted(4858),
+  ),
+  CoursesExModel(
+    id: 4859,
+    exerciseName: "Exercise 5: Create a notification",
+    productID: "com.mrrubik.learnswift.laravelex4859",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4859),
+    completed: purchaseManagerHive.getCompleted(4859),
+  ),
+  CoursesExModel(
+    id: 4860,
+    exerciseName: "Challenge 6: Notify a user",
+    productID: "com.mrrubik.learnswift.laravelex4860",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4860),
+    completed: purchaseManagerHive.getCompleted(4860),
+  ),
+  CoursesExModel(
+    id: 4861,
+    exerciseName: "Exercise 7: Queue notifications",
+    productID: "com.mrrubik.learnswift.laravelex4861",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4861),
+    completed: purchaseManagerHive.getCompleted(4861),
+  ),
+  CoursesExModel(
+    id: 4862,
+    exerciseName: "Challenge 8: Database notifications channel",
+    productID: "com.mrrubik.learnswift.laravelex4862",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4862),
+    completed: purchaseManagerHive.getCompleted(4862),
+  ),
+  CoursesExModel(
+    id: 4863,
+    exerciseName: "Exercise 9: Mail notifications channel",
+    productID: "com.mrrubik.learnswift.laravelex4863",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4863),
+    completed: purchaseManagerHive.getCompleted(4863),
+  ),
+  CoursesExModel(
+    id: 4864,
+    exerciseName: "Challenge 10: Event subscriber",
+    productID: "com.mrrubik.learnswift.laravelex4864",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4864),
+    completed: purchaseManagerHive.getCompleted(4864),
+  ),
+  CoursesExModel(
+    id: 4865,
+    exerciseName: "Exercise 11: Create an observer",
+    productID: "com.mrrubik.learnswift.laravelex4865",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4865),
+    completed: purchaseManagerHive.getCompleted(4865),
+  ),
+  CoursesExModel(
+    id: 4866,
+    exerciseName: "Challenge 12: Observer created() hook",
+    productID: "com.mrrubik.learnswift.laravelex4866",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4866),
+    completed: purchaseManagerHive.getCompleted(4866),
+  ),
+  CoursesExModel(
+    id: 4867,
+    exerciseName: "Exercise 13: Broadcast channel (concept)",
+    productID: "com.mrrubik.learnswift.laravelex4867",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4867),
+    completed: purchaseManagerHive.getCompleted(4867),
+  ),
+  CoursesExModel(
+    id: 4868,
+    exerciseName: "Challenge 14: Send notification with queue",
+    productID: "com.mrrubik.learnswift.laravelex4868",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4868),
+    completed: purchaseManagerHive.getCompleted(4868),
+  ),
+  CoursesExModel(
+    id: 4869,
+    exerciseName: "Exercise 15: Challenge: event + listener flow",
+    productID: "com.mrrubik.learnswift.laravelex4869",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4869),
+    completed: purchaseManagerHive.getCompleted(4869),
+  ),
+];

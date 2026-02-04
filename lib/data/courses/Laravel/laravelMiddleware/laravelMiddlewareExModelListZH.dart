@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelMiddlewareModelZH = [
+  CoursesExModel(
+    id: 4795,
+    exerciseName: "练习 1: 用 auth 保护路由",
+    productID: "com.mrrubik.learnswift.laravelex4795",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4795),
+    completed: purchaseManagerHive.getCompleted(4795),
+  ),
+  CoursesExModel(
+    id: 4796,
+    exerciseName: "挑战 2: 路由组中间件",
+    productID: "com.mrrubik.learnswift.laravelex4796",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4796),
+    completed: purchaseManagerHive.getCompleted(4796),
+  ),
+  CoursesExModel(
+    id: 4797,
+    exerciseName: "练习 3: 创建中间件",
+    productID: "com.mrrubik.learnswift.laravelex4797",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4797),
+    completed: purchaseManagerHive.getCompleted(4797),
+  ),
+  CoursesExModel(
+    id: 4798,
+    exerciseName: "挑战 4: handle() 签名",
+    productID: "com.mrrubik.learnswift.laravelex4798",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4798),
+    completed: purchaseManagerHive.getCompleted(4798),
+  ),
+  CoursesExModel(
+    id: 4799,
+    exerciseName: "练习 5: 检查是否登录",
+    productID: "com.mrrubik.learnswift.laravelex4799",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4799),
+    completed: purchaseManagerHive.getCompleted(4799),
+  ),
+  CoursesExModel(
+    id: 4800,
+    exerciseName: "挑战 6: 获取当前用户",
+    productID: "com.mrrubik.learnswift.laravelex4800",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4800),
+    completed: purchaseManagerHive.getCompleted(4800),
+  ),
+  CoursesExModel(
+    id: 4801,
+    exerciseName: "练习 7: 限流",
+    productID: "com.mrrubik.learnswift.laravelex4801",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4801),
+    completed: purchaseManagerHive.getCompleted(4801),
+  ),
+  CoursesExModel(
+    id: 4802,
+    exerciseName: "挑战 8: API auth:sanctum",
+    productID: "com.mrrubik.learnswift.laravelex4802",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4802),
+    completed: purchaseManagerHive.getCompleted(4802),
+  ),
+  CoursesExModel(
+    id: 4803,
+    exerciseName: "练习 9: 密码哈希",
+    productID: "com.mrrubik.learnswift.laravelex4803",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4803),
+    completed: purchaseManagerHive.getCompleted(4803),
+  ),
+  CoursesExModel(
+    id: 4804,
+    exerciseName: "挑战 10: 定义 Gate",
+    productID: "com.mrrubik.learnswift.laravelex4804",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4804),
+    completed: purchaseManagerHive.getCompleted(4804),
+  ),
+  CoursesExModel(
+    id: 4805,
+    exerciseName: "练习 11: 生成 Policy",
+    productID: "com.mrrubik.learnswift.laravelex4805",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4805),
+    completed: purchaseManagerHive.getCompleted(4805),
+  ),
+  CoursesExModel(
+    id: 4806,
+    exerciseName: "挑战 12: 控制器授权",
+    productID: "com.mrrubik.learnswift.laravelex4806",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4806),
+    completed: purchaseManagerHive.getCompleted(4806),
+  ),
+  CoursesExModel(
+    id: 4807,
+    exerciseName: "练习 13: 路由 can 中间件",
+    productID: "com.mrrubik.learnswift.laravelex4807",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4807),
+    completed: purchaseManagerHive.getCompleted(4807),
+  ),
+  CoursesExModel(
+    id: 4808,
+    exerciseName: "挑战 14: signed 中间件",
+    productID: "com.mrrubik.learnswift.laravelex4808",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4808),
+    completed: purchaseManagerHive.getCompleted(4808),
+  ),
+  CoursesExModel(
+    id: 4809,
+    exerciseName: "练习 15: 挑战：保护并返回 403",
+    productID: "com.mrrubik.learnswift.laravelex4809",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4809),
+    completed: purchaseManagerHive.getCompleted(4809),
+  ),
+];

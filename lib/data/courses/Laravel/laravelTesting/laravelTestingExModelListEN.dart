@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelTestingModelEN = [
+  CoursesExModel(
+    id: 4870,
+    exerciseName: "Exercise 1: Create a feature test",
+    productID: "com.mrrubik.learnswift.laravelex4870",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4870),
+    completed: purchaseManagerHive.getCompleted(4870),
+  ),
+  CoursesExModel(
+    id: 4871,
+    exerciseName: "Challenge 2: Run tests",
+    productID: "com.mrrubik.learnswift.laravelex4871",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4871),
+    completed: purchaseManagerHive.getCompleted(4871),
+  ),
+  CoursesExModel(
+    id: 4872,
+    exerciseName: "Exercise 3: Assert status 200",
+    productID: "com.mrrubik.learnswift.laravelex4872",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4872),
+    completed: purchaseManagerHive.getCompleted(4872),
+  ),
+  CoursesExModel(
+    id: 4873,
+    exerciseName: "Challenge 4: Assert JSON structure",
+    productID: "com.mrrubik.learnswift.laravelex4873",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4873),
+    completed: purchaseManagerHive.getCompleted(4873),
+  ),
+  CoursesExModel(
+    id: 4874,
+    exerciseName: "Exercise 5: RefreshDatabase trait",
+    productID: "com.mrrubik.learnswift.laravelex4874",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4874),
+    completed: purchaseManagerHive.getCompleted(4874),
+  ),
+  CoursesExModel(
+    id: 4875,
+    exerciseName: "Challenge 6: Use a factory",
+    productID: "com.mrrubik.learnswift.laravelex4875",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4875),
+    completed: purchaseManagerHive.getCompleted(4875),
+  ),
+  CoursesExModel(
+    id: 4876,
+    exerciseName: "Exercise 7: Assert database has row",
+    productID: "com.mrrubik.learnswift.laravelex4876",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4876),
+    completed: purchaseManagerHive.getCompleted(4876),
+  ),
+  CoursesExModel(
+    id: 4877,
+    exerciseName: "Challenge 8: Act as a user",
+    productID: "com.mrrubik.learnswift.laravelex4877",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4877),
+    completed: purchaseManagerHive.getCompleted(4877),
+  ),
+  CoursesExModel(
+    id: 4878,
+    exerciseName: "Exercise 9: Fake notifications",
+    productID: "com.mrrubik.learnswift.laravelex4878",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4878),
+    completed: purchaseManagerHive.getCompleted(4878),
+  ),
+  CoursesExModel(
+    id: 4879,
+    exerciseName: "Challenge 10: Assert notification sent",
+    productID: "com.mrrubik.learnswift.laravelex4879",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4879),
+    completed: purchaseManagerHive.getCompleted(4879),
+  ),
+  CoursesExModel(
+    id: 4880,
+    exerciseName: "Exercise 11: Fake events",
+    productID: "com.mrrubik.learnswift.laravelex4880",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4880),
+    completed: purchaseManagerHive.getCompleted(4880),
+  ),
+  CoursesExModel(
+    id: 4881,
+    exerciseName: "Challenge 12: Fake queues",
+    productID: "com.mrrubik.learnswift.laravelex4881",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4881),
+    completed: purchaseManagerHive.getCompleted(4881),
+  ),
+  CoursesExModel(
+    id: 4882,
+    exerciseName: "Exercise 13: Assert job pushed",
+    productID: "com.mrrubik.learnswift.laravelex4882",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4882),
+    completed: purchaseManagerHive.getCompleted(4882),
+  ),
+  CoursesExModel(
+    id: 4883,
+    exerciseName: "Challenge 14: Fake HTTP",
+    productID: "com.mrrubik.learnswift.laravelex4883",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4883),
+    completed: purchaseManagerHive.getCompleted(4883),
+  ),
+  CoursesExModel(
+    id: 4884,
+    exerciseName: "Exercise 15: Challenge: test an API endpoint",
+    productID: "com.mrrubik.learnswift.laravelex4884",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4884),
+    completed: purchaseManagerHive.getCompleted(4884),
+  ),
+];

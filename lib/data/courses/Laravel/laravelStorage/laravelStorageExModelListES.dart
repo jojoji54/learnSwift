@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelStorageModelES = [
+  CoursesExModel(
+    id: 4825,
+    exerciseName: "Ejercicio 1: Guardar un archivo subido",
+    productID: "com.mrrubik.learnswift.laravelex4825",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4825),
+    completed: purchaseManagerHive.getCompleted(4825),
+  ),
+  CoursesExModel(
+    id: 4826,
+    exerciseName: "Desafio 2: Guardar en disco public",
+    productID: "com.mrrubik.learnswift.laravelex4826",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4826),
+    completed: purchaseManagerHive.getCompleted(4826),
+  ),
+  CoursesExModel(
+    id: 4827,
+    exerciseName: "Ejercicio 3: Leer un archivo",
+    productID: "com.mrrubik.learnswift.laravelex4827",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4827),
+    completed: purchaseManagerHive.getCompleted(4827),
+  ),
+  CoursesExModel(
+    id: 4828,
+    exerciseName: "Desafio 4: Comprobar si existe",
+    productID: "com.mrrubik.learnswift.laravelex4828",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4828),
+    completed: purchaseManagerHive.getCompleted(4828),
+  ),
+  CoursesExModel(
+    id: 4829,
+    exerciseName: "Ejercicio 5: Borrar un archivo",
+    productID: "com.mrrubik.learnswift.laravelex4829",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4829),
+    completed: purchaseManagerHive.getCompleted(4829),
+  ),
+  CoursesExModel(
+    id: 4830,
+    exerciseName: "Desafio 6: Obtener URL publica",
+    productID: "com.mrrubik.learnswift.laravelex4830",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4830),
+    completed: purchaseManagerHive.getCompleted(4830),
+  ),
+  CoursesExModel(
+    id: 4831,
+    exerciseName: "Ejercicio 7: Crear symlink storage",
+    productID: "com.mrrubik.learnswift.laravelex4831",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4831),
+    completed: purchaseManagerHive.getCompleted(4831),
+  ),
+  CoursesExModel(
+    id: 4832,
+    exerciseName: "Desafio 8: Descargar un archivo",
+    productID: "com.mrrubik.learnswift.laravelex4832",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4832),
+    completed: purchaseManagerHive.getCompleted(4832),
+  ),
+  CoursesExModel(
+    id: 4833,
+    exerciseName: "Ejercicio 9: URL temporal",
+    productID: "com.mrrubik.learnswift.laravelex4833",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4833),
+    completed: purchaseManagerHive.getCompleted(4833),
+  ),
+  CoursesExModel(
+    id: 4834,
+    exerciseName: "Desafio 10: Listar archivos",
+    productID: "com.mrrubik.learnswift.laravelex4834",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4834),
+    completed: purchaseManagerHive.getCompleted(4834),
+  ),
+  CoursesExModel(
+    id: 4835,
+    exerciseName: "Ejercicio 11: Tamano de archivo",
+    productID: "com.mrrubik.learnswift.laravelex4835",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4835),
+    completed: purchaseManagerHive.getCompleted(4835),
+  ),
+  CoursesExModel(
+    id: 4836,
+    exerciseName: "Desafio 12: Crear un directorio",
+    productID: "com.mrrubik.learnswift.laravelex4836",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4836),
+    completed: purchaseManagerHive.getCompleted(4836),
+  ),
+  CoursesExModel(
+    id: 4837,
+    exerciseName: "Ejercicio 13: Mover un archivo",
+    productID: "com.mrrubik.learnswift.laravelex4837",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4837),
+    completed: purchaseManagerHive.getCompleted(4837),
+  ),
+  CoursesExModel(
+    id: 4838,
+    exerciseName: "Desafio 14: Copiar un archivo",
+    productID: "com.mrrubik.learnswift.laravelex4838",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4838),
+    completed: purchaseManagerHive.getCompleted(4838),
+  ),
+  CoursesExModel(
+    id: 4839,
+    exerciseName: "Ejercicio 15: Desafio: subir y devolver URL",
+    productID: "com.mrrubik.learnswift.laravelex4839",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4839),
+    completed: purchaseManagerHive.getCompleted(4839),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelEloquentModelZH = [
+  CoursesExModel(
+    id: 4750,
+    exerciseName: "练习 1: 用 \$fillable 允许批量赋值",
+    productID: "com.mrrubik.learnswift.laravelex4750",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4750),
+    completed: purchaseManagerHive.getCompleted(4750),
+  ),
+  CoursesExModel(
+    id: 4751,
+    exerciseName: "挑战 2: 创建记录",
+    productID: "com.mrrubik.learnswift.laravelex4751",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4751),
+    completed: purchaseManagerHive.getCompleted(4751),
+  ),
+  CoursesExModel(
+    id: 4752,
+    exerciseName: "练习 3: 按 id 查找",
+    productID: "com.mrrubik.learnswift.laravelex4752",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4752),
+    completed: purchaseManagerHive.getCompleted(4752),
+  ),
+  CoursesExModel(
+    id: 4753,
+    exerciseName: "挑战 4: where + first",
+    productID: "com.mrrubik.learnswift.laravelex4753",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4753),
+    completed: purchaseManagerHive.getCompleted(4753),
+  ),
+  CoursesExModel(
+    id: 4754,
+    exerciseName: "练习 5: 排序并 get",
+    productID: "com.mrrubik.learnswift.laravelex4754",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4754),
+    completed: purchaseManagerHive.getCompleted(4754),
+  ),
+  CoursesExModel(
+    id: 4755,
+    exerciseName: "挑战 6: 分页",
+    productID: "com.mrrubik.learnswift.laravelex4755",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4755),
+    completed: purchaseManagerHive.getCompleted(4755),
+  ),
+  CoursesExModel(
+    id: 4756,
+    exerciseName: "练习 7: 更新模型",
+    productID: "com.mrrubik.learnswift.laravelex4756",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4756),
+    completed: purchaseManagerHive.getCompleted(4756),
+  ),
+  CoursesExModel(
+    id: 4757,
+    exerciseName: "挑战 8: 删除模型",
+    productID: "com.mrrubik.learnswift.laravelex4757",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4757),
+    completed: purchaseManagerHive.getCompleted(4757),
+  ),
+  CoursesExModel(
+    id: 4758,
+    exerciseName: "练习 9: 类型转换 casts",
+    productID: "com.mrrubik.learnswift.laravelex4758",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4758),
+    completed: purchaseManagerHive.getCompleted(4758),
+  ),
+  CoursesExModel(
+    id: 4759,
+    exerciseName: "挑战 10: 定义 accessor",
+    productID: "com.mrrubik.learnswift.laravelex4759",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4759),
+    completed: purchaseManagerHive.getCompleted(4759),
+  ),
+  CoursesExModel(
+    id: 4760,
+    exerciseName: "练习 11: 定义 mutator",
+    productID: "com.mrrubik.learnswift.laravelex4760",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4760),
+    completed: purchaseManagerHive.getCompleted(4760),
+  ),
+  CoursesExModel(
+    id: 4761,
+    exerciseName: "挑战 12: 创建 scope",
+    productID: "com.mrrubik.learnswift.laravelex4761",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4761),
+    completed: purchaseManagerHive.getCompleted(4761),
+  ),
+  CoursesExModel(
+    id: 4762,
+    exerciseName: "练习 13: 选择列",
+    productID: "com.mrrubik.learnswift.laravelex4762",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4762),
+    completed: purchaseManagerHive.getCompleted(4762),
+  ),
+  CoursesExModel(
+    id: 4763,
+    exerciseName: "挑战 14: firstOrCreate",
+    productID: "com.mrrubik.learnswift.laravelex4763",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4763),
+    completed: purchaseManagerHive.getCompleted(4763),
+  ),
+  CoursesExModel(
+    id: 4764,
+    exerciseName: "练习 15: 挑战：创建并返回 id",
+    productID: "com.mrrubik.learnswift.laravelex4764",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4764),
+    completed: purchaseManagerHive.getCompleted(4764),
+  ),
+];

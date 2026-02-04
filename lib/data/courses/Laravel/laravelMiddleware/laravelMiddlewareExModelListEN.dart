@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelMiddlewareModelEN = [
+  CoursesExModel(
+    id: 4795,
+    exerciseName: "Exercise 1: Protect a route with auth middleware",
+    productID: "com.mrrubik.learnswift.laravelex4795",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4795),
+    completed: purchaseManagerHive.getCompleted(4795),
+  ),
+  CoursesExModel(
+    id: 4796,
+    exerciseName: "Challenge 2: Group routes under middleware",
+    productID: "com.mrrubik.learnswift.laravelex4796",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4796),
+    completed: purchaseManagerHive.getCompleted(4796),
+  ),
+  CoursesExModel(
+    id: 4797,
+    exerciseName: "Exercise 3: Create a middleware class",
+    productID: "com.mrrubik.learnswift.laravelex4797",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4797),
+    completed: purchaseManagerHive.getCompleted(4797),
+  ),
+  CoursesExModel(
+    id: 4798,
+    exerciseName: "Challenge 4: Middleware handle signature",
+    productID: "com.mrrubik.learnswift.laravelex4798",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4798),
+    completed: purchaseManagerHive.getCompleted(4798),
+  ),
+  CoursesExModel(
+    id: 4799,
+    exerciseName: "Exercise 5: Check auth state",
+    productID: "com.mrrubik.learnswift.laravelex4799",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4799),
+    completed: purchaseManagerHive.getCompleted(4799),
+  ),
+  CoursesExModel(
+    id: 4800,
+    exerciseName: "Challenge 6: Get the current user",
+    productID: "com.mrrubik.learnswift.laravelex4800",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4800),
+    completed: purchaseManagerHive.getCompleted(4800),
+  ),
+  CoursesExModel(
+    id: 4801,
+    exerciseName: "Exercise 7: Throttle a route",
+    productID: "com.mrrubik.learnswift.laravelex4801",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4801),
+    completed: purchaseManagerHive.getCompleted(4801),
+  ),
+  CoursesExModel(
+    id: 4802,
+    exerciseName: "Challenge 8: Use auth:sanctum for API",
+    productID: "com.mrrubik.learnswift.laravelex4802",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4802),
+    completed: purchaseManagerHive.getCompleted(4802),
+  ),
+  CoursesExModel(
+    id: 4803,
+    exerciseName: "Exercise 9: Hash a password",
+    productID: "com.mrrubik.learnswift.laravelex4803",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4803),
+    completed: purchaseManagerHive.getCompleted(4803),
+  ),
+  CoursesExModel(
+    id: 4804,
+    exerciseName: "Challenge 10: Define a Gate",
+    productID: "com.mrrubik.learnswift.laravelex4804",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4804),
+    completed: purchaseManagerHive.getCompleted(4804),
+  ),
+  CoursesExModel(
+    id: 4805,
+    exerciseName: "Exercise 11: Generate a Policy",
+    productID: "com.mrrubik.learnswift.laravelex4805",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4805),
+    completed: purchaseManagerHive.getCompleted(4805),
+  ),
+  CoursesExModel(
+    id: 4806,
+    exerciseName: "Challenge 12: Authorize in controller",
+    productID: "com.mrrubik.learnswift.laravelex4806",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4806),
+    completed: purchaseManagerHive.getCompleted(4806),
+  ),
+  CoursesExModel(
+    id: 4807,
+    exerciseName: "Exercise 13: can middleware on a route",
+    productID: "com.mrrubik.learnswift.laravelex4807",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4807),
+    completed: purchaseManagerHive.getCompleted(4807),
+  ),
+  CoursesExModel(
+    id: 4808,
+    exerciseName: "Challenge 14: Signed middleware",
+    productID: "com.mrrubik.learnswift.laravelex4808",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4808),
+    completed: purchaseManagerHive.getCompleted(4808),
+  ),
+  CoursesExModel(
+    id: 4809,
+    exerciseName: "Exercise 15: Challenge: protect and return 403",
+    productID: "com.mrrubik.learnswift.laravelex4809",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4809),
+    completed: purchaseManagerHive.getCompleted(4809),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelBladeModelEN = [
+  CoursesExModel(
+    id: 4720,
+    exerciseName: "Exercise 1: Echo a variable",
+    productID: "com.mrrubik.learnswift.laravelex4720",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4720),
+    completed: purchaseManagerHive.getCompleted(4720),
+  ),
+  CoursesExModel(
+    id: 4721,
+    exerciseName: "Challenge 2: Escape-safe output (default)",
+    productID: "com.mrrubik.learnswift.laravelex4721",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4721),
+    completed: purchaseManagerHive.getCompleted(4721),
+  ),
+  CoursesExModel(
+    id: 4722,
+    exerciseName: "Exercise 3: Extend a layout",
+    productID: "com.mrrubik.learnswift.laravelex4722",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4722),
+    completed: purchaseManagerHive.getCompleted(4722),
+  ),
+  CoursesExModel(
+    id: 4723,
+    exerciseName: "Challenge 4: Create a content section",
+    productID: "com.mrrubik.learnswift.laravelex4723",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4723),
+    completed: purchaseManagerHive.getCompleted(4723),
+  ),
+  CoursesExModel(
+    id: 4724,
+    exerciseName: "Exercise 5: Include a partial",
+    productID: "com.mrrubik.learnswift.laravelex4724",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4724),
+    completed: purchaseManagerHive.getCompleted(4724),
+  ),
+  CoursesExModel(
+    id: 4725,
+    exerciseName: "Challenge 6: Loop with foreach",
+    productID: "com.mrrubik.learnswift.laravelex4725",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4725),
+    completed: purchaseManagerHive.getCompleted(4725),
+  ),
+  CoursesExModel(
+    id: 4726,
+    exerciseName: "Exercise 7: Conditional if/else",
+    productID: "com.mrrubik.learnswift.laravelex4726",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4726),
+    completed: purchaseManagerHive.getCompleted(4726),
+  ),
+  CoursesExModel(
+    id: 4727,
+    exerciseName: "Challenge 8: CSRF token in a form",
+    productID: "com.mrrubik.learnswift.laravelex4727",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4727),
+    completed: purchaseManagerHive.getCompleted(4727),
+  ),
+  CoursesExModel(
+    id: 4728,
+    exerciseName: "Exercise 9: Old input helper",
+    productID: "com.mrrubik.learnswift.laravelex4728",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4728),
+    completed: purchaseManagerHive.getCompleted(4728),
+  ),
+  CoursesExModel(
+    id: 4729,
+    exerciseName: "Challenge 10: Show the first error",
+    productID: "com.mrrubik.learnswift.laravelex4729",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4729),
+    completed: purchaseManagerHive.getCompleted(4729),
+  ),
+  CoursesExModel(
+    id: 4730,
+    exerciseName: "Exercise 11: Use a Blade component tag",
+    productID: "com.mrrubik.learnswift.laravelex4730",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4730),
+    completed: purchaseManagerHive.getCompleted(4730),
+  ),
+  CoursesExModel(
+    id: 4731,
+    exerciseName: "Challenge 12: Use a component slot",
+    productID: "com.mrrubik.learnswift.laravelex4731",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4731),
+    completed: purchaseManagerHive.getCompleted(4731),
+  ),
+  CoursesExModel(
+    id: 4732,
+    exerciseName: "Exercise 13: Auth-only block",
+    productID: "com.mrrubik.learnswift.laravelex4732",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4732),
+    completed: purchaseManagerHive.getCompleted(4732),
+  ),
+  CoursesExModel(
+    id: 4733,
+    exerciseName: "Challenge 14: Authorization check (can)",
+    productID: "com.mrrubik.learnswift.laravelex4733",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4733),
+    completed: purchaseManagerHive.getCompleted(4733),
+  ),
+  CoursesExModel(
+    id: 4734,
+    exerciseName: "Exercise 15: Challenge: forelse with empty",
+    productID: "com.mrrubik.learnswift.laravelex4734",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4734),
+    completed: purchaseManagerHive.getCompleted(4734),
+  ),
+];

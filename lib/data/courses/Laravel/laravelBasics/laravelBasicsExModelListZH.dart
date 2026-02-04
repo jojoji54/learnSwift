@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelBasicsModelZH = [
+  CoursesExModel(
+    id: 4675,
+    exerciseName: "练习 1: 创建 Laravel 项目",
+    productID: "com.mrrubik.learnswift.laravelex4675",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4675),
+    completed: purchaseManagerHive.getCompleted(4675),
+  ),
+  CoursesExModel(
+    id: 4676,
+    exerciseName: "挑战 2: 启动本地服务器",
+    productID: "com.mrrubik.learnswift.laravelex4676",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4676),
+    completed: purchaseManagerHive.getCompleted(4676),
+  ),
+  CoursesExModel(
+    id: 4677,
+    exerciseName: "练习 3: 生成应用 key",
+    productID: "com.mrrubik.learnswift.laravelex4677",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4677),
+    completed: purchaseManagerHive.getCompleted(4677),
+  ),
+  CoursesExModel(
+    id: 4678,
+    exerciseName: "挑战 4: 运行迁移",
+    productID: "com.mrrubik.learnswift.laravelex4678",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4678),
+    completed: purchaseManagerHive.getCompleted(4678),
+  ),
+  CoursesExModel(
+    id: 4679,
+    exerciseName: "练习 5: 创建控制器",
+    productID: "com.mrrubik.learnswift.laravelex4679",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4679),
+    completed: purchaseManagerHive.getCompleted(4679),
+  ),
+  CoursesExModel(
+    id: 4680,
+    exerciseName: "挑战 6: 创建模型并生成迁移",
+    productID: "com.mrrubik.learnswift.laravelex4680",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4680),
+    completed: purchaseManagerHive.getCompleted(4680),
+  ),
+  CoursesExModel(
+    id: 4681,
+    exerciseName: "练习 7: 打开 Tinker",
+    productID: "com.mrrubik.learnswift.laravelex4681",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4681),
+    completed: purchaseManagerHive.getCompleted(4681),
+  ),
+  CoursesExModel(
+    id: 4682,
+    exerciseName: "挑战 8: 列出路由",
+    productID: "com.mrrubik.learnswift.laravelex4682",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4682),
+    completed: purchaseManagerHive.getCompleted(4682),
+  ),
+  CoursesExModel(
+    id: 4683,
+    exerciseName: "练习 9: 清理缓存 optimize:clear",
+    productID: "com.mrrubik.learnswift.laravelex4683",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4683),
+    completed: purchaseManagerHive.getCompleted(4683),
+  ),
+  CoursesExModel(
+    id: 4684,
+    exerciseName: "挑战 10: 缓存配置（生产）",
+    productID: "com.mrrubik.learnswift.laravelex4684",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4684),
+    completed: purchaseManagerHive.getCompleted(4684),
+  ),
+  CoursesExModel(
+    id: 4685,
+    exerciseName: "练习 11: 缓存路由",
+    productID: "com.mrrubik.learnswift.laravelex4685",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4685),
+    completed: purchaseManagerHive.getCompleted(4685),
+  ),
+  CoursesExModel(
+    id: 4686,
+    exerciseName: "挑战 12: 创建 Form Request",
+    productID: "com.mrrubik.learnswift.laravelex4686",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4686),
+    completed: purchaseManagerHive.getCompleted(4686),
+  ),
+  CoursesExModel(
+    id: 4687,
+    exerciseName: "练习 13: 创建 API Resource",
+    productID: "com.mrrubik.learnswift.laravelex4687",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4687),
+    completed: purchaseManagerHive.getCompleted(4687),
+  ),
+  CoursesExModel(
+    id: 4688,
+    exerciseName: "挑战 14: 创建 Job",
+    productID: "com.mrrubik.learnswift.laravelex4688",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4688),
+    completed: purchaseManagerHive.getCompleted(4688),
+  ),
+  CoursesExModel(
+    id: 4689,
+    exerciseName: "练习 15: 挑战：一次生成 model+migration+controller",
+    productID: "com.mrrubik.learnswift.laravelex4689",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4689),
+    completed: purchaseManagerHive.getCompleted(4689),
+  ),
+];

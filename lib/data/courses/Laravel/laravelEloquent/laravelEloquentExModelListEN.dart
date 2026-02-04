@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelEloquentModelEN = [
+  CoursesExModel(
+    id: 4750,
+    exerciseName: "Exercise 1: Allow mass assignment with \$fillable",
+    productID: "com.mrrubik.learnswift.laravelex4750",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4750),
+    completed: purchaseManagerHive.getCompleted(4750),
+  ),
+  CoursesExModel(
+    id: 4751,
+    exerciseName: "Challenge 2: Create a record",
+    productID: "com.mrrubik.learnswift.laravelex4751",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4751),
+    completed: purchaseManagerHive.getCompleted(4751),
+  ),
+  CoursesExModel(
+    id: 4752,
+    exerciseName: "Exercise 3: Find by id",
+    productID: "com.mrrubik.learnswift.laravelex4752",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4752),
+    completed: purchaseManagerHive.getCompleted(4752),
+  ),
+  CoursesExModel(
+    id: 4753,
+    exerciseName: "Challenge 4: Where + first",
+    productID: "com.mrrubik.learnswift.laravelex4753",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4753),
+    completed: purchaseManagerHive.getCompleted(4753),
+  ),
+  CoursesExModel(
+    id: 4754,
+    exerciseName: "Exercise 5: Order and get",
+    productID: "com.mrrubik.learnswift.laravelex4754",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4754),
+    completed: purchaseManagerHive.getCompleted(4754),
+  ),
+  CoursesExModel(
+    id: 4755,
+    exerciseName: "Challenge 6: Paginate results",
+    productID: "com.mrrubik.learnswift.laravelex4755",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4755),
+    completed: purchaseManagerHive.getCompleted(4755),
+  ),
+  CoursesExModel(
+    id: 4756,
+    exerciseName: "Exercise 7: Update a model",
+    productID: "com.mrrubik.learnswift.laravelex4756",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4756),
+    completed: purchaseManagerHive.getCompleted(4756),
+  ),
+  CoursesExModel(
+    id: 4757,
+    exerciseName: "Challenge 8: Delete a model",
+    productID: "com.mrrubik.learnswift.laravelex4757",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4757),
+    completed: purchaseManagerHive.getCompleted(4757),
+  ),
+  CoursesExModel(
+    id: 4758,
+    exerciseName: "Exercise 9: Cast an attribute",
+    productID: "com.mrrubik.learnswift.laravelex4758",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4758),
+    completed: purchaseManagerHive.getCompleted(4758),
+  ),
+  CoursesExModel(
+    id: 4759,
+    exerciseName: "Challenge 10: Define an accessor",
+    productID: "com.mrrubik.learnswift.laravelex4759",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4759),
+    completed: purchaseManagerHive.getCompleted(4759),
+  ),
+  CoursesExModel(
+    id: 4760,
+    exerciseName: "Exercise 11: Define a mutator",
+    productID: "com.mrrubik.learnswift.laravelex4760",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4760),
+    completed: purchaseManagerHive.getCompleted(4760),
+  ),
+  CoursesExModel(
+    id: 4761,
+    exerciseName: "Challenge 12: Create a local scope",
+    productID: "com.mrrubik.learnswift.laravelex4761",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4761),
+    completed: purchaseManagerHive.getCompleted(4761),
+  ),
+  CoursesExModel(
+    id: 4762,
+    exerciseName: "Exercise 13: Select specific columns",
+    productID: "com.mrrubik.learnswift.laravelex4762",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4762),
+    completed: purchaseManagerHive.getCompleted(4762),
+  ),
+  CoursesExModel(
+    id: 4763,
+    exerciseName: "Challenge 14: First or create",
+    productID: "com.mrrubik.learnswift.laravelex4763",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4763),
+    completed: purchaseManagerHive.getCompleted(4763),
+  ),
+  CoursesExModel(
+    id: 4764,
+    exerciseName: "Exercise 15: Challenge: create + return JSON id",
+    productID: "com.mrrubik.learnswift.laravelex4764",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4764),
+    completed: purchaseManagerHive.getCompleted(4764),
+  ),
+];

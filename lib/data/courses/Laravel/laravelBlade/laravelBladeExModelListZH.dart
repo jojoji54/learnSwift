@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelBladeModelZH = [
+  CoursesExModel(
+    id: 4720,
+    exerciseName: "练习 1: 输出变量",
+    productID: "com.mrrubik.learnswift.laravelex4720",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4720),
+    completed: purchaseManagerHive.getCompleted(4720),
+  ),
+  CoursesExModel(
+    id: 4721,
+    exerciseName: "挑战 2: 默认转义输出",
+    productID: "com.mrrubik.learnswift.laravelex4721",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4721),
+    completed: purchaseManagerHive.getCompleted(4721),
+  ),
+  CoursesExModel(
+    id: 4722,
+    exerciseName: "练习 3: 继承布局",
+    productID: "com.mrrubik.learnswift.laravelex4722",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4722),
+    completed: purchaseManagerHive.getCompleted(4722),
+  ),
+  CoursesExModel(
+    id: 4723,
+    exerciseName: "挑战 4: 定义 content 区块",
+    productID: "com.mrrubik.learnswift.laravelex4723",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4723),
+    completed: purchaseManagerHive.getCompleted(4723),
+  ),
+  CoursesExModel(
+    id: 4724,
+    exerciseName: "练习 5: 包含 partial",
+    productID: "com.mrrubik.learnswift.laravelex4724",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4724),
+    completed: purchaseManagerHive.getCompleted(4724),
+  ),
+  CoursesExModel(
+    id: 4725,
+    exerciseName: "挑战 6: foreach 循环",
+    productID: "com.mrrubik.learnswift.laravelex4725",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4725),
+    completed: purchaseManagerHive.getCompleted(4725),
+  ),
+  CoursesExModel(
+    id: 4726,
+    exerciseName: "练习 7: if/else 条件",
+    productID: "com.mrrubik.learnswift.laravelex4726",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4726),
+    completed: purchaseManagerHive.getCompleted(4726),
+  ),
+  CoursesExModel(
+    id: 4727,
+    exerciseName: "挑战 8: 表单 CSRF",
+    productID: "com.mrrubik.learnswift.laravelex4727",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4727),
+    completed: purchaseManagerHive.getCompleted(4727),
+  ),
+  CoursesExModel(
+    id: 4728,
+    exerciseName: "练习 9: old() 回填",
+    productID: "com.mrrubik.learnswift.laravelex4728",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4728),
+    completed: purchaseManagerHive.getCompleted(4728),
+  ),
+  CoursesExModel(
+    id: 4729,
+    exerciseName: "挑战 10: 显示第一个错误",
+    productID: "com.mrrubik.learnswift.laravelex4729",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4729),
+    completed: purchaseManagerHive.getCompleted(4729),
+  ),
+  CoursesExModel(
+    id: 4730,
+    exerciseName: "练习 11: 使用组件标签",
+    productID: "com.mrrubik.learnswift.laravelex4730",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4730),
+    completed: purchaseManagerHive.getCompleted(4730),
+  ),
+  CoursesExModel(
+    id: 4731,
+    exerciseName: "挑战 12: 使用 slot",
+    productID: "com.mrrubik.learnswift.laravelex4731",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4731),
+    completed: purchaseManagerHive.getCompleted(4731),
+  ),
+  CoursesExModel(
+    id: 4732,
+    exerciseName: "练习 13: 仅登录可见",
+    productID: "com.mrrubik.learnswift.laravelex4732",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4732),
+    completed: purchaseManagerHive.getCompleted(4732),
+  ),
+  CoursesExModel(
+    id: 4733,
+    exerciseName: "挑战 14: 权限检查 can",
+    productID: "com.mrrubik.learnswift.laravelex4733",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4733),
+    completed: purchaseManagerHive.getCompleted(4733),
+  ),
+  CoursesExModel(
+    id: 4734,
+    exerciseName: "练习 15: 挑战：forelse + empty",
+    productID: "com.mrrubik.learnswift.laravelex4734",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4734),
+    completed: purchaseManagerHive.getCompleted(4734),
+  ),
+];

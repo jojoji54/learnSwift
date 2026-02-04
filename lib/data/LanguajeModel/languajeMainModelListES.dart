@@ -13,6 +13,7 @@ import 'package:learnswift/data/mainModel/React/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Symfony/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/Laravel/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListES.dart';
@@ -262,10 +263,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Laravel',
     productID: 'com.mrrubik.learnswift.laravel',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
-    coursesList: [],
+    coursesList: coursesLaravelMainModelListES,
     color1: Color(0xFFFF2D20),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Laravel es tu herramienta para aprender este framework PHP conocido por su elegancia y simplicidad.\n\nVersión: Laravel 10',
   ),

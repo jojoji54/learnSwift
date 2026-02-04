@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelValidationModelES = [
+  CoursesExModel(
+    id: 4780,
+    exerciseName: "Ejercicio 1: Required string",
+    productID: "com.mrrubik.learnswift.laravelex4780",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4780),
+    completed: purchaseManagerHive.getCompleted(4780),
+  ),
+  CoursesExModel(
+    id: 4781,
+    exerciseName: "Desafio 2: Validar un email",
+    productID: "com.mrrubik.learnswift.laravelex4781",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4781),
+    completed: purchaseManagerHive.getCompleted(4781),
+  ),
+  CoursesExModel(
+    id: 4782,
+    exerciseName: "Ejercicio 3: Numero con min",
+    productID: "com.mrrubik.learnswift.laravelex4782",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4782),
+    completed: purchaseManagerHive.getCompleted(4782),
+  ),
+  CoursesExModel(
+    id: 4783,
+    exerciseName: "Desafio 4: Longitud maxima",
+    productID: "com.mrrubik.learnswift.laravelex4783",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4783),
+    completed: purchaseManagerHive.getCompleted(4783),
+  ),
+  CoursesExModel(
+    id: 4784,
+    exerciseName: "Ejercicio 5: Password confirmed",
+    productID: "com.mrrubik.learnswift.laravelex4784",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4784),
+    completed: purchaseManagerHive.getCompleted(4784),
+  ),
+  CoursesExModel(
+    id: 4785,
+    exerciseName: "Desafio 6: Validar un array",
+    productID: "com.mrrubik.learnswift.laravelex4785",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4785),
+    completed: purchaseManagerHive.getCompleted(4785),
+  ),
+  CoursesExModel(
+    id: 4786,
+    exerciseName: "Ejercicio 7: Validar campo anidado",
+    productID: "com.mrrubik.learnswift.laravelex4786",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4786),
+    completed: purchaseManagerHive.getCompleted(4786),
+  ),
+  CoursesExModel(
+    id: 4787,
+    exerciseName: "Desafio 8: Mensaje personalizado",
+    productID: "com.mrrubik.learnswift.laravelex4787",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4787),
+    completed: purchaseManagerHive.getCompleted(4787),
+  ),
+  CoursesExModel(
+    id: 4788,
+    exerciseName: "Ejercicio 9: rules() en Form Request",
+    productID: "com.mrrubik.learnswift.laravelex4788",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4788),
+    completed: purchaseManagerHive.getCompleted(4788),
+  ),
+  CoursesExModel(
+    id: 4789,
+    exerciseName: "Desafio 10: authorize() en Form Request",
+    productID: "com.mrrubik.learnswift.laravelex4789",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4789),
+    completed: purchaseManagerHive.getCompleted(4789),
+  ),
+  CoursesExModel(
+    id: 4790,
+    exerciseName: "Ejercicio 11: Validacion sometimes",
+    productID: "com.mrrubik.learnswift.laravelex4790",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4790),
+    completed: purchaseManagerHive.getCompleted(4790),
+  ),
+  CoursesExModel(
+    id: 4791,
+    exerciseName: "Desafio 12: Bail early",
+    productID: "com.mrrubik.learnswift.laravelex4791",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4791),
+    completed: purchaseManagerHive.getCompleted(4791),
+  ),
+  CoursesExModel(
+    id: 4792,
+    exerciseName: "Ejercicio 13: required_if",
+    productID: "com.mrrubik.learnswift.laravelex4792",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4792),
+    completed: purchaseManagerHive.getCompleted(4792),
+  ),
+  CoursesExModel(
+    id: 4793,
+    exerciseName: "Desafio 14: Validar imagen subida",
+    productID: "com.mrrubik.learnswift.laravelex4793",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4793),
+    completed: purchaseManagerHive.getCompleted(4793),
+  ),
+  CoursesExModel(
+    id: 4794,
+    exerciseName: "Ejercicio 15: Desafio: validar payload de post",
+    productID: "com.mrrubik.learnswift.laravelex4794",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4794),
+    completed: purchaseManagerHive.getCompleted(4794),
+  ),
+];

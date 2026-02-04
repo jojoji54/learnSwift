@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelMigrationsModelZH = [
+  CoursesExModel(
+    id: 4735,
+    exerciseName: "练习 1: 创建 posts 表",
+    productID: "com.mrrubik.learnswift.laravelex4735",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4735),
+    completed: purchaseManagerHive.getCompleted(4735),
+  ),
+  CoursesExModel(
+    id: 4736,
+    exerciseName: "挑战 2: 添加 title 字符串列",
+    productID: "com.mrrubik.learnswift.laravelex4736",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4736),
+    completed: purchaseManagerHive.getCompleted(4736),
+  ),
+  CoursesExModel(
+    id: 4737,
+    exerciseName: "练习 3: 添加 body text",
+    productID: "com.mrrubik.learnswift.laravelex4737",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4737),
+    completed: purchaseManagerHive.getCompleted(4737),
+  ),
+  CoursesExModel(
+    id: 4738,
+    exerciseName: "挑战 4: 添加 boolean 默认值",
+    productID: "com.mrrubik.learnswift.laravelex4738",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4738),
+    completed: purchaseManagerHive.getCompleted(4738),
+  ),
+  CoursesExModel(
+    id: 4739,
+    exerciseName: "练习 5: 可空列",
+    productID: "com.mrrubik.learnswift.laravelex4739",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4739),
+    completed: purchaseManagerHive.getCompleted(4739),
+  ),
+  CoursesExModel(
+    id: 4740,
+    exerciseName: "挑战 6: 添加 unique",
+    productID: "com.mrrubik.learnswift.laravelex4740",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4740),
+    completed: purchaseManagerHive.getCompleted(4740),
+  ),
+  CoursesExModel(
+    id: 4741,
+    exerciseName: "练习 7: foreignId + constrained",
+    productID: "com.mrrubik.learnswift.laravelex4741",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4741),
+    completed: purchaseManagerHive.getCompleted(4741),
+  ),
+  CoursesExModel(
+    id: 4742,
+    exerciseName: "挑战 8: 外键级联删除",
+    productID: "com.mrrubik.learnswift.laravelex4742",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4742),
+    completed: purchaseManagerHive.getCompleted(4742),
+  ),
+  CoursesExModel(
+    id: 4743,
+    exerciseName: "练习 9: 软删除",
+    productID: "com.mrrubik.learnswift.laravelex4743",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4743),
+    completed: purchaseManagerHive.getCompleted(4743),
+  ),
+  CoursesExModel(
+    id: 4744,
+    exerciseName: "挑战 10: 添加索引",
+    productID: "com.mrrubik.learnswift.laravelex4744",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4744),
+    completed: purchaseManagerHive.getCompleted(4744),
+  ),
+  CoursesExModel(
+    id: 4745,
+    exerciseName: "练习 11: 用 Schema::table 修改",
+    productID: "com.mrrubik.learnswift.laravelex4745",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4745),
+    completed: purchaseManagerHive.getCompleted(4745),
+  ),
+  CoursesExModel(
+    id: 4746,
+    exerciseName: "挑战 12: 重命名列",
+    productID: "com.mrrubik.learnswift.laravelex4746",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4746),
+    completed: purchaseManagerHive.getCompleted(4746),
+  ),
+  CoursesExModel(
+    id: 4747,
+    exerciseName: "练习 13: 删除列",
+    productID: "com.mrrubik.learnswift.laravelex4747",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4747),
+    completed: purchaseManagerHive.getCompleted(4747),
+  ),
+  CoursesExModel(
+    id: 4748,
+    exerciseName: "挑战 14: 删除表",
+    productID: "com.mrrubik.learnswift.laravelex4748",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4748),
+    completed: purchaseManagerHive.getCompleted(4748),
+  ),
+  CoursesExModel(
+    id: 4749,
+    exerciseName: "练习 15: 挑战：comments 表外键到 posts",
+    productID: "com.mrrubik.learnswift.laravelex4749",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4749),
+    completed: purchaseManagerHive.getCompleted(4749),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelMigrationsModelES = [
+  CoursesExModel(
+    id: 4735,
+    exerciseName: "Ejercicio 1: Crear tabla posts",
+    productID: "com.mrrubik.learnswift.laravelex4735",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4735),
+    completed: purchaseManagerHive.getCompleted(4735),
+  ),
+  CoursesExModel(
+    id: 4736,
+    exerciseName: "Desafio 2: Agregar columna title string",
+    productID: "com.mrrubik.learnswift.laravelex4736",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4736),
+    completed: purchaseManagerHive.getCompleted(4736),
+  ),
+  CoursesExModel(
+    id: 4737,
+    exerciseName: "Ejercicio 3: Agregar columna body text",
+    productID: "com.mrrubik.learnswift.laravelex4737",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4737),
+    completed: purchaseManagerHive.getCompleted(4737),
+  ),
+  CoursesExModel(
+    id: 4738,
+    exerciseName: "Desafio 4: Agregar boolean con default",
+    productID: "com.mrrubik.learnswift.laravelex4738",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4738),
+    completed: purchaseManagerHive.getCompleted(4738),
+  ),
+  CoursesExModel(
+    id: 4739,
+    exerciseName: "Ejercicio 5: Agregar columna nullable",
+    productID: "com.mrrubik.learnswift.laravelex4739",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4739),
+    completed: purchaseManagerHive.getCompleted(4739),
+  ),
+  CoursesExModel(
+    id: 4740,
+    exerciseName: "Desafio 6: Agregar unique",
+    productID: "com.mrrubik.learnswift.laravelex4740",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4740),
+    completed: purchaseManagerHive.getCompleted(4740),
+  ),
+  CoursesExModel(
+    id: 4741,
+    exerciseName: "Ejercicio 7: Agregar foreignId con constrained()",
+    productID: "com.mrrubik.learnswift.laravelex4741",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4741),
+    completed: purchaseManagerHive.getCompleted(4741),
+  ),
+  CoursesExModel(
+    id: 4742,
+    exerciseName: "Desafio 8: Cascade delete en foreign key",
+    productID: "com.mrrubik.learnswift.laravelex4742",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4742),
+    completed: purchaseManagerHive.getCompleted(4742),
+  ),
+  CoursesExModel(
+    id: 4743,
+    exerciseName: "Ejercicio 9: Agregar soft deletes",
+    productID: "com.mrrubik.learnswift.laravelex4743",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4743),
+    completed: purchaseManagerHive.getCompleted(4743),
+  ),
+  CoursesExModel(
+    id: 4744,
+    exerciseName: "Desafio 10: Agregar index",
+    productID: "com.mrrubik.learnswift.laravelex4744",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4744),
+    completed: purchaseManagerHive.getCompleted(4744),
+  ),
+  CoursesExModel(
+    id: 4745,
+    exerciseName: "Ejercicio 11: Modificar tabla con Schema::table",
+    productID: "com.mrrubik.learnswift.laravelex4745",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4745),
+    completed: purchaseManagerHive.getCompleted(4745),
+  ),
+  CoursesExModel(
+    id: 4746,
+    exerciseName: "Desafio 12: Renombrar una columna",
+    productID: "com.mrrubik.learnswift.laravelex4746",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4746),
+    completed: purchaseManagerHive.getCompleted(4746),
+  ),
+  CoursesExModel(
+    id: 4747,
+    exerciseName: "Ejercicio 13: Eliminar una columna",
+    productID: "com.mrrubik.learnswift.laravelex4747",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4747),
+    completed: purchaseManagerHive.getCompleted(4747),
+  ),
+  CoursesExModel(
+    id: 4748,
+    exerciseName: "Desafio 14: Eliminar una tabla",
+    productID: "com.mrrubik.learnswift.laravelex4748",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4748),
+    completed: purchaseManagerHive.getCompleted(4748),
+  ),
+  CoursesExModel(
+    id: 4749,
+    exerciseName: "Ejercicio 15: Desafio: crear comments con FK a posts",
+    productID: "com.mrrubik.learnswift.laravelex4749",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4749),
+    completed: purchaseManagerHive.getCompleted(4749),
+  ),
+];

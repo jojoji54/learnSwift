@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelQueuesModelZH = [
+  CoursesExModel(
+    id: 4840,
+    exerciseName: "练习 1: 创建 job",
+    productID: "com.mrrubik.learnswift.laravelex4840",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4840),
+    completed: purchaseManagerHive.getCompleted(4840),
+  ),
+  CoursesExModel(
+    id: 4841,
+    exerciseName: "挑战 2: dispatch job",
+    productID: "com.mrrubik.learnswift.laravelex4841",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4841),
+    completed: purchaseManagerHive.getCompleted(4841),
+  ),
+  CoursesExModel(
+    id: 4842,
+    exerciseName: "练习 3: 设置 QUEUE_CONNECTION",
+    productID: "com.mrrubik.learnswift.laravelex4842",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4842),
+    completed: purchaseManagerHive.getCompleted(4842),
+  ),
+  CoursesExModel(
+    id: 4843,
+    exerciseName: "挑战 4: 运行 queue:work",
+    productID: "com.mrrubik.learnswift.laravelex4843",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4843),
+    completed: purchaseManagerHive.getCompleted(4843),
+  ),
+  CoursesExModel(
+    id: 4844,
+    exerciseName: "练习 5: 查看失败任务",
+    productID: "com.mrrubik.learnswift.laravelex4844",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4844),
+    completed: purchaseManagerHive.getCompleted(4844),
+  ),
+  CoursesExModel(
+    id: 4845,
+    exerciseName: "挑战 6: 重试失败任务",
+    productID: "com.mrrubik.learnswift.laravelex4845",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4845),
+    completed: purchaseManagerHive.getCompleted(4845),
+  ),
+  CoursesExModel(
+    id: 4846,
+    exerciseName: "练习 7: 延迟 job",
+    productID: "com.mrrubik.learnswift.laravelex4846",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4846),
+    completed: purchaseManagerHive.getCompleted(4846),
+  ),
+  CoursesExModel(
+    id: 4847,
+    exerciseName: "挑战 8: 指定队列",
+    productID: "com.mrrubik.learnswift.laravelex4847",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4847),
+    completed: purchaseManagerHive.getCompleted(4847),
+  ),
+  CoursesExModel(
+    id: 4848,
+    exerciseName: "练习 9: handle() 方法",
+    productID: "com.mrrubik.learnswift.laravelex4848",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4848),
+    completed: purchaseManagerHive.getCompleted(4848),
+  ),
+  CoursesExModel(
+    id: 4849,
+    exerciseName: "挑战 10: 链式 job",
+    productID: "com.mrrubik.learnswift.laravelex4849",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4849),
+    completed: purchaseManagerHive.getCompleted(4849),
+  ),
+  CoursesExModel(
+    id: 4850,
+    exerciseName: "练习 11: batch",
+    productID: "com.mrrubik.learnswift.laravelex4850",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4850),
+    completed: purchaseManagerHive.getCompleted(4850),
+  ),
+  CoursesExModel(
+    id: 4851,
+    exerciseName: "挑战 12: 重启 worker",
+    productID: "com.mrrubik.learnswift.laravelex4851",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4851),
+    completed: purchaseManagerHive.getCompleted(4851),
+  ),
+  CoursesExModel(
+    id: 4852,
+    exerciseName: "练习 13: 主动失败",
+    productID: "com.mrrubik.learnswift.laravelex4852",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4852),
+    completed: purchaseManagerHive.getCompleted(4852),
+  ),
+  CoursesExModel(
+    id: 4853,
+    exerciseName: "挑战 14: timeout 属性",
+    productID: "com.mrrubik.learnswift.laravelex4853",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4853),
+    completed: purchaseManagerHive.getCompleted(4853),
+  ),
+  CoursesExModel(
+    id: 4854,
+    exerciseName: "练习 15: 挑战：delay + queue",
+    productID: "com.mrrubik.learnswift.laravelex4854",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4854),
+    completed: purchaseManagerHive.getCompleted(4854),
+  ),
+];

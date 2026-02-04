@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelDeployModelES = [
+  CoursesExModel(
+    id: 4885,
+    exerciseName: "Ejercicio 1: Poner APP_ENV en production",
+    productID: "com.mrrubik.learnswift.laravelex4885",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4885),
+    completed: purchaseManagerHive.getCompleted(4885),
+  ),
+  CoursesExModel(
+    id: 4886,
+    exerciseName: "Desafio 2: Cachear config",
+    productID: "com.mrrubik.learnswift.laravelex4886",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4886),
+    completed: purchaseManagerHive.getCompleted(4886),
+  ),
+  CoursesExModel(
+    id: 4887,
+    exerciseName: "Ejercicio 3: Cachear rutas",
+    productID: "com.mrrubik.learnswift.laravelex4887",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4887),
+    completed: purchaseManagerHive.getCompleted(4887),
+  ),
+  CoursesExModel(
+    id: 4888,
+    exerciseName: "Desafio 4: Cachear views",
+    productID: "com.mrrubik.learnswift.laravelex4888",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4888),
+    completed: purchaseManagerHive.getCompleted(4888),
+  ),
+  CoursesExModel(
+    id: 4889,
+    exerciseName: "Ejercicio 5: Optimizar",
+    productID: "com.mrrubik.learnswift.laravelex4889",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4889),
+    completed: purchaseManagerHive.getCompleted(4889),
+  ),
+  CoursesExModel(
+    id: 4890,
+    exerciseName: "Desafio 6: Limpiar optimize caches",
+    productID: "com.mrrubik.learnswift.laravelex4890",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4890),
+    completed: purchaseManagerHive.getCompleted(4890),
+  ),
+  CoursesExModel(
+    id: 4891,
+    exerciseName: "Ejercicio 7: Reiniciar queue workers",
+    productID: "com.mrrubik.learnswift.laravelex4891",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4891),
+    completed: purchaseManagerHive.getCompleted(4891),
+  ),
+  CoursesExModel(
+    id: 4892,
+    exerciseName: "Desafio 8: Ejecutar el scheduler",
+    productID: "com.mrrubik.learnswift.laravelex4892",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4892),
+    completed: purchaseManagerHive.getCompleted(4892),
+  ),
+  CoursesExModel(
+    id: 4893,
+    exerciseName: "Ejercicio 9: Cachear con remember()",
+    productID: "com.mrrubik.learnswift.laravelex4893",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4893),
+    completed: purchaseManagerHive.getCompleted(4893),
+  ),
+  CoursesExModel(
+    id: 4894,
+    exerciseName: "Desafio 10: Olvidar cache key",
+    productID: "com.mrrubik.learnswift.laravelex4894",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4894),
+    completed: purchaseManagerHive.getCompleted(4894),
+  ),
+  CoursesExModel(
+    id: 4895,
+    exerciseName: "Ejercicio 11: Usar LOG_LEVEL",
+    productID: "com.mrrubik.learnswift.laravelex4895",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4895),
+    completed: purchaseManagerHive.getCompleted(4895),
+  ),
+  CoursesExModel(
+    id: 4896,
+    exerciseName: "Desafio 12: Endpoint de salud",
+    productID: "com.mrrubik.learnswift.laravelex4896",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4896),
+    completed: purchaseManagerHive.getCompleted(4896),
+  ),
+  CoursesExModel(
+    id: 4897,
+    exerciseName: "Ejercicio 13: Limpiar failed jobs",
+    productID: "com.mrrubik.learnswift.laravelex4897",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4897),
+    completed: purchaseManagerHive.getCompleted(4897),
+  ),
+  CoursesExModel(
+    id: 4898,
+    exerciseName: "Desafio 14: Calentar caches",
+    productID: "com.mrrubik.learnswift.laravelex4898",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4898),
+    completed: purchaseManagerHive.getCompleted(4898),
+  ),
+  CoursesExModel(
+    id: 4899,
+    exerciseName: "Ejercicio 15: Desafio: rutina de deploy segura",
+    productID: "com.mrrubik.learnswift.laravelex4899",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4899),
+    completed: purchaseManagerHive.getCompleted(4899),
+  ),
+];

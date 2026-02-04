@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelRoutingModelEN = [
+  CoursesExModel(
+    id: 4690,
+    exerciseName: "Exercise 1: A basic GET route",
+    productID: "com.mrrubik.learnswift.laravelex4690",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4690),
+    completed: purchaseManagerHive.getCompleted(4690),
+  ),
+  CoursesExModel(
+    id: 4691,
+    exerciseName: "Challenge 2: Route that returns a view",
+    productID: "com.mrrubik.learnswift.laravelex4691",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4691),
+    completed: purchaseManagerHive.getCompleted(4691),
+  ),
+  CoursesExModel(
+    id: 4692,
+    exerciseName: "Exercise 3: Route to a controller action",
+    productID: "com.mrrubik.learnswift.laravelex4692",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4692),
+    completed: purchaseManagerHive.getCompleted(4692),
+  ),
+  CoursesExModel(
+    id: 4693,
+    exerciseName: "Challenge 4: Route parameter {id}",
+    productID: "com.mrrubik.learnswift.laravelex4693",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4693),
+    completed: purchaseManagerHive.getCompleted(4693),
+  ),
+  CoursesExModel(
+    id: 4694,
+    exerciseName: "Exercise 5: Optional parameter {slug?}",
+    productID: "com.mrrubik.learnswift.laravelex4694",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4694),
+    completed: purchaseManagerHive.getCompleted(4694),
+  ),
+  CoursesExModel(
+    id: 4695,
+    exerciseName: "Challenge 6: Name a route",
+    productID: "com.mrrubik.learnswift.laravelex4695",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4695),
+    completed: purchaseManagerHive.getCompleted(4695),
+  ),
+  CoursesExModel(
+    id: 4696,
+    exerciseName: "Exercise 7: Route group with prefix",
+    productID: "com.mrrubik.learnswift.laravelex4696",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4696),
+    completed: purchaseManagerHive.getCompleted(4696),
+  ),
+  CoursesExModel(
+    id: 4697,
+    exerciseName: "Challenge 8: Route group with middleware",
+    productID: "com.mrrubik.learnswift.laravelex4697",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4697),
+    completed: purchaseManagerHive.getCompleted(4697),
+  ),
+  CoursesExModel(
+    id: 4698,
+    exerciseName: "Exercise 9: Resource routes",
+    productID: "com.mrrubik.learnswift.laravelex4698",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4698),
+    completed: purchaseManagerHive.getCompleted(4698),
+  ),
+  CoursesExModel(
+    id: 4699,
+    exerciseName: "Challenge 10: Constrain an {id} param to numbers",
+    productID: "com.mrrubik.learnswift.laravelex4699",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4699),
+    completed: purchaseManagerHive.getCompleted(4699),
+  ),
+  CoursesExModel(
+    id: 4700,
+    exerciseName: "Exercise 11: Route model binding (closure)",
+    productID: "com.mrrubik.learnswift.laravelex4700",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4700),
+    completed: purchaseManagerHive.getCompleted(4700),
+  ),
+  CoursesExModel(
+    id: 4701,
+    exerciseName: "Challenge 12: Fallback route",
+    productID: "com.mrrubik.learnswift.laravelex4701",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4701),
+    completed: purchaseManagerHive.getCompleted(4701),
+  ),
+  CoursesExModel(
+    id: 4702,
+    exerciseName: "Exercise 13: A POST route",
+    productID: "com.mrrubik.learnswift.laravelex4702",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4702),
+    completed: purchaseManagerHive.getCompleted(4702),
+  ),
+  CoursesExModel(
+    id: 4703,
+    exerciseName: "Challenge 14: Match multiple methods",
+    productID: "com.mrrubik.learnswift.laravelex4703",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4703),
+    completed: purchaseManagerHive.getCompleted(4703),
+  ),
+  CoursesExModel(
+    id: 4704,
+    exerciseName: "Exercise 15: Challenge: prefix + name group",
+    productID: "com.mrrubik.learnswift.laravelex4704",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4704),
+    completed: purchaseManagerHive.getCompleted(4704),
+  ),
+];

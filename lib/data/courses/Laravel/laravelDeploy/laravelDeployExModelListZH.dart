@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelDeployModelZH = [
+  CoursesExModel(
+    id: 4885,
+    exerciseName: "练习 1: 设置 APP_ENV",
+    productID: "com.mrrubik.learnswift.laravelex4885",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4885),
+    completed: purchaseManagerHive.getCompleted(4885),
+  ),
+  CoursesExModel(
+    id: 4886,
+    exerciseName: "挑战 2: 缓存配置",
+    productID: "com.mrrubik.learnswift.laravelex4886",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4886),
+    completed: purchaseManagerHive.getCompleted(4886),
+  ),
+  CoursesExModel(
+    id: 4887,
+    exerciseName: "练习 3: 缓存路由",
+    productID: "com.mrrubik.learnswift.laravelex4887",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4887),
+    completed: purchaseManagerHive.getCompleted(4887),
+  ),
+  CoursesExModel(
+    id: 4888,
+    exerciseName: "挑战 4: 缓存 view",
+    productID: "com.mrrubik.learnswift.laravelex4888",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4888),
+    completed: purchaseManagerHive.getCompleted(4888),
+  ),
+  CoursesExModel(
+    id: 4889,
+    exerciseName: "练习 5: optimize",
+    productID: "com.mrrubik.learnswift.laravelex4889",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4889),
+    completed: purchaseManagerHive.getCompleted(4889),
+  ),
+  CoursesExModel(
+    id: 4890,
+    exerciseName: "挑战 6: 清理优化缓存",
+    productID: "com.mrrubik.learnswift.laravelex4890",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4890),
+    completed: purchaseManagerHive.getCompleted(4890),
+  ),
+  CoursesExModel(
+    id: 4891,
+    exerciseName: "练习 7: 重启队列 worker",
+    productID: "com.mrrubik.learnswift.laravelex4891",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4891),
+    completed: purchaseManagerHive.getCompleted(4891),
+  ),
+  CoursesExModel(
+    id: 4892,
+    exerciseName: "挑战 8: 运行 scheduler",
+    productID: "com.mrrubik.learnswift.laravelex4892",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4892),
+    completed: purchaseManagerHive.getCompleted(4892),
+  ),
+  CoursesExModel(
+    id: 4893,
+    exerciseName: "练习 9: Cache remember()",
+    productID: "com.mrrubik.learnswift.laravelex4893",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4893),
+    completed: purchaseManagerHive.getCompleted(4893),
+  ),
+  CoursesExModel(
+    id: 4894,
+    exerciseName: "挑战 10: 清理缓存 key",
+    productID: "com.mrrubik.learnswift.laravelex4894",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4894),
+    completed: purchaseManagerHive.getCompleted(4894),
+  ),
+  CoursesExModel(
+    id: 4895,
+    exerciseName: "练习 11: LOG_LEVEL",
+    productID: "com.mrrubik.learnswift.laravelex4895",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4895),
+    completed: purchaseManagerHive.getCompleted(4895),
+  ),
+  CoursesExModel(
+    id: 4896,
+    exerciseName: "挑战 12: 健康检查",
+    productID: "com.mrrubik.learnswift.laravelex4896",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4896),
+    completed: purchaseManagerHive.getCompleted(4896),
+  ),
+  CoursesExModel(
+    id: 4897,
+    exerciseName: "练习 13: 清理失败任务",
+    productID: "com.mrrubik.learnswift.laravelex4897",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4897),
+    completed: purchaseManagerHive.getCompleted(4897),
+  ),
+  CoursesExModel(
+    id: 4898,
+    exerciseName: "挑战 14: 预热缓存",
+    productID: "com.mrrubik.learnswift.laravelex4898",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4898),
+    completed: purchaseManagerHive.getCompleted(4898),
+  ),
+  CoursesExModel(
+    id: 4899,
+    exerciseName: "练习 15: 挑战：安全部署流程",
+    productID: "com.mrrubik.learnswift.laravelex4899",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4899),
+    completed: purchaseManagerHive.getCompleted(4899),
+  ),
+];

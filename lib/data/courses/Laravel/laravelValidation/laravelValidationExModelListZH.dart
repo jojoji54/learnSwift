@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelValidationModelZH = [
+  CoursesExModel(
+    id: 4780,
+    exerciseName: "练习 1: 必填字符串",
+    productID: "com.mrrubik.learnswift.laravelex4780",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4780),
+    completed: purchaseManagerHive.getCompleted(4780),
+  ),
+  CoursesExModel(
+    id: 4781,
+    exerciseName: "挑战 2: 验证邮箱",
+    productID: "com.mrrubik.learnswift.laravelex4781",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4781),
+    completed: purchaseManagerHive.getCompleted(4781),
+  ),
+  CoursesExModel(
+    id: 4782,
+    exerciseName: "练习 3: 数字最小值",
+    productID: "com.mrrubik.learnswift.laravelex4782",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4782),
+    completed: purchaseManagerHive.getCompleted(4782),
+  ),
+  CoursesExModel(
+    id: 4783,
+    exerciseName: "挑战 4: 最大长度",
+    productID: "com.mrrubik.learnswift.laravelex4783",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4783),
+    completed: purchaseManagerHive.getCompleted(4783),
+  ),
+  CoursesExModel(
+    id: 4784,
+    exerciseName: "练习 5: 确认密码",
+    productID: "com.mrrubik.learnswift.laravelex4784",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4784),
+    completed: purchaseManagerHive.getCompleted(4784),
+  ),
+  CoursesExModel(
+    id: 4785,
+    exerciseName: "挑战 6: 验证数组",
+    productID: "com.mrrubik.learnswift.laravelex4785",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4785),
+    completed: purchaseManagerHive.getCompleted(4785),
+  ),
+  CoursesExModel(
+    id: 4786,
+    exerciseName: "练习 7: 验证嵌套字段",
+    productID: "com.mrrubik.learnswift.laravelex4786",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4786),
+    completed: purchaseManagerHive.getCompleted(4786),
+  ),
+  CoursesExModel(
+    id: 4787,
+    exerciseName: "挑战 8: 自定义提示",
+    productID: "com.mrrubik.learnswift.laravelex4787",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4787),
+    completed: purchaseManagerHive.getCompleted(4787),
+  ),
+  CoursesExModel(
+    id: 4788,
+    exerciseName: "练习 9: Form Request rules()",
+    productID: "com.mrrubik.learnswift.laravelex4788",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4788),
+    completed: purchaseManagerHive.getCompleted(4788),
+  ),
+  CoursesExModel(
+    id: 4789,
+    exerciseName: "挑战 10: Form Request authorize()",
+    productID: "com.mrrubik.learnswift.laravelex4789",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4789),
+    completed: purchaseManagerHive.getCompleted(4789),
+  ),
+  CoursesExModel(
+    id: 4790,
+    exerciseName: "练习 11: sometimes",
+    productID: "com.mrrubik.learnswift.laravelex4790",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4790),
+    completed: purchaseManagerHive.getCompleted(4790),
+  ),
+  CoursesExModel(
+    id: 4791,
+    exerciseName: "挑战 12: bail",
+    productID: "com.mrrubik.learnswift.laravelex4791",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4791),
+    completed: purchaseManagerHive.getCompleted(4791),
+  ),
+  CoursesExModel(
+    id: 4792,
+    exerciseName: "练习 13: required_if",
+    productID: "com.mrrubik.learnswift.laravelex4792",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4792),
+    completed: purchaseManagerHive.getCompleted(4792),
+  ),
+  CoursesExModel(
+    id: 4793,
+    exerciseName: "挑战 14: 验证上传图片",
+    productID: "com.mrrubik.learnswift.laravelex4793",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4793),
+    completed: purchaseManagerHive.getCompleted(4793),
+  ),
+  CoursesExModel(
+    id: 4794,
+    exerciseName: "练习 15: 挑战：验证 post payload",
+    productID: "com.mrrubik.learnswift.laravelex4794",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4794),
+    completed: purchaseManagerHive.getCompleted(4794),
+  ),
+];

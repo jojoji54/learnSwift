@@ -13,6 +13,7 @@ import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Symfony/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Laravel/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListZH.dart';
@@ -258,10 +259,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Laravel',
     productID: 'com.mrrubik.learnswift.laravel',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(20),
-    coursesList: [],
+    coursesList: coursesLaravelMainModelListZH,
     color1: Color(0xFFFF2D20),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Laravel 是学习这一以优雅和简单著称的 PHP 框架的工具。\n\n版本: Laravel 10',
   ),

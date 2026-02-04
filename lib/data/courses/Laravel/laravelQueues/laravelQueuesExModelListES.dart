@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelQueuesModelES = [
+  CoursesExModel(
+    id: 4840,
+    exerciseName: "Ejercicio 1: Crear un job",
+    productID: "com.mrrubik.learnswift.laravelex4840",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4840),
+    completed: purchaseManagerHive.getCompleted(4840),
+  ),
+  CoursesExModel(
+    id: 4841,
+    exerciseName: "Desafio 2: Dispatch de un job",
+    productID: "com.mrrubik.learnswift.laravelex4841",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4841),
+    completed: purchaseManagerHive.getCompleted(4841),
+  ),
+  CoursesExModel(
+    id: 4842,
+    exerciseName: "Ejercicio 3: Configurar QUEUE_CONNECTION",
+    productID: "com.mrrubik.learnswift.laravelex4842",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4842),
+    completed: purchaseManagerHive.getCompleted(4842),
+  ),
+  CoursesExModel(
+    id: 4843,
+    exerciseName: "Desafio 4: Ejecutar queue:work",
+    productID: "com.mrrubik.learnswift.laravelex4843",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4843),
+    completed: purchaseManagerHive.getCompleted(4843),
+  ),
+  CoursesExModel(
+    id: 4844,
+    exerciseName: "Ejercicio 5: Ver failed jobs",
+    productID: "com.mrrubik.learnswift.laravelex4844",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4844),
+    completed: purchaseManagerHive.getCompleted(4844),
+  ),
+  CoursesExModel(
+    id: 4845,
+    exerciseName: "Desafio 6: Reintentar failed jobs",
+    productID: "com.mrrubik.learnswift.laravelex4845",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4845),
+    completed: purchaseManagerHive.getCompleted(4845),
+  ),
+  CoursesExModel(
+    id: 4846,
+    exerciseName: "Ejercicio 7: Delay de un job",
+    productID: "com.mrrubik.learnswift.laravelex4846",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4846),
+    completed: purchaseManagerHive.getCompleted(4846),
+  ),
+  CoursesExModel(
+    id: 4847,
+    exerciseName: "Desafio 8: Enviar a una queue",
+    productID: "com.mrrubik.learnswift.laravelex4847",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4847),
+    completed: purchaseManagerHive.getCompleted(4847),
+  ),
+  CoursesExModel(
+    id: 4848,
+    exerciseName: "Ejercicio 9: Metodo handle()",
+    productID: "com.mrrubik.learnswift.laravelex4848",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4848),
+    completed: purchaseManagerHive.getCompleted(4848),
+  ),
+  CoursesExModel(
+    id: 4849,
+    exerciseName: "Desafio 10: Encadenar jobs",
+    productID: "com.mrrubik.learnswift.laravelex4849",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4849),
+    completed: purchaseManagerHive.getCompleted(4849),
+  ),
+  CoursesExModel(
+    id: 4850,
+    exerciseName: "Ejercicio 11: Batch de jobs",
+    productID: "com.mrrubik.learnswift.laravelex4850",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4850),
+    completed: purchaseManagerHive.getCompleted(4850),
+  ),
+  CoursesExModel(
+    id: 4851,
+    exerciseName: "Desafio 12: Reiniciar workers",
+    productID: "com.mrrubik.learnswift.laravelex4851",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4851),
+    completed: purchaseManagerHive.getCompleted(4851),
+  ),
+  CoursesExModel(
+    id: 4852,
+    exerciseName: "Ejercicio 13: Fallar un job a proposito",
+    productID: "com.mrrubik.learnswift.laravelex4852",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4852),
+    completed: purchaseManagerHive.getCompleted(4852),
+  ),
+  CoursesExModel(
+    id: 4853,
+    exerciseName: "Desafio 14: Propiedad timeout",
+    productID: "com.mrrubik.learnswift.laravelex4853",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4853),
+    completed: purchaseManagerHive.getCompleted(4853),
+  ),
+  CoursesExModel(
+    id: 4854,
+    exerciseName: "Ejercicio 15: Desafio: dispatch delay y queue",
+    productID: "com.mrrubik.learnswift.laravelex4854",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4854),
+    completed: purchaseManagerHive.getCompleted(4854),
+  ),
+];

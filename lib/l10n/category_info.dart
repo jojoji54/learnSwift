@@ -548,6 +548,36 @@ class CategoryInfoL10n {
         return loc.symfonyCat13InfoTitle;
       case 'symfonyCat14InfoTitle':
         return loc.symfonyCat14InfoTitle;
+      case 'laravelCat0InfoTitle':
+        return loc.laravelCat0InfoTitle;
+      case 'laravelCat1InfoTitle':
+        return loc.laravelCat1InfoTitle;
+      case 'laravelCat2InfoTitle':
+        return loc.laravelCat2InfoTitle;
+      case 'laravelCat3InfoTitle':
+        return loc.laravelCat3InfoTitle;
+      case 'laravelCat4InfoTitle':
+        return loc.laravelCat4InfoTitle;
+      case 'laravelCat5InfoTitle':
+        return loc.laravelCat5InfoTitle;
+      case 'laravelCat6InfoTitle':
+        return loc.laravelCat6InfoTitle;
+      case 'laravelCat7InfoTitle':
+        return loc.laravelCat7InfoTitle;
+      case 'laravelCat8InfoTitle':
+        return loc.laravelCat8InfoTitle;
+      case 'laravelCat9InfoTitle':
+        return loc.laravelCat9InfoTitle;
+      case 'laravelCat10InfoTitle':
+        return loc.laravelCat10InfoTitle;
+      case 'laravelCat11InfoTitle':
+        return loc.laravelCat11InfoTitle;
+      case 'laravelCat12InfoTitle':
+        return loc.laravelCat12InfoTitle;
+      case 'laravelCat13InfoTitle':
+        return loc.laravelCat13InfoTitle;
+      case 'laravelCat14InfoTitle':
+        return loc.laravelCat14InfoTitle;
       default:
         return key;
     }
@@ -1100,6 +1130,36 @@ class CategoryInfoL10n {
         return loc.symfonyCat13InfoContent;
       case 'symfonyCat14InfoContent':
         return loc.symfonyCat14InfoContent;
+      case 'laravelCat0InfoContent':
+        return loc.laravelCat0InfoContent;
+      case 'laravelCat1InfoContent':
+        return loc.laravelCat1InfoContent;
+      case 'laravelCat2InfoContent':
+        return loc.laravelCat2InfoContent;
+      case 'laravelCat3InfoContent':
+        return loc.laravelCat3InfoContent;
+      case 'laravelCat4InfoContent':
+        return loc.laravelCat4InfoContent;
+      case 'laravelCat5InfoContent':
+        return loc.laravelCat5InfoContent;
+      case 'laravelCat6InfoContent':
+        return loc.laravelCat6InfoContent;
+      case 'laravelCat7InfoContent':
+        return loc.laravelCat7InfoContent;
+      case 'laravelCat8InfoContent':
+        return loc.laravelCat8InfoContent;
+      case 'laravelCat9InfoContent':
+        return loc.laravelCat9InfoContent;
+      case 'laravelCat10InfoContent':
+        return loc.laravelCat10InfoContent;
+      case 'laravelCat11InfoContent':
+        return loc.laravelCat11InfoContent;
+      case 'laravelCat12InfoContent':
+        return loc.laravelCat12InfoContent;
+      case 'laravelCat13InfoContent':
+        return loc.laravelCat13InfoContent;
+      case 'laravelCat14InfoContent':
+        return loc.laravelCat14InfoContent;
       default:
         return key;
     }

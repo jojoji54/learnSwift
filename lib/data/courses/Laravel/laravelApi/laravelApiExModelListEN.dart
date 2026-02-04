@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> laravelApiModelEN = [
+  CoursesExModel(
+    id: 4810,
+    exerciseName: "Exercise 1: Create a resource class",
+    productID: "com.mrrubik.learnswift.laravelex4810",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4810),
+    completed: purchaseManagerHive.getCompleted(4810),
+  ),
+  CoursesExModel(
+    id: 4811,
+    exerciseName: "Challenge 2: Basic toArray()",
+    productID: "com.mrrubik.learnswift.laravelex4811",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4811),
+    completed: purchaseManagerHive.getCompleted(4811),
+  ),
+  CoursesExModel(
+    id: 4812,
+    exerciseName: "Exercise 3: Resource collection",
+    productID: "com.mrrubik.learnswift.laravelex4812",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4812),
+    completed: purchaseManagerHive.getCompleted(4812),
+  ),
+  CoursesExModel(
+    id: 4813,
+    exerciseName: "Challenge 4: Add a status code",
+    productID: "com.mrrubik.learnswift.laravelex4813",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4813),
+    completed: purchaseManagerHive.getCompleted(4813),
+  ),
+  CoursesExModel(
+    id: 4814,
+    exerciseName: "Exercise 5: Include relationship when loaded",
+    productID: "com.mrrubik.learnswift.laravelex4814",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4814),
+    completed: purchaseManagerHive.getCompleted(4814),
+  ),
+  CoursesExModel(
+    id: 4815,
+    exerciseName: "Challenge 6: Add meta with additional()",
+    productID: "com.mrrubik.learnswift.laravelex4815",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4815),
+    completed: purchaseManagerHive.getCompleted(4815),
+  ),
+  CoursesExModel(
+    id: 4816,
+    exerciseName: "Exercise 7: Format a date field",
+    productID: "com.mrrubik.learnswift.laravelex4816",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4816),
+    completed: purchaseManagerHive.getCompleted(4816),
+  ),
+  CoursesExModel(
+    id: 4817,
+    exerciseName: "Challenge 8: Hide a field",
+    productID: "com.mrrubik.learnswift.laravelex4817",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4817),
+    completed: purchaseManagerHive.getCompleted(4817),
+  ),
+  CoursesExModel(
+    id: 4818,
+    exerciseName: "Exercise 9: Nested resource",
+    productID: "com.mrrubik.learnswift.laravelex4818",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4818),
+    completed: purchaseManagerHive.getCompleted(4818),
+  ),
+  CoursesExModel(
+    id: 4819,
+    exerciseName: "Challenge 10: Pagination with resources",
+    productID: "com.mrrubik.learnswift.laravelex4819",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4819),
+    completed: purchaseManagerHive.getCompleted(4819),
+  ),
+  CoursesExModel(
+    id: 4820,
+    exerciseName: "Exercise 11: Return JSON error shape",
+    productID: "com.mrrubik.learnswift.laravelex4820",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4820),
+    completed: purchaseManagerHive.getCompleted(4820),
+  ),
+  CoursesExModel(
+    id: 4821,
+    exerciseName: "Challenge 12: Transform a boolean field",
+    productID: "com.mrrubik.learnswift.laravelex4821",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4821),
+    completed: purchaseManagerHive.getCompleted(4821),
+  ),
+  CoursesExModel(
+    id: 4822,
+    exerciseName: "Exercise 13: Resource uses request data",
+    productID: "com.mrrubik.learnswift.laravelex4822",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4822),
+    completed: purchaseManagerHive.getCompleted(4822),
+  ),
+  CoursesExModel(
+    id: 4823,
+    exerciseName: "Challenge 14: Add links",
+    productID: "com.mrrubik.learnswift.laravelex4823",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4823),
+    completed: purchaseManagerHive.getCompleted(4823),
+  ),
+  CoursesExModel(
+    id: 4824,
+    exerciseName: "Exercise 15: Challenge: stable API response",
+    productID: "com.mrrubik.learnswift.laravelex4824",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4824),
+    completed: purchaseManagerHive.getCompleted(4824),
+  ),
+];

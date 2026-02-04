@@ -307,6 +307,66 @@ class CategoryInfoL10n {
         return loc.swiftCat8InfoTitle;
       case 'swiftCat9InfoTitle':
         return loc.swiftCat9InfoTitle;
+      case 'sqlCat0InfoTitle':
+        return loc.sqlCat0InfoTitle;
+      case 'sqlCat1InfoTitle':
+        return loc.sqlCat1InfoTitle;
+      case 'sqlCat2InfoTitle':
+        return loc.sqlCat2InfoTitle;
+      case 'sqlCat3InfoTitle':
+        return loc.sqlCat3InfoTitle;
+      case 'sqlCat4InfoTitle':
+        return loc.sqlCat4InfoTitle;
+      case 'sqlCat5InfoTitle':
+        return loc.sqlCat5InfoTitle;
+      case 'sqlCat6InfoTitle':
+        return loc.sqlCat6InfoTitle;
+      case 'sqlCat7InfoTitle':
+        return loc.sqlCat7InfoTitle;
+      case 'sqlCat8InfoTitle':
+        return loc.sqlCat8InfoTitle;
+      case 'sqlCat9InfoTitle':
+        return loc.sqlCat9InfoTitle;
+      case 'sqlCat10InfoTitle':
+        return loc.sqlCat10InfoTitle;
+      case 'sqlCat11InfoTitle':
+        return loc.sqlCat11InfoTitle;
+      case 'sqlCat12InfoTitle':
+        return loc.sqlCat12InfoTitle;
+      case 'sqlCat13InfoTitle':
+        return loc.sqlCat13InfoTitle;
+      case 'sqlCat14InfoTitle':
+        return loc.sqlCat14InfoTitle;
+      case 'flutterCat0InfoTitle':
+        return loc.flutterCat0InfoTitle;
+      case 'flutterCat1InfoTitle':
+        return loc.flutterCat1InfoTitle;
+      case 'flutterCat2InfoTitle':
+        return loc.flutterCat2InfoTitle;
+      case 'flutterCat3InfoTitle':
+        return loc.flutterCat3InfoTitle;
+      case 'flutterCat4InfoTitle':
+        return loc.flutterCat4InfoTitle;
+      case 'flutterCat5InfoTitle':
+        return loc.flutterCat5InfoTitle;
+      case 'flutterCat6InfoTitle':
+        return loc.flutterCat6InfoTitle;
+      case 'flutterCat7InfoTitle':
+        return loc.flutterCat7InfoTitle;
+      case 'flutterCat8InfoTitle':
+        return loc.flutterCat8InfoTitle;
+      case 'flutterCat9InfoTitle':
+        return loc.flutterCat9InfoTitle;
+      case 'flutterCat10InfoTitle':
+        return loc.flutterCat10InfoTitle;
+      case 'flutterCat11InfoTitle':
+        return loc.flutterCat11InfoTitle;
+      case 'flutterCat12InfoTitle':
+        return loc.flutterCat12InfoTitle;
+      case 'flutterCat13InfoTitle':
+        return loc.flutterCat13InfoTitle;
+      case 'flutterCat14InfoTitle':
+        return loc.flutterCat14InfoTitle;
       default:
         return key;
     }
@@ -618,6 +678,66 @@ class CategoryInfoL10n {
         return loc.swiftCat8InfoContent;
       case 'swiftCat9InfoContent':
         return loc.swiftCat9InfoContent;
+      case 'sqlCat0InfoContent':
+        return loc.sqlCat0InfoContent;
+      case 'sqlCat1InfoContent':
+        return loc.sqlCat1InfoContent;
+      case 'sqlCat2InfoContent':
+        return loc.sqlCat2InfoContent;
+      case 'sqlCat3InfoContent':
+        return loc.sqlCat3InfoContent;
+      case 'sqlCat4InfoContent':
+        return loc.sqlCat4InfoContent;
+      case 'sqlCat5InfoContent':
+        return loc.sqlCat5InfoContent;
+      case 'sqlCat6InfoContent':
+        return loc.sqlCat6InfoContent;
+      case 'sqlCat7InfoContent':
+        return loc.sqlCat7InfoContent;
+      case 'sqlCat8InfoContent':
+        return loc.sqlCat8InfoContent;
+      case 'sqlCat9InfoContent':
+        return loc.sqlCat9InfoContent;
+      case 'sqlCat10InfoContent':
+        return loc.sqlCat10InfoContent;
+      case 'sqlCat11InfoContent':
+        return loc.sqlCat11InfoContent;
+      case 'sqlCat12InfoContent':
+        return loc.sqlCat12InfoContent;
+      case 'sqlCat13InfoContent':
+        return loc.sqlCat13InfoContent;
+      case 'sqlCat14InfoContent':
+        return loc.sqlCat14InfoContent;
+      case 'flutterCat0InfoContent':
+        return loc.flutterCat0InfoContent;
+      case 'flutterCat1InfoContent':
+        return loc.flutterCat1InfoContent;
+      case 'flutterCat2InfoContent':
+        return loc.flutterCat2InfoContent;
+      case 'flutterCat3InfoContent':
+        return loc.flutterCat3InfoContent;
+      case 'flutterCat4InfoContent':
+        return loc.flutterCat4InfoContent;
+      case 'flutterCat5InfoContent':
+        return loc.flutterCat5InfoContent;
+      case 'flutterCat6InfoContent':
+        return loc.flutterCat6InfoContent;
+      case 'flutterCat7InfoContent':
+        return loc.flutterCat7InfoContent;
+      case 'flutterCat8InfoContent':
+        return loc.flutterCat8InfoContent;
+      case 'flutterCat9InfoContent':
+        return loc.flutterCat9InfoContent;
+      case 'flutterCat10InfoContent':
+        return loc.flutterCat10InfoContent;
+      case 'flutterCat11InfoContent':
+        return loc.flutterCat11InfoContent;
+      case 'flutterCat12InfoContent':
+        return loc.flutterCat12InfoContent;
+      case 'flutterCat13InfoContent':
+        return loc.flutterCat13InfoContent;
+      case 'flutterCat14InfoContent':
+        return loc.flutterCat14InfoContent;
       default:
         return key;
     }

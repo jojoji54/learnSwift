@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetEFCoreModelZH = [
+  CoursesExModel(
+    id: 5050,
+    exerciseName: "练习 1: AddDbContext + UseSqlite",
+    productID: "com.mrrubik.learnswift.aspnetex5050",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5050),
+    completed: purchaseManagerHive.getCompleted(5050),
+  ),
+  CoursesExModel(
+    id: 5051,
+    exerciseName: "挑战 2: DbContext + DbSet",
+    productID: "com.mrrubik.learnswift.aspnetex5051",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5051),
+    completed: purchaseManagerHive.getCompleted(5051),
+  ),
+  CoursesExModel(
+    id: 5052,
+    exerciseName: "练习 3: 实体类",
+    productID: "com.mrrubik.learnswift.aspnetex5052",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5052),
+    completed: purchaseManagerHive.getCompleted(5052),
+  ),
+  CoursesExModel(
+    id: 5053,
+    exerciseName: "挑战 4: 添加迁移",
+    productID: "com.mrrubik.learnswift.aspnetex5053",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5053),
+    completed: purchaseManagerHive.getCompleted(5053),
+  ),
+  CoursesExModel(
+    id: 5054,
+    exerciseName: "练习 5: 更新数据库",
+    productID: "com.mrrubik.learnswift.aspnetex5054",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5054),
+    completed: purchaseManagerHive.getCompleted(5054),
+  ),
+  CoursesExModel(
+    id: 5055,
+    exerciseName: "挑战 6: MigrateAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5055",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5055),
+    completed: purchaseManagerHive.getCompleted(5055),
+  ),
+  CoursesExModel(
+    id: 5056,
+    exerciseName: "练习 7: 添加实体",
+    productID: "com.mrrubik.learnswift.aspnetex5056",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5056),
+    completed: purchaseManagerHive.getCompleted(5056),
+  ),
+  CoursesExModel(
+    id: 5057,
+    exerciseName: "挑战 8: SaveChangesAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5057",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5057),
+    completed: purchaseManagerHive.getCompleted(5057),
+  ),
+  CoursesExModel(
+    id: 5058,
+    exerciseName: "练习 9: ToListAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5058",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5058),
+    completed: purchaseManagerHive.getCompleted(5058),
+  ),
+  CoursesExModel(
+    id: 5059,
+    exerciseName: "挑战 10: FindAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5059",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5059),
+    completed: purchaseManagerHive.getCompleted(5059),
+  ),
+  CoursesExModel(
+    id: 5060,
+    exerciseName: "练习 11: 带 DbContext 的端点",
+    productID: "com.mrrubik.learnswift.aspnetex5060",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5060),
+    completed: purchaseManagerHive.getCompleted(5060),
+  ),
+  CoursesExModel(
+    id: 5061,
+    exerciseName: "挑战 12: 更新实体 + 保存",
+    productID: "com.mrrubik.learnswift.aspnetex5061",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5061),
+    completed: purchaseManagerHive.getCompleted(5061),
+  ),
+  CoursesExModel(
+    id: 5062,
+    exerciseName: "练习 13: 删除实体",
+    productID: "com.mrrubik.learnswift.aspnetex5062",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5062),
+    completed: purchaseManagerHive.getCompleted(5062),
+  ),
+  CoursesExModel(
+    id: 5063,
+    exerciseName: "挑战 14: AsNoTracking",
+    productID: "com.mrrubik.learnswift.aspnetex5063",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5063),
+    completed: purchaseManagerHive.getCompleted(5063),
+  ),
+  CoursesExModel(
+    id: 5064,
+    exerciseName: "练习 15: 挑战：端点里创建并保存",
+    productID: "com.mrrubik.learnswift.aspnetex5064",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5064),
+    completed: purchaseManagerHive.getCompleted(5064),
+  ),
+];

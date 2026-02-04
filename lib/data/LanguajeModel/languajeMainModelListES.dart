@@ -17,6 +17,7 @@ import 'package:learnswift/data/mainModel/Laravel/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/ASPNet/CoursesMainModelListES.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListES.dart';
 import '../mainModel/Cpp/CoursesMainModelListES.dart';
@@ -275,10 +276,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'ASP.NET',
     productID: 'com.mrrubik.learnswift.asp',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
-    coursesList: [],
+    coursesList: coursesAspNetMainModelListES,
     color1: Color(0xFF512BD4),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: ASP.NET te introduce al desarrollo backend con este potente framework de Microsoft.\n\nVersión: ASP.NET 8',
   ),

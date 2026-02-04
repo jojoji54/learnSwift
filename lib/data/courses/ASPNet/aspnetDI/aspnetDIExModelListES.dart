@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetDIModelES = [
+  CoursesExModel(
+    id: 4975,
+    exerciseName: "Ejercicio 1: AddSingleton",
+    productID: "com.mrrubik.learnswift.aspnetex4975",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4975),
+    completed: purchaseManagerHive.getCompleted(4975),
+  ),
+  CoursesExModel(
+    id: 4976,
+    exerciseName: "Desafio 2: AddScoped",
+    productID: "com.mrrubik.learnswift.aspnetex4976",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4976),
+    completed: purchaseManagerHive.getCompleted(4976),
+  ),
+  CoursesExModel(
+    id: 4977,
+    exerciseName: "Ejercicio 3: AddTransient",
+    productID: "com.mrrubik.learnswift.aspnetex4977",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4977),
+    completed: purchaseManagerHive.getCompleted(4977),
+  ),
+  CoursesExModel(
+    id: 4978,
+    exerciseName: "Desafio 4: Inyeccion por constructor",
+    productID: "com.mrrubik.learnswift.aspnetex4978",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4978),
+    completed: purchaseManagerHive.getCompleted(4978),
+  ),
+  CoursesExModel(
+    id: 4979,
+    exerciseName: "Ejercicio 5: DI en Minimal API",
+    productID: "com.mrrubik.learnswift.aspnetex4979",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4979),
+    completed: purchaseManagerHive.getCompleted(4979),
+  ),
+  CoursesExModel(
+    id: 4980,
+    exerciseName: "Desafio 6: Configurar options",
+    productID: "com.mrrubik.learnswift.aspnetex4980",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4980),
+    completed: purchaseManagerHive.getCompleted(4980),
+  ),
+  CoursesExModel(
+    id: 4981,
+    exerciseName: "Ejercicio 7: Inyectar IOptions",
+    productID: "com.mrrubik.learnswift.aspnetex4981",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4981),
+    completed: purchaseManagerHive.getCompleted(4981),
+  ),
+  CoursesExModel(
+    id: 4982,
+    exerciseName: "Desafio 8: AddHttpClient",
+    productID: "com.mrrubik.learnswift.aspnetex4982",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4982),
+    completed: purchaseManagerHive.getCompleted(4982),
+  ),
+  CoursesExModel(
+    id: 4983,
+    exerciseName: "Ejercicio 9: Constructor typed client",
+    productID: "com.mrrubik.learnswift.aspnetex4983",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4983),
+    completed: purchaseManagerHive.getCompleted(4983),
+  ),
+  CoursesExModel(
+    id: 4984,
+    exerciseName: "Desafio 10: AddDbContext",
+    productID: "com.mrrubik.learnswift.aspnetex4984",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4984),
+    completed: purchaseManagerHive.getCompleted(4984),
+  ),
+  CoursesExModel(
+    id: 4985,
+    exerciseName: "Ejercicio 11: Resolver desde app.Services",
+    productID: "com.mrrubik.learnswift.aspnetex4985",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4985),
+    completed: purchaseManagerHive.getCompleted(4985),
+  ),
+  CoursesExModel(
+    id: 4986,
+    exerciseName: "Desafio 12: TryAddSingleton",
+    productID: "com.mrrubik.learnswift.aspnetex4986",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4986),
+    completed: purchaseManagerHive.getCompleted(4986),
+  ),
+  CoursesExModel(
+    id: 4987,
+    exerciseName: "Ejercicio 13: Registrar + usar servicio",
+    productID: "com.mrrubik.learnswift.aspnetex4987",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4987),
+    completed: purchaseManagerHive.getCompleted(4987),
+  ),
+  CoursesExModel(
+    id: 4988,
+    exerciseName: "Desafio 14: Crear logger con ILoggerFactory",
+    productID: "com.mrrubik.learnswift.aspnetex4988",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4988),
+    completed: purchaseManagerHive.getCompleted(4988),
+  ),
+  CoursesExModel(
+    id: 4989,
+    exerciseName: "Ejercicio 15: Desafio: endpoint + options",
+    productID: "com.mrrubik.learnswift.aspnetex4989",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4989),
+    completed: purchaseManagerHive.getCompleted(4989),
+  ),
+];

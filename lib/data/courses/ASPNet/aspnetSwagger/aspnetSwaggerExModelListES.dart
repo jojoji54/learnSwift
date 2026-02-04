@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetSwaggerModelES = [
+  CoursesExModel(
+    id: 5095,
+    exerciseName: "Ejercicio 1: AddSwaggerGen",
+    productID: "com.mrrubik.learnswift.aspnetex5095",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5095),
+    completed: purchaseManagerHive.getCompleted(5095),
+  ),
+  CoursesExModel(
+    id: 5096,
+    exerciseName: "Desafio 2: UseSwagger",
+    productID: "com.mrrubik.learnswift.aspnetex5096",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5096),
+    completed: purchaseManagerHive.getCompleted(5096),
+  ),
+  CoursesExModel(
+    id: 5097,
+    exerciseName: "Ejercicio 3: UseSwaggerUI",
+    productID: "com.mrrubik.learnswift.aspnetex5097",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5097),
+    completed: purchaseManagerHive.getCompleted(5097),
+  ),
+  CoursesExModel(
+    id: 5098,
+    exerciseName: "Desafio 4: MapOpenApi",
+    productID: "com.mrrubik.learnswift.aspnetex5098",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5098),
+    completed: purchaseManagerHive.getCompleted(5098),
+  ),
+  CoursesExModel(
+    id: 5099,
+    exerciseName: "Ejercicio 5: SwaggerDoc v1",
+    productID: "com.mrrubik.learnswift.aspnetex5099",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5099),
+    completed: purchaseManagerHive.getCompleted(5099),
+  ),
+  CoursesExModel(
+    id: 5100,
+    exerciseName: "Desafio 6: Anadir XML comments",
+    productID: "com.mrrubik.learnswift.aspnetex5100",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5100),
+    completed: purchaseManagerHive.getCompleted(5100),
+  ),
+  CoursesExModel(
+    id: 5101,
+    exerciseName: "Ejercicio 7: Endpoint Swagger",
+    productID: "com.mrrubik.learnswift.aspnetex5101",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5101),
+    completed: purchaseManagerHive.getCompleted(5101),
+  ),
+  CoursesExModel(
+    id: 5102,
+    exerciseName: "Desafio 8: Describir respuestas",
+    productID: "com.mrrubik.learnswift.aspnetex5102",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5102),
+    completed: purchaseManagerHive.getCompleted(5102),
+  ),
+  CoursesExModel(
+    id: 5103,
+    exerciseName: "Ejercicio 9: Tag de endpoints",
+    productID: "com.mrrubik.learnswift.aspnetex5103",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5103),
+    completed: purchaseManagerHive.getCompleted(5103),
+  ),
+  CoursesExModel(
+    id: 5104,
+    exerciseName: "Desafio 10: Security scheme OpenAPI",
+    productID: "com.mrrubik.learnswift.aspnetex5104",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5104),
+    completed: purchaseManagerHive.getCompleted(5104),
+  ),
+  CoursesExModel(
+    id: 5105,
+    exerciseName: "Ejercicio 11: Security requirement",
+    productID: "com.mrrubik.learnswift.aspnetex5105",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5105),
+    completed: purchaseManagerHive.getCompleted(5105),
+  ),
+  CoursesExModel(
+    id: 5106,
+    exerciseName: "Desafio 12: WithOpenApi en endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5106",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5106),
+    completed: purchaseManagerHive.getCompleted(5106),
+  ),
+  CoursesExModel(
+    id: 5107,
+    exerciseName: "Ejercicio 13: Grupo con tags",
+    productID: "com.mrrubik.learnswift.aspnetex5107",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5107),
+    completed: purchaseManagerHive.getCompleted(5107),
+  ),
+  CoursesExModel(
+    id: 5108,
+    exerciseName: "Desafio 14: Desafio: docs + tags",
+    productID: "com.mrrubik.learnswift.aspnetex5108",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5108),
+    completed: purchaseManagerHive.getCompleted(5108),
+  ),
+  CoursesExModel(
+    id: 5109,
+    exerciseName: "Ejercicio 15: Desafio: describir API",
+    productID: "com.mrrubik.learnswift.aspnetex5109",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5109),
+    completed: purchaseManagerHive.getCompleted(5109),
+  ),
+];

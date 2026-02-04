@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetTestingDeployModelES = [
+  CoursesExModel(
+    id: 5110,
+    exerciseName: "Ejercicio 1: Esqueleto WebApplicationFactory",
+    productID: "com.mrrubik.learnswift.aspnetex5110",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5110),
+    completed: purchaseManagerHive.getCompleted(5110),
+  ),
+  CoursesExModel(
+    id: 5111,
+    exerciseName: "Desafio 2: CreateClient",
+    productID: "com.mrrubik.learnswift.aspnetex5111",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5111),
+    completed: purchaseManagerHive.getCompleted(5111),
+  ),
+  CoursesExModel(
+    id: 5112,
+    exerciseName: "Ejercicio 3: GET /health",
+    productID: "com.mrrubik.learnswift.aspnetex5112",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5112),
+    completed: purchaseManagerHive.getCompleted(5112),
+  ),
+  CoursesExModel(
+    id: 5113,
+    exerciseName: "Desafio 4: Assert del status code",
+    productID: "com.mrrubik.learnswift.aspnetex5113",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5113),
+    completed: purchaseManagerHive.getCompleted(5113),
+  ),
+  CoursesExModel(
+    id: 5114,
+    exerciseName: "Ejercicio 5: Ejecutar dotnet test",
+    productID: "com.mrrubik.learnswift.aspnetex5114",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5114),
+    completed: purchaseManagerHive.getCompleted(5114),
+  ),
+  CoursesExModel(
+    id: 5115,
+    exerciseName: "Desafio 6: ASPNETCORE_ENVIRONMENT",
+    productID: "com.mrrubik.learnswift.aspnetex5115",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5115),
+    completed: purchaseManagerHive.getCompleted(5115),
+  ),
+  CoursesExModel(
+    id: 5116,
+    exerciseName: "Ejercicio 7: dotnet publish",
+    productID: "com.mrrubik.learnswift.aspnetex5116",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5116),
+    completed: purchaseManagerHive.getCompleted(5116),
+  ),
+  CoursesExModel(
+    id: 5117,
+    exerciseName: "Desafio 8: DOTNET_URLS",
+    productID: "com.mrrubik.learnswift.aspnetex5117",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5117),
+    completed: purchaseManagerHive.getCompleted(5117),
+  ),
+  CoursesExModel(
+    id: 5118,
+    exerciseName: "Ejercicio 9: ForwardedHeaders en prod",
+    productID: "com.mrrubik.learnswift.aspnetex5118",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5118),
+    completed: purchaseManagerHive.getCompleted(5118),
+  ),
+  CoursesExModel(
+    id: 5119,
+    exerciseName: "Desafio 10: Anadir endpoint readiness",
+    productID: "com.mrrubik.learnswift.aspnetex5119",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5119),
+    completed: purchaseManagerHive.getCompleted(5119),
+  ),
+  CoursesExModel(
+    id: 5120,
+    exerciseName: "Ejercicio 11: Imagen base Docker",
+    productID: "com.mrrubik.learnswift.aspnetex5120",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5120),
+    completed: purchaseManagerHive.getCompleted(5120),
+  ),
+  CoursesExModel(
+    id: 5121,
+    exerciseName: "Desafio 12: Exponer puerto",
+    productID: "com.mrrubik.learnswift.aspnetex5121",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5121),
+    completed: purchaseManagerHive.getCompleted(5121),
+  ),
+  CoursesExModel(
+    id: 5122,
+    exerciseName: "Ejercicio 13: Endpoint health check",
+    productID: "com.mrrubik.learnswift.aspnetex5122",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5122),
+    completed: purchaseManagerHive.getCompleted(5122),
+  ),
+  CoursesExModel(
+    id: 5123,
+    exerciseName: "Desafio 14: Desafio: test de integracion",
+    productID: "com.mrrubik.learnswift.aspnetex5123",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5123),
+    completed: purchaseManagerHive.getCompleted(5123),
+  ),
+  CoursesExModel(
+    id: 5124,
+    exerciseName: "Ejercicio 15: Desafio: checklist deploy",
+    productID: "com.mrrubik.learnswift.aspnetex5124",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5124),
+    completed: purchaseManagerHive.getCompleted(5124),
+  ),
+];

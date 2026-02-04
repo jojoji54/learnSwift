@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetBasicsModelES = [
+  CoursesExModel(
+    id: 4900,
+    exerciseName: "Ejercicio 1: Crear el builder WebApplication",
+    productID: "com.mrrubik.learnswift.aspnetex4900",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4900),
+    completed: purchaseManagerHive.getCompleted(4900),
+  ),
+  CoursesExModel(
+    id: 4901,
+    exerciseName: "Desafio 2: Construir la app",
+    productID: "com.mrrubik.learnswift.aspnetex4901",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4901),
+    completed: purchaseManagerHive.getCompleted(4901),
+  ),
+  CoursesExModel(
+    id: 4902,
+    exerciseName: "Ejercicio 3: Mapear el endpoint raiz",
+    productID: "com.mrrubik.learnswift.aspnetex4902",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4902),
+    completed: purchaseManagerHive.getCompleted(4902),
+  ),
+  CoursesExModel(
+    id: 4903,
+    exerciseName: "Desafio 4: Arrancar la app",
+    productID: "com.mrrubik.learnswift.aspnetex4903",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4903),
+    completed: purchaseManagerHive.getCompleted(4903),
+  ),
+  CoursesExModel(
+    id: 4904,
+    exerciseName: "Ejercicio 5: Habilitar controladores",
+    productID: "com.mrrubik.learnswift.aspnetex4904",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4904),
+    completed: purchaseManagerHive.getCompleted(4904),
+  ),
+  CoursesExModel(
+    id: 4905,
+    exerciseName: "Desafio 6: Mapear controladores",
+    productID: "com.mrrubik.learnswift.aspnetex4905",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4905),
+    completed: purchaseManagerHive.getCompleted(4905),
+  ),
+  CoursesExModel(
+    id: 4906,
+    exerciseName: "Ejercicio 7: Redireccion HTTPS",
+    productID: "com.mrrubik.learnswift.aspnetex4906",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4906),
+    completed: purchaseManagerHive.getCompleted(4906),
+  ),
+  CoursesExModel(
+    id: 4907,
+    exerciseName: "Desafio 8: Endpoint solo en Development",
+    productID: "com.mrrubik.learnswift.aspnetex4907",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4907),
+    completed: purchaseManagerHive.getCompleted(4907),
+  ),
+  CoursesExModel(
+    id: 4908,
+    exerciseName: "Ejercicio 9: Anadir endpoints explorer",
+    productID: "com.mrrubik.learnswift.aspnetex4908",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4908),
+    completed: purchaseManagerHive.getCompleted(4908),
+  ),
+  CoursesExModel(
+    id: 4909,
+    exerciseName: "Desafio 10: Registrar health checks",
+    productID: "com.mrrubik.learnswift.aspnetex4909",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4909),
+    completed: purchaseManagerHive.getCompleted(4909),
+  ),
+  CoursesExModel(
+    id: 4910,
+    exerciseName: "Ejercicio 11: Mapear health checks",
+    productID: "com.mrrubik.learnswift.aspnetex4910",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4910),
+    completed: purchaseManagerHive.getCompleted(4910),
+  ),
+  CoursesExModel(
+    id: 4911,
+    exerciseName: "Desafio 12: Habilitar CORS (basico)",
+    productID: "com.mrrubik.learnswift.aspnetex4911",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4911),
+    completed: purchaseManagerHive.getCompleted(4911),
+  ),
+  CoursesExModel(
+    id: 4912,
+    exerciseName: "Ejercicio 13: JSON bonito (indentado)",
+    productID: "com.mrrubik.learnswift.aspnetex4912",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4912),
+    completed: purchaseManagerHive.getCompleted(4912),
+  ),
+  CoursesExModel(
+    id: 4913,
+    exerciseName: "Desafio 14: Soporte ProblemDetails",
+    productID: "com.mrrubik.learnswift.aspnetex4913",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4913),
+    completed: purchaseManagerHive.getCompleted(4913),
+  ),
+  CoursesExModel(
+    id: 4914,
+    exerciseName: "Ejercicio 15: Desafio: esqueleto limpio en Program.cs",
+    productID: "com.mrrubik.learnswift.aspnetex4914",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4914),
+    completed: purchaseManagerHive.getCompleted(4914),
+  ),
+];

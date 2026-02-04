@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetTestingDeployModelZH = [
+  CoursesExModel(
+    id: 5110,
+    exerciseName: "练习 1: WebApplicationFactory 骨架",
+    productID: "com.mrrubik.learnswift.aspnetex5110",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5110),
+    completed: purchaseManagerHive.getCompleted(5110),
+  ),
+  CoursesExModel(
+    id: 5111,
+    exerciseName: "挑战 2: CreateClient",
+    productID: "com.mrrubik.learnswift.aspnetex5111",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5111),
+    completed: purchaseManagerHive.getCompleted(5111),
+  ),
+  CoursesExModel(
+    id: 5112,
+    exerciseName: "练习 3: GET /health",
+    productID: "com.mrrubik.learnswift.aspnetex5112",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5112),
+    completed: purchaseManagerHive.getCompleted(5112),
+  ),
+  CoursesExModel(
+    id: 5113,
+    exerciseName: "挑战 4: 断言状态码",
+    productID: "com.mrrubik.learnswift.aspnetex5113",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5113),
+    completed: purchaseManagerHive.getCompleted(5113),
+  ),
+  CoursesExModel(
+    id: 5114,
+    exerciseName: "练习 5: 运行 dotnet test",
+    productID: "com.mrrubik.learnswift.aspnetex5114",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5114),
+    completed: purchaseManagerHive.getCompleted(5114),
+  ),
+  CoursesExModel(
+    id: 5115,
+    exerciseName: "挑战 6: ASPNETCORE_ENVIRONMENT",
+    productID: "com.mrrubik.learnswift.aspnetex5115",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5115),
+    completed: purchaseManagerHive.getCompleted(5115),
+  ),
+  CoursesExModel(
+    id: 5116,
+    exerciseName: "练习 7: dotnet publish",
+    productID: "com.mrrubik.learnswift.aspnetex5116",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5116),
+    completed: purchaseManagerHive.getCompleted(5116),
+  ),
+  CoursesExModel(
+    id: 5117,
+    exerciseName: "挑战 8: DOTNET_URLS",
+    productID: "com.mrrubik.learnswift.aspnetex5117",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5117),
+    completed: purchaseManagerHive.getCompleted(5117),
+  ),
+  CoursesExModel(
+    id: 5118,
+    exerciseName: "练习 9: 生产 ForwardedHeaders",
+    productID: "com.mrrubik.learnswift.aspnetex5118",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5118),
+    completed: purchaseManagerHive.getCompleted(5118),
+  ),
+  CoursesExModel(
+    id: 5119,
+    exerciseName: "挑战 10: 添加 readiness 端点",
+    productID: "com.mrrubik.learnswift.aspnetex5119",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5119),
+    completed: purchaseManagerHive.getCompleted(5119),
+  ),
+  CoursesExModel(
+    id: 5120,
+    exerciseName: "练习 11: Docker 基础镜像",
+    productID: "com.mrrubik.learnswift.aspnetex5120",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5120),
+    completed: purchaseManagerHive.getCompleted(5120),
+  ),
+  CoursesExModel(
+    id: 5121,
+    exerciseName: "挑战 12: 暴露端口",
+    productID: "com.mrrubik.learnswift.aspnetex5121",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5121),
+    completed: purchaseManagerHive.getCompleted(5121),
+  ),
+  CoursesExModel(
+    id: 5122,
+    exerciseName: "练习 13: 健康检查端点",
+    productID: "com.mrrubik.learnswift.aspnetex5122",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5122),
+    completed: purchaseManagerHive.getCompleted(5122),
+  ),
+  CoursesExModel(
+    id: 5123,
+    exerciseName: "挑战 14: 挑战：集成测试",
+    productID: "com.mrrubik.learnswift.aspnetex5123",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5123),
+    completed: purchaseManagerHive.getCompleted(5123),
+  ),
+  CoursesExModel(
+    id: 5124,
+    exerciseName: "练习 15: 挑战：部署清单",
+    productID: "com.mrrubik.learnswift.aspnetex5124",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5124),
+    completed: purchaseManagerHive.getCompleted(5124),
+  ),
+];

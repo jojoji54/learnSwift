@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetEFQueriesModelZH = [
+  CoursesExModel(
+    id: 5065,
+    exerciseName: "练习 1: Where 过滤",
+    productID: "com.mrrubik.learnswift.aspnetex5065",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5065),
+    completed: purchaseManagerHive.getCompleted(5065),
+  ),
+  CoursesExModel(
+    id: 5066,
+    exerciseName: "挑战 2: OrderByDescending",
+    productID: "com.mrrubik.learnswift.aspnetex5066",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5066),
+    completed: purchaseManagerHive.getCompleted(5066),
+  ),
+  CoursesExModel(
+    id: 5067,
+    exerciseName: "练习 3: Select 投影",
+    productID: "com.mrrubik.learnswift.aspnetex5067",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5067),
+    completed: purchaseManagerHive.getCompleted(5067),
+  ),
+  CoursesExModel(
+    id: 5068,
+    exerciseName: "挑战 4: Include 关系",
+    productID: "com.mrrubik.learnswift.aspnetex5068",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5068),
+    completed: purchaseManagerHive.getCompleted(5068),
+  ),
+  CoursesExModel(
+    id: 5069,
+    exerciseName: "练习 5: ThenInclude",
+    productID: "com.mrrubik.learnswift.aspnetex5069",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5069),
+    completed: purchaseManagerHive.getCompleted(5069),
+  ),
+  CoursesExModel(
+    id: 5070,
+    exerciseName: "挑战 6: HasMany 关系",
+    productID: "com.mrrubik.learnswift.aspnetex5070",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5070),
+    completed: purchaseManagerHive.getCompleted(5070),
+  ),
+  CoursesExModel(
+    id: 5071,
+    exerciseName: "练习 7: HasKey",
+    productID: "com.mrrubik.learnswift.aspnetex5071",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5071),
+    completed: purchaseManagerHive.getCompleted(5071),
+  ),
+  CoursesExModel(
+    id: 5072,
+    exerciseName: "挑战 8: FirstOrDefaultAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5072",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5072),
+    completed: purchaseManagerHive.getCompleted(5072),
+  ),
+  CoursesExModel(
+    id: 5073,
+    exerciseName: "练习 9: AnyAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5073",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5073),
+    completed: purchaseManagerHive.getCompleted(5073),
+  ),
+  CoursesExModel(
+    id: 5074,
+    exerciseName: "挑战 10: CountAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5074",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5074),
+    completed: purchaseManagerHive.getCompleted(5074),
+  ),
+  CoursesExModel(
+    id: 5075,
+    exerciseName: "练习 11: Skip/Take 分页",
+    productID: "com.mrrubik.learnswift.aspnetex5075",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5075),
+    completed: purchaseManagerHive.getCompleted(5075),
+  ),
+  CoursesExModel(
+    id: 5076,
+    exerciseName: "挑战 12: AsNoTracking",
+    productID: "com.mrrubik.learnswift.aspnetex5076",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5076),
+    completed: purchaseManagerHive.getCompleted(5076),
+  ),
+  CoursesExModel(
+    id: 5077,
+    exerciseName: "练习 13: FromSqlRaw",
+    productID: "com.mrrubik.learnswift.aspnetex5077",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5077),
+    completed: purchaseManagerHive.getCompleted(5077),
+  ),
+  CoursesExModel(
+    id: 5078,
+    exerciseName: "挑战 14: Split query",
+    productID: "com.mrrubik.learnswift.aspnetex5078",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5078),
+    completed: purchaseManagerHive.getCompleted(5078),
+  ),
+  CoursesExModel(
+    id: 5079,
+    exerciseName: "练习 15: 挑战：include + filter",
+    productID: "com.mrrubik.learnswift.aspnetex5079",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5079),
+    completed: purchaseManagerHive.getCompleted(5079),
+  ),
+];

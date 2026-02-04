@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetMiddlewareModelEN = [
+  CoursesExModel(
+    id: 4990,
+    exerciseName: "Exercise 1: Inline middleware header",
+    productID: "com.mrrubik.learnswift.aspnetex4990",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4990),
+    completed: purchaseManagerHive.getCompleted(4990),
+  ),
+  CoursesExModel(
+    id: 4991,
+    exerciseName: "Challenge 2: UseRouting",
+    productID: "com.mrrubik.learnswift.aspnetex4991",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4991),
+    completed: purchaseManagerHive.getCompleted(4991),
+  ),
+  CoursesExModel(
+    id: 4992,
+    exerciseName: "Exercise 3: UseAuthentication",
+    productID: "com.mrrubik.learnswift.aspnetex4992",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4992),
+    completed: purchaseManagerHive.getCompleted(4992),
+  ),
+  CoursesExModel(
+    id: 4993,
+    exerciseName: "Challenge 4: UseAuthorization",
+    productID: "com.mrrubik.learnswift.aspnetex4993",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4993),
+    completed: purchaseManagerHive.getCompleted(4993),
+  ),
+  CoursesExModel(
+    id: 4994,
+    exerciseName: "Exercise 5: UseCors",
+    productID: "com.mrrubik.learnswift.aspnetex4994",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4994),
+    completed: purchaseManagerHive.getCompleted(4994),
+  ),
+  CoursesExModel(
+    id: 4995,
+    exerciseName: "Challenge 6: UseExceptionHandler",
+    productID: "com.mrrubik.learnswift.aspnetex4995",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4995),
+    completed: purchaseManagerHive.getCompleted(4995),
+  ),
+  CoursesExModel(
+    id: 4996,
+    exerciseName: "Exercise 7: UseStatusCodePages",
+    productID: "com.mrrubik.learnswift.aspnetex4996",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4996),
+    completed: purchaseManagerHive.getCompleted(4996),
+  ),
+  CoursesExModel(
+    id: 4997,
+    exerciseName: "Challenge 8: Map a branch",
+    productID: "com.mrrubik.learnswift.aspnetex4997",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4997),
+    completed: purchaseManagerHive.getCompleted(4997),
+  ),
+  CoursesExModel(
+    id: 4998,
+    exerciseName: "Exercise 9: Middleware class signature",
+    productID: "com.mrrubik.learnswift.aspnetex4998",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4998),
+    completed: purchaseManagerHive.getCompleted(4998),
+  ),
+  CoursesExModel(
+    id: 4999,
+    exerciseName: "Challenge 10: UseMiddleware<T>",
+    productID: "com.mrrubik.learnswift.aspnetex4999",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4999),
+    completed: purchaseManagerHive.getCompleted(4999),
+  ),
+  CoursesExModel(
+    id: 5000,
+    exerciseName: "Exercise 11: Extension method",
+    productID: "com.mrrubik.learnswift.aspnetex5000",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5000),
+    completed: purchaseManagerHive.getCompleted(5000),
+  ),
+  CoursesExModel(
+    id: 5001,
+    exerciseName: "Challenge 12: Response compression",
+    productID: "com.mrrubik.learnswift.aspnetex5001",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5001),
+    completed: purchaseManagerHive.getCompleted(5001),
+  ),
+  CoursesExModel(
+    id: 5002,
+    exerciseName: "Exercise 13: Forwarded headers",
+    productID: "com.mrrubik.learnswift.aspnetex5002",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5002),
+    completed: purchaseManagerHive.getCompleted(5002),
+  ),
+  CoursesExModel(
+    id: 5003,
+    exerciseName: "Challenge 14: Rate limiter (basic)",
+    productID: "com.mrrubik.learnswift.aspnetex5003",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5003),
+    completed: purchaseManagerHive.getCompleted(5003),
+  ),
+  CoursesExModel(
+    id: 5004,
+    exerciseName: "Exercise 15: Challenge: auth order",
+    productID: "com.mrrubik.learnswift.aspnetex5004",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5004),
+    completed: purchaseManagerHive.getCompleted(5004),
+  ),
+];

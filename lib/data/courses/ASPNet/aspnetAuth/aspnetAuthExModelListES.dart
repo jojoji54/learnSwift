@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetAuthModelES = [
+  CoursesExModel(
+    id: 5080,
+    exerciseName: "Ejercicio 1: AddAuthentication",
+    productID: "com.mrrubik.learnswift.aspnetex5080",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5080),
+    completed: purchaseManagerHive.getCompleted(5080),
+  ),
+  CoursesExModel(
+    id: 5081,
+    exerciseName: "Desafio 2: AddAuthorization",
+    productID: "com.mrrubik.learnswift.aspnetex5081",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5081),
+    completed: purchaseManagerHive.getCompleted(5081),
+  ),
+  CoursesExModel(
+    id: 5082,
+    exerciseName: "Ejercicio 3: UseAuthentication + UseAuthorization",
+    productID: "com.mrrubik.learnswift.aspnetex5082",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5082),
+    completed: purchaseManagerHive.getCompleted(5082),
+  ),
+  CoursesExModel(
+    id: 5083,
+    exerciseName: "Desafio 4: AddJwtBearer",
+    productID: "com.mrrubik.learnswift.aspnetex5083",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5083),
+    completed: purchaseManagerHive.getCompleted(5083),
+  ),
+  CoursesExModel(
+    id: 5084,
+    exerciseName: "Ejercicio 5: Atributo Authorize",
+    productID: "com.mrrubik.learnswift.aspnetex5084",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5084),
+    completed: purchaseManagerHive.getCompleted(5084),
+  ),
+  CoursesExModel(
+    id: 5085,
+    exerciseName: "Desafio 6: Atributo AllowAnonymous",
+    productID: "com.mrrubik.learnswift.aspnetex5085",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5085),
+    completed: purchaseManagerHive.getCompleted(5085),
+  ),
+  CoursesExModel(
+    id: 5086,
+    exerciseName: "Ejercicio 7: RequireAuthorization en endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5086",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5086),
+    completed: purchaseManagerHive.getCompleted(5086),
+  ),
+  CoursesExModel(
+    id: 5087,
+    exerciseName: "Desafio 8: Policy de autorizacion",
+    productID: "com.mrrubik.learnswift.aspnetex5087",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5087),
+    completed: purchaseManagerHive.getCompleted(5087),
+  ),
+  CoursesExModel(
+    id: 5088,
+    exerciseName: "Ejercicio 9: Authorize(Policy=...)",
+    productID: "com.mrrubik.learnswift.aspnetex5088",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5088),
+    completed: purchaseManagerHive.getCompleted(5088),
+  ),
+  CoursesExModel(
+    id: 5089,
+    exerciseName: "Desafio 10: Leer nombre de usuario",
+    productID: "com.mrrubik.learnswift.aspnetex5089",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5089),
+    completed: purchaseManagerHive.getCompleted(5089),
+  ),
+  CoursesExModel(
+    id: 5090,
+    exerciseName: "Ejercicio 11: Leer un claim",
+    productID: "com.mrrubik.learnswift.aspnetex5090",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5090),
+    completed: purchaseManagerHive.getCompleted(5090),
+  ),
+  CoursesExModel(
+    id: 5091,
+    exerciseName: "Desafio 12: Policy RequireClaim",
+    productID: "com.mrrubik.learnswift.aspnetex5091",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5091),
+    completed: purchaseManagerHive.getCompleted(5091),
+  ),
+  CoursesExModel(
+    id: 5092,
+    exerciseName: "Ejercicio 13: Fallback policy",
+    productID: "com.mrrubik.learnswift.aspnetex5092",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5092),
+    completed: purchaseManagerHive.getCompleted(5092),
+  ),
+  CoursesExModel(
+    id: 5093,
+    exerciseName: "Desafio 14: Authorize scheme",
+    productID: "com.mrrubik.learnswift.aspnetex5093",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5093),
+    completed: purchaseManagerHive.getCompleted(5093),
+  ),
+  CoursesExModel(
+    id: 5094,
+    exerciseName: "Ejercicio 15: Desafio: proteger admin group",
+    productID: "com.mrrubik.learnswift.aspnetex5094",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5094),
+    completed: purchaseManagerHive.getCompleted(5094),
+  ),
+];

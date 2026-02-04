@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetLoggingModelEN = [
+  CoursesExModel(
+    id: 5020,
+    exerciseName: "Exercise 1: LogInformation",
+    productID: "com.mrrubik.learnswift.aspnetex5020",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5020),
+    completed: purchaseManagerHive.getCompleted(5020),
+  ),
+  CoursesExModel(
+    id: 5021,
+    exerciseName: "Challenge 2: LogWarning",
+    productID: "com.mrrubik.learnswift.aspnetex5021",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5021),
+    completed: purchaseManagerHive.getCompleted(5021),
+  ),
+  CoursesExModel(
+    id: 5022,
+    exerciseName: "Exercise 3: LogError with exception",
+    productID: "com.mrrubik.learnswift.aspnetex5022",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5022),
+    completed: purchaseManagerHive.getCompleted(5022),
+  ),
+  CoursesExModel(
+    id: 5023,
+    exerciseName: "Challenge 4: Structured log {Id}",
+    productID: "com.mrrubik.learnswift.aspnetex5023",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5023),
+    completed: purchaseManagerHive.getCompleted(5023),
+  ),
+  CoursesExModel(
+    id: 5024,
+    exerciseName: "Exercise 5: BeginScope",
+    productID: "com.mrrubik.learnswift.aspnetex5024",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5024),
+    completed: purchaseManagerHive.getCompleted(5024),
+  ),
+  CoursesExModel(
+    id: 5025,
+    exerciseName: "Challenge 6: HTTP logging middleware",
+    productID: "com.mrrubik.learnswift.aspnetex5025",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5025),
+    completed: purchaseManagerHive.getCompleted(5025),
+  ),
+  CoursesExModel(
+    id: 5026,
+    exerciseName: "Exercise 7: AddConsole provider",
+    productID: "com.mrrubik.learnswift.aspnetex5026",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5026),
+    completed: purchaseManagerHive.getCompleted(5026),
+  ),
+  CoursesExModel(
+    id: 5027,
+    exerciseName: "Challenge 8: Minimum log level",
+    productID: "com.mrrubik.learnswift.aspnetex5027",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5027),
+    completed: purchaseManagerHive.getCompleted(5027),
+  ),
+  CoursesExModel(
+    id: 5028,
+    exerciseName: "Exercise 9: Filter noisy logs",
+    productID: "com.mrrubik.learnswift.aspnetex5028",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5028),
+    completed: purchaseManagerHive.getCompleted(5028),
+  ),
+  CoursesExModel(
+    id: 5029,
+    exerciseName: "Challenge 10: Developer exception page",
+    productID: "com.mrrubik.learnswift.aspnetex5029",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5029),
+    completed: purchaseManagerHive.getCompleted(5029),
+  ),
+  CoursesExModel(
+    id: 5030,
+    exerciseName: "Exercise 11: Log inside an endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5030",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5030),
+    completed: purchaseManagerHive.getCompleted(5030),
+  ),
+  CoursesExModel(
+    id: 5031,
+    exerciseName: "Challenge 12: Activity tag",
+    productID: "com.mrrubik.learnswift.aspnetex5031",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5031),
+    completed: purchaseManagerHive.getCompleted(5031),
+  ),
+  CoursesExModel(
+    id: 5032,
+    exerciseName: "Exercise 13: Logger from ILoggerFactory",
+    productID: "com.mrrubik.learnswift.aspnetex5032",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5032),
+    completed: purchaseManagerHive.getCompleted(5032),
+  ),
+  CoursesExModel(
+    id: 5033,
+    exerciseName: "Challenge 14: Log template {Url}",
+    productID: "com.mrrubik.learnswift.aspnetex5033",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5033),
+    completed: purchaseManagerHive.getCompleted(5033),
+  ),
+  CoursesExModel(
+    id: 5034,
+    exerciseName: "Exercise 15: Challenge: logs that help",
+    productID: "com.mrrubik.learnswift.aspnetex5034",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5034),
+    completed: purchaseManagerHive.getCompleted(5034),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetDIModelZH = [
+  CoursesExModel(
+    id: 4975,
+    exerciseName: "练习 1: AddSingleton",
+    productID: "com.mrrubik.learnswift.aspnetex4975",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4975),
+    completed: purchaseManagerHive.getCompleted(4975),
+  ),
+  CoursesExModel(
+    id: 4976,
+    exerciseName: "挑战 2: AddScoped",
+    productID: "com.mrrubik.learnswift.aspnetex4976",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4976),
+    completed: purchaseManagerHive.getCompleted(4976),
+  ),
+  CoursesExModel(
+    id: 4977,
+    exerciseName: "练习 3: AddTransient",
+    productID: "com.mrrubik.learnswift.aspnetex4977",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4977),
+    completed: purchaseManagerHive.getCompleted(4977),
+  ),
+  CoursesExModel(
+    id: 4978,
+    exerciseName: "挑战 4: 构造函数注入",
+    productID: "com.mrrubik.learnswift.aspnetex4978",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4978),
+    completed: purchaseManagerHive.getCompleted(4978),
+  ),
+  CoursesExModel(
+    id: 4979,
+    exerciseName: "练习 5: Minimal API 中注入",
+    productID: "com.mrrubik.learnswift.aspnetex4979",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4979),
+    completed: purchaseManagerHive.getCompleted(4979),
+  ),
+  CoursesExModel(
+    id: 4980,
+    exerciseName: "挑战 6: 配置 options",
+    productID: "com.mrrubik.learnswift.aspnetex4980",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4980),
+    completed: purchaseManagerHive.getCompleted(4980),
+  ),
+  CoursesExModel(
+    id: 4981,
+    exerciseName: "练习 7: 注入 IOptions",
+    productID: "com.mrrubik.learnswift.aspnetex4981",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4981),
+    completed: purchaseManagerHive.getCompleted(4981),
+  ),
+  CoursesExModel(
+    id: 4982,
+    exerciseName: "挑战 8: AddHttpClient",
+    productID: "com.mrrubik.learnswift.aspnetex4982",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4982),
+    completed: purchaseManagerHive.getCompleted(4982),
+  ),
+  CoursesExModel(
+    id: 4983,
+    exerciseName: "练习 9: Typed client 构造函数",
+    productID: "com.mrrubik.learnswift.aspnetex4983",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4983),
+    completed: purchaseManagerHive.getCompleted(4983),
+  ),
+  CoursesExModel(
+    id: 4984,
+    exerciseName: "挑战 10: AddDbContext",
+    productID: "com.mrrubik.learnswift.aspnetex4984",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4984),
+    completed: purchaseManagerHive.getCompleted(4984),
+  ),
+  CoursesExModel(
+    id: 4985,
+    exerciseName: "练习 11: 从 app.Services 获取",
+    productID: "com.mrrubik.learnswift.aspnetex4985",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4985),
+    completed: purchaseManagerHive.getCompleted(4985),
+  ),
+  CoursesExModel(
+    id: 4986,
+    exerciseName: "挑战 12: TryAddSingleton",
+    productID: "com.mrrubik.learnswift.aspnetex4986",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4986),
+    completed: purchaseManagerHive.getCompleted(4986),
+  ),
+  CoursesExModel(
+    id: 4987,
+    exerciseName: "练习 13: 注册 + 使用服务",
+    productID: "com.mrrubik.learnswift.aspnetex4987",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4987),
+    completed: purchaseManagerHive.getCompleted(4987),
+  ),
+  CoursesExModel(
+    id: 4988,
+    exerciseName: "挑战 14: 用 ILoggerFactory 创建 logger",
+    productID: "com.mrrubik.learnswift.aspnetex4988",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4988),
+    completed: purchaseManagerHive.getCompleted(4988),
+  ),
+  CoursesExModel(
+    id: 4989,
+    exerciseName: "练习 15: 挑战：端点 + options",
+    productID: "com.mrrubik.learnswift.aspnetex4989",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4989),
+    completed: purchaseManagerHive.getCompleted(4989),
+  ),
+];

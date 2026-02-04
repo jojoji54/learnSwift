@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetBasicsModelEN = [
+  CoursesExModel(
+    id: 4900,
+    exerciseName: "Exercise 1: Create the WebApplication builder",
+    productID: "com.mrrubik.learnswift.aspnetex4900",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4900),
+    completed: purchaseManagerHive.getCompleted(4900),
+  ),
+  CoursesExModel(
+    id: 4901,
+    exerciseName: "Challenge 2: Build the app",
+    productID: "com.mrrubik.learnswift.aspnetex4901",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4901),
+    completed: purchaseManagerHive.getCompleted(4901),
+  ),
+  CoursesExModel(
+    id: 4902,
+    exerciseName: "Exercise 3: Map a root endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex4902",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4902),
+    completed: purchaseManagerHive.getCompleted(4902),
+  ),
+  CoursesExModel(
+    id: 4903,
+    exerciseName: "Challenge 4: Run the app",
+    productID: "com.mrrubik.learnswift.aspnetex4903",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4903),
+    completed: purchaseManagerHive.getCompleted(4903),
+  ),
+  CoursesExModel(
+    id: 4904,
+    exerciseName: "Exercise 5: Enable controllers",
+    productID: "com.mrrubik.learnswift.aspnetex4904",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4904),
+    completed: purchaseManagerHive.getCompleted(4904),
+  ),
+  CoursesExModel(
+    id: 4905,
+    exerciseName: "Challenge 6: Map controllers",
+    productID: "com.mrrubik.learnswift.aspnetex4905",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4905),
+    completed: purchaseManagerHive.getCompleted(4905),
+  ),
+  CoursesExModel(
+    id: 4906,
+    exerciseName: "Exercise 7: HTTPS redirection",
+    productID: "com.mrrubik.learnswift.aspnetex4906",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4906),
+    completed: purchaseManagerHive.getCompleted(4906),
+  ),
+  CoursesExModel(
+    id: 4907,
+    exerciseName: "Challenge 8: Development-only endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex4907",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4907),
+    completed: purchaseManagerHive.getCompleted(4907),
+  ),
+  CoursesExModel(
+    id: 4908,
+    exerciseName: "Exercise 9: Add endpoints explorer",
+    productID: "com.mrrubik.learnswift.aspnetex4908",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4908),
+    completed: purchaseManagerHive.getCompleted(4908),
+  ),
+  CoursesExModel(
+    id: 4909,
+    exerciseName: "Challenge 10: Register health checks",
+    productID: "com.mrrubik.learnswift.aspnetex4909",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4909),
+    completed: purchaseManagerHive.getCompleted(4909),
+  ),
+  CoursesExModel(
+    id: 4910,
+    exerciseName: "Exercise 11: Map health checks",
+    productID: "com.mrrubik.learnswift.aspnetex4910",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4910),
+    completed: purchaseManagerHive.getCompleted(4910),
+  ),
+  CoursesExModel(
+    id: 4911,
+    exerciseName: "Challenge 12: Enable CORS (basic)",
+    productID: "com.mrrubik.learnswift.aspnetex4911",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4911),
+    completed: purchaseManagerHive.getCompleted(4911),
+  ),
+  CoursesExModel(
+    id: 4912,
+    exerciseName: "Exercise 13: Pretty JSON output",
+    productID: "com.mrrubik.learnswift.aspnetex4912",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4912),
+    completed: purchaseManagerHive.getCompleted(4912),
+  ),
+  CoursesExModel(
+    id: 4913,
+    exerciseName: "Challenge 14: ProblemDetails support",
+    productID: "com.mrrubik.learnswift.aspnetex4913",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4913),
+    completed: purchaseManagerHive.getCompleted(4913),
+  ),
+  CoursesExModel(
+    id: 4914,
+    exerciseName: "Exercise 15: Challenge: clean Program.cs skeleton",
+    productID: "com.mrrubik.learnswift.aspnetex4914",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4914),
+    completed: purchaseManagerHive.getCompleted(4914),
+  ),
+];

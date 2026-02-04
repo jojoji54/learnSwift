@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetEFCoreModelEN = [
+  CoursesExModel(
+    id: 5050,
+    exerciseName: "Exercise 1: AddDbContext + UseSqlite",
+    productID: "com.mrrubik.learnswift.aspnetex5050",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5050),
+    completed: purchaseManagerHive.getCompleted(5050),
+  ),
+  CoursesExModel(
+    id: 5051,
+    exerciseName: "Challenge 2: DbContext + DbSet",
+    productID: "com.mrrubik.learnswift.aspnetex5051",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5051),
+    completed: purchaseManagerHive.getCompleted(5051),
+  ),
+  CoursesExModel(
+    id: 5052,
+    exerciseName: "Exercise 3: Entity class",
+    productID: "com.mrrubik.learnswift.aspnetex5052",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5052),
+    completed: purchaseManagerHive.getCompleted(5052),
+  ),
+  CoursesExModel(
+    id: 5053,
+    exerciseName: "Challenge 4: Add migration",
+    productID: "com.mrrubik.learnswift.aspnetex5053",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5053),
+    completed: purchaseManagerHive.getCompleted(5053),
+  ),
+  CoursesExModel(
+    id: 5054,
+    exerciseName: "Exercise 5: Update database",
+    productID: "com.mrrubik.learnswift.aspnetex5054",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5054),
+    completed: purchaseManagerHive.getCompleted(5054),
+  ),
+  CoursesExModel(
+    id: 5055,
+    exerciseName: "Challenge 6: MigrateAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5055",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5055),
+    completed: purchaseManagerHive.getCompleted(5055),
+  ),
+  CoursesExModel(
+    id: 5056,
+    exerciseName: "Exercise 7: Add entity",
+    productID: "com.mrrubik.learnswift.aspnetex5056",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5056),
+    completed: purchaseManagerHive.getCompleted(5056),
+  ),
+  CoursesExModel(
+    id: 5057,
+    exerciseName: "Challenge 8: SaveChangesAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5057",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5057),
+    completed: purchaseManagerHive.getCompleted(5057),
+  ),
+  CoursesExModel(
+    id: 5058,
+    exerciseName: "Exercise 9: ToListAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5058",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5058),
+    completed: purchaseManagerHive.getCompleted(5058),
+  ),
+  CoursesExModel(
+    id: 5059,
+    exerciseName: "Challenge 10: FindAsync",
+    productID: "com.mrrubik.learnswift.aspnetex5059",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5059),
+    completed: purchaseManagerHive.getCompleted(5059),
+  ),
+  CoursesExModel(
+    id: 5060,
+    exerciseName: "Exercise 11: Endpoint with DbContext",
+    productID: "com.mrrubik.learnswift.aspnetex5060",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5060),
+    completed: purchaseManagerHive.getCompleted(5060),
+  ),
+  CoursesExModel(
+    id: 5061,
+    exerciseName: "Challenge 12: Update entity + save",
+    productID: "com.mrrubik.learnswift.aspnetex5061",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5061),
+    completed: purchaseManagerHive.getCompleted(5061),
+  ),
+  CoursesExModel(
+    id: 5062,
+    exerciseName: "Exercise 13: Remove entity",
+    productID: "com.mrrubik.learnswift.aspnetex5062",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5062),
+    completed: purchaseManagerHive.getCompleted(5062),
+  ),
+  CoursesExModel(
+    id: 5063,
+    exerciseName: "Challenge 14: AsNoTracking",
+    productID: "com.mrrubik.learnswift.aspnetex5063",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5063),
+    completed: purchaseManagerHive.getCompleted(5063),
+  ),
+  CoursesExModel(
+    id: 5064,
+    exerciseName: "Exercise 15: Challenge: create + save in endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5064",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5064),
+    completed: purchaseManagerHive.getCompleted(5064),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetConfigModelZH = [
+  CoursesExModel(
+    id: 5005,
+    exerciseName: "练习 1: GetConnectionString",
+    productID: "com.mrrubik.learnswift.aspnetex5005",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5005),
+    completed: purchaseManagerHive.getCompleted(5005),
+  ),
+  CoursesExModel(
+    id: 5006,
+    exerciseName: "挑战 2: 配置索引",
+    productID: "com.mrrubik.learnswift.aspnetex5006",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5006),
+    completed: purchaseManagerHive.getCompleted(5006),
+  ),
+  CoursesExModel(
+    id: 5007,
+    exerciseName: "练习 3: GetValue<int>",
+    productID: "com.mrrubik.learnswift.aspnetex5007",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5007),
+    completed: purchaseManagerHive.getCompleted(5007),
+  ),
+  CoursesExModel(
+    id: 5008,
+    exerciseName: "挑战 4: GetSection",
+    productID: "com.mrrubik.learnswift.aspnetex5008",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5008),
+    completed: purchaseManagerHive.getCompleted(5008),
+  ),
+  CoursesExModel(
+    id: 5009,
+    exerciseName: "练习 5: 配置 ApiOptions",
+    productID: "com.mrrubik.learnswift.aspnetex5009",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5009),
+    completed: purchaseManagerHive.getCompleted(5009),
+  ),
+  CoursesExModel(
+    id: 5010,
+    exerciseName: "挑战 6: Options record",
+    productID: "com.mrrubik.learnswift.aspnetex5010",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5010),
+    completed: purchaseManagerHive.getCompleted(5010),
+  ),
+  CoursesExModel(
+    id: 5011,
+    exerciseName: "练习 7: 读取环境名",
+    productID: "com.mrrubik.learnswift.aspnetex5011",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5011),
+    completed: purchaseManagerHive.getCompleted(5011),
+  ),
+  CoursesExModel(
+    id: 5012,
+    exerciseName: "挑战 8: appsettings.json 片段",
+    productID: "com.mrrubik.learnswift.aspnetex5012",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5012),
+    completed: purchaseManagerHive.getCompleted(5012),
+  ),
+  CoursesExModel(
+    id: 5013,
+    exerciseName: "练习 9: 仅生产启用 HSTS",
+    productID: "com.mrrubik.learnswift.aspnetex5013",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5013),
+    completed: purchaseManagerHive.getCompleted(5013),
+  ),
+  CoursesExModel(
+    id: 5014,
+    exerciseName: "挑战 10: 端点使用 Options",
+    productID: "com.mrrubik.learnswift.aspnetex5014",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5014),
+    completed: purchaseManagerHive.getCompleted(5014),
+  ),
+  CoursesExModel(
+    id: 5015,
+    exerciseName: "练习 11: UseUrls",
+    productID: "com.mrrubik.learnswift.aspnetex5015",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5015),
+    completed: purchaseManagerHive.getCompleted(5015),
+  ),
+  CoursesExModel(
+    id: 5016,
+    exerciseName: "挑战 12: AddJsonFile",
+    productID: "com.mrrubik.learnswift.aspnetex5016",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5016),
+    completed: purchaseManagerHive.getCompleted(5016),
+  ),
+  CoursesExModel(
+    id: 5017,
+    exerciseName: "练习 13: AddEnvironmentVariables",
+    productID: "com.mrrubik.learnswift.aspnetex5017",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5017),
+    completed: purchaseManagerHive.getCompleted(5017),
+  ),
+  CoursesExModel(
+    id: 5018,
+    exerciseName: "挑战 14: 注入 IHostEnvironment",
+    productID: "com.mrrubik.learnswift.aspnetex5018",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5018),
+    completed: purchaseManagerHive.getCompleted(5018),
+  ),
+  CoursesExModel(
+    id: 5019,
+    exerciseName: "练习 15: 挑战：按环境加载 appsettings",
+    productID: "com.mrrubik.learnswift.aspnetex5019",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5019),
+    completed: purchaseManagerHive.getCompleted(5019),
+  ),
+];

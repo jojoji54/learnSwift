@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetSwaggerModelZH = [
+  CoursesExModel(
+    id: 5095,
+    exerciseName: "练习 1: AddSwaggerGen",
+    productID: "com.mrrubik.learnswift.aspnetex5095",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5095),
+    completed: purchaseManagerHive.getCompleted(5095),
+  ),
+  CoursesExModel(
+    id: 5096,
+    exerciseName: "挑战 2: UseSwagger",
+    productID: "com.mrrubik.learnswift.aspnetex5096",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5096),
+    completed: purchaseManagerHive.getCompleted(5096),
+  ),
+  CoursesExModel(
+    id: 5097,
+    exerciseName: "练习 3: UseSwaggerUI",
+    productID: "com.mrrubik.learnswift.aspnetex5097",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5097),
+    completed: purchaseManagerHive.getCompleted(5097),
+  ),
+  CoursesExModel(
+    id: 5098,
+    exerciseName: "挑战 4: MapOpenApi",
+    productID: "com.mrrubik.learnswift.aspnetex5098",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5098),
+    completed: purchaseManagerHive.getCompleted(5098),
+  ),
+  CoursesExModel(
+    id: 5099,
+    exerciseName: "练习 5: SwaggerDoc v1",
+    productID: "com.mrrubik.learnswift.aspnetex5099",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5099),
+    completed: purchaseManagerHive.getCompleted(5099),
+  ),
+  CoursesExModel(
+    id: 5100,
+    exerciseName: "挑战 6: 添加 XML 注释",
+    productID: "com.mrrubik.learnswift.aspnetex5100",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5100),
+    completed: purchaseManagerHive.getCompleted(5100),
+  ),
+  CoursesExModel(
+    id: 5101,
+    exerciseName: "练习 7: Swagger 端点",
+    productID: "com.mrrubik.learnswift.aspnetex5101",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5101),
+    completed: purchaseManagerHive.getCompleted(5101),
+  ),
+  CoursesExModel(
+    id: 5102,
+    exerciseName: "挑战 8: 描述响应",
+    productID: "com.mrrubik.learnswift.aspnetex5102",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5102),
+    completed: purchaseManagerHive.getCompleted(5102),
+  ),
+  CoursesExModel(
+    id: 5103,
+    exerciseName: "练习 9: 端点打 tag",
+    productID: "com.mrrubik.learnswift.aspnetex5103",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5103),
+    completed: purchaseManagerHive.getCompleted(5103),
+  ),
+  CoursesExModel(
+    id: 5104,
+    exerciseName: "挑战 10: OpenAPI 安全方案",
+    productID: "com.mrrubik.learnswift.aspnetex5104",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5104),
+    completed: purchaseManagerHive.getCompleted(5104),
+  ),
+  CoursesExModel(
+    id: 5105,
+    exerciseName: "练习 11: 安全要求",
+    productID: "com.mrrubik.learnswift.aspnetex5105",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5105),
+    completed: purchaseManagerHive.getCompleted(5105),
+  ),
+  CoursesExModel(
+    id: 5106,
+    exerciseName: "挑战 12: 端点 WithOpenApi",
+    productID: "com.mrrubik.learnswift.aspnetex5106",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5106),
+    completed: purchaseManagerHive.getCompleted(5106),
+  ),
+  CoursesExModel(
+    id: 5107,
+    exerciseName: "练习 13: 分组 tags",
+    productID: "com.mrrubik.learnswift.aspnetex5107",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5107),
+    completed: purchaseManagerHive.getCompleted(5107),
+  ),
+  CoursesExModel(
+    id: 5108,
+    exerciseName: "挑战 14: 挑战：文档 + tags",
+    productID: "com.mrrubik.learnswift.aspnetex5108",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5108),
+    completed: purchaseManagerHive.getCompleted(5108),
+  ),
+  CoursesExModel(
+    id: 5109,
+    exerciseName: "练习 15: 挑战：描述 API",
+    productID: "com.mrrubik.learnswift.aspnetex5109",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5109),
+    completed: purchaseManagerHive.getCompleted(5109),
+  ),
+];

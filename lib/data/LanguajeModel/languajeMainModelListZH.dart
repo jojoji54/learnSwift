@@ -17,6 +17,7 @@ import 'package:learnswift/data/mainModel/Laravel/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/ASPNet/CoursesMainModelListZH.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListZH.dart';
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
@@ -271,10 +272,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'ASP.NET',
     productID: 'com.mrrubik.learnswift.asp',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(21),
-    coursesList: [],
+    coursesList: coursesAspNetMainModelListZH,
     color1: Color(0xFF512BD4),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description: 'CodeCrafters: ASP.NET 介绍这一由微软开发的强大后端框架。\n\n版本: ASP.NET 8',
   ),
   ProgrammingItem(

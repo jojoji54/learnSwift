@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetValidationModelEN = [
+  CoursesExModel(
+    id: 5035,
+    exerciseName: "Exercise 1: Required on DTO",
+    productID: "com.mrrubik.learnswift.aspnetex5035",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5035),
+    completed: purchaseManagerHive.getCompleted(5035),
+  ),
+  CoursesExModel(
+    id: 5036,
+    exerciseName: "Challenge 2: StringLength attribute",
+    productID: "com.mrrubik.learnswift.aspnetex5036",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5036),
+    completed: purchaseManagerHive.getCompleted(5036),
+  ),
+  CoursesExModel(
+    id: 5037,
+    exerciseName: "Exercise 3: ModelState check",
+    productID: "com.mrrubik.learnswift.aspnetex5037",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5037),
+    completed: purchaseManagerHive.getCompleted(5037),
+  ),
+  CoursesExModel(
+    id: 5038,
+    exerciseName: "Challenge 4: ValidationProblem(ModelState)",
+    productID: "com.mrrubik.learnswift.aspnetex5038",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5038),
+    completed: purchaseManagerHive.getCompleted(5038),
+  ),
+  CoursesExModel(
+    id: 5039,
+    exerciseName: "Exercise 5: Results.Problem",
+    productID: "com.mrrubik.learnswift.aspnetex5039",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5039),
+    completed: purchaseManagerHive.getCompleted(5039),
+  ),
+  CoursesExModel(
+    id: 5040,
+    exerciseName: "Challenge 6: Map error endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5040",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5040),
+    completed: purchaseManagerHive.getCompleted(5040),
+  ),
+  CoursesExModel(
+    id: 5041,
+    exerciseName: "Exercise 7: BadRequest with payload",
+    productID: "com.mrrubik.learnswift.aspnetex5041",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5041),
+    completed: purchaseManagerHive.getCompleted(5041),
+  ),
+  CoursesExModel(
+    id: 5042,
+    exerciseName: "Challenge 8: Minimal API ValidationProblem",
+    productID: "com.mrrubik.learnswift.aspnetex5042",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5042),
+    completed: purchaseManagerHive.getCompleted(5042),
+  ),
+  CoursesExModel(
+    id: 5043,
+    exerciseName: "Exercise 9: UseExceptionHandler",
+    productID: "com.mrrubik.learnswift.aspnetex5043",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5043),
+    completed: purchaseManagerHive.getCompleted(5043),
+  ),
+  CoursesExModel(
+    id: 5044,
+    exerciseName: "Challenge 10: Status code pages",
+    productID: "com.mrrubik.learnswift.aspnetex5044",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5044),
+    completed: purchaseManagerHive.getCompleted(5044),
+  ),
+  CoursesExModel(
+    id: 5045,
+    exerciseName: "Exercise 11: Return NotFound()",
+    productID: "com.mrrubik.learnswift.aspnetex5045",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5045),
+    completed: purchaseManagerHive.getCompleted(5045),
+  ),
+  CoursesExModel(
+    id: 5046,
+    exerciseName: "Challenge 12: Return Conflict()",
+    productID: "com.mrrubik.learnswift.aspnetex5046",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5046),
+    completed: purchaseManagerHive.getCompleted(5046),
+  ),
+  CoursesExModel(
+    id: 5047,
+    exerciseName: "Exercise 13: Challenge: clean error response",
+    productID: "com.mrrubik.learnswift.aspnetex5047",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5047),
+    completed: purchaseManagerHive.getCompleted(5047),
+  ),
+  CoursesExModel(
+    id: 5048,
+    exerciseName: "Challenge 14: ProblemDetails title",
+    productID: "com.mrrubik.learnswift.aspnetex5048",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5048),
+    completed: purchaseManagerHive.getCompleted(5048),
+  ),
+  CoursesExModel(
+    id: 5049,
+    exerciseName: "Exercise 15: Challenge: validate + create",
+    productID: "com.mrrubik.learnswift.aspnetex5049",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5049),
+    completed: purchaseManagerHive.getCompleted(5049),
+  ),
+];

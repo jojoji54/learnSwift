@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetValidationModelZH = [
+  CoursesExModel(
+    id: 5035,
+    exerciseName: "练习 1: DTO 上的 Required",
+    productID: "com.mrrubik.learnswift.aspnetex5035",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5035),
+    completed: purchaseManagerHive.getCompleted(5035),
+  ),
+  CoursesExModel(
+    id: 5036,
+    exerciseName: "挑战 2: StringLength 特性",
+    productID: "com.mrrubik.learnswift.aspnetex5036",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5036),
+    completed: purchaseManagerHive.getCompleted(5036),
+  ),
+  CoursesExModel(
+    id: 5037,
+    exerciseName: "练习 3: ModelState 检查",
+    productID: "com.mrrubik.learnswift.aspnetex5037",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5037),
+    completed: purchaseManagerHive.getCompleted(5037),
+  ),
+  CoursesExModel(
+    id: 5038,
+    exerciseName: "挑战 4: ValidationProblem(ModelState)",
+    productID: "com.mrrubik.learnswift.aspnetex5038",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5038),
+    completed: purchaseManagerHive.getCompleted(5038),
+  ),
+  CoursesExModel(
+    id: 5039,
+    exerciseName: "练习 5: Results.Problem",
+    productID: "com.mrrubik.learnswift.aspnetex5039",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5039),
+    completed: purchaseManagerHive.getCompleted(5039),
+  ),
+  CoursesExModel(
+    id: 5040,
+    exerciseName: "挑战 6: 映射错误端点",
+    productID: "com.mrrubik.learnswift.aspnetex5040",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5040),
+    completed: purchaseManagerHive.getCompleted(5040),
+  ),
+  CoursesExModel(
+    id: 5041,
+    exerciseName: "练习 7: 带 payload 的 BadRequest",
+    productID: "com.mrrubik.learnswift.aspnetex5041",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5041),
+    completed: purchaseManagerHive.getCompleted(5041),
+  ),
+  CoursesExModel(
+    id: 5042,
+    exerciseName: "挑战 8: Minimal API 的 ValidationProblem",
+    productID: "com.mrrubik.learnswift.aspnetex5042",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5042),
+    completed: purchaseManagerHive.getCompleted(5042),
+  ),
+  CoursesExModel(
+    id: 5043,
+    exerciseName: "练习 9: UseExceptionHandler",
+    productID: "com.mrrubik.learnswift.aspnetex5043",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5043),
+    completed: purchaseManagerHive.getCompleted(5043),
+  ),
+  CoursesExModel(
+    id: 5044,
+    exerciseName: "挑战 10: 状态码页面",
+    productID: "com.mrrubik.learnswift.aspnetex5044",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5044),
+    completed: purchaseManagerHive.getCompleted(5044),
+  ),
+  CoursesExModel(
+    id: 5045,
+    exerciseName: "练习 11: 返回 NotFound()",
+    productID: "com.mrrubik.learnswift.aspnetex5045",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5045),
+    completed: purchaseManagerHive.getCompleted(5045),
+  ),
+  CoursesExModel(
+    id: 5046,
+    exerciseName: "挑战 12: 返回 Conflict()",
+    productID: "com.mrrubik.learnswift.aspnetex5046",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5046),
+    completed: purchaseManagerHive.getCompleted(5046),
+  ),
+  CoursesExModel(
+    id: 5047,
+    exerciseName: "练习 13: 挑战：干净的错误响应",
+    productID: "com.mrrubik.learnswift.aspnetex5047",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5047),
+    completed: purchaseManagerHive.getCompleted(5047),
+  ),
+  CoursesExModel(
+    id: 5048,
+    exerciseName: "挑战 14: ProblemDetails 标题",
+    productID: "com.mrrubik.learnswift.aspnetex5048",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5048),
+    completed: purchaseManagerHive.getCompleted(5048),
+  ),
+  CoursesExModel(
+    id: 5049,
+    exerciseName: "练习 15: 挑战：验证 + 创建",
+    productID: "com.mrrubik.learnswift.aspnetex5049",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5049),
+    completed: purchaseManagerHive.getCompleted(5049),
+  ),
+];

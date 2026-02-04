@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetConfigModelEN = [
+  CoursesExModel(
+    id: 5005,
+    exerciseName: "Exercise 1: GetConnectionString",
+    productID: "com.mrrubik.learnswift.aspnetex5005",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5005),
+    completed: purchaseManagerHive.getCompleted(5005),
+  ),
+  CoursesExModel(
+    id: 5006,
+    exerciseName: "Challenge 2: Config indexer",
+    productID: "com.mrrubik.learnswift.aspnetex5006",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5006),
+    completed: purchaseManagerHive.getCompleted(5006),
+  ),
+  CoursesExModel(
+    id: 5007,
+    exerciseName: "Exercise 3: GetValue<int>",
+    productID: "com.mrrubik.learnswift.aspnetex5007",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5007),
+    completed: purchaseManagerHive.getCompleted(5007),
+  ),
+  CoursesExModel(
+    id: 5008,
+    exerciseName: "Challenge 4: GetSection",
+    productID: "com.mrrubik.learnswift.aspnetex5008",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5008),
+    completed: purchaseManagerHive.getCompleted(5008),
+  ),
+  CoursesExModel(
+    id: 5009,
+    exerciseName: "Exercise 5: Configure<ApiOptions>",
+    productID: "com.mrrubik.learnswift.aspnetex5009",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5009),
+    completed: purchaseManagerHive.getCompleted(5009),
+  ),
+  CoursesExModel(
+    id: 5010,
+    exerciseName: "Challenge 6: Options record",
+    productID: "com.mrrubik.learnswift.aspnetex5010",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5010),
+    completed: purchaseManagerHive.getCompleted(5010),
+  ),
+  CoursesExModel(
+    id: 5011,
+    exerciseName: "Exercise 7: Read environment name",
+    productID: "com.mrrubik.learnswift.aspnetex5011",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5011),
+    completed: purchaseManagerHive.getCompleted(5011),
+  ),
+  CoursesExModel(
+    id: 5012,
+    exerciseName: "Challenge 8: appsettings.json snippet",
+    productID: "com.mrrubik.learnswift.aspnetex5012",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5012),
+    completed: purchaseManagerHive.getCompleted(5012),
+  ),
+  CoursesExModel(
+    id: 5013,
+    exerciseName: "Exercise 9: Production-only HSTS",
+    productID: "com.mrrubik.learnswift.aspnetex5013",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5013),
+    completed: purchaseManagerHive.getCompleted(5013),
+  ),
+  CoursesExModel(
+    id: 5014,
+    exerciseName: "Challenge 10: Options in an endpoint",
+    productID: "com.mrrubik.learnswift.aspnetex5014",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5014),
+    completed: purchaseManagerHive.getCompleted(5014),
+  ),
+  CoursesExModel(
+    id: 5015,
+    exerciseName: "Exercise 11: UseUrls",
+    productID: "com.mrrubik.learnswift.aspnetex5015",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5015),
+    completed: purchaseManagerHive.getCompleted(5015),
+  ),
+  CoursesExModel(
+    id: 5016,
+    exerciseName: "Challenge 12: AddJsonFile",
+    productID: "com.mrrubik.learnswift.aspnetex5016",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5016),
+    completed: purchaseManagerHive.getCompleted(5016),
+  ),
+  CoursesExModel(
+    id: 5017,
+    exerciseName: "Exercise 13: AddEnvironmentVariables",
+    productID: "com.mrrubik.learnswift.aspnetex5017",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5017),
+    completed: purchaseManagerHive.getCompleted(5017),
+  ),
+  CoursesExModel(
+    id: 5018,
+    exerciseName: "Challenge 14: Inject IHostEnvironment",
+    productID: "com.mrrubik.learnswift.aspnetex5018",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5018),
+    completed: purchaseManagerHive.getCompleted(5018),
+  ),
+  CoursesExModel(
+    id: 5019,
+    exerciseName: "Exercise 15: Challenge: env-based appsettings",
+    productID: "com.mrrubik.learnswift.aspnetex5019",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5019),
+    completed: purchaseManagerHive.getCompleted(5019),
+  ),
+];

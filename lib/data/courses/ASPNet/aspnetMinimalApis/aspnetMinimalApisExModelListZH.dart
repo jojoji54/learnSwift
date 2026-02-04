@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetMinimalApisModelZH = [
+  CoursesExModel(
+    id: 4915,
+    exerciseName: "练习 1: MapGet 返回字符串",
+    productID: "com.mrrubik.learnswift.aspnetex4915",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4915),
+    completed: purchaseManagerHive.getCompleted(4915),
+  ),
+  CoursesExModel(
+    id: 4916,
+    exerciseName: "挑战 2: 用 Results.Ok 返回 JSON",
+    productID: "com.mrrubik.learnswift.aspnetex4916",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4916),
+    completed: purchaseManagerHive.getCompleted(4916),
+  ),
+  CoursesExModel(
+    id: 4917,
+    exerciseName: "练习 3: MapPost 绑定 body",
+    productID: "com.mrrubik.learnswift.aspnetex4917",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4917),
+    completed: purchaseManagerHive.getCompleted(4917),
+  ),
+  CoursesExModel(
+    id: 4918,
+    exerciseName: "挑战 4: 路由参数 {id}",
+    productID: "com.mrrubik.learnswift.aspnetex4918",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4918),
+    completed: purchaseManagerHive.getCompleted(4918),
+  ),
+  CoursesExModel(
+    id: 4919,
+    exerciseName: "练习 5: Query 参数",
+    productID: "com.mrrubik.learnswift.aspnetex4919",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4919),
+    completed: purchaseManagerHive.getCompleted(4919),
+  ),
+  CoursesExModel(
+    id: 4920,
+    exerciseName: "挑战 6: 返回 NotFound",
+    productID: "com.mrrubik.learnswift.aspnetex4920",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4920),
+    completed: purchaseManagerHive.getCompleted(4920),
+  ),
+  CoursesExModel(
+    id: 4921,
+    exerciseName: "练习 7: 返回 Created",
+    productID: "com.mrrubik.learnswift.aspnetex4921",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4921),
+    completed: purchaseManagerHive.getCompleted(4921),
+  ),
+  CoursesExModel(
+    id: 4922,
+    exerciseName: "挑战 8: TypedResults.Ok",
+    productID: "com.mrrubik.learnswift.aspnetex4922",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4922),
+    completed: purchaseManagerHive.getCompleted(4922),
+  ),
+  CoursesExModel(
+    id: 4923,
+    exerciseName: "练习 9: MapPut 返回 NoContent",
+    productID: "com.mrrubik.learnswift.aspnetex4923",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4923),
+    completed: purchaseManagerHive.getCompleted(4923),
+  ),
+  CoursesExModel(
+    id: 4924,
+    exerciseName: "挑战 10: MapDelete 返回 NoContent",
+    productID: "com.mrrubik.learnswift.aspnetex4924",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4924),
+    completed: purchaseManagerHive.getCompleted(4924),
+  ),
+  CoursesExModel(
+    id: 4925,
+    exerciseName: "练习 11: 用 MapGroup 分组",
+    productID: "com.mrrubik.learnswift.aspnetex4925",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4925),
+    completed: purchaseManagerHive.getCompleted(4925),
+  ),
+  CoursesExModel(
+    id: 4926,
+    exerciseName: "挑战 12: 添加 tags",
+    productID: "com.mrrubik.learnswift.aspnetex4926",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4926),
+    completed: purchaseManagerHive.getCompleted(4926),
+  ),
+  CoursesExModel(
+    id: 4927,
+    exerciseName: "练习 13: 给端点命名",
+    productID: "com.mrrubik.learnswift.aspnetex4927",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4927),
+    completed: purchaseManagerHive.getCompleted(4927),
+  ),
+  CoursesExModel(
+    id: 4928,
+    exerciseName: "挑战 14: 暴露到 OpenAPI",
+    productID: "com.mrrubik.learnswift.aspnetex4928",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4928),
+    completed: purchaseManagerHive.getCompleted(4928),
+  ),
+  CoursesExModel(
+    id: 4929,
+    exerciseName: "练习 15: 挑战：迷你 CRUD",
+    productID: "com.mrrubik.learnswift.aspnetex4929",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4929),
+    completed: purchaseManagerHive.getCompleted(4929),
+  ),
+];

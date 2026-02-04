@@ -578,6 +578,36 @@ class CategoryInfoL10n {
         return loc.laravelCat13InfoTitle;
       case 'laravelCat14InfoTitle':
         return loc.laravelCat14InfoTitle;
+      case 'aspnetCat0InfoTitle':
+        return loc.aspnetCat0InfoTitle;
+      case 'aspnetCat1InfoTitle':
+        return loc.aspnetCat1InfoTitle;
+      case 'aspnetCat2InfoTitle':
+        return loc.aspnetCat2InfoTitle;
+      case 'aspnetCat3InfoTitle':
+        return loc.aspnetCat3InfoTitle;
+      case 'aspnetCat4InfoTitle':
+        return loc.aspnetCat4InfoTitle;
+      case 'aspnetCat5InfoTitle':
+        return loc.aspnetCat5InfoTitle;
+      case 'aspnetCat6InfoTitle':
+        return loc.aspnetCat6InfoTitle;
+      case 'aspnetCat7InfoTitle':
+        return loc.aspnetCat7InfoTitle;
+      case 'aspnetCat8InfoTitle':
+        return loc.aspnetCat8InfoTitle;
+      case 'aspnetCat9InfoTitle':
+        return loc.aspnetCat9InfoTitle;
+      case 'aspnetCat10InfoTitle':
+        return loc.aspnetCat10InfoTitle;
+      case 'aspnetCat11InfoTitle':
+        return loc.aspnetCat11InfoTitle;
+      case 'aspnetCat12InfoTitle':
+        return loc.aspnetCat12InfoTitle;
+      case 'aspnetCat13InfoTitle':
+        return loc.aspnetCat13InfoTitle;
+      case 'aspnetCat14InfoTitle':
+        return loc.aspnetCat14InfoTitle;
       default:
         return key;
     }
@@ -1160,6 +1190,36 @@ class CategoryInfoL10n {
         return loc.laravelCat13InfoContent;
       case 'laravelCat14InfoContent':
         return loc.laravelCat14InfoContent;
+      case 'aspnetCat0InfoContent':
+        return loc.aspnetCat0InfoContent;
+      case 'aspnetCat1InfoContent':
+        return loc.aspnetCat1InfoContent;
+      case 'aspnetCat2InfoContent':
+        return loc.aspnetCat2InfoContent;
+      case 'aspnetCat3InfoContent':
+        return loc.aspnetCat3InfoContent;
+      case 'aspnetCat4InfoContent':
+        return loc.aspnetCat4InfoContent;
+      case 'aspnetCat5InfoContent':
+        return loc.aspnetCat5InfoContent;
+      case 'aspnetCat6InfoContent':
+        return loc.aspnetCat6InfoContent;
+      case 'aspnetCat7InfoContent':
+        return loc.aspnetCat7InfoContent;
+      case 'aspnetCat8InfoContent':
+        return loc.aspnetCat8InfoContent;
+      case 'aspnetCat9InfoContent':
+        return loc.aspnetCat9InfoContent;
+      case 'aspnetCat10InfoContent':
+        return loc.aspnetCat10InfoContent;
+      case 'aspnetCat11InfoContent':
+        return loc.aspnetCat11InfoContent;
+      case 'aspnetCat12InfoContent':
+        return loc.aspnetCat12InfoContent;
+      case 'aspnetCat13InfoContent':
+        return loc.aspnetCat13InfoContent;
+      case 'aspnetCat14InfoContent':
+        return loc.aspnetCat14InfoContent;
       default:
         return key;
     }

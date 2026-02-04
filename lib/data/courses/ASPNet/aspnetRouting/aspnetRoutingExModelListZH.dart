@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> aspnetRoutingModelZH = [
+  CoursesExModel(
+    id: 4930,
+    exerciseName: "练习 1: 路由约束 {id:int}",
+    productID: "com.mrrubik.learnswift.aspnetex4930",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4930),
+    completed: purchaseManagerHive.getCompleted(4930),
+  ),
+  CoursesExModel(
+    id: 4931,
+    exerciseName: "挑战 2: 可选参数 {slug?}",
+    productID: "com.mrrubik.learnswift.aspnetex4931",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4931),
+    completed: purchaseManagerHive.getCompleted(4931),
+  ),
+  CoursesExModel(
+    id: 4932,
+    exerciseName: "练习 3: 捕获所有 {*path}",
+    productID: "com.mrrubik.learnswift.aspnetex4932",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4932),
+    completed: purchaseManagerHive.getCompleted(4932),
+  ),
+  CoursesExModel(
+    id: 4933,
+    exerciseName: "挑战 4: 保护路由组",
+    productID: "com.mrrubik.learnswift.aspnetex4933",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4933),
+    completed: purchaseManagerHive.getCompleted(4933),
+  ),
+  CoursesExModel(
+    id: 4934,
+    exerciseName: "练习 5: 分组 + 端点",
+    productID: "com.mrrubik.learnswift.aspnetex4934",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4934),
+    completed: purchaseManagerHive.getCompleted(4934),
+  ),
+  CoursesExModel(
+    id: 4935,
+    exerciseName: "挑战 6: Fallback 路由",
+    productID: "com.mrrubik.learnswift.aspnetex4935",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4935),
+    completed: purchaseManagerHive.getCompleted(4935),
+  ),
+  CoursesExModel(
+    id: 4936,
+    exerciseName: "练习 7: 映射多个方法",
+    productID: "com.mrrubik.learnswift.aspnetex4936",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4936),
+    completed: purchaseManagerHive.getCompleted(4936),
+  ),
+  CoursesExModel(
+    id: 4937,
+    exerciseName: "挑战 8: 分组打 tag",
+    productID: "com.mrrubik.learnswift.aspnetex4937",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4937),
+    completed: purchaseManagerHive.getCompleted(4937),
+  ),
+  CoursesExModel(
+    id: 4938,
+    exerciseName: "练习 9: 小写 URL",
+    productID: "com.mrrubik.learnswift.aspnetex4938",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4938),
+    completed: purchaseManagerHive.getCompleted(4938),
+  ),
+  CoursesExModel(
+    id: 4939,
+    exerciseName: "挑战 10: 传统控制器路由",
+    productID: "com.mrrubik.learnswift.aspnetex4939",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4939),
+    completed: purchaseManagerHive.getCompleted(4939),
+  ),
+  CoursesExModel(
+    id: 4940,
+    exerciseName: "练习 11: 添加 Produces 元数据",
+    productID: "com.mrrubik.learnswift.aspnetex4940",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4940),
+    completed: purchaseManagerHive.getCompleted(4940),
+  ),
+  CoursesExModel(
+    id: 4941,
+    exerciseName: "挑战 12: 命名商品路由",
+    productID: "com.mrrubik.learnswift.aspnetex4941",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4941),
+    completed: purchaseManagerHive.getCompleted(4941),
+  ),
+  CoursesExModel(
+    id: 4942,
+    exerciseName: "练习 13: 按名称生成链接",
+    productID: "com.mrrubik.learnswift.aspnetex4942",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4942),
+    completed: purchaseManagerHive.getCompleted(4942),
+  ),
+  CoursesExModel(
+    id: 4943,
+    exerciseName: "挑战 14: 版本分组",
+    productID: "com.mrrubik.learnswift.aspnetex4943",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4943),
+    completed: purchaseManagerHive.getCompleted(4943),
+  ),
+  CoursesExModel(
+    id: 4944,
+    exerciseName: "练习 15: 挑战：分组 + 约束",
+    productID: "com.mrrubik.learnswift.aspnetex4944",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4944),
+    completed: purchaseManagerHive.getCompleted(4944),
+  ),
+];

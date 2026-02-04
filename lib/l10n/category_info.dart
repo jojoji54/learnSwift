@@ -397,6 +397,37 @@ class CategoryInfoL10n {
         return loc.angularCat13InfoTitle;
       case 'angularCat14InfoTitle':
         return loc.angularCat14InfoTitle;
+      case 'vueCat0InfoTitle':
+        return loc.vueCat0InfoTitle;
+      case 'vueCat1InfoTitle':
+        return loc.vueCat1InfoTitle;
+      case 'vueCat2InfoTitle':
+        return loc.vueCat2InfoTitle;
+      case 'vueCat3InfoTitle':
+        return loc.vueCat3InfoTitle;
+      case 'vueCat4InfoTitle':
+        return loc.vueCat4InfoTitle;
+      case 'vueCat5InfoTitle':
+        return loc.vueCat5InfoTitle;
+      case 'vueCat6InfoTitle':
+        return loc.vueCat6InfoTitle;
+      case 'vueCat7InfoTitle':
+        return loc.vueCat7InfoTitle;
+      case 'vueCat8InfoTitle':
+        return loc.vueCat8InfoTitle;
+      case 'vueCat9InfoTitle':
+        return loc.vueCat9InfoTitle;
+      case 'vueCat10InfoTitle':
+        return loc.vueCat10InfoTitle;
+      case 'vueCat11InfoTitle':
+        return loc.vueCat11InfoTitle;
+      case 'vueCat12InfoTitle':
+        return loc.vueCat12InfoTitle;
+      case 'vueCat13InfoTitle':
+        return loc.vueCat13InfoTitle;
+      case 'vueCat14InfoTitle':
+        return loc.vueCat14InfoTitle;
+
       case 'reactCat0InfoTitle':
         return loc.reactCat0InfoTitle;
       case 'reactCat1InfoTitle':
@@ -828,6 +859,37 @@ class CategoryInfoL10n {
         return loc.angularCat13InfoContent;
       case 'angularCat14InfoContent':
         return loc.angularCat14InfoContent;
+      case 'vueCat0InfoContent':
+        return loc.vueCat0InfoContent;
+      case 'vueCat1InfoContent':
+        return loc.vueCat1InfoContent;
+      case 'vueCat2InfoContent':
+        return loc.vueCat2InfoContent;
+      case 'vueCat3InfoContent':
+        return loc.vueCat3InfoContent;
+      case 'vueCat4InfoContent':
+        return loc.vueCat4InfoContent;
+      case 'vueCat5InfoContent':
+        return loc.vueCat5InfoContent;
+      case 'vueCat6InfoContent':
+        return loc.vueCat6InfoContent;
+      case 'vueCat7InfoContent':
+        return loc.vueCat7InfoContent;
+      case 'vueCat8InfoContent':
+        return loc.vueCat8InfoContent;
+      case 'vueCat9InfoContent':
+        return loc.vueCat9InfoContent;
+      case 'vueCat10InfoContent':
+        return loc.vueCat10InfoContent;
+      case 'vueCat11InfoContent':
+        return loc.vueCat11InfoContent;
+      case 'vueCat12InfoContent':
+        return loc.vueCat12InfoContent;
+      case 'vueCat13InfoContent':
+        return loc.vueCat13InfoContent;
+      case 'vueCat14InfoContent':
+        return loc.vueCat14InfoContent;
+
       case 'reactCat0InfoContent':
         return loc.reactCat0InfoContent;
       case 'reactCat1InfoContent':

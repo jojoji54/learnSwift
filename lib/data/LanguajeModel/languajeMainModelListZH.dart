@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListZH.dart';
@@ -208,10 +209,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Vue.js',
     productID: 'com.mrrubik.learnswift.vue',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
-    coursesList: [],
+    coursesList: coursesVueMainModelListZH,
     color1: Color(0xFF41B883),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description: 'CodeCrafters: Vue.js 指导您使用这一轻量级渐进框架进行网页开发。\n\n版本: Vue 3.3',
   ),
   ProgrammingItem(

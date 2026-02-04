@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListEN.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListEN.dart';
@@ -211,10 +212,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Vue.js',
     productID: 'com.mrrubik.learnswift.vue',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(16),
-    coursesList: [],
+    coursesList: coursesVueMainModelListEN,
     color1: Color(0xFF41B883),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Vue.js guides you in developing with this lightweight and progressive framework for web applications.\n\nVersion: Vue 3.3',
   ),

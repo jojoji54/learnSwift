@@ -108,9 +108,11 @@ class _CSharpMethodsEx1025State extends State<CSharpMethodsEx1025> {
         completed: true,
       );
 
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
-          true;
-
+      final idx = allprovider.data[Constant.catIndex].catExercise
+          .indexWhere((e) => e.id == widget.id);
+      if (idx != -1) {
+        allprovider.data[Constant.catIndex].catExercise[idx].completed = true;
+      }
       allprovider.setData(allprovider.data);
       _controller.clear();
 

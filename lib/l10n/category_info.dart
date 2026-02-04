@@ -458,6 +458,36 @@ class CategoryInfoL10n {
         return loc.reactCat13InfoTitle;
       case 'reactCat14InfoTitle':
         return loc.reactCat14InfoTitle;
+      case 'djangoCat0InfoTitle':
+        return loc.djangoCat0InfoTitle;
+      case 'djangoCat1InfoTitle':
+        return loc.djangoCat1InfoTitle;
+      case 'djangoCat2InfoTitle':
+        return loc.djangoCat2InfoTitle;
+      case 'djangoCat3InfoTitle':
+        return loc.djangoCat3InfoTitle;
+      case 'djangoCat4InfoTitle':
+        return loc.djangoCat4InfoTitle;
+      case 'djangoCat5InfoTitle':
+        return loc.djangoCat5InfoTitle;
+      case 'djangoCat6InfoTitle':
+        return loc.djangoCat6InfoTitle;
+      case 'djangoCat7InfoTitle':
+        return loc.djangoCat7InfoTitle;
+      case 'djangoCat8InfoTitle':
+        return loc.djangoCat8InfoTitle;
+      case 'djangoCat9InfoTitle':
+        return loc.djangoCat9InfoTitle;
+      case 'djangoCat10InfoTitle':
+        return loc.djangoCat10InfoTitle;
+      case 'djangoCat11InfoTitle':
+        return loc.djangoCat11InfoTitle;
+      case 'djangoCat12InfoTitle':
+        return loc.djangoCat12InfoTitle;
+      case 'djangoCat13InfoTitle':
+        return loc.djangoCat13InfoTitle;
+      case 'djangoCat14InfoTitle':
+        return loc.djangoCat14InfoTitle;
       default:
         return key;
     }
@@ -920,6 +950,36 @@ class CategoryInfoL10n {
         return loc.reactCat13InfoContent;
       case 'reactCat14InfoContent':
         return loc.reactCat14InfoContent;
+      case 'djangoCat0InfoContent':
+        return loc.djangoCat0InfoContent;
+      case 'djangoCat1InfoContent':
+        return loc.djangoCat1InfoContent;
+      case 'djangoCat2InfoContent':
+        return loc.djangoCat2InfoContent;
+      case 'djangoCat3InfoContent':
+        return loc.djangoCat3InfoContent;
+      case 'djangoCat4InfoContent':
+        return loc.djangoCat4InfoContent;
+      case 'djangoCat5InfoContent':
+        return loc.djangoCat5InfoContent;
+      case 'djangoCat6InfoContent':
+        return loc.djangoCat6InfoContent;
+      case 'djangoCat7InfoContent':
+        return loc.djangoCat7InfoContent;
+      case 'djangoCat8InfoContent':
+        return loc.djangoCat8InfoContent;
+      case 'djangoCat9InfoContent':
+        return loc.djangoCat9InfoContent;
+      case 'djangoCat10InfoContent':
+        return loc.djangoCat10InfoContent;
+      case 'djangoCat11InfoContent':
+        return loc.djangoCat11InfoContent;
+      case 'djangoCat12InfoContent':
+        return loc.djangoCat12InfoContent;
+      case 'djangoCat13InfoContent':
+        return loc.djangoCat13InfoContent;
+      case 'djangoCat14InfoContent':
+        return loc.djangoCat14InfoContent;
       default:
         return key;
     }

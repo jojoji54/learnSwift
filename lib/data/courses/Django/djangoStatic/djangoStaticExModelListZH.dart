@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoStaticModelZH = [
+  CoursesExModel(
+    id: 3960,
+    exerciseName: "练习1：STATIC_URL",
+    productID: "com.mrrubik.learnswift.djangoex3960",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3960),
+    completed: purchaseManagerHive.getCompleted(3960),
+  ),
+  CoursesExModel(
+    id: 3961,
+    exerciseName: "挑战2：STATICFILES_DIRS",
+    productID: "com.mrrubik.learnswift.djangoex3961",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3961),
+    completed: purchaseManagerHive.getCompleted(3961),
+  ),
+  CoursesExModel(
+    id: 3962,
+    exerciseName: "练习3：collectstatic",
+    productID: "com.mrrubik.learnswift.djangoex3962",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3962),
+    completed: purchaseManagerHive.getCompleted(3962),
+  ),
+  CoursesExModel(
+    id: 3963,
+    exerciseName: "挑战4：使用 static 标签",
+    productID: "com.mrrubik.learnswift.djangoex3963",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3963),
+    completed: purchaseManagerHive.getCompleted(3963),
+  ),
+  CoursesExModel(
+    id: 3964,
+    exerciseName: "练习5：媒体路径",
+    productID: "com.mrrubik.learnswift.djangoex3964",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3964),
+    completed: purchaseManagerHive.getCompleted(3964),
+  ),
+  CoursesExModel(
+    id: 3965,
+    exerciseName: "挑战6：ImageField 上传路径",
+    productID: "com.mrrubik.learnswift.djangoex3965",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3965),
+    completed: purchaseManagerHive.getCompleted(3965),
+  ),
+  CoursesExModel(
+    id: 3966,
+    exerciseName: "练习7：处理 request.FILES",
+    productID: "com.mrrubik.learnswift.djangoex3966",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3966),
+    completed: purchaseManagerHive.getCompleted(3966),
+  ),
+  CoursesExModel(
+    id: 3967,
+    exerciseName: "挑战8：显示 image.url",
+    productID: "com.mrrubik.learnswift.djangoex3967",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3967),
+    completed: purchaseManagerHive.getCompleted(3967),
+  ),
+  CoursesExModel(
+    id: 3968,
+    exerciseName: "练习9：urls.py 配置媒体",
+    productID: "com.mrrubik.learnswift.djangoex3968",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3968),
+    completed: purchaseManagerHive.getCompleted(3968),
+  ),
+  CoursesExModel(
+    id: 3969,
+    exerciseName: "挑战10：FileSystemStorage",
+    productID: "com.mrrubik.learnswift.djangoex3969",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3969),
+    completed: purchaseManagerHive.getCompleted(3969),
+  ),
+  CoursesExModel(
+    id: 3970,
+    exerciseName: "练习11：校验 content_type",
+    productID: "com.mrrubik.learnswift.djangoex3970",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3970),
+    completed: purchaseManagerHive.getCompleted(3970),
+  ),
+  CoursesExModel(
+    id: 3971,
+    exerciseName: "挑战12：内存文件 ContentFile",
+    productID: "com.mrrubik.learnswift.djangoex3971",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3971),
+    completed: purchaseManagerHive.getCompleted(3971),
+  ),
+  CoursesExModel(
+    id: 3972,
+    exerciseName: "练习13：WhiteNoise 中间件",
+    productID: "com.mrrubik.learnswift.djangoex3972",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3972),
+    completed: purchaseManagerHive.getCompleted(3972),
+  ),
+  CoursesExModel(
+    id: 3973,
+    exerciseName: "挑战14：ManifestStaticFilesStorage",
+    productID: "com.mrrubik.learnswift.djangoex3973",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3973),
+    completed: purchaseManagerHive.getCompleted(3973),
+  ),
+  CoursesExModel(
+    id: 3974,
+    exerciseName: "练习15：staticfiles 应用",
+    productID: "com.mrrubik.learnswift.djangoex3974",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3974),
+    completed: purchaseManagerHive.getCompleted(3974),
+  ),
+];

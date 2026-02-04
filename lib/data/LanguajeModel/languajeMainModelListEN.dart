@@ -13,6 +13,7 @@ import 'package:learnswift/data/mainModel/React/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/Django/CoursesMainModelListEN.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListEN.dart';
 import '../mainModel/Cpp/CoursesMainModelListEN.dart';
@@ -224,10 +225,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Django',
     productID: 'com.mrrubik.learnswift.djano',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(17),
-    coursesList: [],
+    coursesList: coursesDjangoMainModelListEN,
     color1: Color(0xFF092E20),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Django teaches you this powerful Python backend framework, ideal for fast and scalable applications.\n\nVersion: Django 4.2',
   ),

@@ -72,7 +72,11 @@ class _ArraysEx87State extends State<ArraysEx87> {
 
     if (codeRegex.hasMatch(userInput)) {
       purchaseManagerHive.updatePurchase(widget.id, purchased: true, completed: true);
-      allProvider.data[Constant.catIndex].catExercise[widget.id].completed = true;
+      final idx = allProvider.data[Constant.catIndex].catExercise
+          .indexWhere((e) => e.id == widget.id);
+      if (idx != -1) {
+        allProvider.data[Constant.catIndex].catExercise[idx].completed = true;
+      }
       allProvider.setData(allProvider.data);
 
       setState(() {

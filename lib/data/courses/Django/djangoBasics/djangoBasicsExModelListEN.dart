@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoBasicsModelEN = [
+  CoursesExModel(
+    id: 3900,
+    exerciseName: "Exercise 1: Start a project",
+    productID: "com.mrrubik.learnswift.djangoex3900",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3900),
+    completed: purchaseManagerHive.getCompleted(3900),
+  ),
+  CoursesExModel(
+    id: 3901,
+    exerciseName: "Challenge 2: Run the dev server",
+    productID: "com.mrrubik.learnswift.djangoex3901",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3901),
+    completed: purchaseManagerHive.getCompleted(3901),
+  ),
+  CoursesExModel(
+    id: 3902,
+    exerciseName: "Exercise 3: Create an app",
+    productID: "com.mrrubik.learnswift.djangoex3902",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3902),
+    completed: purchaseManagerHive.getCompleted(3902),
+  ),
+  CoursesExModel(
+    id: 3903,
+    exerciseName: "Challenge 4: Install the app",
+    productID: "com.mrrubik.learnswift.djangoex3903",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3903),
+    completed: purchaseManagerHive.getCompleted(3903),
+  ),
+  CoursesExModel(
+    id: 3904,
+    exerciseName: "Exercise 5: Hello view",
+    productID: "com.mrrubik.learnswift.djangoex3904",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3904),
+    completed: purchaseManagerHive.getCompleted(3904),
+  ),
+  CoursesExModel(
+    id: 3905,
+    exerciseName: "Challenge 6: First URL route",
+    productID: "com.mrrubik.learnswift.djangoex3905",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3905),
+    completed: purchaseManagerHive.getCompleted(3905),
+  ),
+  CoursesExModel(
+    id: 3906,
+    exerciseName: "Exercise 7: Render a template",
+    productID: "com.mrrubik.learnswift.djangoex3906",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3906),
+    completed: purchaseManagerHive.getCompleted(3906),
+  ),
+  CoursesExModel(
+    id: 3907,
+    exerciseName: "Challenge 8: Template variable",
+    productID: "com.mrrubik.learnswift.djangoex3907",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3907),
+    completed: purchaseManagerHive.getCompleted(3907),
+  ),
+  CoursesExModel(
+    id: 3908,
+    exerciseName: "Exercise 9: Base template + block",
+    productID: "com.mrrubik.learnswift.djangoex3908",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3908),
+    completed: purchaseManagerHive.getCompleted(3908),
+  ),
+  CoursesExModel(
+    id: 3909,
+    exerciseName: "Challenge 10: Create superuser",
+    productID: "com.mrrubik.learnswift.djangoex3909",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3909),
+    completed: purchaseManagerHive.getCompleted(3909),
+  ),
+  CoursesExModel(
+    id: 3910,
+    exerciseName: "Exercise 11: Run migrations",
+    productID: "com.mrrubik.learnswift.djangoex3910",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3910),
+    completed: purchaseManagerHive.getCompleted(3910),
+  ),
+  CoursesExModel(
+    id: 3911,
+    exerciseName: "Challenge 12: Create migrations",
+    productID: "com.mrrubik.learnswift.djangoex3911",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3911),
+    completed: purchaseManagerHive.getCompleted(3911),
+  ),
+  CoursesExModel(
+    id: 3912,
+    exerciseName: "Exercise 13: System check",
+    productID: "com.mrrubik.learnswift.djangoex3912",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3912),
+    completed: purchaseManagerHive.getCompleted(3912),
+  ),
+  CoursesExModel(
+    id: 3913,
+    exerciseName: "Challenge 14: Open shell",
+    productID: "com.mrrubik.learnswift.djangoex3913",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3913),
+    completed: purchaseManagerHive.getCompleted(3913),
+  ),
+  CoursesExModel(
+    id: 3914,
+    exerciseName: "Exercise 15: Read SECRET_KEY from env",
+    productID: "com.mrrubik.learnswift.djangoex3914",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3914),
+    completed: purchaseManagerHive.getCompleted(3914),
+  ),
+];

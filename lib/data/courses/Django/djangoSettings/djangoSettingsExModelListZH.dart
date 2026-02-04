@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoSettingsModelZH = [
+  CoursesExModel(
+    id: 3915,
+    exerciseName: "练习1：模板目录 DIRS",
+    productID: "com.mrrubik.learnswift.djangoex3915",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3915),
+    completed: purchaseManagerHive.getCompleted(3915),
+  ),
+  CoursesExModel(
+    id: 3916,
+    exerciseName: "挑战2：时区 TIME_ZONE",
+    productID: "com.mrrubik.learnswift.djangoex3916",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3916),
+    completed: purchaseManagerHive.getCompleted(3916),
+  ),
+  CoursesExModel(
+    id: 3917,
+    exerciseName: "练习3：语言 LANGUAGE_CODE",
+    productID: "com.mrrubik.learnswift.djangoex3917",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3917),
+    completed: purchaseManagerHive.getCompleted(3917),
+  ),
+  CoursesExModel(
+    id: 3918,
+    exerciseName: "挑战4：数据库 sqlite",
+    productID: "com.mrrubik.learnswift.djangoex3918",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3918),
+    completed: purchaseManagerHive.getCompleted(3918),
+  ),
+  CoursesExModel(
+    id: 3919,
+    exerciseName: "练习5：STATIC_URL",
+    productID: "com.mrrubik.learnswift.djangoex3919",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3919),
+    completed: purchaseManagerHive.getCompleted(3919),
+  ),
+  CoursesExModel(
+    id: 3920,
+    exerciseName: "挑战6：STATICFILES_DIRS",
+    productID: "com.mrrubik.learnswift.djangoex3920",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3920),
+    completed: purchaseManagerHive.getCompleted(3920),
+  ),
+  CoursesExModel(
+    id: 3921,
+    exerciseName: "练习7：媒体路径",
+    productID: "com.mrrubik.learnswift.djangoex3921",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3921),
+    completed: purchaseManagerHive.getCompleted(3921),
+  ),
+  CoursesExModel(
+    id: 3922,
+    exerciseName: "挑战8：允许的域名",
+    productID: "com.mrrubik.learnswift.djangoex3922",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3922),
+    completed: purchaseManagerHive.getCompleted(3922),
+  ),
+  CoursesExModel(
+    id: 3923,
+    exerciseName: "练习9：从环境读取 DEBUG",
+    productID: "com.mrrubik.learnswift.djangoex3923",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3923),
+    completed: purchaseManagerHive.getCompleted(3923),
+  ),
+  CoursesExModel(
+    id: 3924,
+    exerciseName: "挑战10：可信 CSRF 域",
+    productID: "com.mrrubik.learnswift.djangoex3924",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3924),
+    completed: purchaseManagerHive.getCompleted(3924),
+  ),
+  CoursesExModel(
+    id: 3925,
+    exerciseName: "练习11：缓存配置",
+    productID: "com.mrrubik.learnswift.djangoex3925",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3925),
+    completed: purchaseManagerHive.getCompleted(3925),
+  ),
+  CoursesExModel(
+    id: 3926,
+    exerciseName: "挑战12：日志 console",
+    productID: "com.mrrubik.learnswift.djangoex3926",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3926),
+    completed: purchaseManagerHive.getCompleted(3926),
+  ),
+  CoursesExModel(
+    id: 3927,
+    exerciseName: "练习13：常量 SITE_NAME",
+    productID: "com.mrrubik.learnswift.djangoex3927",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3927),
+    completed: purchaseManagerHive.getCompleted(3927),
+  ),
+  CoursesExModel(
+    id: 3928,
+    exerciseName: "挑战14：默认主键类型",
+    productID: "com.mrrubik.learnswift.djangoex3928",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3928),
+    completed: purchaseManagerHive.getCompleted(3928),
+  ),
+  CoursesExModel(
+    id: 3929,
+    exerciseName: "练习15：安全 Cookie",
+    productID: "com.mrrubik.learnswift.djangoex3929",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3929),
+    completed: purchaseManagerHive.getCompleted(3929),
+  ),
+];

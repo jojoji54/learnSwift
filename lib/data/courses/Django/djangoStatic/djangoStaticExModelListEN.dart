@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoStaticModelEN = [
+  CoursesExModel(
+    id: 3960,
+    exerciseName: "Exercise 1: STATIC_URL",
+    productID: "com.mrrubik.learnswift.djangoex3960",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3960),
+    completed: purchaseManagerHive.getCompleted(3960),
+  ),
+  CoursesExModel(
+    id: 3961,
+    exerciseName: "Challenge 2: STATICFILES_DIRS",
+    productID: "com.mrrubik.learnswift.djangoex3961",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3961),
+    completed: purchaseManagerHive.getCompleted(3961),
+  ),
+  CoursesExModel(
+    id: 3962,
+    exerciseName: "Exercise 3: collectstatic",
+    productID: "com.mrrubik.learnswift.djangoex3962",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3962),
+    completed: purchaseManagerHive.getCompleted(3962),
+  ),
+  CoursesExModel(
+    id: 3963,
+    exerciseName: "Challenge 4: Use static tag",
+    productID: "com.mrrubik.learnswift.djangoex3963",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3963),
+    completed: purchaseManagerHive.getCompleted(3963),
+  ),
+  CoursesExModel(
+    id: 3964,
+    exerciseName: "Exercise 5: MEDIA_URL & ROOT",
+    productID: "com.mrrubik.learnswift.djangoex3964",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3964),
+    completed: purchaseManagerHive.getCompleted(3964),
+  ),
+  CoursesExModel(
+    id: 3965,
+    exerciseName: "Challenge 6: ImageField upload_to",
+    productID: "com.mrrubik.learnswift.djangoex3965",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3965),
+    completed: purchaseManagerHive.getCompleted(3965),
+  ),
+  CoursesExModel(
+    id: 3966,
+    exerciseName: "Exercise 7: Handle request.FILES",
+    productID: "com.mrrubik.learnswift.djangoex3966",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3966),
+    completed: purchaseManagerHive.getCompleted(3966),
+  ),
+  CoursesExModel(
+    id: 3967,
+    exerciseName: "Challenge 8: Show image url",
+    productID: "com.mrrubik.learnswift.djangoex3967",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3967),
+    completed: purchaseManagerHive.getCompleted(3967),
+  ),
+  CoursesExModel(
+    id: 3968,
+    exerciseName: "Exercise 9: Serve media in urls.py",
+    productID: "com.mrrubik.learnswift.djangoex3968",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3968),
+    completed: purchaseManagerHive.getCompleted(3968),
+  ),
+  CoursesExModel(
+    id: 3969,
+    exerciseName: "Challenge 10: FileSystemStorage",
+    productID: "com.mrrubik.learnswift.djangoex3969",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3969),
+    completed: purchaseManagerHive.getCompleted(3969),
+  ),
+  CoursesExModel(
+    id: 3970,
+    exerciseName: "Exercise 11: Validate content_type",
+    productID: "com.mrrubik.learnswift.djangoex3970",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3970),
+    completed: purchaseManagerHive.getCompleted(3970),
+  ),
+  CoursesExModel(
+    id: 3971,
+    exerciseName: "Challenge 12: ContentFile in memory",
+    productID: "com.mrrubik.learnswift.djangoex3971",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3971),
+    completed: purchaseManagerHive.getCompleted(3971),
+  ),
+  CoursesExModel(
+    id: 3972,
+    exerciseName: "Exercise 13: WhiteNoise middleware",
+    productID: "com.mrrubik.learnswift.djangoex3972",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3972),
+    completed: purchaseManagerHive.getCompleted(3972),
+  ),
+  CoursesExModel(
+    id: 3973,
+    exerciseName: "Challenge 14: ManifestStaticFilesStorage",
+    productID: "com.mrrubik.learnswift.djangoex3973",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3973),
+    completed: purchaseManagerHive.getCompleted(3973),
+  ),
+  CoursesExModel(
+    id: 3974,
+    exerciseName: "Exercise 15: staticfiles app",
+    productID: "com.mrrubik.learnswift.djangoex3974",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3974),
+    completed: purchaseManagerHive.getCompleted(3974),
+  ),
+];

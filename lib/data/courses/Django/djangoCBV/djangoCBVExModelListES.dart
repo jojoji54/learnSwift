@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoCBVModelES = [
+  CoursesExModel(
+    id: 4065,
+    exerciseName: "Ejercicio 1: ListView",
+    productID: "com.mrrubik.learnswift.djangoex4065",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4065),
+    completed: purchaseManagerHive.getCompleted(4065),
+  ),
+  CoursesExModel(
+    id: 4066,
+    exerciseName: "Desafio 2: DetailView",
+    productID: "com.mrrubik.learnswift.djangoex4066",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4066),
+    completed: purchaseManagerHive.getCompleted(4066),
+  ),
+  CoursesExModel(
+    id: 4067,
+    exerciseName: "Ejercicio 3: TemplateView",
+    productID: "com.mrrubik.learnswift.djangoex4067",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4067),
+    completed: purchaseManagerHive.getCompleted(4067),
+  ),
+  CoursesExModel(
+    id: 4068,
+    exerciseName: "Desafio 4: CreateView",
+    productID: "com.mrrubik.learnswift.djangoex4068",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4068),
+    completed: purchaseManagerHive.getCompleted(4068),
+  ),
+  CoursesExModel(
+    id: 4069,
+    exerciseName: "Ejercicio 5: UpdateView",
+    productID: "com.mrrubik.learnswift.djangoex4069",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4069),
+    completed: purchaseManagerHive.getCompleted(4069),
+  ),
+  CoursesExModel(
+    id: 4070,
+    exerciseName: "Desafio 6: DeleteView",
+    productID: "com.mrrubik.learnswift.djangoex4070",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4070),
+    completed: purchaseManagerHive.getCompleted(4070),
+  ),
+  CoursesExModel(
+    id: 4071,
+    exerciseName: "Ejercicio 7: RedirectView",
+    productID: "com.mrrubik.learnswift.djangoex4071",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4071),
+    completed: purchaseManagerHive.getCompleted(4071),
+  ),
+  CoursesExModel(
+    id: 4072,
+    exerciseName: "Desafio 8: FormView",
+    productID: "com.mrrubik.learnswift.djangoex4072",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4072),
+    completed: purchaseManagerHive.getCompleted(4072),
+  ),
+  CoursesExModel(
+    id: 4073,
+    exerciseName: "Ejercicio 9: paginate_by",
+    productID: "com.mrrubik.learnswift.djangoex4073",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4073),
+    completed: purchaseManagerHive.getCompleted(4073),
+  ),
+  CoursesExModel(
+    id: 4074,
+    exerciseName: "Desafio 10: LoginRequiredMixin",
+    productID: "com.mrrubik.learnswift.djangoex4074",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4074),
+    completed: purchaseManagerHive.getCompleted(4074),
+  ),
+  CoursesExModel(
+    id: 4075,
+    exerciseName: "Ejercicio 11: get_queryset",
+    productID: "com.mrrubik.learnswift.djangoex4075",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4075),
+    completed: purchaseManagerHive.getCompleted(4075),
+  ),
+  CoursesExModel(
+    id: 4076,
+    exerciseName: "Desafio 12: get_context_data",
+    productID: "com.mrrubik.learnswift.djangoex4076",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4076),
+    completed: purchaseManagerHive.getCompleted(4076),
+  ),
+  CoursesExModel(
+    id: 4077,
+    exerciseName: "Ejercicio 13: get_success_url",
+    productID: "com.mrrubik.learnswift.djangoex4077",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4077),
+    completed: purchaseManagerHive.getCompleted(4077),
+  ),
+  CoursesExModel(
+    id: 4078,
+    exerciseName: "Desafio 14: slug_field",
+    productID: "com.mrrubik.learnswift.djangoex4078",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4078),
+    completed: purchaseManagerHive.getCompleted(4078),
+  ),
+  CoursesExModel(
+    id: 4079,
+    exerciseName: "Ejercicio 15: PermissionRequiredMixin",
+    productID: "com.mrrubik.learnswift.djangoex4079",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4079),
+    completed: purchaseManagerHive.getCompleted(4079),
+  ),
+];

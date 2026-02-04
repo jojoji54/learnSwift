@@ -103,9 +103,11 @@ class _PhpLoopsEx1398State extends State<PhpLoopsEx1398> {
         completed: true,
       );
 
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
-          true;
-
+      final idx = allprovider.data[Constant.catIndex].catExercise
+          .indexWhere((e) => e.id == widget.id);
+      if (idx != -1) {
+        allprovider.data[Constant.catIndex].catExercise[idx].completed = true;
+      }
       allprovider.setData(allprovider.data);
       _controller.clear();
 

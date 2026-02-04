@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoTemplatesModelZH = [
+  CoursesExModel(
+    id: 3945,
+    exerciseName: "练习1：显示变量",
+    productID: "com.mrrubik.learnswift.djangoex3945",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3945),
+    completed: purchaseManagerHive.getCompleted(3945),
+  ),
+  CoursesExModel(
+    id: 3946,
+    exerciseName: "挑战2：if 判断",
+    productID: "com.mrrubik.learnswift.djangoex3946",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3946),
+    completed: purchaseManagerHive.getCompleted(3946),
+  ),
+  CoursesExModel(
+    id: 3947,
+    exerciseName: "练习3：for 循环",
+    productID: "com.mrrubik.learnswift.djangoex3947",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3947),
+    completed: purchaseManagerHive.getCompleted(3947),
+  ),
+  CoursesExModel(
+    id: 3948,
+    exerciseName: "挑战4：使用过滤器",
+    productID: "com.mrrubik.learnswift.djangoex3948",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3948),
+    completed: purchaseManagerHive.getCompleted(3948),
+  ),
+  CoursesExModel(
+    id: 3949,
+    exerciseName: "练习5：include 模板片段",
+    productID: "com.mrrubik.learnswift.djangoex3949",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3949),
+    completed: purchaseManagerHive.getCompleted(3949),
+  ),
+  CoursesExModel(
+    id: 3950,
+    exerciseName: "挑战6：extends + block",
+    productID: "com.mrrubik.learnswift.djangoex3950",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3950),
+    completed: purchaseManagerHive.getCompleted(3950),
+  ),
+  CoursesExModel(
+    id: 3951,
+    exerciseName: "练习7：url 标签",
+    productID: "com.mrrubik.learnswift.djangoex3951",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3951),
+    completed: purchaseManagerHive.getCompleted(3951),
+  ),
+  CoursesExModel(
+    id: 3952,
+    exerciseName: "挑战8：static 标签",
+    productID: "com.mrrubik.learnswift.djangoex3952",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3952),
+    completed: purchaseManagerHive.getCompleted(3952),
+  ),
+  CoursesExModel(
+    id: 3953,
+    exerciseName: "练习9：csrf_token",
+    productID: "com.mrrubik.learnswift.djangoex3953",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3953),
+    completed: purchaseManagerHive.getCompleted(3953),
+  ),
+  CoursesExModel(
+    id: 3954,
+    exerciseName: "挑战10：with 标签",
+    productID: "com.mrrubik.learnswift.djangoex3954",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3954),
+    completed: purchaseManagerHive.getCompleted(3954),
+  ),
+  CoursesExModel(
+    id: 3955,
+    exerciseName: "练习11：safe 过滤器",
+    productID: "com.mrrubik.learnswift.djangoex3955",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3955),
+    completed: purchaseManagerHive.getCompleted(3955),
+  ),
+  CoursesExModel(
+    id: 3956,
+    exerciseName: "挑战12：date 过滤器",
+    productID: "com.mrrubik.learnswift.djangoex3956",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3956),
+    completed: purchaseManagerHive.getCompleted(3956),
+  ),
+  CoursesExModel(
+    id: 3957,
+    exerciseName: "练习13：自定义过滤器",
+    productID: "com.mrrubik.learnswift.djangoex3957",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3957),
+    completed: purchaseManagerHive.getCompleted(3957),
+  ),
+  CoursesExModel(
+    id: 3958,
+    exerciseName: "挑战14：load 自定义标签",
+    productID: "com.mrrubik.learnswift.djangoex3958",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3958),
+    completed: purchaseManagerHive.getCompleted(3958),
+  ),
+  CoursesExModel(
+    id: 3959,
+    exerciseName: "练习15：block.super",
+    productID: "com.mrrubik.learnswift.djangoex3959",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3959),
+    completed: purchaseManagerHive.getCompleted(3959),
+  ),
+];

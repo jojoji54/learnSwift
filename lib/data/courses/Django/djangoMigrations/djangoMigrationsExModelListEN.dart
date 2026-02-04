@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoMigrationsModelEN = [
+  CoursesExModel(
+    id: 4005,
+    exerciseName: "Exercise 1: makemigrations",
+    productID: "com.mrrubik.learnswift.djangoex4005",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4005),
+    completed: purchaseManagerHive.getCompleted(4005),
+  ),
+  CoursesExModel(
+    id: 4006,
+    exerciseName: "Challenge 2: migrate",
+    productID: "com.mrrubik.learnswift.djangoex4006",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4006),
+    completed: purchaseManagerHive.getCompleted(4006),
+  ),
+  CoursesExModel(
+    id: 4007,
+    exerciseName: "Exercise 3: showmigrations",
+    productID: "com.mrrubik.learnswift.djangoex4007",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4007),
+    completed: purchaseManagerHive.getCompleted(4007),
+  ),
+  CoursesExModel(
+    id: 4008,
+    exerciseName: "Challenge 4: sqlmigrate",
+    productID: "com.mrrubik.learnswift.djangoex4008",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4008),
+    completed: purchaseManagerHive.getCompleted(4008),
+  ),
+  CoursesExModel(
+    id: 4009,
+    exerciseName: "Exercise 5: Rollback to zero",
+    productID: "com.mrrubik.learnswift.djangoex4009",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4009),
+    completed: purchaseManagerHive.getCompleted(4009),
+  ),
+  CoursesExModel(
+    id: 4010,
+    exerciseName: "Challenge 6: --fake",
+    productID: "com.mrrubik.learnswift.djangoex4010",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4010),
+    completed: purchaseManagerHive.getCompleted(4010),
+  ),
+  CoursesExModel(
+    id: 4011,
+    exerciseName: "Exercise 7: RenameField",
+    productID: "com.mrrubik.learnswift.djangoex4011",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4011),
+    completed: purchaseManagerHive.getCompleted(4011),
+  ),
+  CoursesExModel(
+    id: 4012,
+    exerciseName: "Challenge 8: AddIndex",
+    productID: "com.mrrubik.learnswift.djangoex4012",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4012),
+    completed: purchaseManagerHive.getCompleted(4012),
+  ),
+  CoursesExModel(
+    id: 4013,
+    exerciseName: "Exercise 9: AddConstraint",
+    productID: "com.mrrubik.learnswift.djangoex4013",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4013),
+    completed: purchaseManagerHive.getCompleted(4013),
+  ),
+  CoursesExModel(
+    id: 4014,
+    exerciseName: "Challenge 10: RunPython",
+    productID: "com.mrrubik.learnswift.djangoex4014",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4014),
+    completed: purchaseManagerHive.getCompleted(4014),
+  ),
+  CoursesExModel(
+    id: 4015,
+    exerciseName: "Exercise 11: squashmigrations",
+    productID: "com.mrrubik.learnswift.djangoex4015",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4015),
+    completed: purchaseManagerHive.getCompleted(4015),
+  ),
+  CoursesExModel(
+    id: 4016,
+    exerciseName: "Challenge 12: --merge",
+    productID: "com.mrrubik.learnswift.djangoex4016",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4016),
+    completed: purchaseManagerHive.getCompleted(4016),
+  ),
+  CoursesExModel(
+    id: 4017,
+    exerciseName: "Exercise 13: --plan",
+    productID: "com.mrrubik.learnswift.djangoex4017",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4017),
+    completed: purchaseManagerHive.getCompleted(4017),
+  ),
+  CoursesExModel(
+    id: 4018,
+    exerciseName: "Challenge 14: --database",
+    productID: "com.mrrubik.learnswift.djangoex4018",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4018),
+    completed: purchaseManagerHive.getCompleted(4018),
+  ),
+  CoursesExModel(
+    id: 4019,
+    exerciseName: "Exercise 15: showmigrations blog",
+    productID: "com.mrrubik.learnswift.djangoex4019",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4019),
+    completed: purchaseManagerHive.getCompleted(4019),
+  ),
+];

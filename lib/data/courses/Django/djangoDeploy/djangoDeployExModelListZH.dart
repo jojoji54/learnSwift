@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoDeployModelZH = [
+  CoursesExModel(
+    id: 4110,
+    exerciseName: "练习1：关闭 DEBUG",
+    productID: "com.mrrubik.learnswift.djangoex4110",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4110),
+    completed: purchaseManagerHive.getCompleted(4110),
+  ),
+  CoursesExModel(
+    id: 4111,
+    exerciseName: "挑战2：SECRET_KEY 环境变量",
+    productID: "com.mrrubik.learnswift.djangoex4111",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4111),
+    completed: purchaseManagerHive.getCompleted(4111),
+  ),
+  CoursesExModel(
+    id: 4112,
+    exerciseName: "练习3：WSGI 配置",
+    productID: "com.mrrubik.learnswift.djangoex4112",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4112),
+    completed: purchaseManagerHive.getCompleted(4112),
+  ),
+  CoursesExModel(
+    id: 4113,
+    exerciseName: "挑战4：ASGI 配置",
+    productID: "com.mrrubik.learnswift.djangoex4113",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4113),
+    completed: purchaseManagerHive.getCompleted(4113),
+  ),
+  CoursesExModel(
+    id: 4114,
+    exerciseName: "练习5：gunicorn",
+    productID: "com.mrrubik.learnswift.djangoex4114",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4114),
+    completed: purchaseManagerHive.getCompleted(4114),
+  ),
+  CoursesExModel(
+    id: 4115,
+    exerciseName: "挑战6：collectstatic --noinput",
+    productID: "com.mrrubik.learnswift.djangoex4115",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4115),
+    completed: purchaseManagerHive.getCompleted(4115),
+  ),
+  CoursesExModel(
+    id: 4116,
+    exerciseName: "练习7：check --deploy",
+    productID: "com.mrrubik.learnswift.djangoex4116",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4116),
+    completed: purchaseManagerHive.getCompleted(4116),
+  ),
+  CoursesExModel(
+    id: 4117,
+    exerciseName: "挑战8：生产缓存",
+    productID: "com.mrrubik.learnswift.djangoex4117",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4117),
+    completed: purchaseManagerHive.getCompleted(4117),
+  ),
+  CoursesExModel(
+    id: 4118,
+    exerciseName: "练习9：HSTS",
+    productID: "com.mrrubik.learnswift.djangoex4118",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4118),
+    completed: purchaseManagerHive.getCompleted(4118),
+  ),
+  CoursesExModel(
+    id: 4119,
+    exerciseName: "挑战10：日志文件",
+    productID: "com.mrrubik.learnswift.djangoex4119",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4119),
+    completed: purchaseManagerHive.getCompleted(4119),
+  ),
+  CoursesExModel(
+    id: 4120,
+    exerciseName: "练习11：migrate",
+    productID: "com.mrrubik.learnswift.djangoex4120",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4120),
+    completed: purchaseManagerHive.getCompleted(4120),
+  ),
+  CoursesExModel(
+    id: 4121,
+    exerciseName: "挑战12：健康检查视图",
+    productID: "com.mrrubik.learnswift.djangoex4121",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4121),
+    completed: purchaseManagerHive.getCompleted(4121),
+  ),
+  CoursesExModel(
+    id: 4122,
+    exerciseName: "练习13：select_related",
+    productID: "com.mrrubik.learnswift.djangoex4122",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4122),
+    completed: purchaseManagerHive.getCompleted(4122),
+  ),
+  CoursesExModel(
+    id: 4123,
+    exerciseName: "挑战14：paginate_by",
+    productID: "com.mrrubik.learnswift.djangoex4123",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4123),
+    completed: purchaseManagerHive.getCompleted(4123),
+  ),
+  CoursesExModel(
+    id: 4124,
+    exerciseName: "练习15：cache_page",
+    productID: "com.mrrubik.learnswift.djangoex4124",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4124),
+    completed: purchaseManagerHive.getCompleted(4124),
+  ),
+];

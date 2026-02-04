@@ -102,9 +102,11 @@ class _FlAssetsEx2995State extends State<FlAssetsEx2995> {
         completed: true,
       );
 
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
-          true;
-
+      final idx = allprovider.data[Constant.catIndex].catExercise
+          .indexWhere((e) => e.id == widget.id);
+      if (idx != -1) {
+        allprovider.data[Constant.catIndex].catExercise[idx].completed = true;
+      }
       allprovider.setData(allprovider.data);
       _controller.clear();
 

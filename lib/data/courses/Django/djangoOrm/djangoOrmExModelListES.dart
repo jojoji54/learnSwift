@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoOrmModelES = [
+  CoursesExModel(
+    id: 3990,
+    exerciseName: "Ejercicio 1: filter + exclude",
+    productID: "com.mrrubik.learnswift.djangoex3990",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3990),
+    completed: purchaseManagerHive.getCompleted(3990),
+  ),
+  CoursesExModel(
+    id: 3991,
+    exerciseName: "Desafio 2: order_by",
+    productID: "com.mrrubik.learnswift.djangoex3991",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3991),
+    completed: purchaseManagerHive.getCompleted(3991),
+  ),
+  CoursesExModel(
+    id: 3992,
+    exerciseName: "Ejercicio 3: get()",
+    productID: "com.mrrubik.learnswift.djangoex3992",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3992),
+    completed: purchaseManagerHive.getCompleted(3992),
+  ),
+  CoursesExModel(
+    id: 3993,
+    exerciseName: "Desafio 4: Q objects",
+    productID: "com.mrrubik.learnswift.djangoex3993",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3993),
+    completed: purchaseManagerHive.getCompleted(3993),
+  ),
+  CoursesExModel(
+    id: 3994,
+    exerciseName: "Ejercicio 5: F expressions",
+    productID: "com.mrrubik.learnswift.djangoex3994",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3994),
+    completed: purchaseManagerHive.getCompleted(3994),
+  ),
+  CoursesExModel(
+    id: 3995,
+    exerciseName: "Desafio 6: annotate Count",
+    productID: "com.mrrubik.learnswift.djangoex3995",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3995),
+    completed: purchaseManagerHive.getCompleted(3995),
+  ),
+  CoursesExModel(
+    id: 3996,
+    exerciseName: "Ejercicio 7: aggregate Avg",
+    productID: "com.mrrubik.learnswift.djangoex3996",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3996),
+    completed: purchaseManagerHive.getCompleted(3996),
+  ),
+  CoursesExModel(
+    id: 3997,
+    exerciseName: "Desafio 8: select_related",
+    productID: "com.mrrubik.learnswift.djangoex3997",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3997),
+    completed: purchaseManagerHive.getCompleted(3997),
+  ),
+  CoursesExModel(
+    id: 3998,
+    exerciseName: "Ejercicio 9: prefetch_related",
+    productID: "com.mrrubik.learnswift.djangoex3998",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3998),
+    completed: purchaseManagerHive.getCompleted(3998),
+  ),
+  CoursesExModel(
+    id: 3999,
+    exerciseName: "Desafio 10: values_list",
+    productID: "com.mrrubik.learnswift.djangoex3999",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3999),
+    completed: purchaseManagerHive.getCompleted(3999),
+  ),
+  CoursesExModel(
+    id: 4000,
+    exerciseName: "Ejercicio 11: distinct",
+    productID: "com.mrrubik.learnswift.djangoex4000",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4000),
+    completed: purchaseManagerHive.getCompleted(4000),
+  ),
+  CoursesExModel(
+    id: 4001,
+    exerciseName: "Desafio 12: get_or_create",
+    productID: "com.mrrubik.learnswift.djangoex4001",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4001),
+    completed: purchaseManagerHive.getCompleted(4001),
+  ),
+  CoursesExModel(
+    id: 4002,
+    exerciseName: "Ejercicio 13: bulk_create",
+    productID: "com.mrrubik.learnswift.djangoex4002",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4002),
+    completed: purchaseManagerHive.getCompleted(4002),
+  ),
+  CoursesExModel(
+    id: 4003,
+    exerciseName: "Desafio 14: transaction.atomic",
+    productID: "com.mrrubik.learnswift.djangoex4003",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4003),
+    completed: purchaseManagerHive.getCompleted(4003),
+  ),
+  CoursesExModel(
+    id: 4004,
+    exerciseName: "Ejercicio 15: Manager custom",
+    productID: "com.mrrubik.learnswift.djangoex4004",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4004),
+    completed: purchaseManagerHive.getCompleted(4004),
+  ),
+];

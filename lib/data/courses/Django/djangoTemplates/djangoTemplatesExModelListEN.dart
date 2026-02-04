@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoTemplatesModelEN = [
+  CoursesExModel(
+    id: 3945,
+    exerciseName: "Exercise 1: Print a variable",
+    productID: "com.mrrubik.learnswift.djangoex3945",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3945),
+    completed: purchaseManagerHive.getCompleted(3945),
+  ),
+  CoursesExModel(
+    id: 3946,
+    exerciseName: "Challenge 2: If authenticated",
+    productID: "com.mrrubik.learnswift.djangoex3946",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3946),
+    completed: purchaseManagerHive.getCompleted(3946),
+  ),
+  CoursesExModel(
+    id: 3947,
+    exerciseName: "Exercise 3: For loop list",
+    productID: "com.mrrubik.learnswift.djangoex3947",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3947),
+    completed: purchaseManagerHive.getCompleted(3947),
+  ),
+  CoursesExModel(
+    id: 3948,
+    exerciseName: "Challenge 4: Use a filter",
+    productID: "com.mrrubik.learnswift.djangoex3948",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3948),
+    completed: purchaseManagerHive.getCompleted(3948),
+  ),
+  CoursesExModel(
+    id: 3949,
+    exerciseName: "Exercise 5: Include partial",
+    productID: "com.mrrubik.learnswift.djangoex3949",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3949),
+    completed: purchaseManagerHive.getCompleted(3949),
+  ),
+  CoursesExModel(
+    id: 3950,
+    exerciseName: "Challenge 6: Extends + blocks",
+    productID: "com.mrrubik.learnswift.djangoex3950",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3950),
+    completed: purchaseManagerHive.getCompleted(3950),
+  ),
+  CoursesExModel(
+    id: 3951,
+    exerciseName: "Exercise 7: url tag",
+    productID: "com.mrrubik.learnswift.djangoex3951",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3951),
+    completed: purchaseManagerHive.getCompleted(3951),
+  ),
+  CoursesExModel(
+    id: 3952,
+    exerciseName: "Challenge 8: static tag",
+    productID: "com.mrrubik.learnswift.djangoex3952",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3952),
+    completed: purchaseManagerHive.getCompleted(3952),
+  ),
+  CoursesExModel(
+    id: 3953,
+    exerciseName: "Exercise 9: csrf_token",
+    productID: "com.mrrubik.learnswift.djangoex3953",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3953),
+    completed: purchaseManagerHive.getCompleted(3953),
+  ),
+  CoursesExModel(
+    id: 3954,
+    exerciseName: "Challenge 10: with tag",
+    productID: "com.mrrubik.learnswift.djangoex3954",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3954),
+    completed: purchaseManagerHive.getCompleted(3954),
+  ),
+  CoursesExModel(
+    id: 3955,
+    exerciseName: "Exercise 11: safe filter",
+    productID: "com.mrrubik.learnswift.djangoex3955",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3955),
+    completed: purchaseManagerHive.getCompleted(3955),
+  ),
+  CoursesExModel(
+    id: 3956,
+    exerciseName: "Challenge 12: date filter",
+    productID: "com.mrrubik.learnswift.djangoex3956",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3956),
+    completed: purchaseManagerHive.getCompleted(3956),
+  ),
+  CoursesExModel(
+    id: 3957,
+    exerciseName: "Exercise 13: Custom filter stub",
+    productID: "com.mrrubik.learnswift.djangoex3957",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3957),
+    completed: purchaseManagerHive.getCompleted(3957),
+  ),
+  CoursesExModel(
+    id: 3958,
+    exerciseName: "Challenge 14: load custom tags",
+    productID: "com.mrrubik.learnswift.djangoex3958",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3958),
+    completed: purchaseManagerHive.getCompleted(3958),
+  ),
+  CoursesExModel(
+    id: 3959,
+    exerciseName: "Exercise 15: block.super",
+    productID: "com.mrrubik.learnswift.djangoex3959",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3959),
+    completed: purchaseManagerHive.getCompleted(3959),
+  ),
+];

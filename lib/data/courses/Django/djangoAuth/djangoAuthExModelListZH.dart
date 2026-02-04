@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoAuthModelZH = [
+  CoursesExModel(
+    id: 4050,
+    exerciseName: "练习1：login_required",
+    productID: "com.mrrubik.learnswift.djangoex4050",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4050),
+    completed: purchaseManagerHive.getCompleted(4050),
+  ),
+  CoursesExModel(
+    id: 4051,
+    exerciseName: "挑战2：UserCreationForm",
+    productID: "com.mrrubik.learnswift.djangoex4051",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4051),
+    completed: purchaseManagerHive.getCompleted(4051),
+  ),
+  CoursesExModel(
+    id: 4052,
+    exerciseName: "练习3：登录认证",
+    productID: "com.mrrubik.learnswift.djangoex4052",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4052),
+    completed: purchaseManagerHive.getCompleted(4052),
+  ),
+  CoursesExModel(
+    id: 4053,
+    exerciseName: "挑战4：logout",
+    productID: "com.mrrubik.learnswift.djangoex4053",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4053),
+    completed: purchaseManagerHive.getCompleted(4053),
+  ),
+  CoursesExModel(
+    id: 4054,
+    exerciseName: "练习5：request.user",
+    productID: "com.mrrubik.learnswift.djangoex4054",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4054),
+    completed: purchaseManagerHive.getCompleted(4054),
+  ),
+  CoursesExModel(
+    id: 4055,
+    exerciseName: "挑战6：permission_required",
+    productID: "com.mrrubik.learnswift.djangoex4055",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4055),
+    completed: purchaseManagerHive.getCompleted(4055),
+  ),
+  CoursesExModel(
+    id: 4056,
+    exerciseName: "练习7：has_perm",
+    productID: "com.mrrubik.learnswift.djangoex4056",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4056),
+    completed: purchaseManagerHive.getCompleted(4056),
+  ),
+  CoursesExModel(
+    id: 4057,
+    exerciseName: "挑战8：用户组",
+    productID: "com.mrrubik.learnswift.djangoex4057",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4057),
+    completed: purchaseManagerHive.getCompleted(4057),
+  ),
+  CoursesExModel(
+    id: 4058,
+    exerciseName: "练习9：AUTH_USER_MODEL",
+    productID: "com.mrrubik.learnswift.djangoex4058",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4058),
+    completed: purchaseManagerHive.getCompleted(4058),
+  ),
+  CoursesExModel(
+    id: 4059,
+    exerciseName: "挑战10：一对一 Profile",
+    productID: "com.mrrubik.learnswift.djangoex4059",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4059),
+    completed: purchaseManagerHive.getCompleted(4059),
+  ),
+  CoursesExModel(
+    id: 4060,
+    exerciseName: "练习11：信号 signals",
+    productID: "com.mrrubik.learnswift.djangoex4060",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4060),
+    completed: purchaseManagerHive.getCompleted(4060),
+  ),
+  CoursesExModel(
+    id: 4061,
+    exerciseName: "挑战12：引入 auth urls",
+    productID: "com.mrrubik.learnswift.djangoex4061",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4061),
+    completed: purchaseManagerHive.getCompleted(4061),
+  ),
+  CoursesExModel(
+    id: 4062,
+    exerciseName: "练习13：会话过期",
+    productID: "com.mrrubik.learnswift.djangoex4062",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4062),
+    completed: purchaseManagerHive.getCompleted(4062),
+  ),
+  CoursesExModel(
+    id: 4063,
+    exerciseName: "挑战14：PasswordChangeView",
+    productID: "com.mrrubik.learnswift.djangoex4063",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4063),
+    completed: purchaseManagerHive.getCompleted(4063),
+  ),
+  CoursesExModel(
+    id: 4064,
+    exerciseName: "练习15：staff_member_required",
+    productID: "com.mrrubik.learnswift.djangoex4064",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4064),
+    completed: purchaseManagerHive.getCompleted(4064),
+  ),
+];

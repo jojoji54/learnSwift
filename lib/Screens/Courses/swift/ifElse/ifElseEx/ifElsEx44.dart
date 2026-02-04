@@ -70,8 +70,11 @@ class _IfElsEx44State extends State<IfElsEx44> {
         containsLetter.hasMatch(userInput)) {
           purchaseManagerHive.updatePurchase(widget.id,
           purchased: true, completed: true);
-      allprovider.data[Constant.catIndex].catExercise[widget.id].completed =
-          true;
+      final idx = allprovider.data[Constant.catIndex].catExercise
+          .indexWhere((e) => e.id == widget.id);
+      if (idx != -1) {
+        allprovider.data[Constant.catIndex].catExercise[idx].completed = true;
+      }
       allprovider.setData(allprovider.data);
       setState(() {
         _inputTextColor = Colors.green;

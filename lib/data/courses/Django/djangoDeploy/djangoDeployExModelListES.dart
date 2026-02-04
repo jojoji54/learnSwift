@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoDeployModelES = [
+  CoursesExModel(
+    id: 4110,
+    exerciseName: "Ejercicio 1: DEBUG False + ALLOWED_HOSTS",
+    productID: "com.mrrubik.learnswift.djangoex4110",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4110),
+    completed: purchaseManagerHive.getCompleted(4110),
+  ),
+  CoursesExModel(
+    id: 4111,
+    exerciseName: "Desafio 2: SECRET_KEY env",
+    productID: "com.mrrubik.learnswift.djangoex4111",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4111),
+    completed: purchaseManagerHive.getCompleted(4111),
+  ),
+  CoursesExModel(
+    id: 4112,
+    exerciseName: "Ejercicio 3: WSGI application",
+    productID: "com.mrrubik.learnswift.djangoex4112",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4112),
+    completed: purchaseManagerHive.getCompleted(4112),
+  ),
+  CoursesExModel(
+    id: 4113,
+    exerciseName: "Desafio 4: ASGI application",
+    productID: "com.mrrubik.learnswift.djangoex4113",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4113),
+    completed: purchaseManagerHive.getCompleted(4113),
+  ),
+  CoursesExModel(
+    id: 4114,
+    exerciseName: "Ejercicio 5: gunicorn",
+    productID: "com.mrrubik.learnswift.djangoex4114",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4114),
+    completed: purchaseManagerHive.getCompleted(4114),
+  ),
+  CoursesExModel(
+    id: 4115,
+    exerciseName: "Desafio 6: collectstatic --noinput",
+    productID: "com.mrrubik.learnswift.djangoex4115",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4115),
+    completed: purchaseManagerHive.getCompleted(4115),
+  ),
+  CoursesExModel(
+    id: 4116,
+    exerciseName: "Ejercicio 7: check --deploy",
+    productID: "com.mrrubik.learnswift.djangoex4116",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4116),
+    completed: purchaseManagerHive.getCompleted(4116),
+  ),
+  CoursesExModel(
+    id: 4117,
+    exerciseName: "Desafio 8: Cache produccion",
+    productID: "com.mrrubik.learnswift.djangoex4117",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4117),
+    completed: purchaseManagerHive.getCompleted(4117),
+  ),
+  CoursesExModel(
+    id: 4118,
+    exerciseName: "Ejercicio 9: SECURE_HSTS_SECONDS",
+    productID: "com.mrrubik.learnswift.djangoex4118",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4118),
+    completed: purchaseManagerHive.getCompleted(4118),
+  ),
+  CoursesExModel(
+    id: 4119,
+    exerciseName: "Desafio 10: Logging a archivo",
+    productID: "com.mrrubik.learnswift.djangoex4119",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4119),
+    completed: purchaseManagerHive.getCompleted(4119),
+  ),
+  CoursesExModel(
+    id: 4120,
+    exerciseName: "Ejercicio 11: migrate",
+    productID: "com.mrrubik.learnswift.djangoex4120",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4120),
+    completed: purchaseManagerHive.getCompleted(4120),
+  ),
+  CoursesExModel(
+    id: 4121,
+    exerciseName: "Desafio 12: Health check view",
+    productID: "com.mrrubik.learnswift.djangoex4121",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4121),
+    completed: purchaseManagerHive.getCompleted(4121),
+  ),
+  CoursesExModel(
+    id: 4122,
+    exerciseName: "Ejercicio 13: select_related",
+    productID: "com.mrrubik.learnswift.djangoex4122",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4122),
+    completed: purchaseManagerHive.getCompleted(4122),
+  ),
+  CoursesExModel(
+    id: 4123,
+    exerciseName: "Desafio 14: paginate_by",
+    productID: "com.mrrubik.learnswift.djangoex4123",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4123),
+    completed: purchaseManagerHive.getCompleted(4123),
+  ),
+  CoursesExModel(
+    id: 4124,
+    exerciseName: "Ejercicio 15: cache_page",
+    productID: "com.mrrubik.learnswift.djangoex4124",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4124),
+    completed: purchaseManagerHive.getCompleted(4124),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoTestingModelEN = [
+  CoursesExModel(
+    id: 4095,
+    exerciseName: "Exercise 1: TestCase skeleton",
+    productID: "com.mrrubik.learnswift.djangoex4095",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4095),
+    completed: purchaseManagerHive.getCompleted(4095),
+  ),
+  CoursesExModel(
+    id: 4096,
+    exerciseName: "Challenge 2: Client GET",
+    productID: "com.mrrubik.learnswift.djangoex4096",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4096),
+    completed: purchaseManagerHive.getCompleted(4096),
+  ),
+  CoursesExModel(
+    id: 4097,
+    exerciseName: "Exercise 3: Client POST",
+    productID: "com.mrrubik.learnswift.djangoex4097",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4097),
+    completed: purchaseManagerHive.getCompleted(4097),
+  ),
+  CoursesExModel(
+    id: 4098,
+    exerciseName: "Challenge 4: setUp",
+    productID: "com.mrrubik.learnswift.djangoex4098",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4098),
+    completed: purchaseManagerHive.getCompleted(4098),
+  ),
+  CoursesExModel(
+    id: 4099,
+    exerciseName: "Exercise 5: assertTemplateUsed",
+    productID: "com.mrrubik.learnswift.djangoex4099",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4099),
+    completed: purchaseManagerHive.getCompleted(4099),
+  ),
+  CoursesExModel(
+    id: 4100,
+    exerciseName: "Challenge 6: assertRedirects",
+    productID: "com.mrrubik.learnswift.djangoex4100",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4100),
+    completed: purchaseManagerHive.getCompleted(4100),
+  ),
+  CoursesExModel(
+    id: 4101,
+    exerciseName: "Exercise 7: Model __str__",
+    productID: "com.mrrubik.learnswift.djangoex4101",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4101),
+    completed: purchaseManagerHive.getCompleted(4101),
+  ),
+  CoursesExModel(
+    id: 4102,
+    exerciseName: "Challenge 8: Form invalid",
+    productID: "com.mrrubik.learnswift.djangoex4102",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4102),
+    completed: purchaseManagerHive.getCompleted(4102),
+  ),
+  CoursesExModel(
+    id: 4103,
+    exerciseName: "Exercise 9: client.login",
+    productID: "com.mrrubik.learnswift.djangoex4103",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4103),
+    completed: purchaseManagerHive.getCompleted(4103),
+  ),
+  CoursesExModel(
+    id: 4104,
+    exerciseName: "Challenge 10: Permission denied",
+    productID: "com.mrrubik.learnswift.djangoex4104",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4104),
+    completed: purchaseManagerHive.getCompleted(4104),
+  ),
+  CoursesExModel(
+    id: 4105,
+    exerciseName: "Exercise 11: mock patch",
+    productID: "com.mrrubik.learnswift.djangoex4105",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4105),
+    completed: purchaseManagerHive.getCompleted(4105),
+  ),
+  CoursesExModel(
+    id: 4106,
+    exerciseName: "Challenge 12: override_settings",
+    productID: "com.mrrubik.learnswift.djangoex4106",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4106),
+    completed: purchaseManagerHive.getCompleted(4106),
+  ),
+  CoursesExModel(
+    id: 4107,
+    exerciseName: "Exercise 13: Run tests",
+    productID: "com.mrrubik.learnswift.djangoex4107",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4107),
+    completed: purchaseManagerHive.getCompleted(4107),
+  ),
+  CoursesExModel(
+    id: 4108,
+    exerciseName: "Challenge 14: Coverage idea",
+    productID: "com.mrrubik.learnswift.djangoex4108",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4108),
+    completed: purchaseManagerHive.getCompleted(4108),
+  ),
+  CoursesExModel(
+    id: 4109,
+    exerciseName: "Exercise 15: assertNumQueries",
+    productID: "com.mrrubik.learnswift.djangoex4109",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4109),
+    completed: purchaseManagerHive.getCompleted(4109),
+  ),
+];

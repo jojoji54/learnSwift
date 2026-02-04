@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoAdminModelES = [
+  CoursesExModel(
+    id: 4020,
+    exerciseName: "Ejercicio 1: Registrar modelo",
+    productID: "com.mrrubik.learnswift.djangoex4020",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4020),
+    completed: purchaseManagerHive.getCompleted(4020),
+  ),
+  CoursesExModel(
+    id: 4021,
+    exerciseName: "Desafio 2: list_display",
+    productID: "com.mrrubik.learnswift.djangoex4021",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4021),
+    completed: purchaseManagerHive.getCompleted(4021),
+  ),
+  CoursesExModel(
+    id: 4022,
+    exerciseName: "Ejercicio 3: list_filter",
+    productID: "com.mrrubik.learnswift.djangoex4022",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4022),
+    completed: purchaseManagerHive.getCompleted(4022),
+  ),
+  CoursesExModel(
+    id: 4023,
+    exerciseName: "Desafio 4: search_fields",
+    productID: "com.mrrubik.learnswift.djangoex4023",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4023),
+    completed: purchaseManagerHive.getCompleted(4023),
+  ),
+  CoursesExModel(
+    id: 4024,
+    exerciseName: "Ejercicio 5: ordering",
+    productID: "com.mrrubik.learnswift.djangoex4024",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4024),
+    completed: purchaseManagerHive.getCompleted(4024),
+  ),
+  CoursesExModel(
+    id: 4025,
+    exerciseName: "Desafio 6: fieldsets",
+    productID: "com.mrrubik.learnswift.djangoex4025",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4025),
+    completed: purchaseManagerHive.getCompleted(4025),
+  ),
+  CoursesExModel(
+    id: 4026,
+    exerciseName: "Ejercicio 7: readonly_fields",
+    productID: "com.mrrubik.learnswift.djangoex4026",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4026),
+    completed: purchaseManagerHive.getCompleted(4026),
+  ),
+  CoursesExModel(
+    id: 4027,
+    exerciseName: "Desafio 8: prepopulated_fields",
+    productID: "com.mrrubik.learnswift.djangoex4027",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4027),
+    completed: purchaseManagerHive.getCompleted(4027),
+  ),
+  CoursesExModel(
+    id: 4028,
+    exerciseName: "Ejercicio 9: Inlines",
+    productID: "com.mrrubik.learnswift.djangoex4028",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4028),
+    completed: purchaseManagerHive.getCompleted(4028),
+  ),
+  CoursesExModel(
+    id: 4029,
+    exerciseName: "Desafio 10: Accion custom",
+    productID: "com.mrrubik.learnswift.djangoex4029",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4029),
+    completed: purchaseManagerHive.getCompleted(4029),
+  ),
+  CoursesExModel(
+    id: 4030,
+    exerciseName: "Ejercicio 11: date_hierarchy",
+    productID: "com.mrrubik.learnswift.djangoex4030",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4030),
+    completed: purchaseManagerHive.getCompleted(4030),
+  ),
+  CoursesExModel(
+    id: 4031,
+    exerciseName: "Desafio 12: autocomplete_fields",
+    productID: "com.mrrubik.learnswift.djangoex4031",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4031),
+    completed: purchaseManagerHive.getCompleted(4031),
+  ),
+  CoursesExModel(
+    id: 4032,
+    exerciseName: "Ejercicio 13: Header del admin",
+    productID: "com.mrrubik.learnswift.djangoex4032",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4032),
+    completed: purchaseManagerHive.getCompleted(4032),
+  ),
+  CoursesExModel(
+    id: 4033,
+    exerciseName: "Desafio 14: Override get_queryset",
+    productID: "com.mrrubik.learnswift.djangoex4033",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4033),
+    completed: purchaseManagerHive.getCompleted(4033),
+  ),
+  CoursesExModel(
+    id: 4034,
+    exerciseName: "Ejercicio 15: has_change_permission",
+    productID: "com.mrrubik.learnswift.djangoex4034",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4034),
+    completed: purchaseManagerHive.getCompleted(4034),
+  ),
+];

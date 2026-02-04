@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoModelsModelZH = [
+  CoursesExModel(
+    id: 3975,
+    exerciseName: "练习1：简单模型",
+    productID: "com.mrrubik.learnswift.djangoex3975",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3975),
+    completed: purchaseManagerHive.getCompleted(3975),
+  ),
+  CoursesExModel(
+    id: 3976,
+    exerciseName: "挑战2：__str__",
+    productID: "com.mrrubik.learnswift.djangoex3976",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3976),
+    completed: purchaseManagerHive.getCompleted(3976),
+  ),
+  CoursesExModel(
+    id: 3977,
+    exerciseName: "练习3：外键 ForeignKey",
+    productID: "com.mrrubik.learnswift.djangoex3977",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3977),
+    completed: purchaseManagerHive.getCompleted(3977),
+  ),
+  CoursesExModel(
+    id: 3978,
+    exerciseName: "挑战4：多对多 ManyToMany",
+    productID: "com.mrrubik.learnswift.djangoex3978",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3978),
+    completed: purchaseManagerHive.getCompleted(3978),
+  ),
+  CoursesExModel(
+    id: 3979,
+    exerciseName: "练习5：choices 选项",
+    productID: "com.mrrubik.learnswift.djangoex3979",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3979),
+    completed: purchaseManagerHive.getCompleted(3979),
+  ),
+  CoursesExModel(
+    id: 3980,
+    exerciseName: "挑战6：default + null",
+    productID: "com.mrrubik.learnswift.djangoex3980",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3980),
+    completed: purchaseManagerHive.getCompleted(3980),
+  ),
+  CoursesExModel(
+    id: 3981,
+    exerciseName: "练习7：Meta 排序",
+    productID: "com.mrrubik.learnswift.djangoex3981",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3981),
+    completed: purchaseManagerHive.getCompleted(3981),
+  ),
+  CoursesExModel(
+    id: 3982,
+    exerciseName: "挑战8：唯一约束",
+    productID: "com.mrrubik.learnswift.djangoex3982",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3982),
+    completed: purchaseManagerHive.getCompleted(3982),
+  ),
+  CoursesExModel(
+    id: 3983,
+    exerciseName: "练习9：创建对象",
+    productID: "com.mrrubik.learnswift.djangoex3983",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3983),
+    completed: purchaseManagerHive.getCompleted(3983),
+  ),
+  CoursesExModel(
+    id: 3984,
+    exerciseName: "挑战10：读取全部",
+    productID: "com.mrrubik.learnswift.djangoex3984",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3984),
+    completed: purchaseManagerHive.getCompleted(3984),
+  ),
+  CoursesExModel(
+    id: 3985,
+    exerciseName: "练习11：filter 过滤",
+    productID: "com.mrrubik.learnswift.djangoex3985",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3985),
+    completed: purchaseManagerHive.getCompleted(3985),
+  ),
+  CoursesExModel(
+    id: 3986,
+    exerciseName: "挑战12：更新 save",
+    productID: "com.mrrubik.learnswift.djangoex3986",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3986),
+    completed: purchaseManagerHive.getCompleted(3986),
+  ),
+  CoursesExModel(
+    id: 3987,
+    exerciseName: "练习13：删除",
+    productID: "com.mrrubik.learnswift.djangoex3987",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3987),
+    completed: purchaseManagerHive.getCompleted(3987),
+  ),
+  CoursesExModel(
+    id: 3988,
+    exerciseName: "挑战14：注册到 admin",
+    productID: "com.mrrubik.learnswift.djangoex3988",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3988),
+    completed: purchaseManagerHive.getCompleted(3988),
+  ),
+  CoursesExModel(
+    id: 3989,
+    exerciseName: "练习15：创建超级用户",
+    productID: "com.mrrubik.learnswift.djangoex3989",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3989),
+    completed: purchaseManagerHive.getCompleted(3989),
+  ),
+];

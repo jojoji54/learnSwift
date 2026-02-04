@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoMiddlewareModelEN = [
+  CoursesExModel(
+    id: 4080,
+    exerciseName: "Exercise 1: Middleware skeleton",
+    productID: "com.mrrubik.learnswift.djangoex4080",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4080),
+    completed: purchaseManagerHive.getCompleted(4080),
+  ),
+  CoursesExModel(
+    id: 4081,
+    exerciseName: "Challenge 2: Add to MIDDLEWARE",
+    productID: "com.mrrubik.learnswift.djangoex4081",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4081),
+    completed: purchaseManagerHive.getCompleted(4081),
+  ),
+  CoursesExModel(
+    id: 4082,
+    exerciseName: "Exercise 3: Read request.path",
+    productID: "com.mrrubik.learnswift.djangoex4082",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4082),
+    completed: purchaseManagerHive.getCompleted(4082),
+  ),
+  CoursesExModel(
+    id: 4083,
+    exerciseName: "Challenge 4: Add header",
+    productID: "com.mrrubik.learnswift.djangoex4083",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4083),
+    completed: purchaseManagerHive.getCompleted(4083),
+  ),
+  CoursesExModel(
+    id: 4084,
+    exerciseName: "Exercise 5: HttpResponseForbidden",
+    productID: "com.mrrubik.learnswift.djangoex4084",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4084),
+    completed: purchaseManagerHive.getCompleted(4084),
+  ),
+  CoursesExModel(
+    id: 4085,
+    exerciseName: "Challenge 6: SECURE_SSL_REDIRECT",
+    productID: "com.mrrubik.learnswift.djangoex4085",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4085),
+    completed: purchaseManagerHive.getCompleted(4085),
+  ),
+  CoursesExModel(
+    id: 4086,
+    exerciseName: "Exercise 7: HTTPONLY cookies",
+    productID: "com.mrrubik.learnswift.djangoex4086",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4086),
+    completed: purchaseManagerHive.getCompleted(4086),
+  ),
+  CoursesExModel(
+    id: 4087,
+    exerciseName: "Challenge 8: X_FRAME_OPTIONS",
+    productID: "com.mrrubik.learnswift.djangoex4087",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4087),
+    completed: purchaseManagerHive.getCompleted(4087),
+  ),
+  CoursesExModel(
+    id: 4088,
+    exerciseName: "Exercise 9: CSRF_COOKIE_SECURE",
+    productID: "com.mrrubik.learnswift.djangoex4088",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4088),
+    completed: purchaseManagerHive.getCompleted(4088),
+  ),
+  CoursesExModel(
+    id: 4089,
+    exerciseName: "Challenge 10: csrf_exempt",
+    productID: "com.mrrubik.learnswift.djangoex4089",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4089),
+    completed: purchaseManagerHive.getCompleted(4089),
+  ),
+  CoursesExModel(
+    id: 4090,
+    exerciseName: "Exercise 11: Rate limit idea",
+    productID: "com.mrrubik.learnswift.djangoex4090",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4090),
+    completed: purchaseManagerHive.getCompleted(4090),
+  ),
+  CoursesExModel(
+    id: 4091,
+    exerciseName: "Challenge 12: Log timing",
+    productID: "com.mrrubik.learnswift.djangoex4091",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4091),
+    completed: purchaseManagerHive.getCompleted(4091),
+  ),
+  CoursesExModel(
+    id: 4092,
+    exerciseName: "Exercise 13: handler500",
+    productID: "com.mrrubik.learnswift.djangoex4092",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4092),
+    completed: purchaseManagerHive.getCompleted(4092),
+  ),
+  CoursesExModel(
+    id: 4093,
+    exerciseName: "Challenge 14: ALLOWED_HOSTS",
+    productID: "com.mrrubik.learnswift.djangoex4093",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4093),
+    completed: purchaseManagerHive.getCompleted(4093),
+  ),
+  CoursesExModel(
+    id: 4094,
+    exerciseName: "Exercise 15: GZipMiddleware",
+    productID: "com.mrrubik.learnswift.djangoex4094",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4094),
+    completed: purchaseManagerHive.getCompleted(4094),
+  ),
+];

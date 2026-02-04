@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoModelsModelEN = [
+  CoursesExModel(
+    id: 3975,
+    exerciseName: "Exercise 1: Simple model",
+    productID: "com.mrrubik.learnswift.djangoex3975",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3975),
+    completed: purchaseManagerHive.getCompleted(3975),
+  ),
+  CoursesExModel(
+    id: 3976,
+    exerciseName: "Challenge 2: __str__",
+    productID: "com.mrrubik.learnswift.djangoex3976",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3976),
+    completed: purchaseManagerHive.getCompleted(3976),
+  ),
+  CoursesExModel(
+    id: 3977,
+    exerciseName: "Exercise 3: ForeignKey",
+    productID: "com.mrrubik.learnswift.djangoex3977",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3977),
+    completed: purchaseManagerHive.getCompleted(3977),
+  ),
+  CoursesExModel(
+    id: 3978,
+    exerciseName: "Challenge 4: ManyToMany",
+    productID: "com.mrrubik.learnswift.djangoex3978",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3978),
+    completed: purchaseManagerHive.getCompleted(3978),
+  ),
+  CoursesExModel(
+    id: 3979,
+    exerciseName: "Exercise 5: choices",
+    productID: "com.mrrubik.learnswift.djangoex3979",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3979),
+    completed: purchaseManagerHive.getCompleted(3979),
+  ),
+  CoursesExModel(
+    id: 3980,
+    exerciseName: "Challenge 6: default + null",
+    productID: "com.mrrubik.learnswift.djangoex3980",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3980),
+    completed: purchaseManagerHive.getCompleted(3980),
+  ),
+  CoursesExModel(
+    id: 3981,
+    exerciseName: "Exercise 7: Meta ordering",
+    productID: "com.mrrubik.learnswift.djangoex3981",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3981),
+    completed: purchaseManagerHive.getCompleted(3981),
+  ),
+  CoursesExModel(
+    id: 3982,
+    exerciseName: "Challenge 8: UniqueConstraint",
+    productID: "com.mrrubik.learnswift.djangoex3982",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3982),
+    completed: purchaseManagerHive.getCompleted(3982),
+  ),
+  CoursesExModel(
+    id: 3983,
+    exerciseName: "Exercise 9: Create object",
+    productID: "com.mrrubik.learnswift.djangoex3983",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3983),
+    completed: purchaseManagerHive.getCompleted(3983),
+  ),
+  CoursesExModel(
+    id: 3984,
+    exerciseName: "Challenge 10: Read all",
+    productID: "com.mrrubik.learnswift.djangoex3984",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3984),
+    completed: purchaseManagerHive.getCompleted(3984),
+  ),
+  CoursesExModel(
+    id: 3985,
+    exerciseName: "Exercise 11: Filter",
+    productID: "com.mrrubik.learnswift.djangoex3985",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3985),
+    completed: purchaseManagerHive.getCompleted(3985),
+  ),
+  CoursesExModel(
+    id: 3986,
+    exerciseName: "Challenge 12: Update + save",
+    productID: "com.mrrubik.learnswift.djangoex3986",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3986),
+    completed: purchaseManagerHive.getCompleted(3986),
+  ),
+  CoursesExModel(
+    id: 3987,
+    exerciseName: "Exercise 13: Delete",
+    productID: "com.mrrubik.learnswift.djangoex3987",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3987),
+    completed: purchaseManagerHive.getCompleted(3987),
+  ),
+  CoursesExModel(
+    id: 3988,
+    exerciseName: "Challenge 14: Register in admin",
+    productID: "com.mrrubik.learnswift.djangoex3988",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3988),
+    completed: purchaseManagerHive.getCompleted(3988),
+  ),
+  CoursesExModel(
+    id: 3989,
+    exerciseName: "Exercise 15: Create superuser",
+    productID: "com.mrrubik.learnswift.djangoex3989",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3989),
+    completed: purchaseManagerHive.getCompleted(3989),
+  ),
+];

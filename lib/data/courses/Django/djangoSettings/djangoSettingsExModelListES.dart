@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoSettingsModelES = [
+  CoursesExModel(
+    id: 3915,
+    exerciseName: "Ejercicio 1: DIRS de templates",
+    productID: "com.mrrubik.learnswift.djangoex3915",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3915),
+    completed: purchaseManagerHive.getCompleted(3915),
+  ),
+  CoursesExModel(
+    id: 3916,
+    exerciseName: "Desafio 2: TIME_ZONE",
+    productID: "com.mrrubik.learnswift.djangoex3916",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3916),
+    completed: purchaseManagerHive.getCompleted(3916),
+  ),
+  CoursesExModel(
+    id: 3917,
+    exerciseName: "Ejercicio 3: LANGUAGE_CODE",
+    productID: "com.mrrubik.learnswift.djangoex3917",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3917),
+    completed: purchaseManagerHive.getCompleted(3917),
+  ),
+  CoursesExModel(
+    id: 3918,
+    exerciseName: "Desafio 4: DATABASES sqlite",
+    productID: "com.mrrubik.learnswift.djangoex3918",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3918),
+    completed: purchaseManagerHive.getCompleted(3918),
+  ),
+  CoursesExModel(
+    id: 3919,
+    exerciseName: "Ejercicio 5: STATIC_URL",
+    productID: "com.mrrubik.learnswift.djangoex3919",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3919),
+    completed: purchaseManagerHive.getCompleted(3919),
+  ),
+  CoursesExModel(
+    id: 3920,
+    exerciseName: "Desafio 6: STATICFILES_DIRS",
+    productID: "com.mrrubik.learnswift.djangoex3920",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3920),
+    completed: purchaseManagerHive.getCompleted(3920),
+  ),
+  CoursesExModel(
+    id: 3921,
+    exerciseName: "Ejercicio 7: MEDIA_URL / MEDIA_ROOT",
+    productID: "com.mrrubik.learnswift.djangoex3921",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3921),
+    completed: purchaseManagerHive.getCompleted(3921),
+  ),
+  CoursesExModel(
+    id: 3922,
+    exerciseName: "Desafio 8: ALLOWED_HOSTS",
+    productID: "com.mrrubik.learnswift.djangoex3922",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3922),
+    completed: purchaseManagerHive.getCompleted(3922),
+  ),
+  CoursesExModel(
+    id: 3923,
+    exerciseName: "Ejercicio 9: DEBUG desde env",
+    productID: "com.mrrubik.learnswift.djangoex3923",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3923),
+    completed: purchaseManagerHive.getCompleted(3923),
+  ),
+  CoursesExModel(
+    id: 3924,
+    exerciseName: "Desafio 10: CSRF_TRUSTED_ORIGINS",
+    productID: "com.mrrubik.learnswift.djangoex3924",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3924),
+    completed: purchaseManagerHive.getCompleted(3924),
+  ),
+  CoursesExModel(
+    id: 3925,
+    exerciseName: "Ejercicio 11: CACHES en memoria",
+    productID: "com.mrrubik.learnswift.djangoex3925",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3925),
+    completed: purchaseManagerHive.getCompleted(3925),
+  ),
+  CoursesExModel(
+    id: 3926,
+    exerciseName: "Desafio 12: LOGGING consola",
+    productID: "com.mrrubik.learnswift.djangoex3926",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3926),
+    completed: purchaseManagerHive.getCompleted(3926),
+  ),
+  CoursesExModel(
+    id: 3927,
+    exerciseName: "Ejercicio 13: Constante SITE_NAME",
+    productID: "com.mrrubik.learnswift.djangoex3927",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3927),
+    completed: purchaseManagerHive.getCompleted(3927),
+  ),
+  CoursesExModel(
+    id: 3928,
+    exerciseName: "Desafio 14: DEFAULT_AUTO_FIELD",
+    productID: "com.mrrubik.learnswift.djangoex3928",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3928),
+    completed: purchaseManagerHive.getCompleted(3928),
+  ),
+  CoursesExModel(
+    id: 3929,
+    exerciseName: "Ejercicio 15: Cookies seguras",
+    productID: "com.mrrubik.learnswift.djangoex3929",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3929),
+    completed: purchaseManagerHive.getCompleted(3929),
+  ),
+];

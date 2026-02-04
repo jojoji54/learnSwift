@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoAuthModelEN = [
+  CoursesExModel(
+    id: 4050,
+    exerciseName: "Exercise 1: login_required",
+    productID: "com.mrrubik.learnswift.djangoex4050",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4050),
+    completed: purchaseManagerHive.getCompleted(4050),
+  ),
+  CoursesExModel(
+    id: 4051,
+    exerciseName: "Challenge 2: UserCreationForm",
+    productID: "com.mrrubik.learnswift.djangoex4051",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4051),
+    completed: purchaseManagerHive.getCompleted(4051),
+  ),
+  CoursesExModel(
+    id: 4052,
+    exerciseName: "Exercise 3: authenticate + login",
+    productID: "com.mrrubik.learnswift.djangoex4052",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4052),
+    completed: purchaseManagerHive.getCompleted(4052),
+  ),
+  CoursesExModel(
+    id: 4053,
+    exerciseName: "Challenge 4: logout",
+    productID: "com.mrrubik.learnswift.djangoex4053",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4053),
+    completed: purchaseManagerHive.getCompleted(4053),
+  ),
+  CoursesExModel(
+    id: 4054,
+    exerciseName: "Exercise 5: request.user",
+    productID: "com.mrrubik.learnswift.djangoex4054",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4054),
+    completed: purchaseManagerHive.getCompleted(4054),
+  ),
+  CoursesExModel(
+    id: 4055,
+    exerciseName: "Challenge 6: permission_required",
+    productID: "com.mrrubik.learnswift.djangoex4055",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4055),
+    completed: purchaseManagerHive.getCompleted(4055),
+  ),
+  CoursesExModel(
+    id: 4056,
+    exerciseName: "Exercise 7: has_perm",
+    productID: "com.mrrubik.learnswift.djangoex4056",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4056),
+    completed: purchaseManagerHive.getCompleted(4056),
+  ),
+  CoursesExModel(
+    id: 4057,
+    exerciseName: "Challenge 8: Groups",
+    productID: "com.mrrubik.learnswift.djangoex4057",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4057),
+    completed: purchaseManagerHive.getCompleted(4057),
+  ),
+  CoursesExModel(
+    id: 4058,
+    exerciseName: "Exercise 9: AUTH_USER_MODEL",
+    productID: "com.mrrubik.learnswift.djangoex4058",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4058),
+    completed: purchaseManagerHive.getCompleted(4058),
+  ),
+  CoursesExModel(
+    id: 4059,
+    exerciseName: "Challenge 10: Profile OneToOne",
+    productID: "com.mrrubik.learnswift.djangoex4059",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4059),
+    completed: purchaseManagerHive.getCompleted(4059),
+  ),
+  CoursesExModel(
+    id: 4060,
+    exerciseName: "Exercise 11: Signals profile",
+    productID: "com.mrrubik.learnswift.djangoex4060",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4060),
+    completed: purchaseManagerHive.getCompleted(4060),
+  ),
+  CoursesExModel(
+    id: 4061,
+    exerciseName: "Challenge 12: Auth urls include",
+    productID: "com.mrrubik.learnswift.djangoex4061",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4061),
+    completed: purchaseManagerHive.getCompleted(4061),
+  ),
+  CoursesExModel(
+    id: 4062,
+    exerciseName: "Exercise 13: Session expiry",
+    productID: "com.mrrubik.learnswift.djangoex4062",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4062),
+    completed: purchaseManagerHive.getCompleted(4062),
+  ),
+  CoursesExModel(
+    id: 4063,
+    exerciseName: "Challenge 14: PasswordChangeView",
+    productID: "com.mrrubik.learnswift.djangoex4063",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4063),
+    completed: purchaseManagerHive.getCompleted(4063),
+  ),
+  CoursesExModel(
+    id: 4064,
+    exerciseName: "Exercise 15: staff_member_required",
+    productID: "com.mrrubik.learnswift.djangoex4064",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4064),
+    completed: purchaseManagerHive.getCompleted(4064),
+  ),
+];

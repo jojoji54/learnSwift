@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> djangoUrlsModelZH = [
+  CoursesExModel(
+    id: 3930,
+    exerciseName: "练习1：首页路由",
+    productID: "com.mrrubik.learnswift.djangoex3930",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3930),
+    completed: purchaseManagerHive.getCompleted(3930),
+  ),
+  CoursesExModel(
+    id: 3931,
+    exerciseName: "挑战2：路径参数 int",
+    productID: "com.mrrubik.learnswift.djangoex3931",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3931),
+    completed: purchaseManagerHive.getCompleted(3931),
+  ),
+  CoursesExModel(
+    id: 3932,
+    exerciseName: "练习3：include 引入子路由",
+    productID: "com.mrrubik.learnswift.djangoex3932",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3932),
+    completed: purchaseManagerHive.getCompleted(3932),
+  ),
+  CoursesExModel(
+    id: 3933,
+    exerciseName: "挑战4：命名空间 app_name",
+    productID: "com.mrrubik.learnswift.djangoex3933",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3933),
+    completed: purchaseManagerHive.getCompleted(3933),
+  ),
+  CoursesExModel(
+    id: 3934,
+    exerciseName: "练习5：reverse 反向解析",
+    productID: "com.mrrubik.learnswift.djangoex3934",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3934),
+    completed: purchaseManagerHive.getCompleted(3934),
+  ),
+  CoursesExModel(
+    id: 3935,
+    exerciseName: "挑战6：redirect 重定向",
+    productID: "com.mrrubik.learnswift.djangoex3935",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3935),
+    completed: purchaseManagerHive.getCompleted(3935),
+  ),
+  CoursesExModel(
+    id: 3936,
+    exerciseName: "练习7：类视图 as_view",
+    productID: "com.mrrubik.learnswift.djangoex3936",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3936),
+    completed: purchaseManagerHive.getCompleted(3936),
+  ),
+  CoursesExModel(
+    id: 3937,
+    exerciseName: "挑战8：开发环境媒体文件",
+    productID: "com.mrrubik.learnswift.djangoex3937",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3937),
+    completed: purchaseManagerHive.getCompleted(3937),
+  ),
+  CoursesExModel(
+    id: 3938,
+    exerciseName: "练习9：视图参数",
+    productID: "com.mrrubik.learnswift.djangoex3938",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3938),
+    completed: purchaseManagerHive.getCompleted(3938),
+  ),
+  CoursesExModel(
+    id: 3939,
+    exerciseName: "挑战10：re_path 正则路由",
+    productID: "com.mrrubik.learnswift.djangoex3939",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3939),
+    completed: purchaseManagerHive.getCompleted(3939),
+  ),
+  CoursesExModel(
+    id: 3940,
+    exerciseName: "练习11：HttpResponseRedirect",
+    productID: "com.mrrubik.learnswift.djangoex3940",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3940),
+    completed: purchaseManagerHive.getCompleted(3940),
+  ),
+  CoursesExModel(
+    id: 3941,
+    exerciseName: "挑战12：自定义 404",
+    productID: "com.mrrubik.learnswift.djangoex3941",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3941),
+    completed: purchaseManagerHive.getCompleted(3941),
+  ),
+  CoursesExModel(
+    id: 3942,
+    exerciseName: "练习13：生成绝对地址",
+    productID: "com.mrrubik.learnswift.djangoex3942",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3942),
+    completed: purchaseManagerHive.getCompleted(3942),
+  ),
+  CoursesExModel(
+    id: 3943,
+    exerciseName: "挑战14：自定义路径转换器",
+    productID: "com.mrrubik.learnswift.djangoex3943",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3943),
+    completed: purchaseManagerHive.getCompleted(3943),
+  ),
+  CoursesExModel(
+    id: 3944,
+    exerciseName: "练习15：resolve 调试",
+    productID: "com.mrrubik.learnswift.djangoex3944",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3944),
+    completed: purchaseManagerHive.getCompleted(3944),
+  ),
+];

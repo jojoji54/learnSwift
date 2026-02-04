@@ -488,6 +488,36 @@ class CategoryInfoL10n {
         return loc.djangoCat13InfoTitle;
       case 'djangoCat14InfoTitle':
         return loc.djangoCat14InfoTitle;
+      case 'springCat0InfoTitle':
+        return loc.springCat0InfoTitle;
+      case 'springCat1InfoTitle':
+        return loc.springCat1InfoTitle;
+      case 'springCat2InfoTitle':
+        return loc.springCat2InfoTitle;
+      case 'springCat3InfoTitle':
+        return loc.springCat3InfoTitle;
+      case 'springCat4InfoTitle':
+        return loc.springCat4InfoTitle;
+      case 'springCat5InfoTitle':
+        return loc.springCat5InfoTitle;
+      case 'springCat6InfoTitle':
+        return loc.springCat6InfoTitle;
+      case 'springCat7InfoTitle':
+        return loc.springCat7InfoTitle;
+      case 'springCat8InfoTitle':
+        return loc.springCat8InfoTitle;
+      case 'springCat9InfoTitle':
+        return loc.springCat9InfoTitle;
+      case 'springCat10InfoTitle':
+        return loc.springCat10InfoTitle;
+      case 'springCat11InfoTitle':
+        return loc.springCat11InfoTitle;
+      case 'springCat12InfoTitle':
+        return loc.springCat12InfoTitle;
+      case 'springCat13InfoTitle':
+        return loc.springCat13InfoTitle;
+      case 'springCat14InfoTitle':
+        return loc.springCat14InfoTitle;
       default:
         return key;
     }
@@ -980,6 +1010,36 @@ class CategoryInfoL10n {
         return loc.djangoCat13InfoContent;
       case 'djangoCat14InfoContent':
         return loc.djangoCat14InfoContent;
+      case 'springCat0InfoContent':
+        return loc.springCat0InfoContent;
+      case 'springCat1InfoContent':
+        return loc.springCat1InfoContent;
+      case 'springCat2InfoContent':
+        return loc.springCat2InfoContent;
+      case 'springCat3InfoContent':
+        return loc.springCat3InfoContent;
+      case 'springCat4InfoContent':
+        return loc.springCat4InfoContent;
+      case 'springCat5InfoContent':
+        return loc.springCat5InfoContent;
+      case 'springCat6InfoContent':
+        return loc.springCat6InfoContent;
+      case 'springCat7InfoContent':
+        return loc.springCat7InfoContent;
+      case 'springCat8InfoContent':
+        return loc.springCat8InfoContent;
+      case 'springCat9InfoContent':
+        return loc.springCat9InfoContent;
+      case 'springCat10InfoContent':
+        return loc.springCat10InfoContent;
+      case 'springCat11InfoContent':
+        return loc.springCat11InfoContent;
+      case 'springCat12InfoContent':
+        return loc.springCat12InfoContent;
+      case 'springCat13InfoContent':
+        return loc.springCat13InfoContent;
+      case 'springCat14InfoContent':
+        return loc.springCat14InfoContent;
       default:
         return key;
     }

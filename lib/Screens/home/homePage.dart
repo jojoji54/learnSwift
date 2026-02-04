@@ -71,14 +71,14 @@ class _MyHomePageState extends State<MyHomePage> {
                 _buildPage(
                   context,
                   "Languages",
-                  programmingItemsEN.where((item) => item.id <= 11).toList(),
-                  programmingItemsES.where((item) => item.id <= 11).toList(),
+                  programmingItemsEN.where((item) => item.id <= 12).toList(),
+                  programmingItemsES.where((item) => item.id <= 12).toList(),
                 ),
                 _buildPage(
                     context,
                     "Frameworks",
-                    programmingItemsEN.where((item) => item.id > 11).toList(),
-                    programmingItemsES.where((item) => item.id > 11).toList()),
+                    programmingItemsEN.where((item) => item.id > 12).toList(),
+                    programmingItemsES.where((item) => item.id > 12).toList()),
               ],
             ),
           ],

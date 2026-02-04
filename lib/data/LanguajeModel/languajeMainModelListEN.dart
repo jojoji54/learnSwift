@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListEN.dart';
+import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListEN.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListEN.dart';
@@ -237,10 +238,10 @@ final List<ProgrammingItem> programmingItemsEN = [
     name: 'Spring',
     productID: 'com.mrrubik.learnswift.sprin',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
-    coursesList: [],
+    coursesList: coursesSpringMainModelListEN,
     color1: Color(0xFF6DB33F),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Spring introduces you to enterprise development with this framework for Java.\n\nVersion: Spring 6',
   ),

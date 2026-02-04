@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListZH.dart';
@@ -233,10 +234,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Spring',
     productID: 'com.mrrubik.learnswift.sprin',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(18),
-    coursesList: [],
+    coursesList: coursesSpringMainModelListZH,
     color1: Color(0xFF6DB33F),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description: 'CodeCrafters: Spring 是用于学习 Java 企业开发的工具。\n\n版本: Spring 6',
   ),
   ProgrammingItem(

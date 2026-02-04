@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyTwigModelZH = [
+  CoursesExModel(
+    id: 4495,
+    exerciseName: "练习 1: 输出变量",
+    productID: "com.mrrubik.learnswift.symfonyex4495",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4495),
+    completed: purchaseManagerHive.getCompleted(4495),
+  ),
+  CoursesExModel(
+    id: 4496,
+    exerciseName: "挑战 2: if/endif 代码块",
+    productID: "com.mrrubik.learnswift.symfonyex4496",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4496),
+    completed: purchaseManagerHive.getCompleted(4496),
+  ),
+  CoursesExModel(
+    id: 4497,
+    exerciseName: "练习 3: 遍历列表",
+    productID: "com.mrrubik.learnswift.symfonyex4497",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4497),
+    completed: purchaseManagerHive.getCompleted(4497),
+  ),
+  CoursesExModel(
+    id: 4498,
+    exerciseName: "挑战 4: 继承基础模板",
+    productID: "com.mrrubik.learnswift.symfonyex4498",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4498),
+    completed: purchaseManagerHive.getCompleted(4498),
+  ),
+  CoursesExModel(
+    id: 4499,
+    exerciseName: "练习 5: 包含 partial",
+    productID: "com.mrrubik.learnswift.symfonyex4499",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4499),
+    completed: purchaseManagerHive.getCompleted(4499),
+  ),
+  CoursesExModel(
+    id: 4500,
+    exerciseName: "挑战 6: upper 过滤器",
+    productID: "com.mrrubik.learnswift.symfonyex4500",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4500),
+    completed: purchaseManagerHive.getCompleted(4500),
+  ),
+  CoursesExModel(
+    id: 4501,
+    exerciseName: "练习 7: 日期格式化",
+    productID: "com.mrrubik.learnswift.symfonyex4501",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4501),
+    completed: purchaseManagerHive.getCompleted(4501),
+  ),
+  CoursesExModel(
+    id: 4502,
+    exerciseName: "挑战 8: 转义输出",
+    productID: "com.mrrubik.learnswift.symfonyex4502",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4502),
+    completed: purchaseManagerHive.getCompleted(4502),
+  ),
+  CoursesExModel(
+    id: 4503,
+    exerciseName: "练习 9: 渲染 raw HTML（小心）",
+    productID: "com.mrrubik.learnswift.symfonyex4503",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4503),
+    completed: purchaseManagerHive.getCompleted(4503),
+  ),
+  CoursesExModel(
+    id: 4504,
+    exerciseName: "挑战 10: 用 path() 生成 URL",
+    productID: "com.mrrubik.learnswift.symfonyex4504",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4504),
+    completed: purchaseManagerHive.getCompleted(4504),
+  ),
+  CoursesExModel(
+    id: 4505,
+    exerciseName: "练习 11: 引用静态资源",
+    productID: "com.mrrubik.learnswift.symfonyex4505",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4505),
+    completed: purchaseManagerHive.getCompleted(4505),
+  ),
+  CoursesExModel(
+    id: 4506,
+    exerciseName: "挑战 12: 用 set 定义变量",
+    productID: "com.mrrubik.learnswift.symfonyex4506",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4506),
+    completed: purchaseManagerHive.getCompleted(4506),
+  ),
+  CoursesExModel(
+    id: 4507,
+    exerciseName: "练习 13: 可复用宏",
+    productID: "com.mrrubik.learnswift.symfonyex4507",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4507),
+    completed: purchaseManagerHive.getCompleted(4507),
+  ),
+  CoursesExModel(
+    id: 4508,
+    exerciseName: "挑战 14: 用 dump() 调试",
+    productID: "com.mrrubik.learnswift.symfonyex4508",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4508),
+    completed: purchaseManagerHive.getCompleted(4508),
+  ),
+  CoursesExModel(
+    id: 4509,
+    exerciseName: "练习 15: 挑战：用循环渲染商品卡片",
+    productID: "com.mrrubik.learnswift.symfonyex4509",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4509),
+    completed: purchaseManagerHive.getCompleted(4509),
+  ),
+];

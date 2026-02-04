@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyEventsModelES = [
+  CoursesExModel(
+    id: 4615,
+    exerciseName: "Ejercicio 1: Crear un EventSubscriber",
+    productID: "com.mrrubik.learnswift.symfonyex4615",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4615),
+    completed: purchaseManagerHive.getCompleted(4615),
+  ),
+  CoursesExModel(
+    id: 4616,
+    exerciseName: "Desafio 2: Metodo getSubscribedEvents",
+    productID: "com.mrrubik.learnswift.symfonyex4616",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4616),
+    completed: purchaseManagerHive.getCompleted(4616),
+  ),
+  CoursesExModel(
+    id: 4617,
+    exerciseName: "Ejercicio 3: Escuchar KernelEvents::REQUEST",
+    productID: "com.mrrubik.learnswift.symfonyex4617",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4617),
+    completed: purchaseManagerHive.getCompleted(4617),
+  ),
+  CoursesExModel(
+    id: 4618,
+    exerciseName: "Desafio 4: Leer Request desde el evento",
+    productID: "com.mrrubik.learnswift.symfonyex4618",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4618),
+    completed: purchaseManagerHive.getCompleted(4618),
+  ),
+  CoursesExModel(
+    id: 4619,
+    exerciseName: "Ejercicio 5: Agregar prioridad",
+    productID: "com.mrrubik.learnswift.symfonyex4619",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4619),
+    completed: purchaseManagerHive.getCompleted(4619),
+  ),
+  CoursesExModel(
+    id: 4620,
+    exerciseName: "Desafio 6: Idea de stopPropagation",
+    productID: "com.mrrubik.learnswift.symfonyex4620",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4620),
+    completed: purchaseManagerHive.getCompleted(4620),
+  ),
+  CoursesExModel(
+    id: 4621,
+    exerciseName: "Ejercicio 7: Escuchar response event",
+    productID: "com.mrrubik.learnswift.symfonyex4621",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4621),
+    completed: purchaseManagerHive.getCompleted(4621),
+  ),
+  CoursesExModel(
+    id: 4622,
+    exerciseName: "Desafio 8: Modificar header en subscriber",
+    productID: "com.mrrubik.learnswift.symfonyex4622",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4622),
+    completed: purchaseManagerHive.getCompleted(4622),
+  ),
+  CoursesExModel(
+    id: 4623,
+    exerciseName: "Ejercicio 9: Crear un evento custom",
+    productID: "com.mrrubik.learnswift.symfonyex4623",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4623),
+    completed: purchaseManagerHive.getCompleted(4623),
+  ),
+  CoursesExModel(
+    id: 4624,
+    exerciseName: "Desafio 10: Disparar un evento custom",
+    productID: "com.mrrubik.learnswift.symfonyex4624",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4624),
+    completed: purchaseManagerHive.getCompleted(4624),
+  ),
+  CoursesExModel(
+    id: 4625,
+    exerciseName: "Ejercicio 11: Escuchar excepciones",
+    productID: "com.mrrubik.learnswift.symfonyex4625",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4625),
+    completed: purchaseManagerHive.getCompleted(4625),
+  ),
+  CoursesExModel(
+    id: 4626,
+    exerciseName: "Desafio 12: Hacer log dentro de un subscriber",
+    productID: "com.mrrubik.learnswift.symfonyex4626",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4626),
+    completed: purchaseManagerHive.getCompleted(4626),
+  ),
+  CoursesExModel(
+    id: 4627,
+    exerciseName: "Ejercicio 13: Nombre de metodo del subscriber",
+    productID: "com.mrrubik.learnswift.symfonyex4627",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4627),
+    completed: purchaseManagerHive.getCompleted(4627),
+  ),
+  CoursesExModel(
+    id: 4628,
+    exerciseName: "Desafio 14: Testear un subscriber (idea)",
+    productID: "com.mrrubik.learnswift.symfonyex4628",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4628),
+    completed: purchaseManagerHive.getCompleted(4628),
+  ),
+  CoursesExModel(
+    id: 4629,
+    exerciseName: "Ejercicio 15: Desafio: hook post-registro",
+    productID: "com.mrrubik.learnswift.symfonyex4629",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4629),
+    completed: purchaseManagerHive.getCompleted(4629),
+  ),
+];

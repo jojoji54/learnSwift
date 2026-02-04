@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyConfigModelZH = [
+  CoursesExModel(
+    id: 4585,
+    exerciseName: "练习 1: 设置 APP_ENV",
+    productID: "com.mrrubik.learnswift.symfonyex4585",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4585),
+    completed: purchaseManagerHive.getCompleted(4585),
+  ),
+  CoursesExModel(
+    id: 4586,
+    exerciseName: "挑战 2: 设置 APP_DEBUG",
+    productID: "com.mrrubik.learnswift.symfonyex4586",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4586),
+    completed: purchaseManagerHive.getCompleted(4586),
+  ),
+  CoursesExModel(
+    id: 4587,
+    exerciseName: "练习 3: 设置 APP_SECRET",
+    productID: "com.mrrubik.learnswift.symfonyex4587",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4587),
+    completed: purchaseManagerHive.getCompleted(4587),
+  ),
+  CoursesExModel(
+    id: 4588,
+    exerciseName: "挑战 4: 在 services.yaml 定义参数",
+    productID: "com.mrrubik.learnswift.symfonyex4588",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4588),
+    completed: purchaseManagerHive.getCompleted(4588),
+  ),
+  CoursesExModel(
+    id: 4589,
+    exerciseName: "练习 5: 用 ParameterBag 读取参数",
+    productID: "com.mrrubik.learnswift.symfonyex4589",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4589),
+    completed: purchaseManagerHive.getCompleted(4589),
+  ),
+  CoursesExModel(
+    id: 4590,
+    exerciseName: "挑战 6: Twig 默认路径配置",
+    productID: "com.mrrubik.learnswift.symfonyex4590",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4590),
+    completed: purchaseManagerHive.getCompleted(4590),
+  ),
+  CoursesExModel(
+    id: 4591,
+    exerciseName: "练习 7: 路由配置文件",
+    productID: "com.mrrubik.learnswift.symfonyex4591",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4591),
+    completed: purchaseManagerHive.getCompleted(4591),
+  ),
+  CoursesExModel(
+    id: 4592,
+    exerciseName: "挑战 8: Monolog handler 思路",
+    productID: "com.mrrubik.learnswift.symfonyex4592",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4592),
+    completed: purchaseManagerHive.getCompleted(4592),
+  ),
+  CoursesExModel(
+    id: 4593,
+    exerciseName: "练习 9: 缓存基础配置",
+    productID: "com.mrrubik.learnswift.symfonyex4593",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4593),
+    completed: purchaseManagerHive.getCompleted(4593),
+  ),
+  CoursesExModel(
+    id: 4594,
+    exerciseName: "挑战 10: SQLite 的 DATABASE_URL",
+    productID: "com.mrrubik.learnswift.symfonyex4594",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4594),
+    completed: purchaseManagerHive.getCompleted(4594),
+  ),
+  CoursesExModel(
+    id: 4595,
+    exerciseName: "练习 11: Doctrine 从 env 读取 dbal",
+    productID: "com.mrrubik.learnswift.symfonyex4595",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4595),
+    completed: purchaseManagerHive.getCompleted(4595),
+  ),
+  CoursesExModel(
+    id: 4596,
+    exerciseName: "挑战 12: Mailer DSN 为空",
+    productID: "com.mrrubik.learnswift.symfonyex4596",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4596),
+    completed: purchaseManagerHive.getCompleted(4596),
+  ),
+  CoursesExModel(
+    id: 4597,
+    exerciseName: "练习 13: Messenger transport DSN",
+    productID: "com.mrrubik.learnswift.symfonyex4597",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4597),
+    completed: purchaseManagerHive.getCompleted(4597),
+  ),
+  CoursesExModel(
+    id: 4598,
+    exerciseName: "挑战 14: 迁移路径配置",
+    productID: "com.mrrubik.learnswift.symfonyex4598",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4598),
+    completed: purchaseManagerHive.getCompleted(4598),
+  ),
+  CoursesExModel(
+    id: 4599,
+    exerciseName: "练习 15: 挑战：结合配置与 env",
+    productID: "com.mrrubik.learnswift.symfonyex4599",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4599),
+    completed: purchaseManagerHive.getCompleted(4599),
+  ),
+];

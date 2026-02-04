@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyControllersModelZH = [
+  CoursesExModel(
+    id: 4480,
+    exerciseName: "练习 1: 返回普通 Response",
+    productID: "com.mrrubik.learnswift.symfonyex4480",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4480),
+    completed: purchaseManagerHive.getCompleted(4480),
+  ),
+  CoursesExModel(
+    id: 4481,
+    exerciseName: "挑战 2: 返回 JSON",
+    productID: "com.mrrubik.learnswift.symfonyex4481",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4481),
+    completed: purchaseManagerHive.getCompleted(4481),
+  ),
+  CoursesExModel(
+    id: 4482,
+    exerciseName: "练习 3: 从 Request 读取 query 参数",
+    productID: "com.mrrubik.learnswift.symfonyex4482",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4482),
+    completed: purchaseManagerHive.getCompleted(4482),
+  ),
+  CoursesExModel(
+    id: 4483,
+    exerciseName: "挑战 4: 通过参数读取路由变量",
+    productID: "com.mrrubik.learnswift.symfonyex4483",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4483),
+    completed: purchaseManagerHive.getCompleted(4483),
+  ),
+  CoursesExModel(
+    id: 4484,
+    exerciseName: "练习 5: 返回 201",
+    productID: "com.mrrubik.learnswift.symfonyex4484",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4484),
+    completed: purchaseManagerHive.getCompleted(4484),
+  ),
+  CoursesExModel(
+    id: 4485,
+    exerciseName: "挑战 6: 设置响应头",
+    productID: "com.mrrubik.learnswift.symfonyex4485",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4485),
+    completed: purchaseManagerHive.getCompleted(4485),
+  ),
+  CoursesExModel(
+    id: 4486,
+    exerciseName: "练习 7: 重定向到路由",
+    productID: "com.mrrubik.learnswift.symfonyex4486",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4486),
+    completed: purchaseManagerHive.getCompleted(4486),
+  ),
+  CoursesExModel(
+    id: 4487,
+    exerciseName: "挑战 8: 抛出 404",
+    productID: "com.mrrubik.learnswift.symfonyex4487",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4487),
+    completed: purchaseManagerHive.getCompleted(4487),
+  ),
+  CoursesExModel(
+    id: 4488,
+    exerciseName: "练习 9: 渲染 Twig 模板",
+    productID: "com.mrrubik.learnswift.symfonyex4488",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4488),
+    completed: purchaseManagerHive.getCompleted(4488),
+  ),
+  CoursesExModel(
+    id: 4489,
+    exerciseName: "挑战 10: 使用 flash 消息",
+    productID: "com.mrrubik.learnswift.symfonyex4489",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4489),
+    completed: purchaseManagerHive.getCompleted(4489),
+  ),
+  CoursesExModel(
+    id: 4490,
+    exerciseName: "练习 11: 在 action 里注入服务",
+    productID: "com.mrrubik.learnswift.symfonyex4490",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4490),
+    completed: purchaseManagerHive.getCompleted(4490),
+  ),
+  CoursesExModel(
+    id: 4491,
+    exerciseName: "挑战 12: 返回文件下载",
+    productID: "com.mrrubik.learnswift.symfonyex4491",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4491),
+    completed: purchaseManagerHive.getCompleted(4491),
+  ),
+  CoursesExModel(
+    id: 4492,
+    exerciseName: "练习 13: 返回 JSON 错误（400）",
+    productID: "com.mrrubik.learnswift.symfonyex4492",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4492),
+    completed: purchaseManagerHive.getCompleted(4492),
+  ),
+  CoursesExModel(
+    id: 4493,
+    exerciseName: "挑战 14: 使用 HTTP 状态常量",
+    productID: "com.mrrubik.learnswift.symfonyex4493",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4493),
+    completed: purchaseManagerHive.getCompleted(4493),
+  ),
+  CoursesExModel(
+    id: 4494,
+    exerciseName: "练习 15: 挑战：路由 + JSON + 状态码",
+    productID: "com.mrrubik.learnswift.symfonyex4494",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4494),
+    completed: purchaseManagerHive.getCompleted(4494),
+  ),
+];

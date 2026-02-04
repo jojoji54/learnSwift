@@ -14,6 +14,8 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../data/LanguajeModel/languajeMainModelListZH.dart';
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key});
 
@@ -73,27 +75,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   "Languages",
                   programmingItemsEN.where((item) => item.id <= 12).toList(),
                   programmingItemsES.where((item) => item.id <= 12).toList(),
+                  programmingItemsZH.where((item) => item.id <= 12).toList(),
                 ),
                 _buildPage(
-                    context,
-                    "Frameworks",
-                    programmingItemsEN.where((item) => item.id > 12).toList(),
-                    programmingItemsES.where((item) => item.id > 12).toList()),
+                  context,
+                  "Frameworks",
+                  programmingItemsEN.where((item) => item.id > 12).toList(),
+                  programmingItemsES.where((item) => item.id > 12).toList(),
+                  programmingItemsZH.where((item) => item.id > 12).toList(),
+                ),
               ],
             ),
           ],
         ));
   }
 
-  Widget _buildPage(BuildContext context, String title,
-      List<ProgrammingItem> itemsEN, List<ProgrammingItem> itemsES) {
+  Widget _buildPage(
+      BuildContext context,
+      String title,
+      List<ProgrammingItem> itemsEN,
+      List<ProgrammingItem> itemsES,
+      List<ProgrammingItem> itemsEZH) {
     final allProvider = Provider.of<AllProvider>(context);
     return ListView.builder(
       itemCount: itemsEN.length,
       padding: const EdgeInsets.only(top: 20, bottom: 10),
       itemBuilder: (context, index) {
-        final course =
-            Constant.languaje == "es" ? itemsES[index] : itemsEN[index];
+        final course = Constant.languaje == "es"
+            ? itemsES[index]
+            : Constant.languaje == "en"
+                ? itemsEN[index]
+                : itemsEZH[index];
 
         return Column(
           children: [

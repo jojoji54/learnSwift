@@ -12,6 +12,7 @@ import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Symfony/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListZH.dart';
@@ -245,10 +246,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Symfony',
     productID: 'com.mrrubik.learnswift.symfony',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
-    coursesList: [],
+    coursesList: coursesSymfonyMainModelListZH,
     color1: Color(0xFF000000),
     color2: Color(0xFF7289DA),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Symfony 教授这一强大、模块化的 PHP 框架，用于企业级应用程序。\n\n版本: Symfony 6.3',
   ),

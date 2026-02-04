@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyTestingModelZH = [
+  CoursesExModel(
+    id: 4660,
+    exerciseName: "练习 1: 创建 WebTestCase client",
+    productID: "com.mrrubik.learnswift.symfonyex4660",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4660),
+    completed: purchaseManagerHive.getCompleted(4660),
+  ),
+  CoursesExModel(
+    id: 4661,
+    exerciseName: "挑战 2: 请求页面",
+    productID: "com.mrrubik.learnswift.symfonyex4661",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4661),
+    completed: purchaseManagerHive.getCompleted(4661),
+  ),
+  CoursesExModel(
+    id: 4662,
+    exerciseName: "练习 3: 断言状态码",
+    productID: "com.mrrubik.learnswift.symfonyex4662",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4662),
+    completed: purchaseManagerHive.getCompleted(4662),
+  ),
+  CoursesExModel(
+    id: 4663,
+    exerciseName: "挑战 4: 断言选择器",
+    productID: "com.mrrubik.learnswift.symfonyex4663",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4663),
+    completed: purchaseManagerHive.getCompleted(4663),
+  ),
+  CoursesExModel(
+    id: 4664,
+    exerciseName: "练习 5: 断言 JSON",
+    productID: "com.mrrubik.learnswift.symfonyex4664",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4664),
+    completed: purchaseManagerHive.getCompleted(4664),
+  ),
+  CoursesExModel(
+    id: 4665,
+    exerciseName: "挑战 6: 提交表单",
+    productID: "com.mrrubik.learnswift.symfonyex4665",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4665),
+    completed: purchaseManagerHive.getCompleted(4665),
+  ),
+  CoursesExModel(
+    id: 4666,
+    exerciseName: "练习 7: KernelTestCase 获取服务",
+    productID: "com.mrrubik.learnswift.symfonyex4666",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4666),
+    completed: purchaseManagerHive.getCompleted(4666),
+  ),
+  CoursesExModel(
+    id: 4667,
+    exerciseName: "挑战 8: 从容器取服务",
+    productID: "com.mrrubik.learnswift.symfonyex4667",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4667),
+    completed: purchaseManagerHive.getCompleted(4667),
+  ),
+  CoursesExModel(
+    id: 4668,
+    exerciseName: "练习 9: mock 服务",
+    productID: "com.mrrubik.learnswift.symfonyex4668",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4668),
+    completed: purchaseManagerHive.getCompleted(4668),
+  ),
+  CoursesExModel(
+    id: 4669,
+    exerciseName: "挑战 10: 测试拒绝访问",
+    productID: "com.mrrubik.learnswift.symfonyex4669",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4669),
+    completed: purchaseManagerHive.getCompleted(4669),
+  ),
+  CoursesExModel(
+    id: 4670,
+    exerciseName: "练习 11: 数据提供器思路",
+    productID: "com.mrrubik.learnswift.symfonyex4670",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4670),
+    completed: purchaseManagerHive.getCompleted(4670),
+  ),
+  CoursesExModel(
+    id: 4671,
+    exerciseName: "挑战 12: 使用 fixtures（概念）",
+    productID: "com.mrrubik.learnswift.symfonyex4671",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4671),
+    completed: purchaseManagerHive.getCompleted(4671),
+  ),
+  CoursesExModel(
+    id: 4672,
+    exerciseName: "练习 13: 测试数据库环境",
+    productID: "com.mrrubik.learnswift.symfonyex4672",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4672),
+    completed: purchaseManagerHive.getCompleted(4672),
+  ),
+  CoursesExModel(
+    id: 4673,
+    exerciseName: "挑战 14: 调试失败测试",
+    productID: "com.mrrubik.learnswift.symfonyex4673",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4673),
+    completed: purchaseManagerHive.getCompleted(4673),
+  ),
+  CoursesExModel(
+    id: 4674,
+    exerciseName: "练习 15: 挑战：路由回归测试",
+    productID: "com.mrrubik.learnswift.symfonyex4674",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4674),
+    completed: purchaseManagerHive.getCompleted(4674),
+  ),
+];

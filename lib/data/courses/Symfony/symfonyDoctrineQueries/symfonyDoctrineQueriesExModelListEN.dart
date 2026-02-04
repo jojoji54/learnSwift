@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyDoctrineQueriesModelEN = [
+  CoursesExModel(
+    id: 4540,
+    exerciseName: "Exercise 1: Inject a repository",
+    productID: "com.mrrubik.learnswift.symfonyex4540",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4540),
+    completed: purchaseManagerHive.getCompleted(4540),
+  ),
+  CoursesExModel(
+    id: 4541,
+    exerciseName: "Challenge 2: Find by id",
+    productID: "com.mrrubik.learnswift.symfonyex4541",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4541),
+    completed: purchaseManagerHive.getCompleted(4541),
+  ),
+  CoursesExModel(
+    id: 4542,
+    exerciseName: "Exercise 3: Find one by criteria",
+    productID: "com.mrrubik.learnswift.symfonyex4542",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4542),
+    completed: purchaseManagerHive.getCompleted(4542),
+  ),
+  CoursesExModel(
+    id: 4543,
+    exerciseName: "Challenge 4: Find with ordering and limit",
+    productID: "com.mrrubik.learnswift.symfonyex4543",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4543),
+    completed: purchaseManagerHive.getCompleted(4543),
+  ),
+  CoursesExModel(
+    id: 4544,
+    exerciseName: "Exercise 5: Start a QueryBuilder",
+    productID: "com.mrrubik.learnswift.symfonyex4544",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4544),
+    completed: purchaseManagerHive.getCompleted(4544),
+  ),
+  CoursesExModel(
+    id: 4545,
+    exerciseName: "Challenge 6: Where + setParameter",
+    productID: "com.mrrubik.learnswift.symfonyex4545",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4545),
+    completed: purchaseManagerHive.getCompleted(4545),
+  ),
+  CoursesExModel(
+    id: 4546,
+    exerciseName: "Exercise 7: Join a relation",
+    productID: "com.mrrubik.learnswift.symfonyex4546",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4546),
+    completed: purchaseManagerHive.getCompleted(4546),
+  ),
+  CoursesExModel(
+    id: 4547,
+    exerciseName: "Challenge 8: Order results",
+    productID: "com.mrrubik.learnswift.symfonyex4547",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4547),
+    completed: purchaseManagerHive.getCompleted(4547),
+  ),
+  CoursesExModel(
+    id: 4548,
+    exerciseName: "Exercise 9: Pagination basics",
+    productID: "com.mrrubik.learnswift.symfonyex4548",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4548),
+    completed: purchaseManagerHive.getCompleted(4548),
+  ),
+  CoursesExModel(
+    id: 4549,
+    exerciseName: "Challenge 10: Create DQL query",
+    productID: "com.mrrubik.learnswift.symfonyex4549",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4549),
+    completed: purchaseManagerHive.getCompleted(4549),
+  ),
+  CoursesExModel(
+    id: 4550,
+    exerciseName: "Exercise 11: Persist and flush",
+    productID: "com.mrrubik.learnswift.symfonyex4550",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4550),
+    completed: purchaseManagerHive.getCompleted(4550),
+  ),
+  CoursesExModel(
+    id: 4551,
+    exerciseName: "Challenge 12: Remove an entity",
+    productID: "com.mrrubik.learnswift.symfonyex4551",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4551),
+    completed: purchaseManagerHive.getCompleted(4551),
+  ),
+  CoursesExModel(
+    id: 4552,
+    exerciseName: "Exercise 13: Custom repository method",
+    productID: "com.mrrubik.learnswift.symfonyex4552",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4552),
+    completed: purchaseManagerHive.getCompleted(4552),
+  ),
+  CoursesExModel(
+    id: 4553,
+    exerciseName: "Challenge 14: Count query",
+    productID: "com.mrrubik.learnswift.symfonyex4553",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4553),
+    completed: purchaseManagerHive.getCompleted(4553),
+  ),
+  CoursesExModel(
+    id: 4554,
+    exerciseName: "Exercise 15: Challenge: search by term (LIKE)",
+    productID: "com.mrrubik.learnswift.symfonyex4554",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4554),
+    completed: purchaseManagerHive.getCompleted(4554),
+  ),
+];

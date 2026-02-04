@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyTwigModelES = [
+  CoursesExModel(
+    id: 4495,
+    exerciseName: "Ejercicio 1: Imprimir una variable",
+    productID: "com.mrrubik.learnswift.symfonyex4495",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4495),
+    completed: purchaseManagerHive.getCompleted(4495),
+  ),
+  CoursesExModel(
+    id: 4496,
+    exerciseName: "Desafio 2: Bloque if/endif",
+    productID: "com.mrrubik.learnswift.symfonyex4496",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4496),
+    completed: purchaseManagerHive.getCompleted(4496),
+  ),
+  CoursesExModel(
+    id: 4497,
+    exerciseName: "Ejercicio 3: Recorrer una lista",
+    productID: "com.mrrubik.learnswift.symfonyex4497",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4497),
+    completed: purchaseManagerHive.getCompleted(4497),
+  ),
+  CoursesExModel(
+    id: 4498,
+    exerciseName: "Desafio 4: Heredar de una plantilla base",
+    productID: "com.mrrubik.learnswift.symfonyex4498",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4498),
+    completed: purchaseManagerHive.getCompleted(4498),
+  ),
+  CoursesExModel(
+    id: 4499,
+    exerciseName: "Ejercicio 5: Incluir un partial",
+    productID: "com.mrrubik.learnswift.symfonyex4499",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4499),
+    completed: purchaseManagerHive.getCompleted(4499),
+  ),
+  CoursesExModel(
+    id: 4500,
+    exerciseName: "Desafio 6: Filtro upper",
+    productID: "com.mrrubik.learnswift.symfonyex4500",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4500),
+    completed: purchaseManagerHive.getCompleted(4500),
+  ),
+  CoursesExModel(
+    id: 4501,
+    exerciseName: "Ejercicio 7: Formato de fecha",
+    productID: "com.mrrubik.learnswift.symfonyex4501",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4501),
+    completed: purchaseManagerHive.getCompleted(4501),
+  ),
+  CoursesExModel(
+    id: 4502,
+    exerciseName: "Desafio 8: Escapar salida",
+    productID: "com.mrrubik.learnswift.symfonyex4502",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4502),
+    completed: purchaseManagerHive.getCompleted(4502),
+  ),
+  CoursesExModel(
+    id: 4503,
+    exerciseName: "Ejercicio 9: Renderizar HTML raw (con cuidado)",
+    productID: "com.mrrubik.learnswift.symfonyex4503",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4503),
+    completed: purchaseManagerHive.getCompleted(4503),
+  ),
+  CoursesExModel(
+    id: 4504,
+    exerciseName: "Desafio 10: Generar una URL con path()",
+    productID: "com.mrrubik.learnswift.symfonyex4504",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4504),
+    completed: purchaseManagerHive.getCompleted(4504),
+  ),
+  CoursesExModel(
+    id: 4505,
+    exerciseName: "Ejercicio 11: Enlazar un asset",
+    productID: "com.mrrubik.learnswift.symfonyex4505",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4505),
+    completed: purchaseManagerHive.getCompleted(4505),
+  ),
+  CoursesExModel(
+    id: 4506,
+    exerciseName: "Desafio 12: Definir una variable con set",
+    productID: "com.mrrubik.learnswift.symfonyex4506",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4506),
+    completed: purchaseManagerHive.getCompleted(4506),
+  ),
+  CoursesExModel(
+    id: 4507,
+    exerciseName: "Ejercicio 13: Macro para UI reutilizable",
+    productID: "com.mrrubik.learnswift.symfonyex4507",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4507),
+    completed: purchaseManagerHive.getCompleted(4507),
+  ),
+  CoursesExModel(
+    id: 4508,
+    exerciseName: "Desafio 14: Debug con dump()",
+    productID: "com.mrrubik.learnswift.symfonyex4508",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4508),
+    completed: purchaseManagerHive.getCompleted(4508),
+  ),
+  CoursesExModel(
+    id: 4509,
+    exerciseName: "Ejercicio 15: Desafio: tarjetas de producto con loop",
+    productID: "com.mrrubik.learnswift.symfonyex4509",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4509),
+    completed: purchaseManagerHive.getCompleted(4509),
+  ),
+];

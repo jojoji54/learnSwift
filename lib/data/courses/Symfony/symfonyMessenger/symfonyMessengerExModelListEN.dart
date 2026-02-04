@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyMessengerModelEN = [
+  CoursesExModel(
+    id: 4630,
+    exerciseName: "Exercise 1: Create a message class",
+    productID: "com.mrrubik.learnswift.symfonyex4630",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4630),
+    completed: purchaseManagerHive.getCompleted(4630),
+  ),
+  CoursesExModel(
+    id: 4631,
+    exerciseName: "Challenge 2: Create a handler with AsMessageHandler",
+    productID: "com.mrrubik.learnswift.symfonyex4631",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4631),
+    completed: purchaseManagerHive.getCompleted(4631),
+  ),
+  CoursesExModel(
+    id: 4632,
+    exerciseName: "Exercise 3: Dispatch a message",
+    productID: "com.mrrubik.learnswift.symfonyex4632",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4632),
+    completed: purchaseManagerHive.getCompleted(4632),
+  ),
+  CoursesExModel(
+    id: 4633,
+    exerciseName: "Challenge 4: Configure a transport",
+    productID: "com.mrrubik.learnswift.symfonyex4633",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4633),
+    completed: purchaseManagerHive.getCompleted(4633),
+  ),
+  CoursesExModel(
+    id: 4634,
+    exerciseName: "Exercise 5: Consume messages",
+    productID: "com.mrrubik.learnswift.symfonyex4634",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4634),
+    completed: purchaseManagerHive.getCompleted(4634),
+  ),
+  CoursesExModel(
+    id: 4635,
+    exerciseName: "Challenge 6: Retry strategy",
+    productID: "com.mrrubik.learnswift.symfonyex4635",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4635),
+    completed: purchaseManagerHive.getCompleted(4635),
+  ),
+  CoursesExModel(
+    id: 4636,
+    exerciseName: "Exercise 7: Failure transport",
+    productID: "com.mrrubik.learnswift.symfonyex4636",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4636),
+    completed: purchaseManagerHive.getCompleted(4636),
+  ),
+  CoursesExModel(
+    id: 4637,
+    exerciseName: "Challenge 8: Delay a message",
+    productID: "com.mrrubik.learnswift.symfonyex4637",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4637),
+    completed: purchaseManagerHive.getCompleted(4637),
+  ),
+  CoursesExModel(
+    id: 4638,
+    exerciseName: "Exercise 9: Route a message to async",
+    productID: "com.mrrubik.learnswift.symfonyex4638",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4638),
+    completed: purchaseManagerHive.getCompleted(4638),
+  ),
+  CoursesExModel(
+    id: 4639,
+    exerciseName: "Challenge 10: Multiple buses (idea)",
+    productID: "com.mrrubik.learnswift.symfonyex4639",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4639),
+    completed: purchaseManagerHive.getCompleted(4639),
+  ),
+  CoursesExModel(
+    id: 4640,
+    exerciseName: "Exercise 11: Envelope and stamps (idea)",
+    productID: "com.mrrubik.learnswift.symfonyex4640",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4640),
+    completed: purchaseManagerHive.getCompleted(4640),
+  ),
+  CoursesExModel(
+    id: 4641,
+    exerciseName: "Challenge 12: Sync transport",
+    productID: "com.mrrubik.learnswift.symfonyex4641",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4641),
+    completed: purchaseManagerHive.getCompleted(4641),
+  ),
+  CoursesExModel(
+    id: 4642,
+    exerciseName: "Exercise 13: Middleware concept",
+    productID: "com.mrrubik.learnswift.symfonyex4642",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4642),
+    completed: purchaseManagerHive.getCompleted(4642),
+  ),
+  CoursesExModel(
+    id: 4643,
+    exerciseName: "Challenge 14: Worker message limit (idea)",
+    productID: "com.mrrubik.learnswift.symfonyex4643",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4643),
+    completed: purchaseManagerHive.getCompleted(4643),
+  ),
+  CoursesExModel(
+    id: 4644,
+    exerciseName: "Exercise 15: Challenge: async image resize job",
+    productID: "com.mrrubik.learnswift.symfonyex4644",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4644),
+    completed: purchaseManagerHive.getCompleted(4644),
+  ),
+];

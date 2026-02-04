@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyEventsModelZH = [
+  CoursesExModel(
+    id: 4615,
+    exerciseName: "练习 1: 创建 EventSubscriber",
+    productID: "com.mrrubik.learnswift.symfonyex4615",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4615),
+    completed: purchaseManagerHive.getCompleted(4615),
+  ),
+  CoursesExModel(
+    id: 4616,
+    exerciseName: "挑战 2: getSubscribedEvents 方法",
+    productID: "com.mrrubik.learnswift.symfonyex4616",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4616),
+    completed: purchaseManagerHive.getCompleted(4616),
+  ),
+  CoursesExModel(
+    id: 4617,
+    exerciseName: "练习 3: 监听 KernelEvents::REQUEST",
+    productID: "com.mrrubik.learnswift.symfonyex4617",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4617),
+    completed: purchaseManagerHive.getCompleted(4617),
+  ),
+  CoursesExModel(
+    id: 4618,
+    exerciseName: "挑战 4: 从事件里拿 Request",
+    productID: "com.mrrubik.learnswift.symfonyex4618",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4618),
+    completed: purchaseManagerHive.getCompleted(4618),
+  ),
+  CoursesExModel(
+    id: 4619,
+    exerciseName: "练习 5: 添加优先级",
+    productID: "com.mrrubik.learnswift.symfonyex4619",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4619),
+    completed: purchaseManagerHive.getCompleted(4619),
+  ),
+  CoursesExModel(
+    id: 4620,
+    exerciseName: "挑战 6: stopPropagation 思路",
+    productID: "com.mrrubik.learnswift.symfonyex4620",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4620),
+    completed: purchaseManagerHive.getCompleted(4620),
+  ),
+  CoursesExModel(
+    id: 4621,
+    exerciseName: "练习 7: 监听 response 事件",
+    productID: "com.mrrubik.learnswift.symfonyex4621",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4621),
+    completed: purchaseManagerHive.getCompleted(4621),
+  ),
+  CoursesExModel(
+    id: 4622,
+    exerciseName: "挑战 8: 在 subscriber 改 header",
+    productID: "com.mrrubik.learnswift.symfonyex4622",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4622),
+    completed: purchaseManagerHive.getCompleted(4622),
+  ),
+  CoursesExModel(
+    id: 4623,
+    exerciseName: "练习 9: 创建自定义事件",
+    productID: "com.mrrubik.learnswift.symfonyex4623",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4623),
+    completed: purchaseManagerHive.getCompleted(4623),
+  ),
+  CoursesExModel(
+    id: 4624,
+    exerciseName: "挑战 10: 派发自定义事件",
+    productID: "com.mrrubik.learnswift.symfonyex4624",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4624),
+    completed: purchaseManagerHive.getCompleted(4624),
+  ),
+  CoursesExModel(
+    id: 4625,
+    exerciseName: "练习 11: 监听异常",
+    productID: "com.mrrubik.learnswift.symfonyex4625",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4625),
+    completed: purchaseManagerHive.getCompleted(4625),
+  ),
+  CoursesExModel(
+    id: 4626,
+    exerciseName: "挑战 12: subscriber 内写日志",
+    productID: "com.mrrubik.learnswift.symfonyex4626",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4626),
+    completed: purchaseManagerHive.getCompleted(4626),
+  ),
+  CoursesExModel(
+    id: 4627,
+    exerciseName: "练习 13: subscriber 方法命名",
+    productID: "com.mrrubik.learnswift.symfonyex4627",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4627),
+    completed: purchaseManagerHive.getCompleted(4627),
+  ),
+  CoursesExModel(
+    id: 4628,
+    exerciseName: "挑战 14: 测试 subscriber（思路）",
+    productID: "com.mrrubik.learnswift.symfonyex4628",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4628),
+    completed: purchaseManagerHive.getCompleted(4628),
+  ),
+  CoursesExModel(
+    id: 4629,
+    exerciseName: "练习 15: 挑战：注册后钩子",
+    productID: "com.mrrubik.learnswift.symfonyex4629",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4629),
+    completed: purchaseManagerHive.getCompleted(4629),
+  ),
+];

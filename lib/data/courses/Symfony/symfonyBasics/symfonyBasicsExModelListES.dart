@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyBasicsModelES = [
+  CoursesExModel(
+    id: 4450,
+    exerciseName: "Ejercicio 1: Crear un proyecto con Symfony CLI",
+    productID: "com.mrrubik.learnswift.symfonyex4450",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4450),
+    completed: purchaseManagerHive.getCompleted(4450),
+  ),
+  CoursesExModel(
+    id: 4451,
+    exerciseName: "Desafio 2: Arrancar el servidor local",
+    productID: "com.mrrubik.learnswift.symfonyex4451",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4451),
+    completed: purchaseManagerHive.getCompleted(4451),
+  ),
+  CoursesExModel(
+    id: 4452,
+    exerciseName: "Ejercicio 3: Parar el servidor local",
+    productID: "com.mrrubik.learnswift.symfonyex4452",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4452),
+    completed: purchaseManagerHive.getCompleted(4452),
+  ),
+  CoursesExModel(
+    id: 4453,
+    exerciseName: "Desafio 4: Listar comandos de consola",
+    productID: "com.mrrubik.learnswift.symfonyex4453",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4453),
+    completed: purchaseManagerHive.getCompleted(4453),
+  ),
+  CoursesExModel(
+    id: 4454,
+    exerciseName: "Ejercicio 5: Ver info del proyecto con about",
+    productID: "com.mrrubik.learnswift.symfonyex4454",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4454),
+    completed: purchaseManagerHive.getCompleted(4454),
+  ),
+  CoursesExModel(
+    id: 4455,
+    exerciseName: "Desafio 6: Generar un controlador",
+    productID: "com.mrrubik.learnswift.symfonyex4455",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4455),
+    completed: purchaseManagerHive.getCompleted(4455),
+  ),
+  CoursesExModel(
+    id: 4456,
+    exerciseName: "Ejercicio 7: Instalar MakerBundle (dev)",
+    productID: "com.mrrubik.learnswift.symfonyex4456",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4456),
+    completed: purchaseManagerHive.getCompleted(4456),
+  ),
+  CoursesExModel(
+    id: 4457,
+    exerciseName: "Desafio 8: Inspeccionar rutas",
+    productID: "com.mrrubik.learnswift.symfonyex4457",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4457),
+    completed: purchaseManagerHive.getCompleted(4457),
+  ),
+  CoursesExModel(
+    id: 4458,
+    exerciseName: "Ejercicio 9: Inspeccionar un servicio en el container",
+    productID: "com.mrrubik.learnswift.symfonyex4458",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4458),
+    completed: purchaseManagerHive.getCompleted(4458),
+  ),
+  CoursesExModel(
+    id: 4459,
+    exerciseName: "Desafio 10: Limpiar cache",
+    productID: "com.mrrubik.learnswift.symfonyex4459",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4459),
+    completed: purchaseManagerHive.getCompleted(4459),
+  ),
+  CoursesExModel(
+    id: 4460,
+    exerciseName: "Ejercicio 11: Agregar una variable de entorno simple",
+    productID: "com.mrrubik.learnswift.symfonyex4460",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4460),
+    completed: purchaseManagerHive.getCompleted(4460),
+  ),
+  CoursesExModel(
+    id: 4461,
+    exerciseName: "Desafio 12: Leer una env var como parametro",
+    productID: "com.mrrubik.learnswift.symfonyex4461",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4461),
+    completed: purchaseManagerHive.getCompleted(4461),
+  ),
+  CoursesExModel(
+    id: 4462,
+    exerciseName: "Ejercicio 13: Ejecutar PHPUnit",
+    productID: "com.mrrubik.learnswift.symfonyex4462",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4462),
+    completed: purchaseManagerHive.getCompleted(4462),
+  ),
+  CoursesExModel(
+    id: 4463,
+    exerciseName: "Desafio 14: Instalar Twig bundle",
+    productID: "com.mrrubik.learnswift.symfonyex4463",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4463),
+    completed: purchaseManagerHive.getCompleted(4463),
+  ),
+  CoursesExModel(
+    id: 4464,
+    exerciseName: "Ejercicio 15: Desafio: un endpoint de salud mini",
+    productID: "com.mrrubik.learnswift.symfonyex4464",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4464),
+    completed: purchaseManagerHive.getCompleted(4464),
+  ),
+];

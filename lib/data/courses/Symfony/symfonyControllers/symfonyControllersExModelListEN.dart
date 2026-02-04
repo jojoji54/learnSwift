@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyControllersModelEN = [
+  CoursesExModel(
+    id: 4480,
+    exerciseName: "Exercise 1: Return a plain Response",
+    productID: "com.mrrubik.learnswift.symfonyex4480",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4480),
+    completed: purchaseManagerHive.getCompleted(4480),
+  ),
+  CoursesExModel(
+    id: 4481,
+    exerciseName: "Challenge 2: Return JSON",
+    productID: "com.mrrubik.learnswift.symfonyex4481",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4481),
+    completed: purchaseManagerHive.getCompleted(4481),
+  ),
+  CoursesExModel(
+    id: 4482,
+    exerciseName: "Exercise 3: Read query parameters from Request",
+    productID: "com.mrrubik.learnswift.symfonyex4482",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4482),
+    completed: purchaseManagerHive.getCompleted(4482),
+  ),
+  CoursesExModel(
+    id: 4483,
+    exerciseName: "Challenge 4: Read a route parameter by argument",
+    productID: "com.mrrubik.learnswift.symfonyex4483",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4483),
+    completed: purchaseManagerHive.getCompleted(4483),
+  ),
+  CoursesExModel(
+    id: 4484,
+    exerciseName: "Exercise 5: Return 201 CREATED",
+    productID: "com.mrrubik.learnswift.symfonyex4484",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4484),
+    completed: purchaseManagerHive.getCompleted(4484),
+  ),
+  CoursesExModel(
+    id: 4485,
+    exerciseName: "Challenge 6: Set a response header",
+    productID: "com.mrrubik.learnswift.symfonyex4485",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4485),
+    completed: purchaseManagerHive.getCompleted(4485),
+  ),
+  CoursesExModel(
+    id: 4486,
+    exerciseName: "Exercise 7: Redirect to a route",
+    productID: "com.mrrubik.learnswift.symfonyex4486",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4486),
+    completed: purchaseManagerHive.getCompleted(4486),
+  ),
+  CoursesExModel(
+    id: 4487,
+    exerciseName: "Challenge 8: Throw a 404",
+    productID: "com.mrrubik.learnswift.symfonyex4487",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4487),
+    completed: purchaseManagerHive.getCompleted(4487),
+  ),
+  CoursesExModel(
+    id: 4488,
+    exerciseName: "Exercise 9: Render a Twig template",
+    productID: "com.mrrubik.learnswift.symfonyex4488",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4488),
+    completed: purchaseManagerHive.getCompleted(4488),
+  ),
+  CoursesExModel(
+    id: 4489,
+    exerciseName: "Challenge 10: Use flash messages",
+    productID: "com.mrrubik.learnswift.symfonyex4489",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4489),
+    completed: purchaseManagerHive.getCompleted(4489),
+  ),
+  CoursesExModel(
+    id: 4490,
+    exerciseName: "Exercise 11: Inject a service in an action",
+    productID: "com.mrrubik.learnswift.symfonyex4490",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4490),
+    completed: purchaseManagerHive.getCompleted(4490),
+  ),
+  CoursesExModel(
+    id: 4491,
+    exerciseName: "Challenge 12: Return a file download",
+    productID: "com.mrrubik.learnswift.symfonyex4491",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4491),
+    completed: purchaseManagerHive.getCompleted(4491),
+  ),
+  CoursesExModel(
+    id: 4492,
+    exerciseName: "Exercise 13: Return a JSON error (400)",
+    productID: "com.mrrubik.learnswift.symfonyex4492",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4492),
+    completed: purchaseManagerHive.getCompleted(4492),
+  ),
+  CoursesExModel(
+    id: 4493,
+    exerciseName: "Challenge 14: Use HTTP status constants",
+    productID: "com.mrrubik.learnswift.symfonyex4493",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4493),
+    completed: purchaseManagerHive.getCompleted(4493),
+  ),
+  CoursesExModel(
+    id: 4494,
+    exerciseName: "Exercise 15: Challenge: combine route + JSON + status",
+    productID: "com.mrrubik.learnswift.symfonyex4494",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4494),
+    completed: purchaseManagerHive.getCompleted(4494),
+  ),
+];

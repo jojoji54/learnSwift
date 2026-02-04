@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyFormsModelES = [
+  CoursesExModel(
+    id: 4510,
+    exerciseName: "Ejercicio 1: Crear un FormType",
+    productID: "com.mrrubik.learnswift.symfonyex4510",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4510),
+    completed: purchaseManagerHive.getCompleted(4510),
+  ),
+  CoursesExModel(
+    id: 4511,
+    exerciseName: "Desafio 2: Agregar un campo TextType",
+    productID: "com.mrrubik.learnswift.symfonyex4511",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4511),
+    completed: purchaseManagerHive.getCompleted(4511),
+  ),
+  CoursesExModel(
+    id: 4512,
+    exerciseName: "Ejercicio 3: Agregar EmailType con validacion",
+    productID: "com.mrrubik.learnswift.symfonyex4512",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4512),
+    completed: purchaseManagerHive.getCompleted(4512),
+  ),
+  CoursesExModel(
+    id: 4513,
+    exerciseName: "Desafio 4: Manejar el Request",
+    productID: "com.mrrubik.learnswift.symfonyex4513",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4513),
+    completed: purchaseManagerHive.getCompleted(4513),
+  ),
+  CoursesExModel(
+    id: 4514,
+    exerciseName: "Ejercicio 5: Comprobar enviado y valido",
+    productID: "com.mrrubik.learnswift.symfonyex4514",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4514),
+    completed: purchaseManagerHive.getCompleted(4514),
+  ),
+  CoursesExModel(
+    id: 4515,
+    exerciseName: "Desafio 6: Renderizar el form en Twig",
+    productID: "com.mrrubik.learnswift.symfonyex4515",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4515),
+    completed: purchaseManagerHive.getCompleted(4515),
+  ),
+  CoursesExModel(
+    id: 4516,
+    exerciseName: "Ejercicio 7: Campo ChoiceType",
+    productID: "com.mrrubik.learnswift.symfonyex4516",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4516),
+    completed: purchaseManagerHive.getCompleted(4516),
+  ),
+  CoursesExModel(
+    id: 4517,
+    exerciseName: "Desafio 8: CSRF token id",
+    productID: "com.mrrubik.learnswift.symfonyex4517",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4517),
+    completed: purchaseManagerHive.getCompleted(4517),
+  ),
+  CoursesExModel(
+    id: 4518,
+    exerciseName: "Ejercicio 9: Agregar placeholder en attr",
+    productID: "com.mrrubik.learnswift.symfonyex4518",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4518),
+    completed: purchaseManagerHive.getCompleted(4518),
+  ),
+  CoursesExModel(
+    id: 4519,
+    exerciseName: "Desafio 10: Campo CollectionType",
+    productID: "com.mrrubik.learnswift.symfonyex4519",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4519),
+    completed: purchaseManagerHive.getCompleted(4519),
+  ),
+  CoursesExModel(
+    id: 4520,
+    exerciseName: "Ejercicio 11: Campo FileType (upload)",
+    productID: "com.mrrubik.learnswift.symfonyex4520",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4520),
+    completed: purchaseManagerHive.getCompleted(4520),
+  ),
+  CoursesExModel(
+    id: 4521,
+    exerciseName: "Desafio 12: Listener de evento en form",
+    productID: "com.mrrubik.learnswift.symfonyex4521",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4521),
+    completed: purchaseManagerHive.getCompleted(4521),
+  ),
+  CoursesExModel(
+    id: 4522,
+    exerciseName: "Ejercicio 13: Configurar opciones",
+    productID: "com.mrrubik.learnswift.symfonyex4522",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4522),
+    completed: purchaseManagerHive.getCompleted(4522),
+  ),
+  CoursesExModel(
+    id: 4523,
+    exerciseName: "Desafio 14: Idea de data transformer",
+    productID: "com.mrrubik.learnswift.symfonyex4523",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4523),
+    completed: purchaseManagerHive.getCompleted(4523),
+  ),
+  CoursesExModel(
+    id: 4524,
+    exerciseName: "Ejercicio 15: Desafio: flujo completo de form create",
+    productID: "com.mrrubik.learnswift.symfonyex4524",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4524),
+    completed: purchaseManagerHive.getCompleted(4524),
+  ),
+];

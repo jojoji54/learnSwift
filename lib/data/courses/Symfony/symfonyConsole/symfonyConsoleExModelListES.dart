@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyConsoleModelES = [
+  CoursesExModel(
+    id: 4645,
+    exerciseName: "Ejercicio 1: Generar un comando",
+    productID: "com.mrrubik.learnswift.symfonyex4645",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4645),
+    completed: purchaseManagerHive.getCompleted(4645),
+  ),
+  CoursesExModel(
+    id: 4646,
+    exerciseName: "Desafio 2: Atributo AsCommand",
+    productID: "com.mrrubik.learnswift.symfonyex4646",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4646),
+    completed: purchaseManagerHive.getCompleted(4646),
+  ),
+  CoursesExModel(
+    id: 4647,
+    exerciseName: "Ejercicio 3: Metodo execute",
+    productID: "com.mrrubik.learnswift.symfonyex4647",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4647),
+    completed: purchaseManagerHive.getCompleted(4647),
+  ),
+  CoursesExModel(
+    id: 4648,
+    exerciseName: "Desafio 4: Agregar un argumento",
+    productID: "com.mrrubik.learnswift.symfonyex4648",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4648),
+    completed: purchaseManagerHive.getCompleted(4648),
+  ),
+  CoursesExModel(
+    id: 4649,
+    exerciseName: "Ejercicio 5: Agregar una opcion",
+    productID: "com.mrrubik.learnswift.symfonyex4649",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4649),
+    completed: purchaseManagerHive.getCompleted(4649),
+  ),
+  CoursesExModel(
+    id: 4650,
+    exerciseName: "Desafio 6: Helper SymfonyStyle",
+    productID: "com.mrrubik.learnswift.symfonyex4650",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4650),
+    completed: purchaseManagerHive.getCompleted(4650),
+  ),
+  CoursesExModel(
+    id: 4651,
+    exerciseName: "Ejercicio 7: Escribir salida",
+    productID: "com.mrrubik.learnswift.symfonyex4651",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4651),
+    completed: purchaseManagerHive.getCompleted(4651),
+  ),
+  CoursesExModel(
+    id: 4652,
+    exerciseName: "Desafio 8: Devolver SUCCESS",
+    productID: "com.mrrubik.learnswift.symfonyex4652",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4652),
+    completed: purchaseManagerHive.getCompleted(4652),
+  ),
+  CoursesExModel(
+    id: 4653,
+    exerciseName: "Ejercicio 9: Idea de progress bar",
+    productID: "com.mrrubik.learnswift.symfonyex4653",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4653),
+    completed: purchaseManagerHive.getCompleted(4653),
+  ),
+  CoursesExModel(
+    id: 4654,
+    exerciseName: "Desafio 10: Idea de tabla",
+    productID: "com.mrrubik.learnswift.symfonyex4654",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4654),
+    completed: purchaseManagerHive.getCompleted(4654),
+  ),
+  CoursesExModel(
+    id: 4655,
+    exerciseName: "Ejercicio 11: Question helper",
+    productID: "com.mrrubik.learnswift.symfonyex4655",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4655),
+    completed: purchaseManagerHive.getCompleted(4655),
+  ),
+  CoursesExModel(
+    id: 4656,
+    exerciseName: "Desafio 12: Confirmacion",
+    productID: "com.mrrubik.learnswift.symfonyex4656",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4656),
+    completed: purchaseManagerHive.getCompleted(4656),
+  ),
+  CoursesExModel(
+    id: 4657,
+    exerciseName: "Ejercicio 13: LockableTrait",
+    productID: "com.mrrubik.learnswift.symfonyex4657",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4657),
+    completed: purchaseManagerHive.getCompleted(4657),
+  ),
+  CoursesExModel(
+    id: 4658,
+    exerciseName: "Desafio 14: Manejar errores",
+    productID: "com.mrrubik.learnswift.symfonyex4658",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4658),
+    completed: purchaseManagerHive.getCompleted(4658),
+  ),
+  CoursesExModel(
+    id: 4659,
+    exerciseName: "Ejercicio 15: Desafio: esqueleto de import CSV",
+    productID: "com.mrrubik.learnswift.symfonyex4659",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4659),
+    completed: purchaseManagerHive.getCompleted(4659),
+  ),
+];

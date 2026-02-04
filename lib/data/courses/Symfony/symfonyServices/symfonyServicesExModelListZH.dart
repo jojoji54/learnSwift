@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyServicesModelZH = [
+  CoursesExModel(
+    id: 4570,
+    exerciseName: "练习 1: 创建服务类",
+    productID: "com.mrrubik.learnswift.symfonyex4570",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4570),
+    completed: purchaseManagerHive.getCompleted(4570),
+  ),
+  CoursesExModel(
+    id: 4571,
+    exerciseName: "挑战 2: 构造函数注入服务",
+    productID: "com.mrrubik.learnswift.symfonyex4571",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4571),
+    completed: purchaseManagerHive.getCompleted(4571),
+  ),
+  CoursesExModel(
+    id: 4572,
+    exerciseName: "练习 3: 注入 LoggerInterface",
+    productID: "com.mrrubik.learnswift.symfonyex4572",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4572),
+    completed: purchaseManagerHive.getCompleted(4572),
+  ),
+  CoursesExModel(
+    id: 4573,
+    exerciseName: "挑战 4: 用属性注入参数",
+    productID: "com.mrrubik.learnswift.symfonyex4573",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4573),
+    completed: purchaseManagerHive.getCompleted(4573),
+  ),
+  CoursesExModel(
+    id: 4574,
+    exerciseName: "练习 5: 注入 env 变量",
+    productID: "com.mrrubik.learnswift.symfonyex4574",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4574),
+    completed: purchaseManagerHive.getCompleted(4574),
+  ),
+  CoursesExModel(
+    id: 4575,
+    exerciseName: "挑战 6: 在 services.yaml 注册服务",
+    productID: "com.mrrubik.learnswift.symfonyex4575",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4575),
+    completed: purchaseManagerHive.getCompleted(4575),
+  ),
+  CoursesExModel(
+    id: 4576,
+    exerciseName: "练习 7: 把服务设为 public（少用）",
+    productID: "com.mrrubik.learnswift.symfonyex4576",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4576),
+    completed: purchaseManagerHive.getCompleted(4576),
+  ),
+  CoursesExModel(
+    id: 4577,
+    exerciseName: "挑战 8: 通过 services.yaml 传参",
+    productID: "com.mrrubik.learnswift.symfonyex4577",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4577),
+    completed: purchaseManagerHive.getCompleted(4577),
+  ),
+  CoursesExModel(
+    id: 4578,
+    exerciseName: "练习 9: 类自动打 tag",
+    productID: "com.mrrubik.learnswift.symfonyex4578",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4578),
+    completed: purchaseManagerHive.getCompleted(4578),
+  ),
+  CoursesExModel(
+    id: 4579,
+    exerciseName: "挑战 10: 注入 tagged services（iterable）",
+    productID: "com.mrrubik.learnswift.symfonyex4579",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4579),
+    completed: purchaseManagerHive.getCompleted(4579),
+  ),
+  CoursesExModel(
+    id: 4580,
+    exerciseName: "练习 11: AsTaggedItem + 优先级",
+    productID: "com.mrrubik.learnswift.symfonyex4580",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4580),
+    completed: purchaseManagerHive.getCompleted(4580),
+  ),
+  CoursesExModel(
+    id: 4581,
+    exerciseName: "挑战 12: 懒加载服务",
+    productID: "com.mrrubik.learnswift.symfonyex4581",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4581),
+    completed: purchaseManagerHive.getCompleted(4581),
+  ),
+  CoursesExModel(
+    id: 4582,
+    exerciseName: "练习 13: 通过配置调用 setter",
+    productID: "com.mrrubik.learnswift.symfonyex4582",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4582),
+    completed: purchaseManagerHive.getCompleted(4582),
+  ),
+  CoursesExModel(
+    id: 4583,
+    exerciseName: "挑战 14: 参数绑定思路",
+    productID: "com.mrrubik.learnswift.symfonyex4583",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4583),
+    completed: purchaseManagerHive.getCompleted(4583),
+  ),
+  CoursesExModel(
+    id: 4584,
+    exerciseName: "练习 15: 挑战：服务 + tag + iterator",
+    productID: "com.mrrubik.learnswift.symfonyex4584",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4584),
+    completed: purchaseManagerHive.getCompleted(4584),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonySecurityModelES = [
+  CoursesExModel(
+    id: 4600,
+    exerciseName: "Ejercicio 1: Config de password hashers",
+    productID: "com.mrrubik.learnswift.symfonyex4600",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4600),
+    completed: purchaseManagerHive.getCompleted(4600),
+  ),
+  CoursesExModel(
+    id: 4601,
+    exerciseName: "Desafio 2: User implementa UserInterface",
+    productID: "com.mrrubik.learnswift.symfonyex4601",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4601),
+    completed: purchaseManagerHive.getCompleted(4601),
+  ),
+  CoursesExModel(
+    id: 4602,
+    exerciseName: "Ejercicio 3: Metodo getUserIdentifier",
+    productID: "com.mrrubik.learnswift.symfonyex4602",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4602),
+    completed: purchaseManagerHive.getCompleted(4602),
+  ),
+  CoursesExModel(
+    id: 4603,
+    exerciseName: "Desafio 4: Configurar un firewall",
+    productID: "com.mrrubik.learnswift.symfonyex4603",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4603),
+    completed: purchaseManagerHive.getCompleted(4603),
+  ),
+  CoursesExModel(
+    id: 4604,
+    exerciseName: "Ejercicio 5: Regla de access_control",
+    productID: "com.mrrubik.learnswift.symfonyex4604",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4604),
+    completed: purchaseManagerHive.getCompleted(4604),
+  ),
+  CoursesExModel(
+    id: 4605,
+    exerciseName: "Desafio 6: Atributo IsGranted",
+    productID: "com.mrrubik.learnswift.symfonyex4605",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4605),
+    completed: purchaseManagerHive.getCompleted(4605),
+  ),
+  CoursesExModel(
+    id: 4606,
+    exerciseName: "Ejercicio 7: Denegar acceso en controlador",
+    productID: "com.mrrubik.learnswift.symfonyex4606",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4606),
+    completed: purchaseManagerHive.getCompleted(4606),
+  ),
+  CoursesExModel(
+    id: 4607,
+    exerciseName: "Desafio 8: Esqueleto de Voter",
+    productID: "com.mrrubik.learnswift.symfonyex4607",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4607),
+    completed: purchaseManagerHive.getCompleted(4607),
+  ),
+  CoursesExModel(
+    id: 4608,
+    exerciseName: "Ejercicio 9: Hashear password",
+    productID: "com.mrrubik.learnswift.symfonyex4608",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4608),
+    completed: purchaseManagerHive.getCompleted(4608),
+  ),
+  CoursesExModel(
+    id: 4609,
+    exerciseName: "Desafio 10: Config de logout",
+    productID: "com.mrrubik.learnswift.symfonyex4609",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4609),
+    completed: purchaseManagerHive.getCompleted(4609),
+  ),
+  CoursesExModel(
+    id: 4610,
+    exerciseName: "Ejercicio 11: Config de login_path",
+    productID: "com.mrrubik.learnswift.symfonyex4610",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4610),
+    completed: purchaseManagerHive.getCompleted(4610),
+  ),
+  CoursesExModel(
+    id: 4611,
+    exerciseName: "Desafio 12: CSRF token en Twig login",
+    productID: "com.mrrubik.learnswift.symfonyex4611",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4611),
+    completed: purchaseManagerHive.getCompleted(4611),
+  ),
+  CoursesExModel(
+    id: 4612,
+    exerciseName: "Ejercicio 13: Config remember_me",
+    productID: "com.mrrubik.learnswift.symfonyex4612",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4612),
+    completed: purchaseManagerHive.getCompleted(4612),
+  ),
+  CoursesExModel(
+    id: 4613,
+    exerciseName: "Desafio 14: Comprobar rol en Twig",
+    productID: "com.mrrubik.learnswift.symfonyex4613",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4613),
+    completed: purchaseManagerHive.getCompleted(4613),
+  ),
+  CoursesExModel(
+    id: 4614,
+    exerciseName: "Ejercicio 15: Desafio: proteger endpoint API",
+    productID: "com.mrrubik.learnswift.symfonyex4614",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4614),
+    completed: purchaseManagerHive.getCompleted(4614),
+  ),
+];

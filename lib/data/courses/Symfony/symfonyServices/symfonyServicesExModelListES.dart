@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyServicesModelES = [
+  CoursesExModel(
+    id: 4570,
+    exerciseName: "Ejercicio 1: Crear una clase servicio",
+    productID: "com.mrrubik.learnswift.symfonyex4570",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4570),
+    completed: purchaseManagerHive.getCompleted(4570),
+  ),
+  CoursesExModel(
+    id: 4571,
+    exerciseName: "Desafio 2: Inyectar un servicio por constructor",
+    productID: "com.mrrubik.learnswift.symfonyex4571",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4571),
+    completed: purchaseManagerHive.getCompleted(4571),
+  ),
+  CoursesExModel(
+    id: 4572,
+    exerciseName: "Ejercicio 3: Inyectar LoggerInterface",
+    productID: "com.mrrubik.learnswift.symfonyex4572",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4572),
+    completed: purchaseManagerHive.getCompleted(4572),
+  ),
+  CoursesExModel(
+    id: 4573,
+    exerciseName: "Desafio 4: Autowire de parametro con atributo",
+    productID: "com.mrrubik.learnswift.symfonyex4573",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4573),
+    completed: purchaseManagerHive.getCompleted(4573),
+  ),
+  CoursesExModel(
+    id: 4574,
+    exerciseName: "Ejercicio 5: Autowire de env var",
+    productID: "com.mrrubik.learnswift.symfonyex4574",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4574),
+    completed: purchaseManagerHive.getCompleted(4574),
+  ),
+  CoursesExModel(
+    id: 4575,
+    exerciseName: "Desafio 6: Registrar un servicio en services.yaml",
+    productID: "com.mrrubik.learnswift.symfonyex4575",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4575),
+    completed: purchaseManagerHive.getCompleted(4575),
+  ),
+  CoursesExModel(
+    id: 4576,
+    exerciseName: "Ejercicio 7: Hacer un servicio public (raro)",
+    productID: "com.mrrubik.learnswift.symfonyex4576",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4576),
+    completed: purchaseManagerHive.getCompleted(4576),
+  ),
+  CoursesExModel(
+    id: 4577,
+    exerciseName: "Desafio 8: Pasar un argumento via services.yaml",
+    productID: "com.mrrubik.learnswift.symfonyex4577",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4577),
+    completed: purchaseManagerHive.getCompleted(4577),
+  ),
+  CoursesExModel(
+    id: 4578,
+    exerciseName: "Ejercicio 9: AutoconfigureTag en una clase",
+    productID: "com.mrrubik.learnswift.symfonyex4578",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4578),
+    completed: purchaseManagerHive.getCompleted(4578),
+  ),
+  CoursesExModel(
+    id: 4579,
+    exerciseName: "Desafio 10: Inyectar servicios taggeados como iterable",
+    productID: "com.mrrubik.learnswift.symfonyex4579",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4579),
+    completed: purchaseManagerHive.getCompleted(4579),
+  ),
+  CoursesExModel(
+    id: 4580,
+    exerciseName: "Ejercicio 11: AsTaggedItem con prioridad",
+    productID: "com.mrrubik.learnswift.symfonyex4580",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4580),
+    completed: purchaseManagerHive.getCompleted(4580),
+  ),
+  CoursesExModel(
+    id: 4581,
+    exerciseName: "Desafio 12: Servicio lazy",
+    productID: "com.mrrubik.learnswift.symfonyex4581",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4581),
+    completed: purchaseManagerHive.getCompleted(4581),
+  ),
+  CoursesExModel(
+    id: 4582,
+    exerciseName: "Ejercicio 13: Llamada setter via config",
+    productID: "com.mrrubik.learnswift.symfonyex4582",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4582),
+    completed: purchaseManagerHive.getCompleted(4582),
+  ),
+  CoursesExModel(
+    id: 4583,
+    exerciseName: "Desafio 14: Idea de binding de parametros",
+    productID: "com.mrrubik.learnswift.symfonyex4583",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4583),
+    completed: purchaseManagerHive.getCompleted(4583),
+  ),
+  CoursesExModel(
+    id: 4584,
+    exerciseName: "Ejercicio 15: Desafio: servicio + tag + iterator",
+    productID: "com.mrrubik.learnswift.symfonyex4584",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4584),
+    completed: purchaseManagerHive.getCompleted(4584),
+  ),
+];

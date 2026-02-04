@@ -12,6 +12,7 @@ import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Spring/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/Symfony/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Vue/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Django/CoursesMainModelListES.dart';
@@ -249,10 +250,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Symfony',
     productID: 'com.mrrubik.learnswift.symfony',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(19),
-    coursesList: [],
+    coursesList: coursesSymfonyMainModelListES,
     color1: Color(0xFF000000),
     color2: Color(0xFF7289DA),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Symfony te enseña este framework PHP robusto y modular para aplicaciones empresariales.\n\nVersión: Symfony 6.3',
   ),

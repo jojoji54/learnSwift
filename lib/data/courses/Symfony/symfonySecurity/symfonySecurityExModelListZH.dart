@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonySecurityModelZH = [
+  CoursesExModel(
+    id: 4600,
+    exerciseName: "练习 1: 密码哈希配置",
+    productID: "com.mrrubik.learnswift.symfonyex4600",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4600),
+    completed: purchaseManagerHive.getCompleted(4600),
+  ),
+  CoursesExModel(
+    id: 4601,
+    exerciseName: "挑战 2: User 实现 UserInterface",
+    productID: "com.mrrubik.learnswift.symfonyex4601",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4601),
+    completed: purchaseManagerHive.getCompleted(4601),
+  ),
+  CoursesExModel(
+    id: 4602,
+    exerciseName: "练习 3: getUserIdentifier 方法",
+    productID: "com.mrrubik.learnswift.symfonyex4602",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4602),
+    completed: purchaseManagerHive.getCompleted(4602),
+  ),
+  CoursesExModel(
+    id: 4603,
+    exerciseName: "挑战 4: 配置 firewall",
+    productID: "com.mrrubik.learnswift.symfonyex4603",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4603),
+    completed: purchaseManagerHive.getCompleted(4603),
+  ),
+  CoursesExModel(
+    id: 4604,
+    exerciseName: "练习 5: access_control 规则",
+    productID: "com.mrrubik.learnswift.symfonyex4604",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4604),
+    completed: purchaseManagerHive.getCompleted(4604),
+  ),
+  CoursesExModel(
+    id: 4605,
+    exerciseName: "挑战 6: IsGranted 属性",
+    productID: "com.mrrubik.learnswift.symfonyex4605",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4605),
+    completed: purchaseManagerHive.getCompleted(4605),
+  ),
+  CoursesExModel(
+    id: 4606,
+    exerciseName: "练习 7: 控制器里拒绝访问",
+    productID: "com.mrrubik.learnswift.symfonyex4606",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4606),
+    completed: purchaseManagerHive.getCompleted(4606),
+  ),
+  CoursesExModel(
+    id: 4607,
+    exerciseName: "挑战 8: Voter 骨架",
+    productID: "com.mrrubik.learnswift.symfonyex4607",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4607),
+    completed: purchaseManagerHive.getCompleted(4607),
+  ),
+  CoursesExModel(
+    id: 4608,
+    exerciseName: "练习 9: 哈希密码",
+    productID: "com.mrrubik.learnswift.symfonyex4608",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4608),
+    completed: purchaseManagerHive.getCompleted(4608),
+  ),
+  CoursesExModel(
+    id: 4609,
+    exerciseName: "挑战 10: logout 配置",
+    productID: "com.mrrubik.learnswift.symfonyex4609",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4609),
+    completed: purchaseManagerHive.getCompleted(4609),
+  ),
+  CoursesExModel(
+    id: 4610,
+    exerciseName: "练习 11: login_path 配置",
+    productID: "com.mrrubik.learnswift.symfonyex4610",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4610),
+    completed: purchaseManagerHive.getCompleted(4610),
+  ),
+  CoursesExModel(
+    id: 4611,
+    exerciseName: "挑战 12: Twig 登录 CSRF token",
+    productID: "com.mrrubik.learnswift.symfonyex4611",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4611),
+    completed: purchaseManagerHive.getCompleted(4611),
+  ),
+  CoursesExModel(
+    id: 4612,
+    exerciseName: "练习 13: remember_me 配置",
+    productID: "com.mrrubik.learnswift.symfonyex4612",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4612),
+    completed: purchaseManagerHive.getCompleted(4612),
+  ),
+  CoursesExModel(
+    id: 4613,
+    exerciseName: "挑战 14: 在 Twig 检查角色",
+    productID: "com.mrrubik.learnswift.symfonyex4613",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4613),
+    completed: purchaseManagerHive.getCompleted(4613),
+  ),
+  CoursesExModel(
+    id: 4614,
+    exerciseName: "练习 15: 挑战：保护 API 接口",
+    productID: "com.mrrubik.learnswift.symfonyex4614",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4614),
+    completed: purchaseManagerHive.getCompleted(4614),
+  ),
+];

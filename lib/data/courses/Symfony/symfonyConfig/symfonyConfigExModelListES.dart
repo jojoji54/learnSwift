@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyConfigModelES = [
+  CoursesExModel(
+    id: 4585,
+    exerciseName: "Ejercicio 1: Definir APP_ENV",
+    productID: "com.mrrubik.learnswift.symfonyex4585",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4585),
+    completed: purchaseManagerHive.getCompleted(4585),
+  ),
+  CoursesExModel(
+    id: 4586,
+    exerciseName: "Desafio 2: Definir APP_DEBUG",
+    productID: "com.mrrubik.learnswift.symfonyex4586",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4586),
+    completed: purchaseManagerHive.getCompleted(4586),
+  ),
+  CoursesExModel(
+    id: 4587,
+    exerciseName: "Ejercicio 3: Definir APP_SECRET",
+    productID: "com.mrrubik.learnswift.symfonyex4587",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4587),
+    completed: purchaseManagerHive.getCompleted(4587),
+  ),
+  CoursesExModel(
+    id: 4588,
+    exerciseName: "Desafio 4: Definir un parametro en services.yaml",
+    productID: "com.mrrubik.learnswift.symfonyex4588",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4588),
+    completed: purchaseManagerHive.getCompleted(4588),
+  ),
+  CoursesExModel(
+    id: 4589,
+    exerciseName: "Ejercicio 5: Leer un parametro con ParameterBag",
+    productID: "com.mrrubik.learnswift.symfonyex4589",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4589),
+    completed: purchaseManagerHive.getCompleted(4589),
+  ),
+  CoursesExModel(
+    id: 4590,
+    exerciseName: "Desafio 6: Configurar default_path de Twig",
+    productID: "com.mrrubik.learnswift.symfonyex4590",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4590),
+    completed: purchaseManagerHive.getCompleted(4590),
+  ),
+  CoursesExModel(
+    id: 4591,
+    exerciseName: "Ejercicio 7: Fichero de rutas",
+    productID: "com.mrrubik.learnswift.symfonyex4591",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4591),
+    completed: purchaseManagerHive.getCompleted(4591),
+  ),
+  CoursesExModel(
+    id: 4592,
+    exerciseName: "Desafio 8: Idea de handler en Monolog",
+    productID: "com.mrrubik.learnswift.symfonyex4592",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4592),
+    completed: purchaseManagerHive.getCompleted(4592),
+  ),
+  CoursesExModel(
+    id: 4593,
+    exerciseName: "Ejercicio 9: Config basica de cache",
+    productID: "com.mrrubik.learnswift.symfonyex4593",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4593),
+    completed: purchaseManagerHive.getCompleted(4593),
+  ),
+  CoursesExModel(
+    id: 4594,
+    exerciseName: "Desafio 10: DATABASE_URL con SQLite (sin host user)",
+    productID: "com.mrrubik.learnswift.symfonyex4594",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4594),
+    completed: purchaseManagerHive.getCompleted(4594),
+  ),
+  CoursesExModel(
+    id: 4595,
+    exerciseName: "Ejercicio 11: Doctrine dbal url desde env",
+    productID: "com.mrrubik.learnswift.symfonyex4595",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4595),
+    completed: purchaseManagerHive.getCompleted(4595),
+  ),
+  CoursesExModel(
+    id: 4596,
+    exerciseName: "Desafio 12: Mailer DSN null",
+    productID: "com.mrrubik.learnswift.symfonyex4596",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4596),
+    completed: purchaseManagerHive.getCompleted(4596),
+  ),
+  CoursesExModel(
+    id: 4597,
+    exerciseName: "Ejercicio 13: DSN de transport de Messenger",
+    productID: "com.mrrubik.learnswift.symfonyex4597",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4597),
+    completed: purchaseManagerHive.getCompleted(4597),
+  ),
+  CoursesExModel(
+    id: 4598,
+    exerciseName: "Desafio 14: Config de rutas de migraciones",
+    productID: "com.mrrubik.learnswift.symfonyex4598",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4598),
+    completed: purchaseManagerHive.getCompleted(4598),
+  ),
+  CoursesExModel(
+    id: 4599,
+    exerciseName: "Ejercicio 15: Desafio: config + env juntos",
+    productID: "com.mrrubik.learnswift.symfonyex4599",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4599),
+    completed: purchaseManagerHive.getCompleted(4599),
+  ),
+];

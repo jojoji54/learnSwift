@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyBasicsModelEN = [
+  CoursesExModel(
+    id: 4450,
+    exerciseName: "Exercise 1: Create a project with Symfony CLI",
+    productID: "com.mrrubik.learnswift.symfonyex4450",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4450),
+    completed: purchaseManagerHive.getCompleted(4450),
+  ),
+  CoursesExModel(
+    id: 4451,
+    exerciseName: "Challenge 2: Start the local server",
+    productID: "com.mrrubik.learnswift.symfonyex4451",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4451),
+    completed: purchaseManagerHive.getCompleted(4451),
+  ),
+  CoursesExModel(
+    id: 4452,
+    exerciseName: "Exercise 3: Stop the local server",
+    productID: "com.mrrubik.learnswift.symfonyex4452",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4452),
+    completed: purchaseManagerHive.getCompleted(4452),
+  ),
+  CoursesExModel(
+    id: 4453,
+    exerciseName: "Challenge 4: List console commands",
+    productID: "com.mrrubik.learnswift.symfonyex4453",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4453),
+    completed: purchaseManagerHive.getCompleted(4453),
+  ),
+  CoursesExModel(
+    id: 4454,
+    exerciseName: "Exercise 5: See project info with about",
+    productID: "com.mrrubik.learnswift.symfonyex4454",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4454),
+    completed: purchaseManagerHive.getCompleted(4454),
+  ),
+  CoursesExModel(
+    id: 4455,
+    exerciseName: "Challenge 6: Generate a controller",
+    productID: "com.mrrubik.learnswift.symfonyex4455",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4455),
+    completed: purchaseManagerHive.getCompleted(4455),
+  ),
+  CoursesExModel(
+    id: 4456,
+    exerciseName: "Exercise 7: Install MakerBundle (dev)",
+    productID: "com.mrrubik.learnswift.symfonyex4456",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4456),
+    completed: purchaseManagerHive.getCompleted(4456),
+  ),
+  CoursesExModel(
+    id: 4457,
+    exerciseName: "Challenge 8: Inspect routes",
+    productID: "com.mrrubik.learnswift.symfonyex4457",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4457),
+    completed: purchaseManagerHive.getCompleted(4457),
+  ),
+  CoursesExModel(
+    id: 4458,
+    exerciseName: "Exercise 9: Inspect a service in the container",
+    productID: "com.mrrubik.learnswift.symfonyex4458",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4458),
+    completed: purchaseManagerHive.getCompleted(4458),
+  ),
+  CoursesExModel(
+    id: 4459,
+    exerciseName: "Challenge 10: Clear cache",
+    productID: "com.mrrubik.learnswift.symfonyex4459",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4459),
+    completed: purchaseManagerHive.getCompleted(4459),
+  ),
+  CoursesExModel(
+    id: 4460,
+    exerciseName: "Exercise 11: Add a simple env var",
+    productID: "com.mrrubik.learnswift.symfonyex4460",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4460),
+    completed: purchaseManagerHive.getCompleted(4460),
+  ),
+  CoursesExModel(
+    id: 4461,
+    exerciseName: "Challenge 12: Read an env var as a parameter",
+    productID: "com.mrrubik.learnswift.symfonyex4461",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4461),
+    completed: purchaseManagerHive.getCompleted(4461),
+  ),
+  CoursesExModel(
+    id: 4462,
+    exerciseName: "Exercise 13: Run PHPUnit",
+    productID: "com.mrrubik.learnswift.symfonyex4462",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4462),
+    completed: purchaseManagerHive.getCompleted(4462),
+  ),
+  CoursesExModel(
+    id: 4463,
+    exerciseName: "Challenge 14: Install Twig bundle",
+    productID: "com.mrrubik.learnswift.symfonyex4463",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4463),
+    completed: purchaseManagerHive.getCompleted(4463),
+  ),
+  CoursesExModel(
+    id: 4464,
+    exerciseName: "Exercise 15: Challenge: a tiny health endpoint",
+    productID: "com.mrrubik.learnswift.symfonyex4464",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4464),
+    completed: purchaseManagerHive.getCompleted(4464),
+  ),
+];

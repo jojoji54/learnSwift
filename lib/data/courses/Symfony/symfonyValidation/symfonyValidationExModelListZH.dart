@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyValidationModelZH = [
+  CoursesExModel(
+    id: 4555,
+    exerciseName: "练习 1: 导入 Assert 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4555",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4555),
+    completed: purchaseManagerHive.getCompleted(4555),
+  ),
+  CoursesExModel(
+    id: 4556,
+    exerciseName: "挑战 2: NotBlank 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4556",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4556),
+    completed: purchaseManagerHive.getCompleted(4556),
+  ),
+  CoursesExModel(
+    id: 4557,
+    exerciseName: "练习 3: Email 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4557",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4557),
+    completed: purchaseManagerHive.getCompleted(4557),
+  ),
+  CoursesExModel(
+    id: 4558,
+    exerciseName: "挑战 4: Length 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4558",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4558),
+    completed: purchaseManagerHive.getCompleted(4558),
+  ),
+  CoursesExModel(
+    id: 4559,
+    exerciseName: "练习 5: Regex 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4559",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4559),
+    completed: purchaseManagerHive.getCompleted(4559),
+  ),
+  CoursesExModel(
+    id: 4560,
+    exerciseName: "挑战 6: Positive 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4560",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4560),
+    completed: purchaseManagerHive.getCompleted(4560),
+  ),
+  CoursesExModel(
+    id: 4561,
+    exerciseName: "练习 7: Choice 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4561",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4561),
+    completed: purchaseManagerHive.getCompleted(4561),
+  ),
+  CoursesExModel(
+    id: 4562,
+    exerciseName: "挑战 8: Range 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4562",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4562),
+    completed: purchaseManagerHive.getCompleted(4562),
+  ),
+  CoursesExModel(
+    id: 4563,
+    exerciseName: "练习 9: 校验嵌套对象",
+    productID: "com.mrrubik.learnswift.symfonyex4563",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4563),
+    completed: purchaseManagerHive.getCompleted(4563),
+  ),
+  CoursesExModel(
+    id: 4564,
+    exerciseName: "挑战 10: 实体唯一约束",
+    productID: "com.mrrubik.learnswift.symfonyex4564",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4564),
+    completed: purchaseManagerHive.getCompleted(4564),
+  ),
+  CoursesExModel(
+    id: 4565,
+    exerciseName: "练习 11: 在控制器里校验",
+    productID: "com.mrrubik.learnswift.symfonyex4565",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4565),
+    completed: purchaseManagerHive.getCompleted(4565),
+  ),
+  CoursesExModel(
+    id: 4566,
+    exerciseName: "挑战 12: 读取错误数量",
+    productID: "com.mrrubik.learnswift.symfonyex4566",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4566),
+    completed: purchaseManagerHive.getCompleted(4566),
+  ),
+  CoursesExModel(
+    id: 4567,
+    exerciseName: "练习 13: 校验分组",
+    productID: "com.mrrubik.learnswift.symfonyex4567",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4567),
+    completed: purchaseManagerHive.getCompleted(4567),
+  ),
+  CoursesExModel(
+    id: 4568,
+    exerciseName: "挑战 14: Callback 约束",
+    productID: "com.mrrubik.learnswift.symfonyex4568",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4568),
+    completed: purchaseManagerHive.getCompleted(4568),
+  ),
+  CoursesExModel(
+    id: 4569,
+    exerciseName: "练习 15: 挑战：DTO 多重约束",
+    productID: "com.mrrubik.learnswift.symfonyex4569",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4569),
+    completed: purchaseManagerHive.getCompleted(4569),
+  ),
+];

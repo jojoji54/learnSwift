@@ -518,6 +518,36 @@ class CategoryInfoL10n {
         return loc.springCat13InfoTitle;
       case 'springCat14InfoTitle':
         return loc.springCat14InfoTitle;
+      case 'symfonyCat0InfoTitle':
+        return loc.symfonyCat0InfoTitle;
+      case 'symfonyCat1InfoTitle':
+        return loc.symfonyCat1InfoTitle;
+      case 'symfonyCat2InfoTitle':
+        return loc.symfonyCat2InfoTitle;
+      case 'symfonyCat3InfoTitle':
+        return loc.symfonyCat3InfoTitle;
+      case 'symfonyCat4InfoTitle':
+        return loc.symfonyCat4InfoTitle;
+      case 'symfonyCat5InfoTitle':
+        return loc.symfonyCat5InfoTitle;
+      case 'symfonyCat6InfoTitle':
+        return loc.symfonyCat6InfoTitle;
+      case 'symfonyCat7InfoTitle':
+        return loc.symfonyCat7InfoTitle;
+      case 'symfonyCat8InfoTitle':
+        return loc.symfonyCat8InfoTitle;
+      case 'symfonyCat9InfoTitle':
+        return loc.symfonyCat9InfoTitle;
+      case 'symfonyCat10InfoTitle':
+        return loc.symfonyCat10InfoTitle;
+      case 'symfonyCat11InfoTitle':
+        return loc.symfonyCat11InfoTitle;
+      case 'symfonyCat12InfoTitle':
+        return loc.symfonyCat12InfoTitle;
+      case 'symfonyCat13InfoTitle':
+        return loc.symfonyCat13InfoTitle;
+      case 'symfonyCat14InfoTitle':
+        return loc.symfonyCat14InfoTitle;
       default:
         return key;
     }
@@ -1040,6 +1070,36 @@ class CategoryInfoL10n {
         return loc.springCat13InfoContent;
       case 'springCat14InfoContent':
         return loc.springCat14InfoContent;
+      case 'symfonyCat0InfoContent':
+        return loc.symfonyCat0InfoContent;
+      case 'symfonyCat1InfoContent':
+        return loc.symfonyCat1InfoContent;
+      case 'symfonyCat2InfoContent':
+        return loc.symfonyCat2InfoContent;
+      case 'symfonyCat3InfoContent':
+        return loc.symfonyCat3InfoContent;
+      case 'symfonyCat4InfoContent':
+        return loc.symfonyCat4InfoContent;
+      case 'symfonyCat5InfoContent':
+        return loc.symfonyCat5InfoContent;
+      case 'symfonyCat6InfoContent':
+        return loc.symfonyCat6InfoContent;
+      case 'symfonyCat7InfoContent':
+        return loc.symfonyCat7InfoContent;
+      case 'symfonyCat8InfoContent':
+        return loc.symfonyCat8InfoContent;
+      case 'symfonyCat9InfoContent':
+        return loc.symfonyCat9InfoContent;
+      case 'symfonyCat10InfoContent':
+        return loc.symfonyCat10InfoContent;
+      case 'symfonyCat11InfoContent':
+        return loc.symfonyCat11InfoContent;
+      case 'symfonyCat12InfoContent':
+        return loc.symfonyCat12InfoContent;
+      case 'symfonyCat13InfoContent':
+        return loc.symfonyCat13InfoContent;
+      case 'symfonyCat14InfoContent':
+        return loc.symfonyCat14InfoContent;
       default:
         return key;
     }

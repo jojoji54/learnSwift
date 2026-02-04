@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyDoctrineModelES = [
+  CoursesExModel(
+    id: 4525,
+    exerciseName: "Ejercicio 1: Importar mapping como ORM",
+    productID: "com.mrrubik.learnswift.symfonyex4525",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4525),
+    completed: purchaseManagerHive.getCompleted(4525),
+  ),
+  CoursesExModel(
+    id: 4526,
+    exerciseName: "Desafio 2: Marcar una clase como Entity",
+    productID: "com.mrrubik.learnswift.symfonyex4526",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4526),
+    completed: purchaseManagerHive.getCompleted(4526),
+  ),
+  CoursesExModel(
+    id: 4527,
+    exerciseName: "Ejercicio 3: Agregar campo id",
+    productID: "com.mrrubik.learnswift.symfonyex4527",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4527),
+    completed: purchaseManagerHive.getCompleted(4527),
+  ),
+  CoursesExModel(
+    id: 4528,
+    exerciseName: "Desafio 4: Columna string con length",
+    productID: "com.mrrubik.learnswift.symfonyex4528",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4528),
+    completed: purchaseManagerHive.getCompleted(4528),
+  ),
+  CoursesExModel(
+    id: 4529,
+    exerciseName: "Ejercicio 5: Columna nullable",
+    productID: "com.mrrubik.learnswift.symfonyex4529",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4529),
+    completed: purchaseManagerHive.getCompleted(4529),
+  ),
+  CoursesExModel(
+    id: 4530,
+    exerciseName: "Desafio 6: Columna unique",
+    productID: "com.mrrubik.learnswift.symfonyex4530",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4530),
+    completed: purchaseManagerHive.getCompleted(4530),
+  ),
+  CoursesExModel(
+    id: 4531,
+    exerciseName: "Ejercicio 7: Columna DateTimeImmutable",
+    productID: "com.mrrubik.learnswift.symfonyex4531",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4531),
+    completed: purchaseManagerHive.getCompleted(4531),
+  ),
+  CoursesExModel(
+    id: 4532,
+    exerciseName: "Desafio 8: Columna boolean",
+    productID: "com.mrrubik.learnswift.symfonyex4532",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4532),
+    completed: purchaseManagerHive.getCompleted(4532),
+  ),
+  CoursesExModel(
+    id: 4533,
+    exerciseName: "Ejercicio 9: Opcion de repositoryClass",
+    productID: "com.mrrubik.learnswift.symfonyex4533",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4533),
+    completed: purchaseManagerHive.getCompleted(4533),
+  ),
+  CoursesExModel(
+    id: 4534,
+    exerciseName: "Desafio 10: Generar una migracion",
+    productID: "com.mrrubik.learnswift.symfonyex4534",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4534),
+    completed: purchaseManagerHive.getCompleted(4534),
+  ),
+  CoursesExModel(
+    id: 4535,
+    exerciseName: "Ejercicio 11: Ejecutar migraciones",
+    productID: "com.mrrubik.learnswift.symfonyex4535",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4535),
+    completed: purchaseManagerHive.getCompleted(4535),
+  ),
+  CoursesExModel(
+    id: 4536,
+    exerciseName: "Desafio 12: Callback PrePersist",
+    productID: "com.mrrubik.learnswift.symfonyex4536",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4536),
+    completed: purchaseManagerHive.getCompleted(4536),
+  ),
+  CoursesExModel(
+    id: 4537,
+    exerciseName: "Ejercicio 13: Implementar __toString()",
+    productID: "com.mrrubik.learnswift.symfonyex4537",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4537),
+    completed: purchaseManagerHive.getCompleted(4537),
+  ),
+  CoursesExModel(
+    id: 4538,
+    exerciseName: "Desafio 14: Campo slug (unique)",
+    productID: "com.mrrubik.learnswift.symfonyex4538",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4538),
+    completed: purchaseManagerHive.getCompleted(4538),
+  ),
+  CoursesExModel(
+    id: 4539,
+    exerciseName: "Ejercicio 15: Desafio: entidad Product esencial",
+    productID: "com.mrrubik.learnswift.symfonyex4539",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4539),
+    completed: purchaseManagerHive.getCompleted(4539),
+  ),
+];

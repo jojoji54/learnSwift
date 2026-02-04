@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyRoutingModelES = [
+  CoursesExModel(
+    id: 4465,
+    exerciseName: "Ejercicio 1: Ruta basica a /hello",
+    productID: "com.mrrubik.learnswift.symfonyex4465",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4465),
+    completed: purchaseManagerHive.getCompleted(4465),
+  ),
+  CoursesExModel(
+    id: 4466,
+    exerciseName: "Desafio 2: Limitar una ruta a GET",
+    productID: "com.mrrubik.learnswift.symfonyex4466",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4466),
+    completed: purchaseManagerHive.getCompleted(4466),
+  ),
+  CoursesExModel(
+    id: 4467,
+    exerciseName: "Ejercicio 3: Ruta con parametro",
+    productID: "com.mrrubik.learnswift.symfonyex4467",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4467),
+    completed: purchaseManagerHive.getCompleted(4467),
+  ),
+  CoursesExModel(
+    id: 4468,
+    exerciseName: "Desafio 4: Agregar requisito numerico",
+    productID: "com.mrrubik.learnswift.symfonyex4468",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4468),
+    completed: purchaseManagerHive.getCompleted(4468),
+  ),
+  CoursesExModel(
+    id: 4469,
+    exerciseName: "Ejercicio 5: Valor por defecto en segmento opcional",
+    productID: "com.mrrubik.learnswift.symfonyex4469",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4469),
+    completed: purchaseManagerHive.getCompleted(4469),
+  ),
+  CoursesExModel(
+    id: 4470,
+    exerciseName: "Desafio 6: Multiples metodos HTTP",
+    productID: "com.mrrubik.learnswift.symfonyex4470",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4470),
+    completed: purchaseManagerHive.getCompleted(4470),
+  ),
+  CoursesExModel(
+    id: 4471,
+    exerciseName: "Ejercicio 7: Nombre de ruta personalizado",
+    productID: "com.mrrubik.learnswift.symfonyex4471",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4471),
+    completed: purchaseManagerHive.getCompleted(4471),
+  ),
+  CoursesExModel(
+    id: 4472,
+    exerciseName: "Desafio 8: Restriccion por host (multisite)",
+    productID: "com.mrrubik.learnswift.symfonyex4472",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4472),
+    completed: purchaseManagerHive.getCompleted(4472),
+  ),
+  CoursesExModel(
+    id: 4473,
+    exerciseName: "Ejercicio 9: Paths localizados",
+    productID: "com.mrrubik.learnswift.symfonyex4473",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4473),
+    completed: purchaseManagerHive.getCompleted(4473),
+  ),
+  CoursesExModel(
+    id: 4474,
+    exerciseName: "Desafio 10: Prioridad de ruta",
+    productID: "com.mrrubik.learnswift.symfonyex4474",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4474),
+    completed: purchaseManagerHive.getCompleted(4474),
+  ),
+  CoursesExModel(
+    id: 4475,
+    exerciseName: "Ejercicio 11: Prefijo de rutas a nivel de clase",
+    productID: "com.mrrubik.learnswift.symfonyex4475",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4475),
+    completed: purchaseManagerHive.getCompleted(4475),
+  ),
+  CoursesExModel(
+    id: 4476,
+    exerciseName: "Desafio 12: Requisito de slug",
+    productID: "com.mrrubik.learnswift.symfonyex4476",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4476),
+    completed: purchaseManagerHive.getCompleted(4476),
+  ),
+  CoursesExModel(
+    id: 4477,
+    exerciseName: "Ejercicio 13: Ruta de metodo bajo un prefijo",
+    productID: "com.mrrubik.learnswift.symfonyex4477",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4477),
+    completed: purchaseManagerHive.getCompleted(4477),
+  ),
+  CoursesExModel(
+    id: 4478,
+    exerciseName: "Desafio 14: Redirigir a otra ruta",
+    productID: "com.mrrubik.learnswift.symfonyex4478",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4478),
+    completed: purchaseManagerHive.getCompleted(4478),
+  ),
+  CoursesExModel(
+    id: 4479,
+    exerciseName: "Ejercicio 15: Desafio: ruta de update API (PUT)",
+    productID: "com.mrrubik.learnswift.symfonyex4479",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4479),
+    completed: purchaseManagerHive.getCompleted(4479),
+  ),
+];

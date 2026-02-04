@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyTwigModelEN = [
+  CoursesExModel(
+    id: 4495,
+    exerciseName: "Exercise 1: Print a variable",
+    productID: "com.mrrubik.learnswift.symfonyex4495",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4495),
+    completed: purchaseManagerHive.getCompleted(4495),
+  ),
+  CoursesExModel(
+    id: 4496,
+    exerciseName: "Challenge 2: If/endif block",
+    productID: "com.mrrubik.learnswift.symfonyex4496",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4496),
+    completed: purchaseManagerHive.getCompleted(4496),
+  ),
+  CoursesExModel(
+    id: 4497,
+    exerciseName: "Exercise 3: Loop over a list",
+    productID: "com.mrrubik.learnswift.symfonyex4497",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4497),
+    completed: purchaseManagerHive.getCompleted(4497),
+  ),
+  CoursesExModel(
+    id: 4498,
+    exerciseName: "Challenge 4: Extend a base template",
+    productID: "com.mrrubik.learnswift.symfonyex4498",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4498),
+    completed: purchaseManagerHive.getCompleted(4498),
+  ),
+  CoursesExModel(
+    id: 4499,
+    exerciseName: "Exercise 5: Include a partial",
+    productID: "com.mrrubik.learnswift.symfonyex4499",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4499),
+    completed: purchaseManagerHive.getCompleted(4499),
+  ),
+  CoursesExModel(
+    id: 4500,
+    exerciseName: "Challenge 6: Uppercase filter",
+    productID: "com.mrrubik.learnswift.symfonyex4500",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4500),
+    completed: purchaseManagerHive.getCompleted(4500),
+  ),
+  CoursesExModel(
+    id: 4501,
+    exerciseName: "Exercise 7: Date formatting",
+    productID: "com.mrrubik.learnswift.symfonyex4501",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4501),
+    completed: purchaseManagerHive.getCompleted(4501),
+  ),
+  CoursesExModel(
+    id: 4502,
+    exerciseName: "Challenge 8: Escape output",
+    productID: "com.mrrubik.learnswift.symfonyex4502",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4502),
+    completed: purchaseManagerHive.getCompleted(4502),
+  ),
+  CoursesExModel(
+    id: 4503,
+    exerciseName: "Exercise 9: Render raw HTML (careful)",
+    productID: "com.mrrubik.learnswift.symfonyex4503",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4503),
+    completed: purchaseManagerHive.getCompleted(4503),
+  ),
+  CoursesExModel(
+    id: 4504,
+    exerciseName: "Challenge 10: Generate a URL with path()",
+    productID: "com.mrrubik.learnswift.symfonyex4504",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4504),
+    completed: purchaseManagerHive.getCompleted(4504),
+  ),
+  CoursesExModel(
+    id: 4505,
+    exerciseName: "Exercise 11: Link to an asset",
+    productID: "com.mrrubik.learnswift.symfonyex4505",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4505),
+    completed: purchaseManagerHive.getCompleted(4505),
+  ),
+  CoursesExModel(
+    id: 4506,
+    exerciseName: "Challenge 12: Set a variable",
+    productID: "com.mrrubik.learnswift.symfonyex4506",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4506),
+    completed: purchaseManagerHive.getCompleted(4506),
+  ),
+  CoursesExModel(
+    id: 4507,
+    exerciseName: "Exercise 13: Macro for reusable UI",
+    productID: "com.mrrubik.learnswift.symfonyex4507",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4507),
+    completed: purchaseManagerHive.getCompleted(4507),
+  ),
+  CoursesExModel(
+    id: 4508,
+    exerciseName: "Challenge 14: Debug with dump()",
+    productID: "com.mrrubik.learnswift.symfonyex4508",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4508),
+    completed: purchaseManagerHive.getCompleted(4508),
+  ),
+  CoursesExModel(
+    id: 4509,
+    exerciseName: "Exercise 15: Challenge: product cards with a loop",
+    productID: "com.mrrubik.learnswift.symfonyex4509",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4509),
+    completed: purchaseManagerHive.getCompleted(4509),
+  ),
+];

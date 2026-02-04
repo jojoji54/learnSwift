@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyRoutingModelZH = [
+  CoursesExModel(
+    id: 4465,
+    exerciseName: "练习 1: 基础路由 /hello",
+    productID: "com.mrrubik.learnswift.symfonyex4465",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4465),
+    completed: purchaseManagerHive.getCompleted(4465),
+  ),
+  CoursesExModel(
+    id: 4466,
+    exerciseName: "挑战 2: 限制路由只允许 GET",
+    productID: "com.mrrubik.learnswift.symfonyex4466",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4466),
+    completed: purchaseManagerHive.getCompleted(4466),
+  ),
+  CoursesExModel(
+    id: 4467,
+    exerciseName: "练习 3: 带参数的路由",
+    productID: "com.mrrubik.learnswift.symfonyex4467",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4467),
+    completed: purchaseManagerHive.getCompleted(4467),
+  ),
+  CoursesExModel(
+    id: 4468,
+    exerciseName: "挑战 4: 添加数字校验",
+    productID: "com.mrrubik.learnswift.symfonyex4468",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4468),
+    completed: purchaseManagerHive.getCompleted(4468),
+  ),
+  CoursesExModel(
+    id: 4469,
+    exerciseName: "练习 5: 可选段默认值",
+    productID: "com.mrrubik.learnswift.symfonyex4469",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4469),
+    completed: purchaseManagerHive.getCompleted(4469),
+  ),
+  CoursesExModel(
+    id: 4470,
+    exerciseName: "挑战 6: 多个 HTTP 方法",
+    productID: "com.mrrubik.learnswift.symfonyex4470",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4470),
+    completed: purchaseManagerHive.getCompleted(4470),
+  ),
+  CoursesExModel(
+    id: 4471,
+    exerciseName: "练习 7: 自定义路由名",
+    productID: "com.mrrubik.learnswift.symfonyex4471",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4471),
+    completed: purchaseManagerHive.getCompleted(4471),
+  ),
+  CoursesExModel(
+    id: 4472,
+    exerciseName: "挑战 8: 按 host 限制（多站点）",
+    productID: "com.mrrubik.learnswift.symfonyex4472",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4472),
+    completed: purchaseManagerHive.getCompleted(4472),
+  ),
+  CoursesExModel(
+    id: 4473,
+    exerciseName: "练习 9: 多语言路径",
+    productID: "com.mrrubik.learnswift.symfonyex4473",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4473),
+    completed: purchaseManagerHive.getCompleted(4473),
+  ),
+  CoursesExModel(
+    id: 4474,
+    exerciseName: "挑战 10: 路由优先级",
+    productID: "com.mrrubik.learnswift.symfonyex4474",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4474),
+    completed: purchaseManagerHive.getCompleted(4474),
+  ),
+  CoursesExModel(
+    id: 4475,
+    exerciseName: "练习 11: 类级别路由前缀",
+    productID: "com.mrrubik.learnswift.symfonyex4475",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4475),
+    completed: purchaseManagerHive.getCompleted(4475),
+  ),
+  CoursesExModel(
+    id: 4476,
+    exerciseName: "挑战 12: slug 规则",
+    productID: "com.mrrubik.learnswift.symfonyex4476",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4476),
+    completed: purchaseManagerHive.getCompleted(4476),
+  ),
+  CoursesExModel(
+    id: 4477,
+    exerciseName: "练习 13: 前缀下的方法路由",
+    productID: "com.mrrubik.learnswift.symfonyex4477",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4477),
+    completed: purchaseManagerHive.getCompleted(4477),
+  ),
+  CoursesExModel(
+    id: 4478,
+    exerciseName: "挑战 14: 重定向到另一个路由",
+    productID: "com.mrrubik.learnswift.symfonyex4478",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4478),
+    completed: purchaseManagerHive.getCompleted(4478),
+  ),
+  CoursesExModel(
+    id: 4479,
+    exerciseName: "练习 15: 挑战：API 更新路由（PUT）",
+    productID: "com.mrrubik.learnswift.symfonyex4479",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4479),
+    completed: purchaseManagerHive.getCompleted(4479),
+  ),
+];

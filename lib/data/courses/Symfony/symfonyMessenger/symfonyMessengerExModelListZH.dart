@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> symfonyMessengerModelZH = [
+  CoursesExModel(
+    id: 4630,
+    exerciseName: "练习 1: 创建消息类",
+    productID: "com.mrrubik.learnswift.symfonyex4630",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4630),
+    completed: purchaseManagerHive.getCompleted(4630),
+  ),
+  CoursesExModel(
+    id: 4631,
+    exerciseName: "挑战 2: 用 AsMessageHandler 创建 handler",
+    productID: "com.mrrubik.learnswift.symfonyex4631",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4631),
+    completed: purchaseManagerHive.getCompleted(4631),
+  ),
+  CoursesExModel(
+    id: 4632,
+    exerciseName: "练习 3: dispatch 消息",
+    productID: "com.mrrubik.learnswift.symfonyex4632",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4632),
+    completed: purchaseManagerHive.getCompleted(4632),
+  ),
+  CoursesExModel(
+    id: 4633,
+    exerciseName: "挑战 4: 配置 transport",
+    productID: "com.mrrubik.learnswift.symfonyex4633",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4633),
+    completed: purchaseManagerHive.getCompleted(4633),
+  ),
+  CoursesExModel(
+    id: 4634,
+    exerciseName: "练习 5: 消费消息",
+    productID: "com.mrrubik.learnswift.symfonyex4634",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4634),
+    completed: purchaseManagerHive.getCompleted(4634),
+  ),
+  CoursesExModel(
+    id: 4635,
+    exerciseName: "挑战 6: 重试策略",
+    productID: "com.mrrubik.learnswift.symfonyex4635",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4635),
+    completed: purchaseManagerHive.getCompleted(4635),
+  ),
+  CoursesExModel(
+    id: 4636,
+    exerciseName: "练习 7: 失败队列",
+    productID: "com.mrrubik.learnswift.symfonyex4636",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4636),
+    completed: purchaseManagerHive.getCompleted(4636),
+  ),
+  CoursesExModel(
+    id: 4637,
+    exerciseName: "挑战 8: 延迟消息",
+    productID: "com.mrrubik.learnswift.symfonyex4637",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(4637),
+    completed: purchaseManagerHive.getCompleted(4637),
+  ),
+  CoursesExModel(
+    id: 4638,
+    exerciseName: "练习 9: 把消息路由到 async",
+    productID: "com.mrrubik.learnswift.symfonyex4638",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4638),
+    completed: purchaseManagerHive.getCompleted(4638),
+  ),
+  CoursesExModel(
+    id: 4639,
+    exerciseName: "挑战 10: 多个 bus（思路）",
+    productID: "com.mrrubik.learnswift.symfonyex4639",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4639),
+    completed: purchaseManagerHive.getCompleted(4639),
+  ),
+  CoursesExModel(
+    id: 4640,
+    exerciseName: "练习 11: Envelope 与 stamp（思路）",
+    productID: "com.mrrubik.learnswift.symfonyex4640",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4640),
+    completed: purchaseManagerHive.getCompleted(4640),
+  ),
+  CoursesExModel(
+    id: 4641,
+    exerciseName: "挑战 12: 同步 transport",
+    productID: "com.mrrubik.learnswift.symfonyex4641",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4641),
+    completed: purchaseManagerHive.getCompleted(4641),
+  ),
+  CoursesExModel(
+    id: 4642,
+    exerciseName: "练习 13: 中间件概念",
+    productID: "com.mrrubik.learnswift.symfonyex4642",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4642),
+    completed: purchaseManagerHive.getCompleted(4642),
+  ),
+  CoursesExModel(
+    id: 4643,
+    exerciseName: "挑战 14: worker 消息上限（思路）",
+    productID: "com.mrrubik.learnswift.symfonyex4643",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4643),
+    completed: purchaseManagerHive.getCompleted(4643),
+  ),
+  CoursesExModel(
+    id: 4644,
+    exerciseName: "练习 15: 挑战：异步图片缩放任务",
+    productID: "com.mrrubik.learnswift.symfonyex4644",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(4644),
+    completed: purchaseManagerHive.getCompleted(4644),
+  ),
+];

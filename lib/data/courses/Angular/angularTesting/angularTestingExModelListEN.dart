@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularTestingModelEN = [
+  CoursesExModel(
+    id: 3480,
+    exerciseName: "Exercise 1: TestBed Setup",
+    productID: "com.mrrubik.learnswift.angularex3480", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3480),
+    completed: purchaseManagerHive.getCompleted(3480),
+  ),
+  CoursesExModel(
+    id: 3481,
+    exerciseName: "Challenge 2: Component Create",
+    productID: "com.mrrubik.learnswift.angularex3481", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3481),
+    completed: purchaseManagerHive.getCompleted(3481),
+  ),
+  CoursesExModel(
+    id: 3482,
+    exerciseName: "Exercise 3: DOM Query",
+    productID: "com.mrrubik.learnswift.angularex3482", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3482),
+    completed: purchaseManagerHive.getCompleted(3482),
+  ),
+  CoursesExModel(
+    id: 3483,
+    exerciseName: "Challenge 4: Input Test",
+    productID: "com.mrrubik.learnswift.angularex3483", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3483),
+    completed: purchaseManagerHive.getCompleted(3483),
+  ),
+  CoursesExModel(
+    id: 3484,
+    exerciseName: "Exercise 5: Output Test",
+    productID: "com.mrrubik.learnswift.angularex3484", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3484),
+    completed: purchaseManagerHive.getCompleted(3484),
+  ),
+  CoursesExModel(
+    id: 3485,
+    exerciseName: "Challenge 6: Service Mock",
+    productID: "com.mrrubik.learnswift.angularex3485", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3485),
+    completed: purchaseManagerHive.getCompleted(3485),
+  ),
+  CoursesExModel(
+    id: 3486,
+    exerciseName: "Exercise 7: Http Testing",
+    productID: "com.mrrubik.learnswift.angularex3486", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3486),
+    completed: purchaseManagerHive.getCompleted(3486),
+  ),
+  CoursesExModel(
+    id: 3487,
+    exerciseName: "Challenge 8: Async Test",
+    productID: "com.mrrubik.learnswift.angularex3487", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3487),
+    completed: purchaseManagerHive.getCompleted(3487),
+  ),
+  CoursesExModel(
+    id: 3488,
+    exerciseName: "Exercise 9: FakeAsync",
+    productID: "com.mrrubik.learnswift.angularex3488", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3488),
+    completed: purchaseManagerHive.getCompleted(3488),
+  ),
+  CoursesExModel(
+    id: 3489,
+    exerciseName: "Challenge 10: Pipe Test",
+    productID: "com.mrrubik.learnswift.angularex3489", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3489),
+    completed: purchaseManagerHive.getCompleted(3489),
+  ),
+  CoursesExModel(
+    id: 3490,
+    exerciseName: "Exercise 11: Directive Test",
+    productID: "com.mrrubik.learnswift.angularex3490", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3490),
+    completed: purchaseManagerHive.getCompleted(3490),
+  ),
+  CoursesExModel(
+    id: 3491,
+    exerciseName: "Challenge 12: Router Test",
+    productID: "com.mrrubik.learnswift.angularex3491", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3491),
+    completed: purchaseManagerHive.getCompleted(3491),
+  ),
+  CoursesExModel(
+    id: 3492,
+    exerciseName: "Exercise 13: Guard Test",
+    productID: "com.mrrubik.learnswift.angularex3492", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3492),
+    completed: purchaseManagerHive.getCompleted(3492),
+  ),
+  CoursesExModel(
+    id: 3493,
+    exerciseName: "Challenge 14: Snapshot Test",
+    productID: "com.mrrubik.learnswift.angularex3493", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3493),
+    completed: purchaseManagerHive.getCompleted(3493),
+  ),
+  CoursesExModel(
+    id: 3494,
+    exerciseName: "Exercise 15: E2E Flow",
+    productID: "com.mrrubik.learnswift.angularex3494", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3494),
+    completed: purchaseManagerHive.getCompleted(3494),
+  ),
+];

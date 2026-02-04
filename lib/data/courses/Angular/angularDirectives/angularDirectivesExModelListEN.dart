@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularDirectivesModelEN = [
+  CoursesExModel(
+    id: 3360,
+    exerciseName: "Exercise 1: ngIf Basic",
+    productID: "com.mrrubik.learnswift.angularex3360", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3360),
+    completed: purchaseManagerHive.getCompleted(3360),
+  ),
+  CoursesExModel(
+    id: 3361,
+    exerciseName: "Challenge 2: ngIf Else",
+    productID: "com.mrrubik.learnswift.angularex3361", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3361),
+    completed: purchaseManagerHive.getCompleted(3361),
+  ),
+  CoursesExModel(
+    id: 3362,
+    exerciseName: "Exercise 3: ngFor Basic",
+    productID: "com.mrrubik.learnswift.angularex3362", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3362),
+    completed: purchaseManagerHive.getCompleted(3362),
+  ),
+  CoursesExModel(
+    id: 3363,
+    exerciseName: "Challenge 4: ngFor Index",
+    productID: "com.mrrubik.learnswift.angularex3363", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3363),
+    completed: purchaseManagerHive.getCompleted(3363),
+  ),
+  CoursesExModel(
+    id: 3364,
+    exerciseName: "Exercise 5: ngSwitch Basic",
+    productID: "com.mrrubik.learnswift.angularex3364", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3364),
+    completed: purchaseManagerHive.getCompleted(3364),
+  ),
+  CoursesExModel(
+    id: 3365,
+    exerciseName: "Challenge 6: ngSwitchCase",
+    productID: "com.mrrubik.learnswift.angularex3365", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3365),
+    completed: purchaseManagerHive.getCompleted(3365),
+  ),
+  CoursesExModel(
+    id: 3366,
+    exerciseName: "Exercise 7: ngClass",
+    productID: "com.mrrubik.learnswift.angularex3366", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3366),
+    completed: purchaseManagerHive.getCompleted(3366),
+  ),
+  CoursesExModel(
+    id: 3367,
+    exerciseName: "Challenge 8: ngStyle",
+    productID: "com.mrrubik.learnswift.angularex3367", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3367),
+    completed: purchaseManagerHive.getCompleted(3367),
+  ),
+  CoursesExModel(
+    id: 3368,
+    exerciseName: "Exercise 9: ngTemplateOutlet",
+    productID: "com.mrrubik.learnswift.angularex3368", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3368),
+    completed: purchaseManagerHive.getCompleted(3368),
+  ),
+  CoursesExModel(
+    id: 3369,
+    exerciseName: "Challenge 10: Structural Custom",
+    productID: "com.mrrubik.learnswift.angularex3369", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3369),
+    completed: purchaseManagerHive.getCompleted(3369),
+  ),
+  CoursesExModel(
+    id: 3370,
+    exerciseName: "Exercise 11: Attribute Custom",
+    productID: "com.mrrubik.learnswift.angularex3370", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3370),
+    completed: purchaseManagerHive.getCompleted(3370),
+  ),
+  CoursesExModel(
+    id: 3371,
+    exerciseName: "Challenge 12: Directive Input",
+    productID: "com.mrrubik.learnswift.angularex3371", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3371),
+    completed: purchaseManagerHive.getCompleted(3371),
+  ),
+  CoursesExModel(
+    id: 3372,
+    exerciseName: "Exercise 13: Directive Output",
+    productID: "com.mrrubik.learnswift.angularex3372", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3372),
+    completed: purchaseManagerHive.getCompleted(3372),
+  ),
+  CoursesExModel(
+    id: 3373,
+    exerciseName: "Challenge 14: Directive Host",
+    productID: "com.mrrubik.learnswift.angularex3373", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3373),
+    completed: purchaseManagerHive.getCompleted(3373),
+  ),
+  CoursesExModel(
+    id: 3374,
+    exerciseName: "Exercise 15: Directive Testing",
+    productID: "com.mrrubik.learnswift.angularex3374", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3374),
+    completed: purchaseManagerHive.getCompleted(3374),
+  ),
+];

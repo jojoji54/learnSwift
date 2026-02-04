@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListES.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListES.dart';
 import '../mainModel/Cpp/CoursesMainModelListES.dart';
@@ -197,10 +198,10 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'Angular',
     productID: 'com.mrrubik.learnswift.angular',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
-    coursesList: [],
+    coursesList: coursesAngularMainModelListES,
     color1: Color(0xFFDD0031),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Angular es tu herramienta para dominar este framework robusto en aplicaciones web complejas.\n\nVersión: Angular 16',
   ),

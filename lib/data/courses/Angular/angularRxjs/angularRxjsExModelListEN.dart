@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularRxjsModelEN = [
+  CoursesExModel(
+    id: 3435,
+    exerciseName: "Exercise 1: Observable Basics",
+    productID: "com.mrrubik.learnswift.angularex3435", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3435),
+    completed: purchaseManagerHive.getCompleted(3435),
+  ),
+  CoursesExModel(
+    id: 3436,
+    exerciseName: "Challenge 2: Subscribe",
+    productID: "com.mrrubik.learnswift.angularex3436", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3436),
+    completed: purchaseManagerHive.getCompleted(3436),
+  ),
+  CoursesExModel(
+    id: 3437,
+    exerciseName: "Exercise 3: Unsubscribe",
+    productID: "com.mrrubik.learnswift.angularex3437", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3437),
+    completed: purchaseManagerHive.getCompleted(3437),
+  ),
+  CoursesExModel(
+    id: 3438,
+    exerciseName: "Challenge 4: Subject",
+    productID: "com.mrrubik.learnswift.angularex3438", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3438),
+    completed: purchaseManagerHive.getCompleted(3438),
+  ),
+  CoursesExModel(
+    id: 3439,
+    exerciseName: "Exercise 5: BehaviorSubject",
+    productID: "com.mrrubik.learnswift.angularex3439", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3439),
+    completed: purchaseManagerHive.getCompleted(3439),
+  ),
+  CoursesExModel(
+    id: 3440,
+    exerciseName: "Challenge 6: ReplaySubject",
+    productID: "com.mrrubik.learnswift.angularex3440", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3440),
+    completed: purchaseManagerHive.getCompleted(3440),
+  ),
+  CoursesExModel(
+    id: 3441,
+    exerciseName: "Exercise 7: Operators Map",
+    productID: "com.mrrubik.learnswift.angularex3441", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3441),
+    completed: purchaseManagerHive.getCompleted(3441),
+  ),
+  CoursesExModel(
+    id: 3442,
+    exerciseName: "Challenge 8: Operators Filter",
+    productID: "com.mrrubik.learnswift.angularex3442", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3442),
+    completed: purchaseManagerHive.getCompleted(3442),
+  ),
+  CoursesExModel(
+    id: 3443,
+    exerciseName: "Exercise 9: Operators Tap",
+    productID: "com.mrrubik.learnswift.angularex3443", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3443),
+    completed: purchaseManagerHive.getCompleted(3443),
+  ),
+  CoursesExModel(
+    id: 3444,
+    exerciseName: "Challenge 10: SwitchMap",
+    productID: "com.mrrubik.learnswift.angularex3444", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3444),
+    completed: purchaseManagerHive.getCompleted(3444),
+  ),
+  CoursesExModel(
+    id: 3445,
+    exerciseName: "Exercise 11: MergeMap",
+    productID: "com.mrrubik.learnswift.angularex3445", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3445),
+    completed: purchaseManagerHive.getCompleted(3445),
+  ),
+  CoursesExModel(
+    id: 3446,
+    exerciseName: "Challenge 12: CombineLatest",
+    productID: "com.mrrubik.learnswift.angularex3446", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3446),
+    completed: purchaseManagerHive.getCompleted(3446),
+  ),
+  CoursesExModel(
+    id: 3447,
+    exerciseName: "Exercise 13: DebounceTime",
+    productID: "com.mrrubik.learnswift.angularex3447", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3447),
+    completed: purchaseManagerHive.getCompleted(3447),
+  ),
+  CoursesExModel(
+    id: 3448,
+    exerciseName: "Challenge 14: CatchError",
+    productID: "com.mrrubik.learnswift.angularex3448", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3448),
+    completed: purchaseManagerHive.getCompleted(3448),
+  ),
+  CoursesExModel(
+    id: 3449,
+    exerciseName: "Exercise 15: ShareReplay",
+    productID: "com.mrrubik.learnswift.angularex3449", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3449),
+    completed: purchaseManagerHive.getCompleted(3449),
+  ),
+];

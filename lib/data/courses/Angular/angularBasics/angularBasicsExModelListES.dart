@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularBasicsModelES = [
+  CoursesExModel(
+    id: 3300,
+    exerciseName: "Ejercicio 1: Hello Component",
+    productID: "com.mrrubik.learnswift.angularex3300", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3300),
+    completed: purchaseManagerHive.getCompleted(3300),
+  ),
+  CoursesExModel(
+    id: 3301,
+    exerciseName: "Desafío 2: Project Structure",
+    productID: "com.mrrubik.learnswift.angularex3301", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3301),
+    completed: purchaseManagerHive.getCompleted(3301),
+  ),
+  CoursesExModel(
+    id: 3302,
+    exerciseName: "Ejercicio 3: Main App Template",
+    productID: "com.mrrubik.learnswift.angularex3302", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3302),
+    completed: purchaseManagerHive.getCompleted(3302),
+  ),
+  CoursesExModel(
+    id: 3303,
+    exerciseName: "Desafío 4: Selector Usage",
+    productID: "com.mrrubik.learnswift.angularex3303", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3303),
+    completed: purchaseManagerHive.getCompleted(3303),
+  ),
+  CoursesExModel(
+    id: 3304,
+    exerciseName: "Ejercicio 5: Template Literal",
+    productID: "com.mrrubik.learnswift.angularex3304", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3304),
+    completed: purchaseManagerHive.getCompleted(3304),
+  ),
+  CoursesExModel(
+    id: 3305,
+    exerciseName: "Desafío 6: Bootstrap App",
+    productID: "com.mrrubik.learnswift.angularex3305", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3305),
+    completed: purchaseManagerHive.getCompleted(3305),
+  ),
+  CoursesExModel(
+    id: 3306,
+    exerciseName: "Ejercicio 7: Module Setup",
+    productID: "com.mrrubik.learnswift.angularex3306", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3306),
+    completed: purchaseManagerHive.getCompleted(3306),
+  ),
+  CoursesExModel(
+    id: 3307,
+    exerciseName: "Desafío 8: Component Metadata",
+    productID: "com.mrrubik.learnswift.angularex3307", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3307),
+    completed: purchaseManagerHive.getCompleted(3307),
+  ),
+  CoursesExModel(
+    id: 3308,
+    exerciseName: "Ejercicio 9: App Title",
+    productID: "com.mrrubik.learnswift.angularex3308", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3308),
+    completed: purchaseManagerHive.getCompleted(3308),
+  ),
+  CoursesExModel(
+    id: 3309,
+    exerciseName: "Desafío 10: Inline Template",
+    productID: "com.mrrubik.learnswift.angularex3309", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3309),
+    completed: purchaseManagerHive.getCompleted(3309),
+  ),
+  CoursesExModel(
+    id: 3310,
+    exerciseName: "Ejercicio 11: Separate Template",
+    productID: "com.mrrubik.learnswift.angularex3310", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3310),
+    completed: purchaseManagerHive.getCompleted(3310),
+  ),
+  CoursesExModel(
+    id: 3311,
+    exerciseName: "Desafío 12: Component Styles",
+    productID: "com.mrrubik.learnswift.angularex3311", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3311),
+    completed: purchaseManagerHive.getCompleted(3311),
+  ),
+  CoursesExModel(
+    id: 3312,
+    exerciseName: "Ejercicio 13: Simple Button",
+    productID: "com.mrrubik.learnswift.angularex3312", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3312),
+    completed: purchaseManagerHive.getCompleted(3312),
+  ),
+  CoursesExModel(
+    id: 3313,
+    exerciseName: "Desafío 14: Simple List",
+    productID: "com.mrrubik.learnswift.angularex3313", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3313),
+    completed: purchaseManagerHive.getCompleted(3313),
+  ),
+  CoursesExModel(
+    id: 3314,
+    exerciseName: "Ejercicio 15: Create Component",
+    productID: "com.mrrubik.learnswift.angularex3314", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3314),
+    completed: purchaseManagerHive.getCompleted(3314),
+  ),
+];

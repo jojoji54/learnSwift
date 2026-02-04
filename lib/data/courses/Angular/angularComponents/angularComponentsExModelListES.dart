@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularComponentsModelES = [
+  CoursesExModel(
+    id: 3330,
+    exerciseName: "Ejercicio 1: Input Property",
+    productID: "com.mrrubik.learnswift.angularex3330", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3330),
+    completed: purchaseManagerHive.getCompleted(3330),
+  ),
+  CoursesExModel(
+    id: 3331,
+    exerciseName: "Desafío 2: Output Event",
+    productID: "com.mrrubik.learnswift.angularex3331", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3331),
+    completed: purchaseManagerHive.getCompleted(3331),
+  ),
+  CoursesExModel(
+    id: 3332,
+    exerciseName: "Ejercicio 3: Child Component",
+    productID: "com.mrrubik.learnswift.angularex3332", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3332),
+    completed: purchaseManagerHive.getCompleted(3332),
+  ),
+  CoursesExModel(
+    id: 3333,
+    exerciseName: "Desafío 4: Parent Template",
+    productID: "com.mrrubik.learnswift.angularex3333", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3333),
+    completed: purchaseManagerHive.getCompleted(3333),
+  ),
+  CoursesExModel(
+    id: 3334,
+    exerciseName: "Ejercicio 5: Content Projection",
+    productID: "com.mrrubik.learnswift.angularex3334", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3334),
+    completed: purchaseManagerHive.getCompleted(3334),
+  ),
+  CoursesExModel(
+    id: 3335,
+    exerciseName: "Desafío 6: ViewChild",
+    productID: "com.mrrubik.learnswift.angularex3335", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3335),
+    completed: purchaseManagerHive.getCompleted(3335),
+  ),
+  CoursesExModel(
+    id: 3336,
+    exerciseName: "Ejercicio 7: Lifecycle OnInit",
+    productID: "com.mrrubik.learnswift.angularex3336", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3336),
+    completed: purchaseManagerHive.getCompleted(3336),
+  ),
+  CoursesExModel(
+    id: 3337,
+    exerciseName: "Desafío 8: Lifecycle OnChanges",
+    productID: "com.mrrubik.learnswift.angularex3337", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3337),
+    completed: purchaseManagerHive.getCompleted(3337),
+  ),
+  CoursesExModel(
+    id: 3338,
+    exerciseName: "Ejercicio 9: Lifecycle OnDestroy",
+    productID: "com.mrrubik.learnswift.angularex3338", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3338),
+    completed: purchaseManagerHive.getCompleted(3338),
+  ),
+  CoursesExModel(
+    id: 3339,
+    exerciseName: "Desafío 10: Change Detection",
+    productID: "com.mrrubik.learnswift.angularex3339", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3339),
+    completed: purchaseManagerHive.getCompleted(3339),
+  ),
+  CoursesExModel(
+    id: 3340,
+    exerciseName: "Ejercicio 11: Component Host",
+    productID: "com.mrrubik.learnswift.angularex3340", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3340),
+    completed: purchaseManagerHive.getCompleted(3340),
+  ),
+  CoursesExModel(
+    id: 3341,
+    exerciseName: "Desafío 12: Host Binding",
+    productID: "com.mrrubik.learnswift.angularex3341", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3341),
+    completed: purchaseManagerHive.getCompleted(3341),
+  ),
+  CoursesExModel(
+    id: 3342,
+    exerciseName: "Ejercicio 13: Host Listener",
+    productID: "com.mrrubik.learnswift.angularex3342", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3342),
+    completed: purchaseManagerHive.getCompleted(3342),
+  ),
+  CoursesExModel(
+    id: 3343,
+    exerciseName: "Desafío 14: Component Reuse",
+    productID: "com.mrrubik.learnswift.angularex3343", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3343),
+    completed: purchaseManagerHive.getCompleted(3343),
+  ),
+  CoursesExModel(
+    id: 3344,
+    exerciseName: "Ejercicio 15: Smart vs Dumb",
+    productID: "com.mrrubik.learnswift.angularex3344", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3344),
+    completed: purchaseManagerHive.getCompleted(3344),
+  ),
+];

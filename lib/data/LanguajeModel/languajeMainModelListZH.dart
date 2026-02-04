@@ -11,6 +11,7 @@ import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/Angular/CoursesMainModelListZH.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListZH.dart';
 import '../mainModel/Cpp/CoursesMainModelListZH.dart';
@@ -195,10 +196,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'Angular',
     productID: 'com.mrrubik.learnswift.angular',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(15),
-    coursesList: [],
+    coursesList: coursesAngularMainModelListZH,
     color1: Color(0xFFDD0031),
     color2: Color(0xFFFFFFFF),
-    isActive: false,
+    isActive: true,
     description:
         'CodeCrafters: Angular 是用于掌握这一强大框架以开发复杂网页应用的工具。\n\n版本: Angular 16',
   ),

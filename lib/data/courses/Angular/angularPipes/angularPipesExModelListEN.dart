@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularPipesModelEN = [
+  CoursesExModel(
+    id: 3465,
+    exerciseName: "Exercise 1: Built-in Date",
+    productID: "com.mrrubik.learnswift.angularex3465", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3465),
+    completed: purchaseManagerHive.getCompleted(3465),
+  ),
+  CoursesExModel(
+    id: 3466,
+    exerciseName: "Challenge 2: Built-in Currency",
+    productID: "com.mrrubik.learnswift.angularex3466", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3466),
+    completed: purchaseManagerHive.getCompleted(3466),
+  ),
+  CoursesExModel(
+    id: 3467,
+    exerciseName: "Exercise 3: Built-in Async",
+    productID: "com.mrrubik.learnswift.angularex3467", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3467),
+    completed: purchaseManagerHive.getCompleted(3467),
+  ),
+  CoursesExModel(
+    id: 3468,
+    exerciseName: "Challenge 4: Built-in Uppercase",
+    productID: "com.mrrubik.learnswift.angularex3468", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3468),
+    completed: purchaseManagerHive.getCompleted(3468),
+  ),
+  CoursesExModel(
+    id: 3469,
+    exerciseName: "Exercise 5: Built-in Lowercase",
+    productID: "com.mrrubik.learnswift.angularex3469", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3469),
+    completed: purchaseManagerHive.getCompleted(3469),
+  ),
+  CoursesExModel(
+    id: 3470,
+    exerciseName: "Challenge 6: Built-in Slice",
+    productID: "com.mrrubik.learnswift.angularex3470", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3470),
+    completed: purchaseManagerHive.getCompleted(3470),
+  ),
+  CoursesExModel(
+    id: 3471,
+    exerciseName: "Exercise 7: Custom Pipe",
+    productID: "com.mrrubik.learnswift.angularex3471", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3471),
+    completed: purchaseManagerHive.getCompleted(3471),
+  ),
+  CoursesExModel(
+    id: 3472,
+    exerciseName: "Challenge 8: Pipe Arguments",
+    productID: "com.mrrubik.learnswift.angularex3472", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3472),
+    completed: purchaseManagerHive.getCompleted(3472),
+  ),
+  CoursesExModel(
+    id: 3473,
+    exerciseName: "Exercise 9: Pure Pipe",
+    productID: "com.mrrubik.learnswift.angularex3473", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3473),
+    completed: purchaseManagerHive.getCompleted(3473),
+  ),
+  CoursesExModel(
+    id: 3474,
+    exerciseName: "Challenge 10: Impure Pipe",
+    productID: "com.mrrubik.learnswift.angularex3474", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3474),
+    completed: purchaseManagerHive.getCompleted(3474),
+  ),
+  CoursesExModel(
+    id: 3475,
+    exerciseName: "Exercise 11: Pipe Chain",
+    productID: "com.mrrubik.learnswift.angularex3475", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3475),
+    completed: purchaseManagerHive.getCompleted(3475),
+  ),
+  CoursesExModel(
+    id: 3476,
+    exerciseName: "Challenge 12: Pipe Performance",
+    productID: "com.mrrubik.learnswift.angularex3476", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3476),
+    completed: purchaseManagerHive.getCompleted(3476),
+  ),
+  CoursesExModel(
+    id: 3477,
+    exerciseName: "Exercise 13: Pipe for Lists",
+    productID: "com.mrrubik.learnswift.angularex3477", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3477),
+    completed: purchaseManagerHive.getCompleted(3477),
+  ),
+  CoursesExModel(
+    id: 3478,
+    exerciseName: "Challenge 14: Pipe for Labels",
+    productID: "com.mrrubik.learnswift.angularex3478", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3478),
+    completed: purchaseManagerHive.getCompleted(3478),
+  ),
+  CoursesExModel(
+    id: 3479,
+    exerciseName: "Exercise 15: Pipe for Numbers",
+    productID: "com.mrrubik.learnswift.angularex3479", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3479),
+    completed: purchaseManagerHive.getCompleted(3479),
+  ),
+];

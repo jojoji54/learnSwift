@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularDataBindingModelEN = [
+  CoursesExModel(
+    id: 3345,
+    exerciseName: "Exercise 1: One-way Binding",
+    productID: "com.mrrubik.learnswift.angularex3345", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3345),
+    completed: purchaseManagerHive.getCompleted(3345),
+  ),
+  CoursesExModel(
+    id: 3346,
+    exerciseName: "Challenge 2: Two-way Binding",
+    productID: "com.mrrubik.learnswift.angularex3346", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3346),
+    completed: purchaseManagerHive.getCompleted(3346),
+  ),
+  CoursesExModel(
+    id: 3347,
+    exerciseName: "Exercise 3: ngModel",
+    productID: "com.mrrubik.learnswift.angularex3347", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3347),
+    completed: purchaseManagerHive.getCompleted(3347),
+  ),
+  CoursesExModel(
+    id: 3348,
+    exerciseName: "Challenge 4: Binding to Attr",
+    productID: "com.mrrubik.learnswift.angularex3348", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3348),
+    completed: purchaseManagerHive.getCompleted(3348),
+  ),
+  CoursesExModel(
+    id: 3349,
+    exerciseName: "Exercise 5: Binding to Style",
+    productID: "com.mrrubik.learnswift.angularex3349", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3349),
+    completed: purchaseManagerHive.getCompleted(3349),
+  ),
+  CoursesExModel(
+    id: 3350,
+    exerciseName: "Challenge 6: Binding to Class",
+    productID: "com.mrrubik.learnswift.angularex3350", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3350),
+    completed: purchaseManagerHive.getCompleted(3350),
+  ),
+  CoursesExModel(
+    id: 3351,
+    exerciseName: "Exercise 7: Binding to Property",
+    productID: "com.mrrubik.learnswift.angularex3351", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3351),
+    completed: purchaseManagerHive.getCompleted(3351),
+  ),
+  CoursesExModel(
+    id: 3352,
+    exerciseName: "Challenge 8: Event Payload",
+    productID: "com.mrrubik.learnswift.angularex3352", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3352),
+    completed: purchaseManagerHive.getCompleted(3352),
+  ),
+  CoursesExModel(
+    id: 3353,
+    exerciseName: "Exercise 9: Pipe in Binding",
+    productID: "com.mrrubik.learnswift.angularex3353", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3353),
+    completed: purchaseManagerHive.getCompleted(3353),
+  ),
+  CoursesExModel(
+    id: 3354,
+    exerciseName: "Challenge 10: Binding Default",
+    productID: "com.mrrubik.learnswift.angularex3354", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3354),
+    completed: purchaseManagerHive.getCompleted(3354),
+  ),
+  CoursesExModel(
+    id: 3355,
+    exerciseName: "Exercise 11: Binding with Safe Nav",
+    productID: "com.mrrubik.learnswift.angularex3355", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3355),
+    completed: purchaseManagerHive.getCompleted(3355),
+  ),
+  CoursesExModel(
+    id: 3356,
+    exerciseName: "Challenge 12: Binding in List",
+    productID: "com.mrrubik.learnswift.angularex3356", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3356),
+    completed: purchaseManagerHive.getCompleted(3356),
+  ),
+  CoursesExModel(
+    id: 3357,
+    exerciseName: "Exercise 13: Binding in Form",
+    productID: "com.mrrubik.learnswift.angularex3357", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3357),
+    completed: purchaseManagerHive.getCompleted(3357),
+  ),
+  CoursesExModel(
+    id: 3358,
+    exerciseName: "Challenge 14: Binding to Disabled",
+    productID: "com.mrrubik.learnswift.angularex3358", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3358),
+    completed: purchaseManagerHive.getCompleted(3358),
+  ),
+  CoursesExModel(
+    id: 3359,
+    exerciseName: "Exercise 15: Binding to Value",
+    productID: "com.mrrubik.learnswift.angularex3359", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3359),
+    completed: purchaseManagerHive.getCompleted(3359),
+  ),
+];

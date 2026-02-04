@@ -367,6 +367,36 @@ class CategoryInfoL10n {
         return loc.flutterCat13InfoTitle;
       case 'flutterCat14InfoTitle':
         return loc.flutterCat14InfoTitle;
+      case 'angularCat0InfoTitle':
+        return loc.angularCat0InfoTitle;
+      case 'angularCat1InfoTitle':
+        return loc.angularCat1InfoTitle;
+      case 'angularCat2InfoTitle':
+        return loc.angularCat2InfoTitle;
+      case 'angularCat3InfoTitle':
+        return loc.angularCat3InfoTitle;
+      case 'angularCat4InfoTitle':
+        return loc.angularCat4InfoTitle;
+      case 'angularCat5InfoTitle':
+        return loc.angularCat5InfoTitle;
+      case 'angularCat6InfoTitle':
+        return loc.angularCat6InfoTitle;
+      case 'angularCat7InfoTitle':
+        return loc.angularCat7InfoTitle;
+      case 'angularCat8InfoTitle':
+        return loc.angularCat8InfoTitle;
+      case 'angularCat9InfoTitle':
+        return loc.angularCat9InfoTitle;
+      case 'angularCat10InfoTitle':
+        return loc.angularCat10InfoTitle;
+      case 'angularCat11InfoTitle':
+        return loc.angularCat11InfoTitle;
+      case 'angularCat12InfoTitle':
+        return loc.angularCat12InfoTitle;
+      case 'angularCat13InfoTitle':
+        return loc.angularCat13InfoTitle;
+      case 'angularCat14InfoTitle':
+        return loc.angularCat14InfoTitle;
       case 'reactCat0InfoTitle':
         return loc.reactCat0InfoTitle;
       case 'reactCat1InfoTitle':
@@ -768,6 +798,36 @@ class CategoryInfoL10n {
         return loc.flutterCat13InfoContent;
       case 'flutterCat14InfoContent':
         return loc.flutterCat14InfoContent;
+      case 'angularCat0InfoContent':
+        return loc.angularCat0InfoContent;
+      case 'angularCat1InfoContent':
+        return loc.angularCat1InfoContent;
+      case 'angularCat2InfoContent':
+        return loc.angularCat2InfoContent;
+      case 'angularCat3InfoContent':
+        return loc.angularCat3InfoContent;
+      case 'angularCat4InfoContent':
+        return loc.angularCat4InfoContent;
+      case 'angularCat5InfoContent':
+        return loc.angularCat5InfoContent;
+      case 'angularCat6InfoContent':
+        return loc.angularCat6InfoContent;
+      case 'angularCat7InfoContent':
+        return loc.angularCat7InfoContent;
+      case 'angularCat8InfoContent':
+        return loc.angularCat8InfoContent;
+      case 'angularCat9InfoContent':
+        return loc.angularCat9InfoContent;
+      case 'angularCat10InfoContent':
+        return loc.angularCat10InfoContent;
+      case 'angularCat11InfoContent':
+        return loc.angularCat11InfoContent;
+      case 'angularCat12InfoContent':
+        return loc.angularCat12InfoContent;
+      case 'angularCat13InfoContent':
+        return loc.angularCat13InfoContent;
+      case 'angularCat14InfoContent':
+        return loc.angularCat14InfoContent;
       case 'reactCat0InfoContent':
         return loc.reactCat0InfoContent;
       case 'reactCat1InfoContent':

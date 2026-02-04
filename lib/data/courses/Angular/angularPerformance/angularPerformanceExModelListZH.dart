@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularPerformanceModelZH = [
+  CoursesExModel(
+    id: 3495,
+    exerciseName: "练习 1: OnPush Change",
+    productID: "com.mrrubik.learnswift.angularex3495", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3495),
+    completed: purchaseManagerHive.getCompleted(3495),
+  ),
+  CoursesExModel(
+    id: 3496,
+    exerciseName: "挑战 2: TrackBy",
+    productID: "com.mrrubik.learnswift.angularex3496", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3496),
+    completed: purchaseManagerHive.getCompleted(3496),
+  ),
+  CoursesExModel(
+    id: 3497,
+    exerciseName: "练习 3: Detach Change",
+    productID: "com.mrrubik.learnswift.angularex3497", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3497),
+    completed: purchaseManagerHive.getCompleted(3497),
+  ),
+  CoursesExModel(
+    id: 3498,
+    exerciseName: "挑战 4: Async Pipe",
+    productID: "com.mrrubik.learnswift.angularex3498", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3498),
+    completed: purchaseManagerHive.getCompleted(3498),
+  ),
+  CoursesExModel(
+    id: 3499,
+    exerciseName: "练习 5: Memoized Data",
+    productID: "com.mrrubik.learnswift.angularex3499", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3499),
+    completed: purchaseManagerHive.getCompleted(3499),
+  ),
+  CoursesExModel(
+    id: 3500,
+    exerciseName: "挑战 6: Avoid Heavy Watch",
+    productID: "com.mrrubik.learnswift.angularex3500", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3500),
+    completed: purchaseManagerHive.getCompleted(3500),
+  ),
+  CoursesExModel(
+    id: 3501,
+    exerciseName: "练习 7: Lazy Loading",
+    productID: "com.mrrubik.learnswift.angularex3501", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3501),
+    completed: purchaseManagerHive.getCompleted(3501),
+  ),
+  CoursesExModel(
+    id: 3502,
+    exerciseName: "挑战 8: Preload Strategy",
+    productID: "com.mrrubik.learnswift.angularex3502", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3502),
+    completed: purchaseManagerHive.getCompleted(3502),
+  ),
+  CoursesExModel(
+    id: 3503,
+    exerciseName: "练习 9: Optimize Lists",
+    productID: "com.mrrubik.learnswift.angularex3503", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3503),
+    completed: purchaseManagerHive.getCompleted(3503),
+  ),
+  CoursesExModel(
+    id: 3504,
+    exerciseName: "挑战 10: Optimize Pipes",
+    productID: "com.mrrubik.learnswift.angularex3504", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3504),
+    completed: purchaseManagerHive.getCompleted(3504),
+  ),
+  CoursesExModel(
+    id: 3505,
+    exerciseName: "练习 11: Reduce Re-renders",
+    productID: "com.mrrubik.learnswift.angularex3505", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3505),
+    completed: purchaseManagerHive.getCompleted(3505),
+  ),
+  CoursesExModel(
+    id: 3506,
+    exerciseName: "挑战 12: Zone Optimization",
+    productID: "com.mrrubik.learnswift.angularex3506", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3506),
+    completed: purchaseManagerHive.getCompleted(3506),
+  ),
+  CoursesExModel(
+    id: 3507,
+    exerciseName: "练习 13: Virtual Scroll",
+    productID: "com.mrrubik.learnswift.angularex3507", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3507),
+    completed: purchaseManagerHive.getCompleted(3507),
+  ),
+  CoursesExModel(
+    id: 3508,
+    exerciseName: "挑战 14: Bundle Split",
+    productID: "com.mrrubik.learnswift.angularex3508", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3508),
+    completed: purchaseManagerHive.getCompleted(3508),
+  ),
+  CoursesExModel(
+    id: 3509,
+    exerciseName: "练习 15: Perf Budget",
+    productID: "com.mrrubik.learnswift.angularex3509", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3509),
+    completed: purchaseManagerHive.getCompleted(3509),
+  ),
+];

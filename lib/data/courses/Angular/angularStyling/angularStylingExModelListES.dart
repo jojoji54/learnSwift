@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularStylingModelES = [
+  CoursesExModel(
+    id: 3510,
+    exerciseName: "Ejercicio 1: Component CSS",
+    productID: "com.mrrubik.learnswift.angularex3510", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3510),
+    completed: purchaseManagerHive.getCompleted(3510),
+  ),
+  CoursesExModel(
+    id: 3511,
+    exerciseName: "Desafío 2: Global Styles",
+    productID: "com.mrrubik.learnswift.angularex3511", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3511),
+    completed: purchaseManagerHive.getCompleted(3511),
+  ),
+  CoursesExModel(
+    id: 3512,
+    exerciseName: "Ejercicio 3: Host Styling",
+    productID: "com.mrrubik.learnswift.angularex3512", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3512),
+    completed: purchaseManagerHive.getCompleted(3512),
+  ),
+  CoursesExModel(
+    id: 3513,
+    exerciseName: "Desafío 4: Scoped Styles",
+    productID: "com.mrrubik.learnswift.angularex3513", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3513),
+    completed: purchaseManagerHive.getCompleted(3513),
+  ),
+  CoursesExModel(
+    id: 3514,
+    exerciseName: "Ejercicio 5: BEM Class",
+    productID: "com.mrrubik.learnswift.angularex3514", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3514),
+    completed: purchaseManagerHive.getCompleted(3514),
+  ),
+  CoursesExModel(
+    id: 3515,
+    exerciseName: "Desafío 6: Theming",
+    productID: "com.mrrubik.learnswift.angularex3515", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3515),
+    completed: purchaseManagerHive.getCompleted(3515),
+  ),
+  CoursesExModel(
+    id: 3516,
+    exerciseName: "Ejercicio 7: CSS Variables",
+    productID: "com.mrrubik.learnswift.angularex3516", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3516),
+    completed: purchaseManagerHive.getCompleted(3516),
+  ),
+  CoursesExModel(
+    id: 3517,
+    exerciseName: "Desafío 8: Responsive Layout",
+    productID: "com.mrrubik.learnswift.angularex3517", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3517),
+    completed: purchaseManagerHive.getCompleted(3517),
+  ),
+  CoursesExModel(
+    id: 3518,
+    exerciseName: "Ejercicio 9: Flex Layout",
+    productID: "com.mrrubik.learnswift.angularex3518", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3518),
+    completed: purchaseManagerHive.getCompleted(3518),
+  ),
+  CoursesExModel(
+    id: 3519,
+    exerciseName: "Desafío 10: Grid Layout",
+    productID: "com.mrrubik.learnswift.angularex3519", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3519),
+    completed: purchaseManagerHive.getCompleted(3519),
+  ),
+  CoursesExModel(
+    id: 3520,
+    exerciseName: "Ejercicio 11: Material Theme",
+    productID: "com.mrrubik.learnswift.angularex3520", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3520),
+    completed: purchaseManagerHive.getCompleted(3520),
+  ),
+  CoursesExModel(
+    id: 3521,
+    exerciseName: "Desafío 12: Utility Classes",
+    productID: "com.mrrubik.learnswift.angularex3521", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3521),
+    completed: purchaseManagerHive.getCompleted(3521),
+  ),
+  CoursesExModel(
+    id: 3522,
+    exerciseName: "Ejercicio 13: Dynamic Classes",
+    productID: "com.mrrubik.learnswift.angularex3522", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3522),
+    completed: purchaseManagerHive.getCompleted(3522),
+  ),
+  CoursesExModel(
+    id: 3523,
+    exerciseName: "Desafío 14: Style Encapsulation",
+    productID: "com.mrrubik.learnswift.angularex3523", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3523),
+    completed: purchaseManagerHive.getCompleted(3523),
+  ),
+  CoursesExModel(
+    id: 3524,
+    exerciseName: "Ejercicio 15: Style Precedence",
+    productID: "com.mrrubik.learnswift.angularex3524", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3524),
+    completed: purchaseManagerHive.getCompleted(3524),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularFormsModelZH = [
+  CoursesExModel(
+    id: 3405,
+    exerciseName: "练习 1: Template Form",
+    productID: "com.mrrubik.learnswift.angularex3405", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3405),
+    completed: purchaseManagerHive.getCompleted(3405),
+  ),
+  CoursesExModel(
+    id: 3406,
+    exerciseName: "挑战 2: NgForm Submit",
+    productID: "com.mrrubik.learnswift.angularex3406", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3406),
+    completed: purchaseManagerHive.getCompleted(3406),
+  ),
+  CoursesExModel(
+    id: 3407,
+    exerciseName: "练习 3: NgModel Group",
+    productID: "com.mrrubik.learnswift.angularex3407", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3407),
+    completed: purchaseManagerHive.getCompleted(3407),
+  ),
+  CoursesExModel(
+    id: 3408,
+    exerciseName: "挑战 4: Validation Required",
+    productID: "com.mrrubik.learnswift.angularex3408", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3408),
+    completed: purchaseManagerHive.getCompleted(3408),
+  ),
+  CoursesExModel(
+    id: 3409,
+    exerciseName: "练习 5: Validation MinLength",
+    productID: "com.mrrubik.learnswift.angularex3409", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3409),
+    completed: purchaseManagerHive.getCompleted(3409),
+  ),
+  CoursesExModel(
+    id: 3410,
+    exerciseName: "挑战 6: Validation Email",
+    productID: "com.mrrubik.learnswift.angularex3410", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3410),
+    completed: purchaseManagerHive.getCompleted(3410),
+  ),
+  CoursesExModel(
+    id: 3411,
+    exerciseName: "练习 7: Form Control",
+    productID: "com.mrrubik.learnswift.angularex3411", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3411),
+    completed: purchaseManagerHive.getCompleted(3411),
+  ),
+  CoursesExModel(
+    id: 3412,
+    exerciseName: "挑战 8: Reactive Form",
+    productID: "com.mrrubik.learnswift.angularex3412", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3412),
+    completed: purchaseManagerHive.getCompleted(3412),
+  ),
+  CoursesExModel(
+    id: 3413,
+    exerciseName: "练习 9: Form Group",
+    productID: "com.mrrubik.learnswift.angularex3413", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3413),
+    completed: purchaseManagerHive.getCompleted(3413),
+  ),
+  CoursesExModel(
+    id: 3414,
+    exerciseName: "挑战 10: Form Builder",
+    productID: "com.mrrubik.learnswift.angularex3414", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3414),
+    completed: purchaseManagerHive.getCompleted(3414),
+  ),
+  CoursesExModel(
+    id: 3415,
+    exerciseName: "练习 11: Form Array",
+    productID: "com.mrrubik.learnswift.angularex3415", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3415),
+    completed: purchaseManagerHive.getCompleted(3415),
+  ),
+  CoursesExModel(
+    id: 3416,
+    exerciseName: "挑战 12: Set Value",
+    productID: "com.mrrubik.learnswift.angularex3416", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3416),
+    completed: purchaseManagerHive.getCompleted(3416),
+  ),
+  CoursesExModel(
+    id: 3417,
+    exerciseName: "练习 13: Patch Value",
+    productID: "com.mrrubik.learnswift.angularex3417", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3417),
+    completed: purchaseManagerHive.getCompleted(3417),
+  ),
+  CoursesExModel(
+    id: 3418,
+    exerciseName: "挑战 14: Disable Control",
+    productID: "com.mrrubik.learnswift.angularex3418", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3418),
+    completed: purchaseManagerHive.getCompleted(3418),
+  ),
+  CoursesExModel(
+    id: 3419,
+    exerciseName: "练习 15: Custom Validator",
+    productID: "com.mrrubik.learnswift.angularex3419", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3419),
+    completed: purchaseManagerHive.getCompleted(3419),
+  ),
+];

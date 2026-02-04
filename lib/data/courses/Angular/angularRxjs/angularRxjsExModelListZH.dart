@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularRxjsModelZH = [
+  CoursesExModel(
+    id: 3435,
+    exerciseName: "练习 1: Observable Basics",
+    productID: "com.mrrubik.learnswift.angularex3435", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3435),
+    completed: purchaseManagerHive.getCompleted(3435),
+  ),
+  CoursesExModel(
+    id: 3436,
+    exerciseName: "挑战 2: Subscribe",
+    productID: "com.mrrubik.learnswift.angularex3436", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3436),
+    completed: purchaseManagerHive.getCompleted(3436),
+  ),
+  CoursesExModel(
+    id: 3437,
+    exerciseName: "练习 3: Unsubscribe",
+    productID: "com.mrrubik.learnswift.angularex3437", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3437),
+    completed: purchaseManagerHive.getCompleted(3437),
+  ),
+  CoursesExModel(
+    id: 3438,
+    exerciseName: "挑战 4: Subject",
+    productID: "com.mrrubik.learnswift.angularex3438", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3438),
+    completed: purchaseManagerHive.getCompleted(3438),
+  ),
+  CoursesExModel(
+    id: 3439,
+    exerciseName: "练习 5: BehaviorSubject",
+    productID: "com.mrrubik.learnswift.angularex3439", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3439),
+    completed: purchaseManagerHive.getCompleted(3439),
+  ),
+  CoursesExModel(
+    id: 3440,
+    exerciseName: "挑战 6: ReplaySubject",
+    productID: "com.mrrubik.learnswift.angularex3440", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3440),
+    completed: purchaseManagerHive.getCompleted(3440),
+  ),
+  CoursesExModel(
+    id: 3441,
+    exerciseName: "练习 7: Operators Map",
+    productID: "com.mrrubik.learnswift.angularex3441", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3441),
+    completed: purchaseManagerHive.getCompleted(3441),
+  ),
+  CoursesExModel(
+    id: 3442,
+    exerciseName: "挑战 8: Operators Filter",
+    productID: "com.mrrubik.learnswift.angularex3442", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3442),
+    completed: purchaseManagerHive.getCompleted(3442),
+  ),
+  CoursesExModel(
+    id: 3443,
+    exerciseName: "练习 9: Operators Tap",
+    productID: "com.mrrubik.learnswift.angularex3443", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3443),
+    completed: purchaseManagerHive.getCompleted(3443),
+  ),
+  CoursesExModel(
+    id: 3444,
+    exerciseName: "挑战 10: SwitchMap",
+    productID: "com.mrrubik.learnswift.angularex3444", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3444),
+    completed: purchaseManagerHive.getCompleted(3444),
+  ),
+  CoursesExModel(
+    id: 3445,
+    exerciseName: "练习 11: MergeMap",
+    productID: "com.mrrubik.learnswift.angularex3445", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3445),
+    completed: purchaseManagerHive.getCompleted(3445),
+  ),
+  CoursesExModel(
+    id: 3446,
+    exerciseName: "挑战 12: CombineLatest",
+    productID: "com.mrrubik.learnswift.angularex3446", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3446),
+    completed: purchaseManagerHive.getCompleted(3446),
+  ),
+  CoursesExModel(
+    id: 3447,
+    exerciseName: "练习 13: DebounceTime",
+    productID: "com.mrrubik.learnswift.angularex3447", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3447),
+    completed: purchaseManagerHive.getCompleted(3447),
+  ),
+  CoursesExModel(
+    id: 3448,
+    exerciseName: "挑战 14: CatchError",
+    productID: "com.mrrubik.learnswift.angularex3448", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3448),
+    completed: purchaseManagerHive.getCompleted(3448),
+  ),
+  CoursesExModel(
+    id: 3449,
+    exerciseName: "练习 15: ShareReplay",
+    productID: "com.mrrubik.learnswift.angularex3449", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3449),
+    completed: purchaseManagerHive.getCompleted(3449),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> angularRoutingModelES = [
+  CoursesExModel(
+    id: 3390,
+    exerciseName: "Ejercicio 1: RouterLink",
+    productID: "com.mrrubik.learnswift.angularex3390", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3390),
+    completed: purchaseManagerHive.getCompleted(3390),
+  ),
+  CoursesExModel(
+    id: 3391,
+    exerciseName: "Desafío 2: Router Outlet",
+    productID: "com.mrrubik.learnswift.angularex3391", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3391),
+    completed: purchaseManagerHive.getCompleted(3391),
+  ),
+  CoursesExModel(
+    id: 3392,
+    exerciseName: "Ejercicio 3: Route Params",
+    productID: "com.mrrubik.learnswift.angularex3392", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3392),
+    completed: purchaseManagerHive.getCompleted(3392),
+  ),
+  CoursesExModel(
+    id: 3393,
+    exerciseName: "Desafío 4: Query Params",
+    productID: "com.mrrubik.learnswift.angularex3393", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3393),
+    completed: purchaseManagerHive.getCompleted(3393),
+  ),
+  CoursesExModel(
+    id: 3394,
+    exerciseName: "Ejercicio 5: Route Guards",
+    productID: "com.mrrubik.learnswift.angularex3394", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3394),
+    completed: purchaseManagerHive.getCompleted(3394),
+  ),
+  CoursesExModel(
+    id: 3395,
+    exerciseName: "Desafío 6: Lazy Routes",
+    productID: "com.mrrubik.learnswift.angularex3395", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3395),
+    completed: purchaseManagerHive.getCompleted(3395),
+  ),
+  CoursesExModel(
+    id: 3396,
+    exerciseName: "Ejercicio 7: Redirects",
+    productID: "com.mrrubik.learnswift.angularex3396", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3396),
+    completed: purchaseManagerHive.getCompleted(3396),
+  ),
+  CoursesExModel(
+    id: 3397,
+    exerciseName: "Desafío 8: Wildcard Route",
+    productID: "com.mrrubik.learnswift.angularex3397", 
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(3397),
+    completed: purchaseManagerHive.getCompleted(3397),
+  ),
+  CoursesExModel(
+    id: 3398,
+    exerciseName: "Ejercicio 9: Child Routes",
+    productID: "com.mrrubik.learnswift.angularex3398", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3398),
+    completed: purchaseManagerHive.getCompleted(3398),
+  ),
+  CoursesExModel(
+    id: 3399,
+    exerciseName: "Desafío 10: Route Data",
+    productID: "com.mrrubik.learnswift.angularex3399", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3399),
+    completed: purchaseManagerHive.getCompleted(3399),
+  ),
+  CoursesExModel(
+    id: 3400,
+    exerciseName: "Ejercicio 11: Resolver",
+    productID: "com.mrrubik.learnswift.angularex3400", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3400),
+    completed: purchaseManagerHive.getCompleted(3400),
+  ),
+  CoursesExModel(
+    id: 3401,
+    exerciseName: "Desafío 12: Navigation",
+    productID: "com.mrrubik.learnswift.angularex3401", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3401),
+    completed: purchaseManagerHive.getCompleted(3401),
+  ),
+  CoursesExModel(
+    id: 3402,
+    exerciseName: "Ejercicio 13: Navigate Back",
+    productID: "com.mrrubik.learnswift.angularex3402", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3402),
+    completed: purchaseManagerHive.getCompleted(3402),
+  ),
+  CoursesExModel(
+    id: 3403,
+    exerciseName: "Desafío 14: Active Link",
+    productID: "com.mrrubik.learnswift.angularex3403", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3403),
+    completed: purchaseManagerHive.getCompleted(3403),
+  ),
+  CoursesExModel(
+    id: 3404,
+    exerciseName: "Ejercicio 15: Route Animations",
+    productID: "com.mrrubik.learnswift.angularex3404", 
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(3404),
+    completed: purchaseManagerHive.getCompleted(3404),
+  ),
+];

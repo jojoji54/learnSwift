@@ -9,6 +9,7 @@ import 'package:learnswift/data/mainModel/Flutter/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListES.dart';
+import 'package:learnswift/data/mainModel/React/CoursesMainModelListES.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListES.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListES.dart';
@@ -184,12 +185,12 @@ final List<ProgrammingItem> programmingItemsES = [
     name: 'React',
     productID: 'com.mrrubik.learnswift.react',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
-    coursesList: [],
+    coursesList: coursesReactMainModelListES,
     color1: Color(0xFF61DAFB),
     color2: Color(0xFF20232A),
-    isActive: false,
+    isActive: true,
     description:
-        'CodeCrafters: React te enseña la biblioteca más popular para construir interfaces de usuario dinámicas y modernas.\n\nVersión: React 18',
+        'CodeCrafters: React te enseña a crear UIs rápidas y reutilizables para la web. Practicas componentes, hooks, rutas y patrones reales con ejercicios guiados.\n\nVersión: React 18',
   ),
   ProgrammingItem(
     id: 15,

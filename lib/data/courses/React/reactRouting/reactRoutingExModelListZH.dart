@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactRoutingModelZH = [
+CoursesExModel(
+  id: 3200,
+  exerciseName: "练习1：BrowserRouter",
+  productID: "com.mrrubik.learnswift.reactex3200",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3200),
+  completed: purchaseManagerHive.getCompleted(3200),
+),
+CoursesExModel(
+  id: 3201,
+  exerciseName: "挑战2：Routes and Route",
+  productID: "com.mrrubik.learnswift.reactex3201",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3201),
+  completed: purchaseManagerHive.getCompleted(3201),
+),
+CoursesExModel(
+  id: 3202,
+  exerciseName: "练习3：Link",
+  productID: "com.mrrubik.learnswift.reactex3202",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3202),
+  completed: purchaseManagerHive.getCompleted(3202),
+),
+CoursesExModel(
+  id: 3203,
+  exerciseName: "挑战4：NavLink",
+  productID: "com.mrrubik.learnswift.reactex3203",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3203),
+  completed: purchaseManagerHive.getCompleted(3203),
+),
+CoursesExModel(
+  id: 3204,
+  exerciseName: "练习5：useParams",
+  productID: "com.mrrubik.learnswift.reactex3204",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3204),
+  completed: purchaseManagerHive.getCompleted(3204),
+),
+CoursesExModel(
+  id: 3205,
+  exerciseName: "挑战6：useNavigate",
+  productID: "com.mrrubik.learnswift.reactex3205",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3205),
+  completed: purchaseManagerHive.getCompleted(3205),
+),
+CoursesExModel(
+  id: 3206,
+  exerciseName: "练习7：nested route",
+  productID: "com.mrrubik.learnswift.reactex3206",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3206),
+  completed: purchaseManagerHive.getCompleted(3206),
+),
+CoursesExModel(
+  id: 3207,
+  exerciseName: "挑战8：Outlet",
+  productID: "com.mrrubik.learnswift.reactex3207",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3207),
+  completed: purchaseManagerHive.getCompleted(3207),
+),
+CoursesExModel(
+  id: 3208,
+  exerciseName: "练习9：index route",
+  productID: "com.mrrubik.learnswift.reactex3208",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3208),
+  completed: purchaseManagerHive.getCompleted(3208),
+),
+CoursesExModel(
+  id: 3209,
+  exerciseName: "挑战10：navigate back",
+  productID: "com.mrrubik.learnswift.reactex3209",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3209),
+  completed: purchaseManagerHive.getCompleted(3209),
+),
+CoursesExModel(
+  id: 3210,
+  exerciseName: "练习11：redirect",
+  productID: "com.mrrubik.learnswift.reactex3210",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3210),
+  completed: purchaseManagerHive.getCompleted(3210),
+),
+CoursesExModel(
+  id: 3211,
+  exerciseName: "挑战12：search params",
+  productID: "com.mrrubik.learnswift.reactex3211",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3211),
+  completed: purchaseManagerHive.getCompleted(3211),
+),
+CoursesExModel(
+  id: 3212,
+  exerciseName: "练习13：route params in link",
+  productID: "com.mrrubik.learnswift.reactex3212",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3212),
+  completed: purchaseManagerHive.getCompleted(3212),
+),
+CoursesExModel(
+  id: 3213,
+  exerciseName: "挑战14：route path",
+  productID: "com.mrrubik.learnswift.reactex3213",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3213),
+  completed: purchaseManagerHive.getCompleted(3213),
+),
+CoursesExModel(
+  id: 3214,
+  exerciseName: "练习15：not found route",
+  productID: "com.mrrubik.learnswift.reactex3214",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3214),
+  completed: purchaseManagerHive.getCompleted(3214),
+),
+
+];

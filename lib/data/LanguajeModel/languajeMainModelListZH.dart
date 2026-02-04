@@ -9,6 +9,7 @@ import 'package:learnswift/data/mainModel/Flutter/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Kotlin/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/PHP/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/Ruby/CoursesMainModelListZH.dart';
+import 'package:learnswift/data/mainModel/React/CoursesMainModelListZH.dart';
 import 'package:learnswift/data/mainModel/SQL/CoursesMainModelListZH.dart';
 
 import '../mainModel/COBOL/CoursesMainModelListZH.dart';
@@ -183,10 +184,10 @@ final List<ProgrammingItem> programmingItemsZH = [
     name: 'React',
     productID: 'com.mrrubik.learnswift.react',
     alreadyBuy: languagePurchaseManagerHive.getLanguagePurchasedFalse(14),
-    coursesList: [],
+    coursesList: coursesReactMainModelListZH,
     color1: Color(0xFF61DAFB),
     color2: Color(0xFF20232A),
-    isActive: false,
+    isActive: true,
     description: 'CodeCrafters: React 教授最流行的库，用于构建动态现代的用户界面。\n\n版本: React 18',
   ),
   ProgrammingItem(

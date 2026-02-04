@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactFormsModelZH = [
+CoursesExModel(
+  id: 3140,
+  exerciseName: "练习1：controlled input",
+  productID: "com.mrrubik.learnswift.reactex3140",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3140),
+  completed: purchaseManagerHive.getCompleted(3140),
+),
+CoursesExModel(
+  id: 3141,
+  exerciseName: "挑战2：form submit",
+  productID: "com.mrrubik.learnswift.reactex3141",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3141),
+  completed: purchaseManagerHive.getCompleted(3141),
+),
+CoursesExModel(
+  id: 3142,
+  exerciseName: "练习3：textarea",
+  productID: "com.mrrubik.learnswift.reactex3142",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3142),
+  completed: purchaseManagerHive.getCompleted(3142),
+),
+CoursesExModel(
+  id: 3143,
+  exerciseName: "挑战4：select",
+  productID: "com.mrrubik.learnswift.reactex3143",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3143),
+  completed: purchaseManagerHive.getCompleted(3143),
+),
+CoursesExModel(
+  id: 3144,
+  exerciseName: "练习5：checkbox",
+  productID: "com.mrrubik.learnswift.reactex3144",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3144),
+  completed: purchaseManagerHive.getCompleted(3144),
+),
+CoursesExModel(
+  id: 3145,
+  exerciseName: "挑战6：radio",
+  productID: "com.mrrubik.learnswift.reactex3145",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3145),
+  completed: purchaseManagerHive.getCompleted(3145),
+),
+CoursesExModel(
+  id: 3146,
+  exerciseName: "练习7：input number",
+  productID: "com.mrrubik.learnswift.reactex3146",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3146),
+  completed: purchaseManagerHive.getCompleted(3146),
+),
+CoursesExModel(
+  id: 3147,
+  exerciseName: "挑战8：password input",
+  productID: "com.mrrubik.learnswift.reactex3147",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3147),
+  completed: purchaseManagerHive.getCompleted(3147),
+),
+CoursesExModel(
+  id: 3148,
+  exerciseName: "练习9：form validation",
+  productID: "com.mrrubik.learnswift.reactex3148",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3148),
+  completed: purchaseManagerHive.getCompleted(3148),
+),
+CoursesExModel(
+  id: 3149,
+  exerciseName: "挑战10：reset form",
+  productID: "com.mrrubik.learnswift.reactex3149",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3149),
+  completed: purchaseManagerHive.getCompleted(3149),
+),
+CoursesExModel(
+  id: 3150,
+  exerciseName: "练习11：onBlur validate",
+  productID: "com.mrrubik.learnswift.reactex3150",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3150),
+  completed: purchaseManagerHive.getCompleted(3150),
+),
+CoursesExModel(
+  id: 3151,
+  exerciseName: "挑战12：controlled checkbox list",
+  productID: "com.mrrubik.learnswift.reactex3151",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3151),
+  completed: purchaseManagerHive.getCompleted(3151),
+),
+CoursesExModel(
+  id: 3152,
+  exerciseName: "练习13：file input",
+  productID: "com.mrrubik.learnswift.reactex3152",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3152),
+  completed: purchaseManagerHive.getCompleted(3152),
+),
+CoursesExModel(
+  id: 3153,
+  exerciseName: "挑战14：disable submit",
+  productID: "com.mrrubik.learnswift.reactex3153",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3153),
+  completed: purchaseManagerHive.getCompleted(3153),
+),
+CoursesExModel(
+  id: 3154,
+  exerciseName: "练习15：input with name",
+  productID: "com.mrrubik.learnswift.reactex3154",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3154),
+  completed: purchaseManagerHive.getCompleted(3154),
+),
+
+];

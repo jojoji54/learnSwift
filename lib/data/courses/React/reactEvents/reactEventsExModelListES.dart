@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactEventsModelES = [
+CoursesExModel(
+  id: 3095,
+  exerciseName: "Ejercicio 1: onClick handler",
+  productID: "com.mrrubik.learnswift.reactex3095",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3095),
+  completed: purchaseManagerHive.getCompleted(3095),
+),
+CoursesExModel(
+  id: 3096,
+  exerciseName: "Desafío 2: onChange input",
+  productID: "com.mrrubik.learnswift.reactex3096",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3096),
+  completed: purchaseManagerHive.getCompleted(3096),
+),
+CoursesExModel(
+  id: 3097,
+  exerciseName: "Ejercicio 3: onSubmit form",
+  productID: "com.mrrubik.learnswift.reactex3097",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3097),
+  completed: purchaseManagerHive.getCompleted(3097),
+),
+CoursesExModel(
+  id: 3098,
+  exerciseName: "Desafío 4: onKeyDown",
+  productID: "com.mrrubik.learnswift.reactex3098",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3098),
+  completed: purchaseManagerHive.getCompleted(3098),
+),
+CoursesExModel(
+  id: 3099,
+  exerciseName: "Ejercicio 5: onFocus",
+  productID: "com.mrrubik.learnswift.reactex3099",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3099),
+  completed: purchaseManagerHive.getCompleted(3099),
+),
+CoursesExModel(
+  id: 3100,
+  exerciseName: "Desafío 6: onBlur",
+  productID: "com.mrrubik.learnswift.reactex3100",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3100),
+  completed: purchaseManagerHive.getCompleted(3100),
+),
+CoursesExModel(
+  id: 3101,
+  exerciseName: "Ejercicio 7: onMouseEnter",
+  productID: "com.mrrubik.learnswift.reactex3101",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3101),
+  completed: purchaseManagerHive.getCompleted(3101),
+),
+CoursesExModel(
+  id: 3102,
+  exerciseName: "Desafío 8: onMouseLeave",
+  productID: "com.mrrubik.learnswift.reactex3102",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3102),
+  completed: purchaseManagerHive.getCompleted(3102),
+),
+CoursesExModel(
+  id: 3103,
+  exerciseName: "Ejercicio 9: event argument",
+  productID: "com.mrrubik.learnswift.reactex3103",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3103),
+  completed: purchaseManagerHive.getCompleted(3103),
+),
+CoursesExModel(
+  id: 3104,
+  exerciseName: "Desafío 10: pass parameter",
+  productID: "com.mrrubik.learnswift.reactex3104",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3104),
+  completed: purchaseManagerHive.getCompleted(3104),
+),
+CoursesExModel(
+  id: 3105,
+  exerciseName: "Ejercicio 11: stop propagation",
+  productID: "com.mrrubik.learnswift.reactex3105",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3105),
+  completed: purchaseManagerHive.getCompleted(3105),
+),
+CoursesExModel(
+  id: 3106,
+  exerciseName: "Desafío 12: checkbox change",
+  productID: "com.mrrubik.learnswift.reactex3106",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3106),
+  completed: purchaseManagerHive.getCompleted(3106),
+),
+CoursesExModel(
+  id: 3107,
+  exerciseName: "Ejercicio 13: double click",
+  productID: "com.mrrubik.learnswift.reactex3107",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3107),
+  completed: purchaseManagerHive.getCompleted(3107),
+),
+CoursesExModel(
+  id: 3108,
+  exerciseName: "Desafío 14: wheel event",
+  productID: "com.mrrubik.learnswift.reactex3108",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3108),
+  completed: purchaseManagerHive.getCompleted(3108),
+),
+CoursesExModel(
+  id: 3109,
+  exerciseName: "Ejercicio 15: touch start",
+  productID: "com.mrrubik.learnswift.reactex3109",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3109),
+  completed: purchaseManagerHive.getCompleted(3109),
+),
+
+];

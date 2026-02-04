@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactDataModelES = [
+CoursesExModel(
+  id: 3215,
+  exerciseName: "Ejercicio 1: fetch data",
+  productID: "com.mrrubik.learnswift.reactex3215",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3215),
+  completed: purchaseManagerHive.getCompleted(3215),
+),
+CoursesExModel(
+  id: 3216,
+  exerciseName: "Desafío 2: async await",
+  productID: "com.mrrubik.learnswift.reactex3216",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3216),
+  completed: purchaseManagerHive.getCompleted(3216),
+),
+CoursesExModel(
+  id: 3217,
+  exerciseName: "Ejercicio 3: loading state",
+  productID: "com.mrrubik.learnswift.reactex3217",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3217),
+  completed: purchaseManagerHive.getCompleted(3217),
+),
+CoursesExModel(
+  id: 3218,
+  exerciseName: "Desafío 4: error state",
+  productID: "com.mrrubik.learnswift.reactex3218",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3218),
+  completed: purchaseManagerHive.getCompleted(3218),
+),
+CoursesExModel(
+  id: 3219,
+  exerciseName: "Ejercicio 5: useEffect fetch",
+  productID: "com.mrrubik.learnswift.reactex3219",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3219),
+  completed: purchaseManagerHive.getCompleted(3219),
+),
+CoursesExModel(
+  id: 3220,
+  exerciseName: "Desafío 6: abort controller",
+  productID: "com.mrrubik.learnswift.reactex3220",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3220),
+  completed: purchaseManagerHive.getCompleted(3220),
+),
+CoursesExModel(
+  id: 3221,
+  exerciseName: "Ejercicio 7: set data",
+  productID: "com.mrrubik.learnswift.reactex3221",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3221),
+  completed: purchaseManagerHive.getCompleted(3221),
+),
+CoursesExModel(
+  id: 3222,
+  exerciseName: "Desafío 8: try catch",
+  productID: "com.mrrubik.learnswift.reactex3222",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3222),
+  completed: purchaseManagerHive.getCompleted(3222),
+),
+CoursesExModel(
+  id: 3223,
+  exerciseName: "Ejercicio 9: json parse",
+  productID: "com.mrrubik.learnswift.reactex3223",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3223),
+  completed: purchaseManagerHive.getCompleted(3223),
+),
+CoursesExModel(
+  id: 3224,
+  exerciseName: "Desafío 10: headers",
+  productID: "com.mrrubik.learnswift.reactex3224",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3224),
+  completed: purchaseManagerHive.getCompleted(3224),
+),
+CoursesExModel(
+  id: 3225,
+  exerciseName: "Ejercicio 11: post request",
+  productID: "com.mrrubik.learnswift.reactex3225",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3225),
+  completed: purchaseManagerHive.getCompleted(3225),
+),
+CoursesExModel(
+  id: 3226,
+  exerciseName: "Desafío 12: query params",
+  productID: "com.mrrubik.learnswift.reactex3226",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3226),
+  completed: purchaseManagerHive.getCompleted(3226),
+),
+CoursesExModel(
+  id: 3227,
+  exerciseName: "Ejercicio 13: loading UI",
+  productID: "com.mrrubik.learnswift.reactex3227",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3227),
+  completed: purchaseManagerHive.getCompleted(3227),
+),
+CoursesExModel(
+  id: 3228,
+  exerciseName: "Desafío 14: error UI",
+  productID: "com.mrrubik.learnswift.reactex3228",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3228),
+  completed: purchaseManagerHive.getCompleted(3228),
+),
+CoursesExModel(
+  id: 3229,
+  exerciseName: "Ejercicio 15: cache data",
+  productID: "com.mrrubik.learnswift.reactex3229",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3229),
+  completed: purchaseManagerHive.getCompleted(3229),
+),
+
+];

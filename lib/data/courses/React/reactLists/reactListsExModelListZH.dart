@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactListsModelZH = [
+CoursesExModel(
+  id: 3110,
+  exerciseName: "练习1：map list",
+  productID: "com.mrrubik.learnswift.reactex3110",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3110),
+  completed: purchaseManagerHive.getCompleted(3110),
+),
+CoursesExModel(
+  id: 3111,
+  exerciseName: "挑战2：list from objects",
+  productID: "com.mrrubik.learnswift.reactex3111",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3111),
+  completed: purchaseManagerHive.getCompleted(3111),
+),
+CoursesExModel(
+  id: 3112,
+  exerciseName: "练习3：index key",
+  productID: "com.mrrubik.learnswift.reactex3112",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3112),
+  completed: purchaseManagerHive.getCompleted(3112),
+),
+CoursesExModel(
+  id: 3113,
+  exerciseName: "挑战4：filter then map",
+  productID: "com.mrrubik.learnswift.reactex3113",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3113),
+  completed: purchaseManagerHive.getCompleted(3113),
+),
+CoursesExModel(
+  id: 3114,
+  exerciseName: "练习5：render empty state",
+  productID: "com.mrrubik.learnswift.reactex3114",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3114),
+  completed: purchaseManagerHive.getCompleted(3114),
+),
+CoursesExModel(
+  id: 3115,
+  exerciseName: "挑战6：list component",
+  productID: "com.mrrubik.learnswift.reactex3115",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3115),
+  completed: purchaseManagerHive.getCompleted(3115),
+),
+CoursesExModel(
+  id: 3116,
+  exerciseName: "练习7：map with button",
+  productID: "com.mrrubik.learnswift.reactex3116",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3116),
+  completed: purchaseManagerHive.getCompleted(3116),
+),
+CoursesExModel(
+  id: 3117,
+  exerciseName: "挑战8：render nested list",
+  productID: "com.mrrubik.learnswift.reactex3117",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3117),
+  completed: purchaseManagerHive.getCompleted(3117),
+),
+CoursesExModel(
+  id: 3118,
+  exerciseName: "练习9：unique key",
+  productID: "com.mrrubik.learnswift.reactex3118",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3118),
+  completed: purchaseManagerHive.getCompleted(3118),
+),
+CoursesExModel(
+  id: 3119,
+  exerciseName: "挑战10：map with fragment",
+  productID: "com.mrrubik.learnswift.reactex3119",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3119),
+  completed: purchaseManagerHive.getCompleted(3119),
+),
+CoursesExModel(
+  id: 3120,
+  exerciseName: "练习11：render list length",
+  productID: "com.mrrubik.learnswift.reactex3120",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3120),
+  completed: purchaseManagerHive.getCompleted(3120),
+),
+CoursesExModel(
+  id: 3121,
+  exerciseName: "挑战12：sorted list",
+  productID: "com.mrrubik.learnswift.reactex3121",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3121),
+  completed: purchaseManagerHive.getCompleted(3121),
+),
+CoursesExModel(
+  id: 3122,
+  exerciseName: "练习13：map with index label",
+  productID: "com.mrrubik.learnswift.reactex3122",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3122),
+  completed: purchaseManagerHive.getCompleted(3122),
+),
+CoursesExModel(
+  id: 3123,
+  exerciseName: "挑战14：table rows",
+  productID: "com.mrrubik.learnswift.reactex3123",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3123),
+  completed: purchaseManagerHive.getCompleted(3123),
+),
+CoursesExModel(
+  id: 3124,
+  exerciseName: "练习15：render tags",
+  productID: "com.mrrubik.learnswift.reactex3124",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3124),
+  completed: purchaseManagerHive.getCompleted(3124),
+),
+
+];

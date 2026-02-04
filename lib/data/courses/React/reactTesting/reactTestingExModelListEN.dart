@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactTestingModelEN = [
+CoursesExModel(
+  id: 3245,
+  exerciseName: "Exercise 1: render component",
+  productID: "com.mrrubik.learnswift.reactex3245",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3245),
+  completed: purchaseManagerHive.getCompleted(3245),
+),
+CoursesExModel(
+  id: 3246,
+  exerciseName: "Challenge 2: getByText",
+  productID: "com.mrrubik.learnswift.reactex3246",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3246),
+  completed: purchaseManagerHive.getCompleted(3246),
+),
+CoursesExModel(
+  id: 3247,
+  exerciseName: "Exercise 3: queryByText",
+  productID: "com.mrrubik.learnswift.reactex3247",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3247),
+  completed: purchaseManagerHive.getCompleted(3247),
+),
+CoursesExModel(
+  id: 3248,
+  exerciseName: "Challenge 4: fireEvent click",
+  productID: "com.mrrubik.learnswift.reactex3248",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3248),
+  completed: purchaseManagerHive.getCompleted(3248),
+),
+CoursesExModel(
+  id: 3249,
+  exerciseName: "Exercise 5: userEvent type",
+  productID: "com.mrrubik.learnswift.reactex3249",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3249),
+  completed: purchaseManagerHive.getCompleted(3249),
+),
+CoursesExModel(
+  id: 3250,
+  exerciseName: "Challenge 6: expect in document",
+  productID: "com.mrrubik.learnswift.reactex3250",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3250),
+  completed: purchaseManagerHive.getCompleted(3250),
+),
+CoursesExModel(
+  id: 3251,
+  exerciseName: "Exercise 7: jest fn",
+  productID: "com.mrrubik.learnswift.reactex3251",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3251),
+  completed: purchaseManagerHive.getCompleted(3251),
+),
+CoursesExModel(
+  id: 3252,
+  exerciseName: "Challenge 8: mock handler",
+  productID: "com.mrrubik.learnswift.reactex3252",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3252),
+  completed: purchaseManagerHive.getCompleted(3252),
+),
+CoursesExModel(
+  id: 3253,
+  exerciseName: "Exercise 9: findByText",
+  productID: "com.mrrubik.learnswift.reactex3253",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3253),
+  completed: purchaseManagerHive.getCompleted(3253),
+),
+CoursesExModel(
+  id: 3254,
+  exerciseName: "Challenge 10: getByRole",
+  productID: "com.mrrubik.learnswift.reactex3254",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3254),
+  completed: purchaseManagerHive.getCompleted(3254),
+),
+CoursesExModel(
+  id: 3255,
+  exerciseName: "Exercise 11: getByLabelText",
+  productID: "com.mrrubik.learnswift.reactex3255",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3255),
+  completed: purchaseManagerHive.getCompleted(3255),
+),
+CoursesExModel(
+  id: 3256,
+  exerciseName: "Challenge 12: snapshot",
+  productID: "com.mrrubik.learnswift.reactex3256",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3256),
+  completed: purchaseManagerHive.getCompleted(3256),
+),
+CoursesExModel(
+  id: 3257,
+  exerciseName: "Exercise 13: cleanup",
+  productID: "com.mrrubik.learnswift.reactex3257",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3257),
+  completed: purchaseManagerHive.getCompleted(3257),
+),
+CoursesExModel(
+  id: 3258,
+  exerciseName: "Challenge 14: test block",
+  productID: "com.mrrubik.learnswift.reactex3258",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3258),
+  completed: purchaseManagerHive.getCompleted(3258),
+),
+CoursesExModel(
+  id: 3259,
+  exerciseName: "Exercise 15: describe block",
+  productID: "com.mrrubik.learnswift.reactex3259",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3259),
+  completed: purchaseManagerHive.getCompleted(3259),
+),
+
+];

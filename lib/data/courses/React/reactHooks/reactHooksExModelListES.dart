@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactHooksModelES = [
+CoursesExModel(
+  id: 3185,
+  exerciseName: "Ejercicio 1: custom hook useToggle",
+  productID: "com.mrrubik.learnswift.reactex3185",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3185),
+  completed: purchaseManagerHive.getCompleted(3185),
+),
+CoursesExModel(
+  id: 3186,
+  exerciseName: "Desafío 2: custom hook useCounter",
+  productID: "com.mrrubik.learnswift.reactex3186",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3186),
+  completed: purchaseManagerHive.getCompleted(3186),
+),
+CoursesExModel(
+  id: 3187,
+  exerciseName: "Ejercicio 3: custom hook useFetch",
+  productID: "com.mrrubik.learnswift.reactex3187",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3187),
+  completed: purchaseManagerHive.getCompleted(3187),
+),
+CoursesExModel(
+  id: 3188,
+  exerciseName: "Desafío 4: custom hook useLocalStorage",
+  productID: "com.mrrubik.learnswift.reactex3188",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3188),
+  completed: purchaseManagerHive.getCompleted(3188),
+),
+CoursesExModel(
+  id: 3189,
+  exerciseName: "Ejercicio 5: custom hook usePrevious",
+  productID: "com.mrrubik.learnswift.reactex3189",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3189),
+  completed: purchaseManagerHive.getCompleted(3189),
+),
+CoursesExModel(
+  id: 3190,
+  exerciseName: "Desafío 6: custom hook useDebounce",
+  productID: "com.mrrubik.learnswift.reactex3190",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3190),
+  completed: purchaseManagerHive.getCompleted(3190),
+),
+CoursesExModel(
+  id: 3191,
+  exerciseName: "Ejercicio 7: custom hook useWindowSize",
+  productID: "com.mrrubik.learnswift.reactex3191",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3191),
+  completed: purchaseManagerHive.getCompleted(3191),
+),
+CoursesExModel(
+  id: 3192,
+  exerciseName: "Desafío 8: hook returns value",
+  productID: "com.mrrubik.learnswift.reactex3192",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3192),
+  completed: purchaseManagerHive.getCompleted(3192),
+),
+CoursesExModel(
+  id: 3193,
+  exerciseName: "Ejercicio 9: hook returns tuple",
+  productID: "com.mrrubik.learnswift.reactex3193",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3193),
+  completed: purchaseManagerHive.getCompleted(3193),
+),
+CoursesExModel(
+  id: 3194,
+  exerciseName: "Desafío 10: hook with params",
+  productID: "com.mrrubik.learnswift.reactex3194",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3194),
+  completed: purchaseManagerHive.getCompleted(3194),
+),
+CoursesExModel(
+  id: 3195,
+  exerciseName: "Ejercicio 11: hook with effect",
+  productID: "com.mrrubik.learnswift.reactex3195",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3195),
+  completed: purchaseManagerHive.getCompleted(3195),
+),
+CoursesExModel(
+  id: 3196,
+  exerciseName: "Desafío 12: hook with ref",
+  productID: "com.mrrubik.learnswift.reactex3196",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3196),
+  completed: purchaseManagerHive.getCompleted(3196),
+),
+CoursesExModel(
+  id: 3197,
+  exerciseName: "Ejercicio 13: hook with memo",
+  productID: "com.mrrubik.learnswift.reactex3197",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3197),
+  completed: purchaseManagerHive.getCompleted(3197),
+),
+CoursesExModel(
+  id: 3198,
+  exerciseName: "Desafío 14: hook with callback",
+  productID: "com.mrrubik.learnswift.reactex3198",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3198),
+  completed: purchaseManagerHive.getCompleted(3198),
+),
+CoursesExModel(
+  id: 3199,
+  exerciseName: "Ejercicio 15: hook useArray",
+  productID: "com.mrrubik.learnswift.reactex3199",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3199),
+  completed: purchaseManagerHive.getCompleted(3199),
+),
+
+];

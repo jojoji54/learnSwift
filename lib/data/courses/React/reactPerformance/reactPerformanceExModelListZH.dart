@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactPerformanceModelZH = [
+CoursesExModel(
+  id: 3230,
+  exerciseName: "练习1：React.memo",
+  productID: "com.mrrubik.learnswift.reactex3230",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3230),
+  completed: purchaseManagerHive.getCompleted(3230),
+),
+CoursesExModel(
+  id: 3231,
+  exerciseName: "挑战2：useMemo",
+  productID: "com.mrrubik.learnswift.reactex3231",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3231),
+  completed: purchaseManagerHive.getCompleted(3231),
+),
+CoursesExModel(
+  id: 3232,
+  exerciseName: "练习3：useCallback",
+  productID: "com.mrrubik.learnswift.reactex3232",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3232),
+  completed: purchaseManagerHive.getCompleted(3232),
+),
+CoursesExModel(
+  id: 3233,
+  exerciseName: "挑战4：lazy and Suspense",
+  productID: "com.mrrubik.learnswift.reactex3233",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3233),
+  completed: purchaseManagerHive.getCompleted(3233),
+),
+CoursesExModel(
+  id: 3234,
+  exerciseName: "练习5：memo with props",
+  productID: "com.mrrubik.learnswift.reactex3234",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3234),
+  completed: purchaseManagerHive.getCompleted(3234),
+),
+CoursesExModel(
+  id: 3235,
+  exerciseName: "挑战6：stable keys",
+  productID: "com.mrrubik.learnswift.reactex3235",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3235),
+  completed: purchaseManagerHive.getCompleted(3235),
+),
+CoursesExModel(
+  id: 3236,
+  exerciseName: "练习7：split component",
+  productID: "com.mrrubik.learnswift.reactex3236",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3236),
+  completed: purchaseManagerHive.getCompleted(3236),
+),
+CoursesExModel(
+  id: 3237,
+  exerciseName: "挑战8：avoid inline object",
+  productID: "com.mrrubik.learnswift.reactex3237",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3237),
+  completed: purchaseManagerHive.getCompleted(3237),
+),
+CoursesExModel(
+  id: 3238,
+  exerciseName: "练习9：useDeferredValue",
+  productID: "com.mrrubik.learnswift.reactex3238",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3238),
+  completed: purchaseManagerHive.getCompleted(3238),
+),
+CoursesExModel(
+  id: 3239,
+  exerciseName: "挑战10：useTransition",
+  productID: "com.mrrubik.learnswift.reactex3239",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3239),
+  completed: purchaseManagerHive.getCompleted(3239),
+),
+CoursesExModel(
+  id: 3240,
+  exerciseName: "练习11：memoized handler",
+  productID: "com.mrrubik.learnswift.reactex3240",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3240),
+  completed: purchaseManagerHive.getCompleted(3240),
+),
+CoursesExModel(
+  id: 3241,
+  exerciseName: "挑战12：memoized value",
+  productID: "com.mrrubik.learnswift.reactex3241",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3241),
+  completed: purchaseManagerHive.getCompleted(3241),
+),
+CoursesExModel(
+  id: 3242,
+  exerciseName: "练习13：lazy import",
+  productID: "com.mrrubik.learnswift.reactex3242",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3242),
+  completed: purchaseManagerHive.getCompleted(3242),
+),
+CoursesExModel(
+  id: 3243,
+  exerciseName: "挑战14：suspense fallback",
+  productID: "com.mrrubik.learnswift.reactex3243",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3243),
+  completed: purchaseManagerHive.getCompleted(3243),
+),
+CoursesExModel(
+  id: 3244,
+  exerciseName: "练习15：prevent re-render",
+  productID: "com.mrrubik.learnswift.reactex3244",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3244),
+  completed: purchaseManagerHive.getCompleted(3244),
+),
+
+];

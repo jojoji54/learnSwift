@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactContextModelZH = [
+CoursesExModel(
+  id: 3170,
+  exerciseName: "练习1：createContext",
+  productID: "com.mrrubik.learnswift.reactex3170",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3170),
+  completed: purchaseManagerHive.getCompleted(3170),
+),
+CoursesExModel(
+  id: 3171,
+  exerciseName: "挑战2：Provider value",
+  productID: "com.mrrubik.learnswift.reactex3171",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3171),
+  completed: purchaseManagerHive.getCompleted(3171),
+),
+CoursesExModel(
+  id: 3172,
+  exerciseName: "练习3：useContext",
+  productID: "com.mrrubik.learnswift.reactex3172",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3172),
+  completed: purchaseManagerHive.getCompleted(3172),
+),
+CoursesExModel(
+  id: 3173,
+  exerciseName: "挑战4：context in child",
+  productID: "com.mrrubik.learnswift.reactex3173",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3173),
+  completed: purchaseManagerHive.getCompleted(3173),
+),
+CoursesExModel(
+  id: 3174,
+  exerciseName: "练习5：nested provider",
+  productID: "com.mrrubik.learnswift.reactex3174",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3174),
+  completed: purchaseManagerHive.getCompleted(3174),
+),
+CoursesExModel(
+  id: 3175,
+  exerciseName: "挑战6：context default",
+  productID: "com.mrrubik.learnswift.reactex3175",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3175),
+  completed: purchaseManagerHive.getCompleted(3175),
+),
+CoursesExModel(
+  id: 3176,
+  exerciseName: "练习7：context value object",
+  productID: "com.mrrubik.learnswift.reactex3176",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3176),
+  completed: purchaseManagerHive.getCompleted(3176),
+),
+CoursesExModel(
+  id: 3177,
+  exerciseName: "挑战8：context hook",
+  productID: "com.mrrubik.learnswift.reactex3177",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3177),
+  completed: purchaseManagerHive.getCompleted(3177),
+),
+CoursesExModel(
+  id: 3178,
+  exerciseName: "练习9：context update",
+  productID: "com.mrrubik.learnswift.reactex3178",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3178),
+  completed: purchaseManagerHive.getCompleted(3178),
+),
+CoursesExModel(
+  id: 3179,
+  exerciseName: "挑战10：context with reducer",
+  productID: "com.mrrubik.learnswift.reactex3179",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3179),
+  completed: purchaseManagerHive.getCompleted(3179),
+),
+CoursesExModel(
+  id: 3180,
+  exerciseName: "练习11：context for theme",
+  productID: "com.mrrubik.learnswift.reactex3180",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3180),
+  completed: purchaseManagerHive.getCompleted(3180),
+),
+CoursesExModel(
+  id: 3181,
+  exerciseName: "挑战12：context for lang",
+  productID: "com.mrrubik.learnswift.reactex3181",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3181),
+  completed: purchaseManagerHive.getCompleted(3181),
+),
+CoursesExModel(
+  id: 3182,
+  exerciseName: "练习13：context for cart",
+  productID: "com.mrrubik.learnswift.reactex3182",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3182),
+  completed: purchaseManagerHive.getCompleted(3182),
+),
+CoursesExModel(
+  id: 3183,
+  exerciseName: "挑战14：context for user",
+  productID: "com.mrrubik.learnswift.reactex3183",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3183),
+  completed: purchaseManagerHive.getCompleted(3183),
+),
+CoursesExModel(
+  id: 3184,
+  exerciseName: "练习15：context for settings",
+  productID: "com.mrrubik.learnswift.reactex3184",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3184),
+  completed: purchaseManagerHive.getCompleted(3184),
+),
+
+];

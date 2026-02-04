@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactStylingModelEN = [
+CoursesExModel(
+  id: 3260,
+  exerciseName: "Exercise 1: className",
+  productID: "com.mrrubik.learnswift.reactex3260",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3260),
+  completed: purchaseManagerHive.getCompleted(3260),
+),
+CoursesExModel(
+  id: 3261,
+  exerciseName: "Challenge 2: inline style",
+  productID: "com.mrrubik.learnswift.reactex3261",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3261),
+  completed: purchaseManagerHive.getCompleted(3261),
+),
+CoursesExModel(
+  id: 3262,
+  exerciseName: "Exercise 3: style object",
+  productID: "com.mrrubik.learnswift.reactex3262",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3262),
+  completed: purchaseManagerHive.getCompleted(3262),
+),
+CoursesExModel(
+  id: 3263,
+  exerciseName: "Challenge 4: conditional class",
+  productID: "com.mrrubik.learnswift.reactex3263",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3263),
+  completed: purchaseManagerHive.getCompleted(3263),
+),
+CoursesExModel(
+  id: 3264,
+  exerciseName: "Exercise 5: multiple classes",
+  productID: "com.mrrubik.learnswift.reactex3264",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3264),
+  completed: purchaseManagerHive.getCompleted(3264),
+),
+CoursesExModel(
+  id: 3265,
+  exerciseName: "Challenge 6: CSS module",
+  productID: "com.mrrubik.learnswift.reactex3265",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3265),
+  completed: purchaseManagerHive.getCompleted(3265),
+),
+CoursesExModel(
+  id: 3266,
+  exerciseName: "Exercise 7: styled component",
+  productID: "com.mrrubik.learnswift.reactex3266",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3266),
+  completed: purchaseManagerHive.getCompleted(3266),
+),
+CoursesExModel(
+  id: 3267,
+  exerciseName: "Challenge 8: inline color",
+  productID: "com.mrrubik.learnswift.reactex3267",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3267),
+  completed: purchaseManagerHive.getCompleted(3267),
+),
+CoursesExModel(
+  id: 3268,
+  exerciseName: "Exercise 9: theme class",
+  productID: "com.mrrubik.learnswift.reactex3268",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3268),
+  completed: purchaseManagerHive.getCompleted(3268),
+),
+CoursesExModel(
+  id: 3269,
+  exerciseName: "Challenge 10: border style",
+  productID: "com.mrrubik.learnswift.reactex3269",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3269),
+  completed: purchaseManagerHive.getCompleted(3269),
+),
+CoursesExModel(
+  id: 3270,
+  exerciseName: "Exercise 11: font size",
+  productID: "com.mrrubik.learnswift.reactex3270",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3270),
+  completed: purchaseManagerHive.getCompleted(3270),
+),
+CoursesExModel(
+  id: 3271,
+  exerciseName: "Challenge 12: flex style",
+  productID: "com.mrrubik.learnswift.reactex3271",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3271),
+  completed: purchaseManagerHive.getCompleted(3271),
+),
+CoursesExModel(
+  id: 3272,
+  exerciseName: "Exercise 13: gap style",
+  productID: "com.mrrubik.learnswift.reactex3272",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3272),
+  completed: purchaseManagerHive.getCompleted(3272),
+),
+CoursesExModel(
+  id: 3273,
+  exerciseName: "Challenge 14: padding class",
+  productID: "com.mrrubik.learnswift.reactex3273",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3273),
+  completed: purchaseManagerHive.getCompleted(3273),
+),
+CoursesExModel(
+  id: 3274,
+  exerciseName: "Exercise 15: dark mode",
+  productID: "com.mrrubik.learnswift.reactex3274",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3274),
+  completed: purchaseManagerHive.getCompleted(3274),
+),
+
+];

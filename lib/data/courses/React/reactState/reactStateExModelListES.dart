@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactStateModelES = [
+CoursesExModel(
+  id: 3080,
+  exerciseName: "Ejercicio 1: useState counter",
+  productID: "com.mrrubik.learnswift.reactex3080",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3080),
+  completed: purchaseManagerHive.getCompleted(3080),
+),
+CoursesExModel(
+  id: 3081,
+  exerciseName: "Desafío 2: useState text input",
+  productID: "com.mrrubik.learnswift.reactex3081",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3081),
+  completed: purchaseManagerHive.getCompleted(3081),
+),
+CoursesExModel(
+  id: 3082,
+  exerciseName: "Ejercicio 3: boolean toggle",
+  productID: "com.mrrubik.learnswift.reactex3082",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3082),
+  completed: purchaseManagerHive.getCompleted(3082),
+),
+CoursesExModel(
+  id: 3083,
+  exerciseName: "Desafío 4: object state update",
+  productID: "com.mrrubik.learnswift.reactex3083",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3083),
+  completed: purchaseManagerHive.getCompleted(3083),
+),
+CoursesExModel(
+  id: 3084,
+  exerciseName: "Ejercicio 5: array state update",
+  productID: "com.mrrubik.learnswift.reactex3084",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3084),
+  completed: purchaseManagerHive.getCompleted(3084),
+),
+CoursesExModel(
+  id: 3085,
+  exerciseName: "Desafío 6: reset state",
+  productID: "com.mrrubik.learnswift.reactex3085",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3085),
+  completed: purchaseManagerHive.getCompleted(3085),
+),
+CoursesExModel(
+  id: 3086,
+  exerciseName: "Ejercicio 7: lazy init",
+  productID: "com.mrrubik.learnswift.reactex3086",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3086),
+  completed: purchaseManagerHive.getCompleted(3086),
+),
+CoursesExModel(
+  id: 3087,
+  exerciseName: "Desafío 8: multiple states",
+  productID: "com.mrrubik.learnswift.reactex3087",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3087),
+  completed: purchaseManagerHive.getCompleted(3087),
+),
+CoursesExModel(
+  id: 3088,
+  exerciseName: "Ejercicio 9: update with prev",
+  productID: "com.mrrubik.learnswift.reactex3088",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3088),
+  completed: purchaseManagerHive.getCompleted(3088),
+),
+CoursesExModel(
+  id: 3089,
+  exerciseName: "Desafío 10: derived value",
+  productID: "com.mrrubik.learnswift.reactex3089",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3089),
+  completed: purchaseManagerHive.getCompleted(3089),
+),
+CoursesExModel(
+  id: 3090,
+  exerciseName: "Ejercicio 11: theme state",
+  productID: "com.mrrubik.learnswift.reactex3090",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3090),
+  completed: purchaseManagerHive.getCompleted(3090),
+),
+CoursesExModel(
+  id: 3091,
+  exerciseName: "Desafío 12: step state",
+  productID: "com.mrrubik.learnswift.reactex3091",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3091),
+  completed: purchaseManagerHive.getCompleted(3091),
+),
+CoursesExModel(
+  id: 3092,
+  exerciseName: "Ejercicio 13: numeric input",
+  productID: "com.mrrubik.learnswift.reactex3092",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3092),
+  completed: purchaseManagerHive.getCompleted(3092),
+),
+CoursesExModel(
+  id: 3093,
+  exerciseName: "Desafío 14: id state",
+  productID: "com.mrrubik.learnswift.reactex3093",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3093),
+  completed: purchaseManagerHive.getCompleted(3093),
+),
+CoursesExModel(
+  id: 3094,
+  exerciseName: "Ejercicio 15: rating state",
+  productID: "com.mrrubik.learnswift.reactex3094",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3094),
+  completed: purchaseManagerHive.getCompleted(3094),
+),
+
+];

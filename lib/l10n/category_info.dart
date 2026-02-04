@@ -367,6 +367,36 @@ class CategoryInfoL10n {
         return loc.flutterCat13InfoTitle;
       case 'flutterCat14InfoTitle':
         return loc.flutterCat14InfoTitle;
+      case 'reactCat0InfoTitle':
+        return loc.reactCat0InfoTitle;
+      case 'reactCat1InfoTitle':
+        return loc.reactCat1InfoTitle;
+      case 'reactCat2InfoTitle':
+        return loc.reactCat2InfoTitle;
+      case 'reactCat3InfoTitle':
+        return loc.reactCat3InfoTitle;
+      case 'reactCat4InfoTitle':
+        return loc.reactCat4InfoTitle;
+      case 'reactCat5InfoTitle':
+        return loc.reactCat5InfoTitle;
+      case 'reactCat6InfoTitle':
+        return loc.reactCat6InfoTitle;
+      case 'reactCat7InfoTitle':
+        return loc.reactCat7InfoTitle;
+      case 'reactCat8InfoTitle':
+        return loc.reactCat8InfoTitle;
+      case 'reactCat9InfoTitle':
+        return loc.reactCat9InfoTitle;
+      case 'reactCat10InfoTitle':
+        return loc.reactCat10InfoTitle;
+      case 'reactCat11InfoTitle':
+        return loc.reactCat11InfoTitle;
+      case 'reactCat12InfoTitle':
+        return loc.reactCat12InfoTitle;
+      case 'reactCat13InfoTitle':
+        return loc.reactCat13InfoTitle;
+      case 'reactCat14InfoTitle':
+        return loc.reactCat14InfoTitle;
       default:
         return key;
     }
@@ -738,6 +768,36 @@ class CategoryInfoL10n {
         return loc.flutterCat13InfoContent;
       case 'flutterCat14InfoContent':
         return loc.flutterCat14InfoContent;
+      case 'reactCat0InfoContent':
+        return loc.reactCat0InfoContent;
+      case 'reactCat1InfoContent':
+        return loc.reactCat1InfoContent;
+      case 'reactCat2InfoContent':
+        return loc.reactCat2InfoContent;
+      case 'reactCat3InfoContent':
+        return loc.reactCat3InfoContent;
+      case 'reactCat4InfoContent':
+        return loc.reactCat4InfoContent;
+      case 'reactCat5InfoContent':
+        return loc.reactCat5InfoContent;
+      case 'reactCat6InfoContent':
+        return loc.reactCat6InfoContent;
+      case 'reactCat7InfoContent':
+        return loc.reactCat7InfoContent;
+      case 'reactCat8InfoContent':
+        return loc.reactCat8InfoContent;
+      case 'reactCat9InfoContent':
+        return loc.reactCat9InfoContent;
+      case 'reactCat10InfoContent':
+        return loc.reactCat10InfoContent;
+      case 'reactCat11InfoContent':
+        return loc.reactCat11InfoContent;
+      case 'reactCat12InfoContent':
+        return loc.reactCat12InfoContent;
+      case 'reactCat13InfoContent':
+        return loc.reactCat13InfoContent;
+      case 'reactCat14InfoContent':
+        return loc.reactCat14InfoContent;
       default:
         return key;
     }

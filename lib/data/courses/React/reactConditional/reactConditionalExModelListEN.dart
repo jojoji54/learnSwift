@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactConditionalModelEN = [
+CoursesExModel(
+  id: 3125,
+  exerciseName: "Exercise 1: ternary",
+  productID: "com.mrrubik.learnswift.reactex3125",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3125),
+  completed: purchaseManagerHive.getCompleted(3125),
+),
+CoursesExModel(
+  id: 3126,
+  exerciseName: "Challenge 2: and operator",
+  productID: "com.mrrubik.learnswift.reactex3126",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3126),
+  completed: purchaseManagerHive.getCompleted(3126),
+),
+CoursesExModel(
+  id: 3127,
+  exerciseName: "Exercise 3: early return",
+  productID: "com.mrrubik.learnswift.reactex3127",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3127),
+  completed: purchaseManagerHive.getCompleted(3127),
+),
+CoursesExModel(
+  id: 3128,
+  exerciseName: "Challenge 4: if else block",
+  productID: "com.mrrubik.learnswift.reactex3128",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3128),
+  completed: purchaseManagerHive.getCompleted(3128),
+),
+CoursesExModel(
+  id: 3129,
+  exerciseName: "Exercise 5: switch",
+  productID: "com.mrrubik.learnswift.reactex3129",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3129),
+  completed: purchaseManagerHive.getCompleted(3129),
+),
+CoursesExModel(
+  id: 3130,
+  exerciseName: "Challenge 6: render list or empty",
+  productID: "com.mrrubik.learnswift.reactex3130",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3130),
+  completed: purchaseManagerHive.getCompleted(3130),
+),
+CoursesExModel(
+  id: 3131,
+  exerciseName: "Exercise 7: toggle class",
+  productID: "com.mrrubik.learnswift.reactex3131",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3131),
+  completed: purchaseManagerHive.getCompleted(3131),
+),
+CoursesExModel(
+  id: 3132,
+  exerciseName: "Challenge 8: render button",
+  productID: "com.mrrubik.learnswift.reactex3132",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3132),
+  completed: purchaseManagerHive.getCompleted(3132),
+),
+CoursesExModel(
+  id: 3133,
+  exerciseName: "Exercise 9: show message",
+  productID: "com.mrrubik.learnswift.reactex3133",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3133),
+  completed: purchaseManagerHive.getCompleted(3133),
+),
+CoursesExModel(
+  id: 3134,
+  exerciseName: "Challenge 10: inline if",
+  productID: "com.mrrubik.learnswift.reactex3134",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3134),
+  completed: purchaseManagerHive.getCompleted(3134),
+),
+CoursesExModel(
+  id: 3135,
+  exerciseName: "Exercise 11: render loader",
+  productID: "com.mrrubik.learnswift.reactex3135",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3135),
+  completed: purchaseManagerHive.getCompleted(3135),
+),
+CoursesExModel(
+  id: 3136,
+  exerciseName: "Challenge 12: disable button",
+  productID: "com.mrrubik.learnswift.reactex3136",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3136),
+  completed: purchaseManagerHive.getCompleted(3136),
+),
+CoursesExModel(
+  id: 3137,
+  exerciseName: "Exercise 13: fallback UI",
+  productID: "com.mrrubik.learnswift.reactex3137",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3137),
+  completed: purchaseManagerHive.getCompleted(3137),
+),
+CoursesExModel(
+  id: 3138,
+  exerciseName: "Challenge 14: conditional component",
+  productID: "com.mrrubik.learnswift.reactex3138",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3138),
+  completed: purchaseManagerHive.getCompleted(3138),
+),
+CoursesExModel(
+  id: 3139,
+  exerciseName: "Exercise 15: conditional class list",
+  productID: "com.mrrubik.learnswift.reactex3139",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3139),
+  completed: purchaseManagerHive.getCompleted(3139),
+),
+
+];

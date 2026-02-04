@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactPropsModelES = [
+CoursesExModel(
+  id: 3065,
+  exerciseName: "Ejercicio 1: props: title text",
+  productID: "com.mrrubik.learnswift.reactex3065",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3065),
+  completed: purchaseManagerHive.getCompleted(3065),
+),
+CoursesExModel(
+  id: 3066,
+  exerciseName: "Desafío 2: props: price number",
+  productID: "com.mrrubik.learnswift.reactex3066",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3066),
+  completed: purchaseManagerHive.getCompleted(3066),
+),
+CoursesExModel(
+  id: 3067,
+  exerciseName: "Ejercicio 3: props: boolean flag",
+  productID: "com.mrrubik.learnswift.reactex3067",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3067),
+  completed: purchaseManagerHive.getCompleted(3067),
+),
+CoursesExModel(
+  id: 3068,
+  exerciseName: "Desafío 4: props: function handler",
+  productID: "com.mrrubik.learnswift.reactex3068",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3068),
+  completed: purchaseManagerHive.getCompleted(3068),
+),
+CoursesExModel(
+  id: 3069,
+  exerciseName: "Ejercicio 5: props: image url",
+  productID: "com.mrrubik.learnswift.reactex3069",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3069),
+  completed: purchaseManagerHive.getCompleted(3069),
+),
+CoursesExModel(
+  id: 3070,
+  exerciseName: "Desafío 6: props: object field",
+  productID: "com.mrrubik.learnswift.reactex3070",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3070),
+  completed: purchaseManagerHive.getCompleted(3070),
+),
+CoursesExModel(
+  id: 3071,
+  exerciseName: "Ejercicio 7: props: count label",
+  productID: "com.mrrubik.learnswift.reactex3071",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3071),
+  completed: purchaseManagerHive.getCompleted(3071),
+),
+CoursesExModel(
+  id: 3072,
+  exerciseName: "Desafío 8: props: default value",
+  productID: "com.mrrubik.learnswift.reactex3072",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3072),
+  completed: purchaseManagerHive.getCompleted(3072),
+),
+CoursesExModel(
+  id: 3073,
+  exerciseName: "Ejercicio 9: props: rename",
+  productID: "com.mrrubik.learnswift.reactex3073",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3073),
+  completed: purchaseManagerHive.getCompleted(3073),
+),
+CoursesExModel(
+  id: 3074,
+  exerciseName: "Desafío 10: props: children",
+  productID: "com.mrrubik.learnswift.reactex3074",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3074),
+  completed: purchaseManagerHive.getCompleted(3074),
+),
+CoursesExModel(
+  id: 3075,
+  exerciseName: "Ejercicio 11: props: spread",
+  productID: "com.mrrubik.learnswift.reactex3075",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3075),
+  completed: purchaseManagerHive.getCompleted(3075),
+),
+CoursesExModel(
+  id: 3076,
+  exerciseName: "Desafío 12: props: array length",
+  productID: "com.mrrubik.learnswift.reactex3076",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3076),
+  completed: purchaseManagerHive.getCompleted(3076),
+),
+CoursesExModel(
+  id: 3077,
+  exerciseName: "Ejercicio 13: props: className",
+  productID: "com.mrrubik.learnswift.reactex3077",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3077),
+  completed: purchaseManagerHive.getCompleted(3077),
+),
+CoursesExModel(
+  id: 3078,
+  exerciseName: "Desafío 14: props: drill to child",
+  productID: "com.mrrubik.learnswift.reactex3078",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3078),
+  completed: purchaseManagerHive.getCompleted(3078),
+),
+CoursesExModel(
+  id: 3079,
+  exerciseName: "Ejercicio 15: props: conditional label",
+  productID: "com.mrrubik.learnswift.reactex3079",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3079),
+  completed: purchaseManagerHive.getCompleted(3079),
+),
+
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactEffectsModelZH = [
+CoursesExModel(
+  id: 3155,
+  exerciseName: "练习1：useEffect once",
+  productID: "com.mrrubik.learnswift.reactex3155",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3155),
+  completed: purchaseManagerHive.getCompleted(3155),
+),
+CoursesExModel(
+  id: 3156,
+  exerciseName: "挑战2：useEffect dependency",
+  productID: "com.mrrubik.learnswift.reactex3156",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3156),
+  completed: purchaseManagerHive.getCompleted(3156),
+),
+CoursesExModel(
+  id: 3157,
+  exerciseName: "练习3：cleanup",
+  productID: "com.mrrubik.learnswift.reactex3157",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3157),
+  completed: purchaseManagerHive.getCompleted(3157),
+),
+CoursesExModel(
+  id: 3158,
+  exerciseName: "挑战4：fetch in effect",
+  productID: "com.mrrubik.learnswift.reactex3158",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3158),
+  completed: purchaseManagerHive.getCompleted(3158),
+),
+CoursesExModel(
+  id: 3159,
+  exerciseName: "练习5：interval",
+  productID: "com.mrrubik.learnswift.reactex3159",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3159),
+  completed: purchaseManagerHive.getCompleted(3159),
+),
+CoursesExModel(
+  id: 3160,
+  exerciseName: "挑战6：event listener",
+  productID: "com.mrrubik.learnswift.reactex3160",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3160),
+  completed: purchaseManagerHive.getCompleted(3160),
+),
+CoursesExModel(
+  id: 3161,
+  exerciseName: "练习7：scroll effect",
+  productID: "com.mrrubik.learnswift.reactex3161",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3161),
+  completed: purchaseManagerHive.getCompleted(3161),
+),
+CoursesExModel(
+  id: 3162,
+  exerciseName: "挑战8：set state in effect",
+  productID: "com.mrrubik.learnswift.reactex3162",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3162),
+  completed: purchaseManagerHive.getCompleted(3162),
+),
+CoursesExModel(
+  id: 3163,
+  exerciseName: "练习9：debounce",
+  productID: "com.mrrubik.learnswift.reactex3163",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3163),
+  completed: purchaseManagerHive.getCompleted(3163),
+),
+CoursesExModel(
+  id: 3164,
+  exerciseName: "挑战10：local storage",
+  productID: "com.mrrubik.learnswift.reactex3164",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3164),
+  completed: purchaseManagerHive.getCompleted(3164),
+),
+CoursesExModel(
+  id: 3165,
+  exerciseName: "练习11：sync prop",
+  productID: "com.mrrubik.learnswift.reactex3165",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3165),
+  completed: purchaseManagerHive.getCompleted(3165),
+),
+CoursesExModel(
+  id: 3166,
+  exerciseName: "挑战12：animation start",
+  productID: "com.mrrubik.learnswift.reactex3166",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3166),
+  completed: purchaseManagerHive.getCompleted(3166),
+),
+CoursesExModel(
+  id: 3167,
+  exerciseName: "练习13：fetch with async",
+  productID: "com.mrrubik.learnswift.reactex3167",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3167),
+  completed: purchaseManagerHive.getCompleted(3167),
+),
+CoursesExModel(
+  id: 3168,
+  exerciseName: "挑战14：document title",
+  productID: "com.mrrubik.learnswift.reactex3168",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3168),
+  completed: purchaseManagerHive.getCompleted(3168),
+),
+CoursesExModel(
+  id: 3169,
+  exerciseName: "练习15：log on change",
+  productID: "com.mrrubik.learnswift.reactex3169",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3169),
+  completed: purchaseManagerHive.getCompleted(3169),
+),
+
+];

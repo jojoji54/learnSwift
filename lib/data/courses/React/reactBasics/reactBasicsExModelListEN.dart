@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> reactBasicsModelEN = [
+CoursesExModel(
+  id: 3050,
+  exerciseName: "Exercise 1: JSX hello",
+  productID: "com.mrrubik.learnswift.reactex3050",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3050),
+  completed: purchaseManagerHive.getCompleted(3050),
+),
+CoursesExModel(
+  id: 3051,
+  exerciseName: "Challenge 2: function component",
+  productID: "com.mrrubik.learnswift.reactex3051",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3051),
+  completed: purchaseManagerHive.getCompleted(3051),
+),
+CoursesExModel(
+  id: 3052,
+  exerciseName: "Exercise 3: createRoot render",
+  productID: "com.mrrubik.learnswift.reactex3052",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3052),
+  completed: purchaseManagerHive.getCompleted(3052),
+),
+CoursesExModel(
+  id: 3053,
+  exerciseName: "Challenge 4: fragment shorthand",
+  productID: "com.mrrubik.learnswift.reactex3053",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3053),
+  completed: purchaseManagerHive.getCompleted(3053),
+),
+CoursesExModel(
+  id: 3054,
+  exerciseName: "Exercise 5: className attribute",
+  productID: "com.mrrubik.learnswift.reactex3054",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3054),
+  completed: purchaseManagerHive.getCompleted(3054),
+),
+CoursesExModel(
+  id: 3055,
+  exerciseName: "Challenge 6: JSX expression",
+  productID: "com.mrrubik.learnswift.reactex3055",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3055),
+  completed: purchaseManagerHive.getCompleted(3055),
+),
+CoursesExModel(
+  id: 3056,
+  exerciseName: "Exercise 7: self closing component",
+  productID: "com.mrrubik.learnswift.reactex3056",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3056),
+  completed: purchaseManagerHive.getCompleted(3056),
+),
+CoursesExModel(
+  id: 3057,
+  exerciseName: "Challenge 8: export default",
+  productID: "com.mrrubik.learnswift.reactex3057",
+  alreadyBuy: purchaseManagerHive.getPurchasedTrue(3057),
+  completed: purchaseManagerHive.getCompleted(3057),
+),
+CoursesExModel(
+  id: 3058,
+  exerciseName: "Exercise 9: React import",
+  productID: "com.mrrubik.learnswift.reactex3058",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3058),
+  completed: purchaseManagerHive.getCompleted(3058),
+),
+CoursesExModel(
+  id: 3059,
+  exerciseName: "Challenge 10: StrictMode wrapper",
+  productID: "com.mrrubik.learnswift.reactex3059",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3059),
+  completed: purchaseManagerHive.getCompleted(3059),
+),
+CoursesExModel(
+  id: 3060,
+  exerciseName: "Exercise 11: component composition",
+  productID: "com.mrrubik.learnswift.reactex3060",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3060),
+  completed: purchaseManagerHive.getCompleted(3060),
+),
+CoursesExModel(
+  id: 3061,
+  exerciseName: "Challenge 12: React.Fragment",
+  productID: "com.mrrubik.learnswift.reactex3061",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3061),
+  completed: purchaseManagerHive.getCompleted(3061),
+),
+CoursesExModel(
+  id: 3062,
+  exerciseName: "Exercise 13: label htmlFor",
+  productID: "com.mrrubik.learnswift.reactex3062",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3062),
+  completed: purchaseManagerHive.getCompleted(3062),
+),
+CoursesExModel(
+  id: 3063,
+  exerciseName: "Challenge 14: basic list in JSX",
+  productID: "com.mrrubik.learnswift.reactex3063",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3063),
+  completed: purchaseManagerHive.getCompleted(3063),
+),
+CoursesExModel(
+  id: 3064,
+  exerciseName: "Exercise 15: inline style",
+  productID: "com.mrrubik.learnswift.reactex3064",
+  alreadyBuy: purchaseManagerHive.getPurchasedFalse(3064),
+  completed: purchaseManagerHive.getCompleted(3064),
+),
+
+];

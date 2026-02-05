@@ -4,7 +4,8 @@ class L10n {
   static const List<Locale>  all = [
 
      Locale('en'),
-     Locale('es')
+     Locale('es'),
+     Locale.fromSubtags(languageCode: 'zh', scriptCode: 'Hans'),
    // const Locale('ja') ESTO ES LENGUAJE EN JAPO
   ];
 }

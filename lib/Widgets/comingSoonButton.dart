@@ -1,66 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:learnswift/data/Constant/Constant.dart';
 
-class ComingSoonButton extends StatefulWidget {
+class ComingSoonButton extends StatelessWidget {
   const ComingSoonButton({super.key});
 
-  @override
-  State<ComingSoonButton> createState() => _ComingSoonButtonState();
-}
-
-class _ComingSoonButtonState extends State<ComingSoonButton> {
-  final List<CourseModel> _coursesEN = [
-    CourseModel(id: 10, name: 'Classes and Structures'),
-    CourseModel(id: 11, name: 'Enumerations'),
-    CourseModel(id: 12, name: 'Protocols and Delegation'),
-    CourseModel(id: 13, name: 'Closures'),
-    CourseModel(id: 14, name: 'Error Handling'),
-    CourseModel(id: 15, name: 'Error Handling'),
-    CourseModel(id: 16, name: 'Advanced Swift'),
-    CourseModel(id: 17, name: 'Memory Management'),
-    CourseModel(id: 18, name: 'Working with Files and Data'),
-    CourseModel(id: 19, name: 'UI Basics (Bonus para Apps)'),
-  ];
-
-  final List<CourseModel> _coursesES = [
-    CourseModel(id: 5, name: 'Arreglos'),
-    CourseModel(id: 6, name: 'Diccionarios'),
-    CourseModel(id: 7, name: 'Conjuntos'),
-    CourseModel(id: 8, name: 'Funciones'),
-    CourseModel(id: 9, name: 'Opcionales'),
-    CourseModel(id: 10, name: 'Clases y Estructuras'),
-    CourseModel(id: 11, name: 'Enumeraciones'),
-    CourseModel(id: 12, name: 'Protocolos y Delegación'),
-    CourseModel(id: 13, name: 'Closures'),
-    CourseModel(id: 14, name: 'Manejo de Errores'),
-    CourseModel(id: 15, name: 'Manejo de Errores'),
-    CourseModel(id: 16, name: 'Swift Avanzado'),
-    CourseModel(id: 17, name: 'Gestión de Memoria'),
-    CourseModel(id: 18, name: 'Trabajo con Archivos y Datos'),
-    CourseModel(id: 19, name: 'Conceptos Básicos de UI\n(Bonus para Apps)'),
-  ];
-
-  List<CourseModel> data = [];
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    if (Constant.languaje == 'es') {
-      data = _coursesES;
-    } else {
-      data = _coursesEN;
-    }
-  }
+  List<CourseModel> _courses(AppLocalizations l10n) => [
+        CourseModel(id: 10, name: l10n.cs_classesAndStructures),
+        CourseModel(id: 11, name: l10n.cs_enumerations),
+        CourseModel(id: 12, name: l10n.cs_protocolsAndDelegation),
+        CourseModel(id: 13, name: l10n.cs_closures),
+        CourseModel(id: 14, name: l10n.cs_errorHandling),
+        CourseModel(id: 16, name: l10n.cs_advancedSwift),
+        CourseModel(id: 17, name: l10n.cs_memoryManagement),
+        CourseModel(id: 18, name: l10n.cs_filesAndData),
+        CourseModel(id: 19, name: l10n.cs_uiBasicsBonusApps),
+      ];
 
   void _showComingSoonDialog(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final courses = _courses(l10n);
+
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           title: Text(
-            AppLocalizations.of(context)!.comingSoonTitle,
+            l10n.comingSoonTitle,
             style: const TextStyle(
               fontFamily: 'InconsolataBold',
               fontWeight: FontWeight.bold,
@@ -71,7 +36,7 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  AppLocalizations.of(context)!.comingSoonButton,
+                  l10n.comingSoonBody, // 👈 mejor separar body del label
                   style: const TextStyle(
                     fontFamily: 'InconsolataRegular',
                     fontSize: 16,
@@ -81,23 +46,21 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
                 const SizedBox(height: 16),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: data.map((course) {
+                  children: courses.map((course) {
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 8.0),
                       child: Row(
                         children: [
-                          const Icon(
-                            Icons.circle,
-                            size: 8,
-                            color: Colors.black54,
-                          ),
+                          const Icon(Icons.circle, size: 8, color: Colors.black54),
                           const SizedBox(width: 8),
-                          Text(
-                            course.name,
-                            style: const TextStyle(
-                              fontFamily: 'InconsolataRegular',
-                              fontSize: 14,
-                              color: Colors.black87,
+                          Expanded(
+                            child: Text(
+                              course.name,
+                              style: const TextStyle(
+                                fontFamily: 'InconsolataRegular',
+                                fontSize: 14,
+                                color: Colors.black87,
+                              ),
                             ),
                           ),
                         ],
@@ -111,7 +74,7 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: Text(AppLocalizations.of(context)!.close),
+              child: Text(l10n.commonClose),
             ),
           ],
         );
@@ -121,34 +84,31 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(
-          width: 1, //                   <--- border width here
-        ),
+        border: Border.all(width: 1),
         borderRadius: BorderRadius.circular(10),
       ),
       child: ConstrainedBox(
         constraints: const BoxConstraints(
-          maxHeight: 120, // Limita la altura máxima del Card
-          maxWidth: 1000, // Limita el ancho máximo del Card
+          maxHeight: 120,
+          maxWidth: 1000,
           minWidth: 120,
         ),
         child: ElevatedButton(
-          onPressed: () {
-            _showComingSoonDialog(context);
-          },
+          onPressed: () => _showComingSoonDialog(context),
           style: ElevatedButton.styleFrom(
-            backgroundColor:
-                const Color(0xFFf3f4f2), // Fondo similar a las cards
+            backgroundColor: const Color(0xFFf3f4f2),
             elevation: 0,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20), // Bordes redondeados
+              borderRadius: BorderRadius.circular(20),
             ),
             padding: const EdgeInsets.symmetric(vertical: 16),
           ),
           child: Text(
-            AppLocalizations.of(context)!.comingSoonButton,
+            l10n.comingSoonButton, // label del botón
             style: const TextStyle(
               fontFamily: 'InconsolataBold',
               fontWeight: FontWeight.bold,
@@ -165,11 +125,9 @@ class _ComingSoonButtonState extends State<ComingSoonButton> {
 class CourseModel {
   final int id;
   final String name;
-  bool isChecked;
 
-  CourseModel({
+  const CourseModel({
     required this.id,
     required this.name,
-    this.isChecked = false,
   });
 }

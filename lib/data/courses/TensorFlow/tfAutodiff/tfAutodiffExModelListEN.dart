@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfAutodiffModelEN = [
+  CoursesExModel(
+    id: 5170,
+    exerciseName: "Exercise 1: First GradientTape",
+    productID: "com.mrrubik.learnswift.tensorflowex5170",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5170),
+    completed: purchaseManagerHive.getCompleted(5170),
+  ),
+  CoursesExModel(
+    id: 5171,
+    exerciseName: "Challenge 2: Watch a tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5171",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5171),
+    completed: purchaseManagerHive.getCompleted(5171),
+  ),
+  CoursesExModel(
+    id: 5172,
+    exerciseName: "Exercise 3: Persistent tape",
+    productID: "com.mrrubik.learnswift.tensorflowex5172",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5172),
+    completed: purchaseManagerHive.getCompleted(5172),
+  ),
+  CoursesExModel(
+    id: 5173,
+    exerciseName: "Challenge 4: Stop recording",
+    productID: "com.mrrubik.learnswift.tensorflowex5173",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5173),
+    completed: purchaseManagerHive.getCompleted(5173),
+  ),
+  CoursesExModel(
+    id: 5174,
+    exerciseName: "Exercise 5: Jacobian",
+    productID: "com.mrrubik.learnswift.tensorflowex5174",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5174),
+    completed: purchaseManagerHive.getCompleted(5174),
+  ),
+  CoursesExModel(
+    id: 5175,
+    exerciseName: "Challenge 6: Gradient of tf.sin",
+    productID: "com.mrrubik.learnswift.tensorflowex5175",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5175),
+    completed: purchaseManagerHive.getCompleted(5175),
+  ),
+  CoursesExModel(
+    id: 5176,
+    exerciseName: "Exercise 7: Compute a simple loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5176",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5176),
+    completed: purchaseManagerHive.getCompleted(5176),
+  ),
+  CoursesExModel(
+    id: 5177,
+    exerciseName: "Challenge 8: Get gradients for variables",
+    productID: "com.mrrubik.learnswift.tensorflowex5177",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5177),
+    completed: purchaseManagerHive.getCompleted(5177),
+  ),
+  CoursesExModel(
+    id: 5178,
+    exerciseName: "Exercise 9: Apply gradients with SGD",
+    productID: "com.mrrubik.learnswift.tensorflowex5178",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5178),
+    completed: purchaseManagerHive.getCompleted(5178),
+  ),
+  CoursesExModel(
+    id: 5179,
+    exerciseName: "Challenge 10: Clip gradients by norm",
+    productID: "com.mrrubik.learnswift.tensorflowex5179",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5179),
+    completed: purchaseManagerHive.getCompleted(5179),
+  ),
+  CoursesExModel(
+    id: 5180,
+    exerciseName: "Exercise 11: Turn a function into a graph",
+    productID: "com.mrrubik.learnswift.tensorflowex5180",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5180),
+    completed: purchaseManagerHive.getCompleted(5180),
+  ),
+  CoursesExModel(
+    id: 5181,
+    exerciseName: "Challenge 12: Check numerics",
+    productID: "com.mrrubik.learnswift.tensorflowex5181",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5181),
+    completed: purchaseManagerHive.getCompleted(5181),
+  ),
+  CoursesExModel(
+    id: 5182,
+    exerciseName: "Exercise 13: Gradient of matmul",
+    productID: "com.mrrubik.learnswift.tensorflowex5182",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5182),
+    completed: purchaseManagerHive.getCompleted(5182),
+  ),
+  CoursesExModel(
+    id: 5183,
+    exerciseName: "Challenge 14: Higher-order gradient",
+    productID: "com.mrrubik.learnswift.tensorflowex5183",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5183),
+    completed: purchaseManagerHive.getCompleted(5183),
+  ),
+  CoursesExModel(
+    id: 5184,
+    exerciseName: "Exercise 15: Challenge: compute and apply gradient",
+    productID: "com.mrrubik.learnswift.tensorflowex5184",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5184),
+    completed: purchaseManagerHive.getCompleted(5184),
+  ),
+];

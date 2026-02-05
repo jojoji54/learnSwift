@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfPerformanceModelZH = [
+  CoursesExModel(
+    id: 5320,
+    exerciseName: "练习 1: 使用 tf.function",
+    productID: "com.mrrubik.learnswift.tensorflowex5320",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5320),
+    completed: purchaseManagerHive.getCompleted(5320),
+  ),
+  CoursesExModel(
+    id: 5321,
+    exerciseName: "挑战 2: 列出 GPU",
+    productID: "com.mrrubik.learnswift.tensorflowex5321",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5321),
+    completed: purchaseManagerHive.getCompleted(5321),
+  ),
+  CoursesExModel(
+    id: 5322,
+    exerciseName: "练习 3: 设置 memory growth",
+    productID: "com.mrrubik.learnswift.tensorflowex5322",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5322),
+    completed: purchaseManagerHive.getCompleted(5322),
+  ),
+  CoursesExModel(
+    id: 5323,
+    exerciseName: "挑战 4: 开启 JIT",
+    productID: "com.mrrubik.learnswift.tensorflowex5323",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5323),
+    completed: purchaseManagerHive.getCompleted(5323),
+  ),
+  CoursesExModel(
+    id: 5324,
+    exerciseName: "练习 5: assert_shapes",
+    productID: "com.mrrubik.learnswift.tensorflowex5324",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5324),
+    completed: purchaseManagerHive.getCompleted(5324),
+  ),
+  CoursesExModel(
+    id: 5325,
+    exerciseName: "挑战 6: assert_equal",
+    productID: "com.mrrubik.learnswift.tensorflowex5325",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5325),
+    completed: purchaseManagerHive.getCompleted(5325),
+  ),
+  CoursesExModel(
+    id: 5326,
+    exerciseName: "练习 7: assert_all_finite",
+    productID: "com.mrrubik.learnswift.tensorflowex5326",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5326),
+    completed: purchaseManagerHive.getCompleted(5326),
+  ),
+  CoursesExModel(
+    id: 5327,
+    exerciseName: "挑战 8: tf.print",
+    productID: "com.mrrubik.learnswift.tensorflowex5327",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5327),
+    completed: purchaseManagerHive.getCompleted(5327),
+  ),
+  CoursesExModel(
+    id: 5328,
+    exerciseName: "练习 9: clear_session",
+    productID: "com.mrrubik.learnswift.tensorflowex5328",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5328),
+    completed: purchaseManagerHive.getCompleted(5328),
+  ),
+  CoursesExModel(
+    id: 5329,
+    exerciseName: "挑战 10: 放到 CPU",
+    productID: "com.mrrubik.learnswift.tensorflowex5329",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5329),
+    completed: purchaseManagerHive.getCompleted(5329),
+  ),
+  CoursesExModel(
+    id: 5330,
+    exerciseName: "练习 11: prefetch 提速",
+    productID: "com.mrrubik.learnswift.tensorflowex5330",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5330),
+    completed: purchaseManagerHive.getCompleted(5330),
+  ),
+  CoursesExModel(
+    id: 5331,
+    exerciseName: "挑战 12: jit_compile",
+    productID: "com.mrrubik.learnswift.tensorflowex5331",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5331),
+    completed: purchaseManagerHive.getCompleted(5331),
+  ),
+  CoursesExModel(
+    id: 5332,
+    exerciseName: "练习 13: to_code",
+    productID: "com.mrrubik.learnswift.tensorflowex5332",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5332),
+    completed: purchaseManagerHive.getCompleted(5332),
+  ),
+  CoursesExModel(
+    id: 5333,
+    exerciseName: "挑战 14: 断言再训练",
+    productID: "com.mrrubik.learnswift.tensorflowex5333",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5333),
+    completed: purchaseManagerHive.getCompleted(5333),
+  ),
+  CoursesExModel(
+    id: 5334,
+    exerciseName: "练习 15: 挑战：function + assert_shapes",
+    productID: "com.mrrubik.learnswift.tensorflowex5334",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5334),
+    completed: purchaseManagerHive.getCompleted(5334),
+  ),
+];

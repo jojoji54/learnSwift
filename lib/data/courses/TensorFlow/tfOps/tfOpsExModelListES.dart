@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfOpsModelES = [
+  CoursesExModel(
+    id: 5155,
+    exerciseName: "Ejercicio 1: Suma y multiplica",
+    productID: "com.mrrubik.learnswift.tensorflowex5155",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5155),
+    completed: purchaseManagerHive.getCompleted(5155),
+  ),
+  CoursesExModel(
+    id: 5156,
+    exerciseName: "Desafio 2: Multiplicacion de matrices",
+    productID: "com.mrrubik.learnswift.tensorflowex5156",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5156),
+    completed: purchaseManagerHive.getCompleted(5156),
+  ),
+  CoursesExModel(
+    id: 5157,
+    exerciseName: "Ejercicio 3: Reduce sum",
+    productID: "com.mrrubik.learnswift.tensorflowex5157",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5157),
+    completed: purchaseManagerHive.getCompleted(5157),
+  ),
+  CoursesExModel(
+    id: 5158,
+    exerciseName: "Desafio 4: Reduce mean",
+    productID: "com.mrrubik.learnswift.tensorflowex5158",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5158),
+    completed: purchaseManagerHive.getCompleted(5158),
+  ),
+  CoursesExModel(
+    id: 5159,
+    exerciseName: "Ejercicio 5: Argmax",
+    productID: "com.mrrubik.learnswift.tensorflowex5159",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5159),
+    completed: purchaseManagerHive.getCompleted(5159),
+  ),
+  CoursesExModel(
+    id: 5160,
+    exerciseName: "Desafio 6: Softmax",
+    productID: "com.mrrubik.learnswift.tensorflowex5160",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5160),
+    completed: purchaseManagerHive.getCompleted(5160),
+  ),
+  CoursesExModel(
+    id: 5161,
+    exerciseName: "Ejercicio 7: Sigmoid",
+    productID: "com.mrrubik.learnswift.tensorflowex5161",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5161),
+    completed: purchaseManagerHive.getCompleted(5161),
+  ),
+  CoursesExModel(
+    id: 5162,
+    exerciseName: "Desafio 8: ReLU",
+    productID: "com.mrrubik.learnswift.tensorflowex5162",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5162),
+    completed: purchaseManagerHive.getCompleted(5162),
+  ),
+  CoursesExModel(
+    id: 5163,
+    exerciseName: "Ejercicio 9: Limita con clip_by_value",
+    productID: "com.mrrubik.learnswift.tensorflowex5163",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5163),
+    completed: purchaseManagerHive.getCompleted(5163),
+  ),
+  CoursesExModel(
+    id: 5164,
+    exerciseName: "Desafio 10: One-hot encoding",
+    productID: "com.mrrubik.learnswift.tensorflowex5164",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5164),
+    completed: purchaseManagerHive.getCompleted(5164),
+  ),
+  CoursesExModel(
+    id: 5165,
+    exerciseName: "Ejercicio 11: Loss MSE",
+    productID: "com.mrrubik.learnswift.tensorflowex5165",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5165),
+    completed: purchaseManagerHive.getCompleted(5165),
+  ),
+  CoursesExModel(
+    id: 5166,
+    exerciseName: "Desafio 12: Metrica accuracy",
+    productID: "com.mrrubik.learnswift.tensorflowex5166",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5166),
+    completed: purchaseManagerHive.getCompleted(5166),
+  ),
+  CoursesExModel(
+    id: 5167,
+    exerciseName: "Ejercicio 13: Top-k valores",
+    productID: "com.mrrubik.learnswift.tensorflowex5167",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5167),
+    completed: purchaseManagerHive.getCompleted(5167),
+  ),
+  CoursesExModel(
+    id: 5168,
+    exerciseName: "Desafio 14: Normaliza L2",
+    productID: "com.mrrubik.learnswift.tensorflowex5168",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5168),
+    completed: purchaseManagerHive.getCompleted(5168),
+  ),
+  CoursesExModel(
+    id: 5169,
+    exerciseName: "Ejercicio 15: Desafio: logits a clase",
+    productID: "com.mrrubik.learnswift.tensorflowex5169",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5169),
+    completed: purchaseManagerHive.getCompleted(5169),
+  ),
+];

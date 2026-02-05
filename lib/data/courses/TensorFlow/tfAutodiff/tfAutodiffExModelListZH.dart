@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfAutodiffModelZH = [
+  CoursesExModel(
+    id: 5170,
+    exerciseName: "练习 1: 第一个 GradientTape",
+    productID: "com.mrrubik.learnswift.tensorflowex5170",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5170),
+    completed: purchaseManagerHive.getCompleted(5170),
+  ),
+  CoursesExModel(
+    id: 5171,
+    exerciseName: "挑战 2: tape.watch",
+    productID: "com.mrrubik.learnswift.tensorflowex5171",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5171),
+    completed: purchaseManagerHive.getCompleted(5171),
+  ),
+  CoursesExModel(
+    id: 5172,
+    exerciseName: "练习 3: persistent tape",
+    productID: "com.mrrubik.learnswift.tensorflowex5172",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5172),
+    completed: purchaseManagerHive.getCompleted(5172),
+  ),
+  CoursesExModel(
+    id: 5173,
+    exerciseName: "挑战 4: stop_recording",
+    productID: "com.mrrubik.learnswift.tensorflowex5173",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5173),
+    completed: purchaseManagerHive.getCompleted(5173),
+  ),
+  CoursesExModel(
+    id: 5174,
+    exerciseName: "练习 5: Jacobian",
+    productID: "com.mrrubik.learnswift.tensorflowex5174",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5174),
+    completed: purchaseManagerHive.getCompleted(5174),
+  ),
+  CoursesExModel(
+    id: 5175,
+    exerciseName: "挑战 6: tf.sin 的梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5175",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5175),
+    completed: purchaseManagerHive.getCompleted(5175),
+  ),
+  CoursesExModel(
+    id: 5176,
+    exerciseName: "练习 7: 计算简单 loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5176",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5176),
+    completed: purchaseManagerHive.getCompleted(5176),
+  ),
+  CoursesExModel(
+    id: 5177,
+    exerciseName: "挑战 8: 对变量求梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5177",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5177),
+    completed: purchaseManagerHive.getCompleted(5177),
+  ),
+  CoursesExModel(
+    id: 5178,
+    exerciseName: "练习 9: 用 SGD 应用梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5178",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5178),
+    completed: purchaseManagerHive.getCompleted(5178),
+  ),
+  CoursesExModel(
+    id: 5179,
+    exerciseName: "挑战 10: 按范数裁剪梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5179",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5179),
+    completed: purchaseManagerHive.getCompleted(5179),
+  ),
+  CoursesExModel(
+    id: 5180,
+    exerciseName: "练习 11: 使用 tf.function",
+    productID: "com.mrrubik.learnswift.tensorflowex5180",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5180),
+    completed: purchaseManagerHive.getCompleted(5180),
+  ),
+  CoursesExModel(
+    id: 5181,
+    exerciseName: "挑战 12: 数值检查",
+    productID: "com.mrrubik.learnswift.tensorflowex5181",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5181),
+    completed: purchaseManagerHive.getCompleted(5181),
+  ),
+  CoursesExModel(
+    id: 5182,
+    exerciseName: "练习 13: matmul 的梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5182",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5182),
+    completed: purchaseManagerHive.getCompleted(5182),
+  ),
+  CoursesExModel(
+    id: 5183,
+    exerciseName: "挑战 14: 二阶梯度",
+    productID: "com.mrrubik.learnswift.tensorflowex5183",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5183),
+    completed: purchaseManagerHive.getCompleted(5183),
+  ),
+  CoursesExModel(
+    id: 5184,
+    exerciseName: "练习 15: 挑战：求梯度并应用",
+    productID: "com.mrrubik.learnswift.tensorflowex5184",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5184),
+    completed: purchaseManagerHive.getCompleted(5184),
+  ),
+];

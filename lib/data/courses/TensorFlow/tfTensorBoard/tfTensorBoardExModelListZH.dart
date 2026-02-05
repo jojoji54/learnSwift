@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfTensorBoardModelZH = [
+  CoursesExModel(
+    id: 5290,
+    exerciseName: "练习 1: TensorBoard 回调",
+    productID: "com.mrrubik.learnswift.tensorflowex5290",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5290),
+    completed: purchaseManagerHive.getCompleted(5290),
+  ),
+  CoursesExModel(
+    id: 5291,
+    exerciseName: "挑战 2: 创建 summary writer",
+    productID: "com.mrrubik.learnswift.tensorflowex5291",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5291),
+    completed: purchaseManagerHive.getCompleted(5291),
+  ),
+  CoursesExModel(
+    id: 5292,
+    exerciseName: "练习 3: 写 scalar summary",
+    productID: "com.mrrubik.learnswift.tensorflowex5292",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5292),
+    completed: purchaseManagerHive.getCompleted(5292),
+  ),
+  CoursesExModel(
+    id: 5293,
+    exerciseName: "挑战 4: histogram summary",
+    productID: "com.mrrubik.learnswift.tensorflowex5293",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5293),
+    completed: purchaseManagerHive.getCompleted(5293),
+  ),
+  CoursesExModel(
+    id: 5294,
+    exerciseName: "练习 5: image summary",
+    productID: "com.mrrubik.learnswift.tensorflowex5294",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5294),
+    completed: purchaseManagerHive.getCompleted(5294),
+  ),
+  CoursesExModel(
+    id: 5295,
+    exerciseName: "挑战 6: trace_on",
+    productID: "com.mrrubik.learnswift.tensorflowex5295",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5295),
+    completed: purchaseManagerHive.getCompleted(5295),
+  ),
+  CoursesExModel(
+    id: 5296,
+    exerciseName: "练习 7: trace_export",
+    productID: "com.mrrubik.learnswift.tensorflowex5296",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5296),
+    completed: purchaseManagerHive.getCompleted(5296),
+  ),
+  CoursesExModel(
+    id: 5297,
+    exerciseName: "挑战 8: start profiler",
+    productID: "com.mrrubik.learnswift.tensorflowex5297",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5297),
+    completed: purchaseManagerHive.getCompleted(5297),
+  ),
+  CoursesExModel(
+    id: 5298,
+    exerciseName: "练习 9: stop profiler",
+    productID: "com.mrrubik.learnswift.tensorflowex5298",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5298),
+    completed: purchaseManagerHive.getCompleted(5298),
+  ),
+  CoursesExModel(
+    id: 5299,
+    exerciseName: "挑战 10: text summary",
+    productID: "com.mrrubik.learnswift.tensorflowex5299",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5299),
+    completed: purchaseManagerHive.getCompleted(5299),
+  ),
+  CoursesExModel(
+    id: 5300,
+    exerciseName: "练习 11: audio summary",
+    productID: "com.mrrubik.learnswift.tensorflowex5300",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5300),
+    completed: purchaseManagerHive.getCompleted(5300),
+  ),
+  CoursesExModel(
+    id: 5301,
+    exerciseName: "挑战 12: 记录学习率",
+    productID: "com.mrrubik.learnswift.tensorflowex5301",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5301),
+    completed: purchaseManagerHive.getCompleted(5301),
+  ),
+  CoursesExModel(
+    id: 5302,
+    exerciseName: "练习 13: TensorBoard 命令",
+    productID: "com.mrrubik.learnswift.tensorflowex5302",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5302),
+    completed: purchaseManagerHive.getCompleted(5302),
+  ),
+  CoursesExModel(
+    id: 5303,
+    exerciseName: "挑战 14: profile step",
+    productID: "com.mrrubik.learnswift.tensorflowex5303",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5303),
+    completed: purchaseManagerHive.getCompleted(5303),
+  ),
+  CoursesExModel(
+    id: 5304,
+    exerciseName: "练习 15: 挑战：回调 + scalar",
+    productID: "com.mrrubik.learnswift.tensorflowex5304",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5304),
+    completed: purchaseManagerHive.getCompleted(5304),
+  ),
+];

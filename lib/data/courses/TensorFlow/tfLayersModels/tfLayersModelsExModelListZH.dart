@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfLayersModelsModelZH = [
+  CoursesExModel(
+    id: 5200,
+    exerciseName: "练习 1: Functional API 模型",
+    productID: "com.mrrubik.learnswift.tensorflowex5200",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5200),
+    completed: purchaseManagerHive.getCompleted(5200),
+  ),
+  CoursesExModel(
+    id: 5201,
+    exerciseName: "挑战 2: 拼接两个输入",
+    productID: "com.mrrubik.learnswift.tensorflowex5201",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5201),
+    completed: purchaseManagerHive.getCompleted(5201),
+  ),
+  CoursesExModel(
+    id: 5202,
+    exerciseName: "练习 3: 多输出",
+    productID: "com.mrrubik.learnswift.tensorflowex5202",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5202),
+    completed: purchaseManagerHive.getCompleted(5202),
+  ),
+  CoursesExModel(
+    id: 5203,
+    exerciseName: "挑战 4: 自定义 Layer 类",
+    productID: "com.mrrubik.learnswift.tensorflowex5203",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5203),
+    completed: purchaseManagerHive.getCompleted(5203),
+  ),
+  CoursesExModel(
+    id: 5204,
+    exerciseName: "练习 5: add_weight",
+    productID: "com.mrrubik.learnswift.tensorflowex5204",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5204),
+    completed: purchaseManagerHive.getCompleted(5204),
+  ),
+  CoursesExModel(
+    id: 5205,
+    exerciseName: "挑战 6: 子类化 Model",
+    productID: "com.mrrubik.learnswift.tensorflowex5205",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5205),
+    completed: purchaseManagerHive.getCompleted(5205),
+  ),
+  CoursesExModel(
+    id: 5206,
+    exerciseName: "练习 7: call 里的 training",
+    productID: "com.mrrubik.learnswift.tensorflowex5206",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5206),
+    completed: purchaseManagerHive.getCompleted(5206),
+  ),
+  CoursesExModel(
+    id: 5207,
+    exerciseName: "挑战 8: get_config",
+    productID: "com.mrrubik.learnswift.tensorflowex5207",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5207),
+    completed: purchaseManagerHive.getCompleted(5207),
+  ),
+  CoursesExModel(
+    id: 5208,
+    exerciseName: "练习 9: Lambda 层",
+    productID: "com.mrrubik.learnswift.tensorflowex5208",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5208),
+    completed: purchaseManagerHive.getCompleted(5208),
+  ),
+  CoursesExModel(
+    id: 5209,
+    exerciseName: "挑战 10: L2 正则",
+    productID: "com.mrrubik.learnswift.tensorflowex5209",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5209),
+    completed: purchaseManagerHive.getCompleted(5209),
+  ),
+  CoursesExModel(
+    id: 5210,
+    exerciseName: "练习 11: MaxNorm 约束",
+    productID: "com.mrrubik.learnswift.tensorflowex5210",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5210),
+    completed: purchaseManagerHive.getCompleted(5210),
+  ),
+  CoursesExModel(
+    id: 5211,
+    exerciseName: "挑战 12: HeNormal 初始化",
+    productID: "com.mrrubik.learnswift.tensorflowex5211",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5211),
+    completed: purchaseManagerHive.getCompleted(5211),
+  ),
+  CoursesExModel(
+    id: 5212,
+    exerciseName: "练习 13: 给层命名",
+    productID: "com.mrrubik.learnswift.tensorflowex5212",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5212),
+    completed: purchaseManagerHive.getCompleted(5212),
+  ),
+  CoursesExModel(
+    id: 5213,
+    exerciseName: "挑战 14: build 再 call",
+    productID: "com.mrrubik.learnswift.tensorflowex5213",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5213),
+    completed: purchaseManagerHive.getCompleted(5213),
+  ),
+  CoursesExModel(
+    id: 5214,
+    exerciseName: "练习 15: 挑战：自定义层进模型",
+    productID: "com.mrrubik.learnswift.tensorflowex5214",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5214),
+    completed: purchaseManagerHive.getCompleted(5214),
+  ),
+];

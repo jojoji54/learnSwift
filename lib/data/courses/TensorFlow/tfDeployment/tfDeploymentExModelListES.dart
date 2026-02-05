@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfDeploymentModelES = [
+  CoursesExModel(
+    id: 5305,
+    exerciseName: "Ejercicio 1: TFLiteConverter desde SavedModel",
+    productID: "com.mrrubik.learnswift.tensorflowex5305",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5305),
+    completed: purchaseManagerHive.getCompleted(5305),
+  ),
+  CoursesExModel(
+    id: 5306,
+    exerciseName: "Desafio 2: Convierte a TFLite",
+    productID: "com.mrrubik.learnswift.tensorflowex5306",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5306),
+    completed: purchaseManagerHive.getCompleted(5306),
+  ),
+  CoursesExModel(
+    id: 5307,
+    exerciseName: "Ejercicio 3: Escribe archivo TFLite",
+    productID: "com.mrrubik.learnswift.tensorflowex5307",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5307),
+    completed: purchaseManagerHive.getCompleted(5307),
+  ),
+  CoursesExModel(
+    id: 5308,
+    exerciseName: "Desafio 4: Crea un Interpreter",
+    productID: "com.mrrubik.learnswift.tensorflowex5308",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5308),
+    completed: purchaseManagerHive.getCompleted(5308),
+  ),
+  CoursesExModel(
+    id: 5309,
+    exerciseName: "Ejercicio 5: Allocate tensors",
+    productID: "com.mrrubik.learnswift.tensorflowex5309",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5309),
+    completed: purchaseManagerHive.getCompleted(5309),
+  ),
+  CoursesExModel(
+    id: 5310,
+    exerciseName: "Desafio 6: Input details",
+    productID: "com.mrrubik.learnswift.tensorflowex5310",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5310),
+    completed: purchaseManagerHive.getCompleted(5310),
+  ),
+  CoursesExModel(
+    id: 5311,
+    exerciseName: "Ejercicio 7: Output details",
+    productID: "com.mrrubik.learnswift.tensorflowex5311",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5311),
+    completed: purchaseManagerHive.getCompleted(5311),
+  ),
+  CoursesExModel(
+    id: 5312,
+    exerciseName: "Desafio 8: Set tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5312",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5312),
+    completed: purchaseManagerHive.getCompleted(5312),
+  ),
+  CoursesExModel(
+    id: 5313,
+    exerciseName: "Ejercicio 9: Invoke",
+    productID: "com.mrrubik.learnswift.tensorflowex5313",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5313),
+    completed: purchaseManagerHive.getCompleted(5313),
+  ),
+  CoursesExModel(
+    id: 5314,
+    exerciseName: "Desafio 10: Get tensor output",
+    productID: "com.mrrubik.learnswift.tensorflowex5314",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5314),
+    completed: purchaseManagerHive.getCompleted(5314),
+  ),
+  CoursesExModel(
+    id: 5315,
+    exerciseName: "Ejercicio 11: Habilita optimizations",
+    productID: "com.mrrubik.learnswift.tensorflowex5315",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5315),
+    completed: purchaseManagerHive.getCompleted(5315),
+  ),
+  CoursesExModel(
+    id: 5316,
+    exerciseName: "Desafio 12: Conversion float16",
+    productID: "com.mrrubik.learnswift.tensorflowex5316",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5316),
+    completed: purchaseManagerHive.getCompleted(5316),
+  ),
+  CoursesExModel(
+    id: 5317,
+    exerciseName: "Ejercicio 13: Funcion representative dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5317",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5317),
+    completed: purchaseManagerHive.getCompleted(5317),
+  ),
+  CoursesExModel(
+    id: 5318,
+    exerciseName: "Desafio 14: Define representative_dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5318",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5318),
+    completed: purchaseManagerHive.getCompleted(5318),
+  ),
+  CoursesExModel(
+    id: 5319,
+    exerciseName: "Ejercicio 15: Desafio: convierte y ejecuta",
+    productID: "com.mrrubik.learnswift.tensorflowex5319",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5319),
+    completed: purchaseManagerHive.getCompleted(5319),
+  ),
+];

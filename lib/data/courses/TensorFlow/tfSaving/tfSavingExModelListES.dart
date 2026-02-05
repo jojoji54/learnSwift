@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfSavingModelES = [
+  CoursesExModel(
+    id: 5275,
+    exerciseName: "Ejercicio 1: Guarda un modelo",
+    productID: "com.mrrubik.learnswift.tensorflowex5275",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5275),
+    completed: purchaseManagerHive.getCompleted(5275),
+  ),
+  CoursesExModel(
+    id: 5276,
+    exerciseName: "Desafio 2: Carga un modelo",
+    productID: "com.mrrubik.learnswift.tensorflowex5276",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5276),
+    completed: purchaseManagerHive.getCompleted(5276),
+  ),
+  CoursesExModel(
+    id: 5277,
+    exerciseName: "Ejercicio 3: Guarda pesos",
+    productID: "com.mrrubik.learnswift.tensorflowex5277",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5277),
+    completed: purchaseManagerHive.getCompleted(5277),
+  ),
+  CoursesExModel(
+    id: 5278,
+    exerciseName: "Desafio 4: Carga pesos",
+    productID: "com.mrrubik.learnswift.tensorflowex5278",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5278),
+    completed: purchaseManagerHive.getCompleted(5278),
+  ),
+  CoursesExModel(
+    id: 5279,
+    exerciseName: "Ejercicio 5: Guarda SavedModel",
+    productID: "com.mrrubik.learnswift.tensorflowex5279",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5279),
+    completed: purchaseManagerHive.getCompleted(5279),
+  ),
+  CoursesExModel(
+    id: 5280,
+    exerciseName: "Desafio 6: Carga SavedModel",
+    productID: "com.mrrubik.learnswift.tensorflowex5280",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5280),
+    completed: purchaseManagerHive.getCompleted(5280),
+  ),
+  CoursesExModel(
+    id: 5281,
+    exerciseName: "Ejercicio 7: Crea un Checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5281",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5281),
+    completed: purchaseManagerHive.getCompleted(5281),
+  ),
+  CoursesExModel(
+    id: 5282,
+    exerciseName: "Desafio 8: CheckpointManager",
+    productID: "com.mrrubik.learnswift.tensorflowex5282",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5282),
+    completed: purchaseManagerHive.getCompleted(5282),
+  ),
+  CoursesExModel(
+    id: 5283,
+    exerciseName: "Ejercicio 9: Restaura el ultimo checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5283",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5283),
+    completed: purchaseManagerHive.getCompleted(5283),
+  ),
+  CoursesExModel(
+    id: 5284,
+    exerciseName: "Desafio 10: Guarda, carga y predice",
+    productID: "com.mrrubik.learnswift.tensorflowex5284",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5284),
+    completed: purchaseManagerHive.getCompleted(5284),
+  ),
+  CoursesExModel(
+    id: 5285,
+    exerciseName: "Ejercicio 11: Guarda con overwrite",
+    productID: "com.mrrubik.learnswift.tensorflowex5285",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5285),
+    completed: purchaseManagerHive.getCompleted(5285),
+  ),
+  CoursesExModel(
+    id: 5286,
+    exerciseName: "Desafio 12: Guarda include_optimizer",
+    productID: "com.mrrubik.learnswift.tensorflowex5286",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5286),
+    completed: purchaseManagerHive.getCompleted(5286),
+  ),
+  CoursesExModel(
+    id: 5287,
+    exerciseName: "Ejercicio 13: Define un path de checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5287",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5287),
+    completed: purchaseManagerHive.getCompleted(5287),
+  ),
+  CoursesExModel(
+    id: 5288,
+    exerciseName: "Desafio 14: Guarda mejores pesos",
+    productID: "com.mrrubik.learnswift.tensorflowex5288",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5288),
+    completed: purchaseManagerHive.getCompleted(5288),
+  ),
+  CoursesExModel(
+    id: 5289,
+    exerciseName: "Ejercicio 15: Desafio: flujo de checkpoints",
+    productID: "com.mrrubik.learnswift.tensorflowex5289",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5289),
+    completed: purchaseManagerHive.getCompleted(5289),
+  ),
+];

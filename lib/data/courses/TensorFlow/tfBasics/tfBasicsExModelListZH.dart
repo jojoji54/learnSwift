@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfBasicsModelZH = [
+  CoursesExModel(
+    id: 5125,
+    exerciseName: "练习 1: 导入 TensorFlow",
+    productID: "com.mrrubik.learnswift.tensorflowex5125",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5125),
+    completed: purchaseManagerHive.getCompleted(5125),
+  ),
+  CoursesExModel(
+    id: 5126,
+    exerciseName: "挑战 2: 创建常量张量",
+    productID: "com.mrrubik.learnswift.tensorflowex5126",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5126),
+    completed: purchaseManagerHive.getCompleted(5126),
+  ),
+  CoursesExModel(
+    id: 5127,
+    exerciseName: "练习 3: 创建 Variable",
+    productID: "com.mrrubik.learnswift.tensorflowex5127",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5127),
+    completed: purchaseManagerHive.getCompleted(5127),
+  ),
+  CoursesExModel(
+    id: 5128,
+    exerciseName: "挑战 4: 全零与全一",
+    productID: "com.mrrubik.learnswift.tensorflowex5128",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5128),
+    completed: purchaseManagerHive.getCompleted(5128),
+  ),
+  CoursesExModel(
+    id: 5129,
+    exerciseName: "练习 5: 随机正态张量",
+    productID: "com.mrrubik.learnswift.tensorflowex5129",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5129),
+    completed: purchaseManagerHive.getCompleted(5129),
+  ),
+  CoursesExModel(
+    id: 5130,
+    exerciseName: "挑战 6: 设置随机种子",
+    productID: "com.mrrubik.learnswift.tensorflowex5130",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5130),
+    completed: purchaseManagerHive.getCompleted(5130),
+  ),
+  CoursesExModel(
+    id: 5131,
+    exerciseName: "练习 7: 转换为 float32",
+    productID: "com.mrrubik.learnswift.tensorflowex5131",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5131),
+    completed: purchaseManagerHive.getCompleted(5131),
+  ),
+  CoursesExModel(
+    id: 5132,
+    exerciseName: "挑战 8: 转成 NumPy",
+    productID: "com.mrrubik.learnswift.tensorflowex5132",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5132),
+    completed: purchaseManagerHive.getCompleted(5132),
+  ),
+  CoursesExModel(
+    id: 5133,
+    exerciseName: "练习 9: 用 tf.range 创建序列",
+    productID: "com.mrrubik.learnswift.tensorflowex5133",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5133),
+    completed: purchaseManagerHive.getCompleted(5133),
+  ),
+  CoursesExModel(
+    id: 5134,
+    exerciseName: "挑战 10: 对张量求平方",
+    productID: "com.mrrubik.learnswift.tensorflowex5134",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5134),
+    completed: purchaseManagerHive.getCompleted(5134),
+  ),
+  CoursesExModel(
+    id: 5135,
+    exerciseName: "练习 11: 检查 eager 模式",
+    productID: "com.mrrubik.learnswift.tensorflowex5135",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5135),
+    completed: purchaseManagerHive.getCompleted(5135),
+  ),
+  CoursesExModel(
+    id: 5136,
+    exerciseName: "挑战 12: 列出设备",
+    productID: "com.mrrubik.learnswift.tensorflowex5136",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5136),
+    completed: purchaseManagerHive.getCompleted(5136),
+  ),
+  CoursesExModel(
+    id: 5137,
+    exerciseName: "练习 13: 创建标量常量",
+    productID: "com.mrrubik.learnswift.tensorflowex5137",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5137),
+    completed: purchaseManagerHive.getCompleted(5137),
+  ),
+  CoursesExModel(
+    id: 5138,
+    exerciseName: "挑战 14: 使用 tf.identity",
+    productID: "com.mrrubik.learnswift.tensorflowex5138",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5138),
+    completed: purchaseManagerHive.getCompleted(5138),
+  ),
+  CoursesExModel(
+    id: 5139,
+    exerciseName: "练习 15: 挑战：小张量片段",
+    productID: "com.mrrubik.learnswift.tensorflowex5139",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5139),
+    completed: purchaseManagerHive.getCompleted(5139),
+  ),
+];

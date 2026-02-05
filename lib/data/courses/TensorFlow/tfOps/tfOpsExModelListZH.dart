@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfOpsModelZH = [
+  CoursesExModel(
+    id: 5155,
+    exerciseName: "练习 1: 加法与乘法",
+    productID: "com.mrrubik.learnswift.tensorflowex5155",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5155),
+    completed: purchaseManagerHive.getCompleted(5155),
+  ),
+  CoursesExModel(
+    id: 5156,
+    exerciseName: "挑战 2: 矩阵乘法",
+    productID: "com.mrrubik.learnswift.tensorflowex5156",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5156),
+    completed: purchaseManagerHive.getCompleted(5156),
+  ),
+  CoursesExModel(
+    id: 5157,
+    exerciseName: "练习 3: reduce_sum",
+    productID: "com.mrrubik.learnswift.tensorflowex5157",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5157),
+    completed: purchaseManagerHive.getCompleted(5157),
+  ),
+  CoursesExModel(
+    id: 5158,
+    exerciseName: "挑战 4: reduce_mean",
+    productID: "com.mrrubik.learnswift.tensorflowex5158",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5158),
+    completed: purchaseManagerHive.getCompleted(5158),
+  ),
+  CoursesExModel(
+    id: 5159,
+    exerciseName: "练习 5: argmax",
+    productID: "com.mrrubik.learnswift.tensorflowex5159",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5159),
+    completed: purchaseManagerHive.getCompleted(5159),
+  ),
+  CoursesExModel(
+    id: 5160,
+    exerciseName: "挑战 6: softmax",
+    productID: "com.mrrubik.learnswift.tensorflowex5160",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5160),
+    completed: purchaseManagerHive.getCompleted(5160),
+  ),
+  CoursesExModel(
+    id: 5161,
+    exerciseName: "练习 7: sigmoid",
+    productID: "com.mrrubik.learnswift.tensorflowex5161",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5161),
+    completed: purchaseManagerHive.getCompleted(5161),
+  ),
+  CoursesExModel(
+    id: 5162,
+    exerciseName: "挑战 8: ReLU",
+    productID: "com.mrrubik.learnswift.tensorflowex5162",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5162),
+    completed: purchaseManagerHive.getCompleted(5162),
+  ),
+  CoursesExModel(
+    id: 5163,
+    exerciseName: "练习 9: clip_by_value 限制范围",
+    productID: "com.mrrubik.learnswift.tensorflowex5163",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5163),
+    completed: purchaseManagerHive.getCompleted(5163),
+  ),
+  CoursesExModel(
+    id: 5164,
+    exerciseName: "挑战 10: one_hot",
+    productID: "com.mrrubik.learnswift.tensorflowex5164",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5164),
+    completed: purchaseManagerHive.getCompleted(5164),
+  ),
+  CoursesExModel(
+    id: 5165,
+    exerciseName: "练习 11: MSE loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5165",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5165),
+    completed: purchaseManagerHive.getCompleted(5165),
+  ),
+  CoursesExModel(
+    id: 5166,
+    exerciseName: "挑战 12: Accuracy 指标",
+    productID: "com.mrrubik.learnswift.tensorflowex5166",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5166),
+    completed: purchaseManagerHive.getCompleted(5166),
+  ),
+  CoursesExModel(
+    id: 5167,
+    exerciseName: "练习 13: top_k",
+    productID: "com.mrrubik.learnswift.tensorflowex5167",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5167),
+    completed: purchaseManagerHive.getCompleted(5167),
+  ),
+  CoursesExModel(
+    id: 5168,
+    exerciseName: "挑战 14: L2 归一化",
+    productID: "com.mrrubik.learnswift.tensorflowex5168",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5168),
+    completed: purchaseManagerHive.getCompleted(5168),
+  ),
+  CoursesExModel(
+    id: 5169,
+    exerciseName: "练习 15: 挑战：logits 到类别",
+    productID: "com.mrrubik.learnswift.tensorflowex5169",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5169),
+    completed: purchaseManagerHive.getCompleted(5169),
+  ),
+];

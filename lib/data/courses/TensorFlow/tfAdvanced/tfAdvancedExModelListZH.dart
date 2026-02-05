@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfAdvancedModelZH = [
+  CoursesExModel(
+    id: 5335,
+    exerciseName: "练习 1: MirroredStrategy",
+    productID: "com.mrrubik.learnswift.tensorflowex5335",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5335),
+    completed: purchaseManagerHive.getCompleted(5335),
+  ),
+  CoursesExModel(
+    id: 5336,
+    exerciseName: "挑战 2: strategy.scope",
+    productID: "com.mrrubik.learnswift.tensorflowex5336",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5336),
+    completed: purchaseManagerHive.getCompleted(5336),
+  ),
+  CoursesExModel(
+    id: 5337,
+    exerciseName: "练习 3: mixed precision",
+    productID: "com.mrrubik.learnswift.tensorflowex5337",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5337),
+    completed: purchaseManagerHive.getCompleted(5337),
+  ),
+  CoursesExModel(
+    id: 5338,
+    exerciseName: "挑战 4: label_smoothing",
+    productID: "com.mrrubik.learnswift.tensorflowex5338",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5338),
+    completed: purchaseManagerHive.getCompleted(5338),
+  ),
+  CoursesExModel(
+    id: 5339,
+    exerciseName: "练习 5: 自定义 Metric",
+    productID: "com.mrrubik.learnswift.tensorflowex5339",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5339),
+    completed: purchaseManagerHive.getCompleted(5339),
+  ),
+  CoursesExModel(
+    id: 5340,
+    exerciseName: "挑战 6: Metric add_weight",
+    productID: "com.mrrubik.learnswift.tensorflowex5340",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5340),
+    completed: purchaseManagerHive.getCompleted(5340),
+  ),
+  CoursesExModel(
+    id: 5341,
+    exerciseName: "练习 7: Ragged to_tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5341",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5341),
+    completed: purchaseManagerHive.getCompleted(5341),
+  ),
+  CoursesExModel(
+    id: 5342,
+    exerciseName: "挑战 8: sparse to_dense",
+    productID: "com.mrrubik.learnswift.tensorflowex5342",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5342),
+    completed: purchaseManagerHive.getCompleted(5342),
+  ),
+  CoursesExModel(
+    id: 5343,
+    exerciseName: "练习 9: 字符串 split",
+    productID: "com.mrrubik.learnswift.tensorflowex5343",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5343),
+    completed: purchaseManagerHive.getCompleted(5343),
+  ),
+  CoursesExModel(
+    id: 5344,
+    exerciseName: "挑战 10: map_flat_values",
+    productID: "com.mrrubik.learnswift.tensorflowex5344",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5344),
+    completed: purchaseManagerHive.getCompleted(5344),
+  ),
+  CoursesExModel(
+    id: 5345,
+    exerciseName: "练习 11: 分布式 dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5345",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5345),
+    completed: purchaseManagerHive.getCompleted(5345),
+  ),
+  CoursesExModel(
+    id: 5346,
+    exerciseName: "挑战 12: replica context",
+    productID: "com.mrrubik.learnswift.tensorflowex5346",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5346),
+    completed: purchaseManagerHive.getCompleted(5346),
+  ),
+  CoursesExModel(
+    id: 5347,
+    exerciseName: "练习 13: strategy 训练",
+    productID: "com.mrrubik.learnswift.tensorflowex5347",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5347),
+    completed: purchaseManagerHive.getCompleted(5347),
+  ),
+  CoursesExModel(
+    id: 5348,
+    exerciseName: "挑战 14: 导出 SavedModel",
+    productID: "com.mrrubik.learnswift.tensorflowex5348",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5348),
+    completed: purchaseManagerHive.getCompleted(5348),
+  ),
+  CoursesExModel(
+    id: 5349,
+    exerciseName: "练习 15: 挑战：strategy + mixed precision",
+    productID: "com.mrrubik.learnswift.tensorflowex5349",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5349),
+    completed: purchaseManagerHive.getCompleted(5349),
+  ),
+];

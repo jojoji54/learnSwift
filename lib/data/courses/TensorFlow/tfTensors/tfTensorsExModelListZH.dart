@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfTensorsModelZH = [
+  CoursesExModel(
+    id: 5140,
+    exerciseName: "练习 1: 查看形状",
+    productID: "com.mrrubik.learnswift.tensorflowex5140",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5140),
+    completed: purchaseManagerHive.getCompleted(5140),
+  ),
+  CoursesExModel(
+    id: 5141,
+    exerciseName: "挑战 2: reshape 张量",
+    productID: "com.mrrubik.learnswift.tensorflowex5141",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5141),
+    completed: purchaseManagerHive.getCompleted(5141),
+  ),
+  CoursesExModel(
+    id: 5142,
+    exerciseName: "练习 3: 增加维度",
+    productID: "com.mrrubik.learnswift.tensorflowex5142",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5142),
+    completed: purchaseManagerHive.getCompleted(5142),
+  ),
+  CoursesExModel(
+    id: 5143,
+    exerciseName: "挑战 4: 去掉为 1 的维度",
+    productID: "com.mrrubik.learnswift.tensorflowex5143",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5143),
+    completed: purchaseManagerHive.getCompleted(5143),
+  ),
+  CoursesExModel(
+    id: 5144,
+    exerciseName: "练习 5: 拼接张量",
+    productID: "com.mrrubik.learnswift.tensorflowex5144",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5144),
+    completed: purchaseManagerHive.getCompleted(5144),
+  ),
+  CoursesExModel(
+    id: 5145,
+    exerciseName: "挑战 6: stack 张量",
+    productID: "com.mrrubik.learnswift.tensorflowex5145",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5145),
+    completed: purchaseManagerHive.getCompleted(5145),
+  ),
+  CoursesExModel(
+    id: 5146,
+    exerciseName: "练习 7: 用 tf.slice 截取",
+    productID: "com.mrrubik.learnswift.tensorflowex5146",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5146),
+    completed: purchaseManagerHive.getCompleted(5146),
+  ),
+  CoursesExModel(
+    id: 5147,
+    exerciseName: "挑战 8: gather 选择",
+    productID: "com.mrrubik.learnswift.tensorflowex5147",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5147),
+    completed: purchaseManagerHive.getCompleted(5147),
+  ),
+  CoursesExModel(
+    id: 5148,
+    exerciseName: "练习 9: 布尔掩码",
+    productID: "com.mrrubik.learnswift.tensorflowex5148",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5148),
+    completed: purchaseManagerHive.getCompleted(5148),
+  ),
+  CoursesExModel(
+    id: 5149,
+    exerciseName: "挑战 10: 使用 tf.where",
+    productID: "com.mrrubik.learnswift.tensorflowex5149",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5149),
+    completed: purchaseManagerHive.getCompleted(5149),
+  ),
+  CoursesExModel(
+    id: 5150,
+    exerciseName: "练习 11: pad 填充",
+    productID: "com.mrrubik.learnswift.tensorflowex5150",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5150),
+    completed: purchaseManagerHive.getCompleted(5150),
+  ),
+  CoursesExModel(
+    id: 5151,
+    exerciseName: "挑战 12: RaggedTensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5151",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5151),
+    completed: purchaseManagerHive.getCompleted(5151),
+  ),
+  CoursesExModel(
+    id: 5152,
+    exerciseName: "练习 13: SparseTensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5152",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5152),
+    completed: purchaseManagerHive.getCompleted(5152),
+  ),
+  CoursesExModel(
+    id: 5153,
+    exerciseName: "挑战 14: 定义 TensorSpec",
+    productID: "com.mrrubik.learnswift.tensorflowex5153",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5153),
+    completed: purchaseManagerHive.getCompleted(5153),
+  ),
+  CoursesExModel(
+    id: 5154,
+    exerciseName: "练习 15: 挑战：reshape + concat",
+    productID: "com.mrrubik.learnswift.tensorflowex5154",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5154),
+    completed: purchaseManagerHive.getCompleted(5154),
+  ),
+];

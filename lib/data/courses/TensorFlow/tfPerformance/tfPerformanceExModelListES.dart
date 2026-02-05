@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfPerformanceModelES = [
+  CoursesExModel(
+    id: 5320,
+    exerciseName: "Ejercicio 1: Usa tf.function",
+    productID: "com.mrrubik.learnswift.tensorflowex5320",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5320),
+    completed: purchaseManagerHive.getCompleted(5320),
+  ),
+  CoursesExModel(
+    id: 5321,
+    exerciseName: "Desafio 2: Lista GPUs",
+    productID: "com.mrrubik.learnswift.tensorflowex5321",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5321),
+    completed: purchaseManagerHive.getCompleted(5321),
+  ),
+  CoursesExModel(
+    id: 5322,
+    exerciseName: "Ejercicio 3: Activa memory growth",
+    productID: "com.mrrubik.learnswift.tensorflowex5322",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5322),
+    completed: purchaseManagerHive.getCompleted(5322),
+  ),
+  CoursesExModel(
+    id: 5323,
+    exerciseName: "Desafio 4: Habilita JIT",
+    productID: "com.mrrubik.learnswift.tensorflowex5323",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5323),
+    completed: purchaseManagerHive.getCompleted(5323),
+  ),
+  CoursesExModel(
+    id: 5324,
+    exerciseName: "Ejercicio 5: Assert shapes",
+    productID: "com.mrrubik.learnswift.tensorflowex5324",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5324),
+    completed: purchaseManagerHive.getCompleted(5324),
+  ),
+  CoursesExModel(
+    id: 5325,
+    exerciseName: "Desafio 6: Assert equal",
+    productID: "com.mrrubik.learnswift.tensorflowex5325",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5325),
+    completed: purchaseManagerHive.getCompleted(5325),
+  ),
+  CoursesExModel(
+    id: 5326,
+    exerciseName: "Ejercicio 7: Assert all finite",
+    productID: "com.mrrubik.learnswift.tensorflowex5326",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5326),
+    completed: purchaseManagerHive.getCompleted(5326),
+  ),
+  CoursesExModel(
+    id: 5327,
+    exerciseName: "Desafio 8: Usa tf.print",
+    productID: "com.mrrubik.learnswift.tensorflowex5327",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5327),
+    completed: purchaseManagerHive.getCompleted(5327),
+  ),
+  CoursesExModel(
+    id: 5328,
+    exerciseName: "Ejercicio 9: Limpia la sesion",
+    productID: "com.mrrubik.learnswift.tensorflowex5328",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5328),
+    completed: purchaseManagerHive.getCompleted(5328),
+  ),
+  CoursesExModel(
+    id: 5329,
+    exerciseName: "Desafio 10: Fuerza CPU",
+    productID: "com.mrrubik.learnswift.tensorflowex5329",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5329),
+    completed: purchaseManagerHive.getCompleted(5329),
+  ),
+  CoursesExModel(
+    id: 5330,
+    exerciseName: "Ejercicio 11: Prefetch para velocidad",
+    productID: "com.mrrubik.learnswift.tensorflowex5330",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5330),
+    completed: purchaseManagerHive.getCompleted(5330),
+  ),
+  CoursesExModel(
+    id: 5331,
+    exerciseName: "Desafio 12: jit_compile en compile",
+    productID: "com.mrrubik.learnswift.tensorflowex5331",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5331),
+    completed: purchaseManagerHive.getCompleted(5331),
+  ),
+  CoursesExModel(
+    id: 5332,
+    exerciseName: "Ejercicio 13: Autograph to_code",
+    productID: "com.mrrubik.learnswift.tensorflowex5332",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5332),
+    completed: purchaseManagerHive.getCompleted(5332),
+  ),
+  CoursesExModel(
+    id: 5333,
+    exerciseName: "Desafio 14: Assert y luego entrena",
+    productID: "com.mrrubik.learnswift.tensorflowex5333",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5333),
+    completed: purchaseManagerHive.getCompleted(5333),
+  ),
+  CoursesExModel(
+    id: 5334,
+    exerciseName: "Ejercicio 15: Desafio: function y assert shapes",
+    productID: "com.mrrubik.learnswift.tensorflowex5334",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5334),
+    completed: purchaseManagerHive.getCompleted(5334),
+  ),
+];

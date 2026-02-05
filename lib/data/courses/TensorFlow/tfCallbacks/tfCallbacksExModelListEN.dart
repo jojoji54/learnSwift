@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfCallbacksModelEN = [
+  CoursesExModel(
+    id: 5230,
+    exerciseName: "Exercise 1: EarlyStopping callback",
+    productID: "com.mrrubik.learnswift.tensorflowex5230",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5230),
+    completed: purchaseManagerHive.getCompleted(5230),
+  ),
+  CoursesExModel(
+    id: 5231,
+    exerciseName: "Challenge 2: ModelCheckpoint callback",
+    productID: "com.mrrubik.learnswift.tensorflowex5231",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5231),
+    completed: purchaseManagerHive.getCompleted(5231),
+  ),
+  CoursesExModel(
+    id: 5232,
+    exerciseName: "Exercise 3: TensorBoard callback",
+    productID: "com.mrrubik.learnswift.tensorflowex5232",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5232),
+    completed: purchaseManagerHive.getCompleted(5232),
+  ),
+  CoursesExModel(
+    id: 5233,
+    exerciseName: "Challenge 4: ReduceLROnPlateau",
+    productID: "com.mrrubik.learnswift.tensorflowex5233",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5233),
+    completed: purchaseManagerHive.getCompleted(5233),
+  ),
+  CoursesExModel(
+    id: 5234,
+    exerciseName: "Exercise 5: LearningRateScheduler",
+    productID: "com.mrrubik.learnswift.tensorflowex5234",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5234),
+    completed: purchaseManagerHive.getCompleted(5234),
+  ),
+  CoursesExModel(
+    id: 5235,
+    exerciseName: "Challenge 6: CSVLogger",
+    productID: "com.mrrubik.learnswift.tensorflowex5235",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5235),
+    completed: purchaseManagerHive.getCompleted(5235),
+  ),
+  CoursesExModel(
+    id: 5236,
+    exerciseName: "Exercise 7: TerminateOnNaN",
+    productID: "com.mrrubik.learnswift.tensorflowex5236",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5236),
+    completed: purchaseManagerHive.getCompleted(5236),
+  ),
+  CoursesExModel(
+    id: 5237,
+    exerciseName: "Challenge 8: Custom Callback class",
+    productID: "com.mrrubik.learnswift.tensorflowex5237",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5237),
+    completed: purchaseManagerHive.getCompleted(5237),
+  ),
+  CoursesExModel(
+    id: 5238,
+    exerciseName: "Exercise 9: Use callbacks in fit",
+    productID: "com.mrrubik.learnswift.tensorflowex5238",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5238),
+    completed: purchaseManagerHive.getCompleted(5238),
+  ),
+  CoursesExModel(
+    id: 5239,
+    exerciseName: "Challenge 10: Use validation_data",
+    productID: "com.mrrubik.learnswift.tensorflowex5239",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5239),
+    completed: purchaseManagerHive.getCompleted(5239),
+  ),
+  CoursesExModel(
+    id: 5240,
+    exerciseName: "Exercise 11: Read history",
+    productID: "com.mrrubik.learnswift.tensorflowex5240",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5240),
+    completed: purchaseManagerHive.getCompleted(5240),
+  ),
+  CoursesExModel(
+    id: 5241,
+    exerciseName: "Challenge 12: ProgbarLogger",
+    productID: "com.mrrubik.learnswift.tensorflowex5241",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5241),
+    completed: purchaseManagerHive.getCompleted(5241),
+  ),
+  CoursesExModel(
+    id: 5242,
+    exerciseName: "Exercise 13: Custom on_train_begin",
+    productID: "com.mrrubik.learnswift.tensorflowex5242",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5242),
+    completed: purchaseManagerHive.getCompleted(5242),
+  ),
+  CoursesExModel(
+    id: 5243,
+    exerciseName: "Challenge 14: Combine 3 callbacks",
+    productID: "com.mrrubik.learnswift.tensorflowex5243",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5243),
+    completed: purchaseManagerHive.getCompleted(5243),
+  ),
+  CoursesExModel(
+    id: 5244,
+    exerciseName: "Exercise 15: Challenge: callback that logs loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5244",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5244),
+    completed: purchaseManagerHive.getCompleted(5244),
+  ),
+];

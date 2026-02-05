@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfPreprocessingModelES = [
+  CoursesExModel(
+    id: 5260,
+    exerciseName: "Ejercicio 1: Capa Normalization",
+    productID: "com.mrrubik.learnswift.tensorflowex5260",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5260),
+    completed: purchaseManagerHive.getCompleted(5260),
+  ),
+  CoursesExModel(
+    id: 5261,
+    exerciseName: "Desafio 2: Capa Rescaling",
+    productID: "com.mrrubik.learnswift.tensorflowex5261",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5261),
+    completed: purchaseManagerHive.getCompleted(5261),
+  ),
+  CoursesExModel(
+    id: 5262,
+    exerciseName: "Ejercicio 3: TextVectorization",
+    productID: "com.mrrubik.learnswift.tensorflowex5262",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5262),
+    completed: purchaseManagerHive.getCompleted(5262),
+  ),
+  CoursesExModel(
+    id: 5263,
+    exerciseName: "Desafio 4: StringLookup",
+    productID: "com.mrrubik.learnswift.tensorflowex5263",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5263),
+    completed: purchaseManagerHive.getCompleted(5263),
+  ),
+  CoursesExModel(
+    id: 5264,
+    exerciseName: "Ejercicio 5: IntegerLookup",
+    productID: "com.mrrubik.learnswift.tensorflowex5264",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5264),
+    completed: purchaseManagerHive.getCompleted(5264),
+  ),
+  CoursesExModel(
+    id: 5265,
+    exerciseName: "Desafio 6: CategoryEncoding",
+    productID: "com.mrrubik.learnswift.tensorflowex5265",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5265),
+    completed: purchaseManagerHive.getCompleted(5265),
+  ),
+  CoursesExModel(
+    id: 5266,
+    exerciseName: "Ejercicio 7: Discretization",
+    productID: "com.mrrubik.learnswift.tensorflowex5266",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5266),
+    completed: purchaseManagerHive.getCompleted(5266),
+  ),
+  CoursesExModel(
+    id: 5267,
+    exerciseName: "Desafio 8: Hashing",
+    productID: "com.mrrubik.learnswift.tensorflowex5267",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5267),
+    completed: purchaseManagerHive.getCompleted(5267),
+  ),
+  CoursesExModel(
+    id: 5268,
+    exerciseName: "Ejercicio 9: RandomFlip",
+    productID: "com.mrrubik.learnswift.tensorflowex5268",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5268),
+    completed: purchaseManagerHive.getCompleted(5268),
+  ),
+  CoursesExModel(
+    id: 5269,
+    exerciseName: "Desafio 10: RandomRotation",
+    productID: "com.mrrubik.learnswift.tensorflowex5269",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5269),
+    completed: purchaseManagerHive.getCompleted(5269),
+  ),
+  CoursesExModel(
+    id: 5270,
+    exerciseName: "Ejercicio 11: RandomZoom",
+    productID: "com.mrrubik.learnswift.tensorflowex5270",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5270),
+    completed: purchaseManagerHive.getCompleted(5270),
+  ),
+  CoursesExModel(
+    id: 5271,
+    exerciseName: "Desafio 12: tf.image.resize",
+    productID: "com.mrrubik.learnswift.tensorflowex5271",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5271),
+    completed: purchaseManagerHive.getCompleted(5271),
+  ),
+  CoursesExModel(
+    id: 5272,
+    exerciseName: "Ejercicio 13: tf.image.random_crop",
+    productID: "com.mrrubik.learnswift.tensorflowex5272",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5272),
+    completed: purchaseManagerHive.getCompleted(5272),
+  ),
+  CoursesExModel(
+    id: 5273,
+    exerciseName: "Desafio 14: Preprocesa en map",
+    productID: "com.mrrubik.learnswift.tensorflowex5273",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5273),
+    completed: purchaseManagerHive.getCompleted(5273),
+  ),
+  CoursesExModel(
+    id: 5274,
+    exerciseName: "Ejercicio 15: Desafio: preprocesado y modelo",
+    productID: "com.mrrubik.learnswift.tensorflowex5274",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5274),
+    completed: purchaseManagerHive.getCompleted(5274),
+  ),
+];

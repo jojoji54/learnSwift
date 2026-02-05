@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfTrainingModelES = [
+  CoursesExModel(
+    id: 5215,
+    exerciseName: "Ejercicio 1: Define un optimizer",
+    productID: "com.mrrubik.learnswift.tensorflowex5215",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5215),
+    completed: purchaseManagerHive.getCompleted(5215),
+  ),
+  CoursesExModel(
+    id: 5216,
+    exerciseName: "Desafio 2: Define una loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5216",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5216),
+    completed: purchaseManagerHive.getCompleted(5216),
+  ),
+  CoursesExModel(
+    id: 5217,
+    exerciseName: "Ejercicio 3: Esqueleto de training step",
+    productID: "com.mrrubik.learnswift.tensorflowex5217",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5217),
+    completed: purchaseManagerHive.getCompleted(5217),
+  ),
+  CoursesExModel(
+    id: 5218,
+    exerciseName: "Desafio 4: Actualiza una metrica",
+    productID: "com.mrrubik.learnswift.tensorflowex5218",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5218),
+    completed: purchaseManagerHive.getCompleted(5218),
+  ),
+  CoursesExModel(
+    id: 5219,
+    exerciseName: "Ejercicio 5: Resetea una metrica",
+    productID: "com.mrrubik.learnswift.tensorflowex5219",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5219),
+    completed: purchaseManagerHive.getCompleted(5219),
+  ),
+  CoursesExModel(
+    id: 5220,
+    exerciseName: "Desafio 6: Itera un dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5220",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5220),
+    completed: purchaseManagerHive.getCompleted(5220),
+  ),
+  CoursesExModel(
+    id: 5221,
+    exerciseName: "Ejercicio 7: Convierte train_step con tf.function",
+    productID: "com.mrrubik.learnswift.tensorflowex5221",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5221),
+    completed: purchaseManagerHive.getCompleted(5221),
+  ),
+  CoursesExModel(
+    id: 5222,
+    exerciseName: "Desafio 8: Metrica media de loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5222",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5222),
+    completed: purchaseManagerHive.getCompleted(5222),
+  ),
+  CoursesExModel(
+    id: 5223,
+    exerciseName: "Ejercicio 9: Clip de gradientes (global norm)",
+    productID: "com.mrrubik.learnswift.tensorflowex5223",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5223),
+    completed: purchaseManagerHive.getCompleted(5223),
+  ),
+  CoursesExModel(
+    id: 5224,
+    exerciseName: "Desafio 10: Schedule de learning rate",
+    productID: "com.mrrubik.learnswift.tensorflowex5224",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5224),
+    completed: purchaseManagerHive.getCompleted(5224),
+  ),
+  CoursesExModel(
+    id: 5225,
+    exerciseName: "Ejercicio 11: Usa tf.summary.scalar",
+    productID: "com.mrrubik.learnswift.tensorflowex5225",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5225),
+    completed: purchaseManagerHive.getCompleted(5225),
+  ),
+  CoursesExModel(
+    id: 5226,
+    exerciseName: "Desafio 12: Politica mixed precision",
+    productID: "com.mrrubik.learnswift.tensorflowex5226",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5226),
+    completed: purchaseManagerHive.getCompleted(5226),
+  ),
+  CoursesExModel(
+    id: 5227,
+    exerciseName: "Ejercicio 13: Crea un checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5227",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5227),
+    completed: purchaseManagerHive.getCompleted(5227),
+  ),
+  CoursesExModel(
+    id: 5228,
+    exerciseName: "Desafio 14: Restaura el ultimo checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5228",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5228),
+    completed: purchaseManagerHive.getCompleted(5228),
+  ),
+  CoursesExModel(
+    id: 5229,
+    exerciseName: "Ejercicio 15: Desafio: mini loop custom",
+    productID: "com.mrrubik.learnswift.tensorflowex5229",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5229),
+    completed: purchaseManagerHive.getCompleted(5229),
+  ),
+];

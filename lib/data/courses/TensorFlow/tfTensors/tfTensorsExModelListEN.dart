@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfTensorsModelEN = [
+  CoursesExModel(
+    id: 5140,
+    exerciseName: "Exercise 1: Inspect shape",
+    productID: "com.mrrubik.learnswift.tensorflowex5140",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5140),
+    completed: purchaseManagerHive.getCompleted(5140),
+  ),
+  CoursesExModel(
+    id: 5141,
+    exerciseName: "Challenge 2: Reshape a tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5141",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5141),
+    completed: purchaseManagerHive.getCompleted(5141),
+  ),
+  CoursesExModel(
+    id: 5142,
+    exerciseName: "Exercise 3: Expand dims",
+    productID: "com.mrrubik.learnswift.tensorflowex5142",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5142),
+    completed: purchaseManagerHive.getCompleted(5142),
+  ),
+  CoursesExModel(
+    id: 5143,
+    exerciseName: "Challenge 4: Squeeze dims",
+    productID: "com.mrrubik.learnswift.tensorflowex5143",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5143),
+    completed: purchaseManagerHive.getCompleted(5143),
+  ),
+  CoursesExModel(
+    id: 5144,
+    exerciseName: "Exercise 5: Concat tensors",
+    productID: "com.mrrubik.learnswift.tensorflowex5144",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5144),
+    completed: purchaseManagerHive.getCompleted(5144),
+  ),
+  CoursesExModel(
+    id: 5145,
+    exerciseName: "Challenge 6: Stack tensors",
+    productID: "com.mrrubik.learnswift.tensorflowex5145",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5145),
+    completed: purchaseManagerHive.getCompleted(5145),
+  ),
+  CoursesExModel(
+    id: 5146,
+    exerciseName: "Exercise 7: Slice with tf.slice",
+    productID: "com.mrrubik.learnswift.tensorflowex5146",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5146),
+    completed: purchaseManagerHive.getCompleted(5146),
+  ),
+  CoursesExModel(
+    id: 5147,
+    exerciseName: "Challenge 8: Gather indices",
+    productID: "com.mrrubik.learnswift.tensorflowex5147",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5147),
+    completed: purchaseManagerHive.getCompleted(5147),
+  ),
+  CoursesExModel(
+    id: 5148,
+    exerciseName: "Exercise 9: Boolean mask",
+    productID: "com.mrrubik.learnswift.tensorflowex5148",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5148),
+    completed: purchaseManagerHive.getCompleted(5148),
+  ),
+  CoursesExModel(
+    id: 5149,
+    exerciseName: "Challenge 10: Use tf.where",
+    productID: "com.mrrubik.learnswift.tensorflowex5149",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5149),
+    completed: purchaseManagerHive.getCompleted(5149),
+  ),
+  CoursesExModel(
+    id: 5150,
+    exerciseName: "Exercise 11: Pad a tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5150",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5150),
+    completed: purchaseManagerHive.getCompleted(5150),
+  ),
+  CoursesExModel(
+    id: 5151,
+    exerciseName: "Challenge 12: Ragged tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5151",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5151),
+    completed: purchaseManagerHive.getCompleted(5151),
+  ),
+  CoursesExModel(
+    id: 5152,
+    exerciseName: "Exercise 13: Sparse tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5152",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5152),
+    completed: purchaseManagerHive.getCompleted(5152),
+  ),
+  CoursesExModel(
+    id: 5153,
+    exerciseName: "Challenge 14: TensorSpec",
+    productID: "com.mrrubik.learnswift.tensorflowex5153",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5153),
+    completed: purchaseManagerHive.getCompleted(5153),
+  ),
+  CoursesExModel(
+    id: 5154,
+    exerciseName: "Exercise 15: Challenge: reshape and concat",
+    productID: "com.mrrubik.learnswift.tensorflowex5154",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5154),
+    completed: purchaseManagerHive.getCompleted(5154),
+  ),
+];

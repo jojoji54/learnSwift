@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfTrainingModelZH = [
+  CoursesExModel(
+    id: 5215,
+    exerciseName: "练习 1: 定义优化器",
+    productID: "com.mrrubik.learnswift.tensorflowex5215",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5215),
+    completed: purchaseManagerHive.getCompleted(5215),
+  ),
+  CoursesExModel(
+    id: 5216,
+    exerciseName: "挑战 2: 定义 loss",
+    productID: "com.mrrubik.learnswift.tensorflowex5216",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5216),
+    completed: purchaseManagerHive.getCompleted(5216),
+  ),
+  CoursesExModel(
+    id: 5217,
+    exerciseName: "练习 3: 训练 step 骨架",
+    productID: "com.mrrubik.learnswift.tensorflowex5217",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5217),
+    completed: purchaseManagerHive.getCompleted(5217),
+  ),
+  CoursesExModel(
+    id: 5218,
+    exerciseName: "挑战 4: 更新指标",
+    productID: "com.mrrubik.learnswift.tensorflowex5218",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5218),
+    completed: purchaseManagerHive.getCompleted(5218),
+  ),
+  CoursesExModel(
+    id: 5219,
+    exerciseName: "练习 5: 重置指标",
+    productID: "com.mrrubik.learnswift.tensorflowex5219",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5219),
+    completed: purchaseManagerHive.getCompleted(5219),
+  ),
+  CoursesExModel(
+    id: 5220,
+    exerciseName: "挑战 6: 遍历 dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5220",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5220),
+    completed: purchaseManagerHive.getCompleted(5220),
+  ),
+  CoursesExModel(
+    id: 5221,
+    exerciseName: "练习 7: 用 tf.function 包装 train_step",
+    productID: "com.mrrubik.learnswift.tensorflowex5221",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5221),
+    completed: purchaseManagerHive.getCompleted(5221),
+  ),
+  CoursesExModel(
+    id: 5222,
+    exerciseName: "挑战 8: loss 平均指标",
+    productID: "com.mrrubik.learnswift.tensorflowex5222",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5222),
+    completed: purchaseManagerHive.getCompleted(5222),
+  ),
+  CoursesExModel(
+    id: 5223,
+    exerciseName: "练习 9: 全局范数裁剪",
+    productID: "com.mrrubik.learnswift.tensorflowex5223",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5223),
+    completed: purchaseManagerHive.getCompleted(5223),
+  ),
+  CoursesExModel(
+    id: 5224,
+    exerciseName: "挑战 10: 学习率 schedule",
+    productID: "com.mrrubik.learnswift.tensorflowex5224",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5224),
+    completed: purchaseManagerHive.getCompleted(5224),
+  ),
+  CoursesExModel(
+    id: 5225,
+    exerciseName: "练习 11: 写 tf.summary.scalar",
+    productID: "com.mrrubik.learnswift.tensorflowex5225",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5225),
+    completed: purchaseManagerHive.getCompleted(5225),
+  ),
+  CoursesExModel(
+    id: 5226,
+    exerciseName: "挑战 12: 混合精度策略",
+    productID: "com.mrrubik.learnswift.tensorflowex5226",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5226),
+    completed: purchaseManagerHive.getCompleted(5226),
+  ),
+  CoursesExModel(
+    id: 5227,
+    exerciseName: "练习 13: 创建 checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5227",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5227),
+    completed: purchaseManagerHive.getCompleted(5227),
+  ),
+  CoursesExModel(
+    id: 5228,
+    exerciseName: "挑战 14: 恢复最新 checkpoint",
+    productID: "com.mrrubik.learnswift.tensorflowex5228",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5228),
+    completed: purchaseManagerHive.getCompleted(5228),
+  ),
+  CoursesExModel(
+    id: 5229,
+    exerciseName: "练习 15: 挑战：迷你自定义循环",
+    productID: "com.mrrubik.learnswift.tensorflowex5229",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5229),
+    completed: purchaseManagerHive.getCompleted(5229),
+  ),
+];

@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfAdvancedModelEN = [
+  CoursesExModel(
+    id: 5335,
+    exerciseName: "Exercise 1: MirroredStrategy",
+    productID: "com.mrrubik.learnswift.tensorflowex5335",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5335),
+    completed: purchaseManagerHive.getCompleted(5335),
+  ),
+  CoursesExModel(
+    id: 5336,
+    exerciseName: "Challenge 2: strategy.scope",
+    productID: "com.mrrubik.learnswift.tensorflowex5336",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5336),
+    completed: purchaseManagerHive.getCompleted(5336),
+  ),
+  CoursesExModel(
+    id: 5337,
+    exerciseName: "Exercise 3: Mixed precision policy",
+    productID: "com.mrrubik.learnswift.tensorflowex5337",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5337),
+    completed: purchaseManagerHive.getCompleted(5337),
+  ),
+  CoursesExModel(
+    id: 5338,
+    exerciseName: "Challenge 4: Label smoothing",
+    productID: "com.mrrubik.learnswift.tensorflowex5338",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5338),
+    completed: purchaseManagerHive.getCompleted(5338),
+  ),
+  CoursesExModel(
+    id: 5339,
+    exerciseName: "Exercise 5: Custom Metric class",
+    productID: "com.mrrubik.learnswift.tensorflowex5339",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5339),
+    completed: purchaseManagerHive.getCompleted(5339),
+  ),
+  CoursesExModel(
+    id: 5340,
+    exerciseName: "Challenge 6: Metric add_weight",
+    productID: "com.mrrubik.learnswift.tensorflowex5340",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5340),
+    completed: purchaseManagerHive.getCompleted(5340),
+  ),
+  CoursesExModel(
+    id: 5341,
+    exerciseName: "Exercise 7: Ragged to_tensor",
+    productID: "com.mrrubik.learnswift.tensorflowex5341",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5341),
+    completed: purchaseManagerHive.getCompleted(5341),
+  ),
+  CoursesExModel(
+    id: 5342,
+    exerciseName: "Challenge 8: Sparse to_dense",
+    productID: "com.mrrubik.learnswift.tensorflowex5342",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5342),
+    completed: purchaseManagerHive.getCompleted(5342),
+  ),
+  CoursesExModel(
+    id: 5343,
+    exerciseName: "Exercise 9: String split",
+    productID: "com.mrrubik.learnswift.tensorflowex5343",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5343),
+    completed: purchaseManagerHive.getCompleted(5343),
+  ),
+  CoursesExModel(
+    id: 5344,
+    exerciseName: "Challenge 10: Ragged map_flat_values",
+    productID: "com.mrrubik.learnswift.tensorflowex5344",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5344),
+    completed: purchaseManagerHive.getCompleted(5344),
+  ),
+  CoursesExModel(
+    id: 5345,
+    exerciseName: "Exercise 11: Distribute dataset",
+    productID: "com.mrrubik.learnswift.tensorflowex5345",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5345),
+    completed: purchaseManagerHive.getCompleted(5345),
+  ),
+  CoursesExModel(
+    id: 5346,
+    exerciseName: "Challenge 12: Run in replica context",
+    productID: "com.mrrubik.learnswift.tensorflowex5346",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5346),
+    completed: purchaseManagerHive.getCompleted(5346),
+  ),
+  CoursesExModel(
+    id: 5347,
+    exerciseName: "Exercise 13: Custom training with strategy",
+    productID: "com.mrrubik.learnswift.tensorflowex5347",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5347),
+    completed: purchaseManagerHive.getCompleted(5347),
+  ),
+  CoursesExModel(
+    id: 5348,
+    exerciseName: "Challenge 14: Export a SavedModel",
+    productID: "com.mrrubik.learnswift.tensorflowex5348",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5348),
+    completed: purchaseManagerHive.getCompleted(5348),
+  ),
+  CoursesExModel(
+    id: 5349,
+    exerciseName: "Exercise 15: Challenge: strategy + mixed precision",
+    productID: "com.mrrubik.learnswift.tensorflowex5349",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5349),
+    completed: purchaseManagerHive.getCompleted(5349),
+  ),
+];

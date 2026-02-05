@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfDataModelEN = [
+  CoursesExModel(
+    id: 5245,
+    exerciseName: "Exercise 1: from_tensor_slices",
+    productID: "com.mrrubik.learnswift.tensorflowex5245",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5245),
+    completed: purchaseManagerHive.getCompleted(5245),
+  ),
+  CoursesExModel(
+    id: 5246,
+    exerciseName: "Challenge 2: Shuffle",
+    productID: "com.mrrubik.learnswift.tensorflowex5246",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5246),
+    completed: purchaseManagerHive.getCompleted(5246),
+  ),
+  CoursesExModel(
+    id: 5247,
+    exerciseName: "Exercise 3: Batch",
+    productID: "com.mrrubik.learnswift.tensorflowex5247",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5247),
+    completed: purchaseManagerHive.getCompleted(5247),
+  ),
+  CoursesExModel(
+    id: 5248,
+    exerciseName: "Challenge 4: Map",
+    productID: "com.mrrubik.learnswift.tensorflowex5248",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5248),
+    completed: purchaseManagerHive.getCompleted(5248),
+  ),
+  CoursesExModel(
+    id: 5249,
+    exerciseName: "Exercise 5: Prefetch",
+    productID: "com.mrrubik.learnswift.tensorflowex5249",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5249),
+    completed: purchaseManagerHive.getCompleted(5249),
+  ),
+  CoursesExModel(
+    id: 5250,
+    exerciseName: "Challenge 6: Cache",
+    productID: "com.mrrubik.learnswift.tensorflowex5250",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5250),
+    completed: purchaseManagerHive.getCompleted(5250),
+  ),
+  CoursesExModel(
+    id: 5251,
+    exerciseName: "Exercise 7: Repeat",
+    productID: "com.mrrubik.learnswift.tensorflowex5251",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5251),
+    completed: purchaseManagerHive.getCompleted(5251),
+  ),
+  CoursesExModel(
+    id: 5252,
+    exerciseName: "Challenge 8: Take",
+    productID: "com.mrrubik.learnswift.tensorflowex5252",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5252),
+    completed: purchaseManagerHive.getCompleted(5252),
+  ),
+  CoursesExModel(
+    id: 5253,
+    exerciseName: "Exercise 9: Skip",
+    productID: "com.mrrubik.learnswift.tensorflowex5253",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5253),
+    completed: purchaseManagerHive.getCompleted(5253),
+  ),
+  CoursesExModel(
+    id: 5254,
+    exerciseName: "Challenge 10: Zip datasets",
+    productID: "com.mrrubik.learnswift.tensorflowex5254",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5254),
+    completed: purchaseManagerHive.getCompleted(5254),
+  ),
+  CoursesExModel(
+    id: 5255,
+    exerciseName: "Exercise 11: Concatenate datasets",
+    productID: "com.mrrubik.learnswift.tensorflowex5255",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5255),
+    completed: purchaseManagerHive.getCompleted(5255),
+  ),
+  CoursesExModel(
+    id: 5256,
+    exerciseName: "Challenge 12: Interleave",
+    productID: "com.mrrubik.learnswift.tensorflowex5256",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5256),
+    completed: purchaseManagerHive.getCompleted(5256),
+  ),
+  CoursesExModel(
+    id: 5257,
+    exerciseName: "Exercise 13: Set num_parallel_calls",
+    productID: "com.mrrubik.learnswift.tensorflowex5257",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5257),
+    completed: purchaseManagerHive.getCompleted(5257),
+  ),
+  CoursesExModel(
+    id: 5258,
+    exerciseName: "Challenge 14: AUTOTUNE constant",
+    productID: "com.mrrubik.learnswift.tensorflowex5258",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5258),
+    completed: purchaseManagerHive.getCompleted(5258),
+  ),
+  CoursesExModel(
+    id: 5259,
+    exerciseName: "Exercise 15: Challenge: fast pipeline chain",
+    productID: "com.mrrubik.learnswift.tensorflowex5259",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5259),
+    completed: purchaseManagerHive.getCompleted(5259),
+  ),
+];

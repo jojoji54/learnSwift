@@ -1,0 +1,111 @@
+import 'package:learnswift/data/courses/coursesExModel.dart';
+
+import '../../Swift/swiftBasics/sbExModelListZH.dart';
+
+List<CoursesExModel> tfDataModelZH = [
+  CoursesExModel(
+    id: 5245,
+    exerciseName: "练习 1: from_tensor_slices",
+    productID: "com.mrrubik.learnswift.tensorflowex5245",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5245),
+    completed: purchaseManagerHive.getCompleted(5245),
+  ),
+  CoursesExModel(
+    id: 5246,
+    exerciseName: "挑战 2: shuffle",
+    productID: "com.mrrubik.learnswift.tensorflowex5246",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5246),
+    completed: purchaseManagerHive.getCompleted(5246),
+  ),
+  CoursesExModel(
+    id: 5247,
+    exerciseName: "练习 3: batch",
+    productID: "com.mrrubik.learnswift.tensorflowex5247",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5247),
+    completed: purchaseManagerHive.getCompleted(5247),
+  ),
+  CoursesExModel(
+    id: 5248,
+    exerciseName: "挑战 4: map",
+    productID: "com.mrrubik.learnswift.tensorflowex5248",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5248),
+    completed: purchaseManagerHive.getCompleted(5248),
+  ),
+  CoursesExModel(
+    id: 5249,
+    exerciseName: "练习 5: prefetch",
+    productID: "com.mrrubik.learnswift.tensorflowex5249",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5249),
+    completed: purchaseManagerHive.getCompleted(5249),
+  ),
+  CoursesExModel(
+    id: 5250,
+    exerciseName: "挑战 6: cache",
+    productID: "com.mrrubik.learnswift.tensorflowex5250",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5250),
+    completed: purchaseManagerHive.getCompleted(5250),
+  ),
+  CoursesExModel(
+    id: 5251,
+    exerciseName: "练习 7: repeat",
+    productID: "com.mrrubik.learnswift.tensorflowex5251",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5251),
+    completed: purchaseManagerHive.getCompleted(5251),
+  ),
+  CoursesExModel(
+    id: 5252,
+    exerciseName: "挑战 8: take",
+    productID: "com.mrrubik.learnswift.tensorflowex5252",
+    alreadyBuy: purchaseManagerHive.getPurchasedTrue(5252),
+    completed: purchaseManagerHive.getCompleted(5252),
+  ),
+  CoursesExModel(
+    id: 5253,
+    exerciseName: "练习 9: skip",
+    productID: "com.mrrubik.learnswift.tensorflowex5253",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5253),
+    completed: purchaseManagerHive.getCompleted(5253),
+  ),
+  CoursesExModel(
+    id: 5254,
+    exerciseName: "挑战 10: zip",
+    productID: "com.mrrubik.learnswift.tensorflowex5254",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5254),
+    completed: purchaseManagerHive.getCompleted(5254),
+  ),
+  CoursesExModel(
+    id: 5255,
+    exerciseName: "练习 11: concatenate",
+    productID: "com.mrrubik.learnswift.tensorflowex5255",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5255),
+    completed: purchaseManagerHive.getCompleted(5255),
+  ),
+  CoursesExModel(
+    id: 5256,
+    exerciseName: "挑战 12: interleave",
+    productID: "com.mrrubik.learnswift.tensorflowex5256",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5256),
+    completed: purchaseManagerHive.getCompleted(5256),
+  ),
+  CoursesExModel(
+    id: 5257,
+    exerciseName: "练习 13: num_parallel_calls",
+    productID: "com.mrrubik.learnswift.tensorflowex5257",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5257),
+    completed: purchaseManagerHive.getCompleted(5257),
+  ),
+  CoursesExModel(
+    id: 5258,
+    exerciseName: "挑战 14: AUTOTUNE 常量",
+    productID: "com.mrrubik.learnswift.tensorflowex5258",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5258),
+    completed: purchaseManagerHive.getCompleted(5258),
+  ),
+  CoursesExModel(
+    id: 5259,
+    exerciseName: "练习 15: 挑战：快速链式管道",
+    productID: "com.mrrubik.learnswift.tensorflowex5259",
+    alreadyBuy: purchaseManagerHive.getPurchasedFalse(5259),
+    completed: purchaseManagerHive.getCompleted(5259),
+  ),
+];

@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animator/flutter_animator.dart';
@@ -15,6 +16,7 @@ import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../data/Hive/LenguajePurchaseManagerHive.dart';
 import '../../data/LanguajeModel/languajeMainModelListZH.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -27,6 +29,8 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final PageController _pageController = PageController();
+  final LanguagePurchaseManagerHive _languagePurchaseManagerHive =
+      LanguagePurchaseManagerHive();
 
   @override
   void initState() {
@@ -34,7 +38,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // OJO: esto borra también el idioma guardado, compras, etc.
     // Si lo necesitas solo para debug, déjalo; si no, quítalo.
-    clearSharedPreferences();
+    if (kDebugMode) clearSharedPreferences();
   }
 
   Future<void> clearSharedPreferences() async {
@@ -121,7 +125,8 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   child: Card(
                     elevation: 2,
-                    margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                    margin:
+                        const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                     color: Colors.white,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -144,8 +149,12 @@ class _MyHomePageState extends State<MyHomePage> {
                                       padding: const EdgeInsets.all(8.0),
                                       child: Center(
                                         child: ShaderMask(
-                                          shaderCallback: (bounds) => LinearGradient(
-                                            colors: [course.color1, course.color2],
+                                          shaderCallback: (bounds) =>
+                                              LinearGradient(
+                                            colors: [
+                                              course.color1,
+                                              course.color2
+                                            ],
                                             begin: Alignment.topLeft,
                                             end: Alignment.bottomRight,
                                           ).createShader(bounds),
@@ -182,9 +191,19 @@ class _MyHomePageState extends State<MyHomePage> {
                                 HapticFeedback.lightImpact();
 
                                 if (course.isActive) {
+                                  // ✅ llamado correcto (instancia, no clase)
+                                  final languagePurchased =
+                                      _languagePurchaseManagerHive
+                                          .getLanguagePurchasedFalse(course.id);
+
                                   allProvider.setData(course.coursesList);
-                                  allProvider.setEverythingUnlocked(course.alreadyBuy);
-                                  allProvider.setLenguajeProductID(course.productID);
+
+                                  // pack del lenguaje actual
+                                  allProvider
+                                      .setEverythingUnlocked(languagePurchased);
+
+                                  allProvider
+                                      .setLenguajeProductID(course.productID);
                                   Constant.languajeID = course.id;
 
                                   Navigator.push(
@@ -207,10 +226,15 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Container(
                                   decoration: BoxDecoration(
                                     borderRadius: BorderRadius.circular(10),
-                                    color: !course.isActive ? Colors.grey.withOpacity(0.5) : null,
+                                    color: !course.isActive
+                                        ? Colors.grey.withOpacity(0.5)
+                                        : null,
                                     gradient: course.isActive
                                         ? LinearGradient(
-                                            colors: [course.color2, course.color1],
+                                            colors: [
+                                              course.color2,
+                                              course.color1
+                                            ],
                                             begin: Alignment.topLeft,
                                             end: Alignment.bottomRight,
                                           )

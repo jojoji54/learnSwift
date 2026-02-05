@@ -4,37 +4,45 @@ class PurchaseManagerHive {
   final Box _box = Hive.box('purchases');
 
   bool getPurchasedTrue(int index) {
-    final item = _box.get(index, defaultValue: {'purchased': true});
-    return item['purchased'];
+    // Semántica actual: si no existe, por defecto es "desbloqueado" (free)
+    final raw = _box.get(index);
+    if (raw == null) return true;
+    return _readBoolField(raw, 'purchased', fallback: true);
   }
 
   bool getPurchasedFalse(int index) {
-    final item = _box.get(index, defaultValue: {'purchased': false});
-    return item['purchased'];
+    final raw = _box.get(index);
+    if (raw == null) return false;
+    return _readBoolField(raw, 'purchased', fallback: false);
   }
 
   bool getCompleted(int index) {
-    final item = _box.get(index, defaultValue: {'completed': false});
-    return item['completed'];
+    final raw = _box.get(index);
+    if (raw == null) return false;
+    return _readBoolField(raw, 'completed', fallback: false);
   }
 
   void updatePurchase(int index, {bool? purchased, bool? completed}) {
-    final item = _box.get(index, defaultValue: {'purchased': false, 'completed': false});
+    final raw = _box.get(index);
+    final currentPurchased = raw == null ? false : _readBoolField(raw, 'purchased', fallback: false);
+    final currentCompleted = raw == null ? false : _readBoolField(raw, 'completed', fallback: false);
+
     _box.put(index, {
-      'purchased': purchased ?? item['purchased'],
-      'completed': completed ?? item['completed'],
+      'purchased': purchased ?? currentPurchased,
+      'completed': completed ?? currentCompleted,
     });
   }
 
-  // Nuevo método para filtrar datos
-  List<Map> filterCompletedByCourseId(int courseId) {
-    List<Map> filteredItems = [];
-    _box.keys.forEach((key) {
-      final item = _box.get(key, defaultValue: {'purchased': false, 'completed': false});
-      if (item['id'] == courseId && item['completed'] == true) {
-        filteredItems.add({'key': key, 'data': item});
-      }
-    });
-    return filteredItems;
+  // Esto ahora mismo está roto en tu código (no guardas 'id' o 'courseId')
+  // Mejor bórralo o rehazlo. Lo dejo aquí solo para que no te falle compile.
+  List<Map> filterCompletedByCourseId(int courseId) => [];
+
+  bool _readBoolField(dynamic raw, String key, {required bool fallback}) {
+    if (raw is Map) {
+      final v = raw[key];
+      if (v is bool) return v;
+    }
+    if (raw is bool && key == 'purchased') return raw;
+    return fallback;
   }
 }

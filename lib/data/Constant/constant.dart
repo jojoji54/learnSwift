@@ -6,5 +6,6 @@ class Constant {
 static int languajeID=0;
   //tareasCompleted
   static String? purchaseanddeveloString;
+
   static var purchaseanddevelop;
 }

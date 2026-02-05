@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
@@ -6,14 +8,15 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart';
+import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart'; // languagePurchaseManagerHive
 import 'package:learnswift/data/courses/coursesExModel.dart';
-import 'package:learnswift/data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:linear_progress_bar/linear_progress_bar.dart';
 import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
+
+import '../../data/courses/Swift/swiftBasics/sbExModelListZH.dart';
 
 class MainCoursesExercises extends StatefulWidget {
   final int id;
@@ -23,15 +26,17 @@ class MainCoursesExercises extends StatefulWidget {
   Color color1;
   Color color2;
   int exPtrogress;
-  MainCoursesExercises(
-      {super.key,
-      required this.id,
-      required this.exPtrogress,
-      required this.title,
-      this.allProvider,
-      required this.description,
-      required this.color1,
-      required this.color2});
+
+  MainCoursesExercises({
+    super.key,
+    required this.id,
+    required this.exPtrogress,
+    required this.title,
+    this.allProvider,
+    required this.description,
+    required this.color1,
+    required this.color2,
+  });
 
   @override
   State<MainCoursesExercises> createState() => _MainCoursesExercisesState();
@@ -39,9 +44,16 @@ class MainCoursesExercises extends StatefulWidget {
 
 class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   final InAppPurchase inAppPurchase = InAppPurchase.instance;
-  int id = 0;
+
+  StreamSubscription<List<PurchaseDetails>>? _purchaseSub;
+
   bool isLoading = false;
   int courseID = 100000000;
+
+  bool _restoreInProgress = false;
+  bool _restoredSomething = false;
+  Timer? _restoreTimer;
+
   @override
   void initState() {
     super.initState();
@@ -49,13 +61,26 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   @override
+  void dispose() {
+    _purchaseSub?.cancel();
+    _restoreTimer?.cancel();
+    super.dispose();
+  }
+
+  AllProvider _provider(BuildContext context) {
+    // Si te lo pasan por constructor, úsalo; si no, tira del Provider.
+    return widget.allProvider ?? Provider.of<AllProvider>(context, listen: false);
+  }
+
+  @override
   Widget build(BuildContext context) {
     final allProvider = Provider.of<AllProvider>(context);
+
     if (allProvider.data[widget.id].catExercise.isEmpty) {
       return Scaffold(
         appBar: AppBar(
           flexibleSpace: AnimatedContainer(
-            duration: const Duration(seconds: 2), // Duración de la transición
+            duration: const Duration(seconds: 2),
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 colors: [widget.color1, widget.color2],
@@ -64,7 +89,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               ),
             ),
           ),
-          toolbarHeight: 100, // Define la altura deseada del AppBar
+          toolbarHeight: 100,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -73,34 +98,34 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                 child: Center(
                   child: Text(
                     widget.title,
-                    style: TextStyle(
-                        fontFamily: 'InconsolataBold',
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25,
-                        color: Colors.black),
+                    style: const TextStyle(
+                      fontFamily: 'InconsolataBold',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 25,
+                      color: Colors.black,
+                    ),
                   ),
                 ),
               ),
               Align(
                 alignment: Alignment.centerRight,
-                child: CatInfoIcon(
-                  description: widget.description,
-                ), // Aquí añades el ícono de información
+                child: CatInfoIcon(description: widget.description),
               ),
             ],
           ),
         ),
-        body: const Center(
-          child: CircularProgressIndicator(),
-        ),
+        body: const Center(child: CircularProgressIndicator()),
       );
     }
+
+    final exercises = allProvider.data[widget.id].catExercise;
+    final completedCount = exercises.where((item) => item.completed == true).length;
 
     return Scaffold(
       backgroundColor: const Color(0xFFf4f4f2),
       appBar: AppBar(
         flexibleSpace: AnimatedContainer(
-          duration: const Duration(seconds: 2), // Duración de la transición
+          duration: const Duration(seconds: 2),
           decoration: BoxDecoration(
             gradient: LinearGradient(
               colors: [widget.color1, widget.color2],
@@ -109,7 +134,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             ),
           ),
         ),
-        toolbarHeight: 100, // Define la altura deseada del AppBar
+        toolbarHeight: 100,
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -118,19 +143,18 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               child: Center(
                 child: Text(
                   widget.title,
-                  style: TextStyle(
-                      fontFamily: 'InconsolataBold',
-                      fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                      color: Colors.black),
+                  style: const TextStyle(
+                    fontFamily: 'InconsolataBold',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ),
             Align(
               alignment: Alignment.centerRight,
-              child: CatInfoIcon(
-                description: widget.description,
-              ), // Aquí añades el ícono de información
+              child: CatInfoIcon(description: widget.description),
             ),
           ],
         ),
@@ -141,29 +165,20 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             height: MediaQuery.of(context).size.height * 0.9,
             width: MediaQuery.of(context).size.width * 0.9,
             child: ZoomIn(
-              child: Lottie.asset(
-                'assets/lottie/buNoTrans.json',
-                fit: BoxFit.cover,
-              ),
+              child: Lottie.asset('assets/lottie/buNoTrans.json', fit: BoxFit.cover),
             ),
           ),
           Column(
             children: [
               ConstrainedBox(
-                constraints: const BoxConstraints(
-                  maxHeight: 120,
-                  maxWidth: 1000,
-                ),
+                constraints: const BoxConstraints(maxHeight: 120, maxWidth: 1000),
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: LinearProgressBar(
                     minHeight: 15,
-                    maxSteps: allProvider.data[widget.id].catExercise.length,
+                    maxSteps: exercises.length,
                     progressType: LinearProgressBar.progressTypeLinear,
-                    currentStep: allProvider.data[Constant.catIndex].catExercise
-                        .where((item) => item.completed == true)
-                        .toList()
-                        .length,
+                    currentStep: completedCount,
                     progressColor: widget.color1,
                     backgroundColor: const Color(0xFFeaeaea),
                     borderRadius: BorderRadius.circular(10),
@@ -172,45 +187,47 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               ),
               Expanded(
                 child: ListView.builder(
-                  itemCount: allProvider.data[widget.id].catExercise.length,
+                  itemCount: exercises.length,
                   padding: const EdgeInsets.only(top: 20, bottom: 10),
                   itemBuilder: (context, index) {
-                    final course =
-                        allProvider.data[widget.id].catExercise[index];
+                    final course = exercises[index];
+
+                    // ✅ Clave: “desbloqueado” si:
+                    // - ejercicio comprado (alreadyBuy)
+                    // - pack del lenguaje actual (everythingUnlocked)
+                    // - pack global (everythingPurchased)
+                    final bool isUnlocked = course.alreadyBuy ||
+                        allProvider.everythingPurchased;
+
+                    final bool completed = course.completed;
+
                     return FadeIn(
                       child: Center(
                         child: ConstrainedBox(
-                          constraints: const BoxConstraints(
-                            maxHeight: 120,
-                            maxWidth: 1000,
-                          ),
+                          constraints: const BoxConstraints(maxHeight: 120, maxWidth: 1000),
                           child: Card(
                             elevation: 2,
-                            margin: const EdgeInsets.symmetric(
-                                horizontal: 16, vertical: 8),
+                            margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                             color: Colors.white,
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment
-                                      .start, // Permite alineación en múltiples líneas
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.all(8.0),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(10),
+                                          borderRadius: BorderRadius.circular(10),
                                           color: const Color(0xFFf3f4f2),
                                         ),
                                         height: 50,
                                         width: 50,
                                         child: Center(
                                           child: Text(
-                                            '${id++}',
+                                            '${index + 1}', // ✅ sin id++ (evita números raros)
                                             style: const TextStyle(
                                               fontFamily: 'InconsolataRegular',
                                               fontWeight: FontWeight.normal,
@@ -221,7 +238,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                         ),
                                       ),
                                     ),
-                                    // Contenedor para el texto
                                     Expanded(
                                       child: Padding(
                                         padding: const EdgeInsets.all(8.0),
@@ -233,54 +249,44 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                             color: Colors.black,
                                             fontSize: 16,
                                           ),
-                                          softWrap:
-                                              true, // Ajusta automáticamente a múltiples líneas
-                                          overflow: TextOverflow
-                                              .visible, // Permite que el texto sea completamente visible
+                                          softWrap: true,
+                                          overflow: TextOverflow.visible,
                                         ),
                                       ),
                                     ),
-                                    // Botón o indicador de estado
-                                    isLoading == true && courseID == course.id
-                                        ? Padding(
-                                            padding: const EdgeInsets.all(8.0),
+                                    (isLoading == true && courseID == course.id)
+                                        ? const Padding(
+                                            padding: EdgeInsets.all(8.0),
                                             child: CircularProgressIndicator(
-                                              color: const Color.fromARGB(
-                                                  255, 19, 51, 106),
+                                              color: Color.fromARGB(255, 19, 51, 106),
                                             ),
                                           )
                                         : InkWell(
                                             onTap: () {
-                                              if (!course.alreadyBuy &&
-                                                  !allProvider
-                                                      .everythingPurchased) {
+                                              if (!isUnlocked) {
                                                 courseID = course.id;
-                                                _showUnlockDialog(
-                                                    course); // Muestra el diálogo para desbloquear
+                                                _showUnlockDialog(course);
                                               } else {
                                                 navToEx(
-                                                    Constant.catIndex,
-                                                    course.id,
-                                                    course.exerciseName,
-                                                    widget.description,
-                                                    course.completed,
-                                                    widget.color1,
-                                                    widget.color2,
-                                                    allProvider);
+                                                  Constant.catIndex,
+                                                  course.id,
+                                                  course.exerciseName,
+                                                  widget.description,
+                                                  completed,
+                                                  widget.color1,
+                                                  widget.color2,
+                                                  allProvider,
+                                                );
                                               }
                                             },
                                             child: Padding(
-                                              padding:
-                                                  const EdgeInsets.all(8.0),
+                                              padding: const EdgeInsets.all(8.0),
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                  borderRadius:
-                                                      BorderRadius.circular(10),
-                                                  color: !course.alreadyBuy &&
-                                                          !allProvider
-                                                              .everythingPurchased
+                                                  borderRadius: BorderRadius.circular(10),
+                                                  color: !isUnlocked
                                                       ? Colors.red
-                                                      : course.completed
+                                                      : completed
                                                           ? Colors.green
                                                           : Colors.grey,
                                                 ),
@@ -288,18 +294,14 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                                 width: 80,
                                                 child: Center(
                                                   child: Icon(
-                                                      !course.alreadyBuy &&
-                                                              !allProvider
-                                                                  .everythingPurchased
-                                                          ? FontAwesomeIcons
-                                                              .coins
-                                                          : course.completed
-                                                              ? FontAwesomeIcons
-                                                                  .trophy
-                                                              : FontAwesomeIcons
-                                                                  .code,
-                                                      size: 15,
-                                                      color: Colors.white),
+                                                    !isUnlocked
+                                                        ? FontAwesomeIcons.coins
+                                                        : completed
+                                                            ? FontAwesomeIcons.trophy
+                                                            : FontAwesomeIcons.code,
+                                                    size: 15,
+                                                    color: Colors.white,
+                                                  ),
                                                 ),
                                               ),
                                             ),
@@ -323,7 +325,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   Future<void> unlockExercise(CoursesExModel course) async {
-    // Verifica si las compras están disponibles
     final bool available = await inAppPurchase.isAvailable();
     if (!available) {
       Fluttertoast.showToast(
@@ -333,26 +334,18 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-      setState(() {
-        isLoading = false;
-      });
+      setState(() => isLoading = false);
       return;
     }
 
-    // Consulta el producto correspondiente
-    final Set<String> ids = {course.productID};
     final ProductDetailsResponse response =
-        await inAppPurchase.queryProductDetails(ids);
+        await inAppPurchase.queryProductDetails({course.productID});
 
     if (response.productDetails.isNotEmpty) {
       final ProductDetails productDetails = response.productDetails.first;
-
-      // Inicia la compra
-      final PurchaseParam purchaseParam =
-          PurchaseParam(productDetails: productDetails);
+      final PurchaseParam purchaseParam = PurchaseParam(productDetails: productDetails);
       inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      // Muestra un mensaje de confirmación
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.purchaseInitiated,
         toastLength: Toast.LENGTH_SHORT,
@@ -360,8 +353,9 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.green,
         textColor: Colors.white,
       );
+
+      // ⚠️ No pongas isLoading=false aquí; espera a _handlePurchase()
     } else {
-      // Maneja el caso donde el producto no fue encontrado
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
         toastLength: Toast.LENGTH_SHORT,
@@ -369,30 +363,31 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
-      setState(() {
-        isLoading = false;
-      });
+      setState(() => isLoading = false);
     }
   }
 
   void listenToPurchaseUpdates() {
-    try {
-      inAppPurchase.purchaseStream
-          .listen((List<PurchaseDetails> purchaseDetailsList) {
-        for (var purchaseDetails in purchaseDetailsList) {
+    _purchaseSub?.cancel();
+    _purchaseSub = inAppPurchase.purchaseStream.listen(
+      (List<PurchaseDetails> purchaseDetailsList) {
+        for (final purchaseDetails in purchaseDetailsList) {
           _handlePurchase(purchaseDetails);
         }
-      });
-    } catch (e) {
-      debugPrint(e.toString());
-    }
+      },
+      onError: (e) {
+        debugPrint('purchaseStream error: $e');
+        if (mounted) setState(() => isLoading = false);
+      },
+    );
   }
 
   void _handlePurchase(PurchaseDetails purchaseDetails) async {
     try {
       if (purchaseDetails.status == PurchaseStatus.purchased ||
           purchaseDetails.status == PurchaseStatus.restored) {
-        // Compra completada con éxito
+        if (_restoreInProgress) _restoredSomething = true;
+
         await _verifyPurchase(purchaseDetails);
         _unlockContent(purchaseDetails.productID);
 
@@ -404,7 +399,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           textColor: Colors.white,
         );
       } else if (purchaseDetails.status == PurchaseStatus.error) {
-        // Maneja errores durante la compra
         Fluttertoast.showToast(
           msg: AppLocalizations.of(context)!.purchaseError,
           toastLength: Toast.LENGTH_SHORT,
@@ -414,11 +408,10 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         );
         setState(() {
           isLoading = false;
+          _restoreInProgress = false;
         });
-
         debugPrint('Error durante la compra: ${purchaseDetails.error}');
       } else if (purchaseDetails.status == PurchaseStatus.pending) {
-        // Compra pendiente
         Fluttertoast.showToast(
           msg: AppLocalizations.of(context)!.purchasePending,
           toastLength: Toast.LENGTH_SHORT,
@@ -426,16 +419,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           backgroundColor: Colors.orange,
           textColor: Colors.white,
         );
-
         debugPrint('Compra pendiente. Esperando confirmación...');
       }
 
-      // Completa la compra para notificar a la plataforma
       if (purchaseDetails.pendingCompletePurchase) {
         await inAppPurchase.completePurchase(purchaseDetails);
       }
     } catch (e) {
-      // Maneja excepciones y muestra un mensaje al usuario
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.purchaseException,
         toastLength: Toast.LENGTH_LONG,
@@ -445,36 +435,55 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       );
       setState(() {
         isLoading = false;
+        _restoreInProgress = false;
       });
       debugPrint('Excepción durante el manejo de la compra: $e');
     }
   }
 
   Future<void> _verifyPurchase(PurchaseDetails purchaseDetails) async {
-    // Verifica el recibo en tu servidor o de manera local
-    print('Verificando compra para el producto: ${purchaseDetails.productID}');
-    // Para desarrollo, asumimos que siempre es válida
+    debugPrint('Verificando compra para el producto: ${purchaseDetails.productID}');
+    // TODO: verificación real en servidor si lo necesitas
   }
 
-  void _unlockContent(String productID) async {
-    // Encuentra el curso correspondiente por productID
-    final course = widget.allProvider!.data[widget.id].catExercise
-        .firstWhere((course) => course.productID == productID);
+  void _unlockContent(String productID) {
+    final allProvider = _provider(context);
+
+    // 1) Pack del lenguaje actual
+    if (productID == allProvider.lenguajeProductID) {
+      languagePurchaseManagerHive.updateLanguagePurchase(
+        Constant.languajeID,
+        purchased: true,
+      );
+      allProvider.setEverythingUnlocked(true);
+
+      setState(() {
+        isLoading = false;
+        _restoreInProgress = false;
+      });
+
+      debugPrint('Lenguaje desbloqueado: $productID');
+      return;
+    }
+
+    // 2) Compra de ejercicio individual
+    final exercise = allProvider.data[widget.id].catExercise.firstWhere(
+      (ex) => ex.productID == productID,
+      orElse: () => throw Exception('Exercise not found for productID=$productID'),
+    );
+
     purchaseManagerHive.updatePurchase(
-      widget.id,
+      exercise.id,
       purchased: true,
     );
-    if (productID == widget.allProvider!.lenguajeProductID) {
-      languagePurchaseManagerHive.updateLanguagePurchase(Constant.languajeID,
-          purchased: true);
-      widget.allProvider!.setEverythingUnlocked(true);
-    }
+
     setState(() {
-      course.alreadyBuy = true; // Marca como comprado
+      exercise.alreadyBuy = true;
       isLoading = false;
+      _restoreInProgress = false;
     });
 
-    print('Contenido desbloqueado para el producto: $productID');
+    debugPrint('Ejercicio desbloqueado: $productID');
   }
 
   void _showUnlockDialog(CoursesExModel course) {
@@ -482,13 +491,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(16),
-          ),
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           title: Row(
             children: [
-              Icon(Icons.lock_open, color: Colors.deepOrange),
-              SizedBox(width: 8),
+              const Icon(Icons.lock_open, color: Colors.deepOrange),
+              const SizedBox(width: 8),
               Text(
                 AppLocalizations.of(context)!.unlockExerciseTitle,
                 style: const TextStyle(
@@ -505,8 +512,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  AppLocalizations.of(context)!
-                      .unlockExerciseContent(course.exerciseName),
+                  AppLocalizations.of(context)!.unlockExerciseContent(course.exerciseName),
                   style: const TextStyle(
                     fontFamily: 'InconsolataRegular',
                     fontWeight: FontWeight.normal,
@@ -514,38 +520,38 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                     fontSize: 16,
                   ),
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Divider(color: Colors.grey.shade300),
-                SizedBox(height: 8),
+                const SizedBox(height: 8),
                 Row(
                   children: [
-                    Icon(Icons.shopping_cart, color: Colors.deepOrange),
-                    SizedBox(width: 8),
+                    const Icon(Icons.shopping_cart, color: Colors.deepOrange),
+                    const SizedBox(width: 8),
                     Text(
                       AppLocalizations.of(context)!.buyExercise,
-                      style: TextStyle(color: Colors.black87),
+                      style: const TextStyle(color: Colors.black87),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Row(
                   children: [
-                    Icon(Icons.all_inclusive, color: Colors.green),
-                    SizedBox(width: 8),
+                    const Icon(Icons.all_inclusive, color: Colors.green),
+                    const SizedBox(width: 8),
                     Text(
                       AppLocalizations.of(context)!.buyAllExercises,
-                      style: TextStyle(color: Colors.black87),
+                      style: const TextStyle(color: Colors.black87),
                     ),
                   ],
                 ),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Row(
                   children: [
-                    Icon(Icons.restore, color: Colors.blue),
-                    SizedBox(width: 8),
+                    const Icon(Icons.restore, color: Colors.blue),
+                    const SizedBox(width: 8),
                     Text(
                       AppLocalizations.of(context)!.restorePurchases,
-                      style: TextStyle(color: Colors.black87),
+                      style: const TextStyle(color: Colors.black87),
                     ),
                   ],
                 ),
@@ -557,13 +563,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: ElevatedButton.icon(
                 onPressed: () async {
-                  setState(() {
-                    isLoading = true;
-                  });
-                  Navigator.of(context).pop(); // Cerrar diálogo
-                  await unlockExercise(course); // Comprar este ejercicio
+                  setState(() => isLoading = true);
+                  Navigator.of(context).pop();
+                  await unlockExercise(course);
                 },
-                icon: Icon(Icons.shopping_cart_outlined),
+                icon: const Icon(Icons.shopping_cart_outlined),
                 label: Text(AppLocalizations.of(context)!.buyExercise),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepOrange,
@@ -574,13 +578,11 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: ElevatedButton.icon(
                 onPressed: () async {
-                  setState(() {
-                    isLoading = true;
-                  });
-                  Navigator.of(context).pop(); // Cerrar diálogo
-                  await _unlockAllExercises(); // Comprar todos los ejercicios
+                  setState(() => isLoading = true);
+                  Navigator.of(context).pop();
+                  await _unlockAllExercisesForCurrentLanguage();
                 },
-                icon: Icon(Icons.all_inclusive),
+                icon: const Icon(Icons.all_inclusive),
                 label: Text(AppLocalizations.of(context)!.buyAllExercises),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.green,
@@ -591,17 +593,15 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             Center(
               child: OutlinedButton.icon(
                 onPressed: () async {
-                  setState(() {
-                    isLoading = true;
-                  });
-                  Navigator.of(context).pop(); // Cerrar diálogo
-                  restorePurchases(); // Restaurar compras
+                  setState(() => isLoading = true);
+                  Navigator.of(context).pop();
+                  await restorePurchases();
                 },
-                icon: Icon(Icons.restore),
+                icon: const Icon(Icons.restore),
                 label: Text(AppLocalizations.of(context)!.restorePurchases),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.blue,
-                  side: BorderSide(color: Colors.blue),
+                  side: const BorderSide(color: Colors.blue),
                 ),
               ),
             ),
@@ -611,30 +611,24 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     );
   }
 
-  Future<void> _unlockAllExercises() async {
-    final Set<String> ids = {
-      'com.mrrubik.learnswift.everythingunlocked'
-    }; // ID del producto para desbloquear todo
-    final ProductDetailsResponse response =
-        await inAppPurchase.queryProductDetails(ids);
-
-    if (response.productDetails.isNotEmpty) {
-      final ProductDetails productDetails = response.productDetails.first;
-
-      final PurchaseParam purchaseParam =
-          PurchaseParam(productDetails: productDetails);
-      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
-
-      // Muestra un mensaje de confirmación
+  Future<void> _unlockAllExercisesForCurrentLanguage() async {
+    final bool available = await inAppPurchase.isAvailable();
+    if (!available) {
       Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        msg: AppLocalizations.of(context)!.purchaseUnavailable,
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-    } else {
-      // Maneja el caso donde el producto no fue encontrado
+      setState(() => isLoading = false);
+      return;
+    }
+
+    final allProvider = _provider(context);
+    final languageProductId = allProvider.lenguajeProductID;
+
+    if (languageProductId.isEmpty) {
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
         toastLength: Toast.LENGTH_SHORT,
@@ -642,53 +636,52 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
+      setState(() => isLoading = false);
+      return;
     }
-    setState(() {
-      isLoading = false;
-    });
+
+    final ProductDetailsResponse response =
+        await inAppPurchase.queryProductDetails({languageProductId});
+
+    if (response.productDetails.isNotEmpty) {
+      final productDetails = response.productDetails.first;
+      final purchaseParam = PurchaseParam(productDetails: productDetails);
+      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
+
+      // ⚠️ No pongas isLoading=false aquí; espera a _handlePurchase()
+    } else {
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.productNotFound,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.orange,
+        textColor: Colors.white,
+      );
+      setState(() => isLoading = false);
+    }
   }
 
-  void restorePurchases() {
+  Future<void> restorePurchases() async {
     try {
-      inAppPurchase.purchaseStream
-          .listen((List<PurchaseDetails> purchaseDetailsList) {
-        bool restored = false; // Indica si se restauraron compras exitosamente.
+      _restoreTimer?.cancel();
+      _restoreInProgress = true;
+      _restoredSomething = false;
 
-        for (var purchase in purchaseDetailsList) {
-          if (purchase.status == PurchaseStatus.purchased ||
-              purchase.status == PurchaseStatus.restored) {
-            restored = true;
-            // Desbloquear el contenido correspondiente
-            _unlockContent(purchase.productID);
-          } else if (purchase.status == PurchaseStatus.error) {
-            // Maneja el error de la compra
-            Fluttertoast.showToast(
-              msg: AppLocalizations.of(context)!.restoreError,
-              toastLength: Toast.LENGTH_SHORT,
-              gravity: ToastGravity.BOTTOM,
-              backgroundColor: Colors.red,
-              textColor: Colors.white,
-            );
-            print('Error durante la restauración: ${purchase.error}');
-            setState(() {
-              isLoading = false;
-            });
-          }
-        }
+      // ✅ esto es lo que realmente dispara la restauración
+      await inAppPurchase.restorePurchases();
 
-        if (restored) {
-          Fluttertoast.showToast(
-            msg: AppLocalizations.of(context)!.restoreSuccess,
-            toastLength: Toast.LENGTH_SHORT,
-            gravity: ToastGravity.BOTTOM,
-            backgroundColor: Colors.green,
-            textColor: Colors.white,
-          );
-          print('Restauración de compras completada.');
-          setState(() {
-            isLoading = false;
-          });
-        } else {
+      // Fallback: si no llega nada al stream en unos segundos, corta loading y avisa.
+      _restoreTimer = Timer(const Duration(seconds: 4), () {
+        if (!mounted) return;
+        if (_restoreInProgress && !_restoredSomething) {
           Fluttertoast.showToast(
             msg: AppLocalizations.of(context)!.noPurchasesToRestore,
             toastLength: Toast.LENGTH_SHORT,
@@ -696,16 +689,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
             backgroundColor: Colors.orange,
             textColor: Colors.white,
           );
-          print('No hay compras para restaurar.');
           setState(() {
             isLoading = false;
+            _restoreInProgress = false;
           });
         }
       });
-
-      print('Intentando restaurar compras...');
     } catch (e) {
-      // Manejamos cualquier error no previsto
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.unexpectedRestoreError,
         toastLength: Toast.LENGTH_LONG,
@@ -713,15 +703,24 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-      print('Error inesperado durante la restauración: $e');
+      debugPrint('Error inesperado durante la restauración: $e');
       setState(() {
         isLoading = false;
+        _restoreInProgress = false;
       });
     }
   }
 
-  void navToEx(int courseCat, int id, String title, String description,
-      bool completed, Color color1, Color color2, AllProvider allProvider) {
+  void navToEx(
+    int courseCat,
+    int id,
+    String title,
+    String description,
+    bool completed,
+    Color color1,
+    Color color2,
+    AllProvider allProvider,
+  ) {
     final course = allProvider.data.firstWhere(
       (course) => course.id == courseCat,
       orElse: () => throw Exception('Course not found'),
@@ -743,7 +742,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         ),
       );
     } else {
-      print('No builder defined for course category $courseCat');
+      debugPrint('No builder defined for course category $courseCat');
     }
   }
 }

@@ -8,7 +8,7 @@ import 'package:in_app_purchase/in_app_purchase.dart';
 
 import 'package:learnswift/Widgets/catInfoIcon.dart';
 import 'package:learnswift/data/Constant/Constant.dart';
-import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart'; // languagePurchaseManagerHive
+import 'package:learnswift/data/LanguajeModel/languajeMainModelListEN.dart'; // languagePurchaseManagerHive, purchaseManagerHive
 import 'package:learnswift/data/courses/coursesExModel.dart';
 import 'package:learnswift/provider/allprovider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -54,10 +54,22 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   bool _restoredSomething = false;
   Timer? _restoreTimer;
 
+  // ===== Store catalog cache (para ocultar botones si SKU no existe) =====
+  final Map<String, ProductDetails> _storeProducts = {};
+  Set<String> _notFoundIds = {};
+  bool _storeChecked = false;
+  bool _storeAvailable = false;
+
   @override
   void initState() {
     super.initState();
     listenToPurchaseUpdates();
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _ensureStoreCatalogLoaded();
   }
 
   @override
@@ -70,6 +82,152 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   AllProvider _provider(BuildContext context) {
     // Si te lo pasan por constructor, úsalo; si no, tira del Provider.
     return widget.allProvider ?? Provider.of<AllProvider>(context, listen: false);
+  }
+
+  bool _canBuy(String productId) {
+    if (productId.isEmpty) return false;
+    return _storeProducts.containsKey(productId);
+  }
+
+  Future<void> _ensureStoreCatalogLoaded() async {
+    if (_storeChecked) return;
+
+    final allProvider = _provider(context);
+    if (allProvider.data.isEmpty) return;
+    if (allProvider.data[widget.id].catExercise.isEmpty) return;
+
+    _storeChecked = true;
+
+    _storeAvailable = await inAppPurchase.isAvailable();
+    if (!_storeAvailable) {
+      if (mounted) setState(() {});
+      return;
+    }
+
+    final ids = <String>{};
+
+    // Pack del lenguaje (desbloquear todos)
+    if (allProvider.lenguajeProductID.isNotEmpty) {
+      ids.add(allProvider.lenguajeProductID);
+    }
+
+    // Productos de ejercicios SOLO de esta categoría
+    for (final ex in allProvider.data[widget.id].catExercise) {
+      if (ex.productID.isNotEmpty) ids.add(ex.productID);
+    }
+
+    final resp = await inAppPurchase.queryProductDetails(ids);
+
+    if (!mounted) return;
+    setState(() {
+      _storeProducts
+        ..clear()
+        ..addEntries(resp.productDetails.map((p) => MapEntry(p.id, p)));
+      _notFoundIds = resp.notFoundIDs.toSet();
+    });
+  }
+
+  // ===== Banner informativo en el diálogo (localizations) =====
+  Widget _availabilityBanner({
+    required BuildContext context,
+    required bool canBuyThis,
+    required bool canBuyPack,
+  }) {
+    final l10n = AppLocalizations.of(context)!;
+
+    // Si aún no has chequeado la Store, no muestres nada.
+    if (!_storeChecked) return const SizedBox.shrink();
+
+    // Si la Store no está disponible, muestra aviso.
+    if (!_storeAvailable) {
+      return Container(
+        margin: const EdgeInsets.only(top: 12),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: Colors.orange.withOpacity(0.15),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.orange.withOpacity(0.35)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Icon(Icons.info_outline, color: Colors.orange),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.purchaseNotAvailableTitle,
+                    style: const TextStyle(
+                      fontFamily: 'InconsolataRegular',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.purchaseNotAvailableBody,
+                    style: const TextStyle(
+                      fontFamily: 'InconsolataRegular',
+                      fontSize: 13,
+                      color: Colors.black87,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    // Si la Store está ok pero ninguno de los dos SKU existe, muestra “producto no disponible”.
+    final bool nothingBuyable = !canBuyThis && !canBuyPack;
+    if (nothingBuyable) {
+      return Container(
+        margin: const EdgeInsets.only(top: 12),
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: Colors.red.withOpacity(0.10),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.red.withOpacity(0.25)),
+        ),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Icon(Icons.block, color: Colors.red),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    l10n.productNotAvailableTitle,
+                    style: const TextStyle(
+                      fontFamily: 'InconsolataRegular',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    l10n.productNotAvailableBody,
+                    style: const TextStyle(
+                      fontFamily: 'InconsolataRegular',
+                      fontSize: 13,
+                      color: Colors.black87,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
+    return const SizedBox.shrink();
   }
 
   @override
@@ -192,14 +350,17 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   itemBuilder: (context, index) {
                     final course = exercises[index];
 
-                    // ✅ Clave: “desbloqueado” si:
-                    // - ejercicio comprado (alreadyBuy)
-                    // - pack del lenguaje actual (everythingUnlocked)
-                    // - pack global (everythingPurchased)
-                    final bool isUnlocked = course.alreadyBuy ||
-                        allProvider.everythingPurchased;
+                    // Desbloqueado si comprado el ejercicio o comprado el pack del lenguaje (guardado en provider)
+                    final bool isUnlocked =
+                        course.alreadyBuy || allProvider.everythingPurchased;
 
                     final bool completed = course.completed;
+
+                    // Disponibilidad real en Store (si todavía no está cargado, será false y ocultará botones)
+                    final allP = _provider(context);
+                    final bool canBuyThis = _storeAvailable && _canBuy(course.productID);
+                    final bool canBuyPack =
+                        _storeAvailable && _canBuy(allP.lenguajeProductID);
 
                     return FadeIn(
                       child: Center(
@@ -227,7 +388,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                                         width: 50,
                                         child: Center(
                                           child: Text(
-                                            '${index + 1}', // ✅ sin id++ (evita números raros)
+                                            '${index + 1}',
                                             style: const TextStyle(
                                               fontFamily: 'InconsolataRegular',
                                               fontWeight: FontWeight.normal,
@@ -338,6 +499,22 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       return;
     }
 
+    // Si ya tenemos cache, úsala; si no, fallback a query
+    final product = _storeProducts[course.productID];
+    if (product != null) {
+      final purchaseParam = PurchaseParam(productDetails: product);
+      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
+      return;
+    }
+
     final ProductDetailsResponse response =
         await inAppPurchase.queryProductDetails({course.productID});
 
@@ -353,8 +530,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.green,
         textColor: Colors.white,
       );
-
-      // ⚠️ No pongas isLoading=false aquí; espera a _handlePurchase()
     } else {
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
@@ -487,9 +662,16 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   }
 
   void _showUnlockDialog(CoursesExModel course) {
+    final allProvider = _provider(context);
+
+    final bool canBuyThis = _storeAvailable && _canBuy(course.productID);
+    final bool canBuyPack = _storeAvailable && _canBuy(allProvider.lenguajeProductID);
+
     showDialog(
       context: context,
       builder: (context) {
+        final l10n = AppLocalizations.of(context)!;
+
         return AlertDialog(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
           title: Row(
@@ -497,7 +679,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               const Icon(Icons.lock_open, color: Colors.deepOrange),
               const SizedBox(width: 8),
               Text(
-                AppLocalizations.of(context)!.unlockExerciseTitle,
+                l10n.unlockExerciseTitle,
                 style: const TextStyle(
                   fontFamily: 'InconsolataRegular',
                   fontWeight: FontWeight.bold,
@@ -512,7 +694,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  AppLocalizations.of(context)!.unlockExerciseContent(course.exerciseName),
+                  l10n.unlockExerciseContent(course.exerciseName),
                   style: const TextStyle(
                     fontFamily: 'InconsolataRegular',
                     fontWeight: FontWeight.normal,
@@ -527,10 +709,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   children: [
                     const Icon(Icons.shopping_cart, color: Colors.deepOrange),
                     const SizedBox(width: 8),
-                    Text(
-                      AppLocalizations.of(context)!.buyExercise,
-                      style: const TextStyle(color: Colors.black87),
-                    ),
+                    Text(l10n.buyExercise, style: const TextStyle(color: Colors.black87)),
                   ],
                 ),
                 const SizedBox(height: 16),
@@ -538,10 +717,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   children: [
                     const Icon(Icons.all_inclusive, color: Colors.green),
                     const SizedBox(width: 8),
-                    Text(
-                      AppLocalizations.of(context)!.buyAllExercises,
-                      style: const TextStyle(color: Colors.black87),
-                    ),
+                    Text(l10n.buyAllExercises, style: const TextStyle(color: Colors.black87)),
                   ],
                 ),
                 const SizedBox(height: 16),
@@ -549,47 +725,61 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   children: [
                     const Icon(Icons.restore, color: Colors.blue),
                     const SizedBox(width: 8),
-                    Text(
-                      AppLocalizations.of(context)!.restorePurchases,
-                      style: const TextStyle(color: Colors.black87),
-                    ),
+                    Text(l10n.restorePurchases, style: const TextStyle(color: Colors.black87)),
                   ],
                 ),
+
+                // ✅ Banner “producto no disponible / compras no disponibles”
+                _availabilityBanner(
+                  context: context,
+                  canBuyThis: canBuyThis,
+                  canBuyPack: canBuyPack,
+                ),
+
+                // ✅ (Opcional) debug de IDs no encontrados (muestra solo en debug)
+                // assert(() {
+                //   if (_notFoundIds.isNotEmpty) {
+                //     debugPrint('IAP not found ids: ${_notFoundIds.join(", ")}');
+                //   }
+                //   return true;
+                // }()),
               ],
             ),
           ),
           actionsAlignment: MainAxisAlignment.spaceEvenly,
           actions: [
-            Center(
-              child: ElevatedButton.icon(
-                onPressed: () async {
-                  setState(() => isLoading = true);
-                  Navigator.of(context).pop();
-                  await unlockExercise(course);
-                },
-                icon: const Icon(Icons.shopping_cart_outlined),
-                label: Text(AppLocalizations.of(context)!.buyExercise),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.deepOrange,
-                  foregroundColor: Colors.white,
+            if (canBuyThis)
+              Center(
+                child: ElevatedButton.icon(
+                  onPressed: () async {
+                    setState(() => isLoading = true);
+                    Navigator.of(context).pop();
+                    await unlockExercise(course);
+                  },
+                  icon: const Icon(Icons.shopping_cart_outlined),
+                  label: Text(l10n.buyExercise),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.deepOrange,
+                    foregroundColor: Colors.white,
+                  ),
                 ),
               ),
-            ),
-            Center(
-              child: ElevatedButton.icon(
-                onPressed: () async {
-                  setState(() => isLoading = true);
-                  Navigator.of(context).pop();
-                  await _unlockAllExercisesForCurrentLanguage();
-                },
-                icon: const Icon(Icons.all_inclusive),
-                label: Text(AppLocalizations.of(context)!.buyAllExercises),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
-                  foregroundColor: Colors.white,
+            if (canBuyPack)
+              Center(
+                child: ElevatedButton.icon(
+                  onPressed: () async {
+                    setState(() => isLoading = true);
+                    Navigator.of(context).pop();
+                    await _unlockAllExercisesForCurrentLanguage();
+                  },
+                  icon: const Icon(Icons.all_inclusive),
+                  label: Text(l10n.buyAllExercises),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                  ),
                 ),
               ),
-            ),
             Center(
               child: OutlinedButton.icon(
                 onPressed: () async {
@@ -598,7 +788,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   await restorePurchases();
                 },
                 icon: const Icon(Icons.restore),
-                label: Text(AppLocalizations.of(context)!.restorePurchases),
+                label: Text(l10n.restorePurchases),
                 style: OutlinedButton.styleFrom(
                   foregroundColor: Colors.blue,
                   side: const BorderSide(color: Colors.blue),
@@ -640,6 +830,22 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       return;
     }
 
+    // Usa cache si existe
+    final product = _storeProducts[languageProductId];
+    if (product != null) {
+      final purchaseParam = PurchaseParam(productDetails: product);
+      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+
+      Fluttertoast.showToast(
+        msg: AppLocalizations.of(context)!.purchaseInitiated,
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.BOTTOM,
+        backgroundColor: Colors.green,
+        textColor: Colors.white,
+      );
+      return;
+    }
+
     final ProductDetailsResponse response =
         await inAppPurchase.queryProductDetails({languageProductId});
 
@@ -655,8 +861,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.green,
         textColor: Colors.white,
       );
-
-      // ⚠️ No pongas isLoading=false aquí; espera a _handlePurchase()
     } else {
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
@@ -675,10 +879,8 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       _restoreInProgress = true;
       _restoredSomething = false;
 
-      // ✅ esto es lo que realmente dispara la restauración
       await inAppPurchase.restorePurchases();
 
-      // Fallback: si no llega nada al stream en unos segundos, corta loading y avisa.
       _restoreTimer = Timer(const Duration(seconds: 4), () {
         if (!mounted) return;
         if (_restoreInProgress && !_restoredSomething) {

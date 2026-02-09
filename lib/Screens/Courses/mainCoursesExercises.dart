@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // ✅ para PlatformException (cancelación)
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -87,6 +88,16 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
   bool _canBuy(String productId) {
     if (productId.isEmpty) return false;
     return _storeProducts.containsKey(productId);
+  }
+
+  // ✅ Detecta cancelación del usuario (StoreKit2 / Android)
+  bool _isUserCancelled(dynamic e) {
+    if (e is PlatformException) {
+      final code = e.code.toLowerCase();
+      if (code.contains('cancel')) return true;
+      if (code.contains('usercancel')) return true;
+    }
+    return false;
   }
 
   Future<void> _ensureStoreCatalogLoaded() async {
@@ -350,13 +361,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   itemBuilder: (context, index) {
                     final course = exercises[index];
 
-                    // Desbloqueado si comprado el ejercicio o comprado el pack del lenguaje (guardado en provider)
                     final bool isUnlocked =
                         course.alreadyBuy || allProvider.everythingPurchased;
 
                     final bool completed = course.completed;
 
-                    // Disponibilidad real en Store (si todavía no está cargado, será false y ocultará botones)
+                    // Disponibilidad real en Store
                     final allP = _provider(context);
                     final bool canBuyThis = _storeAvailable && _canBuy(course.productID);
                     final bool canBuyPack =
@@ -495,7 +505,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
       return;
     }
 
@@ -503,15 +513,23 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     final product = _storeProducts[course.productID];
     if (product != null) {
       final purchaseParam = PurchaseParam(productDetails: product);
-      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseInitiated,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
-        textColor: Colors.white,
-      );
+      try {
+        inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+      } catch (e) {
+        if (_isUserCancelled(e)) {
+          if (mounted) setState(() => isLoading = false);
+          return;
+        }
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseError,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+        );
+        if (mounted) setState(() => isLoading = false);
+      }
       return;
     }
 
@@ -521,15 +539,23 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     if (response.productDetails.isNotEmpty) {
       final ProductDetails productDetails = response.productDetails.first;
       final PurchaseParam purchaseParam = PurchaseParam(productDetails: productDetails);
-      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseInitiated,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
-        textColor: Colors.white,
-      );
+      try {
+        inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+      } catch (e) {
+        if (_isUserCancelled(e)) {
+          if (mounted) setState(() => isLoading = false);
+          return;
+        }
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseError,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+        );
+        if (mounted) setState(() => isLoading = false);
+      }
     } else {
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
@@ -538,7 +564,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
     }
   }
 
@@ -581,10 +607,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
           backgroundColor: Colors.red,
           textColor: Colors.white,
         );
-        setState(() {
-          isLoading = false;
-          _restoreInProgress = false;
-        });
+        if (mounted) {
+          setState(() {
+            isLoading = false;
+            _restoreInProgress = false;
+          });
+        }
         debugPrint('Error durante la compra: ${purchaseDetails.error}');
       } else if (purchaseDetails.status == PurchaseStatus.pending) {
         Fluttertoast.showToast(
@@ -608,10 +636,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.redAccent,
         textColor: Colors.white,
       );
-      setState(() {
-        isLoading = false;
-        _restoreInProgress = false;
-      });
+      if (mounted) {
+        setState(() {
+          isLoading = false;
+          _restoreInProgress = false;
+        });
+      }
       debugPrint('Excepción durante el manejo de la compra: $e');
     }
   }
@@ -632,10 +662,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       );
       allProvider.setEverythingUnlocked(true);
 
-      setState(() {
-        isLoading = false;
-        _restoreInProgress = false;
-      });
+      if (mounted) {
+        setState(() {
+          isLoading = false;
+          _restoreInProgress = false;
+        });
+      }
 
       debugPrint('Lenguaje desbloqueado: $productID');
       return;
@@ -652,11 +684,13 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
       purchased: true,
     );
 
-    setState(() {
-      exercise.alreadyBuy = true;
-      isLoading = false;
-      _restoreInProgress = false;
-    });
+    if (mounted) {
+      setState(() {
+        exercise.alreadyBuy = true;
+        isLoading = false;
+        _restoreInProgress = false;
+      });
+    }
 
     debugPrint('Ejercicio desbloqueado: $productID');
   }
@@ -735,14 +769,6 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
                   canBuyThis: canBuyThis,
                   canBuyPack: canBuyPack,
                 ),
-
-                // ✅ (Opcional) debug de IDs no encontrados (muestra solo en debug)
-                // assert(() {
-                //   if (_notFoundIds.isNotEmpty) {
-                //     debugPrint('IAP not found ids: ${_notFoundIds.join(", ")}');
-                //   }
-                //   return true;
-                // }()),
               ],
             ),
           ),
@@ -811,7 +837,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.red,
         textColor: Colors.white,
       );
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
       return;
     }
 
@@ -826,7 +852,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
       return;
     }
 
@@ -834,15 +860,23 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     final product = _storeProducts[languageProductId];
     if (product != null) {
       final purchaseParam = PurchaseParam(productDetails: product);
-      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseInitiated,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
-        textColor: Colors.white,
-      );
+      try {
+        inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+      } catch (e) {
+        if (_isUserCancelled(e)) {
+          if (mounted) setState(() => isLoading = false);
+          return;
+        }
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseError,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+        );
+        if (mounted) setState(() => isLoading = false);
+      }
       return;
     }
 
@@ -852,15 +886,23 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
     if (response.productDetails.isNotEmpty) {
       final productDetails = response.productDetails.first;
       final purchaseParam = PurchaseParam(productDetails: productDetails);
-      inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
 
-      Fluttertoast.showToast(
-        msg: AppLocalizations.of(context)!.purchaseInitiated,
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.BOTTOM,
-        backgroundColor: Colors.green,
-        textColor: Colors.white,
-      );
+      try {
+        inAppPurchase.buyNonConsumable(purchaseParam: purchaseParam);
+      } catch (e) {
+        if (_isUserCancelled(e)) {
+          if (mounted) setState(() => isLoading = false);
+          return;
+        }
+        Fluttertoast.showToast(
+          msg: AppLocalizations.of(context)!.purchaseError,
+          toastLength: Toast.LENGTH_SHORT,
+          gravity: ToastGravity.BOTTOM,
+          backgroundColor: Colors.red,
+          textColor: Colors.white,
+        );
+        if (mounted) setState(() => isLoading = false);
+      }
     } else {
       Fluttertoast.showToast(
         msg: AppLocalizations.of(context)!.productNotFound,
@@ -869,7 +911,7 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         backgroundColor: Colors.orange,
         textColor: Colors.white,
       );
-      setState(() => isLoading = false);
+      if (mounted) setState(() => isLoading = false);
     }
   }
 
@@ -906,10 +948,12 @@ class _MainCoursesExercisesState extends State<MainCoursesExercises> {
         textColor: Colors.white,
       );
       debugPrint('Error inesperado durante la restauración: $e');
-      setState(() {
-        isLoading = false;
-        _restoreInProgress = false;
-      });
+      if (mounted) {
+        setState(() {
+          isLoading = false;
+          _restoreInProgress = false;
+        });
+      }
     }
   }
 
